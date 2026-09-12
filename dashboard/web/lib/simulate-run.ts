@@ -1,3 +1,4 @@
+import type { BattleExecution, MechanicsVersion } from "@simulator/execution";
 import type { TroopCategory } from "@/lib/heroes-catalogue";
 import type {
   OptimizeRankBy,
@@ -62,6 +63,10 @@ export interface SimulatePetModifiersPayload {
 }
 
 export interface SimulateRequestPayload {
+  mechanicsVersion?: MechanicsVersion;
+  timestamp?: string | number;
+  timestampSource?: string;
+  reportedSeed?: string | number;
   attacker: SimulateSidePayload;
   defender: SimulateSidePayload;
   replicates: number;
@@ -76,6 +81,7 @@ export interface SimulateSkillSummary {
 }
 
 export interface SimulateOutcomeRun {
+  execution?: BattleExecution;
   outcome: number;
   seed: string | number;
   winner?: "attacker" | "defender" | "draw";
@@ -116,6 +122,7 @@ export interface SimulateTraceRound {
 }
 
 export interface SimulateTrace {
+  execution?: BattleExecution;
   seed: string | number;
   outcome: number;
   winner?: "attacker" | "defender" | "draw";
@@ -133,6 +140,7 @@ export interface SimulateTrace {
 }
 
 export interface SimulateApiResult {
+  execution?: BattleExecution;
   replicates: number;
   summary: {
     mean: number;

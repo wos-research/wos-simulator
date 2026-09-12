@@ -8,6 +8,10 @@ export function toBattleInput(request: SimulateRequestPayload, seed: string | nu
     attacker: toFighterInput(request.attacker, request.defender),
     defender: toFighterInput(request.defender, request.attacker),
     seed,
+    ...(request.mechanicsVersion !== undefined ? { mechanicsVersion: request.mechanicsVersion } : {}),
+    ...(request.timestamp !== undefined ? { timestamp: request.timestamp } : {}),
+    ...(request.timestampSource !== undefined ? { timestampSource: request.timestampSource } : {}),
+    ...(request.reportedSeed !== undefined ? { reportedSeed: request.reportedSeed } : {}),
     maxRounds: 1500,
     ...(request.rally_mode ? { engagement_type: "rally" } : {}),
   };

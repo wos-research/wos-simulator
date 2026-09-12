@@ -284,7 +284,7 @@ function runSurfaceBatchDirect(
   const total = tasks.reduce((sum, task) => sum + task.replicates, 0);
   let done = 0;
   return Promise.resolve(tasks.map((t) => {
-    const winrate = runPair(t.attFighter, t.defFighter, t.replicates, `${t.seedBase}:${t.attIdx}:${t.defIdx}`, config);
+    const winrate = runPair(t.attFighter, t.defFighter, t.replicates, `${t.seedBase}:${t.attIdx}:${t.defIdx}`, config, t.rallyMode, t.mechanicsVersion);
     done += t.replicates;
     onProgress?.(done, total);
     return { attIdx: t.attIdx, defIdx: t.defIdx, winrate };

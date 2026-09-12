@@ -5,6 +5,7 @@ import type { SimulateSidePayload } from "@/lib/simulate-run";
 import { toBattleInput } from "./adapters";
 
 export interface SurfaceSweepPayload {
+  mechanicsVersion?: import("@simulator/execution").MechanicsVersion;
   attacker: SimulateSidePayload;
   defender: SimulateSidePayload;
   pointsPerEdge: number;
@@ -38,6 +39,8 @@ export interface ProgressiveSurfaceStage {
 }
 
 export interface SurfaceBatchTask {
+  mechanicsVersion?: SurfaceSweepPayload["mechanicsVersion"];
+  rallyMode?: boolean;
   attIdx: number;
   defIdx: number;
   attFighter: FighterInput;
@@ -185,7 +188,7 @@ async function runSurfaceSweepInternal(
   const attDummy: SimulateSidePayload = { ...payload.attacker, troops: zeroTroops };
   const defDummy: SimulateSidePayload = { ...payload.defender, troops: zeroTroops };
   const templateBattle = toBattleInput(
-    { attacker: attDummy, defender: defDummy, replicates: 1, rally_mode: payload.rallyMode },
+    { attacker: attDummy, defender: defDummy, replicates: 1, rally_mode: payload.rallyMode, mechanicsVersion: payload.mechanicsVersion },
     "template",
   );
   const attBase = fighterWithoutTroops(templateBattle.attacker);
@@ -254,6 +257,8 @@ async function runSurfaceSweepInternal(
         defFighter: defFighters[defIdx],
         replicates: payload.replicates,
         seedBase,
+        mechanicsVersion: payload.mechanicsVersion,
+        rallyMode: payload.rallyMode,
       };
     });
     const results = await options.runBatches(tasks, (done, total) => options.onProgress?.(done, total));
@@ -272,6 +277,7 @@ async function runSurfaceSweepInternal(
         `${seedBase}:${attIdx}:${defIdx}`,
         config,
         payload.rallyMode,
+        payload.mechanicsVersion,
       );
       applyResult(attIdx, defIdx, winrate);
       cache?.set(pairKey(pts[attIdx], pts[defIdx]), winrate);
@@ -326,6 +332,7 @@ export function runPair(
   seedBase: string,
   config: SimulatorConfig,
   rallyMode = false,
+  mechanicsVersion?: SurfaceSweepPayload["mechanicsVersion"],
 ): number {
   let wins = 0;
   const prepared = prepareBattle(
@@ -333,6 +340,7 @@ export function runPair(
       attacker: attFighter,
       defender: defFighter,
       seed: `${seedBase}:0`,
+      mechanicsVersion,
       maxRounds: 1500,
       ...(rallyMode ? { engagement_type: "rally" as const } : {}),
     },

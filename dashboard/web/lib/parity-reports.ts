@@ -1,3 +1,4 @@
+import type { BattleExecution } from "@simulator/execution";
 import fs from "fs";
 import path from "path";
 import { resolveSimulatorRoot } from "@/lib/simulator-root";
@@ -58,6 +59,7 @@ export interface ParityArmies {
 }
 
 export interface ParityComparisonRow {
+  execution?: BattleExecution;
   key: string;
   file: string;
   testcaseId: string;
@@ -103,6 +105,7 @@ export interface ParityStatAdjustment {
 }
 
 export interface ParityCaseReport {
+  execution?: BattleExecution;
   reportKind?: string;
   file: string;
   testcaseId: string;
@@ -125,6 +128,7 @@ export interface ParityCaseReport {
   simulatorScoreDelta?: number;
   visibility?: Record<string, unknown>;
   result?: {
+    execution?: BattleExecution;
     winner?: string;
     rounds?: number;
     remaining?: Record<string, unknown>;
@@ -133,6 +137,7 @@ export interface ParityCaseReport {
 }
 
 interface ParityReportTestcase {
+  execution?: BattleExecution;
   file?: string;
   testcase_id?: string;
   testcaseId?: string;
@@ -434,6 +439,7 @@ function rowFromTestcase(
     armiesSource: testcase.armiesSource,
     deterministic: testcase.deterministic,
     sampleCount: testcase.sampleCount,
+    execution: testcase.execution,
     game,
     baseline,
     gameStatAdjustment: testcase.gameStatAdjustment,

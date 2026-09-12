@@ -1,3 +1,5 @@
+import { mechanicsVersionFor } from "./execution";
+import { mk2Config, prepareMk2 } from "./mk2/mechanics";
 import type {
   ActiveEffect,
   BattleInput,
@@ -24,6 +26,7 @@ import { resolveFighter } from "./fighterResolution";
  * effects.ts, populated on first activation.)
  */
 export interface CompiledBattle {
+  mk2?: ReturnType<typeof prepareMk2>;
   input: BattleInput;
   config: SimulatorConfig;
   fighters: Record<SideId, ResolvedFighter>;
@@ -37,6 +40,8 @@ export interface CompiledBattle {
 }
 
 export function prepareBattle(input: BattleInput, config: SimulatorConfig): CompiledBattle {
+  const version = mechanicsVersionFor(input);
+  if (version === "mk2") config = mk2Config(config);
   const attacker = resolveFighter(input.attacker, "attacker", config, input.engagement_type);
   const defender = resolveFighter(input.defender, "defender", config, input.engagement_type);
   const fighters: Record<SideId, ResolvedFighter> = { attacker, defender };
@@ -44,7 +49,9 @@ export function prepareBattle(input: BattleInput, config: SimulatorConfig): Comp
   const resolved = buildResolved(attacker, defender);
   const preBattleEffects = activatePreBattleEffects(runtimeSkills, input);
   const staticProfile = buildStaticDamageProfile(fighters, preBattleEffects);
-  return { input, config, fighters, preBattleEffects, staticProfile, runtimeSkills, resolved };
+  const compiled: CompiledBattle = { input, config, fighters, preBattleEffects, staticProfile, runtimeSkills, resolved };
+  if (version === "mk2") compiled.mk2 = prepareMk2(compiled);
+  return compiled;
 }
 
 // The pre_battle phase: activate every chance-free static-passive skill effect plus the

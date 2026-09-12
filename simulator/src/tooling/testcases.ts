@@ -1,3 +1,4 @@
+import { isReplayInput, replayFieldsFromRecord, type BattleExecution } from "../execution";
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -43,6 +44,7 @@ export interface TestcaseArmies {
 }
 
 export interface TestcaseCaseReport {
+  execution?: BattleExecution;
   file: string;
   testcaseId: string;
   index: number;
@@ -79,6 +81,7 @@ export interface TestcaseRunWarning {
 }
 
 export interface TestcaseSummaryEntry {
+  execution?: BattleExecution;
   file: string;
   testcase_id: string;
   idx: number;
@@ -372,7 +375,7 @@ function applyExecutionResult(
     return;
   }
   const stats = execution.simulatorStats;
-  const gameResult = (entry as { game_report_result?: unknown }).game_report_result;
+  const gameResult = (entry as { game_report_result?: unknown; observed?: unknown }).game_report_result ?? (entry as { observed?: unknown }).observed;
   const attackerTroops = totalInputTroops(preparedCase.input!.attacker);
   const defenderTroops = totalInputTroops(preparedCase.input!.defender);
   const initialTroops = attackerTroops + defenderTroops;
@@ -384,15 +387,15 @@ function applyExecutionResult(
         reference: { samples: gameSamples },
         initialTroops,
         outcomeRange: { min: -defenderTroops, max: attackerTroops },
-        deterministic: result.randomness.deterministic,
+        deterministic: execution.deterministic,
         thresholds: comparison.thresholds
       })
     : null;
   if (game) {
     const unroundedBiasRaw = stats.mu - mean(gameSamples);
-    game = adjustedForRoundingRules(game, result.randomness.deterministic, initialTroops, result.rounds, unroundedBiasRaw);
+    game = adjustedForRoundingRules(game, execution.deterministic, initialTroops, result.rounds, unroundedBiasRaw);
   }
-  const gameStatAdjustment = game && preparedCase.input
+  const gameStatAdjustment = game && result.execution?.mode !== "replay" && preparedCase.input
     ? findGameStatAdjustment({
         game,
         input: preparedCase.input,
@@ -401,13 +404,14 @@ function applyExecutionResult(
         reference: gameSamples,
         initialTroops,
         averageRounds: result.rounds,
-        deterministic: result.randomness.deterministic,
+        deterministic: execution.deterministic,
         thresholds: comparison.thresholds
       })
     : undefined;
   if (gameStatAdjustment) game = gameStatAdjustment.adjusted;
 
   detail.result = result;
+  detail.execution = result.execution;
   detail.deterministic = execution.deterministic;
   detail.sampleCount = execution.sampleCount;
   detail.simulatorStats = stats;
@@ -431,6 +435,7 @@ function applyExecutionResult(
     idx: index,
     armies: detail.armies,
     armiesSource: detail.armiesSource,
+    execution: result.execution,
     deterministic: execution.deterministic,
     sampleCount: execution.sampleCount,
     game,
@@ -638,7 +643,7 @@ export function executeTestcaseCase(job: TestcaseExecutionJob, config: Simulator
     const baseSeed = job.seed ?? job.input.seed;
     const sample = (iteration: number) => runPrepared(
       compiled,
-      sampleSeed(baseSeed, job.file, job.testcaseId, job.index, iteration),
+      isReplayInput(job.input) ? undefined : sampleSeed(baseSeed, job.file, job.testcaseId, job.index, iteration),
       job.simulationMode ? { mode: job.simulationMode } : {}
     );
     let result = sample(0);
@@ -648,7 +653,8 @@ export function executeTestcaseCase(job: TestcaseExecutionJob, config: Simulator
       sampleOutcomes.push(sampleOutcome(1, result, firstScore));
       sampleDeltas.push(firstScore);
     }
-    const sampleCount = result.randomness.deterministic ? 1 : job.repeat;
+    const deterministic = result.randomness.deterministic || result.execution?.mode === "replay";
+    const sampleCount = deterministic ? 1 : job.repeat;
     for (let iteration = 1; iteration < sampleCount; iteration += 1) {
       result = sample(iteration);
       const score = battleScoreDelta(result);
@@ -664,14 +670,14 @@ export function executeTestcaseCase(job: TestcaseExecutionJob, config: Simulator
       testcaseId: job.testcaseId,
       index: job.index,
       result,
-      deterministic: result.randomness.deterministic,
+      deterministic,
       sampleCount,
       simulatorStats: sampleStats(samples, { includeSamples: job.includeSamples }),
       simulatorSamples: samples,
       simulatorScoreDelta: battleScoreDelta(result),
       simulatorSampleOutcomes: sampleOutcomes,
       simulatorSampleDeltas: sampleDeltas,
-      diagnostics: [...result.resolved.attacker.diagnostics, ...result.resolved.defender.diagnostics]
+      diagnostics: [...result.resolved.attacker.diagnostics, ...result.resolved.defender.diagnostics, ...(result.execution?.warnings ?? [])]
     };
   } catch (error) {
     return {
@@ -709,7 +715,8 @@ export function adaptTestcaseEntry(
   options: { seed?: string | number } = {},
   diagnostics: string[] = []
 ): BattleInput {
-  const object = entry as {
+  const row = entry as { input?: unknown; request?: { input?: unknown } };
+  const object = (row?.request?.input ?? row?.input ?? entry) as {
     attacker?: FighterInput;
     defender?: FighterInput;
     test_id?: string;
@@ -719,7 +726,7 @@ export function adaptTestcaseEntry(
     maxRounds?: unknown;
     max_rounds?: unknown;
   };
-  if (!object.attacker || !object.defender) throw new Error(`Testcase ${object.test_id ?? "(unknown)"} is missing attacker or defender`);
+  if (!object?.attacker || !object?.defender) throw new Error(`Testcase ${object?.test_id ?? "(unknown)"} is missing attacker or defender`);
   diagnostics.push(...diagnoseFighterShape("attacker", object.attacker), ...diagnoseFighterShape("defender", object.defender));
   const engagementType = engagementTypeFromEntry(object);
   const maxRounds = optionalNumber(object.maxRounds ?? object.max_rounds);
@@ -727,6 +734,7 @@ export function adaptTestcaseEntry(
     attacker: object.attacker,
     defender: object.defender,
     seed: options.seed,
+    ...replayFieldsFromRecord(entry),
     ...(maxRounds !== undefined ? { maxRounds } : {}),
     ...(engagementType !== undefined ? { engagement_type: engagementType } : {})
   };
@@ -793,7 +801,8 @@ function emptyCaseReport(
 }
 
 export function testcaseArmiesFromEntry(entry: unknown): TestcaseArmies {
-  const testcase = asObject(entry);
+  const row = asObject(entry);
+  const testcase = asObject(asObject(row.request).input ?? row.input ?? entry);
   return {
     attacker: armyDefinition(testcase.attacker),
     defender: armyDefinition(testcase.defender),

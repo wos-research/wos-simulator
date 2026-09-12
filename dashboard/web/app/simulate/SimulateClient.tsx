@@ -536,6 +536,13 @@ export default function SimulateClient({
   const [uploadOpen, setUploadOpen] = useState(false);
   const [uploadWarnings, setUploadWarnings] = useState<string[]>([]);
   const [rallyMode, setRallyMode] = useState(() => initialState.rallyMode);
+  const [mechanicsVersion, setMechanicsVersion] = useState(initialState.mechanicsVersion);
+  const [battleTimestamp, setBattleTimestamp] = useState(initialState.timestamp);
+  const [timestampSource, setTimestampSource] = useState(initialState.timestampSource);
+  const [reportedSeed, setReportedSeed] = useState(initialState.reportedSeed);
+  const simulationRequestRef = useRef<SimulateRequestPayload | null>(
+    initialSavedRun?.kind === "simulate" ? initialSavedRun.request as SimulateRequestPayload : null,
+  );
   const [mobileTab, setMobileTab] = useState<SimWorkspaceTab>(() =>
     initialState.result || initialState.optimizeResult || initialState.surfaceResult ? "results" : "attacker",
   );
@@ -796,6 +803,11 @@ export default function SimulateClient({
     setDefender(savedState.defender);
     resetLoadedPresets(savedState.loadedPresetNames);
     setRallyMode(savedState.rallyMode);
+    setMechanicsVersion(savedState.mechanicsVersion);
+    setBattleTimestamp(savedState.timestamp);
+    setTimestampSource(savedState.timestampSource);
+    setReportedSeed(savedState.reportedSeed);
+    simulationRequestRef.current = saved.kind === "simulate" ? saved.request as SimulateRequestPayload : null;
     setUploadWarnings([]);
     setError(null);
     setOptimizeError(null);
@@ -937,6 +949,11 @@ export default function SimulateClient({
       setDefender(plainState.defender);
       setReplicates(plainState.replicates);
       setRallyMode(plainState.rallyMode);
+      setMechanicsVersion(plainState.mechanicsVersion);
+      setBattleTimestamp(plainState.timestamp);
+      setTimestampSource(plainState.timestampSource);
+      setReportedSeed(plainState.reportedSeed);
+      simulationRequestRef.current = null;
       resetRunOutputs({ resetSurfaceSelection: true });
       setOptimizeReplicates(plainState.optimizeReplicates);
       setOptimizeStepInput(plainState.optimizeStepInput);
@@ -1112,6 +1129,17 @@ export default function SimulateClient({
     setUploadWarnings(ocr.warnings ?? []);
   }
 
+  function currentSimulationPayload(count: number): SimulateRequestPayload {
+    return {
+      ...toApiPayload(attacker, defender, count, rallyMode, loadedPresetNames),
+      mechanicsVersion,
+      ...(mechanicsVersion === "mk2" && battleTimestamp.trim() ? {
+        timestamp: battleTimestamp.trim(), timestampSource: timestampSource ?? "user-supplied",
+      } : {}),
+      ...(mechanicsVersion === "mk2" && reportedSeed.trim() ? { reportedSeed: reportedSeed.trim() } : {}),
+    };
+  }
+
   async function runSimulation() {
     setRunMode("simulate");
     setRunOptionsOpen(false);
@@ -1119,13 +1147,8 @@ export default function SimulateClient({
     resetRunOutputs();
     setSimulateProgress({ done: 0, total: replicates });
     try {
-      const payload = toApiPayload(
-        attacker,
-        defender,
-        replicates,
-        rallyMode,
-        loadedPresetNames,
-      );
+      const payload = currentSimulationPayload(replicates);
+      simulationRequestRef.current = structuredClone(payload);
       const job = runWorkerSimulation(payload, (done, total) =>
         setSimulateProgress((current) =>
           current?.done === done && current.total === total
@@ -1158,13 +1181,7 @@ export default function SimulateClient({
     setTraceLoadingSeed(seed);
     setTraceError(null);
     try {
-      const payload = toApiPayload(
-        attacker,
-        defender,
-        1,
-        rallyMode,
-        loadedPresetNames,
-      );
+      const payload = simulationRequestRef.current ?? currentSimulationPayload(1);
       const job = runWorkerSimulationTrace(payload, seed, () => undefined);
       setBattleTrace(await job.promise);
     } catch (err) {
@@ -1197,6 +1214,7 @@ export default function SimulateClient({
         attacker: basePayload.attacker,
         defender: basePayload.defender,
         rally_mode: basePayload.rally_mode,
+        mechanicsVersion,
       };
       const payload = {
         ...optimizeBase,
@@ -1264,6 +1282,7 @@ export default function SimulateClient({
       defender: basePayload.defender,
       attackerTotal: attackerTotalTroops,
       defenderTotal: defenderTotalTroops,
+      mechanicsVersion,
       pointsPerEdge: surfacePointsPerEdge,
       replicates: surfaceReplicates,
       rallyMode,
@@ -1706,6 +1725,28 @@ export default function SimulateClient({
               Recent runs
             </button>
           </div>
+          <details className="w-full rounded border p-3 text-sm">
+            <summary className="cursor-pointer font-semibold">Mechanics and battle replay</summary>
+            <div className="mt-3 grid gap-3 sm:grid-cols-3">
+              <label className="grid gap-1">Simulation mechanics
+                <select aria-label="Simulation mechanics" value={mechanicsVersion}
+                  onChange={e => setMechanicsVersion(e.target.value as "legacy" | "mk2")}>
+                  <option value="mk2">Mk2</option><option value="legacy">Legacy</option>
+                </select>
+              </label>
+              <label className="grid gap-1">Battle timestamp (Unix seconds)
+                <input aria-label="Battle timestamp" inputMode="numeric" value={battleTimestamp}
+                  disabled={mechanicsVersion !== "mk2"} placeholder="Optional"
+                  onChange={e => { setBattleTimestamp(e.target.value); setTimestampSource("user-supplied"); }} />
+              </label>
+              <label className="grid gap-1">Recorded report seed
+                <input aria-label="Recorded report seed" inputMode="numeric" value={reportedSeed}
+                  disabled={mechanicsVersion !== "mk2"} placeholder="Optional"
+                  onChange={e => setReportedSeed(e.target.value)} />
+              </label>
+            </div>
+            <p className="mt-2 text-xs opacity-70">Replay fields apply to Simulate. Leave both blank for multiple sampled battles. A timestamp alone is unverified; supplying the report seed allows a seed check. A replay runs once.</p>
+          </details>
           <div className="sim-start-toggles" data-tour="simulate-toggles">
             <label
               className="sim-toggle grid cursor-pointer grid-cols-[auto_minmax(0,1fr)] items-center gap-2 px-2.5 py-1.5 text-xs font-bold"

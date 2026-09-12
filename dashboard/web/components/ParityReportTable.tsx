@@ -1,5 +1,7 @@
 "use client";
 
+import { executionLabel } from "@simulator/execution";
+
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { ParityComparisonRow, ParityMetric } from "@/lib/parity-reports";
@@ -223,6 +225,7 @@ export default function ParityReportTable({
                     >
                       {caseLabel}
                     </Link>
+                    <span className="block text-xs opacity-60" title={executionLabel(row.execution)}>{executionLabel(row.execution)}</span>
                   </td>
                   <td className={compactTd}>{row.idx}</td>
                   <td

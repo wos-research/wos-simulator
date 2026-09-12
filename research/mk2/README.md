@@ -1,5 +1,7 @@
 # Expedition simulator Mk2: controlled replay review
 
+The snapshot below describes the isolated review export. Its measured mechanics are now also available in the [main simulator integration](integration.md); this research runtime remains unchanged.
+
 This is a self-contained review snapshot of Mk2 version `expedition-mk2-lua54-gunpowder-timing-8`. It reproduces 160 controlled in-game report results using their recorded seeds. The existing simulator and dashboard elsewhere in this repository are unchanged.
 
 ## Run it
@@ -61,3 +63,10 @@ These are **recorded-seed diagnostics**, with replay timestamps explicitly deriv
 Skill-credited wounded conversion and the existing Greg discrepancy remain unresolved. `extensions.json` includes earlier provisional newer-hero/T12 definitions needed to preserve the current snapshot; these are **not validated improvements** and are outside the controlled cohort. This branch does not claim universal server-battle accuracy or independently verified mixed-stack behavior.
 
 No simulator mechanic was changed while packaging this review. Runtime files are copied byte-for-byte from the validated local version; the only test-data transformations are documented anonymization and omission of private provenance.
+
+## Main-engine integration reports
+
+- [Main simulator integration and compatibility](integration.md)
+- [Integration validation](reports/integration-validation.md)
+- [Replay accuracy comparison](reports/accuracy-comparison.md)
+- [Per-case comparison](reports/accuracy-cases.md)

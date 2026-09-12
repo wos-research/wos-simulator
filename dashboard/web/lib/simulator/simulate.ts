@@ -1,3 +1,4 @@
+import { isReplayInput, type BattleExecution } from "@simulator/execution";
 import { loadSimulatorConfig } from "@simulator/config-default";
 import { prepareBattle, runPrepared } from "@simulator/simulator";
 import type { AppliedEffect, AttackOutcome, BattleResult, DetailedAppliedEffect, SimulatorConfig, UnitType } from "@simulator/types";
@@ -35,6 +36,7 @@ interface SimulateBatchSkillTally {
 }
 
 export interface SimulateBatchResult extends SimulateBatchTask {
+  execution?: BattleExecution;
   outcome: number;
   rounds: number;
   winner: "attacker" | "defender" | "draw";
@@ -47,7 +49,7 @@ export interface SimulateBatchResult extends SimulateBatchTask {
 
 export async function runSimulation(request: SimulateRequestPayload, options: RunSimulationOptions = {}): Promise<SimulateApiResult> {
   const config = options.config ?? loadSimulatorConfig();
-  const total = Math.max(1, Math.min(5000, Math.floor(request.replicates || 1)));
+  const total = isReplayInput(toBattleInput(request, "dashboard")) ? 1 : Math.max(1, Math.min(5000, Math.floor(request.replicates || 1)));
   const tasks = Array.from({ length: total }, (_, index) => ({
     index,
     seed: `${options.seedBase ?? "dashboard"}:${index}`,
@@ -59,6 +61,7 @@ export async function runSimulation(request: SimulateRequestPayload, options: Ru
   const outcomeRuns: SimulateOutcomeRun[] = ordered.map((row) => ({
     outcome: row.outcome,
     seed: row.seed,
+    execution: row.execution,
     winner: row.winner,
     survivors: row.survivors,
   }));
@@ -110,6 +113,8 @@ export function aggregateBattleResults(results: BattleResult[]): SimulateApiResu
 function compactBattleResult(task: SimulateBatchTask, result: BattleResult): SimulateBatchResult {
   return {
     ...task,
+    seed: result.execution?.mode === "replay" ? result.execution.seed : task.seed,
+    execution: result.execution,
     outcome: signedOutcome(result),
     rounds: result.rounds,
     winner: result.winner,
@@ -160,6 +165,7 @@ function aggregateSimulationRows(rows: SimulateBatchResult[]): SimulateApiResult
   const avgDefKills = perSide.defender.reduce((sum, row) => sum + row.avg_kills, 0);
   return {
     replicates,
+    execution: rows[0]?.execution,
     summary: {
       mean,
       std: Math.sqrt(variance),
@@ -248,7 +254,8 @@ export function battleResultToTrace(result: BattleResult, seed: string | number,
   }
 
   return {
-    seed,
+    seed: result.execution?.mode === "replay" ? result.execution.seed : seed,
+    execution: result.execution,
     outcome: signedOutcome(result),
     winner: result.winner,
     survivors: survivorCounts(result),
