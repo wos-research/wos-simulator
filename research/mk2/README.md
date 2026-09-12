@@ -22,6 +22,13 @@ To produce detailed traces for the supplied requests:
 npm run replay -- --input fixtures/requests.json --trace --output replay-results.json
 ```
 
+## Test cases and captured report results
+
+- [Readable catalog of all 160 captured reports](reports/CONTROLLED_REPORTS.md): troop setups, seeds, winners, survivors, and recorded skill activation counts.
+- [Full testcase data](fixtures/controlled.json): exact predictive stats and inputs alongside captured expected results.
+- [Replay requests](fixtures/requests.json): inputs ready for the replay command.
+- [301 reference cases](fixtures/reference.json): original-engine regression expectations, separate from the controlled in-game cohort.
+
 ## What changed from the reference engine
 
 - Lua 5.4 xoshiro256** replay with exact `math.random(0,9999)` integer projection and rejection sampling. The default seed is `timestamp + 1`; missing timestamps become `000000`.
