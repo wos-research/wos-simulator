@@ -1,0 +1,43 @@
+{
+  "name": "Jessie",
+  "hero_generation": "SR",
+  "troop_type": "lancer",
+  "skills": {
+    "StandOfArms": {
+      "description": "Increasing damage dealt by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "StandOfArms/1": {
+          "type": "active.hero.lethality.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "Bulwarks": {
+      "description": "Reducing damage taken by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "Bulwarks/1": {
+          "type": "active.hero.damageTaken.down",
+          "value": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      }
+    }
+  }
+}

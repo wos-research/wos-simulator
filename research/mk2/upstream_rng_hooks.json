@@ -1,0 +1,187 @@
+{
+  "purpose": "Optional Mk2 RNG, extra-hit, attack scheduling, empty-unit and deferred declaration hooks; absent options preserve pinned reference behavior",
+  "files": {
+    "src/types.ts": {
+      "sha256": "0fe1403f43f03949f09f739caac6ffa34c41cc5635ab0c2f2164883a34cca03f",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "export interface SimulationOptions {\n  mode?: SimulationMode;",
+          "export interface SimulationOptions {\n  // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.\n  rng?: import(\"./effects\").Rng;\n  mode?: SimulationMode;"
+        ],
+        [
+          "  rng?: import(\"./effects\").Rng;\n  mode?: SimulationMode;",
+          "  rng?: import(\"./effects\").Rng;\n  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  mode?: SimulationMode;"
+        ],
+        [
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;",
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  attackScheduling?: \"side-local\" | \"reference\";"
+        ],
+        [
+          "  attackScheduling?: \"side-local\" | \"reference\";",
+          "  attackScheduling?: \"side-local\" | \"reference\";\n  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;"
+        ],
+        [
+          "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;",
+          "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;\n  deferAttackSkill?: import(\"./runtime\").DeferAttackSkill;"
+        ]
+      ]
+    },
+    "src/effects.ts": {
+      "sha256": "6753394c5649830c2f3dccf0bd9d93cdeb7788098d6b3e498fc420bb74dddd2b",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "export type Rng = () => number;",
+          "export interface RandomContext {\n  skill: ResolvedSkill;\n  round: number;\n  phase: \"battle_start\" | \"round_start\" | \"attack_declared\";\n  intent?: AttackIntent;\n}\nexport type Rng = (() => number) & {\n  chance?: (probabilityPct: number, context?: RandomContext) => boolean;\n};"
+        ],
+        [
+          "export function chancePasses(skill: ResolvedSkill, rng: Rng): boolean {",
+          "export function chancePasses(skill: ResolvedSkill, rng: Rng, context?: RandomContext): boolean {"
+        ],
+        [
+          "  return rng() < value / 100;",
+          "  return rng.chance ? rng.chance(value, context) : rng() < value / 100;"
+        ],
+        [
+          "  phase: \"battle_start\" | \"round_start\" | \"attack_declared\";",
+          "  phase: \"battle_start\" | \"round_start\" | \"attack_declared\" | \"extra_attack\";"
+        ],
+        [
+          "\"attack_declared\" | \"extra_attack\";",
+          "\"attack_declared\" | \"extra_attack\" | \"before_target\";"
+        ],
+        [
+          "\"extra_attack\" | \"before_target\";",
+          "\"extra_attack\" | \"before_target\" | \"empty_unit\";"
+        ]
+      ]
+    },
+    "src/runtime.ts": {
+      "sha256": "03e6b8c0863f4feae889cc72cf916cba2c7fef3681ca6a553b62ad2d061e7a07",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "  type Rng\n",
+          "  type Rng,\n  type RandomContext\n"
+        ],
+        [
+          "chancePasses(skill, runtime.rng)",
+          "chancePasses(skill, runtime.rng, {skill, round, phase: triggerType, intent})"
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng)",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"attack_declared\", intent})"
+        ],
+        [
+          "export function preparedChancePasses(probabilityPct: number, rng: Rng): boolean {",
+          "export function preparedChancePasses(probabilityPct: number, rng: Rng, context?: RandomContext): boolean {"
+        ],
+        [
+          "  return rng() < probabilityPct / 100;",
+          "  return rng.chance ? rng.chance(probabilityPct, context) : rng() < probabilityPct / 100;"
+        ],
+        [
+          "export interface RunLoopOptions {\n",
+          "export type BeforeExtraAttack = (job: DamageJob, intent: AttackIntent, runtime: Runtime, recorder: BattleRecorder) => void;\n\nexport interface RunLoopOptions {\n  beforeExtraAttack?: BeforeExtraAttack;\n"
+        ],
+        [
+          "  intent: AttackIntent\n): DeferredEffectPlan[] | undefined {",
+          "  intent: AttackIntent,\n  phase: RandomContext[\"phase\"] = \"attack_declared\"\n): DeferredEffectPlan[] | undefined {"
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"attack_declared\", intent})",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase, intent})"
+        ],
+        [
+          "export interface RunLoopOptions {",
+          "export type OnEmptyUnit = (round: number, side: SideId, unit: UnitType, runtime: Runtime, recorder: BattleRecorder) => void;\n\nexport interface RunLoopOptions {"
+        ],
+        [
+          "export interface RunLoopOptions {",
+          "// Optional policy: delay selected declarations until the normal attack and its existing extras finish.\nexport type DeferAttackSkill = (prepared: PreparedAttackSkill, intent: AttackIntent) => boolean;\n\nexport interface RunLoopOptions {"
+        ]
+      ]
+    },
+    "src/simulator.ts": {
+      "sha256": "6cff9b103c658eb8317173d25824b0cbd0d9dfa9183f8b15bb6af3a02a169416",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "  preBattleEffects: ActiveEffect[]\n): Runtime {\n  const runtime = createRuntime(fighters, createSeededRng(seed), runtimeSkills, staticProfile);",
+          "  preBattleEffects: ActiveEffect[],\n  rng?: Rng\n): Runtime {\n  const runtime = createRuntime(fighters, rng ?? createSeededRng(seed), runtimeSkills, staticProfile);"
+        ],
+        [
+          "runtimeSkills, staticProfile, preBattleEffects);\n  return runLoop(",
+          "runtimeSkills, staticProfile, preBattleEffects, options.rng);\n  return runLoop("
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng)",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"round_start\"})"
+        ],
+        [
+          "  return runLoop(input, fighters, runtime, recorder, options, loopOptions);",
+          "  return runLoop(input, fighters, runtime, recorder, options, {...loopOptions, beforeExtraAttack: options.beforeExtraAttack});"
+        ],
+        [
+          "    triggerRoundStartSkills(round, runtime, recorder);",
+          "    const sideLocal = options.attackScheduling === \"side-local\";\n    triggerRoundStartSkills(round, runtime, recorder, prepared => !sideLocal || prepared.skill.id !== \"Ambusher\");"
+        ],
+        [
+          "    for (const dealerUnit of UNIT_TYPES) {\n      for (const side of [\"attacker\", \"defender\"] as SideId[]) {",
+          "    const sides: SideId[] = [\"attacker\", \"defender\"];\n    const slots = sideLocal ? sides.flatMap(side => UNIT_TYPES.map(dealerUnit => ({side, dealerUnit})))\n      : UNIT_TYPES.flatMap(dealerUnit => sides.map(side => ({side, dealerUnit})));\n    for (const {dealerUnit, side} of slots) {"
+        ],
+        [
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;\n        const ordered = orderFromEffects",
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;\n        if (sideLocal && dealerUnit === \"lancer\") triggerRoundStartSkills(round, runtime, recorder,\n          prepared => prepared.skill.id === \"Ambusher\" && prepared.skill.side === side, \"before_target\");\n        const ordered = orderFromEffects"
+        ],
+        [
+          "      }\n    }\n\n    if (loopOptions.commitLosses) commitRound(results, runtime);",
+          "    }\n\n    if (loopOptions.commitLosses) commitRound(results, runtime);"
+        ],
+        [
+          "function triggerRoundStartSkills(\n  round: number,\n  runtime: Runtime,\n  recorder: BattleRecorder\n): ActiveEffect[] {",
+          "function triggerRoundStartSkills(\n  round: number,\n  runtime: Runtime,\n  recorder: BattleRecorder,\n  include: (prepared: Runtime[\"skills\"][\"roundStart\"][number]) => boolean = () => true,\n  phase: import(\"./effects\").RandomContext[\"phase\"] = \"round_start\"\n): ActiveEffect[] {"
+        ],
+        [
+          "  for (const prepared of runtime.skills.roundStart) {\n    if (!preparedRoundFrequencyMatches",
+          "  for (const prepared of runtime.skills.roundStart) {\n    if (!include(prepared)) continue;\n    if (!preparedRoundFrequencyMatches"
+        ],
+        [
+          "{skill, round, phase: \"round_start\"}",
+          "{skill, round, phase}"
+        ],
+        [
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;",
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) {\n          options.onEmptyUnit?.(round, side, dealerUnit, runtime, recorder);\n          continue;\n        }"
+        ],
+        [
+          "        const deferredEffects = matchingTriggerSkills\n          ? triggerAttackSkills(round, matchingTriggerSkills, runtime, recorder, intent)\n          : undefined;",
+          "        const delayedSkills = options.deferAttackSkill\n          ? matchingTriggerSkills?.filter(prepared => options.deferAttackSkill!(prepared, intent))\n          : undefined;\n        const immediateSkills = delayedSkills?.length\n          ? matchingTriggerSkills!.filter(prepared => !delayedSkills.includes(prepared))\n          : matchingTriggerSkills;\n        let deferredEffects = immediateSkills\n          ? triggerAttackSkills(round, immediateSkills, runtime, recorder, intent)\n          : undefined;"
+        ],
+        [
+          "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);",
+          "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);\n        if (delayedSkills?.length) {\n          const existingExtras = new Set(runtime.effectIndex.extraAttacks);\n          const delayedEffects = triggerAttackSkills(round, delayedSkills, runtime, recorder, intent);\n          if (delayedEffects) deferredEffects = [...(deferredEffects ?? []), ...delayedEffects];\n          // Only the new activation belongs to this second dispatch. Persistent hero\n          // extras already ran above and must not run or advance their delay again.\n          const newExtras = runtime.effectIndex.extraAttacks.filter(effect => !existingExtras.has(effect));\n          const delayedAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions,\n            roundTargetDamage, loopOptions, results, newExtras);\n          extraAttacks.totalKills += delayedAttacks.totalKills;\n          extraAttacks.skillKills += delayedAttacks.skillKills;\n        }"
+        ]
+      ]
+    },
+    "src/extraAttacks.ts": {
+      "sha256": "7457d7fa39b62978da3f130bdf7ecea2444067679aeb1320921c1c5f3d3ccadf",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "            recorder.recordScheduledDamageJob(job);\n            const result = calculateDamageJob(job, fighters, damageJobOptions);",
+          "            loopOptions.beforeExtraAttack?.(job, intent, runtime, recorder);\n            recorder.recordScheduledDamageJob(job);\n            const result = calculateDamageJob(job, fighters, damageJobOptions);"
+        ],
+        [
+          "  results: DamageJobResult[]\n): { totalKills: number; skillKills: number } {",
+          "  results: DamageJobResult[],\n  selectedEffects?: readonly ActiveEffect[]\n): { totalKills: number; skillKills: number } {"
+        ],
+        [
+          "  const effects = runtime.effectIndex.extraAttacks.filter(",
+          "  const effects = (selectedEffects ?? runtime.effectIndex.extraAttacks).filter("
+        ]
+      ]
+    }
+  }
+}

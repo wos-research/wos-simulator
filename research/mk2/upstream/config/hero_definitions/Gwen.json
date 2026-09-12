@@ -1,0 +1,146 @@
+{
+  "name": "Gwen",
+  "hero_generation": "S5",
+  "troop_type": "marksman",
+  "skills": {
+    "EagleVision": {
+      "description": "Increasing target's damage taken by X%",
+      "trigger": {
+        "type": "attack",
+        "source": "self.any"
+      },
+      "effects": {
+        "EagleVision/1": {
+          "type": "active.hero.damageTaken.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "units": {
+            "applies_to": "enemy.any"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1,
+              "delay": 1
+            }
+          }
+        }
+      }
+    },
+    "AirDominance": {
+      "description": "Grants all troops' attack X% extra damage after every 5 attacks and causes the target to receive X% extra damage for its next attack received",
+      "trigger": {
+        "type": "attack",
+        "first": 5,
+        "every": 6,
+        "source": "self.any"
+      },
+      "effects": {
+        "AirDominance/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "use.target"
+            }
+          ]
+        },
+        "AirDominance/2": {
+          "type": "active.hero.damageTaken.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ],
+          "units": {
+            "applies_to": "trigger.target"
+          },
+          "same_effect_stacking": "max",
+          "duration": {
+            "turns": {
+              "count": 1,
+              "delay": 1
+            },
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "Blastmaster": {
+      "description": "Gwen equips her Marksmen with grenades, dealing X% extra damage to all enemies on the next attack of every 4 attacks",
+      "trigger": {
+        "type": "attack",
+        "first": 5,
+        "every": 4,
+        "source": "marksman"
+      },
+      "effects": {
+        "Blastmaster/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "units": {
+            "applies_to": [
+              "marksman"
+            ]
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "enemy.living"
+            }
+          ]
+        }
+      }
+    },
+    "LethalPrecision": {
+      "description": "Widget bonus: Increase Lethality by X% for all troops when attacking",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "rally"
+        }
+      ],
+      "effects": {
+        "LethalPrecision/1": {
+          "type": "passive.lethality.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

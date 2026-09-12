@@ -1,0 +1,133 @@
+{
+  "name": "Mia",
+  "hero_generation": "S3",
+  "troop_type": "lancer",
+  "skills": {
+    "BadLuckStreak": {
+      "description": "Grants all troops attack a 50% chance of cursing the target, increasing their damage taken by X%",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "effects": {
+        "BadLuckStreak/1": {
+          "type": "active.hero.damageTaken.up",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "units": {
+            "applies_to": "target"
+          },
+          "duration": {
+            "turns": {
+              "count": 1,
+              "delay": 1
+            }
+          },
+          "same_effect_stacking": "max"
+        }
+      }
+    },
+    "LuckyCharm": {
+      "description": "Grants a 50% chance of boosting troops' Attack by X%",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "effects": {
+        "LuckyCharm/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "any"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "use.target"
+            }
+          ]
+        }
+      }
+    },
+    "RitualDeciphering": {
+      "description": "Grants a 40% chance of reducing damage taken by X% for all troops",
+      "trigger": {
+        "type": "turn",
+        "probability": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "effects": {
+        "RitualDeciphering/1": {
+          "type": "active.hero.damageTaken.down",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "duration": {
+            "turns": {
+              "count": 1
+            }
+          },
+          "same_effect_stacking": "max"
+        }
+      }
+    },
+    "PrecisionDrive": {
+      "description": "Widget bonus: Increase Attack by X% for all troops when attacking",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "rally"
+        }
+      ],
+      "effects": {
+        "PrecisionDrive/1": {
+          "type": "passive.attack.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

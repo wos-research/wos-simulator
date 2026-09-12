@@ -1,0 +1,36 @@
+{
+  "name": "Lumak",
+  "aliases": ["Lumak Bokan"],
+  "hero_generation": "SR",
+  "troop_type": "lancer",
+  "skills": {
+    "TacticalDeception": {
+      "description": "All enemy troops' damage dealt is reduced by X%",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "TacticalDeception/1": {
+          "type": "active.hero.damage.down",
+          "value": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "units": {
+            "applies_to": "enemy.any"
+          }
+        }
+      }
+    },
+    "NonCombatPlaceholder": {
+      "description": "Placeholder skill to satisfy simulator config for non-combat hero data",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {}
+    }
+  }
+}

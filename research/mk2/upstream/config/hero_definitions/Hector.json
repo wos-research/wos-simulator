@@ -1,0 +1,158 @@
+{
+  "name": "Hector",
+  "hero_generation": "S5",
+  "troop_type": "infantry",
+  "skills": {
+    "SurvivalInstincts": {
+      "description": "Hector's presence grants a 40% chance of reducing damage taken by X% for all troops",
+      "trigger": {
+        "type": "turn",
+        "probability": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "effects": {
+        "SurvivalInstincts/1": {
+          "type": "active.hero.damageTaken.down",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "duration": {
+            "turns": {
+              "count": 1
+            }
+          },
+          "same_effect_stacking": "max"
+        }
+      }
+    },
+    "Rampant": {
+      "description": "Increases infantry's damage dealt by X% and marksmen's damage dealt by X%, it is effective for 10 attacks, with each attack's damage boost being 85% of the previous one.",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "Rampant/1": {
+          "type": "active.hero.damage.up",
+          "value": [
+            100,
+            125,
+            150,
+            175,
+            200
+          ],
+          "units": {
+            "applies_to": [
+              "infantry"
+            ],
+            "applies_vs": "any"
+          },
+          "duration": {
+            "attacks": {
+              "count": 10
+            }
+          },
+          "value_evolution": {
+            "type": "pct_decay",
+            "step": "attack",
+            "value": 15
+          }
+        },
+        "Rampant/2": {
+          "type": "active.hero.damage.up",
+          "value": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "units": {
+            "applies_to": [
+              "marksman"
+            ],
+            "applies_vs": "any"
+          },
+          "duration": {
+            "attacks": {
+              "count": 10
+            }
+          },
+          "value_evolution": {
+            "type": "pct_decay",
+            "step": "attack",
+            "value": 15
+          }
+        }
+      }
+    },
+    "Blitz": {
+      "description": "Grants all troops' attack a 25% chance of dealing X% damage",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "effects": {
+        "Blitz/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "effect.applies_vs"
+            }
+          ]
+        }
+      }
+    },
+    "BulwarkCommander": {
+      "description": "Widget bonus: Increase Attack by X% for all troops when defending",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "garrison"
+        }
+      ],
+      "effects": {
+        "BulwarkCommander/1": {
+          "type": "passive.attack.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

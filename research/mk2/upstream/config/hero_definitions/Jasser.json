@@ -1,0 +1,32 @@
+{
+  "name": "Jasser",
+  "hero_generation": "SR",
+  "troop_type": "marksman",
+  "skills": {
+    "TacticalGenius": {
+      "description": "Increasing damage dealt by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "TacticalGenius/1": {
+          "type": "active.hero.lethality.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "NonCombatPlaceholder": {
+      "description": "Placeholder skill to satisfy simulator config for non-combat hero data",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {}
+    }
+  }
+}

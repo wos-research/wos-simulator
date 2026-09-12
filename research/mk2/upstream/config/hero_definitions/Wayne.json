@@ -1,0 +1,155 @@
+{
+  "name": "Wayne",
+  "hero_generation": "S6",
+  "troop_type": "marksman",
+  "skills": {
+    "ThunderStrike": {
+      "description": "Wayne's brilliant battle planning allows all troops to launch an extra attack every 4 turns, dealing X% damage.",
+      "trigger": {
+        "type": "turn",
+        "every": 4
+      },
+      "effects": {
+        "ThunderStrike/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "units": {
+            "applies_to": "self.any",
+            "applies_vs": "enemy.any"
+          },
+          "duration": {
+            "turns": {
+              "count": 1
+            }
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "use.target"
+            }
+          ]
+        }
+      }
+    },
+    "RoundaboutHit": {
+      "description": "Wayne's stratagems can pierce the thickest of defenses. On every other attack, his Marksmen deal X% extra damage to enemy Lancers and Y% extra damage to enemy Marksmen.",
+      "trigger": {
+        "type": "attack",
+        "every": 2,
+        "source": "marksman"
+      },
+      "effects": {
+        "RoundaboutHit/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "any"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": [
+                "lancer"
+              ]
+            }
+          ]
+        },
+        "RoundaboutHit/2": {
+          "type": "extra_skill_attack",
+          "value": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "any"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": [
+                "marksman"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "Fleet": {
+      "description": "Wayne ensures no misstep goes unpunished with an eagle's eye for weakness, granting all troops' attacks a X% Crit Rate.",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "effects": {
+        "Fleet/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            100,
+            100,
+            100,
+            100,
+            100
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "use.target"
+            }
+          ]
+        }
+      }
+    },
+    "TacticalEdge": {
+      "description": "Widget bonus: Increase Lethality by X% for all troops when defending",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "garrison"
+        }
+      ],
+      "effects": {
+        "TacticalEdge/1": {
+          "type": "passive.lethality.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

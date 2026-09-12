@@ -1,0 +1,58 @@
+{
+  "name": "Bahiti",
+  "hero_generation": "SR",
+  "troop_type": "marksman",
+  "skills": {
+    "SixthSense": {
+      "description": "Reducing damage taken by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "SixthSense/1": {
+          "type": "active.hero.damageTaken.down",
+          "value": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ]
+        }
+      }
+    },
+    "Fluorescence": {
+      "description": "Grants all troops' attack a 50% chance of increasing damage dealt by X%",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "effects": {
+        "Fluorescence/1": {
+          "type": "active.hero.lethality.up",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "units": {
+            "applies_to": "trigger.source"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Natalia",
+  "hero_generation": "S1_natalia",
+  "troop_type": "infantry",
+  "skills": {
+    "WildlingRoar": {
+      "description": "granting a 40% chance of reducing all troops' Damage taken by X%",
+      "trigger": {
+        "type": "turn",
+        "probability": [
+          40,
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      "effects": {
+        "WildlingRoar/1": {
+          "type": "active.hero.damageTaken.down",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "units": {
+            "applies_to": "all"
+          },
+          "duration": {
+            "turns": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "QueenOfTheWild": {
+      "description": "Increasing Attack by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "QueenOfTheWild/1": {
+          "type": "active.hero.attack.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "CallOfTheWild": {
+      "description": "Increasing damage dealt by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "CallOfTheWild/1": {
+          "type": "active.hero.lethality.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "GaleForce": {
+      "description": "Widget bonus: Increase Lethality by X% for all troops when defending",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "rally"
+        }
+      ],
+      "effects": {
+        "GaleForce/1": {
+          "type": "passive.lethality.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

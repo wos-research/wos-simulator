@@ -1,0 +1,38 @@
+import { readdirSync, readFileSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { buildSimulatorConfig, type RawSimulatorConfig } from "./config";
+import type { SimulatorConfig, SkillFile } from "./types";
+
+export const DEFAULT_CONFIG_DIR = fileURLToPath(
+  new URL("../config", import.meta.url),
+);
+
+export function loadSimulatorConfig(): SimulatorConfig {
+  return loadSimulatorConfigFromDir(DEFAULT_CONFIG_DIR);
+}
+
+export function loadSimulatorConfigFromDir(configDir: string): SimulatorConfig {
+  const root = resolve(configDir);
+  const heroDir = join(root, "hero_definitions");
+  const heroDefinitions: Record<string, SkillFile> = {};
+  for (const file of readdirSync(heroDir).filter((name) => name.endsWith(".json")).sort()) {
+    heroDefinitions[file.slice(0, -".json".length)] = readJson(join(heroDir, file)) as SkillFile;
+  }
+  const raw: RawSimulatorConfig = {
+    heroGenerationStats: readJson(join(root, "hero_generation_stats.json")) as SimulatorConfig["heroGenerationStats"],
+    troopSkills: readJson(join(root, "troop_skills.json")) as SkillFile,
+    heroDefinitions,
+    fileLabel(kind, key) {
+      if (kind === "hero_definition") return relative(process.cwd(), join(heroDir, `${key}.json`));
+      if (kind === "hero_generation_stats") return relative(process.cwd(), join(root, "hero_generation_stats.json"));
+      return relative(process.cwd(), join(root, "troop_skills.json"));
+    }
+  };
+  return buildSimulatorConfig(raw);
+}
+
+function readJson(path: string): unknown {
+  return JSON.parse(readFileSync(path, "utf8"));
+}

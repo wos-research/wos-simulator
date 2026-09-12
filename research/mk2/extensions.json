@@ -1,0 +1,4717 @@
+{
+  "schema": 1,
+  "heroDefinitions": {
+    "Eleonora": {
+      "name": "Eleonora",
+      "troop_type": "infantry",
+      "experimental": true,
+      "skills": {
+        "500444": {
+          "description": "Eleonora inspires all troops with her royal aura and sense of honor, increasing their Health by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500444/1": {
+              "type": "active.hero.health.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500445": {
+          "description": "Eleonora deploys a balanced formation, reducing damage taken by %{n1}% for her Infantries and increasing damage dealt by %{n2}% for her Marksmen.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500445/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            },
+            "500445/2": {
+              "type": "active.hero.damage.up",
+              "value": [
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0
+              ],
+              "units": {
+                "applies_to": [
+                  "marksman"
+                ]
+              }
+            }
+          }
+        },
+        "500446": {
+          "description": "Eleonora strikes fear into her enemies with her fierce assaults, increasing all troops' damage dealt by %{n1}% and reducing their damage taken by %{n2}% every 5 attacks made by Infantry for 2 turns.",
+          "trigger": {
+            "type": "attack",
+            "source": "infantry",
+            "every": 5
+          },
+          "effects": {
+            "500446/1": {
+              "type": "active.hero.damage.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 2
+                }
+              },
+              "same_effect_stacking": "max"
+            },
+            "500446/2": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 2
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500448": {
+          "description": "Eleonora fights every battle like her last, inspiring Defender Troops and increasing their Health by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500448/1": {
+              "type": "passive.health.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Lloyd": {
+      "name": "Lloyd",
+      "troop_type": "lancer",
+      "experimental": true,
+      "skills": {
+        "500454": {
+          "description": "Lloyd summons a large number of mechanical birds to disrupt enemies, reducing their Lethality by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500454/1": {
+              "type": "active.hero.lethality.down",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              }
+            }
+          }
+        },
+        "500455": {
+          "description": "Lloyd prepares special bomb for all Lancers, which detonates every 3 turns, increases their attack by %{n1}% and releases frosty mist that reduces all Enemy Troop's Lethality by %{n2}% for 1 turn.",
+          "trigger": {
+            "type": "turn",
+            "every": 3
+          },
+          "effects": {
+            "500455/1": {
+              "type": "active.hero.attack.up",
+              "value": [
+                30.0,
+                60.0,
+                90.0,
+                120.0,
+                150.0
+              ],
+              "units": {
+                "applies_to": [
+                  "lancer"
+                ]
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            },
+            "500455/2": {
+              "type": "active.hero.lethality.down",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500456": {
+          "description": "Lloyd works to equips his forces with unstable by interesting creations, granting a 40% chance to increase all Troops' Lethality by %{n1}%.",
+          "trigger": {
+            "type": "turn",
+            "probability": 40
+          },
+          "effects": {
+            "500456/1": {
+              "type": "active.hero.lethality.up",
+              "value": [
+                10.0,
+                20.0,
+                30.0,
+                40.0,
+                50.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500458": {
+          "description": "Lloyd installs traps on the barricade to assist in the defense, increasing Defender Troops' Attack by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500458/1": {
+              "type": "passive.attack.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Rufus": {
+      "name": "Rufus",
+      "troop_type": "marksman",
+      "experimental": true,
+      "skills": {
+        "500464": {
+          "description": "Rufus uses his bold leadership to transform all troops into blazing flames on the battlefield, increasing their Attack by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500464/1": {
+              "type": "active.hero.attack.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500465": {
+          "description": "Rufus equips his Marksmen with armor-piercing rounds, dealing %{n1}% extra damage for each attack and increases the target's damage taken by %{n2}% for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "marksman"
+          },
+          "effects": {
+            "500465/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                12.0,
+                24.0,
+                36.0,
+                48.0,
+                60.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ]
+            },
+            "500465/2": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500466": {
+          "description": "Rufus' aggressive combat style grants all troops a 20% chance to intimidate enemies, reducing target Lethality by %{n1}% for 2 turns.",
+          "trigger": {
+            "type": "attack",
+            "source": "self.any",
+            "probability": 20
+          },
+          "effects": {
+            "500466/1": {
+              "type": "active.hero.lethality.down",
+              "value": [
+                10.0,
+                20.0,
+                30.0,
+                40.0,
+                50.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 2
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500468": {
+          "description": "Rufus rallies his troops under his phoenix banner, increasing their Attack by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500468/1": {
+              "type": "passive.attack.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "rally"
+            }
+          ]
+        }
+      }
+    },
+    "Hervor": {
+      "name": "Hervor",
+      "troop_type": "infantry",
+      "experimental": true,
+      "skills": {
+        "500474": {
+          "description": "Hervor's heartfelt war cry ignites fearlessness in her soldiers, increasing all troops' Lethality by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500474/1": {
+              "type": "active.hero.lethality.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500475": {
+          "description": "The enemy menace pales beside Hervor's icy homeland, her Infantry's Damage Taken from Normal Attacks is reduced by %{n1}% and %{n2}% from enemy skills.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500475/1": {
+              "type": "type.normal.damageTaken.down",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            },
+            "500475/2": {
+              "type": "type.skill.damageTaken.down",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            }
+          }
+        },
+        "500476": {
+          "description": "Hervor and her Infantry are singularly devoted to the idea of battle, reducing her Infantry's damage taken by %{n1}% and increasing their damage dealt by %{n2}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500476/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                3.0,
+                6.0,
+                9.0,
+                12.0,
+                15.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            },
+            "500476/2": {
+              "type": "active.hero.damage.up",
+              "value": [
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            }
+          }
+        },
+        "500478": {
+          "description": "Hervor's reforges defenders in her unyielding image, increasing Defender Troops' Defense by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500478/1": {
+              "type": "passive.defense.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Karol": {
+      "name": "Karol",
+      "troop_type": "lancer",
+      "experimental": true,
+      "skills": {
+        "500484": {
+          "description": "A great offence is a great defense in the case of Karol's cavalry diversions, reducing all troops' damage taken by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500484/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500485": {
+          "description": "Karol knows exactly where enemy infantry are weakest against forces like his own, increasing all troops' Damage Dealt to Lancers by %{n1}% and %{n2}% to Infantry.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500485/1": {
+              "type": "active.hero.damage.up",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "self.any",
+                "applies_vs": [
+                  "lancer"
+                ]
+              }
+            },
+            "500485/2": {
+              "type": "active.hero.damage.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "self.any",
+                "applies_vs": [
+                  "infantry"
+                ]
+              }
+            }
+          }
+        },
+        "500486": {
+          "description": "Karol has turned the lessons of past brigades into a roadmap for victory, increasing all Troops' Attack by %{n1}% and Defense by %{n2}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500486/1": {
+              "type": "active.hero.attack.up",
+              "value": [
+                3.0,
+                6.0,
+                9.0,
+                12.0,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            },
+            "500486/2": {
+              "type": "active.hero.defense.up",
+              "value": [
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500488": {
+          "description": "Karol's Eagle Brigade often relies on combined arms, enhancing his Rally Squad Attack by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500488/1": {
+              "type": "passive.attack.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "rally"
+            }
+          ]
+        }
+      }
+    },
+    "Ligeia": {
+      "name": "Ligeia",
+      "troop_type": "marksman",
+      "experimental": true,
+      "skills": {
+        "500494": {
+          "description": "Ligeia unleashes a swarm of biting Mech-spiders against well-armored foes, reducing all enemy Defense by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500494/1": {
+              "type": "active.hero.defense.down",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              }
+            }
+          }
+        },
+        "500495": {
+          "description": "Ligeia adds Mech-spiders to Marksmen's fire, dealing %{n1}% extra damage every 2 attacks; spider acid dissolves enemy armor, amplifying target damage received by %{n2}% for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "marksman",
+            "every": 2
+          },
+          "effects": {
+            "500495/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                20.0,
+                40.0,
+                60.0,
+                80.0,
+                100.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ]
+            },
+            "500495/2": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500496": {
+          "description": "Ligeia dips Marksmen arrowheads in spider toxin, increasing Marksmen's damage by %{n1}% against the target every 2 attacks while reducing the target's damage dealt by %{n2}% for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "marksman",
+            "every": 2
+          },
+          "effects": {
+            "500496/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                20.0,
+                40.0,
+                60.0,
+                80.0,
+                100.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ]
+            },
+            "500496/2": {
+              "type": "active.hero.damage.down",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500498": {
+          "description": "Ligeia knows traps, particularly when she has time to prepare them herself, increasing Defender Troops' Lethality by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500498/1": {
+              "type": "passive.lethality.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Gisela": {
+      "name": "Gisela",
+      "troop_type": "infantry",
+      "experimental": true,
+      "skills": {
+        "500504": {
+          "description": "Gisela's advanced tech increases Infantry Defense by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500504/1": {
+              "type": "active.hero.defense.up",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            }
+          }
+        },
+        "500505": {
+          "description": "Gisela is a master of defensive scavenging. Infantry under Gisela's command have a 40% chance of increasing all Troops' Defense by %{n1}% for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "infantry",
+            "probability": 40
+          },
+          "effects": {
+            "500505/1": {
+              "type": "active.hero.defense.up",
+              "value": [
+                10.0,
+                20.0,
+                30.0,
+                40.0,
+                50.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500506": {
+          "description": "Gisela provides an experimental version of her shield to all troops, granting a 40% chance of reducing Damage Taken by %{n1}% for all troops.",
+          "trigger": {
+            "type": "turn",
+            "probability": 40
+          },
+          "effects": {
+            "500506/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                10.0,
+                20.0,
+                30.0,
+                40.0,
+                50.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500508": {
+          "description": "Gisela's forays into the field of auto-turrets enhances Defender Troops' Attack by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500508/1": {
+              "type": "passive.attack.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Flora": {
+      "name": "Flora",
+      "troop_type": "lancer",
+      "experimental": true,
+      "skills": {
+        "500514": {
+          "description": "Flora litters the ground with sharp vines to hobble enemy soldiers, granting all troops a 50% chance of increasing enemies' Damage Taken by %{n1}%.",
+          "trigger": {
+            "type": "attack",
+            "source": "self.any",
+            "probability": 50
+          },
+          "effects": {
+            "500514/1": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                10.0,
+                20.0,
+                30.0,
+                40.0,
+                50.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500515": {
+          "description": "Flora's defensive foliage reduces Infantry Damage Taken by %{n1}% while better Adoria Rose coordination with Lancers gives joint attacks dealing %{n2}% extra damage.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500515/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry"
+                ]
+              }
+            },
+            "500515/2": {
+              "type": "extra_skill_attack",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": [
+                  "lancer"
+                ]
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ],
+              "duration": {}
+            }
+          }
+        },
+        "500516": {
+          "description": "Flora's hallucinatory pollen increases enemy Infantry's Damage Taken by %{n1}%, and decreases enemy Marksmen's Damage Dealt by %{n2}% for 2 turns every 4 turns.",
+          "trigger": {
+            "type": "turn",
+            "every": 4
+          },
+          "effects": {
+            "500516/1": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "enemy.infantry"
+              },
+              "duration": {
+                "turns": {
+                  "count": 2
+                }
+              },
+              "same_effect_stacking": "max"
+            },
+            "500516/2": {
+              "type": "active.hero.damage.down",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "enemy.marksman"
+              },
+              "duration": {
+                "turns": {
+                  "count": 2
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500518": {
+          "description": "Flora's new fruit is highly rejuvenating, granting Defender Troops %{n1}% increased Health.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500518/1": {
+              "type": "passive.health.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Vulcanus": {
+      "name": "Vulcanus",
+      "troop_type": "marksman",
+      "experimental": true,
+      "skills": {
+        "500524": {
+          "description": "Vulcanus is skilled in the arts of terror and manipulation, reducing all enemy troops' Attack by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500524/1": {
+              "type": "active.hero.attack.down",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              }
+            }
+          }
+        },
+        "500525": {
+          "description": "There's no steel like the blades in Vulcanus' armory, empowering all troops to deal %{n1}% extra damage after every 5 attacks, and increasing damage taken for the target by %{n2}% in the next attack.",
+          "trigger": {
+            "type": "attack",
+            "source": "self.any",
+            "every": 6
+          },
+          "effects": {
+            "500525/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                20.0,
+                40.0,
+                60.0,
+                80.0,
+                100.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ]
+            },
+            "500525/2": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                },
+                "attacks": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500526": {
+          "description": "Vulcanus' modified armor-piercing arrows reduce enemy Infantry and Lancer Defense by %{n1}% every 3 turns and increase our Marksmen's Attack by %{n2}% for 1 turn.",
+          "trigger": {
+            "type": "turn",
+            "every": 3
+          },
+          "effects": {
+            "500526/1": {
+              "type": "active.hero.defense.down",
+              "value": [
+                12.0,
+                24.0,
+                36.0,
+                48.0,
+                60.0
+              ],
+              "units": {
+                "applies_to": "enemy.infantry"
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            },
+            "500526/2": {
+              "type": "active.hero.defense.down",
+              "value": [
+                12.0,
+                24.0,
+                36.0,
+                48.0,
+                60.0
+              ],
+              "units": {
+                "applies_to": "enemy.lancer"
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            },
+            "500526/3": {
+              "type": "active.hero.attack.up",
+              "value": [
+                12.0,
+                24.0,
+                36.0,
+                48.0,
+                60.0
+              ],
+              "units": {
+                "applies_to": [
+                  "marksman"
+                ]
+              },
+              "duration": {
+                "turns": {
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500528": {
+          "description": "Vulcanus' sense of confidence and unstoppable momentum increases Rally Troops' Attack by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500528/1": {
+              "type": "passive.attack.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "rally"
+            }
+          ]
+        }
+      }
+    },
+    "Elif": {
+      "name": "Elif",
+      "troop_type": "infantry",
+      "experimental": true,
+      "skills": {
+        "500534": {
+          "description": "Elif entangles enemy weapons with her veil, reducing all enemy Troops' Attack by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500534/1": {
+              "type": "active.hero.attack.down",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              }
+            }
+          }
+        },
+        "500535": {
+          "description": "Elif applies an exotic formation on the tundra, increasing Troops' Attack by %{n1}% and Troops' Defense by %{n2}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500535/1": {
+              "type": "active.hero.attack.up",
+              "value": [
+                3.0,
+                6.0,
+                9.0,
+                12.0,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            },
+            "500535/2": {
+              "type": "active.hero.defense.up",
+              "value": [
+                2.0,
+                4.0,
+                6.0,
+                8.0,
+                10.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500536": {
+          "description": "Elif weaves ribbons into a curtain when her Infantry attacks, granting them a Shield with protection equal to Attack*%{n1}% for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "infantry"
+          },
+          "effects": {
+            "500536/1": {
+              "type": "active.hero.shield",
+              "value": [
+                6.0,
+                12.0,
+                18.0,
+                24.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "trigger.source",
+                "applies_vs": "enemy.any"
+              },
+              "value_formula": {
+                "type": "percent_of",
+                "source": "trigger.source_attack"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500538": {
+          "description": "Elif inspires the Defender Troops with a graceful dance, increasing their Defense by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500538/1": {
+              "type": "passive.defense.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    },
+    "Dominic": {
+      "name": "Dominic",
+      "troop_type": "lancer",
+      "experimental": true,
+      "skills": {
+        "500544": {
+          "description": "Dominic equips his troops with weapons cleverly crafted from magic props, increasing damage dealt by %{n1}% for all troops.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500544/1": {
+              "type": "active.hero.damage.up",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500545": {
+          "description": "Dominic equips his Lancers with secret devices that launch poisonous spikes, increasing their damage dealt per attack by %{n1}%. Poisoned targets receive %{n2}% more damage for 1 turn.",
+          "trigger": {
+            "type": "attack",
+            "source": "lancer"
+          },
+          "effects": {
+            "500545/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                12.0,
+                24.0,
+                36.0,
+                48.0,
+                60.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "use.target"
+                }
+              ]
+            },
+            "500545/2": {
+              "type": "active.hero.damageTaken.up",
+              "value": [
+                5.0,
+                10.0,
+                15.0,
+                20.0,
+                25.0
+              ],
+              "units": {
+                "applies_to": "trigger.target"
+              },
+              "duration": {
+                "turns": {
+                  "delay": 1,
+                  "count": 1
+                }
+              },
+              "same_effect_stacking": "max"
+            }
+          }
+        },
+        "500546": {
+          "description": "Dominic disrupts enemy strategies by performing optical tricks with a mirror, reducing damage taken by Infantry and Marksmen by %{n1}% and increasing their damage dealt by %{n2}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500546/1": {
+              "type": "active.hero.damageTaken.down",
+              "value": [
+                3.0,
+                6.0,
+                9.0,
+                12.0,
+                15.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry",
+                  "marksman"
+                ]
+              }
+            },
+            "500546/2": {
+              "type": "active.hero.damage.up",
+              "value": [
+                3.0,
+                6.0,
+                9.0,
+                12.0,
+                15.0
+              ],
+              "units": {
+                "applies_to": [
+                  "infantry",
+                  "marksman"
+                ]
+              }
+            }
+          }
+        },
+        "500548": {
+          "description": "Dominic turns the battlefield into his stage, increasing Rally Troops' Lethality by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500548/1": {
+              "type": "passive.lethality.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "rally"
+            }
+          ]
+        }
+      }
+    },
+    "Cara": {
+      "name": "Cara",
+      "troop_type": "marksman",
+      "experimental": true,
+      "skills": {
+        "500554": {
+          "description": "Cara drops smoke grenades from the air, hindering enemy attacks and reducing all enemies' Lethality by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500554/1": {
+              "type": "active.hero.lethality.down",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "enemy.any"
+              }
+            }
+          }
+        },
+        "500555": {
+          "description": "The Mech Pets crafted by Oestermore crafters join forces with the warriors, increasing normal attack damage by %{n1}% for all troops.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {
+            "500555/1": {
+              "type": "type.normal.damage.up",
+              "value": [
+                10.0,
+                15.0,
+                20.0,
+                25.0,
+                30.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          }
+        },
+        "500556": {
+          "description": "Thanks to Cara's flying broom, she effortlessly bypasses the enemy Infantry on the frontline. Her Marksmen deal %{n1}% extra damage to enemy Lancers and %{n2}% extra damage to enemy Marksmen every two attacks.",
+          "trigger": {
+            "type": "attack",
+            "source": "marksman",
+            "every": 2
+          },
+          "effects": {
+            "500556/1": {
+              "type": "extra_skill_attack",
+              "value": [
+                8.0,
+                16.0,
+                24.0,
+                32.0,
+                40.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "lancer"
+                }
+              ]
+            },
+            "500556/2": {
+              "type": "extra_skill_attack",
+              "value": [
+                4.0,
+                8.0,
+                12.0,
+                16.0,
+                20.0
+              ],
+              "units": {
+                "applies_to": "trigger.source"
+              },
+              "trigger_damage_jobs": [
+                {
+                  "source": "use.source",
+                  "target": "marksman"
+                }
+              ]
+            }
+          }
+        },
+        "500558": {
+          "description": "Cara defends the city like her hometown, inspiring the Defender Troops and increasing their Lethality by %{n1}%.",
+          "trigger": {
+            "type": "pre_battle"
+          },
+          "effects": {
+            "500558/1": {
+              "type": "passive.lethality.up",
+              "value": [
+                5.0,
+                7.5,
+                10.0,
+                12.5,
+                15.0
+              ],
+              "units": {
+                "applies_to": "self.any"
+              }
+            }
+          },
+          "requirements": [
+            {
+              "level": 1,
+              "type": "engagement_type",
+              "value": "garrison"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "nonCombatDefinitions": {
+    "Eugene": {
+      "name": "Eugene",
+      "skills": {
+        "500004": {
+          "description": "Eugene's consummate knowledge of timber processing has raised City Sawmill Output by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        },
+        "500005": {
+          "description": "Eugene is always focused on achieving the perfect logging technique. +%{n1}% Wood Gathering Speed on the map.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        }
+      }
+    },
+    "Smith": {
+      "name": "Smith",
+      "skills": {
+        "500014": {
+          "description": "Smith's contagious passion for the art of crafting has raised City Iron Mine Output by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        },
+        "500015": {
+          "description": "Smith has an extraordinary sixth sense when it comes to iron. +%{n1}% Iron Gathering Speed on the map.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        }
+      }
+    },
+    "Charlie": {
+      "name": "Charlie",
+      "skills": {
+        "500024": {
+          "description": "Charlie's precise demolition experience has raised City Coal Mine Output by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        },
+        "500025": {
+          "description": "Charlie is an old hand at coal mining. +%{n1}% Coal Gathering Speed on the map.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        }
+      }
+    },
+    "Cloris": {
+      "name": "Cloris",
+      "skills": {
+        "500034": {
+          "description": "Cloris, the tundra's best hunter, has single-handedly raised City Hunter's Hut Output by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        },
+        "500035": {
+          "description": "Cloris knows the ecosystem like the back of her hand. +%{n1}% Meat Gathering Speed on the map.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        }
+      }
+    },
+    "Gina": {
+      "name": "Gina",
+      "skills": {
+        "500084": {
+          "description": "Gina's strict Governor training regimen can be counted upon to reduce Stamina cost by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        },
+        "500085": {
+          "description": "Gina is a fast and aggressive wilderness rider, boosting Hunting March Speed by %{n1}%.",
+          "trigger": {
+            "type": "battle_start"
+          },
+          "effects": {}
+        }
+      }
+    }
+  },
+  "t12": {
+    "infantry_t12": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 0,
+      "axisRatios": {
+        "attack": 1.25,
+        "defense": 1.2,
+        "lethality": 1.25,
+        "health": 1.1764705882352942
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 0,
+        "atk": 15.0,
+        "def": 18.0,
+        "dmg": 15.0,
+        "hp": 20.0,
+        "power": 96.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 0,
+        "atk": 12.0,
+        "def": 15.0,
+        "dmg": 12.0,
+        "hp": 17.0,
+        "power": 80.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc1": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 1,
+      "axisRatios": {
+        "attack": 1.2307692307692308,
+        "defense": 1.1875,
+        "lethality": 1.25,
+        "health": 1.1666666666666667
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 1,
+        "atk": 16.0,
+        "def": 19.0,
+        "dmg": 15.0,
+        "hp": 21.0,
+        "power": 103.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 1,
+        "atk": 13.0,
+        "def": 16.0,
+        "dmg": 12.0,
+        "hp": 18.0,
+        "power": 86.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc2": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 2,
+      "axisRatios": {
+        "attack": 1.2142857142857142,
+        "defense": 1.1764705882352942,
+        "lethality": 1.2307692307692308,
+        "health": 1.1578947368421053
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 2,
+        "atk": 17.0,
+        "def": 20.0,
+        "dmg": 16.0,
+        "hp": 22.0,
+        "power": 110.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 2,
+        "atk": 14.0,
+        "def": 17.0,
+        "dmg": 13.0,
+        "hp": 19.0,
+        "power": 92.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc3": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 3,
+      "axisRatios": {
+        "attack": 1.2,
+        "defense": 1.1666666666666667,
+        "lethality": 1.2142857142857142,
+        "health": 1.15
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 3,
+        "atk": 18.0,
+        "def": 21.0,
+        "dmg": 17.0,
+        "hp": 23.0,
+        "power": 120.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 3,
+        "atk": 15.0,
+        "def": 18.0,
+        "dmg": 14.0,
+        "hp": 20.0,
+        "power": 100.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc4": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 4,
+      "axisRatios": {
+        "attack": 1.2,
+        "defense": 1.1578947368421053,
+        "lethality": 1.2,
+        "health": 1.1428571428571428
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 4,
+        "atk": 18.0,
+        "def": 22.0,
+        "dmg": 18.0,
+        "hp": 24.0,
+        "power": 127.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 4,
+        "atk": 15.0,
+        "def": 19.0,
+        "dmg": 15.0,
+        "hp": 21.0,
+        "power": 106.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc5": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 5,
+      "axisRatios": {
+        "attack": 1.1875,
+        "defense": 1.1363636363636365,
+        "lethality": 1.2,
+        "health": 1.1363636363636365
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 5,
+        "atk": 19.0,
+        "def": 25.0,
+        "dmg": 18.0,
+        "hp": 25.0,
+        "power": 137.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 5,
+        "atk": 16.0,
+        "def": 22.0,
+        "dmg": 15.0,
+        "hp": 22.0,
+        "power": 114.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc6": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 6,
+      "axisRatios": {
+        "attack": 1.1764705882352942,
+        "defense": 1.1304347826086956,
+        "lethality": 1.1875,
+        "health": 1.1304347826086956
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 6,
+        "atk": 20.0,
+        "def": 26.0,
+        "dmg": 19.0,
+        "hp": 26.0,
+        "power": 145.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 6,
+        "atk": 17.0,
+        "def": 23.0,
+        "dmg": 16.0,
+        "hp": 23.0,
+        "power": 120.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc7": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 7,
+      "axisRatios": {
+        "attack": 1.1764705882352942,
+        "defense": 1.125,
+        "lethality": 1.1875,
+        "health": 1.125
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 7,
+        "atk": 20.0,
+        "def": 27.0,
+        "dmg": 19.0,
+        "hp": 27.0,
+        "power": 154.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 7,
+        "atk": 17.0,
+        "def": 24.0,
+        "dmg": 16.0,
+        "hp": 24.0,
+        "power": 126.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90007": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc8": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 8,
+      "axisRatios": {
+        "attack": 1.1666666666666667,
+        "defense": 1.12,
+        "lethality": 1.1764705882352942,
+        "health": 1.12
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 8,
+        "atk": 21.0,
+        "def": 28.0,
+        "dmg": 20.0,
+        "hp": 28.0,
+        "power": 162.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 1,
+          "90011": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 8,
+        "atk": 18.0,
+        "def": 25.0,
+        "dmg": 17.0,
+        "hp": 25.0,
+        "power": 135.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 1,
+          "90011": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc9": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 9,
+      "axisRatios": {
+        "attack": 1.1666666666666667,
+        "defense": 1.1111111111111112,
+        "lethality": 1.1764705882352942,
+        "health": 1.1153846153846154
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 9,
+        "atk": 21.0,
+        "def": 30.0,
+        "dmg": 20.0,
+        "hp": 29.0,
+        "power": 170.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 1,
+          "90011": 1
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 9,
+        "atk": 18.0,
+        "def": 27.0,
+        "dmg": 17.0,
+        "hp": 26.0,
+        "power": 141.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 1,
+          "90011": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "infantry_t12_fc10": {
+      "type": "infantry",
+      "tier": 12,
+      "fc": 10,
+      "axisRatios": {
+        "attack": 1.1578947368421053,
+        "defense": 1.1071428571428572,
+        "lethality": 1.1666666666666667,
+        "health": 1.1111111111111112
+      },
+      "luaT12": {
+        "army_type": 1,
+        "level": 12,
+        "star": 10,
+        "atk": 22.0,
+        "def": 31.0,
+        "dmg": 21.0,
+        "hp": 30.0,
+        "power": 178.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 2,
+          "90011": 2
+        },
+        "refine_speciality": 90015
+      },
+      "luaT11": {
+        "army_type": 1,
+        "level": 11,
+        "star": 10,
+        "atk": 19.0,
+        "def": 28.0,
+        "dmg": 18.0,
+        "hp": 27.0,
+        "power": 148.0,
+        "specialities": {
+          "90001": 1,
+          "90002": 1,
+          "90010": 2,
+          "90011": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 0,
+      "axisRatios": {
+        "attack": 1.2,
+        "defense": 1.2307692307692308,
+        "lethality": 1.1875,
+        "health": 1.2307692307692308
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 0,
+        "atk": 18.0,
+        "def": 16.0,
+        "dmg": 19.0,
+        "hp": 16.0,
+        "power": 96.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 0,
+        "atk": 15.0,
+        "def": 13.0,
+        "dmg": 16.0,
+        "hp": 13.0,
+        "power": 80.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc1": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 1,
+      "axisRatios": {
+        "attack": 1.1875,
+        "defense": 1.2142857142857142,
+        "lethality": 1.1764705882352942,
+        "health": 1.2307692307692308
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 1,
+        "atk": 19.0,
+        "def": 17.0,
+        "dmg": 20.0,
+        "hp": 16.0,
+        "power": 103.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 1,
+        "atk": 16.0,
+        "def": 14.0,
+        "dmg": 17.0,
+        "hp": 13.0,
+        "power": 86.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc2": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 2,
+      "axisRatios": {
+        "attack": 1.1666666666666667,
+        "defense": 1.2,
+        "lethality": 1.1666666666666667,
+        "health": 1.2142857142857142
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 2,
+        "atk": 21.0,
+        "def": 18.0,
+        "dmg": 21.0,
+        "hp": 17.0,
+        "power": 110.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 2,
+        "atk": 18.0,
+        "def": 15.0,
+        "dmg": 18.0,
+        "hp": 14.0,
+        "power": 92.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc3": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 3,
+      "axisRatios": {
+        "attack": 1.1578947368421053,
+        "defense": 1.1875,
+        "lethality": 1.1578947368421053,
+        "health": 1.2
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 3,
+        "atk": 22.0,
+        "def": 19.0,
+        "dmg": 22.0,
+        "hp": 18.0,
+        "power": 120.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 3,
+        "atk": 19.0,
+        "def": 16.0,
+        "dmg": 19.0,
+        "hp": 15.0,
+        "power": 100.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc4": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 4,
+      "axisRatios": {
+        "attack": 1.15,
+        "defense": 1.1875,
+        "lethality": 1.15,
+        "health": 1.2
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 4,
+        "atk": 23.0,
+        "def": 19.0,
+        "dmg": 23.0,
+        "hp": 18.0,
+        "power": 127.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 4,
+        "atk": 20.0,
+        "def": 16.0,
+        "dmg": 20.0,
+        "hp": 15.0,
+        "power": 106.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc5": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 5,
+      "axisRatios": {
+        "attack": 1.1363636363636365,
+        "defense": 1.1764705882352942,
+        "lethality": 1.1428571428571428,
+        "health": 1.1875
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 5,
+        "atk": 25.0,
+        "def": 20.0,
+        "dmg": 24.0,
+        "hp": 19.0,
+        "power": 137.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 5,
+        "atk": 22.0,
+        "def": 17.0,
+        "dmg": 21.0,
+        "hp": 16.0,
+        "power": 114.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc6": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 6,
+      "axisRatios": {
+        "attack": 1.1304347826086956,
+        "defense": 1.1764705882352942,
+        "lethality": 1.1363636363636365,
+        "health": 1.1875
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 6,
+        "atk": 26.0,
+        "def": 20.0,
+        "dmg": 25.0,
+        "hp": 19.0,
+        "power": 145.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 6,
+        "atk": 23.0,
+        "def": 17.0,
+        "dmg": 22.0,
+        "hp": 16.0,
+        "power": 120.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc7": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 7,
+      "axisRatios": {
+        "attack": 1.125,
+        "defense": 1.1666666666666667,
+        "lethality": 1.1304347826086956,
+        "health": 1.1764705882352942
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 7,
+        "atk": 27.0,
+        "def": 21.0,
+        "dmg": 26.0,
+        "hp": 20.0,
+        "power": 154.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 7,
+        "atk": 24.0,
+        "def": 18.0,
+        "dmg": 23.0,
+        "hp": 17.0,
+        "power": 126.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc8": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 8,
+      "axisRatios": {
+        "attack": 1.12,
+        "defense": 1.1578947368421053,
+        "lethality": 1.125,
+        "health": 1.1764705882352942
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 8,
+        "atk": 28.0,
+        "def": 22.0,
+        "dmg": 27.0,
+        "hp": 20.0,
+        "power": 162.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 8,
+        "atk": 25.0,
+        "def": 19.0,
+        "dmg": 24.0,
+        "hp": 17.0,
+        "power": 135.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc9": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 9,
+      "axisRatios": {
+        "attack": 1.1111111111111112,
+        "defense": 1.1578947368421053,
+        "lethality": 1.12,
+        "health": 1.1666666666666667
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 9,
+        "atk": 30.0,
+        "def": 22.0,
+        "dmg": 28.0,
+        "hp": 21.0,
+        "power": 170.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 1
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 9,
+        "atk": 27.0,
+        "def": 19.0,
+        "dmg": 25.0,
+        "hp": 18.0,
+        "power": 141.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "lancer_t12_fc10": {
+      "type": "lancer",
+      "tier": 12,
+      "fc": 10,
+      "axisRatios": {
+        "attack": 1.1071428571428572,
+        "defense": 1.1428571428571428,
+        "lethality": 1.1153846153846154,
+        "health": 1.15
+      },
+      "luaT12": {
+        "army_type": 2,
+        "level": 12,
+        "star": 10,
+        "atk": 31.0,
+        "def": 24.0,
+        "dmg": 29.0,
+        "hp": 23.0,
+        "power": 178.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 2
+        },
+        "refine_speciality": 90016
+      },
+      "luaT11": {
+        "army_type": 2,
+        "level": 11,
+        "star": 10,
+        "atk": 28.0,
+        "def": 21.0,
+        "dmg": 26.0,
+        "hp": 20.0,
+        "power": 148.0,
+        "specialities": {
+          "90003": 1,
+          "90004": 1,
+          "90008": 2,
+          "90012": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 0,
+      "axisRatios": {
+        "attack": 1.1875,
+        "defense": 1.25,
+        "lethality": 1.1764705882352942,
+        "health": 1.25
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 0,
+        "atk": 19.0,
+        "def": 15.0,
+        "dmg": 20.0,
+        "hp": 15.0,
+        "power": 96.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 0,
+        "atk": 16.0,
+        "def": 12.0,
+        "dmg": 17.0,
+        "hp": 12.0,
+        "power": 80.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc1": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 1,
+      "axisRatios": {
+        "attack": 1.1764705882352942,
+        "defense": 1.2307692307692308,
+        "lethality": 1.1666666666666667,
+        "health": 1.2307692307692308
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 1,
+        "atk": 20.0,
+        "def": 16.0,
+        "dmg": 21.0,
+        "hp": 16.0,
+        "power": 103.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 1,
+        "atk": 17.0,
+        "def": 13.0,
+        "dmg": 18.0,
+        "hp": 13.0,
+        "power": 86.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc2": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 2,
+      "axisRatios": {
+        "attack": 1.1578947368421053,
+        "defense": 1.2142857142857142,
+        "lethality": 1.1578947368421053,
+        "health": 1.2142857142857142
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 2,
+        "atk": 22.0,
+        "def": 17.0,
+        "dmg": 22.0,
+        "hp": 17.0,
+        "power": 110.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 2,
+        "atk": 19.0,
+        "def": 14.0,
+        "dmg": 19.0,
+        "hp": 14.0,
+        "power": 92.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc3": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 3,
+      "axisRatios": {
+        "attack": 1.15,
+        "defense": 1.2,
+        "lethality": 1.15,
+        "health": 1.2
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 3,
+        "atk": 23.0,
+        "def": 18.0,
+        "dmg": 23.0,
+        "hp": 18.0,
+        "power": 120.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 3,
+        "atk": 20.0,
+        "def": 15.0,
+        "dmg": 20.0,
+        "hp": 15.0,
+        "power": 100.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc4": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 4,
+      "axisRatios": {
+        "attack": 1.1428571428571428,
+        "defense": 1.1875,
+        "lethality": 1.1428571428571428,
+        "health": 1.2
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 4,
+        "atk": 24.0,
+        "def": 19.0,
+        "dmg": 24.0,
+        "hp": 18.0,
+        "power": 127.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 4,
+        "atk": 21.0,
+        "def": 16.0,
+        "dmg": 21.0,
+        "hp": 15.0,
+        "power": 106.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc5": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 5,
+      "axisRatios": {
+        "attack": 1.1304347826086956,
+        "defense": 1.1875,
+        "lethality": 1.1363636363636365,
+        "health": 1.1875
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 5,
+        "atk": 26.0,
+        "def": 19.0,
+        "dmg": 25.0,
+        "hp": 19.0,
+        "power": 137.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 5,
+        "atk": 23.0,
+        "def": 16.0,
+        "dmg": 22.0,
+        "hp": 16.0,
+        "power": 114.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc6": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 6,
+      "axisRatios": {
+        "attack": 1.125,
+        "defense": 1.1764705882352942,
+        "lethality": 1.1304347826086956,
+        "health": 1.1875
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 6,
+        "atk": 27.0,
+        "def": 20.0,
+        "dmg": 26.0,
+        "hp": 19.0,
+        "power": 145.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 6,
+        "atk": 24.0,
+        "def": 17.0,
+        "dmg": 23.0,
+        "hp": 16.0,
+        "power": 120.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc7": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 7,
+      "axisRatios": {
+        "attack": 1.12,
+        "defense": 1.1666666666666667,
+        "lethality": 1.125,
+        "health": 1.1764705882352942
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 7,
+        "atk": 28.0,
+        "def": 21.0,
+        "dmg": 27.0,
+        "hp": 20.0,
+        "power": 154.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 7,
+        "atk": 25.0,
+        "def": 18.0,
+        "dmg": 24.0,
+        "hp": 17.0,
+        "power": 126.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90009": 2
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc8": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 8,
+      "axisRatios": {
+        "attack": 1.1153846153846154,
+        "defense": 1.1578947368421053,
+        "lethality": 1.12,
+        "health": 1.1666666666666667
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 8,
+        "atk": 29.0,
+        "def": 22.0,
+        "dmg": 28.0,
+        "hp": 21.0,
+        "power": 162.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 1,
+          "90013": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 8,
+        "atk": 26.0,
+        "def": 19.0,
+        "dmg": 25.0,
+        "hp": 18.0,
+        "power": 135.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 1,
+          "90013": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc9": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 9,
+      "axisRatios": {
+        "attack": 1.1071428571428572,
+        "defense": 1.1578947368421053,
+        "lethality": 1.1153846153846154,
+        "health": 1.1666666666666667
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 9,
+        "atk": 31.0,
+        "def": 22.0,
+        "dmg": 29.0,
+        "hp": 21.0,
+        "power": 170.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 1,
+          "90013": 1
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 9,
+        "atk": 28.0,
+        "def": 19.0,
+        "dmg": 26.0,
+        "hp": 18.0,
+        "power": 141.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 1,
+          "90013": 1
+        },
+        "refine_speciality": null
+      }
+    },
+    "marksman_t12_fc10": {
+      "type": "marksman",
+      "tier": 12,
+      "fc": 10,
+      "axisRatios": {
+        "attack": 1.1,
+        "defense": 1.1428571428571428,
+        "lethality": 1.1111111111111112,
+        "health": 1.15
+      },
+      "luaT12": {
+        "army_type": 3,
+        "level": 12,
+        "star": 10,
+        "atk": 33.0,
+        "def": 24.0,
+        "dmg": 30.0,
+        "hp": 23.0,
+        "power": 178.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 2,
+          "90013": 2
+        },
+        "refine_speciality": 90018
+      },
+      "luaT11": {
+        "army_type": 3,
+        "level": 11,
+        "star": 10,
+        "atk": 30.0,
+        "def": 21.0,
+        "dmg": 27.0,
+        "hp": 20.0,
+        "power": 148.0,
+        "specialities": {
+          "90005": 1,
+          "90006": 1,
+          "90014": 2,
+          "90013": 2
+        },
+        "refine_speciality": null
+      }
+    }
+  },
+  "heroNames": {
+    "50000": "Eugene",
+    "50001": "Smith",
+    "50002": "Charlie",
+    "50003": "Cloris",
+    "50004": "Sergey",
+    "50005": "Patrick",
+    "50006": "Bahiti",
+    "50007": "Jessie",
+    "50008": "Gina",
+    "50009": "Natalia",
+    "50010": "Logan",
+    "50011": "Jeronimo",
+    "50012": "Molly",
+    "50013": "Philly",
+    "50014": "Reina",
+    "50015": "Gordon",
+    "50016": "Mia",
+    "50017": "Zinman",
+    "50018": "Alonso",
+    "50019": "Wu Ming",
+    "50020": "Greg",
+    "50021": "Flint",
+    "50022": "Lynn",
+    "50023": "Ahmose",
+    "50024": "Hector",
+    "50025": "Norah",
+    "50026": "Gwen",
+    "50027": "Seo-yoon",
+    "50028": "Jasser",
+    "50029": "Lumak Bokan",
+    "50030": "Renee",
+    "50031": "Wayne",
+    "50032": "Edith",
+    "50033": "Bradley",
+    "50034": "Gatot",
+    "50035": "Sonya",
+    "50036": "Hendrik",
+    "50037": "Ling Xue",
+    "50038": "Magnus",
+    "50039": "Fred",
+    "50040": "Xura",
+    "50041": "Gregory",
+    "50042": "Freya",
+    "50043": "Blanchette",
+    "50044": "Eleonora",
+    "50045": "Lloyd",
+    "50046": "Rufus",
+    "50047": "Hervor",
+    "50048": "Karol",
+    "50049": "Ligeia",
+    "50050": "Gisela",
+    "50051": "Flora",
+    "50052": "Vulcanus",
+    "50053": "Elif",
+    "50054": "Dominic",
+    "50055": "Cara",
+    "50056": "Hank",
+    "50057": "Estrella",
+    "50058": "Viveca",
+    "50059": "Seigel",
+    "50060": "Ursar",
+    "50061": "Aisling",
+    "50062": "Aiden",
+    "50063": "Bertha",
+    "50064": "Eleanor",
+    "50065": "Jordan",
+    "50066": "Nikola",
+    "50067": "Aisha"
+  },
+  "heroSkillOrder": {
+    "50000": [
+      500004,
+      500005
+    ],
+    "50001": [
+      500014,
+      500015
+    ],
+    "50002": [
+      500024,
+      500025
+    ],
+    "50003": [
+      500034,
+      500035
+    ],
+    "50004": [
+      500044,
+      500045
+    ],
+    "50005": [
+      500054,
+      500055
+    ],
+    "50006": [
+      500064,
+      500065
+    ],
+    "50007": [
+      500074,
+      500075
+    ],
+    "50008": [
+      500084,
+      500085
+    ],
+    "50009": [
+      500094,
+      500095,
+      500096,
+      500098
+    ],
+    "50010": [
+      500104,
+      500105,
+      500106,
+      500108
+    ],
+    "50011": [
+      500114,
+      500115,
+      500116,
+      500118
+    ],
+    "50012": [
+      500124,
+      500125,
+      500126,
+      500128
+    ],
+    "50013": [
+      500134,
+      500135,
+      500136,
+      500138
+    ],
+    "50014": [
+      500144,
+      500145,
+      500146,
+      500148
+    ],
+    "50015": [
+      500154,
+      500155,
+      500156,
+      500158
+    ],
+    "50016": [
+      500164,
+      500165,
+      500166,
+      500168
+    ],
+    "50017": [
+      500174,
+      500175,
+      500176,
+      500178
+    ],
+    "50018": [
+      500184,
+      500185,
+      500186,
+      500188
+    ],
+    "50019": [
+      500194,
+      500195,
+      500196,
+      500198
+    ],
+    "50020": [
+      500204,
+      500205,
+      500206,
+      500208
+    ],
+    "50021": [
+      500214,
+      500215,
+      500216,
+      500218
+    ],
+    "50022": [
+      500224,
+      500225,
+      500226,
+      500228
+    ],
+    "50023": [
+      500234,
+      500235,
+      500236,
+      500238
+    ],
+    "50024": [
+      500244,
+      500245,
+      500246,
+      500248
+    ],
+    "50025": [
+      500255,
+      500254,
+      500256,
+      500258
+    ],
+    "50026": [
+      500264,
+      500265,
+      500266,
+      500268
+    ],
+    "50027": [
+      500274,
+      500275
+    ],
+    "50028": [
+      500284,
+      500285
+    ],
+    "50029": [
+      500294,
+      500295
+    ],
+    "50030": [
+      500304,
+      500305,
+      500306,
+      500308
+    ],
+    "50031": [
+      500314,
+      500315,
+      500316,
+      500318
+    ],
+    "50032": [
+      500324,
+      500325,
+      500326,
+      500328
+    ],
+    "50033": [
+      500334,
+      500335,
+      500336,
+      500338
+    ],
+    "50034": [
+      500344,
+      500345,
+      500346,
+      500348
+    ],
+    "50035": [
+      500354,
+      500355,
+      500356,
+      500358
+    ],
+    "50036": [
+      500364,
+      500365,
+      500366,
+      500368
+    ],
+    "50037": [
+      500374,
+      500375
+    ],
+    "50038": [
+      500384,
+      500385,
+      500386,
+      500388
+    ],
+    "50039": [
+      500394,
+      500395,
+      500396,
+      500398
+    ],
+    "50040": [
+      500404,
+      500405,
+      500406,
+      500408
+    ],
+    "50041": [
+      500414,
+      500415,
+      500416,
+      500418
+    ],
+    "50042": [
+      500424,
+      500425,
+      500426,
+      500428
+    ],
+    "50043": [
+      500434,
+      500435,
+      500436,
+      500438
+    ],
+    "50044": [
+      500444,
+      500445,
+      500446,
+      500448
+    ],
+    "50045": [
+      500454,
+      500455,
+      500456,
+      500458
+    ],
+    "50046": [
+      500464,
+      500465,
+      500466,
+      500468
+    ],
+    "50047": [
+      500474,
+      500475,
+      500476,
+      500478
+    ],
+    "50048": [
+      500484,
+      500485,
+      500486,
+      500488
+    ],
+    "50049": [
+      500494,
+      500495,
+      500496,
+      500498
+    ],
+    "50050": [
+      500504,
+      500505,
+      500506,
+      500508
+    ],
+    "50051": [
+      500514,
+      500515,
+      500516,
+      500518
+    ],
+    "50052": [
+      500524,
+      500525,
+      500526,
+      500528
+    ],
+    "50053": [
+      500534,
+      500535,
+      500536,
+      500538
+    ],
+    "50054": [
+      500544,
+      500545,
+      500546,
+      500548
+    ],
+    "50055": [
+      500554,
+      500555,
+      500556,
+      500558
+    ],
+    "50056": [
+      500564,
+      500565,
+      500566,
+      500568
+    ],
+    "50057": [
+      500574,
+      500575,
+      500576,
+      500578
+    ],
+    "50058": [
+      500584,
+      500585,
+      500586,
+      500588
+    ],
+    "50059": [
+      500594,
+      500595,
+      500596,
+      500598
+    ],
+    "50060": [
+      500604,
+      500605,
+      500606,
+      500608
+    ],
+    "50061": [
+      500614,
+      500615,
+      500616,
+      500618
+    ],
+    "50062": [
+      500624,
+      500625,
+      500626,
+      500628
+    ],
+    "50063": [
+      500634,
+      500635,
+      500636,
+      500638
+    ],
+    "50064": [
+      500644,
+      500645,
+      500646,
+      500648
+    ],
+    "50065": [
+      500654,
+      500655,
+      500656,
+      500658
+    ],
+    "50066": [
+      500664,
+      500665,
+      500666,
+      500668
+    ],
+    "50067": [
+      500674,
+      500675,
+      500676,
+      500678
+    ]
+  },
+  "nonCombatSkills": [
+    500004,
+    500005,
+    500014,
+    500015,
+    500024,
+    500025,
+    500034,
+    500035,
+    500084,
+    500085,
+    500175,
+    500275,
+    500285,
+    500295,
+    500375
+  ],
+  "luaSkills": {
+    "500444": {
+      "id": 500444,
+      "name": "Scorching Sun",
+      "desc": "Eleonora inspires all troops with her royal aura and sense of honor, increasing their Health by %{n1}%.",
+      "labels": [
+        "Health Up"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500445": {
+      "id": 500445,
+      "name": "Solaris Nexus",
+      "desc": "Eleonora deploys a balanced formation, reducing damage taken by %{n1}% for her Infantries and increasing damage dealt by %{n2}% for her Marksmen.",
+      "labels": [
+        "Infantry Damage Taken Down",
+        "Marksman Damage Up"
+      ],
+      "values": [
+        [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      ]
+    },
+    "500446": {
+      "id": 500446,
+      "name": "Soaring Flame",
+      "desc": "Eleonora strikes fear into her enemies with her fierce assaults, increasing all troops' damage dealt by %{n1}% and reducing their damage taken by %{n2}% every 5 attacks made by Infantry for 2 turns.",
+      "labels": [
+        "Damage Up",
+        "Damage Taken Down"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500448": {
+      "id": 500448,
+      "name": "Last Fortress",
+      "desc": "Eleonora fights every battle like her last, inspiring Defender Troops and increasing their Health by %{n1}%.",
+      "labels": [
+        "Defender Troop Health Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500454": {
+      "id": 500454,
+      "name": "Bird Invasion",
+      "desc": "Lloyd summons a large number of mechanical birds to disrupt enemies, reducing their Lethality by %{n1}%.",
+      "labels": [
+        "Enemy Lethality Down"
+      ],
+      "values": [
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500455": {
+      "id": 500455,
+      "name": "Iceflare Bomb",
+      "desc": "Lloyd prepares special bomb for all Lancers, which detonates every 3 turns, increases their attack by %{n1}% and releases frosty mist that reduces all Enemy Troop's Lethality by %{n2}% for 1 turn.",
+      "labels": [
+        "Damage Up",
+        "Enemy Lethality Down"
+      ],
+      "values": [
+        [
+          "30",
+          "60",
+          "90",
+          "120",
+          "150"
+        ],
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ]
+      ]
+    },
+    "500456": {
+      "id": 500456,
+      "name": "Ingenious Mastery",
+      "desc": "Lloyd works to equips his forces with unstable by interesting creations, granting a 40% chance to increase all Troops' Lethality by %{n1}%.",
+      "labels": [
+        "Lethality Up"
+      ],
+      "values": [
+        [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      ]
+    },
+    "500458": {
+      "id": 500458,
+      "name": "Steel Maze",
+      "desc": "Lloyd installs traps on the barricade to assist in the defense, increasing Defender Troops' Attack by %{n1}%.",
+      "labels": [
+        "Defender Troops Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500464": {
+      "id": 500464,
+      "name": "Inferno Regiment",
+      "desc": "Rufus uses his bold leadership to transform all troops into blazing flames on the battlefield, increasing their Attack by %{n1}%.",
+      "labels": [
+        "Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500465": {
+      "id": 500465,
+      "name": "Armor Crush",
+      "desc": "Rufus equips his Marksmen with armor-piercing rounds, dealing %{n1}% extra damage for each attack and increases the target's damage taken by %{n2}% for 1 turn.",
+      "labels": [
+        "Damage Up",
+        "Enemy Damage Taken Up"
+      ],
+      "values": [
+        [
+          "12",
+          "24",
+          "36",
+          "48",
+          "60"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500466": {
+      "id": 500466,
+      "name": "Wrathful Quake",
+      "desc": "Rufus' aggressive combat style grants all troops a 20% chance to intimidate enemies, reducing target Lethality by %{n1}% for 2 turns.",
+      "labels": [
+        "Enemy Lethality Down"
+      ],
+      "values": [
+        [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      ]
+    },
+    "500468": {
+      "id": 500468,
+      "name": "Blazing Legion",
+      "desc": "Rufus rallies his troops under his phoenix banner, increasing their Attack by %{n1}%.",
+      "labels": [
+        "Rally Troops Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500474": {
+      "id": 500474,
+      "name": "Call For Blood",
+      "desc": "Hervor's heartfelt war cry ignites fearlessness in her soldiers, increasing all troops' Lethality by %{n1}%.",
+      "labels": [
+        "Lethality Up"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500475": {
+      "id": 500475,
+      "name": "Undying",
+      "desc": "The enemy menace pales beside Hervor's icy homeland, her Infantry's Damage Taken from Normal Attacks is reduced by %{n1}% and %{n2}% from enemy skills.",
+      "labels": [
+        "Normal Attack Damage Taken Down",
+        "Skill Damage Taken Down"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ]
+      ]
+    },
+    "500476": {
+      "id": 500476,
+      "name": "Battlethirsty",
+      "desc": "Hervor and her Infantry are singularly devoted to the idea of battle, reducing her Infantry's damage taken by %{n1}% and increasing their damage dealt by %{n2}%.",
+      "labels": [
+        "Damage Taken Down",
+        "Damage Up"
+      ],
+      "values": [
+        [
+          "3",
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      ]
+    },
+    "500478": {
+      "id": 500478,
+      "name": "Fort of Rock",
+      "desc": "Hervor's reforges defenders in her unyielding image, increasing Defender Troops' Defense by %{n1}%.",
+      "labels": [
+        "Defender Troops Defense Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500484": {
+      "id": 500484,
+      "name": "In the Wings",
+      "desc": "A great offence is a great defense in the case of Karol's cavalry diversions, reducing all troops' damage taken by %{n1}%.",
+      "labels": [
+        "Damage Taken Down"
+      ],
+      "values": [
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500485": {
+      "id": 500485,
+      "name": "Shieldbreaker",
+      "desc": "Karol knows exactly where enemy infantry are weakest against forces like his own, increasing all troops' Damage Dealt to Lancers by %{n1}% and %{n2}% to Infantry.",
+      "labels": [
+        "Damage to Lancer Up",
+        "Damage to Infantry Up"
+      ],
+      "values": [
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500486": {
+      "id": 500486,
+      "name": "Standard of Ages",
+      "desc": "Karol has turned the lessons of past brigades into a roadmap for victory, increasing all Troops' Attack by %{n1}% and Defense by %{n2}%.",
+      "labels": [
+        "Attack Up",
+        "Defense Up"
+      ],
+      "values": [
+        [
+          "3",
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      ]
+    },
+    "500488": {
+      "id": 500488,
+      "name": "Triumphant March",
+      "desc": "Karol's Eagle Brigade often relies on combined arms, enhancing his Rally Squad Attack by %{n1}%.",
+      "labels": [
+        "Rally Troops Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500494": {
+      "id": 500494,
+      "name": "Nerf Poison",
+      "desc": "Ligeia unleashes a swarm of biting Mech-spiders against well-armored foes, reducing all enemy Defense by %{n1}%.",
+      "labels": [
+        "Enemy Defense Down"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500495": {
+      "id": 500495,
+      "name": "Corrosion",
+      "desc": "Ligeia adds Mech-spiders to Marksmen's fire, dealing %{n1}% extra damage every 2 attacks; spider acid dissolves enemy armor, amplifying target damage received by %{n2}% for 1 turn.",
+      "labels": [
+        "Damage Up",
+        "Enemy Damage Taken Up"
+      ],
+      "values": [
+        [
+          "20",
+          "40",
+          "60",
+          "80",
+          "100"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500496": {
+      "id": 500496,
+      "name": "Toxic Tip",
+      "desc": "Ligeia dips Marksmen arrowheads in spider toxin, increasing Marksmen's damage by %{n1}% against the target every 2 attacks while reducing the target's damage dealt by %{n2}% for 1 turn.",
+      "labels": [
+        "Damage Up",
+        "Enemy Damage Dealt Down"
+      ],
+      "values": [
+        [
+          "20",
+          "40",
+          "60",
+          "80",
+          "100"
+        ],
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500498": {
+      "id": 500498,
+      "name": "Trap Nest",
+      "desc": "Ligeia knows traps, particularly when she has time to prepare them herself, increasing Defender Troops' Lethality by %{n1}%.",
+      "labels": [
+        "Defender Troops Lethality Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500504": {
+      "id": 500504,
+      "name": "Alloyed Defense",
+      "desc": "Gisela's advanced tech increases Infantry Defense by %{n1}%.",
+      "labels": [
+        "Defense Up"
+      ],
+      "values": [
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ]
+      ]
+    },
+    "500505": {
+      "id": 500505,
+      "name": "Scavengeworks",
+      "desc": "Gisela is a master of defensive scavenging. Infantry under Gisela's command have a 40% chance of increasing all Troops' Defense by %{n1}% for 1 turn.",
+      "labels": [
+        "Defense Up"
+      ],
+      "values": [
+        [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      ]
+    },
+    "500506": {
+      "id": 500506,
+      "name": "Trial Shield",
+      "desc": "Gisela provides an experimental version of her shield to all troops, granting a 40% chance of reducing Damage Taken by %{n1}% for all troops.",
+      "labels": [
+        "Damage Taken Down"
+      ],
+      "values": [
+        [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      ]
+    },
+    "500508": {
+      "id": 500508,
+      "name": "Auto-Target",
+      "desc": "Gisela's forays into the field of auto-turrets enhances Defender Troops' Attack by %{n1}%.",
+      "labels": [
+        "Defender Troops Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500514": {
+      "id": 500514,
+      "name": "Enmiring Vines",
+      "desc": "Flora litters the ground with sharp vines to hobble enemy soldiers, granting all troops a 50% chance of increasing enemies' Damage Taken by %{n1}%.",
+      "labels": [
+        "Enemy Damage Taken Up"
+      ],
+      "values": [
+        [
+          "10",
+          "20",
+          "30",
+          "40",
+          "50"
+        ]
+      ]
+    },
+    "500515": {
+      "id": 500515,
+      "name": "Plantage",
+      "desc": "Flora's defensive foliage reduces Infantry Damage Taken by %{n1}% while better Adoria Rose coordination with Lancers gives joint attacks dealing %{n2}% extra damage.",
+      "labels": [
+        "Infantry Damage Taken Down",
+        "Lancer Damage Dealt Up"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500516": {
+      "id": 500516,
+      "name": "Confusion Pollen",
+      "desc": "Flora's hallucinatory pollen increases enemy Infantry's Damage Taken by %{n1}%, and decreases enemy Marksmen's Damage Dealt by %{n2}% for 2 turns every 4 turns.",
+      "labels": [
+        "Enemy Infantry Damage Taken Up",
+        "Enemy Marksman Damage Dealt Down"
+      ],
+      "values": [
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ],
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ]
+      ]
+    },
+    "500518": {
+      "id": 500518,
+      "name": "Fruit of Life",
+      "desc": "Flora's new fruit is highly rejuvenating, granting Defender Troops %{n1}% increased Health.",
+      "labels": [
+        "Defender Troop Health Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500524": {
+      "id": 500524,
+      "name": "Raging Storm",
+      "desc": "Vulcanus is skilled in the arts of terror and manipulation, reducing all enemy troops' Attack by %{n1}%.",
+      "labels": [
+        "Attack Down"
+      ],
+      "values": [
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500525": {
+      "id": 500525,
+      "name": "Breaker Steel",
+      "desc": "There's no steel like the blades in Vulcanus' armory, empowering all troops to deal %{n1}% extra damage after every 5 attacks, and increasing damage taken for the target by %{n2}% in the next attack.",
+      "labels": [
+        "Extra Damage Up",
+        "Extra Damage Taken Up"
+      ],
+      "values": [
+        [
+          "20",
+          "40",
+          "60",
+          "80",
+          "100"
+        ],
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500526": {
+      "id": 500526,
+      "name": "True Strike",
+      "desc": "Vulcanus' modified armor-piercing arrows reduce enemy Infantry and Lancer Defense by %{n1}% every 3 turns and increase our Marksmen's Attack by %{n2}% for 1 turn.",
+      "labels": [
+        "Enemy Defense Down",
+        "Marksmen Attack Up"
+      ],
+      "values": [
+        [
+          "12",
+          "24",
+          "36",
+          "48",
+          "60"
+        ],
+        [
+          "12",
+          "24",
+          "36",
+          "48",
+          "60"
+        ]
+      ]
+    },
+    "500528": {
+      "id": 500528,
+      "name": "Born King",
+      "desc": "Vulcanus' sense of confidence and unstoppable momentum increases Rally Troops' Attack by %{n1}%.",
+      "labels": [
+        "Rally Troops Attack Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500534": {
+      "id": 500534,
+      "name": "Shackling Veil",
+      "desc": "Elif entangles enemy weapons with her veil, reducing all enemy Troops' Attack by %{n1}%.",
+      "labels": [
+        "Enemy Troops Attack Down"
+      ],
+      "values": [
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500535": {
+      "id": 500535,
+      "name": "Slash Formation",
+      "desc": "Elif applies an exotic formation on the tundra, increasing Troops' Attack by %{n1}% and Troops' Defense by %{n2}%.",
+      "labels": [
+        "Attack Up",
+        "Defense Up"
+      ],
+      "values": [
+        [
+          "3",
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        [
+          "2",
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      ]
+    },
+    "500536": {
+      "id": 500536,
+      "name": "Enchanting Tapestry",
+      "desc": "Elif weaves ribbons into a curtain when her Infantry attacks, granting them a Shield with protection equal to Attack*%{n1}% for 1 turn.",
+      "labels": [
+        "Shield Value Up"
+      ],
+      "values": [
+        [
+          "6",
+          "12",
+          "18",
+          "24",
+          "30"
+        ]
+      ]
+    },
+    "500538": {
+      "id": 500538,
+      "name": "Guardian's Grace",
+      "desc": "Elif inspires the Defender Troops with a graceful dance, increasing their Defense by %{n1}%.",
+      "labels": [
+        "Defender Troops Defense Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500544": {
+      "id": 500544,
+      "name": "Mystic Mechanism",
+      "desc": "Dominic equips his troops with weapons cleverly crafted from magic props, increasing damage dealt by %{n1}% for all troops.",
+      "labels": [
+        "Damage Up"
+      ],
+      "values": [
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500545": {
+      "id": 500545,
+      "name": "Spiky Assault",
+      "desc": "Dominic equips his Lancers with secret devices that launch poisonous spikes, increasing their damage dealt per attack by %{n1}%. Poisoned targets receive %{n2}% more damage for 1 turn.",
+      "labels": [
+        "Extra Damage Up",
+        "Enemy Damage Taken Up"
+      ],
+      "values": [
+        [
+          "12",
+          "24",
+          "36",
+          "48",
+          "60"
+        ],
+        [
+          "5",
+          "10",
+          "15",
+          "20",
+          "25"
+        ]
+      ]
+    },
+    "500546": {
+      "id": 500546,
+      "name": "Mirror Maze",
+      "desc": "Dominic disrupts enemy strategies by performing optical tricks with a mirror, reducing damage taken by Infantry and Marksmen by %{n1}% and increasing their damage dealt by %{n2}%.",
+      "labels": [
+        "Damage Taken Down",
+        "Damage Up"
+      ],
+      "values": [
+        [
+          "3",
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        [
+          "3",
+          "6",
+          "9",
+          "12",
+          "15"
+        ]
+      ]
+    },
+    "500548": {
+      "id": 500548,
+      "name": "Grand Fantasy",
+      "desc": "Dominic turns the battlefield into his stage, increasing Rally Troops' Lethality by %{n1}%.",
+      "labels": [
+        "Rally Troops Lethality Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    },
+    "500554": {
+      "id": 500554,
+      "name": "Smoky Encounter",
+      "desc": "Cara drops smoke grenades from the air, hindering enemy attacks and reducing all enemies' Lethality by %{n1}%.",
+      "labels": [
+        "Enemy Lethality Down"
+      ],
+      "values": [
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500555": {
+      "id": 500555,
+      "name": "Mech Pet",
+      "desc": "The Mech Pets crafted by Oestermore crafters join forces with the warriors, increasing normal attack damage by %{n1}% for all troops.",
+      "labels": [
+        "Normal Attack Damage Up"
+      ],
+      "values": [
+        [
+          "10",
+          "15",
+          "20",
+          "25",
+          "30"
+        ]
+      ]
+    },
+    "500556": {
+      "id": 500556,
+      "name": "Witch's Wrath",
+      "desc": "Thanks to Cara's flying broom, she effortlessly bypasses the enemy Infantry on the frontline. Her Marksmen deal %{n1}% extra damage to enemy Lancers and %{n2}% extra damage to enemy Marksmen every two attacks.",
+      "labels": [
+        "Extra Damage to Lancers Up",
+        "Extra Damage to Marksmen Up"
+      ],
+      "values": [
+        [
+          "8",
+          "16",
+          "24",
+          "32",
+          "40"
+        ],
+        [
+          "4",
+          "8",
+          "12",
+          "16",
+          "20"
+        ]
+      ]
+    },
+    "500558": {
+      "id": 500558,
+      "name": "Shrouded Haven",
+      "desc": "Cara defends the city like her hometown, inspiring the Defender Troops and increasing their Lethality by %{n1}%.",
+      "labels": [
+        "Defender Troops Lethality Up"
+      ],
+      "values": [
+        [
+          "5",
+          "7.5",
+          "10",
+          "12.5",
+          "15"
+        ]
+      ]
+    }
+  },
+  "refinements": {
+    "90015": {
+      "id": 90015,
+      "name": "Indomitable Wall",
+      "desc": "Activates a dense wall of shields at the start of battle, reducing enemy Troops' damage dealt by %{n1}% for 5 turns. Up to 8 rally members can have this skill active at the same time when rallying or garrisoning (Chiefs with higher skill levels take priority).",
+      "labels": [
+        "Enemy Damage Dealt Down"
+      ],
+      "values": [],
+      "flat_values": [
+        0.6,
+        1.2,
+        1.8
+      ]
+    },
+    "90016": {
+      "id": 90016,
+      "name": "Meridian Phalanx",
+      "desc": "Provides cover for other troop types at the start of battle, reducing Infantry damage received by %{n1}% and increasing Marksman damage dealt by %{n2}%, lasts for 5 turns. Up to 8 rally members can have this skill active at the same time when rallying or garrisoning (Chiefs with higher skill levels take priority).",
+      "labels": [
+        "Infantry Damage Taken Down",
+        "Marksman Damage Up"
+      ],
+      "values": [
+        [
+          "1",
+          "2",
+          "3",
+          "1",
+          "2"
+        ]
+      ],
+      "flat_values": [
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "90017": {
+      "id": 90017,
+      "name": "Meridian Phalanx",
+      "desc": "Provides cover for other troop types at the start of battle, reducing Infantry damage received by %{n1}% and increasing Marksman damage dealt by %{n2}%, lasts for 5 turns. Up to 8 rally members can have this skill active at the same time when rallying or garrisoning (Chiefs with higher skill levels take priority).",
+      "labels": [
+        "Infantry Damage Taken Down",
+        "Marksman Damage Up"
+      ],
+      "values": [
+        [
+          "1",
+          "2",
+          "3",
+          "1",
+          "2"
+        ]
+      ],
+      "flat_values": [
+        1.0,
+        2.0,
+        3.0,
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "90018": {
+      "id": 90018,
+      "name": "Starfire",
+      "desc": "Imbues Fire Crystal energy into Marksman bolts, increasing their damage dealt by %{n1}% every 5 turns. Up to 8 rally members can have this skill active at the same time when rallying or garrisoning with its effect stackable (Chiefs with higher skill levels take priority).",
+      "labels": [
+        "Marksman Damage Up"
+      ],
+      "values": [],
+      "flat_values": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  },
+  "assumptions": [
+    "New hero magnitudes/scopes from Lua; unspecified timing is a hypothesis, not recovered server logic.",
+    "Attack-created target debuffs begin next round and refresh by max unless explicitly stated otherwise.",
+    "Gisela Scavengeworks checks actual Infantry attacks; Trial Shield uses per-round chance.",
+    "Flora Plantage joint attack is a separate skill hit; alternate damage-kind interpretation remains open.",
+    "Vulcanus Breaker Steel uses every sixth normal attack per source line; next-hit vulnerability uses next-round/one-use semantics.",
+    "Elif shield uses upstream Gatot source basis and next-round finite capacity.",
+    "T12 coefficients multiply reference T11 axes by same-type/same-FC Lua T12:T11 ratios; provisional.",
+    "Refinement reductions use the reference engine damage denominator; Starfire is a one-round fifth-turn pulse."
+  ]
+}
