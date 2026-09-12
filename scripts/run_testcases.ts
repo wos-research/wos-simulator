@@ -37,22 +37,21 @@ export async function main(argv = process.argv.slice(2)): Promise<void> {
     const previousReport = options.human ? loadLatestRunReport(options.outputDir) : undefined;
     const config = loadSimulatorConfig();
     const report = await runCliTestcases(options, config);
-    const stdout = formatStdout(report, options, previousReport);
     if (options.saveSnapshot) {
       const snapshot = writeRunSnapshot(report, options.outputDir);
       const dbIngest = options.dbIngest
         ? ingestReport(snapshot.summaryPath, { dbPath: options.dbPath })
         : undefined;
-      writeStdout(stdout);
+      writeStdout(formatStdout(report, options, previousReport));
       console.error(JSON.stringify({ ...snapshot, ...(dbIngest ? { dbIngest } : {}) }, null, 2));
     } else {
-      writeStdout(stdout);
+      writeStdout(formatStdout(report, options, previousReport));
       const charts = options.generateCharts
         ? writeTestcaseCharts(report, options.outputDir)
         : undefined;
       if (charts) console.error(JSON.stringify(charts, null, 2));
     }
-    const failed = report.counts.errors > 0;
+    const failed = report.counts.errors > 0 || Object.values(report.testcases).some((entry) => entry.simulationMode === "mk2" && entry.exactComparison?.exact === false);
     process.exitCode = failed ? 1 : 0;
   } catch (error) {
     console.error(JSON.stringify({ error: error instanceof Error ? error.message : String(error) }, null, 2));
@@ -67,7 +66,7 @@ function writeStdout(output: string): void {
 const entryPath = process.argv[1] ? pathToFileURL(process.argv[1]).href : "";
 if (import.meta.url === entryPath) void main();
 
-async function runCliTestcases(options: CliOptions, config: ReturnType<typeof loadSimulatorConfig>): Promise<TestcaseRunReport> {
+export async function runCliTestcases(options: CliOptions, config: ReturnType<typeof loadSimulatorConfig>): Promise<TestcaseRunReport> {
   const workers = options.testcaseOptions.workers ?? 1;
   if (workers <= 1) return runTestcases(options.testcaseOptions, config);
   const prepared = prepareTestcaseCases(options.testcaseOptions);
@@ -288,7 +287,7 @@ function humanRow(entry: TestcaseSummaryEntry, detail: TestcaseCaseReport | unde
     index: String(entry.idx),
     testcase: truncateText(entry.testcase_id, 25),
     gameN: formatNumber(entry.game?.n_reference),
-    mode: entry.deterministic ? "det" : entry.sampleCount > 1 ? "stoch" : "single",
+    mode: entry.simulationMode === "mk2" ? "mk2" : entry.deterministic ? "det" : entry.sampleCount > 1 ? "stoch" : "single",
     statType: entry.game?.stat_type === "cdf_support" ? "cdf_sup" : entry.game?.stat_type === "deterministic" ? "det" : "-",
     statAdjustment: formatSignedPct(entry.gameStatAdjustment?.value),
     gameMu: formatNumber(entry.game?.mu_reference),
@@ -297,7 +296,7 @@ function humanRow(entry: TestcaseSummaryEntry, detail: TestcaseCaseReport | unde
     simSd: formatNumber(entry.game?.sigma_candidate),
     gameBiasPct: formatSignedPct(entry.game?.bias_pct),
     gameBiasRaw: formatSignedNumber(entry.game?.bias_raw),
-    flagReason: entry.game?.flag_reason === "cdf+support" ? "cdf+sup" : entry.game?.flag_reason ?? "-",
+    flagReason: entry.simulationMode === "mk2" ? (entry.exactComparison?.exact ? "exact" : "mismatch") : entry.game?.flag_reason === "cdf+support" ? "cdf+sup" : entry.game?.flag_reason ?? "-",
     cdfP: formatProbability(entry.game?.cdf_p),
     supportValue: formatNumber(entry.game?.support_value),
     supportP: formatProbability(entry.game?.support_p),
@@ -332,6 +331,7 @@ function formatHumanTable(rows: Array<Record<string, string>>): string {
 
 function testcaseStatus(entry: TestcaseSummaryEntry, detail: TestcaseCaseReport | undefined): "PASS" | "FAIL" | "WARN" | "ERROR" {
   if (detail?.error) return "ERROR";
+  if (entry.simulationMode === "mk2" && entry.exactComparison) return entry.exactComparison.exact ? "PASS" : "FAIL";
   if (entry.game) return entry.game.passes ? "PASS" : "FAIL";
   return "WARN";
 }

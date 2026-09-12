@@ -208,6 +208,12 @@ export interface BattleInput {
 export type SimulationMode = "fast" | "standard" | "trace";
 
 export interface SimulationOptions {
+  // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.
+  rng?: import("./effects").Rng;
+  beforeExtraAttack?: import("./runtime").BeforeExtraAttack;
+  attackScheduling?: "side-local" | "reference";
+  onEmptyUnit?: import("./runtime").OnEmptyUnit;
+  deferAttackSkill?: import("./runtime").DeferAttackSkill;
   mode?: SimulationMode;
   // Whether a dodged / no_attack'd attack still charges (uses += 1) the attacker's
   // attack-constrained effects, as the game does. Default true.

@@ -1,3 +1,4 @@
+import { replayMk2 } from "@simulator/mk2/replay";
 import { loadSimulatorConfig } from "@simulator/config-default";
 import { prepareBattle, runPrepared } from "@simulator/simulator";
 import type { AppliedEffect, AttackOutcome, BattleResult, DetailedAppliedEffect, SimulatorConfig, UnitType } from "@simulator/types";
@@ -47,6 +48,25 @@ export interface SimulateBatchResult extends SimulateBatchTask {
 
 export async function runSimulation(request: SimulateRequestPayload, options: RunSimulationOptions = {}): Promise<SimulateApiResult> {
   const config = options.config ?? loadSimulatorConfig();
+  if (request.simulation_mode === "mk2") {
+    // A recorded seed or timestamp determines one run; legacy batch seeds never enter it.
+    const result = replayMk2(mk2BattleInput(request), config, { ...request.mk2, trace: true });
+    const seed = result.replayMetadata.effectiveSeed;
+    const row = compactBattleResult({ index: 0, seed }, result);
+    options.onProgress?.(1, 1);
+    return {
+      ...aggregateSimulationRows([row]),
+      outcome_runs: [{ outcome: row.outcome, seed, winner: row.winner, survivors: row.survivors }],
+      replayMetadata: result.replayMetadata,
+      rng: result.rng,
+      warnings: result.warnings,
+      trace: {
+        ...battleResultToTrace(result, seed, troopHeroGroupLabels(request)),
+        replayMetadata: result.replayMetadata, rng: result.rng, warnings: result.warnings,
+      },
+    };
+  }
+  if (request.simulation_mode !== undefined && request.simulation_mode !== "legacy") throw new Error("Unknown simulation mode");
   const total = Math.max(1, Math.min(5000, Math.floor(request.replicates || 1)));
   const tasks = Array.from({ length: total }, (_, index) => ({
     index,
@@ -62,7 +82,8 @@ export async function runSimulation(request: SimulateRequestPayload, options: Ru
     winner: row.winner,
     survivors: row.survivors,
   }));
-  return { ...aggregateSimulationRows(ordered), outcome_runs: outcomeRuns };
+  return { ...aggregateSimulationRows(ordered), outcome_runs: outcomeRuns,
+    replayMetadata: { mode: "legacy", seedSource: "legacy", seedBase: options.seedBase ?? "dashboard" } };
 }
 
 export function runSimulationBatchDirect(
@@ -71,6 +92,7 @@ export function runSimulationBatchDirect(
   config: SimulatorConfig = loadSimulatorConfig(),
   onProgress?: (done: number, total: number) => void,
 ): SimulateBatchResult[] {
+  if (request.simulation_mode === "mk2") throw new Error("Mk2 uses one replay, not replicate batches");
   const total = tasks.length;
   const progressEvery = Math.max(1, Math.floor(Math.max(1, total) / 20));
   if (total === 0) return [];
@@ -89,9 +111,25 @@ export function runSimulationTrace(
   options: RunSimulationOptions = {},
 ): SimulateTrace {
   const config = options.config ?? loadSimulatorConfig();
+  if (request.simulation_mode === "mk2") {
+    const result = replayMk2(mk2BattleInput(request), config, { ...request.mk2, trace: true });
+    options.onProgress?.(1, 1);
+    return {
+      ...battleResultToTrace(result, result.replayMetadata.effectiveSeed, troopHeroGroupLabels(request)),
+      replayMetadata: result.replayMetadata, rng: result.rng, warnings: result.warnings,
+    };
+  }
+  if (request.simulation_mode !== undefined && request.simulation_mode !== "legacy") throw new Error("Unknown simulation mode");
   const result = runPrepared(prepareBattle(toBattleInput(request, seed), config), undefined, { mode: "trace" });
   options.onProgress?.(1, 1);
-  return battleResultToTrace(result, seed, troopHeroGroupLabels(request));
+  return { ...battleResultToTrace(result, seed, troopHeroGroupLabels(request)),
+    replayMetadata: { mode: "legacy", seedSource: "legacy" } };
+}
+
+function mk2BattleInput(request: SimulateRequestPayload) {
+  const input = toBattleInput(request, "");
+  delete input.seed;
+  return input;
 }
 
 export function signedOutcome(result: BattleResult): number {

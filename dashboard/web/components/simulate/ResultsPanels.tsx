@@ -34,6 +34,8 @@ import {
   optimizeRowKey,
 } from "@/lib/simulate/form-state";
 
+import { ReplayMetadataPanel } from "./ReplayMetadataPanel";
+
 export interface SummaryCard {
   label: string;
   value: string;
@@ -71,8 +73,9 @@ export function SimulateResultsPanel({
       data-tour="simulate-results"
     >
       <h3 className="mb-3 text-sm font-bold opacity-70">
-        Results ({result.replicates} replicates)
+        {result.replayMetadata?.mode === "mk2" ? "Mk2 replay result" : `Results (${result.replicates} replicates)`}
       </h3>
+      <ReplayMetadataPanel metadata={result.replayMetadata} warnings={result.warnings} />
       <div
         className="mb-4 grid grid-cols-2 gap-2 sm:gap-3 xl:grid-cols-4"
         data-tour="simulate-results-summary"
@@ -99,6 +102,7 @@ export function SimulateResultsPanel({
           </div>
         ))}
       </div>
+      {result.replayMetadata?.mode !== "mk2" && <>
       <h4 className="mb-2 text-xs font-bold opacity-70">
         Survivor distribution
       </h4>
@@ -117,6 +121,10 @@ export function SimulateResultsPanel({
           onShowExample={onShowBattleExample}
         />
       </div>
+      </>}
+      {result.replayMetadata?.mode === "mk2" && !battleTrace && result.outcome_runs?.[0] && (
+        <button type="button" className="sim-edit-chip px-3 py-2 text-xs" onClick={() => onShowBattleExample(result.outcome_runs![0].seed)}>Show replay trace</button>
+      )}
       <div className="mt-2 min-h-5 text-xs">
         {traceLoadingSeed !== null && (
           <span className="font-mono opacity-70">

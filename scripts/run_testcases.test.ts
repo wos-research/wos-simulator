@@ -1,25 +1,27 @@
 import assert from "node:assert/strict";
 import { spawnSync, type SpawnSyncReturns } from "node:child_process";
+import { createRequire } from "node:module";
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { cpus, tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { test } from "node:test";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 import { formatHumanSummary, formatStdout } from "./run_testcases";
 import { renderTestcaseCharts } from "./testcase_charts";
 import type { TestcaseRunReport } from "../simulator/src/tooling/testcases";
 
 const repoRoot = resolve(fileURLToPath(new URL("..", import.meta.url)));
+const testTsxLoader = pathToFileURL(createRequire(new URL("../simulator/package.json", import.meta.url)).resolve("tsx")).href;
 
 test("cli --save-snapshot writes compact summary and per-case detail artifacts", () => {
   const outputDir = tempDir("simulator-parity-output");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -90,10 +92,10 @@ test("cli writes compact stdout only and creates no artifacts by default", () =>
   const outputDir = tempDir("simulator-parity-stdout");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -122,10 +124,10 @@ test("cli writes compact stdout only and creates no artifacts by default", () =>
 test("cli --generate-charts writes a stochastic distribution chart artifact", () => {
   const outputDir = tempDir("simulator-parity-charts");
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "natalia_solo",
@@ -157,10 +159,10 @@ test("cli --workers runs testcase cases through worker pool", () => {
   const outputDir = tempDir("simulator-parity-workers");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -190,10 +192,10 @@ test("cli --db-ingest writes the generated report into a dashboard sqlite databa
   const dbPath = resolve(outputDir, "dashboard.sqlite");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -220,10 +222,10 @@ test("cli --db-ingest requires --save-snapshot", () => {
   const outputDir = tempDir("simulator-parity-db-no-snapshot");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -244,10 +246,10 @@ test("cli --db-ingest requires --save-snapshot", () => {
 
 test("cli rejects unknown arguments", () => {
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "---repeat",
       "1000",
@@ -264,10 +266,10 @@ test("cli rejects unknown arguments", () => {
 
 test("cli rejects missing option values", () => {
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--repeat",
       "--matching",
@@ -283,10 +285,10 @@ test("cli rejects missing option values", () => {
 
 test("cli rejects invalid numeric option values", () => {
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--repeat",
       "banana",
@@ -305,10 +307,10 @@ test("cli --human writes a readable testcase summary table", () => {
   const outputDir = tempDir("simulator-parity-human");
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -359,10 +361,10 @@ test("cli --human compares with the latest prior summary", () => {
   writeFileSync(resolve(outputDir, "previous.json"), JSON.stringify(previous));
 
   const result = spawnSync(
-    "npx",
+    process.execPath,
     [
-      "--yes",
-      "tsx",
+      "--import",
+      testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -795,13 +797,10 @@ function summaryReport(entries: Array<[testcaseId: string, passes: boolean, bias
 
 function runCliWithFixedDate(outputDir: string, preloadPath: string, fixedDate: string): SpawnSyncReturns<string> {
   return spawnSync(
-    "env",
+    process.execPath,
     [
-      `FIXED_DATE=${fixedDate}`,
-      `NODE_OPTIONS=--import=${preloadPath}`,
-      "npx",
-      "--yes",
-      "tsx",
+      "--import", pathToFileURL(preloadPath).href,
+      "--import", testTsxLoader,
       "scripts/run_testcases.ts",
       "--matching",
       "simple_001",
@@ -814,6 +813,74 @@ function runCliWithFixedDate(outputDir: string, preloadPath: string, fixedDate: 
     {
       cwd: repoRoot,
       encoding: "utf8",
+      env: { ...process.env, FIXED_DATE: fixedDate },
     },
   );
 }
+
+
+function mk2CliControl(): any {
+  return JSON.parse(readFileSync(resolve(repoRoot, "testcases/mk2/controlled.json"), "utf8"))[0];
+}
+
+function runMk2Cli(row: unknown, workers: number, extraArgs: string[] = []) {
+  const testcaseRoot = tempDir("mk2-cli-input");
+  const outputDir = tempDir("mk2-cli-output");
+  writeFileSync(resolve(testcaseRoot, "captured.json"), JSON.stringify([row]));
+  const loader = createRequire(new URL("../simulator/package.json", import.meta.url)).resolve("tsx");
+  const result = spawnSync(process.execPath, [
+    "--import", pathToFileURL(loader).href, "scripts/run_testcases.ts", "--testcase-root", testcaseRoot,
+    "--workers", String(workers), "--repeat", "13", "--seed", "ignored-legacy-seed",
+    "--output-dir", outputDir, ...extraArgs,
+  ], { cwd: repoRoot, encoding: "utf8" });
+  return { result, outputDir };
+}
+
+test("Mk2 CLI serial and worker snapshots preserve exact comparison, input and seed provenance", () => {
+  const row = mk2CliControl();
+  let previousMetadata: unknown;
+  for (const workers of [1, 2]) {
+    const { result, outputDir } = runMk2Cli(row, workers, ["--save-snapshot"]);
+    assert.equal(result.status, 0, result.stderr);
+    const report = JSON.parse(result.stdout);
+    assert.equal(report.counts.executed, 1);
+    const summary: any = Object.values(report.testcases)[0];
+    assert.equal(summary.simulationMode, "mk2");
+    assert.equal(summary.sampleCount, 1);
+    assert.equal(summary.exactComparison.exact, true);
+    assert.equal(summary.exactComparison.survivorChecks, 6);
+    assert.equal(summary.game.passes, true);
+    assert.equal(summary.gameStatAdjustment, undefined);
+    assert.equal(summary.replayMetadata.effectiveSeed, String(row.replay.reportedSeed));
+    assert.equal(summary.replayMetadata.timestampSource, row.replay.timestampSource);
+    if (previousMetadata) assert.deepEqual(summary.replayMetadata, previousMetadata);
+    previousMetadata = summary.replayMetadata;
+    const detail = JSON.parse(readFileSync(resolve(outputDir, summary.detailArtifact), "utf8"));
+    assert.deepEqual(detail.replayMetadata, summary.replayMetadata);
+    assert.deepEqual(detail.exactComparison, summary.exactComparison);
+    assert.deepEqual(detail.replayOptions, row.replay);
+    assert.deepEqual(detail.replayInput.attacker, row.attacker);
+    assert.deepEqual(detail.replayInput.defender, row.defender);
+    assert.equal("observed" in detail.replayInput, false);
+    assert.equal(detail.result.rng.algorithm, "lua54-xoshiro256**");
+  }
+});
+
+test("Mk2 CLI returns failure for a wrong known proc count despite exact survivors", () => {
+  const row = mk2CliControl();
+  const side = Object.keys(row.observed.skillProcs).find((side) => Object.keys(row.observed.skillProcs[side]).length)!;
+  const skillId = Object.keys(row.observed.skillProcs[side])[0]!;
+  row.observed.skillProcs[side][skillId] += 1;
+  const { result } = runMk2Cli(row, 2);
+  assert.equal(result.status, 1, result.stderr);
+  const report = JSON.parse(result.stdout);
+  const summary: any = Object.values(report.testcases)[0];
+  assert.equal(report.counts.errors, 0);
+  assert.equal(summary.exactComparison.outcomeExact, true);
+  assert.equal(summary.exactComparison.exact, false);
+  assert.equal(summary.game.passes, false);
+  assert.equal(summary.game.bias_raw, 0);
+  assert.equal(summary.gameStatAdjustment, undefined);
+  assert.match(formatHumanSummary({ ...report, details: [] }), /Failures \(1\)/);
+  assert.match(formatHumanSummary({ ...report, details: [] }), /mk2/);
+});

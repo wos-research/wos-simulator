@@ -14,7 +14,8 @@ import {
   effectAttackUseLimit,
   effectRoundWindow,
   skillMatchesTrigger,
-  type Rng
+  type Rng,
+  type RandomContext
 } from "./effects";
 import { createEffectIndex, expireEffectIndex, indexEffect, isRuntimeIndexableEffect, type EffectIndex } from "./effectIndex";
 import { createDamageScratch, type DamageResult, type DamageScratch, type StaticDamageProfile } from "./damage";
@@ -45,7 +46,15 @@ export interface Runtime {
   };
 }
 
+export type BeforeExtraAttack = (job: DamageJob, intent: AttackIntent, runtime: Runtime, recorder: BattleRecorder) => void;
+
+export type OnEmptyUnit = (round: number, side: SideId, unit: UnitType, runtime: Runtime, recorder: BattleRecorder) => void;
+
+// Optional policy: delay selected declarations until the normal attack and its existing extras finish.
+export type DeferAttackSkill = (prepared: PreparedAttackSkill, intent: AttackIntent) => boolean;
+
 export interface RunLoopOptions {
+  beforeExtraAttack?: BeforeExtraAttack;
   capRoundKills: boolean;
   capJobKills: boolean;
   commitLosses: boolean;
@@ -140,7 +149,7 @@ export function triggerSkills(
   for (const skill of skills) {
     if (!skillMatchesTrigger(skill, triggerType, round, intent)) continue;
     recorder.recordSkillTriggerAttempt(skill);
-    if (!chancePasses(skill, runtime.rng)) continue;
+    if (!chancePasses(skill, runtime.rng, {skill, round, phase: triggerType, intent})) continue;
     recorder.recordSkillTriggered(skill);
     for (const effectIntent of skill.effects) {
       const effect = activateEffect(skill, effectIntent, round, intent);
@@ -162,14 +171,15 @@ export function triggerAttackSkills(
   preparedSkills: PreparedAttackSkill[],
   runtime: Runtime,
   recorder: BattleRecorder,
-  intent: AttackIntent
+  intent: AttackIntent,
+  phase: RandomContext["phase"] = "attack_declared"
 ): DeferredEffectPlan[] | undefined {
   let deferredEffects: DeferredEffectPlan[] | undefined;
   for (const prepared of preparedSkills) {
     const { skill } = prepared;
     if (!preparedAttackFrequencyMatches(prepared, intent)) continue;
     recorder.recordSkillTriggerAttempt(skill);
-    if (!preparedChancePasses(prepared.probabilityPct, runtime.rng)) continue;
+    if (!preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase, intent})) continue;
     recorder.recordSkillTriggered(skill);
     for (const effectIntent of prepared.immediateEffects) {
       const effect = activateEffect(skill, effectIntent, round, intent);
@@ -193,10 +203,10 @@ function preparedAttackFrequencyMatches(prepared: PreparedAttackSkill, intent: A
   return count >= first && (count - first) % every === 0;
 }
 
-export function preparedChancePasses(probabilityPct: number, rng: Rng): boolean {
+export function preparedChancePasses(probabilityPct: number, rng: Rng, context?: RandomContext): boolean {
   if (probabilityPct <= 0) return false;
   if (probabilityPct >= 100) return true;
-  return rng() < probabilityPct / 100;
+  return rng.chance ? rng.chance(probabilityPct, context) : rng() < probabilityPct / 100;
 }
 
 export function materializeDeferredEffects(

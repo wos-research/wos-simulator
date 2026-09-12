@@ -1,4 +1,5 @@
 import { createRequire } from "node:module";
+import { pathToFileURL } from "node:url";
 import { parentPort, Worker, type WorkerOptions } from "node:worker_threads";
 
 import type {
@@ -102,5 +103,5 @@ export function installWorkerThreadBatchHandler<TTask, TResult, TProgress = neve
 
 function resolveTsxLoader(): string {
   const requireFromSimulator = createRequire(new URL("../simulator/package.json", import.meta.url));
-  return requireFromSimulator.resolve("tsx");
+  return pathToFileURL(requireFromSimulator.resolve("tsx")).href;
 }

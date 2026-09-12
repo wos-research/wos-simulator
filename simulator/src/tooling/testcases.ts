@@ -10,6 +10,7 @@ import {
 } from "./calibration";
 import { compareOutcomeDistribution, type ParityComparisonMetrics } from "./parityMetrics";
 import { prepareBattle, runPrepared } from "../simulator";
+import { replayMk2, type Mk2ReplayOptions, type Mk2ReplayResult } from "../mk2/replay";
 import { DamageAggregationError } from "../staticDamageProfile";
 import type { BattleInput, BattleResult, FighterInput, SimulationMode, SimulatorConfig, StatBlock, UnitType } from "../types";
 
@@ -42,7 +43,32 @@ export interface TestcaseArmies {
   defender: TestcaseArmyDefinition;
 }
 
-export interface TestcaseCaseReport {
+export interface Mk2ObservedOutcome {
+  winner?: string | null;
+  remaining?: Partial<Record<"attacker" | "defender", Partial<Record<UnitType, number>>>>;
+  totals?: Partial<Record<"attacker" | "defender", number>>;
+  /** Only explicitly reported counts belong here. An omitted count is unknown. */
+  skillProcs?: Partial<Record<"attacker" | "defender", Record<string, number>>>;
+}
+
+export interface Mk2ExactComparison {
+  exact: boolean;
+  outcomeExact: boolean;
+  complete: boolean;
+  winnerChecked: boolean;
+  survivorChecks: number;
+  procChecks: Array<{ side: "attacker" | "defender"; reportSkillId: string; expected: number; actual: number | null; exact: boolean }>;
+  differences: Array<{ field: string; expected: unknown; actual: unknown }>;
+}
+
+export interface TestcaseReplayFields {
+  simulationMode?: "mk2";
+  replayMetadata?: Mk2ReplayResult["replayMetadata"];
+  replayWarnings?: string[];
+  exactComparison?: Mk2ExactComparison;
+}
+
+export interface TestcaseCaseReport extends TestcaseReplayFields {
   file: string;
   testcaseId: string;
   index: number;
@@ -53,6 +79,8 @@ export interface TestcaseCaseReport {
   gameResult?: unknown;
   calibration?: CalibrationCaseComparison;
   result?: BattleResult;
+  replayInput?: BattleInput;
+  replayOptions?: Mk2ReplayOptions;
   simulatorScoreDelta?: number;
   simulatorStats?: SampleStats;
   comparisonSamples?: number[];
@@ -78,7 +106,7 @@ export interface TestcaseRunWarning {
   detailArtifact?: string;
 }
 
-export interface TestcaseSummaryEntry {
+export interface TestcaseSummaryEntry extends TestcaseReplayFields {
   file: string;
   testcase_id: string;
   idx: number;
@@ -137,6 +165,7 @@ export interface PreparedTestcaseCase {
   index: number;
   detail: TestcaseCaseReport;
   input?: BattleInput;
+  replay?: Mk2ReplayOptions;
   key?: string;
   adaptError?: TestcaseRunWarning;
 }
@@ -151,9 +180,10 @@ export interface TestcaseExecutionJob {
   seed?: string | number;
   includeSamples?: boolean;
   simulationMode?: SimulationMode;
+  replay?: Mk2ReplayOptions;
 }
 
-export interface TestcaseExecutionResult {
+export interface TestcaseExecutionResult extends TestcaseReplayFields {
   testcaseId: string;
   index: number;
   result?: BattleResult;
@@ -189,7 +219,7 @@ export interface TestcaseStatAdjustment {
 }
 
 export function defaultTestcaseRoot(): string {
-  return resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "testcases");
+  return resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", "testcases");
 }
 
 export function discoverTestcaseFiles(options: Pick<TestcaseRunOptions, "testcaseRoot" | "matching" | "includeDisabled"> = {}): string[] {
@@ -199,7 +229,7 @@ export function discoverTestcaseFiles(options: Pick<TestcaseRunOptions, "testcas
   return files
     .filter((file) => isDiscoverableTestcaseFile(file, options.includeDisabled))
     .filter((file) => options.includeDisabled || (!file.endsWith(".disabled") && !file.endsWith(".stale_troops")))
-    .filter((file) => !options.matching || file.includes(options.matching))
+    .filter((file) => !options.matching || normalizeReportPath(relative(root, file)).includes(normalizeReportPath(options.matching)))
     .sort();
 }
 
@@ -229,7 +259,8 @@ export function prepareTestcaseCases(options: TestcaseRunOptions): { filesFound:
       const detail = emptyCaseReport(reportFile, testcaseId, index, diagnostics, entry);
       const preparedCase: PreparedTestcaseCase = { file, reportFile, entry, testcaseId, index, detail };
       try {
-        preparedCase.input = adaptTestcaseEntry(entry, { seed: options.seed }, diagnostics);
+        preparedCase.replay = testcaseReplayOptions(entry);
+        preparedCase.input = adaptTestcaseEntry(entry, { seed: preparedCase.replay ? undefined : options.seed }, diagnostics);
         preparedCase.key = snapshotKey(reportFile, index);
       } catch (error) {
         detail.error = errorMessage(error);
@@ -271,7 +302,7 @@ export function runPreparedTestcases(
       continue;
     }
     try {
-      const execution = execute({ file, reportFile, testcaseId, index, input: preparedCase.input, repeat, seed: options.seed }, config);
+      const execution = execute({ file, reportFile, testcaseId, index, input: preparedCase.input, repeat, seed: options.seed, includeSamples: options.includeSamples, replay: preparedCase.replay }, config);
       applyExecutionResult(report, comparison, preparedCase, execution, config);
     } catch (error) {
       detail.error = errorMessage(error);
@@ -317,7 +348,9 @@ export async function runPreparedTestcasesAsync(
         index: preparedCase.index,
         input: preparedCase.input,
         repeat,
-        seed: options.seed
+        seed: options.seed,
+        includeSamples: options.includeSamples,
+        replay: preparedCase.replay
       });
       return { preparedCase, execution };
     } catch (error) {
@@ -377,22 +410,27 @@ function applyExecutionResult(
   const defenderTroops = totalInputTroops(preparedCase.input!.defender);
   const initialTroops = attackerTroops + defenderTroops;
   const simulatorSamples = execution.simulatorSamples;
-  const gameSamples = extractOutcomeScores(gameResult);
+  const isMk2 = preparedCase.replay !== undefined;
+  const observed = asObject(entry).observed as Mk2ObservedOutcome | undefined;
+  const exactComparison = isMk2 ? compareMk2Outcome(observed, result) : undefined;
+  const observedScore = isMk2 ? observedOutcomeScore(observed) : undefined;
+  const gameSamples = isMk2 ? (observedScore === undefined ? [] : [observedScore]) : extractOutcomeScores(gameResult);
   let game = gameSamples.length > 0
     ? compareOutcomeDistribution({
         candidate: { samples: simulatorSamples },
         reference: { samples: gameSamples },
         initialTroops,
         outcomeRange: { min: -defenderTroops, max: attackerTroops },
-        deterministic: result.randomness.deterministic,
+        deterministic: isMk2 || result.randomness.deterministic,
         thresholds: comparison.thresholds
       })
     : null;
-  if (game) {
+  if (game && !isMk2) {
     const unroundedBiasRaw = stats.mu - mean(gameSamples);
     game = adjustedForRoundingRules(game, result.randomness.deterministic, initialTroops, result.rounds, unroundedBiasRaw);
   }
-  const gameStatAdjustment = game && preparedCase.input
+  if (game && exactComparison) game = { ...game, passes: exactComparison.exact };
+  const gameStatAdjustment = !isMk2 && game && preparedCase.input
     ? findGameStatAdjustment({
         game,
         input: preparedCase.input,
@@ -408,6 +446,17 @@ function applyExecutionResult(
   if (gameStatAdjustment) game = gameStatAdjustment.adjusted;
 
   detail.result = result;
+  if (isMk2) {
+    detail.simulationMode = "mk2";
+    detail.replayMetadata = execution.replayMetadata;
+    detail.replayWarnings = execution.replayWarnings;
+    detail.exactComparison = exactComparison;
+    detail.replayInput = structuredClone(preparedCase.input!);
+    detail.replayOptions = structuredClone(preparedCase.replay!);
+    for (const reason of execution.replayWarnings ?? []) {
+      report.warnings.push({ file: reportFile, testcase_id: testcaseId, idx: index, stage: "execute", reason });
+    }
+  }
   detail.deterministic = execution.deterministic;
   detail.sampleCount = execution.sampleCount;
   detail.simulatorStats = stats;
@@ -422,7 +471,7 @@ function applyExecutionResult(
   detail.visibility = visibilityFromResult(result);
   detail.diagnostics.push(...execution.diagnostics);
   if (!game) {
-    report.warnings.push({ file: reportFile, testcase_id: testcaseId, idx: index, stage: "game_comparison", reason: "Missing game_report_result" });
+    report.warnings.push({ file: reportFile, testcase_id: testcaseId, idx: index, stage: "game_comparison", reason: isMk2 ? "Missing observed survivors for exact Mk2 comparison" : "Missing game_report_result" });
   }
   report.counts.executed += 1;
   report.testcases[preparedCase.key!] = {
@@ -435,6 +484,12 @@ function applyExecutionResult(
     sampleCount: execution.sampleCount,
     game,
     baseline: null,
+    ...(isMk2 ? {
+      simulationMode: "mk2" as const,
+      replayMetadata: execution.replayMetadata,
+      replayWarnings: execution.replayWarnings,
+      exactComparison,
+    } : {}),
     ...(gameStatAdjustment ? { gameStatAdjustment: statAdjustmentForReport(gameStatAdjustment) } : {})
   };
 }
@@ -633,6 +688,20 @@ export function executeTestcaseCase(job: TestcaseExecutionJob, config: Simulator
     const samples: number[] = [];
     const sampleOutcomes: TestcaseSampleOutcome[] = [];
     const sampleDeltas: number[] = [];
+    if (job.replay !== undefined) {
+      // Captured-input replay never samples alternate seeds or adjusts stats to observations.
+      const result = replayMk2(job.input, config, job.replay);
+      const score = battleScoreDelta(result)!;
+      return {
+        testcaseId: job.testcaseId, index: job.index, result,
+        simulationMode: "mk2", replayMetadata: result.replayMetadata, replayWarnings: result.warnings,
+        deterministic: result.randomness.deterministic, sampleCount: 1,
+        simulatorStats: sampleStats([score], { includeSamples: job.includeSamples }),
+        simulatorSamples: [score], simulatorScoreDelta: score,
+        simulatorSampleOutcomes: [sampleOutcome(1, result, score)], simulatorSampleDeltas: [score],
+        diagnostics: [...result.resolved.attacker.diagnostics, ...result.resolved.defender.diagnostics],
+      };
+    }
     // Resolve the battle once and reuse it across every seeded sample of this case.
     const compiled = prepareBattle(job.input, config);
     const baseSeed = job.seed ?? job.input.seed;
@@ -730,6 +799,72 @@ export function adaptTestcaseEntry(
     ...(maxRounds !== undefined ? { maxRounds } : {}),
     ...(engagementType !== undefined ? { engagement_type: engagementType } : {})
   };
+}
+
+/** Legacy rows remain legacy; a replay object or explicit mode opts into Mk2. */
+export function testcaseReplayOptions(entry: unknown): Mk2ReplayOptions | undefined {
+  const object = asObject(entry);
+  const mode = object.simulation_mode;
+  if (mode !== undefined && mode !== "legacy" && mode !== "mk2") throw new Error(`Unknown simulation_mode: ${String(mode)}`);
+  const hasReplay = object.replay !== undefined;
+  if (mode === "legacy" && hasReplay) throw new Error("Legacy testcase cannot include Mk2 replay options");
+  if (!hasReplay && mode !== "mk2") return undefined;
+  if (hasReplay && (!object.replay || typeof object.replay !== "object" || Array.isArray(object.replay))) {
+    throw new Error("Testcase replay must be an object");
+  }
+  const replay = asObject(object.replay);
+  // Whitelist options: expected outcomes and arbitrary row fields cannot reach the engine.
+  return structuredClone({
+    ...(replay.timestamp !== undefined ? { timestamp: replay.timestamp } : {}),
+    ...(replay.reportedSeed !== undefined ? { reportedSeed: replay.reportedSeed } : {}),
+    ...(replay.timestampSource !== undefined ? { timestampSource: replay.timestampSource } : {}),
+    ...(replay.trace !== undefined ? { trace: replay.trace } : {}),
+    ...(replay.mechanics !== undefined ? { mechanics: replay.mechanics } : {}),
+  }) as Mk2ReplayOptions;
+}
+
+const REPORT_SKILL_IDS: Record<string, string> = {
+  MasterBrawler: "90001", BandsOfSteel: "90002", Charge: "90003", Ambusher: "90004",
+  RangedStrike: "90005", Volley: "90006", CrystalShield: "90007", CrystalLance: "90008",
+  CrystalGunpowder: "90009", BodyOfLight: "90010", IncandescentField: "90012", FlameCharge: "90013",
+};
+
+export function compareMk2Outcome(observed: Mk2ObservedOutcome | undefined, result: BattleResult): Mk2ExactComparison {
+  const differences: Mk2ExactComparison["differences"] = [];
+  let survivorChecks = 0;
+  for (const side of ["attacker", "defender"] as const) for (const unit of ["infantry", "lancer", "marksman"] as const) {
+    const expected = observed?.remaining?.[side]?.[unit];
+    if (expected === undefined) continue;
+    survivorChecks++;
+    if (expected !== result.remaining[side][unit]) differences.push({ field: `remaining.${side}.${unit}`, expected, actual: result.remaining[side][unit] });
+  }
+  const winnerChecked = observed?.winner !== undefined && observed.winner !== null;
+  if (winnerChecked && observed!.winner !== result.winner) differences.push({ field: "winner", expected: observed!.winner, actual: result.winner });
+  const complete = survivorChecks === 6 && winnerChecked;
+  const outcomeExact = complete && differences.length === 0;
+  const procChecks: Mk2ExactComparison["procChecks"] = [];
+  for (const side of ["attacker", "defender"] as const) {
+    for (const [reportSkillId, expected] of Object.entries(observed?.skillProcs?.[side] ?? {})) {
+      const skillId = Object.keys(REPORT_SKILL_IDS).find((id) => REPORT_SKILL_IDS[id] === reportSkillId);
+      const matched = result.skillReport[side].filter((skill) => skill.skillId === reportSkillId || skill.skillId === skillId);
+      const actual = skillId || matched.length ? matched.reduce((n, skill) => n + skill.skillActivations, 0) : null;
+      const exact = actual !== null && expected === actual;
+      procChecks.push({ side, reportSkillId, expected, actual, exact });
+      if (!exact) differences.push({ field: `skillProcs.${side}.${reportSkillId}`, expected, actual });
+    }
+  }
+  return { exact: outcomeExact && differences.length === 0, outcomeExact, complete, winnerChecked, survivorChecks, procChecks, differences };
+}
+
+function observedOutcomeScore(observed: Mk2ObservedOutcome | undefined): number | undefined {
+  if (!observed?.remaining) return undefined;
+  const values = ["attacker", "defender"].map((side) => {
+    const units = observed.remaining?.[side as "attacker" | "defender"];
+    const counts = [units?.infantry, units?.lancer, units?.marksman];
+    return counts.every((count) => typeof count === "number" && Number.isFinite(count))
+      ? (counts as number[]).reduce((sum, count) => sum + count, 0) : undefined;
+  });
+  return values[0] !== undefined && values[1] !== undefined ? values[0] - values[1] : undefined;
 }
 
 export function battleScoreDelta(value: unknown): number | undefined {

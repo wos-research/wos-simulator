@@ -1,3 +1,5 @@
+import type { Mk2ReplayOptions, Mk2ReplayResult } from "@simulator/mk2/replay";
+import type { ReplayRunMetadata } from "@/lib/simulate/replay-settings";
 import type { TroopCategory } from "@/lib/heroes-catalogue";
 import type {
   OptimizeRankBy,
@@ -62,6 +64,9 @@ export interface SimulatePetModifiersPayload {
 }
 
 export interface SimulateRequestPayload {
+  /** Missing mode preserves saved legacy requests. Only the single-battle flow uses Mk2. */
+  simulation_mode?: "legacy" | "mk2";
+  mk2?: Omit<Mk2ReplayOptions, "trace">;
   attacker: SimulateSidePayload;
   defender: SimulateSidePayload;
   replicates: number;
@@ -116,6 +121,9 @@ export interface SimulateTraceRound {
 }
 
 export interface SimulateTrace {
+  replayMetadata?: ReplayRunMetadata;
+  rng?: Mk2ReplayResult["rng"];
+  warnings?: string[];
   seed: string | number;
   outcome: number;
   winner?: "attacker" | "defender" | "draw";
@@ -133,6 +141,9 @@ export interface SimulateTrace {
 }
 
 export interface SimulateApiResult {
+  replayMetadata?: ReplayRunMetadata;
+  rng?: Mk2ReplayResult["rng"];
+  warnings?: string[];
   replicates: number;
   summary: {
     mean: number;
@@ -393,7 +404,7 @@ export function buildSimulationRunTitle(
     return `Ratio Explorer: ${sideHeroes(request.attacker)} vs ${sideHeroes(request.defender)} (${request.pointsPerEdge}-point)`;
   }
   const pvpRequest = request as SimulateRequestPayload | OptimizeRatioRequestPayload;
-  return `${sideHeroes(pvpRequest.attacker)} (${sideRatio(
+  return `${kind === "simulate" && pvpRequest.simulation_mode === "mk2" ? "Mk2: " : ""}${sideHeroes(pvpRequest.attacker)} (${sideRatio(
     pvpRequest.attacker,
   )}) vs ${sideHeroes(pvpRequest.defender)} (${sideRatio(pvpRequest.defender)})`;
 }

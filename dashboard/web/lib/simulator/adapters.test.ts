@@ -194,6 +194,9 @@ test("every submitted simulation side field is mapped or explicitly metadata-onl
 });
 
 const requestFieldContract = {
+  // Execution mode and RNG inputs are consumed by runSimulation, never the fighter adapter.
+  simulation_mode: { handledBy: "runner", mutate: (payload) => ({ ...payload, simulation_mode: "mk2" }) },
+  mk2: { handledBy: "runner", mutate: (payload) => ({ ...payload, mk2: { reportedSeed: "123456" } }) },
   attacker: {
     handledBy: "battle-input",
     mutate: (payload) => ({ ...payload, attacker: { ...payload.attacker, troops: { ...payload.attacker.troops, infantry: payload.attacker.troops.infantry + 11 } } }),

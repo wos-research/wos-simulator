@@ -38,7 +38,8 @@ export function processExtraAttacks(
   damageJobOptions: DamageJobOptions,
   roundTargetDamage: Record<SideId, Record<UnitType, number>>,
   loopOptions: RunLoopOptions,
-  results: DamageJobResult[]
+  results: DamageJobResult[],
+  selectedEffects?: readonly ActiveEffect[]
 ): { totalKills: number; skillKills: number } {
   if (runtime.effectIndex.extraAttacks.length === 0) return { totalKills: 0, skillKills: 0 };
   const { round, roundStartTroops } = normalAttack;
@@ -46,7 +47,7 @@ export function processExtraAttacks(
   let totalKills = 0;
   let skillKills = 0;
   // Snapshot the applicable effects: charging an effect below may expire it out of the live index.
-  const effects = runtime.effectIndex.extraAttacks.filter(
+  const effects = (selectedEffects ?? runtime.effectIndex.extraAttacks).filter(
     (effect) => extraAttackEffectAppliesToNormalAttack(effect, normalAttack) && advanceEffectAttackDelay(effect)
   );
   for (const effect of effects) {
@@ -98,6 +99,7 @@ export function processExtraAttacks(
               sourceMultiplier: multiplier
             };
             if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) continue;
+            loopOptions.beforeExtraAttack?.(job, intent, runtime, recorder);
             recorder.recordScheduledDamageJob(job);
             const result = calculateDamageJob(job, fighters, damageJobOptions);
             if (job.kind === "skill") recorder.recordSkillDamageJob(job, effect);

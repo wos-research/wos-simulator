@@ -15,7 +15,15 @@ import type {
 import { ALL_UNIT_MASK, unitMask, unitMaskHas } from "./types";
 import { normalizeUnitType } from "./normalize";
 
-export type Rng = () => number;
+export interface RandomContext {
+  skill: ResolvedSkill;
+  round: number;
+  phase: "battle_start" | "round_start" | "attack_declared" | "extra_attack" | "before_target" | "empty_unit";
+  intent?: AttackIntent;
+}
+export type Rng = (() => number) & {
+  chance?: (probabilityPct: number, context?: RandomContext) => boolean;
+};
 interface CompiledActivation {
   source: ActiveEffect["source"];
   sourceSkill: ResolvedSkill;
@@ -98,11 +106,11 @@ function resolvedProbabilityPct(skill: ResolvedSkill): number {
   return Number.isFinite(value) ? Math.max(0, Math.min(100, value)) : 0;
 }
 
-export function chancePasses(skill: ResolvedSkill, rng: Rng): boolean {
+export function chancePasses(skill: ResolvedSkill, rng: Rng, context?: RandomContext): boolean {
   const value = compiledTriggerForSkill(skill).probabilityPct;
   if (value <= 0) return false;
   if (value >= 100) return true;
-  return rng() < value / 100;
+  return rng.chance ? rng.chance(value, context) : rng() < value / 100;
 }
 
 export function createSeededRng(seed: string | number = "simulator-default"): Rng {

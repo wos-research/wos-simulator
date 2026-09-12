@@ -14,6 +14,13 @@ is organized around three primary components plus shared data and documentation.
 └── test_results/  # Calibration DB (dashboard.sqlite) + baseline
 ```
 
+## Expedition Simulator Mk2
+
+The [Mk2 integration guide](docs/mk2-integration.md) describes the opt-in replay engine,
+seed provenance, and reproducible checks. All 160 captured cases live in
+[`testcases/mk2/controlled.json`](testcases/mk2/controlled.json), with a
+[readable report catalog](docs/mk2-controlled-reports.md).
+
 ## Components
 
 ### `simulator/` — the primary simulator

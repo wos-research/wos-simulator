@@ -31,6 +31,13 @@ async function handleMessage(request: SimulatorWorkerRequest): Promise<void> {
   activeJobId = request.id;
   try {
     if (request.type === "simulate") {
+      if (request.payload.simulation_mode === "mk2") {
+        const data = await runSimulation(request.payload, {
+          onProgress: (done, total) => postIfActive(request.id, { id: request.id, type: "progress", done, total }),
+        });
+        postIfActive(request.id, { id: request.id, type: "simulateResult", data });
+        return;
+      }
       const runner = createSimulateBatchRunner(request.payload, BATTLE_WORKER_COUNT);
       activeBatchRunner = runner;
       try {
