@@ -1,0 +1,5243 @@
+[
+  {
+    "test_id": "testcase-000001",
+    "timestamp": "1789240021",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 992,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789240021",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 992,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 992,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000002",
+    "timestamp": "1789240014",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 991,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789240014",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 991,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 991,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000003",
+    "timestamp": "1789239988",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 200
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 180,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789239988",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 180,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 180,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000005",
+    "timestamp": "1789239891",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 992,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789239891",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 992,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 992,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000006",
+    "timestamp": "1789239885",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 991,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789239885",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 991,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 991,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000007",
+    "timestamp": "1789239872",
+    "attacker": {
+      "troops": {
+        "lancer_t12_fc10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1505.72,
+          "defense": 1568.13,
+          "lethality": 1371.46,
+          "health": 1376.22
+        },
+        "lancer": {
+          "attack": 1434.92,
+          "defense": 1448.13,
+          "lethality": 1352.12,
+          "health": 1277.36
+        },
+        "marksman": {
+          "attack": 1337.12,
+          "defense": 1358.73,
+          "lethality": 1061.03,
+          "health": 1022.34
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 567.11,
+          "defense": 577.53,
+          "lethality": 466.35,
+          "health": 456.16
+        },
+        "lancer": {
+          "attack": 548.72,
+          "defense": 520.39,
+          "lethality": 443.01,
+          "health": 431.12
+        },
+        "marksman": {
+          "attack": 583.42,
+          "defense": 531.75,
+          "lethality": 512.97,
+          "health": 455.04
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 990,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789239872",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 990,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 990,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000008",
+    "timestamp": "1789244878",
+    "attacker": {
+      "troops": {
+        "infantry_t12_fc10": 380232,
+        "lancer_t12_fc10": 15319,
+        "marksman_t12_fc10": 237281,
+        "lancer_t11_fc10": 51052,
+        "marksman_t11_fc10": 76580
+      },
+      "heroes": [
+        {
+          "name": "Mia",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [
+        {
+          "name": "Jessie",
+          "levels": {
+            "skill_1": 5
+          }
+        },
+        {
+          "name": "Jessie",
+          "levels": {
+            "skill_1": 5
+          }
+        }
+      ],
+      "stats": {
+        "infantry": {
+          "attack": 3104.76,
+          "defense": 2819.68,
+          "lethality": 3290.51,
+          "health": 2981.03
+        },
+        "lancer": {
+          "attack": 1886.55,
+          "defense": 1689.83,
+          "lethality": 2184.45,
+          "health": 1934.03
+        },
+        "marksman": {
+          "attack": 3163.04,
+          "defense": 2787.48,
+          "lethality": 3342.64,
+          "health": 2925.83
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t12_fc10": 417039,
+        "lancer_t12_fc10": 153624,
+        "marksman_t12_fc10": 588808,
+        "infantry_t11_fc10": 113634,
+        "marksman_t11_fc10": 113634
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5
+          }
+        },
+        {
+          "name": "Hendrik",
+          "levels": {
+            "skill_1": 5
+          }
+        }
+      ],
+      "stats": {
+        "infantry": {
+          "attack": 2669.23,
+          "defense": 3056.51,
+          "lethality": 3000.86,
+          "health": 2678.55
+        },
+        "lancer": {
+          "attack": 2627.43,
+          "defense": 3020.73,
+          "lethality": 2869.96,
+          "health": 2543.15
+        },
+        "marksman": {
+          "attack": 2622.43,
+          "defense": 3015.11,
+          "lethality": 2789.25,
+          "health": 2479.92
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 875432
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789244878",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 875432
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {}
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000010",
+    "timestamp": "1789244922",
+    "attacker": {
+      "troops": {
+        "infantry_t12_fc10": 135174,
+        "lancer_t12_fc10": 2703,
+        "marksman_t12_fc10": 132471
+      },
+      "heroes": [
+        {
+          "name": "Magnus",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Fred",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Xura",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 2901.25,
+          "defense": 2899.25,
+          "lethality": 3164.9,
+          "health": 3222.75
+        },
+        "lancer": {
+          "attack": 2949.25,
+          "defense": 2947.25,
+          "lethality": 3185.1,
+          "health": 3243.15
+        },
+        "marksman": {
+          "attack": 2901.25,
+          "defense": 2899.25,
+          "lethality": 3164.9,
+          "health": 3222.75
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t12_fc10": 420288,
+        "lancer_t12_fc10": 159582,
+        "marksman_t12_fc10": 522604,
+        "infantry_t11_fc10": 30592,
+        "marksman_t11_fc10": 91862
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5
+          }
+        },
+        {
+          "name": "Hendrik",
+          "levels": {
+            "skill_1": 5
+          }
+        }
+      ],
+      "stats": {
+        "infantry": {
+          "attack": 2669.23,
+          "defense": 3056.51,
+          "lethality": 2897.5,
+          "health": 2678.55
+        },
+        "lancer": {
+          "attack": 2627.43,
+          "defense": 3020.73,
+          "lethality": 2770.96,
+          "health": 2543.15
+        },
+        "marksman": {
+          "attack": 2622.43,
+          "defense": 3015.11,
+          "lethality": 2692.94,
+          "health": 2479.92
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 1170740
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789244922",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 1170740
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {}
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000011",
+    "timestamp": "1789245013",
+    "attacker": {
+      "troops": {
+        "infantry_t12_fc10": 121507,
+        "lancer_t12_fc10": 7594,
+        "marksman_t12_fc10": 124039
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 2943.17,
+          "defense": 2832.35,
+          "lethality": 2204.82,
+          "health": 2243.64
+        },
+        "lancer": {
+          "attack": 2992.37,
+          "defense": 2614.17,
+          "lethality": 2220.68,
+          "health": 2115.2
+        },
+        "marksman": {
+          "attack": 2834.57,
+          "defense": 2500.17,
+          "lethality": 1877.46,
+          "health": 1770.33
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t11_fc10": 1381536,
+        "lancer_t11_fc10": 1354028,
+        "marksman_t11_fc10": 1541540
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1864.68,
+          "defense": 1978.99,
+          "lethality": 1278.68,
+          "health": 1262.29
+        },
+        "lancer": {
+          "attack": 1774.84,
+          "defense": 1914.98,
+          "lethality": 1108.75,
+          "health": 1057.26
+        },
+        "marksman": {
+          "attack": 1866.57,
+          "defense": 1986.26,
+          "lethality": 1354.7,
+          "health": 1161.64
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 4038223
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789245013",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 4038223
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {}
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000012",
+    "timestamp": "1789245325",
+    "attacker": {
+      "troops": {
+        "infantry_t11_fc10": 1
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 782.2,
+          "defense": 781.19,
+          "lethality": 724.85,
+          "health": 696.07
+        },
+        "lancer": {
+          "attack": 719.87,
+          "defense": 748.34,
+          "lethality": 639.05,
+          "health": 657.96
+        },
+        "marksman": {
+          "attack": 784.09,
+          "defense": 788.0,
+          "lethality": 743.53,
+          "health": 749.64
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t12_fc10": 433736,
+        "lancer_t12_fc10": 158835,
+        "marksman_t12_fc10": 479190,
+        "infantry_t11_fc10": 113634,
+        "marksman_t11_fc10": 113634
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5
+          }
+        }
+      ],
+      "stats": {
+        "infantry": {
+          "attack": 3223.07,
+          "defense": 3343.46,
+          "lethality": 2897.5,
+          "health": 2546.24
+        },
+        "lancer": {
+          "attack": 3172.91,
+          "defense": 3304.44,
+          "lethality": 2770.96,
+          "health": 2417.29
+        },
+        "marksman": {
+          "attack": 3166.91,
+          "defense": 3298.3,
+          "lethality": 2692.94,
+          "health": 2357.07
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 1299029
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789245325",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 1299029
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {}
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000013",
+    "timestamp": "1789252560",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 45000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 37928,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252560",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 37928,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 37928,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000014",
+    "timestamp": "1789252526",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 100
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252526",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 100
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 100,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000016",
+    "timestamp": "1789252622",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 10000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc3": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 401.15,
+          "defense": 402.45,
+          "lethality": 258.71,
+          "health": 262.66
+        },
+        "lancer": {
+          "attack": 398.37,
+          "defense": 396.17,
+          "lethality": 259.66,
+          "health": 252.61
+        },
+        "marksman": {
+          "attack": 381.03,
+          "defense": 379.83,
+          "lethality": 228.47,
+          "health": 232.94
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 9950,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252622",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 9950,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 9950,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000018",
+    "timestamp": "1789252666",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 3000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc3": 200
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 401.15,
+          "defense": 402.45,
+          "lethality": 258.71,
+          "health": 262.66
+        },
+        "lancer": {
+          "attack": 398.37,
+          "defense": 396.17,
+          "lethality": 259.66,
+          "health": 252.61
+        },
+        "marksman": {
+          "attack": 381.03,
+          "defense": 379.83,
+          "lethality": 228.47,
+          "health": 232.94
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 2739,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252666",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 2739,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 2739,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000019",
+    "timestamp": "1789252675",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 3000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc3": 300
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 401.15,
+          "defense": 402.45,
+          "lethality": 258.71,
+          "health": 262.66
+        },
+        "lancer": {
+          "attack": 398.37,
+          "defense": 396.17,
+          "lethality": 259.66,
+          "health": 252.61
+        },
+        "marksman": {
+          "attack": 381.03,
+          "defense": 379.83,
+          "lethality": 228.47,
+          "health": 232.94
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 2495,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252675",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 2495,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 2495,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000020",
+    "timestamp": "1789252685",
+    "attacker": {
+      "troops": {
+        "marksman_t10": 3000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc3": 400
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 401.15,
+          "defense": 402.45,
+          "lethality": 258.71,
+          "health": 262.66
+        },
+        "lancer": {
+          "attack": 398.37,
+          "defense": 396.17,
+          "lethality": 259.66,
+          "health": 252.61
+        },
+        "marksman": {
+          "attack": 381.03,
+          "defense": 379.83,
+          "lethality": 228.47,
+          "health": 232.94
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 1552,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252685",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 1552,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1552
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000021",
+    "timestamp": "1789252690",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 3000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc3": 500
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 401.15,
+          "defense": 402.45,
+          "lethality": 258.71,
+          "health": 262.66
+        },
+        "lancer": {
+          "attack": 398.37,
+          "defense": 396.17,
+          "lethality": 259.66,
+          "health": 252.61
+        },
+        "marksman": {
+          "attack": 381.03,
+          "defense": 379.83,
+          "lethality": 228.47,
+          "health": 232.94
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 1843,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252690",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 1843,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 1843,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000022",
+    "timestamp": "1789252721",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 10000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 600
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 589
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252721",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 589
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 589,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000023",
+    "timestamp": "1789252726",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 30000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 200
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 59
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252726",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 59
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 59,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000024",
+    "timestamp": "1789252752",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 40473
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 589
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 475
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252752",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 475
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 475,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000025",
+    "timestamp": "1789252756",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 16097
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 59
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 10120,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252756",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 10120,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 10120,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000026",
+    "timestamp": "1789252783",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 13100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 475
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 453
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252783",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 453
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 453,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000027",
+    "timestamp": "1789252791",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 34829
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 300
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 166
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252791",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 166
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 166,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000028",
+    "timestamp": "1789252841",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 34268
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 166
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 14362,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252841",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 14362,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 14362,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000029",
+    "timestamp": "1789252857",
+    "attacker": {
+      "troops": {
+        "lancer_t9": 47660
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 453
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 388
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252857",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 388
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 388,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000030",
+    "timestamp": "1789252923",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 37346
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 388
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 267
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252923",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 267
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 267,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000031",
+    "timestamp": "1789252998",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 47660
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 400
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 217
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789252998",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 217
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 217,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000032",
+    "timestamp": "1789253037",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 47660
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 217
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 23897,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253037",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 23897,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 23897,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000033",
+    "timestamp": "1789253104",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 13824
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t11_fc9": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 691.54,
+          "defense": 704.04,
+          "lethality": 471.93,
+          "health": 454.66
+        },
+        "lancer": {
+          "attack": 669.47,
+          "defense": 635.47,
+          "lethality": 448.3,
+          "health": 429.62
+        },
+        "marksman": {
+          "attack": 711.11,
+          "defense": 649.11,
+          "lethality": 519.14,
+          "health": 453.54
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 12951,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253104",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 12951,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 12951,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000034",
+    "timestamp": "1789253139",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 15910
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc9": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 691.54,
+          "defense": 704.04,
+          "lethality": 471.93,
+          "health": 454.66
+        },
+        "lancer": {
+          "attack": 669.47,
+          "defense": 635.47,
+          "lethality": 448.3,
+          "health": 429.62
+        },
+        "marksman": {
+          "attack": 711.11,
+          "defense": 649.11,
+          "lethality": 519.14,
+          "health": 453.54
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 15486,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253139",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 15486,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 15486,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000035",
+    "timestamp": "1789253146",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 35129
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t11_fc9": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 691.54,
+          "defense": 704.04,
+          "lethality": 471.93,
+          "health": 454.66
+        },
+        "lancer": {
+          "attack": 669.47,
+          "defense": 635.47,
+          "lethality": 448.3,
+          "health": 429.62
+        },
+        "marksman": {
+          "attack": 711.11,
+          "defense": 649.11,
+          "lethality": 519.14,
+          "health": 453.54
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 34573,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253146",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 34573,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 34573,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000036",
+    "timestamp": "1789253155",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 2840
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 267
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 265
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253155",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 265
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 265,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000037",
+    "timestamp": "1789253169",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 14988
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t11_fc9": 200
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 691.54,
+          "defense": 704.04,
+          "lethality": 471.93,
+          "health": 454.66
+        },
+        "lancer": {
+          "attack": 669.47,
+          "defense": 635.47,
+          "lethality": 448.3,
+          "health": 429.62
+        },
+        "marksman": {
+          "attack": 711.11,
+          "defense": 649.11,
+          "lethality": 519.14,
+          "health": 453.54
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 12489,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253169",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 12489,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 12489,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000038",
+    "timestamp": "1789253177",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 53535
+      },
+      "heroes": [
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 4,
+            "skill_2": 4,
+            "skill_3": 4
+          }
+        },
+        {
+          "name": "Fred",
+          "levels": {
+            "skill_1": 3,
+            "skill_2": 3,
+            "skill_3": 3
+          }
+        },
+        {
+          "name": "Magnus",
+          "levels": {
+            "skill_1": 2,
+            "skill_2": 2,
+            "skill_3": 0
+          }
+        }
+      ],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 420.75,
+          "defense": 429.6,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 542.57,
+          "defense": 519.92,
+          "lethality": 109.30370370370369,
+          "health": 106.37
+        },
+        "marksman": {
+          "attack": 908.1,
+          "defense": 882.45,
+          "lethality": 198.35061728395064,
+          "health": 110.15
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 265
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 46922,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253177",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 46922,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 46922,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000039",
+    "timestamp": "1789253208",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 15092
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 26
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253208",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 26
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 26,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000040",
+    "timestamp": "1789253227",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 23830,
+        "lancer_t9": 21029
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 211.51,
+          "defense": 220.36,
+          "lethality": 116.63209876543209,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 200.37,
+          "defense": 177.72,
+          "lethality": 109.30370370370369,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 202.37,
+          "defense": 176.72,
+          "lethality": 112.02962962962964,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t12_fc10": 26
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 44431,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789253227",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 44431,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-t12"
+  },
+  {
+    "test_id": "testcase-000041",
+    "timestamp": "1789256064",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 467.77,
+          "defense": 449.42,
+          "lethality": 331.26,
+          "health": 335.19
+        },
+        "lancer": {
+          "attack": 440.68,
+          "defense": 431.33,
+          "lethality": 291.45,
+          "health": 285.55
+        },
+        "marksman": {
+          "attack": 454.12,
+          "defense": 436.77,
+          "lethality": 294.71,
+          "health": 305.06
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 687,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256064",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 687,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 687,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000042",
+    "timestamp": "1789256077",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 467.77,
+          "defense": 449.42,
+          "lethality": 331.26,
+          "health": 335.19
+        },
+        "lancer": {
+          "attack": 440.68,
+          "defense": 431.33,
+          "lethality": 291.45,
+          "health": 285.55
+        },
+        "marksman": {
+          "attack": 454.12,
+          "defense": 436.77,
+          "lethality": 294.71,
+          "health": 305.06
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 685,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256077",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 685,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 685,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000043",
+    "timestamp": "1789256081",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 467.77,
+          "defense": 449.42,
+          "lethality": 331.26,
+          "health": 335.19
+        },
+        "lancer": {
+          "attack": 440.68,
+          "defense": 431.33,
+          "lethality": 291.45,
+          "health": 285.55
+        },
+        "marksman": {
+          "attack": 454.12,
+          "defense": 436.77,
+          "lethality": 294.71,
+          "health": 305.06
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 679,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256081",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 679,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 679,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000044",
+    "timestamp": "1789256096",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 272.38,
+          "defense": 282.46,
+          "lethality": 184.52,
+          "health": 180.16
+        },
+        "lancer": {
+          "attack": 249.26,
+          "defense": 260.34,
+          "lethality": 153.55,
+          "health": 149.88
+        },
+        "marksman": {
+          "attack": 238.2,
+          "defense": 248.78,
+          "lethality": 158.84,
+          "health": 149.3
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 953,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256096",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 953,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 953,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000045",
+    "timestamp": "1789256113",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 272.38,
+          "defense": 282.46,
+          "lethality": 184.52,
+          "health": 180.16
+        },
+        "lancer": {
+          "attack": 249.26,
+          "defense": 260.34,
+          "lethality": 153.55,
+          "health": 149.88
+        },
+        "marksman": {
+          "attack": 238.2,
+          "defense": 248.78,
+          "lethality": 158.84,
+          "health": 149.3
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 952,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256113",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 952,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 952,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000046",
+    "timestamp": "1789256119",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 272.38,
+          "defense": 282.46,
+          "lethality": 184.52,
+          "health": 180.16
+        },
+        "lancer": {
+          "attack": 249.26,
+          "defense": 260.34,
+          "lethality": 153.55,
+          "health": 149.88
+        },
+        "marksman": {
+          "attack": 238.2,
+          "defense": 248.78,
+          "lethality": 158.84,
+          "health": 149.3
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 951,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256119",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 951,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 951,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000047",
+    "timestamp": "1789256123",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 411.98,
+          "defense": 407.98,
+          "lethality": 342.92,
+          "health": 344.94
+        },
+        "lancer": {
+          "attack": 391.78,
+          "defense": 378.28,
+          "lethality": 304.74,
+          "health": 303.72
+        },
+        "marksman": {
+          "attack": 396.53,
+          "defense": 376.28,
+          "lethality": 289.72,
+          "health": 293.39
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 750,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256123",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 750,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 750,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000048",
+    "timestamp": "1789256129",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 411.98,
+          "defense": 407.98,
+          "lethality": 342.92,
+          "health": 344.94
+        },
+        "lancer": {
+          "attack": 391.78,
+          "defense": 378.28,
+          "lethality": 304.74,
+          "health": 303.72
+        },
+        "marksman": {
+          "attack": 396.53,
+          "defense": 376.28,
+          "lethality": 289.72,
+          "health": 293.39
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 769,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256129",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 769,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 769,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000049",
+    "timestamp": "1789256152",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 411.98,
+          "defense": 407.98,
+          "lethality": 342.92,
+          "health": 344.94
+        },
+        "lancer": {
+          "attack": 391.78,
+          "defense": 378.28,
+          "lethality": 304.74,
+          "health": 303.72
+        },
+        "marksman": {
+          "attack": 396.53,
+          "defense": 376.28,
+          "lethality": 289.72,
+          "health": 293.39
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 766,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256152",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 766,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 766,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000052",
+    "timestamp": "1789256153",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 272.38,
+          "defense": 282.46,
+          "lethality": 184.52,
+          "health": 180.16
+        },
+        "lancer": {
+          "attack": 249.26,
+          "defense": 260.34,
+          "lethality": 153.55,
+          "health": 149.88
+        },
+        "marksman": {
+          "attack": 238.2,
+          "defense": 248.78,
+          "lethality": 158.84,
+          "health": 149.3
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 660
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256153",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 660
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 660,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000053",
+    "timestamp": "1789256154",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 411.98,
+          "defense": 407.98,
+          "lethality": 342.92,
+          "health": 344.94
+        },
+        "lancer": {
+          "attack": 391.78,
+          "defense": 378.28,
+          "lethality": 304.74,
+          "health": 303.72
+        },
+        "marksman": {
+          "attack": 396.53,
+          "defense": 376.28,
+          "lethality": 289.72,
+          "health": 293.39
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 764,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256154",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 764,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 764,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000054",
+    "timestamp": "1789256158",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 1000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t11_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 99
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256158",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 99
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 99,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000055",
+    "timestamp": "1789256184",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 10000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t11_fc10": 99
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 51
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256184",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 51
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 51,
+          "marksman": 0
+        }
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000056",
+    "timestamp": "1789256198",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 7185
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 119.34,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 111.92,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 114.68,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc4": 660
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 272.38,
+          "defense": 282.46,
+          "lethality": 184.52,
+          "health": 180.16
+        },
+        "lancer": {
+          "attack": 249.26,
+          "defense": 260.34,
+          "lethality": 153.55,
+          "health": 149.88
+        },
+        "marksman": {
+          "attack": 238.2,
+          "defense": 248.78,
+          "lethality": 158.84,
+          "health": 149.3
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 6871,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256198",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 6871,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 6871,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000057",
+    "timestamp": "1789256215",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t11_fc10": 51
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 17011,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256215",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 17011,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 17011,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000058",
+    "timestamp": "1789256220",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t11_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 11202,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256220",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 11202,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 11202,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000059",
+    "timestamp": "1789256245",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 13796,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256245",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 13796,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 13796,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000060",
+    "timestamp": "1789256251",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t11_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 11128,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256251",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 11128,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 11128,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000061",
+    "timestamp": "1789256288",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 14204,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256288",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 14204,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 14204,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  },
+  {
+    "test_id": "testcase-000062",
+    "timestamp": "1789256290",
+    "attacker": {
+      "troops": {
+        "infantry_t10": 20000
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 201.51,
+          "defense": 215.36,
+          "lethality": 116.63,
+          "health": 130.95
+        },
+        "lancer": {
+          "attack": 190.37,
+          "defense": 171.72,
+          "lethality": 109.3,
+          "health": 103.04
+        },
+        "marksman": {
+          "attack": 192.37,
+          "defense": 171.72,
+          "lethality": 112.02,
+          "health": 103.48
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "lancer_t10_fc10": 100
+      },
+      "heroes": [],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 1209.1,
+          "defense": 1253.11,
+          "lethality": 1117.22,
+          "health": 1121.19
+        },
+        "lancer": {
+          "attack": 1150.1,
+          "defense": 1153.11,
+          "lethality": 1101.1,
+          "health": 1038.8
+        },
+        "marksman": {
+          "attack": 1068.6,
+          "defense": 1078.61,
+          "lethality": 858.53,
+          "health": 826.29
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 13972,
+        "defender": 0
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789256290",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 13972,
+        "defender": 0
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 13972,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker"
+    },
+    "cohort": "report-inbox-known-troops"
+  }
+]
