@@ -38,3 +38,12 @@ npm run typecheck
 ```
 
 The dashboard's existing synthetic overview is a separate display estimate: it rounds from whole-army totals and does not call this function. It is not covered by the per-type settlement validation above. Wiring confirmed settlement into that display requires the actual per-type counts and confirmed battle context; the synthetic overview alone does not supply them.
+
+
+## C1 Ambusher/Shield extension
+
+The unchanged projection also matches all ten C1 fights using either actual kernel's predicted survivors. All60 category values across20 troop records are explicitly present on the wire, including20 encoded dead zeros. These extend the shared collection to40 fights,90 records and270 explicit category values. No formula, probability or skill-credit allocation changed.
+
+The Lancer account's recorded hospital rises1,848 to3,011, matching1,163 encoded wounded; the Infantry account rises171 to1,921, matching1,750. Both capacities are296,300. Even counting every one of the5,000 dispatched troops per account as wounded gives conservative occupancy bounds6,848 and5,171, well below capacity. No healing during C1 is explicitly operator-attested.
+
+For this cohort, hospital values are contemporaneous operator UI ledger records; independently archived before/after hospital screenshots were unavailable. This observation history is distinct from the60 independently encoded report fields. Experts are present in the raw formations, so these results do not independently establish expert mechanics. Private identities, raw reports, wire-presence checks and the hospital record snapshots remain archived locally.

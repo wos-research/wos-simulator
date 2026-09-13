@@ -158,3 +158,10 @@ Five reverse fights complete C1. Current draw ownership matches all10 winners,60
 Reverse case `mk2-campaign-20260913-066` records168 defending Lancers, with Ambusher19, Lance16 and attacking Infantry Shield57. This confirms the tested Ambusher-before-normal-Shield allocation in both orientations against the frozen swap alternative. It does not uniquely identify every internal scheduling operation. No combat code change was needed.
 
 The collection now contains70 campaign fixtures plus160 original reports:230 fights exact for all available observations in both actual kernels. The next mixed Lance/Volley/Gunpowder-versus-Shield experiment remains distinct from the now-completed C1 question.
+
+
+## T9 Lancer reverse confirmation and casualty evidence
+
+Five reverse T9 Lancer fights also match both unchanged kernels, with211 defending Lancers each and Ambusher counts24,17,25,20,22. Both orientations now supply10 exact winners,60 survivor values and10 explicit activation counts. All16 captured modifier fields per account remain unchanged. The first chronological reverse diagnostic passed before release of the remaining four. No additional targeting or isolated coefficient claim is inferred from this Infantry-only opponent.
+
+The campaign now contains75 new fixtures alongside160 original reports:235 exact captured fights for available observations. The separate optional casualty evidence extends to40 fights and270 explicit category fields after ten C1 reports passed the unchanged projection with both kernels' predicted survivors. C1 hospital corroboration uses contemporaneous operator UI records and a no-healing attestation; archived before/after hospital images were unavailable. Full provenance limits are in `mk2-controlled-casualties.md`.
