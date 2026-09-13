@@ -103,3 +103,18 @@ Complete per-type and common buff fields are recorded and corroborated across bo
 The collection now contains **45 new campaign fights plus the original 160**, all 205 exact for their available observations. The campaign regression passes all 45 records. No combat code changed for the ten B1 cases or these two F27 controls; the last full suite remains 292 simulator tests and 104 dashboard tests at the preceding catalogue-correction checkpoint.
 
 The prospective next step uses 500 T7 non-FC Infantry against 500 T5 non-FC Marksmen to check the new Infantry profile without Lancers. Only after that background passes will the same Infantry face 500 T5 non-FC Lancers to test Bands of Steel. With the currently captured modifiers, the frozen model and Bands-absent alternative predict 367 versus 353 surviving Infantry in the latter pair. These are planning predictions, not new game evidence or proof of the exact defense bucket.
+
+
+## T7 Infantry background and Bands of Steel
+
+The two planned T7 non-FC Infantry versus T5 non-FC Marksman controls both reproduce268 surviving Infantry and zero Marksmen in both actual kernels. Subsequent T7 Infantry versus T5 non-FC Lancer reports both reproduce367 Infantry and zero Lancers. Every march starts with500 troops per side. All captured per-type and common modifiers remain unchanged across these controls, despite an intervening alliance notification. Raw reports remain authoritative.
+
+The previously frozen Bands-absent alternative predicts353 surviving Infantry in each pure-Lancer fight, fourteen below the observed367. Combined with the no-Lancer T7 background and lower-tier Infantry/Lancer controls, this supports the existing Bands effect in this tested context. It does not independently identify its exact10 coefficient, defense bucket, or mixed-opponent eligibility. Both actual kernels are unchanged. These four reports supply no explicit chance-skill activation counts; the model uses zero RNG calls.
+
+The next prospective mixed-opponent comparison uses500 T7 Infantry versus250 T5 Lancers plus250 T5 Marksmen. The existing per-incoming-Lancer restriction predicts225 surviving Infantry; a frozen diagnostic alternative applying the same defense bonus to all attacks whenever enemy Lancers started present predicts248. The pure controls cannot distinguish those definitions. Those are planning predictions only; no mixed result is claimed at this checkpoint.
+
+## Current FC5 account background before Ambusher/Shield
+
+Two additional hero-free controls use500 T5 FC4 Lancers versus500 T5 FC5 Infantry, one each direction on the FC5 account pair. Both actual kernels match:261 and253 surviving Infantry, zero Lancers, and every explicitly recorded Lance/Shield proc count. Current complete modifiers are corroborated across both roles. This establishes the account background before adding T7 Ambusher; it does not count as a new independent proof of each previously tested Lance/Shield mechanic.
+
+The current collection contains **51 new campaign fights plus the original160**, all211 exact for their available observations. All51 campaign fixtures pass the replay regression. The last full simulator/dashboard suites remain292/104 at the catalogue-correction checkpoint; subsequent additions change evidence and documentation only.
