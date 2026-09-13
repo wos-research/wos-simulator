@@ -1,0 +1,43 @@
+{
+  "name": "Patrick",
+  "hero_generation": "SR",
+  "troop_type": "lancer",
+  "skills": {
+    "SuperNutrients": {
+      "description": "Increasing Health by X% for all troop",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "SuperNutrients/1": {
+          "type": "active.hero.health.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "CaloricBooster": {
+      "description": "Increasing Attack by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "CaloricBooster/1": {
+          "type": "active.hero.attack.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    }
+  }
+}

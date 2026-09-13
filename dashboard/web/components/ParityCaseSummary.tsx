@@ -1,3 +1,4 @@
+import ExecutionStatus from "@/components/ExecutionStatus";
 import type {
   ParityCaseReport,
   ParityComparisonRow,
@@ -34,6 +35,7 @@ export default function ParityCaseSummary({
   const simulatorMu = simulator?.mu_candidate ?? caseReport?.simulatorStats?.mu;
   return (
     <div className="space-y-6">
+      <ExecutionStatus execution={caseReport?.execution ?? caseReport?.result?.execution ?? row.execution} />
       <section className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
         <Summary label="simulator mu" value={fmt(simulatorMu)} />
         <Summary label="game mu" value={fmt(row.game?.mu_reference)} />

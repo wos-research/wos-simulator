@@ -14,6 +14,8 @@ installBrowserBatchHandler<SurfaceBatchTask, SurfaceBatchResult>(
         task.replicates,
         `${task.seedBase}:${task.attIdx}:${task.defIdx}`,
         config,
+        task.rallyMode,
+        task.mechanicsVersion,
       );
       results.push({ attIdx: task.attIdx, defIdx: task.defIdx, winrate });
       done += task.replicates;

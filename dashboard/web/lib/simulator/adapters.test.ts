@@ -194,6 +194,26 @@ test("every submitted simulation side field is mapped or explicitly metadata-onl
 });
 
 const requestFieldContract = {
+  mechanicsVersion: {
+    handledBy: "battle-input",
+    mutate: (payload) => ({ ...payload, mechanicsVersion: "mk2" }),
+    assertMapped: (_before, after) => assert.equal(after.mechanicsVersion, "mk2"),
+  },
+  timestamp: {
+    handledBy: "battle-input",
+    mutate: (payload) => ({ ...payload, timestamp: "1789160442" }),
+    assertMapped: (_before, after) => assert.equal(after.timestamp, "1789160442"),
+  },
+  timestampSource: {
+    handledBy: "battle-input",
+    mutate: (payload) => ({ ...payload, timestampSource: "packet" }),
+    assertMapped: (_before, after) => assert.equal(after.timestampSource, "packet"),
+  },
+  reportedSeed: {
+    handledBy: "battle-input",
+    mutate: (payload) => ({ ...payload, reportedSeed: 1789160443 }),
+    assertMapped: (_before, after) => assert.equal(after.reportedSeed, 1789160443),
+  },
   attacker: {
     handledBy: "battle-input",
     mutate: (payload) => ({ ...payload, attacker: { ...payload.attacker, troops: { ...payload.attacker.troops, infantry: payload.attacker.troops.infantry + 11 } } }),

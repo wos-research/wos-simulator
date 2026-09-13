@@ -1,3 +1,4 @@
+import { executionFor, isReplayInput } from "./execution";
 import type {
   ActiveEffect,
   AttackIntent,
@@ -122,7 +123,11 @@ export function runPrepared(compiled: CompiledBattle, seed?: string | number, op
   // Only override the compiled input's seed when a seed is explicitly supplied; spreading an
   // undefined seed would otherwise clobber compiled.input.seed and silently lose reproducibility.
   const runInput = seed === undefined ? compiled.input : { ...compiled.input, seed };
-  return buildBattleResult(runBattle(runInput, compiled.config, options, compiled), compiled.resolved);
+  const policy = executionFor(runInput, runInput.seed ?? "simulator-default", options);
+  const runOptions = { ...compiled.mk2?.options, ...options, ...(policy.rng ? { rng: policy.rng } : {}) };
+  const result = buildBattleResult(runBattle(runInput, compiled.config, runOptions, compiled), compiled.resolved);
+  policy.execution.warnings.push(...(compiled.mk2?.warnings ?? []));
+  return { ...result, execution: policy.execution };
 }
 
 /**
@@ -140,6 +145,7 @@ export function simulateBattles(
     throw new Error(`simulateBattles count must be a positive integer, got ${JSON.stringify(count)}`);
   }
   const compiled = prepareBattle(input, config);
+  if (isReplayInput(input) && !runOptions.rng) return [runPrepared(compiled, undefined, runOptions)];
   const baseSeed = input.seed ?? "simulator-default";
   return Array.from({ length: count }, (_, index) =>
     runPrepared(compiled, index === 0 ? baseSeed : `${baseSeed}#${index}`, runOptions)
@@ -171,9 +177,10 @@ function setupRuntime(
   recorder: BattleRecorder,
   runtimeSkills: RuntimeSkills,
   staticProfile: StaticDamageProfile,
-  preBattleEffects: ActiveEffect[]
+  preBattleEffects: ActiveEffect[],
+  rng?: Rng
 ): Runtime {
-  const runtime = createRuntime(fighters, createSeededRng(seed), runtimeSkills, staticProfile);
+  const runtime = createRuntime(fighters, rng ?? createSeededRng(seed), runtimeSkills, staticProfile);
   recorder.recordStaticProfile(fighters, preBattleEffects);
   recordPreBattleSkills(runtime, recorder);
   triggerSkills("battle_start", 0, runtime.skills.battleStart, runtime, recorder);
@@ -207,8 +214,8 @@ function runBattle(
   const preBattleEffects = prepared?.preBattleEffects ?? activatePreBattleEffects(runtimeSkills, input);
   const staticProfile = prepared?.staticProfile ?? buildStaticDamageProfile(fighters, preBattleEffects);
   const recorder = recorderFor(options, fighters);
-  const runtime = setupRuntime(fighters, input.seed ?? "simulator-default", recorder, runtimeSkills, staticProfile, preBattleEffects);
-  return runLoop(input, fighters, runtime, recorder, options, loopOptions);
+  const runtime = setupRuntime(fighters, input.seed ?? "simulator-default", recorder, runtimeSkills, staticProfile, preBattleEffects, options.rng);
+  return runLoop(input, fighters, runtime, recorder, options, {...loopOptions, beforeExtraAttack: options.beforeExtraAttack});
 }
 
 function recorderFor(options: SimulationOptions, fighters: Record<SideId, ResolvedFighter>): BattleRecorder {
@@ -251,7 +258,9 @@ function runLoop(
     rounds = round;
     const roundStartTroops = snapshotTroops(runtime.troops);
     processEffectSchedule(runtime, round);
-    triggerRoundStartSkills(round, runtime, recorder);
+    const sideLocal = options.attackScheduling === "side-local";
+    const targetTimeAmbusher = sideLocal && options.ambusherTiming !== "round_start";
+    triggerRoundStartSkills(round, runtime, recorder, prepared => !targetTimeAmbusher || prepared.skill.id !== "Ambusher");
 
     const intents: AttackIntent[] = [];
     const results: DamageJobResult[] = [];
@@ -260,10 +269,17 @@ function runLoop(
     // Resolve each normal attack as one procedural cluster. Later attacks observe effects
     // produced by earlier attacks; no synthetic global attack-declaration phase exists.
     const orderIndexBySide: Record<SideId, number> = { attacker: 0, defender: 0 };
-    for (const dealerUnit of UNIT_TYPES) {
-      for (const side of ["attacker", "defender"] as SideId[]) {
+    const sides: SideId[] = ["attacker", "defender"];
+    const slots = sideLocal ? sides.flatMap(side => UNIT_TYPES.map(dealerUnit => ({side, dealerUnit})))
+      : UNIT_TYPES.flatMap(dealerUnit => sides.map(side => ({side, dealerUnit})));
+    for (const {dealerUnit, side} of slots) {
         const takerSide = oppositeSide(side);
-        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;
+        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) {
+          options.onEmptyUnit?.(round, side, dealerUnit, runtime, recorder);
+          continue;
+        }
+        if (targetTimeAmbusher && dealerUnit === "lancer") triggerRoundStartSkills(round, runtime, recorder,
+          prepared => prepared.skill.id === "Ambusher" && prepared.skill.side === side, "before_target");
         const ordered = orderFromEffects(dealerUnit, side, runtime.effectIndex, true);
         const takerUnit = firstLivingUnit(ordered?.order ?? UNIT_TYPES, takerSide, roundStartTroops);
         if (!takerUnit) continue;
@@ -302,8 +318,14 @@ function runLoop(
         const matchingTriggerSkills = runtime.skills.attackDeclaredByJobShape[
           damageJobShapeSlot("normal", intent.dealerSide, intent.dealerUnit, intent.takerSide, intent.takerUnit)
         ];
-        const deferredEffects = matchingTriggerSkills
-          ? triggerAttackSkills(round, matchingTriggerSkills, runtime, recorder, intent)
+        const delayedSkills = options.deferAttackSkill
+          ? matchingTriggerSkills?.filter(prepared => options.deferAttackSkill!(prepared, intent))
+          : undefined;
+        const immediateSkills = delayedSkills?.length
+          ? matchingTriggerSkills!.filter(prepared => !delayedSkills.includes(prepared))
+          : matchingTriggerSkills;
+        let deferredEffects = immediateSkills
+          ? triggerAttackSkills(round, immediateSkills, runtime, recorder, intent)
           : undefined;
         const dodge = applicableControl(job, runtime, "dodge");
         const triggeredChildren = fireApplicableCarriers(round, job, intent, runtime, recorder);
@@ -328,6 +350,18 @@ function runLoop(
         captureTriggeredExtraDamage(triggeredChildren, job, fighters, damageJobOptions, runtime);
         advanceNormalAttackCounters(intent, runtime);
         const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);
+        if (delayedSkills?.length) {
+          const existingExtras = new Set(runtime.effectIndex.extraAttacks);
+          const delayedEffects = triggerAttackSkills(round, delayedSkills, runtime, recorder, intent);
+          if (delayedEffects) deferredEffects = [...(deferredEffects ?? []), ...delayedEffects];
+          // Only the new activation belongs to this second dispatch. Persistent hero
+          // extras already ran above and must not run or advance their delay again.
+          const newExtras = runtime.effectIndex.extraAttacks.filter(effect => !existingExtras.has(effect));
+          const delayedAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions,
+            roundTargetDamage, loopOptions, results, newExtras);
+          extraAttacks.totalKills += delayedAttacks.totalKills;
+          extraAttacks.skillKills += delayedAttacks.skillKills;
+        }
         if (loopOptions.scoreSide && job.dealerSide === loopOptions.scoreSide.dealerSide && job.takerSide === loopOptions.scoreSide.takerSide) {
           score += extraAttacks.totalKills;
         }
@@ -344,7 +378,6 @@ function runLoop(
           );
         }
         if (dodge) recorder.recordDodged(intent, job, dodge.effect);
-      }
     }
 
     if (loopOptions.commitLosses) commitRound(results, runtime);
@@ -389,14 +422,17 @@ function sourceAttackProtectionBasis(
 function triggerRoundStartSkills(
   round: number,
   runtime: Runtime,
-  recorder: BattleRecorder
+  recorder: BattleRecorder,
+  include: (prepared: Runtime["skills"]["roundStart"][number]) => boolean = () => true,
+  phase: import("./effects").RandomContext["phase"] = "round_start"
 ): ActiveEffect[] {
   const activated: ActiveEffect[] = [];
   for (const prepared of runtime.skills.roundStart) {
+    if (!include(prepared)) continue;
     if (!preparedRoundFrequencyMatches(prepared, round)) continue;
     const { skill } = prepared;
     recorder.recordSkillTriggerAttempt(skill);
-    if (!preparedChancePasses(prepared.probabilityPct, runtime.rng)) continue;
+    if (!preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase})) continue;
     recorder.recordSkillTriggered(skill);
     for (const effectIntent of skill.effects) {
       const effect = activateEffect(skill, effectIntent, round);

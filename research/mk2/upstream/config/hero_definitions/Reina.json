@@ -1,0 +1,124 @@
+{
+  "name": "Reina",
+  "hero_generation": "S4",
+  "troop_type": "lancer",
+  "skills": {
+    "AssassinsInstinct": {
+      "description": "Increasing normal attack damage by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "AssassinsInstinct/1": {
+          "type": "type.normal.damage.up",
+          "applies_to_damage_kinds": ["normal"],
+          "value": [
+            10,
+            15,
+            20,
+            25,
+            30
+          ],
+          "units": {
+            "applies_to": "all",
+            "applies_vs": "any"
+          }
+        }
+      }
+    },
+    "SwiftJive": {
+      "description": "TBD dodge semantics: Grants all troops a X% chance of dodging normal attacks",
+      "status": "tbd",
+      "notes": "Modeled as an enemy attack trigger with trigger-level probability. Exact dodge response timing remains TBD for implementation.",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "source": "enemy.any",
+        "target": "self.any"
+      },
+      "effects": {
+        "SwiftJive/1": {
+          "type": "dodge",
+          "units": {
+            "applies_to": "target",
+            "applies_vs": "trigger.source"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "ShadowBlade": {
+      "description": "With Reina's clever tactics, her Lancers have a 25% chance of performing an extra attack, dealing X% damage",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "source": "lancer"
+      },
+      "effects": {
+        "ShadowBlade/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "units": {
+            "applies_to": [
+              "lancer"
+            ],
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "effect.applies_vs"
+            }
+          ]
+        }
+      }
+    },
+    "LancersEdge": {
+      "description": "Widget bonus: Increase Lethality by X% for all troops when attacking",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "rally"
+        }
+      ],
+      "effects": {
+        "LancersEdge/1": {
+          "type": "passive.lethality.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

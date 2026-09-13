@@ -288,7 +288,8 @@ function humanRow(entry: TestcaseSummaryEntry, detail: TestcaseCaseReport | unde
     index: String(entry.idx),
     testcase: truncateText(entry.testcase_id, 25),
     gameN: formatNumber(entry.game?.n_reference),
-    mode: entry.deterministic ? "det" : entry.sampleCount > 1 ? "stoch" : "single",
+    mode: entry.execution?.mode === "replay" ? "replay" : entry.deterministic ? "det" : entry.sampleCount > 1 ? "stoch" : "single",
+    timestamp: entry.execution?.timestampStatus ?? "unknown",
     statType: entry.game?.stat_type === "cdf_support" ? "cdf_sup" : entry.game?.stat_type === "deterministic" ? "det" : "-",
     statAdjustment: formatSignedPct(entry.gameStatAdjustment?.value),
     gameMu: formatNumber(entry.game?.mu_reference),
@@ -307,12 +308,13 @@ function humanRow(entry: TestcaseSummaryEntry, detail: TestcaseCaseReport | unde
 
 function formatHumanTable(rows: Array<Record<string, string>>): string {
   return formatTable([
-    ["#", "Testcase", "N", "Mode", "Test", "Stat+/-", "mu G", "mu S", "SD G", "SD S", "bias%", "bias", "Reason", "CDF p", "Sup val", "Sup p", "p"],
+    ["#", "Testcase", "N", "Mode", "Timestamp", "Test", "Stat+/-", "mu G", "mu S", "SD G", "SD S", "bias%", "bias", "Reason", "CDF p", "Sup val", "Sup p", "p"],
     ...rows.map((row) => [
       row.index,
       row.testcase,
       row.gameN,
       row.mode,
+      row.timestamp,
       row.statType,
       row.statAdjustment,
       row.gameMu,

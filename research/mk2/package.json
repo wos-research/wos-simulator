@@ -1,0 +1,16 @@
+{
+  "name": "wos-expedition-mk2-review",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test *.test.ts",
+    "validate": "tsx validate.ts",
+    "replay": "tsx runner.ts"
+  },
+  "devDependencies": {
+    "tsx": "4.23.12"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

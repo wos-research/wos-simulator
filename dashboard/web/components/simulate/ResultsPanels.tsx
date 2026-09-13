@@ -1,5 +1,7 @@
 "use client";
 
+import ExecutionStatus from "@/components/ExecutionStatus";
+
 import OptimizeRatioScatterChart from "@/components/OptimizeRatioScatterChart";
 import SimulateOutcomeChart from "@/components/SimulateOutcomeChart";
 import TernaryPanel, { WinrateLegend } from "@/components/TernaryPanel";
@@ -63,6 +65,13 @@ export function SimulateResultsPanel({
   traceLoadingSeed: string | number | null;
   visible: boolean;
 }) {
+  const replay = result.execution?.mode === "replay";
+  const cards: SummaryCard[] | null = replay ? [
+    { label: "Replay winner", value: result.outcome_runs?.[0]?.winner ?? result.summary.best.winner },
+    { label: "Attacker survivors", value: (result.summary.mean_survivors?.attacker ?? 0).toLocaleString() },
+    { label: "Defender survivors", value: (result.summary.mean_survivors?.defender ?? 0).toLocaleString() },
+    { label: "Rounds", value: String(result.summary.avg_rounds ?? "—") },
+  ] : summaryCards;
   return (
     <div
       className={`${
@@ -71,13 +80,14 @@ export function SimulateResultsPanel({
       data-tour="simulate-results"
     >
       <h3 className="mb-3 text-sm font-bold opacity-70">
-        Results ({result.replicates} replicates)
+        Results ({result.execution?.mode === "replay" ? "1 battle replay" : `${result.replicates} replicates`})
       </h3>
+      <ExecutionStatus execution={result.execution} />
       <div
         className="mb-4 grid grid-cols-2 gap-2 sm:gap-3 xl:grid-cols-4"
         data-tour="simulate-results-summary"
       >
-        {summaryCards?.map((card) => (
+        {cards?.map((card) => (
           <div
             key={card.label}
             className="sim-tool-panel flex min-w-0 flex-col gap-0.5 px-3 py-2"
@@ -100,7 +110,7 @@ export function SimulateResultsPanel({
         ))}
       </div>
       <h4 className="mb-2 text-xs font-bold opacity-70">
-        Survivor distribution
+        {replay ? "Battle outcome" : "Survivor distribution"}
       </h4>
       <p className="text-xs opacity-60 mb-2">
         X-axis: attacker survivors minus defender survivors. Draws can appear on

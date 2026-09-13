@@ -90,6 +90,8 @@ test("runSurfaceSweep preserves per-side troop tiers while varying counts", asyn
   await runSurfaceSweep(
     {
       ...samplePayload(),
+      mechanicsVersion: "mk2",
+      rallyMode: true,
       attacker,
       defender,
       attackerTotal: 90,
@@ -97,6 +99,7 @@ test("runSurfaceSweep preserves per-side troop tiers while varying counts", asyn
     },
     {
       runBatches: async (tasks) => {
+        assert.ok(tasks.every(task => task.mechanicsVersion === "mk2" && task.rallyMode === true));
         assert.deepEqual(Object.keys(tasks[0].attFighter.troops).sort(), [
           "infantry_t11_fc10",
           "lancer_t10",

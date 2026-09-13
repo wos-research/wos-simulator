@@ -1,0 +1,32 @@
+{
+  "version": "expedition-mk2-lua54-gunpowder-timing-8",
+  "exported": "2026-09-12",
+  "originalRuntimeSha256": {
+    "backend.ts": "af702a950bed3247ab55be8ca73638d35f20c5a7f11dd37dc04051c6f69c7e0f",
+    "battle_rng.ts": "e0d2ed7aa1035e5e97b12c12739bbedd6c90a3ff4a74a607c5850ec320980400",
+    "crystal_shield.ts": "9e61a0700f70951bc24e4efe96eae11c2bae532a643162d8d1767fc8eac1efa4",
+    "gunpowder_shield.ts": "5073ce4ce46e09dc6152656144a780dd982cb1dba694f12d384cb41837348a7e",
+    "gunpowder_timing.ts": "34db24ed02a4e424c28bbb34d8727a0a3fb9310b421b5917e639808b207bb265",
+    "volley_persistence.ts": "480286388c2813c08dbb3382281a8823432a041cbb8d7747d1a0d6338c246e9b",
+    "lua54_rng.ts": "a44906c571743bad06f193fd95d1d737adf15e6951ee083be3aff0dba30b1a1b",
+    "timestamp.ts": "27049f6526a7268a756b580b125477a3b7e5f2e0bb6074a928d12ad17c0db7c0",
+    "testcases.ts": "5952b2a44d7243bc401bd69ec543aa0d97da7de472cd64f3b69c216e8a558c6f",
+    "rng_audit.ts": "e959f2aed2d57f7b17af57d0d1da670cad4c5bf2470e9c8babfaaa45fa977ab8",
+    "runner.ts": "c5d78752d5ea7fc17a52875cd63c1511ed98b27d1103b3e39fe56f9f0f8bd88c",
+    "diagnostics.ts": "7a19fd59c96b9d1b8f2eb6f510a89dc8458637277bb3bbf97f377f84686f1811",
+    "extensions.json": "3e730a691adb4f2cd79097b70494c0ad5ea3581e64c21f0829030b84b217f1cb",
+    "upstream_rng_hooks.json": "ece2a12c0e9f3fabb8bafe6257a6f8c181e8f1af6dc03457d33d34b242db4acd",
+    "lua54_rng.test.ts": "ab0b43796680c00db1fcc299ea4196d629b417339c7a7105454e591281644366",
+    "rng_integration.test.ts": "573cb6d99ee3d428a4ab728f2f1d4cc9df325aec08d9537a87798d721c88876a",
+    "rng_audit.test.ts": "43fc662a618f1c31c90b4acd7cfaac5b9dee96ceb08bfff0949305eff244c100",
+    "gunpowder_timing.test.ts": "1187bd1b7d15e254815dbea1d1cd6d48484c67bf2dc10b4d1659f4857c36056d"
+  },
+  "controlledReports": 160,
+  "referenceCases": 301,
+  "anonymization": "Sequential report IDs and generic army names; captured stats, troops, seeds and observations unchanged. No raw packets, account IDs, mail IDs, local paths or full decoded reports.",
+  "limitations": [
+    "Recorded-seed diagnostics; independent timestamp-to-seed recovery unresolved.",
+    "Skill-credited wounded conversion and Greg discrepancy unresolved.",
+    "Existing newer-hero/T12 extension hypotheses are provisional; not validated by these controls."
+  ]
+}

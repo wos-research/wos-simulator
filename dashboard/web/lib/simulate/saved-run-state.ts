@@ -1,3 +1,4 @@
+import { mechanicsVersionFor, type MechanicsVersion } from "@simulator/execution";
 import {
   ADAPTIVE_FINAL_REPLICATES,
   ADAPTIVE_PHASE1_REPLICATES,
@@ -51,6 +52,10 @@ export interface SavedRunMeta {
 }
 
 export interface SavedRunFormState {
+  mechanicsVersion: MechanicsVersion;
+  timestamp: string;
+  timestampSource?: string;
+  reportedSeed: string;
   attacker: SideState;
   defender: SideState;
   loadedPresetNames: Record<Side, string | null>;
@@ -84,6 +89,9 @@ export function defaultSavedRunFormState(
     attacker: defaultSide(),
     defender: defaultSide(),
     loadedPresetNames: { attacker: null, defender: null },
+    mechanicsVersion: "mk2",
+    timestamp: "",
+    reportedSeed: "",
     replicates: 1000,
     rallyMode: false,
     result: null,
@@ -143,6 +151,10 @@ export function savedRunToFormState(
           ? request.defender.stat_profile_name
           : null,
     },
+    mechanicsVersion: mechanicsVersionFor(request),
+    timestamp: "timestamp" in request && request.timestamp !== undefined ? String(request.timestamp) : "",
+    timestampSource: "timestampSource" in request ? request.timestampSource : undefined,
+    reportedSeed: "reportedSeed" in request && request.reportedSeed !== undefined ? String(request.reportedSeed) : "",
     replicates: simulateReplicates,
     rallyMode: Boolean("rallyMode" in request ? request.rallyMode : request.rally_mode),
     savedRunMeta: {

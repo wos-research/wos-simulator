@@ -1,0 +1,121 @@
+{
+  "name": "Greg",
+  "hero_generation": "S3",
+  "troop_type": "marksman",
+  "skills": {
+    "SwordOfJustice": {
+      "description": "Granting a 20% chance of increasing damage dealt by X% for all troops for 3 turns",
+      "trigger": {
+        "type": "turn",
+        "probability": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "effects": {
+        "SwordOfJustice/1": {
+          "type": "active.hero.damage.up",
+          "value": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "same_effect_stacking": "max",
+          "units": {
+            "applies_to": "all",
+            "applies_vs": "any"
+          },
+          "duration": {
+            "turns": {
+              "count": 3
+            }
+          }
+        }
+      }
+    },
+    "DeterrenceOfLaw": {
+      "description": "Granting all troops' attack a 20% chance of reducing enemy damage dealt by X% for 2 turns",
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "effects": {
+        "DeterrenceOfLaw/1": {
+          "type": "active.hero.damage.down",
+          "value": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "same_effect_stacking": "max",
+          "units": {
+            "applies_to": "trigger.target",
+            "applies_vs": "self.any"
+          },
+          "duration": {
+            "turns": {
+              "count": 2,
+              "delay": 1
+            }
+          }
+        }
+      }
+    },
+    "LawAndOrder": {
+      "description": "Increasing Health by X% for all troops",
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "LawAndOrder/2": {
+          "type": "active.hero.health.up",
+          "value": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ]
+        }
+      }
+    },
+    "VitalSurge": {
+      "description": "Widget bonus: Increase Health by X% for all troops when attacking",
+      "trigger": {
+        "type": "pre_battle"
+      },
+      "requirements": [
+        {
+          "level": 1,
+          "type": "engagement_type",
+          "value": "rally"
+        }
+      ],
+      "effects": {
+        "VitalSurge/1": {
+          "type": "passive.health.up",
+          "value": [
+            5,
+            7.5,
+            10,
+            12.5,
+            15
+          ]
+        }
+      }
+    }
+  }
+}

@@ -20,3 +20,9 @@ test_results/*.sqlite-wal
 
 # docker compose secrets
 .env
+
+# Generated report inbox files
+/report_inbox/bcp/testcases/
+
+# macOS folder metadata
+.DS_Store

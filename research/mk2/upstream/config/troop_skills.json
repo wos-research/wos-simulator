@@ -1,0 +1,472 @@
+{
+  "name": "Troop Skills",
+  "skills": {
+    "MasterBrawler": {
+      "description": "Increase Attack Damage to Lancers by 10%",
+      "troop_type": "infantry",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 0
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "MasterBrawler/1": {
+          "type": "type.single_target.damage.up",
+          "value": [
+            10
+          ],
+          "units": {
+            "applies_to": [
+              "infantry"
+            ],
+            "applies_vs": [
+              "lancer"
+            ]
+          }
+        }
+      }
+    },
+    "BandsOfSteel": {
+      "description": "Increase Defense against Lancers by 10%",
+      "troop_type": "infantry",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 7
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "BandsOfSteel/1": {
+          "type": "active.troop.defense.up",
+          "value": [
+            10
+          ],
+          "units": {
+            "applies_to": [
+              "infantry"
+            ],
+            "applies_vs": [
+              "lancer"
+            ]
+          }
+        }
+      }
+    },
+    "CrystalShield": {
+      "description": "The fire crystal energy attached to the surface makes the shield impregnable and grants it X% chance of offsetting 36 damage",
+      "troop_type": "infantry",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 3
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 5
+        }
+      ],
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          25,
+          37.5
+        ],
+        "source": "enemy.any",
+        "target": "self.infantry"
+      },
+      "effects": {
+        "CrystalShield/1": {
+          "type": "active.troop.damageTaken.down",
+          "value": [
+            36,
+            36
+          ],
+          "units": {
+            "applies_to": "trigger.target",
+            "applies_vs": "trigger.source"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "BodyOfLight": {
+      "description": "Increase Infantry Defense by X%, and reduce an extra Y% damage while Crystal Shield is active.",
+      "troop_type": "infantry",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 8
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 10
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "BodyOfLight/1": {
+          "type": "active.troop.defense.up",
+          "value": [
+            4,
+            6
+          ],
+          "units": {
+            "applies_to": [
+              "infantry"
+            ],
+            "applies_vs": "any"
+          }
+        },
+        "BodyOfLight/2": {
+          "type": "active.troop.damageTaken.down",
+          "value": [
+            10,
+            15
+          ],
+          "requires_effect": "CrystalShield/1",
+          "units": {
+            "applies_to": [
+              "infantry"
+            ],
+            "applies_vs": "any"
+          }
+        }
+      }
+    },
+    "Charge": {
+      "description": "Increase Attack Damage to Marksmen by 10%",
+      "troop_type": "lancer",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 0
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "Charge/1": {
+          "type": "type.single_target.damage.up",
+          "value": [
+            10
+          ],
+          "units": {
+            "applies_to": [
+              "lancer"
+            ],
+            "applies_vs": [
+              "marksman"
+            ]
+          }
+        }
+      }
+    },
+    "Ambusher": {
+      "description": "Lancer attacks have a chance to strike Marksmen behind Infantry.",
+      "troop_type": "lancer",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 7
+        }
+      ],
+      "trigger": {
+        "type": "turn",
+        "probability": [
+          20
+        ]
+      },
+      "effects": {
+        "Ambusher/1": {
+          "type": "attack_order",
+          "value": [
+            "marksman",
+            "infantry",
+            "lancer"
+          ],
+          "units": {
+            "applies_to": [
+              "lancer"
+            ],
+            "applies_vs": [
+              "marksman"
+            ]
+          },
+          "duration": {
+            "turns": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "CrystalLance": {
+      "description": "Lancers have a chance to make an extra skill attack for 100% damage.",
+      "troop_type": "lancer",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 3
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 5
+        }
+      ],
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          10,
+          15
+        ],
+        "source": "lancer"
+      },
+      "effects": {
+        "CrystalLance/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            100,
+            100
+          ],
+          "units": {
+            "applies_to": [
+              "lancer"
+            ],
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "effect.applies_vs"
+            }
+          ]
+        }
+      }
+    },
+    "IncandescentField": {
+      "description": "Lancers have a chance to take half damage when under attack.",
+      "troop_type": "lancer",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 8
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 10
+        }
+      ],
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          10,
+          15
+        ],
+        "source": "enemy.any",
+        "target": "self.lancer"
+      },
+      "effects": {
+        "IncandescentField/1": {
+          "type": "active.troop.defense.up",
+          "value": [
+            100,
+            100
+          ],
+          "units": {
+            "applies_to": "trigger.target",
+            "applies_vs": "trigger.source"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "RangedStrike": {
+      "description": "Increase Attack Damage to Infantry by 10%",
+      "troop_type": "marksman",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 0
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "RangedStrike/1": {
+          "type": "type.single_target.damage.up",
+          "value": [
+            10
+          ],
+          "units": {
+            "applies_to": [
+              "marksman"
+            ],
+            "applies_vs": [
+              "infantry"
+            ]
+          }
+        }
+      }
+    },
+    "Volley": {
+      "description": "Marksman attacks have a chance to make an extra skill attack for 100% damage.",
+      "troop_type": "marksman",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "tier",
+          "value": 7
+        }
+      ],
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          10
+        ],
+        "source": "marksman"
+      },
+      "effects": {
+        "Volley/1": {
+          "type": "active.troop.damage.up",
+          "value": [
+            100
+          ],
+          "units": {
+            "applies_to": "trigger.source",
+            "applies_vs": "trigger.target"
+          },
+          "duration": {
+            "attacks": {
+              "count": 1
+            }
+          }
+        }
+      }
+    },
+    "CrystalGunpowder": {
+      "description": "Marksmen have a chance to make an extra skill attack for 50% damage, increased to 75% at FC8 and 87.5% at FC10.",
+      "troop_type": "marksman",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 3
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 5
+        },
+        {
+          "level": 3,
+          "type": "fc",
+          "value": 8
+        },
+        {
+          "level": 4,
+          "type": "fc",
+          "value": 10
+        }
+      ],
+      "trigger": {
+        "type": "attack",
+        "probability": [
+          20,
+          30,
+          30,
+          30
+        ],
+        "source": "marksman"
+      },
+      "effects": {
+        "CrystalGunpowder/1": {
+          "type": "extra_skill_attack",
+          "value": [
+            50,
+            50,
+            75,
+            87.5
+          ],
+          "units": {
+            "applies_to": [
+              "marksman"
+            ],
+            "applies_vs": "trigger.target"
+          },
+          "trigger_damage_jobs": [
+            {
+              "source": "use.source",
+              "target": "effect.applies_vs"
+            }
+          ]
+        }
+      }
+    },
+    "FlameCharge": {
+      "description": "Increase Marksmen's basic Attack by 4% at FC8 and 6% at FC10; also increases Crystal Gunpowder's extra attack damage.",
+      "troop_type": "marksman",
+      "requirements": [
+        {
+          "level": 1,
+          "type": "fc",
+          "value": 8
+        },
+        {
+          "level": 2,
+          "type": "fc",
+          "value": 10
+        }
+      ],
+      "trigger": {
+        "type": "battle_start"
+      },
+      "effects": {
+        "FlameCharge/1": {
+          "type": "active.troop.attack.up",
+          "value": [
+            4,
+            6
+          ],
+          "units": {
+            "applies_to": [
+              "marksman"
+            ],
+            "applies_vs": "any"
+          }
+        }
+      }
+    }
+  }
+}

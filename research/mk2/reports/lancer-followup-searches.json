@@ -1,0 +1,5303 @@
+{
+  "note": "Exploratory conditional RNG assignments for the 13 single-stack infantry/T12 cases. No model changes were adopted.",
+  "orders": [
+    "AFL",
+    "ALF",
+    "FAL",
+    "FLA",
+    "LAF",
+    "LFA",
+    "FL",
+    "LF"
+  ],
+  "symbols": {
+    "A": "Ambusher",
+    "F": "IncandescentField",
+    "L": "CrystalLance"
+  },
+  "oldExactPairs": [
+    {
+      "order": "AFL",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 8,
+      "abs": 339,
+      "scaled": 0.013872510999795917
+    },
+    {
+      "order": "AFL",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 7,
+      "abs": 221,
+      "scaled": 0.015495124945396677
+    },
+    {
+      "order": "AFL",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 7,
+      "abs": 240,
+      "scaled": 0.016077567495401235
+    },
+    {
+      "order": "AFL",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 7,
+      "abs": 186,
+      "scaled": 0.016258885567262238
+    },
+    {
+      "order": "AFL",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 7,
+      "abs": 206,
+      "scaled": 0.016818830597463308
+    },
+    {
+      "order": "AFL",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 7,
+      "abs": 268,
+      "scaled": 0.01689012269659801
+    },
+    {
+      "order": "AFL",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 7,
+      "abs": 270,
+      "scaled": 0.01693456714104241
+    },
+    {
+      "order": "AFL",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 7,
+      "abs": 367,
+      "scaled": 0.01725670562275955
+    },
+    {
+      "order": "AFL",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 7,
+      "abs": 379,
+      "scaled": 0.017543010587758645
+    },
+    {
+      "order": "AFL",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 7,
+      "abs": 308,
+      "scaled": 0.018018828253947405
+    },
+    {
+      "order": "AFL",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 7,
+      "abs": 324,
+      "scaled": 0.018434056892659145
+    },
+    {
+      "order": "AFL",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 7,
+      "abs": 413,
+      "scaled": 0.018434596845581463
+    },
+    {
+      "order": "AFL",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 7,
+      "abs": 418,
+      "scaled": 0.018657069153128814
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 7,
+      "abs": 445,
+      "scaled": 0.019306820102653166
+    },
+    {
+      "order": "AFL",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 7,
+      "abs": 442,
+      "scaled": 0.019314236490620806
+    },
+    {
+      "order": "AFL",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 7,
+      "abs": 450,
+      "scaled": 0.01949449480180654
+    },
+    {
+      "order": "AFL",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 6,
+      "abs": 163,
+      "scaled": 0.017527011795427705
+    },
+    {
+      "order": "AFL",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 6,
+      "abs": 172,
+      "scaled": 0.01769144714929921
+    },
+    {
+      "order": "AFL",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 6,
+      "abs": 166,
+      "scaled": 0.017727355609626627
+    },
+    {
+      "order": "AFL",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 6,
+      "abs": 168,
+      "scaled": 0.01807018536723176
+    },
+    {
+      "order": "AFL",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 6,
+      "abs": 154,
+      "scaled": 0.02035214026041754
+    },
+    {
+      "order": "FAL",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 6,
+      "abs": 604,
+      "scaled": 0.03806497480863641
+    },
+    {
+      "order": "FAL",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 6,
+      "abs": 644,
+      "scaled": 0.039132276088005125
+    },
+    {
+      "order": "FAL",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 6,
+      "abs": 560,
+      "scaled": 0.039266243245178745
+    },
+    {
+      "order": "FAL",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 6,
+      "abs": 706,
+      "scaled": 0.04093358359048932
+    },
+    {
+      "order": "FAL",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 6,
+      "abs": 752,
+      "scaled": 0.042226699289454106
+    },
+    {
+      "order": "AFL",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 5,
+      "abs": 176,
+      "scaled": 0.025688690400918313
+    },
+    {
+      "order": "AFL",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 5,
+      "abs": 206,
+      "scaled": 0.02632791987092742
+    },
+    {
+      "order": "AFL",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 5,
+      "abs": 222,
+      "scaled": 0.02665266587823939
+    },
+    {
+      "order": "AFL",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 5,
+      "abs": 240,
+      "scaled": 0.026975611362076712
+    },
+    {
+      "order": "AFL",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 5,
+      "abs": 258,
+      "scaled": 0.027180994315957885
+    },
+    {
+      "order": "AFL",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 5,
+      "abs": 475,
+      "scaled": 0.03267630059355986
+    },
+    {
+      "order": "FAL",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 5,
+      "abs": 462,
+      "scaled": 0.0431975701619568
+    },
+    {
+      "order": "FAL",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 5,
+      "abs": 506,
+      "scaled": 0.044450720404747845
+    },
+    {
+      "order": "FAL",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 5,
+      "abs": 549,
+      "scaled": 0.045663107914093726
+    },
+    {
+      "order": "AFL",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 4,
+      "abs": 487,
+      "scaled": 0.03637363935615645
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 4,
+      "abs": 522,
+      "scaled": 0.037270905779841434
+    },
+    {
+      "order": "AFL",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 4,
+      "abs": 522,
+      "scaled": 0.037339269579500844
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 4,
+      "abs": 554,
+      "scaled": 0.038142031249803865
+    },
+    {
+      "order": "AFL",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 4,
+      "abs": 553,
+      "scaled": 0.03822545096904301
+    },
+    {
+      "order": "AFL",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 4,
+      "abs": 557,
+      "scaled": 0.038287742037920625
+    },
+    {
+      "order": "AFL",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 4,
+      "abs": 578,
+      "scaled": 0.038887682763832754
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 4,
+      "abs": 596,
+      "scaled": 0.0394112406583777
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 4,
+      "abs": 595,
+      "scaled": 0.03948322186766712
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 4,
+      "abs": 625,
+      "scaled": 0.04019329567074359
+    },
+    {
+      "order": "AFL",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 4,
+      "abs": 628,
+      "scaled": 0.040390488603209374
+    },
+    {
+      "order": "AFL",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 4,
+      "abs": 304,
+      "scaled": 0.043159201034758454
+    },
+    {
+      "order": "FAL",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 4,
+      "abs": 433,
+      "scaled": 0.04737303007089627
+    },
+    {
+      "order": "ALF",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 4,
+      "abs": 535,
+      "scaled": 0.06412234570434411
+    },
+    {
+      "order": "ALF",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 4,
+      "abs": 558,
+      "scaled": 0.06463697164663607
+    },
+    {
+      "order": "ALF",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 4,
+      "abs": 570,
+      "scaled": 0.06493919410985555
+    },
+    {
+      "order": "LF",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 4,
+      "abs": 793,
+      "scaled": 0.0650313389096897
+    },
+    {
+      "order": "ALF",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 4,
+      "abs": 596,
+      "scaled": 0.06579826957655271
+    },
+    {
+      "order": "ALF",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 4,
+      "abs": 600,
+      "scaled": 0.06590927729718199
+    },
+    {
+      "order": "LF",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 4,
+      "abs": 805,
+      "scaled": 0.06676065750223203
+    },
+    {
+      "order": "ALF",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 4,
+      "abs": 455,
+      "scaled": 0.06676863816236445
+    },
+    {
+      "order": "ALF",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 4,
+      "abs": 638,
+      "scaled": 0.0670062171867406
+    },
+    {
+      "order": "ALF",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 4,
+      "abs": 639,
+      "scaled": 0.06712016230706647
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 4,
+      "abs": 828,
+      "scaled": 0.0672084482509675
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 4,
+      "abs": 833,
+      "scaled": 0.06731101997474548
+    },
+    {
+      "order": "LAF",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 4,
+      "abs": 847,
+      "scaled": 0.06751090351943967
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 4,
+      "abs": 851,
+      "scaled": 0.0676687719165523
+    },
+    {
+      "order": "LAF",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 4,
+      "abs": 862,
+      "scaled": 0.06775388785139241
+    },
+    {
+      "order": "ALF",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 4,
+      "abs": 489,
+      "scaled": 0.06778736948482472
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 4,
+      "abs": 871,
+      "scaled": 0.07033345643835714
+    },
+    {
+      "order": "LAF",
+      "attack": 3290,
+      "health": 999,
+      "exact": 4,
+      "abs": 897,
+      "scaled": 0.07111997407631326
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 4,
+      "abs": 897,
+      "scaled": 0.0712065934280065
+    },
+    {
+      "order": "LF",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 4,
+      "abs": 800,
+      "scaled": 0.07187126472575783
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 4,
+      "abs": 908,
+      "scaled": 0.07376238295077864
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 4,
+      "abs": 929,
+      "scaled": 0.07418074270532682
+    },
+    {
+      "order": "LAF",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 4,
+      "abs": 924,
+      "scaled": 0.07419553639214926
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 4,
+      "abs": 936,
+      "scaled": 0.07436847285627374
+    },
+    {
+      "order": "LAF",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 4,
+      "abs": 950,
+      "scaled": 0.0746070172890686
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 4,
+      "abs": 960,
+      "scaled": 0.07475453189851672
+    },
+    {
+      "order": "LAF",
+      "attack": 3295,
+      "health": 999,
+      "exact": 4,
+      "abs": 980,
+      "scaled": 0.0751423271628654
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 4,
+      "abs": 989,
+      "scaled": 0.07531820102668663
+    },
+    {
+      "order": "LAF",
+      "attack": 3300,
+      "health": 998,
+      "exact": 4,
+      "abs": 1015,
+      "scaled": 0.07607749628649185
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 4,
+      "abs": 1022,
+      "scaled": 0.07614442518591574
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 4,
+      "abs": 1049,
+      "scaled": 0.07656868824997043
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 4,
+      "abs": 1132,
+      "scaled": 0.09061427803378375
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 4,
+      "abs": 1126,
+      "scaled": 0.09555050001609289
+    },
+    {
+      "order": "LFA",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 4,
+      "abs": 1129,
+      "scaled": 0.09583940699708687
+    },
+    {
+      "order": "LFA",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 4,
+      "abs": 1123,
+      "scaled": 0.09586511721416835
+    },
+    {
+      "order": "LFA",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 4,
+      "abs": 1125,
+      "scaled": 0.09594187873359877
+    },
+    {
+      "order": "LFA",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 4,
+      "abs": 1118,
+      "scaled": 0.09857550464458592
+    },
+    {
+      "order": "LFA",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 4,
+      "abs": 1124,
+      "scaled": 0.0986288385489546
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 4,
+      "abs": 1129,
+      "scaled": 0.0987572499045849
+    },
+    {
+      "order": "LFA",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 4,
+      "abs": 1121,
+      "scaled": 0.09886813242569181
+    },
+    {
+      "order": "LFA",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 4,
+      "abs": 1117,
+      "scaled": 0.09889466513230133
+    },
+    {
+      "order": "LFA",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 4,
+      "abs": 1132,
+      "scaled": 0.09894333507647568
+    },
+    {
+      "order": "LFA",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 4,
+      "abs": 1117,
+      "scaled": 0.09898576347226545
+    },
+    {
+      "order": "LFA",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 4,
+      "abs": 1110,
+      "scaled": 0.09902681456811596
+    },
+    {
+      "order": "LFA",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 4,
+      "abs": 1116,
+      "scaled": 0.09927460533985771
+    },
+    {
+      "order": "LFA",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 4,
+      "abs": 1106,
+      "scaled": 0.09929804601974346
+    },
+    {
+      "order": "LFA",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 4,
+      "abs": 1114,
+      "scaled": 0.099389480555442
+    },
+    {
+      "order": "LFA",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 4,
+      "abs": 1110,
+      "scaled": 0.09951407112369443
+    },
+    {
+      "order": "AFL",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 3,
+      "abs": 333,
+      "scaled": 0.04369007100939737
+    },
+    {
+      "order": "AFL",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 3,
+      "abs": 658,
+      "scaled": 0.04617840535014506
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 3,
+      "abs": 668,
+      "scaled": 0.04633998148254548
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 3,
+      "abs": 673,
+      "scaled": 0.04665108044622429
+    },
+    {
+      "order": "AFL",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 3,
+      "abs": 702,
+      "scaled": 0.04733583578510653
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 3,
+      "abs": 700,
+      "scaled": 0.047344453350665394
+    },
+    {
+      "order": "AFL",
+      "attack": 3290,
+      "health": 999,
+      "exact": 3,
+      "abs": 747,
+      "scaled": 0.048699549947062215
+    },
+    {
+      "order": "FAL",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 3,
+      "abs": 416,
+      "scaled": 0.048904493456601306
+    },
+    {
+      "order": "FAL",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 3,
+      "abs": 354,
+      "scaled": 0.05351249096333799
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 3,
+      "abs": 364,
+      "scaled": 0.053757447725864715
+    },
+    {
+      "order": "FAL",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 3,
+      "abs": 375,
+      "scaled": 0.05391526396904067
+    },
+    {
+      "order": "FAL",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 3,
+      "abs": 360,
+      "scaled": 0.05393691048920313
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 3,
+      "abs": 836,
+      "scaled": 0.054085340154959416
+    },
+    {
+      "order": "FAL",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 3,
+      "abs": 374,
+      "scaled": 0.054087452824006066
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 3,
+      "abs": 395,
+      "scaled": 0.05428342093505667
+    },
+    {
+      "order": "FAL",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 3,
+      "abs": 398,
+      "scaled": 0.05445215122266761
+    },
+    {
+      "order": "FAL",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 3,
+      "abs": 423,
+      "scaled": 0.055049597538315176
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 3,
+      "abs": 423,
+      "scaled": 0.05715848526881501
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 3,
+      "abs": 452,
+      "scaled": 0.057701891540512695
+    },
+    {
+      "order": "FAL",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 3,
+      "abs": 438,
+      "scaled": 0.057725497426425354
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 3,
+      "abs": 878,
+      "scaled": 0.05779580519909561
+    },
+    {
+      "order": "FL",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 3,
+      "abs": 1087,
+      "scaled": 0.05821525237118902
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 3,
+      "abs": 467,
+      "scaled": 0.058279726499508466
+    },
+    {
+      "order": "AFL",
+      "attack": 3300,
+      "health": 998,
+      "exact": 3,
+      "abs": 895,
+      "scaled": 0.05828059881505787
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 3,
+      "abs": 1097,
+      "scaled": 0.05839894733532991
+    },
+    {
+      "order": "FAL",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 3,
+      "abs": 464,
+      "scaled": 0.058402849442163784
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 3,
+      "abs": 905,
+      "scaled": 0.05852025491181856
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 3,
+      "abs": 1120,
+      "scaled": 0.058837009689579556
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 3,
+      "abs": 1116,
+      "scaled": 0.05886954661035332
+    },
+    {
+      "order": "FL",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 3,
+      "abs": 1118,
+      "scaled": 0.05892280655174481
+    },
+    {
+      "order": "FL",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1148,
+      "scaled": 0.059377216328823146
+    },
+    {
+      "order": "FL",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 3,
+      "abs": 1032,
+      "scaled": 0.05962291850420698
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 3,
+      "abs": 1152,
+      "scaled": 0.061987020683289096
+    },
+    {
+      "order": "FL",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 3,
+      "abs": 1166,
+      "scaled": 0.062359669702400033
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 3,
+      "abs": 954,
+      "scaled": 0.06323214733047494
+    },
+    {
+      "order": "AFL",
+      "attack": 3300,
+      "health": 999,
+      "exact": 3,
+      "abs": 962,
+      "scaled": 0.06343218641958781
+    },
+    {
+      "order": "LAF",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 3,
+      "abs": 757,
+      "scaled": 0.06536894880354105
+    },
+    {
+      "order": "LAF",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 3,
+      "abs": 774,
+      "scaled": 0.06611512570047623
+    },
+    {
+      "order": "ALF",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 3,
+      "abs": 818,
+      "scaled": 0.0662809295529787
+    },
+    {
+      "order": "ALF",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 3,
+      "abs": 824,
+      "scaled": 0.0663516183416274
+    },
+    {
+      "order": "LF",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 3,
+      "abs": 813,
+      "scaled": 0.06642520878046732
+    },
+    {
+      "order": "LF",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 3,
+      "abs": 809,
+      "scaled": 0.06645402490112906
+    },
+    {
+      "order": "LF",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 3,
+      "abs": 817,
+      "scaled": 0.0664733836866318
+    },
+    {
+      "order": "LF",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 3,
+      "abs": 816,
+      "scaled": 0.06679797847013258
+    },
+    {
+      "order": "ALF",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 3,
+      "abs": 844,
+      "scaled": 0.06706282572306932
+    },
+    {
+      "order": "LF",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 3,
+      "abs": 812,
+      "scaled": 0.0670694948809496
+    },
+    {
+      "order": "ALF",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 3,
+      "abs": 852,
+      "scaled": 0.06729876020768538
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 3,
+      "abs": 812,
+      "scaled": 0.06772372625875162
+    },
+    {
+      "order": "ALF",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 3,
+      "abs": 883,
+      "scaled": 0.0681502864684283
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 3,
+      "abs": 882,
+      "scaled": 0.06822040285287412
+    },
+    {
+      "order": "ALF",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 3,
+      "abs": 424,
+      "scaled": 0.06833714937319735
+    },
+    {
+      "order": "LF",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 3,
+      "abs": 803,
+      "scaled": 0.06872126684333663
+    },
+    {
+      "order": "FAL",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 3,
+      "abs": 491,
+      "scaled": 0.06883272837071153
+    },
+    {
+      "order": "LF",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 3,
+      "abs": 806,
+      "scaled": 0.06902367427847955
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 3,
+      "abs": 919,
+      "scaled": 0.06911201432295322
+    },
+    {
+      "order": "ALF",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 3,
+      "abs": 923,
+      "scaled": 0.0691857439017805
+    },
+    {
+      "order": "ALF",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 3,
+      "abs": 452,
+      "scaled": 0.06926093214081092
+    },
+    {
+      "order": "ALF",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 3,
+      "abs": 930,
+      "scaled": 0.06932055452231889
+    },
+    {
+      "order": "LAF",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 3,
+      "abs": 845,
+      "scaled": 0.06944670945399722
+    },
+    {
+      "order": "ALF",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 3,
+      "abs": 697,
+      "scaled": 0.06956971236762066
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1009,
+      "scaled": 0.06980447987002192
+    },
+    {
+      "order": "ALF",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 3,
+      "abs": 385,
+      "scaled": 0.06986686280812315
+    },
+    {
+      "order": "ALF",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 3,
+      "abs": 390,
+      "scaled": 0.07001582197941492
+    },
+    {
+      "order": "ALF",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 3,
+      "abs": 720,
+      "scaled": 0.07004767587667488
+    },
+    {
+      "order": "ALF",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 3,
+      "abs": 740,
+      "scaled": 0.0707916824116479
+    },
+    {
+      "order": "ALF",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 3,
+      "abs": 750,
+      "scaled": 0.07108474011736204
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 3,
+      "abs": 495,
+      "scaled": 0.07143295019049578
+    },
+    {
+      "order": "ALF",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 3,
+      "abs": 682,
+      "scaled": 0.0714626956647238
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 3,
+      "abs": 515,
+      "scaled": 0.07168588268036935
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 3,
+      "abs": 515,
+      "scaled": 0.07173274335685254
+    },
+    {
+      "order": "FAL",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 3,
+      "abs": 510,
+      "scaled": 0.07181142185506362
+    },
+    {
+      "order": "ALF",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 3,
+      "abs": 786,
+      "scaled": 0.07191064988989704
+    },
+    {
+      "order": "FAL",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 3,
+      "abs": 536,
+      "scaled": 0.07193829400258467
+    },
+    {
+      "order": "ALF",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 3,
+      "abs": 781,
+      "scaled": 0.0720040056196245
+    },
+    {
+      "order": "FAL",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 3,
+      "abs": 547,
+      "scaled": 0.07254418689408343
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 3,
+      "abs": 554,
+      "scaled": 0.07257073256015772
+    },
+    {
+      "order": "LF",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 3,
+      "abs": 798,
+      "scaled": 0.07473756118753777
+    },
+    {
+      "order": "FAL",
+      "attack": 3290,
+      "health": 999,
+      "exact": 3,
+      "abs": 578,
+      "scaled": 0.07789729123837663
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 3,
+      "abs": 594,
+      "scaled": 0.07841940208525378
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 3,
+      "abs": 576,
+      "scaled": 0.07979152306720183
+    },
+    {
+      "order": "FAL",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 3,
+      "abs": 597,
+      "scaled": 0.07995965309153741
+    },
+    {
+      "order": "LAF",
+      "attack": 3300,
+      "health": 999,
+      "exact": 3,
+      "abs": 1069,
+      "scaled": 0.08032189690213726
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 3,
+      "abs": 608,
+      "scaled": 0.08032765543052667
+    },
+    {
+      "order": "FAL",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 3,
+      "abs": 623,
+      "scaled": 0.08037451518961825
+    },
+    {
+      "order": "FAL",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 3,
+      "abs": 632,
+      "scaled": 0.0808971602689772
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 3,
+      "abs": 639,
+      "scaled": 0.08095679004777195
+    },
+    {
+      "order": "FAL",
+      "attack": 3295,
+      "health": 999,
+      "exact": 3,
+      "abs": 663,
+      "scaled": 0.08132893004665742
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 3,
+      "abs": 661,
+      "scaled": 0.08142306917680009
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 3,
+      "abs": 1132,
+      "scaled": 0.09202722513315448
+    },
+    {
+      "order": "LFA",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 3,
+      "abs": 1144,
+      "scaled": 0.09208722053518859
+    },
+    {
+      "order": "LFA",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1133,
+      "scaled": 0.0921145635838938
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 3,
+      "abs": 1137,
+      "scaled": 0.09215315595537688
+    },
+    {
+      "order": "LFA",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 3,
+      "abs": 1131,
+      "scaled": 0.09226872424571847
+    },
+    {
+      "order": "LFA",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 3,
+      "abs": 1133,
+      "scaled": 0.09232942578733377
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 3,
+      "abs": 1156,
+      "scaled": 0.09242286671007893
+    },
+    {
+      "order": "LFA",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 3,
+      "abs": 1166,
+      "scaled": 0.09246797809963264
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 3,
+      "abs": 1182,
+      "scaled": 0.09301497327084746
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 3,
+      "abs": 1194,
+      "scaled": 0.0933665369439583
+    },
+    {
+      "order": "LFA",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1207,
+      "scaled": 0.09347011521179605
+    },
+    {
+      "order": "FLA",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 3,
+      "abs": 856,
+      "scaled": 0.09904881588248987
+    },
+    {
+      "order": "FLA",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 3,
+      "abs": 873,
+      "scaled": 0.09918168894631857
+    },
+    {
+      "order": "FLA",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 3,
+      "abs": 860,
+      "scaled": 0.09919834201162492
+    },
+    {
+      "order": "FLA",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 3,
+      "abs": 870,
+      "scaled": 0.09920336397659407
+    },
+    {
+      "order": "FLA",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 3,
+      "abs": 885,
+      "scaled": 0.09948315322137913
+    },
+    {
+      "order": "FLA",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 3,
+      "abs": 856,
+      "scaled": 0.0994850177325034
+    },
+    {
+      "order": "FLA",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 3,
+      "abs": 861,
+      "scaled": 0.09954693011331789
+    },
+    {
+      "order": "FLA",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 3,
+      "abs": 860,
+      "scaled": 0.09968636560493777
+    },
+    {
+      "order": "FLA",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 3,
+      "abs": 855,
+      "scaled": 0.0996961982249443
+    },
+    {
+      "order": "FLA",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 3,
+      "abs": 852,
+      "scaled": 0.09973860934066153
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 3,
+      "abs": 1201,
+      "scaled": 0.09987064181871375
+    },
+    {
+      "order": "FLA",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 3,
+      "abs": 849,
+      "scaled": 0.10004626701705821
+    },
+    {
+      "order": "FLA",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 3,
+      "abs": 853,
+      "scaled": 0.10288051829821776
+    },
+    {
+      "order": "LFA",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1096,
+      "scaled": 0.10406779985693221
+    },
+    {
+      "order": "LFA",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 3,
+      "abs": 1094,
+      "scaled": 0.10426977650275482
+    },
+    {
+      "order": "LFA",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 3,
+      "abs": 1094,
+      "scaled": 0.10458780011424806
+    },
+    {
+      "order": "FLA",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 3,
+      "abs": 856,
+      "scaled": 0.10803246065939165
+    },
+    {
+      "order": "FLA",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 3,
+      "abs": 852,
+      "scaled": 0.10807057435554557
+    },
+    {
+      "order": "FLA",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 3,
+      "abs": 842,
+      "scaled": 0.1080902942353194
+    },
+    {
+      "order": "LFA",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 3,
+      "abs": 1087,
+      "scaled": 0.10954846343146268
+    },
+    {
+      "order": "LFA",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 3,
+      "abs": 1090,
+      "scaled": 0.10985768790868972
+    },
+    {
+      "order": "AFL",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 2,
+      "abs": 695,
+      "scaled": 0.04922466027712297
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 2,
+      "abs": 733,
+      "scaled": 0.050407461330215675
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 2,
+      "abs": 734,
+      "scaled": 0.0504145242423763
+    },
+    {
+      "order": "FAL",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 2,
+      "abs": 337,
+      "scaled": 0.05075134208791637
+    },
+    {
+      "order": "FAL",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 2,
+      "abs": 352,
+      "scaled": 0.05134557662367767
+    },
+    {
+      "order": "AFL",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 2,
+      "abs": 774,
+      "scaled": 0.05141207897578698
+    },
+    {
+      "order": "AFL",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 2,
+      "abs": 779,
+      "scaled": 0.05170429782929231
+    },
+    {
+      "order": "FAL",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 2,
+      "abs": 371,
+      "scaled": 0.05191051296023208
+    },
+    {
+      "order": "FAL",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 2,
+      "abs": 350,
+      "scaled": 0.05231055730815726
+    },
+    {
+      "order": "FAL",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 2,
+      "abs": 355,
+      "scaled": 0.05258251330519059
+    },
+    {
+      "order": "FAL",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 2,
+      "abs": 352,
+      "scaled": 0.05264484767842953
+    },
+    {
+      "order": "FAL",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 2,
+      "abs": 350,
+      "scaled": 0.05273436534070669
+    },
+    {
+      "order": "FAL",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 2,
+      "abs": 348,
+      "scaled": 0.05282573897825199
+    },
+    {
+      "order": "FAL",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 2,
+      "abs": 340,
+      "scaled": 0.05283360257090025
+    },
+    {
+      "order": "FAL",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 2,
+      "abs": 342,
+      "scaled": 0.053014150056524045
+    },
+    {
+      "order": "FAL",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 2,
+      "abs": 409,
+      "scaled": 0.053018891359740306
+    },
+    {
+      "order": "FAL",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 2,
+      "abs": 342,
+      "scaled": 0.053190967080427365
+    },
+    {
+      "order": "FAL",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 2,
+      "abs": 345,
+      "scaled": 0.05345390079954998
+    },
+    {
+      "order": "AFL",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 2,
+      "abs": 807,
+      "scaled": 0.05492178802033637
+    },
+    {
+      "order": "AFL",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 2,
+      "abs": 812,
+      "scaled": 0.05496825613189993
+    },
+    {
+      "order": "AFL",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 2,
+      "abs": 815,
+      "scaled": 0.05511596537487973
+    },
+    {
+      "order": "FAL",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 2,
+      "abs": 355,
+      "scaled": 0.057137723317123024
+    },
+    {
+      "order": "FAL",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 2,
+      "abs": 361,
+      "scaled": 0.057402198624819545
+    },
+    {
+      "order": "AFL",
+      "attack": 3295,
+      "health": 999,
+      "exact": 2,
+      "abs": 853,
+      "scaled": 0.058764763908278006
+    },
+    {
+      "order": "FL",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1013,
+      "scaled": 0.05951830130426944
+    },
+    {
+      "order": "FL",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1012,
+      "scaled": 0.05960744027848347
+    },
+    {
+      "order": "FL",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1030,
+      "scaled": 0.05963353452462866
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1029,
+      "scaled": 0.0596603685531083
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1041,
+      "scaled": 0.05977743172444677
+    },
+    {
+      "order": "FL",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1024,
+      "scaled": 0.059827049149311196
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1024,
+      "scaled": 0.05998236305003857
+    },
+    {
+      "order": "FL",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1055,
+      "scaled": 0.060055592352856624
+    },
+    {
+      "order": "FL",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1023,
+      "scaled": 0.06008590314615514
+    },
+    {
+      "order": "FL",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1019,
+      "scaled": 0.060110571027920945
+    },
+    {
+      "order": "FL",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1022,
+      "scaled": 0.060117501122095074
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1067,
+      "scaled": 0.06032749619595318
+    },
+    {
+      "order": "FL",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1018,
+      "scaled": 0.06042443969944572
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1076,
+      "scaled": 0.06047891317422088
+    },
+    {
+      "order": "FL",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 2,
+      "abs": 999,
+      "scaled": 0.06297259430502361
+    },
+    {
+      "order": "FL",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 2,
+      "abs": 999,
+      "scaled": 0.06492490466246137
+    },
+    {
+      "order": "FL",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 2,
+      "abs": 990,
+      "scaled": 0.06498896559619799
+    },
+    {
+      "order": "FL",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 2,
+      "abs": 992,
+      "scaled": 0.06500187217087355
+    },
+    {
+      "order": "FL",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1007,
+      "scaled": 0.06507499900060149
+    },
+    {
+      "order": "FL",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 2,
+      "abs": 997,
+      "scaled": 0.06508466311672445
+    },
+    {
+      "order": "FL",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1008,
+      "scaled": 0.06510873233272507
+    },
+    {
+      "order": "FL",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1012,
+      "scaled": 0.06512761380592402
+    },
+    {
+      "order": "FL",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1006,
+      "scaled": 0.06516909904163126
+    },
+    {
+      "order": "FL",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1007,
+      "scaled": 0.06518256951728285
+    },
+    {
+      "order": "FL",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1002,
+      "scaled": 0.06537680324101142
+    },
+    {
+      "order": "FL",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1008,
+      "scaled": 0.06543247519919337
+    },
+    {
+      "order": "FL",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1004,
+      "scaled": 0.0656527218248989
+    },
+    {
+      "order": "LAF",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 2,
+      "abs": 777,
+      "scaled": 0.06585271246610458
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1176,
+      "scaled": 0.06756920429839314
+    },
+    {
+      "order": "LAF",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 2,
+      "abs": 794,
+      "scaled": 0.06760874193074817
+    },
+    {
+      "order": "LAF",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 2,
+      "abs": 798,
+      "scaled": 0.0676434710225246
+    },
+    {
+      "order": "LAF",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 2,
+      "abs": 790,
+      "scaled": 0.06764423261389935
+    },
+    {
+      "order": "LAF",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 2,
+      "abs": 786,
+      "scaled": 0.06774532160411267
+    },
+    {
+      "order": "LAF",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 2,
+      "abs": 801,
+      "scaled": 0.06809575806260953
+    },
+    {
+      "order": "LAF",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 2,
+      "abs": 795,
+      "scaled": 0.06835534422332368
+    },
+    {
+      "order": "LAF",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 2,
+      "abs": 788,
+      "scaled": 0.06836917294102329
+    },
+    {
+      "order": "LAF",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 2,
+      "abs": 786,
+      "scaled": 0.06845496980318849
+    },
+    {
+      "order": "LAF",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 2,
+      "abs": 776,
+      "scaled": 0.06943364285504006
+    },
+    {
+      "order": "FL",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1232,
+      "scaled": 0.07026179894249945
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1235,
+      "scaled": 0.07033542513084484
+    },
+    {
+      "order": "FL",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1248,
+      "scaled": 0.07055546814152924
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1185,
+      "scaled": 0.070955026320135
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1276,
+      "scaled": 0.07128250177814205
+    },
+    {
+      "order": "FL",
+      "attack": 3295,
+      "health": 999,
+      "exact": 2,
+      "abs": 1284,
+      "scaled": 0.07133561502469032
+    },
+    {
+      "order": "FL",
+      "attack": 3290,
+      "health": 999,
+      "exact": 2,
+      "abs": 1200,
+      "scaled": 0.07139366199597935
+    },
+    {
+      "order": "FL",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1215,
+      "scaled": 0.07158777834701036
+    },
+    {
+      "order": "FL",
+      "attack": 3300,
+      "health": 998,
+      "exact": 2,
+      "abs": 1306,
+      "scaled": 0.07167336634278221
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1292,
+      "scaled": 0.07167347065065577
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1209,
+      "scaled": 0.07167717625612491
+    },
+    {
+      "order": "FL",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1322,
+      "scaled": 0.07216253555653362
+    },
+    {
+      "order": "LAF",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 2,
+      "abs": 820,
+      "scaled": 0.07372469233599394
+    },
+    {
+      "order": "LAF",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 2,
+      "abs": 809,
+      "scaled": 0.07420311158558485
+    },
+    {
+      "order": "LAF",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 2,
+      "abs": 823,
+      "scaled": 0.07421702301047817
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 2,
+      "abs": 834,
+      "scaled": 0.07428878982033954
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 2,
+      "abs": 835,
+      "scaled": 0.07434104570349548
+    },
+    {
+      "order": "LAF",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 2,
+      "abs": 824,
+      "scaled": 0.07439050758394117
+    },
+    {
+      "order": "LAF",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 2,
+      "abs": 825,
+      "scaled": 0.07452070980143793
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 2,
+      "abs": 833,
+      "scaled": 0.07454344978810218
+    },
+    {
+      "order": "LAF",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 2,
+      "abs": 773,
+      "scaled": 0.07468723446319792
+    },
+    {
+      "order": "LAF",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 2,
+      "abs": 835,
+      "scaled": 0.07487468970658767
+    },
+    {
+      "order": "LAF",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 2,
+      "abs": 766,
+      "scaled": 0.07487678241769202
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 2,
+      "abs": 832,
+      "scaled": 0.07500414761278212
+    },
+    {
+      "order": "LAF",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 2,
+      "abs": 786,
+      "scaled": 0.07505882478431247
+    },
+    {
+      "order": "LAF",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 2,
+      "abs": 777,
+      "scaled": 0.07553000921464342
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 2,
+      "abs": 959,
+      "scaled": 0.07771349750215162
+    },
+    {
+      "order": "ALF",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 2,
+      "abs": 362,
+      "scaled": 0.07921173971567941
+    },
+    {
+      "order": "ALF",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 2,
+      "abs": 378,
+      "scaled": 0.0795279551852337
+    },
+    {
+      "order": "FL",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 2,
+      "abs": 972,
+      "scaled": 0.08003963763572441
+    },
+    {
+      "order": "ALF",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 2,
+      "abs": 959,
+      "scaled": 0.08024881627820346
+    },
+    {
+      "order": "FL",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 2,
+      "abs": 972,
+      "scaled": 0.08038226061236603
+    },
+    {
+      "order": "ALF",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1027,
+      "scaled": 0.08054811093714065
+    },
+    {
+      "order": "FL",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 2,
+      "abs": 969,
+      "scaled": 0.08068605500905612
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 2,
+      "abs": 980,
+      "scaled": 0.08075179692958206
+    },
+    {
+      "order": "FL",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 2,
+      "abs": 966,
+      "scaled": 0.08101507332903429
+    },
+    {
+      "order": "ALF",
+      "attack": 3290,
+      "health": 999,
+      "exact": 2,
+      "abs": 1098,
+      "scaled": 0.08103849311246986
+    },
+    {
+      "order": "ALF",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1066,
+      "scaled": 0.08166465003591872
+    },
+    {
+      "order": "ALF",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1066,
+      "scaled": 0.08167980934598024
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1077,
+      "scaled": 0.0818977896004327
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1134,
+      "scaled": 0.081920703616575
+    },
+    {
+      "order": "ALF",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1139,
+      "scaled": 0.08222497668859446
+    },
+    {
+      "order": "ALF",
+      "attack": 3300,
+      "health": 998,
+      "exact": 2,
+      "abs": 1241,
+      "scaled": 0.08262200902618938
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1171,
+      "scaled": 0.08298707901593405
+    },
+    {
+      "order": "ALF",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1172,
+      "scaled": 0.08299151891509199
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1184,
+      "scaled": 0.08325398270310169
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1278,
+      "scaled": 0.08358970200576571
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1213,
+      "scaled": 0.08421142620288719
+    },
+    {
+      "order": "ALF",
+      "attack": 3295,
+      "health": 999,
+      "exact": 2,
+      "abs": 1214,
+      "scaled": 0.08423364842510944
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1315,
+      "scaled": 0.08460101694025851
+    },
+    {
+      "order": "ALF",
+      "attack": 3300,
+      "health": 999,
+      "exact": 2,
+      "abs": 1320,
+      "scaled": 0.08469062492819351
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1237,
+      "scaled": 0.08491731904170635
+    },
+    {
+      "order": "FAL",
+      "attack": 3300,
+      "health": 998,
+      "exact": 2,
+      "abs": 694,
+      "scaled": 0.08532471831842481
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 2,
+      "abs": 697,
+      "scaled": 0.08548000279164769
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1097,
+      "scaled": 0.0859119083046031
+    },
+    {
+      "order": "LAF",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1109,
+      "scaled": 0.08618324520388693
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1105,
+      "scaled": 0.08622192584385341
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1392,
+      "scaled": 0.08666895283232923
+    },
+    {
+      "order": "FAL",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 2,
+      "abs": 723,
+      "scaled": 0.08863499010556919
+    },
+    {
+      "order": "FAL",
+      "attack": 3300,
+      "health": 999,
+      "exact": 2,
+      "abs": 744,
+      "scaled": 0.08870085938960498
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 2,
+      "abs": 753,
+      "scaled": 0.0891831212356144
+    },
+    {
+      "order": "FAL",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 2,
+      "abs": 806,
+      "scaled": 0.09025179468228173
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1220,
+      "scaled": 0.0970834096970139
+    },
+    {
+      "order": "LFA",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1222,
+      "scaled": 0.09714639465268143
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1167,
+      "scaled": 0.09921026270133537
+    },
+    {
+      "order": "FLA",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1180,
+      "scaled": 0.0995910081183472
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1198,
+      "scaled": 0.09986090044175688
+    },
+    {
+      "order": "FLA",
+      "attack": 3290,
+      "health": 999,
+      "exact": 2,
+      "abs": 1208,
+      "scaled": 0.10014327782568022
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1235,
+      "scaled": 0.10080881264340608
+    },
+    {
+      "order": "FLA",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1241,
+      "scaled": 0.10110946830579526
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1148,
+      "scaled": 0.10120366464032682
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1262,
+      "scaled": 0.10154794843722109
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1264,
+      "scaled": 0.10159548912363758
+    },
+    {
+      "order": "FLA",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1167,
+      "scaled": 0.10165076233731124
+    },
+    {
+      "order": "FLA",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 2,
+      "abs": 940,
+      "scaled": 0.10209590865533585
+    },
+    {
+      "order": "FLA",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1288,
+      "scaled": 0.10229179942777522
+    },
+    {
+      "order": "FLA",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 2,
+      "abs": 958,
+      "scaled": 0.10249680047351417
+    },
+    {
+      "order": "FLA",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 2,
+      "abs": 973,
+      "scaled": 0.10292571113508231
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 2,
+      "abs": 978,
+      "scaled": 0.10293365198856447
+    },
+    {
+      "order": "FLA",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 2,
+      "abs": 985,
+      "scaled": 0.10297164501416406
+    },
+    {
+      "order": "FLA",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 2,
+      "abs": 993,
+      "scaled": 0.10310655902518429
+    },
+    {
+      "order": "FLA",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1020,
+      "scaled": 0.10356610177617803
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1028,
+      "scaled": 0.1038123769836346
+    },
+    {
+      "order": "FLA",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 2,
+      "abs": 948,
+      "scaled": 0.10391197008878394
+    },
+    {
+      "order": "FLA",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1051,
+      "scaled": 0.10433968170258012
+    },
+    {
+      "order": "FLA",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1060,
+      "scaled": 0.10460866121080376
+    },
+    {
+      "order": "FLA",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 2,
+      "abs": 905,
+      "scaled": 0.10475434126328625
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 2,
+      "abs": 1071,
+      "scaled": 0.1047754354305212
+    },
+    {
+      "order": "FLA",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1077,
+      "scaled": 0.10480994386447734
+    },
+    {
+      "order": "FLA",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 2,
+      "abs": 909,
+      "scaled": 0.10481228697391237
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 2,
+      "abs": 1085,
+      "scaled": 0.1050738589154031
+    },
+    {
+      "order": "FLA",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1104,
+      "scaled": 0.10518610598534467
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 2,
+      "abs": 1098,
+      "scaled": 0.10537356175610213
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1113,
+      "scaled": 0.10554384577971915
+    },
+    {
+      "order": "FLA",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1128,
+      "scaled": 0.1058033721680321
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1302,
+      "scaled": 0.10607686499078267
+    },
+    {
+      "order": "FLA",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1142,
+      "scaled": 0.10609483613123538
+    },
+    {
+      "order": "FLA",
+      "attack": 3295,
+      "health": 999,
+      "exact": 2,
+      "abs": 1321,
+      "scaled": 0.10648453476193215
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1230,
+      "scaled": 0.10712160065400156
+    },
+    {
+      "order": "FLA",
+      "attack": 3300,
+      "health": 998,
+      "exact": 2,
+      "abs": 1343,
+      "scaled": 0.10717892478943247
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1346,
+      "scaled": 0.1072208496113562
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 2,
+      "abs": 1244,
+      "scaled": 0.10739342631887239
+    },
+    {
+      "order": "FLA",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1366,
+      "scaled": 0.10774613066318262
+    },
+    {
+      "order": "LFA",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 2,
+      "abs": 1104,
+      "scaled": 0.11047315243936184
+    },
+    {
+      "order": "LFA",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1113,
+      "scaled": 0.11076038749961925
+    },
+    {
+      "order": "LFA",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1105,
+      "scaled": 0.11077301503972786
+    },
+    {
+      "order": "LFA",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 2,
+      "abs": 1113,
+      "scaled": 0.11093734700311764
+    },
+    {
+      "order": "FLA",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 2,
+      "abs": 843,
+      "scaled": 0.11177196980026921
+    },
+    {
+      "order": "FLA",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 2,
+      "abs": 841,
+      "scaled": 0.11184494540618611
+    },
+    {
+      "order": "LFA",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1102,
+      "scaled": 0.1134387470294887
+    },
+    {
+      "order": "LFA",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 2,
+      "abs": 1092,
+      "scaled": 0.11368043111397602
+    },
+    {
+      "order": "LFA",
+      "attack": 3235,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1104,
+      "scaled": 0.1137739927072755
+    },
+    {
+      "order": "LFA",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 2,
+      "abs": 1105,
+      "scaled": 0.11405655506312218
+    },
+    {
+      "order": "LFA",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 2,
+      "abs": 1085,
+      "scaled": 0.11418315122550343
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 2,
+      "abs": 1475,
+      "scaled": 0.11423020064801065
+    },
+    {
+      "order": "LFA",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 2,
+      "abs": 1075,
+      "scaled": 0.11436915028698486
+    },
+    {
+      "order": "FLA",
+      "attack": 3225,
+      "health": 1007,
+      "exact": 2,
+      "abs": 836,
+      "scaled": 0.11451647264057507
+    },
+    {
+      "order": "FLA",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 2,
+      "abs": 836,
+      "scaled": 0.11485661508380868
+    },
+    {
+      "order": "LFA",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 2,
+      "abs": 1083,
+      "scaled": 0.12076719802787172
+    },
+    {
+      "order": "FLA",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 2,
+      "abs": 831,
+      "scaled": 0.12221249084512287
+    },
+    {
+      "order": "FLA",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 2,
+      "abs": 832,
+      "scaled": 0.12249967466883516
+    },
+    {
+      "order": "LF",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 1,
+      "abs": 850,
+      "scaled": 0.0642721590470221
+    },
+    {
+      "order": "LF",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 1,
+      "abs": 838,
+      "scaled": 0.06431594076160568
+    },
+    {
+      "order": "LAF",
+      "attack": 3250,
+      "health": 1006,
+      "exact": 1,
+      "abs": 805,
+      "scaled": 0.06434385576791862
+    },
+    {
+      "order": "LF",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 1,
+      "abs": 830,
+      "scaled": 0.06438830487420683
+    },
+    {
+      "order": "LF",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 1,
+      "abs": 843,
+      "scaled": 0.06439873170745664
+    },
+    {
+      "order": "LF",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 1,
+      "abs": 839,
+      "scaled": 0.06444227969939592
+    },
+    {
+      "order": "LAF",
+      "attack": 3255,
+      "health": 1004,
+      "exact": 1,
+      "abs": 806,
+      "scaled": 0.06466522149146059
+    },
+    {
+      "order": "LAF",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 1,
+      "abs": 799,
+      "scaled": 0.06475856755957998
+    },
+    {
+      "order": "LAF",
+      "attack": 3245,
+      "health": 1007,
+      "exact": 1,
+      "abs": 806,
+      "scaled": 0.06478726300968757
+    },
+    {
+      "order": "LF",
+      "attack": 3250,
+      "health": 1005,
+      "exact": 1,
+      "abs": 843,
+      "scaled": 0.06481824902151523
+    },
+    {
+      "order": "LF",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 1,
+      "abs": 829,
+      "scaled": 0.06486120824657088
+    },
+    {
+      "order": "LAF",
+      "attack": 3260,
+      "health": 1003,
+      "exact": 1,
+      "abs": 819,
+      "scaled": 0.06486418881775313
+    },
+    {
+      "order": "LF",
+      "attack": 3240,
+      "health": 1007,
+      "exact": 1,
+      "abs": 826,
+      "scaled": 0.06517706571135046
+    },
+    {
+      "order": "LF",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 1,
+      "abs": 839,
+      "scaled": 0.06668610893358917
+    },
+    {
+      "order": "LF",
+      "attack": 3250,
+      "health": 1004,
+      "exact": 1,
+      "abs": 833,
+      "scaled": 0.06671133707212573
+    },
+    {
+      "order": "LAF",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 1,
+      "abs": 815,
+      "scaled": 0.06804128246295665
+    },
+    {
+      "order": "LAF",
+      "attack": 3255,
+      "health": 1005,
+      "exact": 1,
+      "abs": 805,
+      "scaled": 0.0682265233362791
+    },
+    {
+      "order": "LAF",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 1,
+      "abs": 820,
+      "scaled": 0.06837263543353217
+    },
+    {
+      "order": "LAF",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 1,
+      "abs": 818,
+      "scaled": 0.0684001331092643
+    },
+    {
+      "order": "LAF",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 1,
+      "abs": 827,
+      "scaled": 0.06850015578301699
+    },
+    {
+      "order": "LAF",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 1,
+      "abs": 824,
+      "scaled": 0.06866894492563719
+    },
+    {
+      "order": "LAF",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 1,
+      "abs": 817,
+      "scaled": 0.06867457385495412
+    },
+    {
+      "order": "LF",
+      "attack": 3265,
+      "health": 1002,
+      "exact": 1,
+      "abs": 847,
+      "scaled": 0.06921887170480212
+    },
+    {
+      "order": "LAF",
+      "attack": 3245,
+      "health": 1006,
+      "exact": 1,
+      "abs": 792,
+      "scaled": 0.06975112936257205
+    },
+    {
+      "order": "LF",
+      "attack": 3235,
+      "health": 1008,
+      "exact": 1,
+      "abs": 819,
+      "scaled": 0.07014130734908225
+    },
+    {
+      "order": "LAF",
+      "attack": 3255,
+      "health": 1003,
+      "exact": 1,
+      "abs": 806,
+      "scaled": 0.0702634051036185
+    },
+    {
+      "order": "LF",
+      "attack": 3300,
+      "health": 998,
+      "exact": 1,
+      "abs": 907,
+      "scaled": 0.07159539335616039
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 1,
+      "abs": 911,
+      "scaled": 0.07163665453083151
+    },
+    {
+      "order": "LF",
+      "attack": 3245,
+      "health": 1005,
+      "exact": 1,
+      "abs": 827,
+      "scaled": 0.07180716367365297
+    },
+    {
+      "order": "LF",
+      "attack": 3240,
+      "health": 1006,
+      "exact": 1,
+      "abs": 826,
+      "scaled": 0.072130945629234
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 1,
+      "abs": 944,
+      "scaled": 0.07231395439263322
+    },
+    {
+      "order": "LF",
+      "attack": 3300,
+      "health": 999,
+      "exact": 1,
+      "abs": 951,
+      "scaled": 0.07233602107043674
+    },
+    {
+      "order": "LF",
+      "attack": 3265,
+      "health": 1004,
+      "exact": 1,
+      "abs": 863,
+      "scaled": 0.07349659256240187
+    },
+    {
+      "order": "LF",
+      "attack": 3285,
+      "health": 1000,
+      "exact": 1,
+      "abs": 864,
+      "scaled": 0.07404173179191315
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1003,
+      "exact": 1,
+      "abs": 868,
+      "scaled": 0.07429456180869642
+    },
+    {
+      "order": "LF",
+      "attack": 3265,
+      "health": 1006,
+      "exact": 1,
+      "abs": 864,
+      "scaled": 0.07435617708288939
+    },
+    {
+      "order": "LF",
+      "attack": 3260,
+      "health": 1007,
+      "exact": 1,
+      "abs": 854,
+      "scaled": 0.07438671976404859
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 1,
+      "abs": 862,
+      "scaled": 0.0744374949567837
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 1,
+      "abs": 865,
+      "scaled": 0.07445667638882736
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1003,
+      "exact": 1,
+      "abs": 854,
+      "scaled": 0.0746677959831149
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 1,
+      "abs": 864,
+      "scaled": 0.0747442779897155
+    },
+    {
+      "order": "LF",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 1,
+      "abs": 865,
+      "scaled": 0.07484740030865616
+    },
+    {
+      "order": "FL",
+      "attack": 3230,
+      "health": 1008,
+      "exact": 1,
+      "abs": 982,
+      "scaled": 0.07498109325933328
+    },
+    {
+      "order": "FL",
+      "attack": 3240,
+      "health": 1005,
+      "exact": 1,
+      "abs": 990,
+      "scaled": 0.07511028801537872
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 1,
+      "abs": 1363,
+      "scaled": 0.07546086947511077
+    },
+    {
+      "order": "FL",
+      "attack": 3300,
+      "health": 999,
+      "exact": 1,
+      "abs": 1370,
+      "scaled": 0.07557404334245377
+    },
+    {
+      "order": "LF",
+      "attack": 3295,
+      "health": 999,
+      "exact": 1,
+      "abs": 874,
+      "scaled": 0.075777265594832
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 1,
+      "abs": 883,
+      "scaled": 0.07588878141829514
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 1,
+      "abs": 873,
+      "scaled": 0.07600408747587944
+    },
+    {
+      "order": "LF",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 1,
+      "abs": 875,
+      "scaled": 0.076052868429
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 1,
+      "abs": 868,
+      "scaled": 0.07618516034440936
+    },
+    {
+      "order": "LF",
+      "attack": 3290,
+      "health": 999,
+      "exact": 1,
+      "abs": 866,
+      "scaled": 0.07631877319057256
+    },
+    {
+      "order": "FL",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 1,
+      "abs": 1407,
+      "scaled": 0.0763388404972703
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1000,
+      "exact": 1,
+      "abs": 861,
+      "scaled": 0.07638955944414494
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 1,
+      "abs": 882,
+      "scaled": 0.07639338615708102
+    },
+    {
+      "order": "LF",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 1,
+      "abs": 876,
+      "scaled": 0.07645155592874325
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 1,
+      "abs": 875,
+      "scaled": 0.07648797249190431
+    },
+    {
+      "order": "LF",
+      "attack": 3275,
+      "health": 1001,
+      "exact": 1,
+      "abs": 855,
+      "scaled": 0.07664385378866828
+    },
+    {
+      "order": "LF",
+      "attack": 3260,
+      "health": 1006,
+      "exact": 1,
+      "abs": 856,
+      "scaled": 0.07668137780054674
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1002,
+      "exact": 1,
+      "abs": 872,
+      "scaled": 0.07669833049481717
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1005,
+      "exact": 1,
+      "abs": 870,
+      "scaled": 0.07675490652396855
+    },
+    {
+      "order": "LF",
+      "attack": 3255,
+      "health": 1007,
+      "exact": 1,
+      "abs": 858,
+      "scaled": 0.07858088692510568
+    },
+    {
+      "order": "LF",
+      "attack": 3260,
+      "health": 1005,
+      "exact": 1,
+      "abs": 853,
+      "scaled": 0.07858271687608509
+    },
+    {
+      "order": "LF",
+      "attack": 3265,
+      "health": 1003,
+      "exact": 1,
+      "abs": 850,
+      "scaled": 0.07860376734822083
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1002,
+      "exact": 1,
+      "abs": 854,
+      "scaled": 0.0786190006212596
+    },
+    {
+      "order": "LF",
+      "attack": 3270,
+      "health": 1001,
+      "exact": 1,
+      "abs": 849,
+      "scaled": 0.07885285054060337
+    },
+    {
+      "order": "LF",
+      "attack": 3255,
+      "health": 1006,
+      "exact": 1,
+      "abs": 849,
+      "scaled": 0.07890109396338535
+    },
+    {
+      "order": "LF",
+      "attack": 3250,
+      "health": 1007,
+      "exact": 1,
+      "abs": 845,
+      "scaled": 0.0789517439565981
+    },
+    {
+      "order": "LF",
+      "attack": 3260,
+      "health": 1004,
+      "exact": 1,
+      "abs": 853,
+      "scaled": 0.07896695450320468
+    },
+    {
+      "order": "LF",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 1,
+      "abs": 997,
+      "scaled": 0.07924001196929586
+    },
+    {
+      "order": "FL",
+      "attack": 3230,
+      "health": 1007,
+      "exact": 1,
+      "abs": 980,
+      "scaled": 0.0803890043715913
+    },
+    {
+      "order": "FL",
+      "attack": 3235,
+      "health": 1006,
+      "exact": 1,
+      "abs": 994,
+      "scaled": 0.0806026186898629
+    },
+    {
+      "order": "ALF",
+      "attack": 3265,
+      "health": 1005,
+      "exact": 1,
+      "abs": 989,
+      "scaled": 0.08122490149112166
+    },
+    {
+      "order": "ALF",
+      "attack": 3275,
+      "health": 1002,
+      "exact": 1,
+      "abs": 1001,
+      "scaled": 0.0815611633745763
+    },
+    {
+      "order": "ALF",
+      "attack": 3280,
+      "health": 1001,
+      "exact": 1,
+      "abs": 1026,
+      "scaled": 0.08218301193601646
+    },
+    {
+      "order": "ALF",
+      "attack": 3220,
+      "health": 1008,
+      "exact": 1,
+      "abs": 349,
+      "scaled": 0.08222119532141398
+    },
+    {
+      "order": "ALF",
+      "attack": 3270,
+      "health": 1004,
+      "exact": 1,
+      "abs": 1036,
+      "scaled": 0.08244837403461025
+    },
+    {
+      "order": "FL",
+      "attack": 3225,
+      "health": 1008,
+      "exact": 1,
+      "abs": 980,
+      "scaled": 0.08312154550761353
+    },
+    {
+      "order": "FL",
+      "attack": 3230,
+      "health": 1006,
+      "exact": 1,
+      "abs": 988,
+      "scaled": 0.08366510824112161
+    },
+    {
+      "order": "ALF",
+      "attack": 3215,
+      "health": 1008,
+      "exact": 1,
+      "abs": 323,
+      "scaled": 0.08814270492455079
+    },
+    {
+      "order": "ALF",
+      "attack": 3220,
+      "health": 1007,
+      "exact": 1,
+      "abs": 341,
+      "scaled": 0.08862569131596582
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1004,
+      "exact": 1,
+      "abs": 1354,
+      "scaled": 0.10485062199492468
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1006,
+      "exact": 1,
+      "abs": 1368,
+      "scaled": 0.10504092300493739
+    },
+    {
+      "order": "LFA",
+      "attack": 3300,
+      "health": 998,
+      "exact": 1,
+      "abs": 1377,
+      "scaled": 0.10538398556779532
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 1,
+      "abs": 1406,
+      "scaled": 0.10580858904283308
+    },
+    {
+      "order": "LFA",
+      "attack": 3300,
+      "health": 999,
+      "exact": 1,
+      "abs": 1433,
+      "scaled": 0.10649485994600044
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1006,
+      "exact": 1,
+      "abs": 1458,
+      "scaled": 0.10679287780113855
+    },
+    {
+      "order": "LFA",
+      "attack": 3270,
+      "health": 1006,
+      "exact": 1,
+      "abs": 1293,
+      "scaled": 0.10860641428338619
+    },
+    {
+      "order": "LFA",
+      "attack": 3280,
+      "health": 1003,
+      "exact": 1,
+      "abs": 1307,
+      "scaled": 0.10893668161428471
+    },
+    {
+      "order": "LFA",
+      "attack": 3290,
+      "health": 1000,
+      "exact": 1,
+      "abs": 1312,
+      "scaled": 0.10904592790055218
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1005,
+      "exact": 1,
+      "abs": 1322,
+      "scaled": 0.10909351982351378
+    },
+    {
+      "order": "LFA",
+      "attack": 3295,
+      "health": 999,
+      "exact": 1,
+      "abs": 1339,
+      "scaled": 0.10951257265281933
+    },
+    {
+      "order": "LFA",
+      "attack": 3290,
+      "health": 999,
+      "exact": 1,
+      "abs": 1261,
+      "scaled": 0.11056460175419941
+    },
+    {
+      "order": "LFA",
+      "attack": 3275,
+      "health": 1004,
+      "exact": 1,
+      "abs": 1270,
+      "scaled": 0.11062291308806455
+    },
+    {
+      "order": "LFA",
+      "attack": 3285,
+      "health": 1001,
+      "exact": 1,
+      "abs": 1277,
+      "scaled": 0.11085316740681861
+    },
+    {
+      "order": "FLA",
+      "attack": 3280,
+      "health": 1005,
+      "exact": 1,
+      "abs": 1413,
+      "scaled": 0.11168354700313698
+    },
+    {
+      "order": "FLA",
+      "attack": 3300,
+      "health": 999,
+      "exact": 1,
+      "abs": 1435,
+      "scaled": 0.1121283230089889
+    }
+  ],
+  "coarseRanges": {
+    "attack": [
+      2900,
+      3400,
+      25
+    ],
+    "health": [
+      950,
+      1150,
+      10
+    ]
+  },
+  "coarse": {
+    "evaluated": 3528,
+    "byExact": [
+      {
+        "order": "AFL",
+        "attack": 3325,
+        "health": 980,
+        "exact": 7,
+        "abs": 157,
+        "scaled": 0.015207817403919244
+      },
+      {
+        "order": "AFL",
+        "attack": 3400,
+        "health": 960,
+        "exact": 7,
+        "abs": 245,
+        "scaled": 0.01526179805490796
+      },
+      {
+        "order": "AFL",
+        "attack": 3300,
+        "health": 990,
+        "exact": 7,
+        "abs": 307,
+        "scaled": 0.015606251543915595
+      },
+      {
+        "order": "AFL",
+        "attack": 3200,
+        "health": 1020,
+        "exact": 7,
+        "abs": 266,
+        "scaled": 0.016835622488502622
+      },
+      {
+        "order": "AFL",
+        "attack": 3075,
+        "health": 1060,
+        "exact": 6,
+        "abs": 202,
+        "scaled": 0.017315136851831503
+      },
+      {
+        "order": "AFL",
+        "attack": 3225,
+        "health": 1010,
+        "exact": 6,
+        "abs": 171,
+        "scaled": 0.01786907030005025
+      },
+      {
+        "order": "AFL",
+        "attack": 3050,
+        "health": 1070,
+        "exact": 6,
+        "abs": 255,
+        "scaled": 0.019007606183616077
+      },
+      {
+        "order": "AFL",
+        "attack": 3025,
+        "health": 1080,
+        "exact": 6,
+        "abs": 312,
+        "scaled": 0.02064135936382444
+      },
+      {
+        "order": "AFL",
+        "attack": 3100,
+        "health": 1050,
+        "exact": 6,
+        "abs": 163,
+        "scaled": 0.02085209594605708
+      },
+      {
+        "order": "AFL",
+        "attack": 3175,
+        "health": 1030,
+        "exact": 6,
+        "abs": 384,
+        "scaled": 0.02288474337028734
+      },
+      {
+        "order": "FAL",
+        "attack": 3150,
+        "health": 1030,
+        "exact": 6,
+        "abs": 684,
+        "scaled": 0.0403839238313351
+      },
+      {
+        "order": "FAL",
+        "attack": 3275,
+        "health": 990,
+        "exact": 6,
+        "abs": 715,
+        "scaled": 0.04126305785936446
+      },
+      {
+        "order": "FAL",
+        "attack": 3375,
+        "health": 960,
+        "exact": 6,
+        "abs": 738,
+        "scaled": 0.04222532416161967
+      },
+      {
+        "order": "FAL",
+        "attack": 3300,
+        "health": 980,
+        "exact": 6,
+        "abs": 878,
+        "scaled": 0.04939811834409058
+      },
+      {
+        "order": "FAL",
+        "attack": 3125,
+        "health": 1030,
+        "exact": 6,
+        "abs": 1220,
+        "scaled": 0.06455691240627198
+      },
+      {
+        "order": "AFL",
+        "attack": 3000,
+        "health": 1090,
+        "exact": 5,
+        "abs": 380,
+        "scaled": 0.024542718872062497
+      },
+      {
+        "order": "AFL",
+        "attack": 3375,
+        "health": 970,
+        "exact": 5,
+        "abs": 461,
+        "scaled": 0.025879648257327303
+      },
+      {
+        "order": "AFL",
+        "attack": 3250,
+        "health": 1000,
+        "exact": 5,
+        "abs": 219,
+        "scaled": 0.026509301993511425
+      },
+      {
+        "order": "AFL",
+        "attack": 3125,
+        "health": 1040,
+        "exact": 5,
+        "abs": 209,
+        "scaled": 0.029027007867774346
+      },
+      {
+        "order": "AFL",
+        "attack": 2900,
+        "health": 1130,
+        "exact": 5,
+        "abs": 491,
+        "scaled": 0.033057837287736314
+      },
+      {
+        "order": "AFL",
+        "attack": 2975,
+        "health": 1100,
+        "exact": 5,
+        "abs": 427,
+        "scaled": 0.03327901267179939
+      },
+      {
+        "order": "AFL",
+        "attack": 2950,
+        "health": 1110,
+        "exact": 5,
+        "abs": 463,
+        "scaled": 0.03417066323099127
+      },
+      {
+        "order": "FAL",
+        "attack": 3350,
+        "health": 970,
+        "exact": 5,
+        "abs": 557,
+        "scaled": 0.04153123417867011
+      },
+      {
+        "order": "FAL",
+        "attack": 3100,
+        "health": 1050,
+        "exact": 5,
+        "abs": 487,
+        "scaled": 0.045686580315274006
+      },
+      {
+        "order": "FAL",
+        "attack": 3125,
+        "health": 1040,
+        "exact": 5,
+        "abs": 572,
+        "scaled": 0.04796108737935234
+      },
+      {
+        "order": "FAL",
+        "attack": 2900,
+        "health": 1120,
+        "exact": 5,
+        "abs": 672,
+        "scaled": 0.047999460300955255
+      },
+      {
+        "order": "FAL",
+        "attack": 3175,
+        "health": 1020,
+        "exact": 5,
+        "abs": 820,
+        "scaled": 0.049069656316280796
+      },
+      {
+        "order": "FAL",
+        "attack": 3250,
+        "health": 1000,
+        "exact": 5,
+        "abs": 566,
+        "scaled": 0.049385884894047494
+      },
+      {
+        "order": "FAL",
+        "attack": 3025,
+        "health": 1070,
+        "exact": 5,
+        "abs": 873,
+        "scaled": 0.05057237808839188
+      },
+      {
+        "order": "FAL",
+        "attack": 3000,
+        "health": 1080,
+        "exact": 5,
+        "abs": 821,
+        "scaled": 0.050774023318093886
+      },
+      {
+        "order": "FAL",
+        "attack": 3400,
+        "health": 950,
+        "exact": 5,
+        "abs": 944,
+        "scaled": 0.051495117441543226
+      },
+      {
+        "order": "FAL",
+        "attack": 3325,
+        "health": 970,
+        "exact": 5,
+        "abs": 1071,
+        "scaled": 0.05829110912056751
+      },
+      {
+        "order": "FAL",
+        "attack": 3225,
+        "health": 1000,
+        "exact": 5,
+        "abs": 1095,
+        "scaled": 0.05860923180193517
+      },
+      {
+        "order": "LF",
+        "attack": 3275,
+        "health": 990,
+        "exact": 5,
+        "abs": 819,
+        "scaled": 0.06258190218882093
+      },
+      {
+        "order": "LF",
+        "attack": 3375,
+        "health": 960,
+        "exact": 5,
+        "abs": 874,
+        "scaled": 0.06374296969394999
+      },
+      {
+        "order": "ALF",
+        "attack": 3000,
+        "health": 1090,
+        "exact": 5,
+        "abs": 732,
+        "scaled": 0.06837057271810365
+      },
+      {
+        "order": "FAL",
+        "attack": 2900,
+        "health": 1110,
+        "exact": 5,
+        "abs": 1269,
+        "scaled": 0.06976988755956132
+      },
+      {
+        "order": "FAL",
+        "attack": 2925,
+        "health": 1100,
+        "exact": 5,
+        "abs": 1301,
+        "scaled": 0.0708584982459664
+      },
+      {
+        "order": "FAL",
+        "attack": 3350,
+        "health": 960,
+        "exact": 5,
+        "abs": 1230,
+        "scaled": 0.07516160115964388
+      },
+      {
+        "order": "FAL",
+        "attack": 2950,
+        "health": 1090,
+        "exact": 5,
+        "abs": 1331,
+        "scaled": 0.0764821889058182
+      },
+      {
+        "order": "FAL",
+        "attack": 3150,
+        "health": 1020,
+        "exact": 5,
+        "abs": 1341,
+        "scaled": 0.07795975940446037
+      },
+      {
+        "order": "FAL",
+        "attack": 3275,
+        "health": 980,
+        "exact": 5,
+        "abs": 1395,
+        "scaled": 0.08310683655007078
+      },
+      {
+        "order": "FAL",
+        "attack": 3000,
+        "health": 1070,
+        "exact": 5,
+        "abs": 1433,
+        "scaled": 0.08802885438735797
+      },
+      {
+        "order": "FAL",
+        "attack": 3175,
+        "health": 1010,
+        "exact": 5,
+        "abs": 1464,
+        "scaled": 0.09219779352267798
+      },
+      {
+        "order": "ALF",
+        "attack": 3300,
+        "health": 1010,
+        "exact": 5,
+        "abs": 2104,
+        "scaled": 0.1052615537603776
+      },
+      {
+        "order": "ALF",
+        "attack": 3150,
+        "health": 1060,
+        "exact": 5,
+        "abs": 2223,
+        "scaled": 0.10891933683594263
+      },
+      {
+        "order": "ALF",
+        "attack": 3125,
+        "health": 1070,
+        "exact": 5,
+        "abs": 2318,
+        "scaled": 0.12174675295974202
+      },
+      {
+        "order": "AFL",
+        "attack": 3350,
+        "health": 970,
+        "exact": 4,
+        "abs": 259,
+        "scaled": 0.024564871871557203
+      },
+      {
+        "order": "AFL",
+        "attack": 2900,
+        "health": 1120,
+        "exact": 4,
+        "abs": 210,
+        "scaled": 0.030577023334818487
+      },
+      {
+        "order": "AFL",
+        "attack": 2925,
+        "health": 1110,
+        "exact": 4,
+        "abs": 233,
+        "scaled": 0.031225271784881825
+      }
+    ],
+    "byScaled": [
+      {
+        "order": "AFL",
+        "attack": 3325,
+        "health": 980,
+        "exact": 7,
+        "abs": 157,
+        "scaled": 0.015207817403919244
+      },
+      {
+        "order": "AFL",
+        "attack": 3400,
+        "health": 960,
+        "exact": 7,
+        "abs": 245,
+        "scaled": 0.01526179805490796
+      },
+      {
+        "order": "AFL",
+        "attack": 3300,
+        "health": 990,
+        "exact": 7,
+        "abs": 307,
+        "scaled": 0.015606251543915595
+      },
+      {
+        "order": "AFL",
+        "attack": 3200,
+        "health": 1020,
+        "exact": 7,
+        "abs": 266,
+        "scaled": 0.016835622488502622
+      },
+      {
+        "order": "AFL",
+        "attack": 3075,
+        "health": 1060,
+        "exact": 6,
+        "abs": 202,
+        "scaled": 0.017315136851831503
+      },
+      {
+        "order": "AFL",
+        "attack": 3225,
+        "health": 1010,
+        "exact": 6,
+        "abs": 171,
+        "scaled": 0.01786907030005025
+      },
+      {
+        "order": "AFL",
+        "attack": 3050,
+        "health": 1070,
+        "exact": 6,
+        "abs": 255,
+        "scaled": 0.019007606183616077
+      },
+      {
+        "order": "AFL",
+        "attack": 3025,
+        "health": 1080,
+        "exact": 6,
+        "abs": 312,
+        "scaled": 0.02064135936382444
+      },
+      {
+        "order": "AFL",
+        "attack": 3100,
+        "health": 1050,
+        "exact": 6,
+        "abs": 163,
+        "scaled": 0.02085209594605708
+      },
+      {
+        "order": "AFL",
+        "attack": 3175,
+        "health": 1030,
+        "exact": 6,
+        "abs": 384,
+        "scaled": 0.02288474337028734
+      },
+      {
+        "order": "AFL",
+        "attack": 3000,
+        "health": 1090,
+        "exact": 5,
+        "abs": 380,
+        "scaled": 0.024542718872062497
+      },
+      {
+        "order": "AFL",
+        "attack": 3350,
+        "health": 970,
+        "exact": 4,
+        "abs": 259,
+        "scaled": 0.024564871871557203
+      },
+      {
+        "order": "AFL",
+        "attack": 3375,
+        "health": 970,
+        "exact": 5,
+        "abs": 461,
+        "scaled": 0.025879648257327303
+      },
+      {
+        "order": "AFL",
+        "attack": 3250,
+        "health": 1000,
+        "exact": 5,
+        "abs": 219,
+        "scaled": 0.026509301993511425
+      },
+      {
+        "order": "AFL",
+        "attack": 3125,
+        "health": 1040,
+        "exact": 5,
+        "abs": 209,
+        "scaled": 0.029027007867774346
+      },
+      {
+        "order": "AFL",
+        "attack": 2900,
+        "health": 1120,
+        "exact": 4,
+        "abs": 210,
+        "scaled": 0.030577023334818487
+      },
+      {
+        "order": "AFL",
+        "attack": 2925,
+        "health": 1110,
+        "exact": 4,
+        "abs": 233,
+        "scaled": 0.031225271784881825
+      },
+      {
+        "order": "AFL",
+        "attack": 3150,
+        "health": 1030,
+        "exact": 4,
+        "abs": 282,
+        "scaled": 0.0328438144184835
+      },
+      {
+        "order": "AFL",
+        "attack": 2900,
+        "health": 1130,
+        "exact": 5,
+        "abs": 491,
+        "scaled": 0.033057837287736314
+      },
+      {
+        "order": "AFL",
+        "attack": 2975,
+        "health": 1100,
+        "exact": 5,
+        "abs": 427,
+        "scaled": 0.03327901267179939
+      },
+      {
+        "order": "AFL",
+        "attack": 2950,
+        "health": 1110,
+        "exact": 5,
+        "abs": 463,
+        "scaled": 0.03417066323099127
+      },
+      {
+        "order": "AFL",
+        "attack": 3275,
+        "health": 1000,
+        "exact": 4,
+        "abs": 492,
+        "scaled": 0.03647592612074513
+      },
+      {
+        "order": "AFL",
+        "attack": 2950,
+        "health": 1100,
+        "exact": 4,
+        "abs": 257,
+        "scaled": 0.03677841613567967
+      },
+      {
+        "order": "AFL",
+        "attack": 3150,
+        "health": 1040,
+        "exact": 4,
+        "abs": 518,
+        "scaled": 0.037060726397909416
+      },
+      {
+        "order": "AFL",
+        "attack": 2925,
+        "health": 1120,
+        "exact": 4,
+        "abs": 474,
+        "scaled": 0.03779691179044398
+      },
+      {
+        "order": "FAL",
+        "attack": 3150,
+        "health": 1030,
+        "exact": 6,
+        "abs": 684,
+        "scaled": 0.0403839238313351
+      },
+      {
+        "order": "AFL",
+        "attack": 3125,
+        "health": 1050,
+        "exact": 4,
+        "abs": 634,
+        "scaled": 0.04109570658203149
+      },
+      {
+        "order": "FAL",
+        "attack": 3275,
+        "health": 990,
+        "exact": 6,
+        "abs": 715,
+        "scaled": 0.04126305785936446
+      },
+      {
+        "order": "FAL",
+        "attack": 3350,
+        "health": 970,
+        "exact": 5,
+        "abs": 557,
+        "scaled": 0.04153123417867011
+      },
+      {
+        "order": "FAL",
+        "attack": 3375,
+        "health": 960,
+        "exact": 6,
+        "abs": 738,
+        "scaled": 0.04222532416161967
+      },
+      {
+        "order": "AFL",
+        "attack": 3250,
+        "health": 1010,
+        "exact": 3,
+        "abs": 655,
+        "scaled": 0.04314216059857978
+      },
+      {
+        "order": "AFL",
+        "attack": 3100,
+        "health": 1060,
+        "exact": 4,
+        "abs": 726,
+        "scaled": 0.04364036911966823
+      },
+      {
+        "order": "AFL",
+        "attack": 3275,
+        "health": 990,
+        "exact": 3,
+        "abs": 339,
+        "scaled": 0.04421565348845291
+      },
+      {
+        "order": "FAL",
+        "attack": 3100,
+        "health": 1050,
+        "exact": 5,
+        "abs": 487,
+        "scaled": 0.045686580315274006
+      },
+      {
+        "order": "AFL",
+        "attack": 3350,
+        "health": 980,
+        "exact": 3,
+        "abs": 648,
+        "scaled": 0.045941799705171205
+      },
+      {
+        "order": "AFL",
+        "attack": 3375,
+        "health": 960,
+        "exact": 3,
+        "abs": 391,
+        "scaled": 0.046128516141549
+      },
+      {
+        "order": "FAL",
+        "attack": 3025,
+        "health": 1080,
+        "exact": 4,
+        "abs": 285,
+        "scaled": 0.04624544138586195
+      },
+      {
+        "order": "FAL",
+        "attack": 3000,
+        "health": 1090,
+        "exact": 4,
+        "abs": 273,
+        "scaled": 0.047234266983381124
+      },
+      {
+        "order": "AFL",
+        "attack": 2975,
+        "health": 1090,
+        "exact": 3,
+        "abs": 299,
+        "scaled": 0.04783375773744086
+      },
+      {
+        "order": "FAL",
+        "attack": 3125,
+        "health": 1040,
+        "exact": 5,
+        "abs": 572,
+        "scaled": 0.04796108737935234
+      },
+      {
+        "order": "FAL",
+        "attack": 2900,
+        "health": 1120,
+        "exact": 5,
+        "abs": 672,
+        "scaled": 0.047999460300955255
+      },
+      {
+        "order": "FAL",
+        "attack": 3075,
+        "health": 1060,
+        "exact": 4,
+        "abs": 401,
+        "scaled": 0.04803140428298519
+      },
+      {
+        "order": "FAL",
+        "attack": 3050,
+        "health": 1070,
+        "exact": 3,
+        "abs": 347,
+        "scaled": 0.04903334302778328
+      },
+      {
+        "order": "FAL",
+        "attack": 3175,
+        "health": 1030,
+        "exact": 3,
+        "abs": 344,
+        "scaled": 0.04905280623106284
+      },
+      {
+        "order": "FAL",
+        "attack": 3175,
+        "health": 1020,
+        "exact": 5,
+        "abs": 820,
+        "scaled": 0.049069656316280796
+      },
+      {
+        "order": "AFL",
+        "attack": 3175,
+        "health": 1020,
+        "exact": 3,
+        "abs": 365,
+        "scaled": 0.04921527718085483
+      },
+      {
+        "order": "FAL",
+        "attack": 3250,
+        "health": 1000,
+        "exact": 5,
+        "abs": 566,
+        "scaled": 0.049385884894047494
+      },
+      {
+        "order": "FAL",
+        "attack": 3300,
+        "health": 980,
+        "exact": 6,
+        "abs": 878,
+        "scaled": 0.04939811834409058
+      },
+      {
+        "order": "FAL",
+        "attack": 3025,
+        "health": 1070,
+        "exact": 5,
+        "abs": 873,
+        "scaled": 0.05057237808839188
+      },
+      {
+        "order": "AFL",
+        "attack": 3225,
+        "health": 1020,
+        "exact": 3,
+        "abs": 803,
+        "scaled": 0.05065219469845195
+      }
+    ]
+  },
+  "knownTroopExploration": {
+    "exact": [
+      {
+        "attack": 854.6,
+        "health": 2563.8,
+        "predictions": [
+          12951,
+          34573,
+          12489
+        ],
+        "errors": [
+          0,
+          0,
+          0
+        ],
+        "exact": 3,
+        "abs": 0
+      }
+    ],
+    "best": [
+      {
+        "attack": 854.6,
+        "health": 2563.8,
+        "predictions": [
+          12951,
+          34573,
+          12489
+        ],
+        "errors": [
+          0,
+          0,
+          0
+        ],
+        "exact": 3,
+        "abs": 0
+      },
+      {
+        "attack": 854.4,
+        "health": 2563.2,
+        "predictions": [
+          12951,
+          34573,
+          12490
+        ],
+        "errors": [
+          0,
+          0,
+          1
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.45,
+        "health": 2563.3500000000004,
+        "predictions": [
+          12951,
+          34573,
+          12490
+        ],
+        "errors": [
+          0,
+          0,
+          1
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.5,
+        "health": 2563.5,
+        "predictions": [
+          12951,
+          34573,
+          12490
+        ],
+        "errors": [
+          0,
+          0,
+          1
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.55,
+        "health": 2563.6499999999996,
+        "predictions": [
+          12951,
+          34573,
+          12490
+        ],
+        "errors": [
+          0,
+          0,
+          1
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.65,
+        "health": 2563.95,
+        "predictions": [
+          12951,
+          34572,
+          12489
+        ],
+        "errors": [
+          0,
+          -1,
+          0
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.7,
+        "health": 2564.1000000000004,
+        "predictions": [
+          12951,
+          34572,
+          12489
+        ],
+        "errors": [
+          0,
+          -1,
+          0
+        ],
+        "exact": 2,
+        "abs": 1
+      },
+      {
+        "attack": 854.25,
+        "health": 2562.75,
+        "predictions": [
+          12952,
+          34573,
+          12491
+        ],
+        "errors": [
+          1,
+          0,
+          2
+        ],
+        "exact": 1,
+        "abs": 3
+      },
+      {
+        "attack": 854.3,
+        "health": 2562.8999999999996,
+        "predictions": [
+          12952,
+          34573,
+          12491
+        ],
+        "errors": [
+          1,
+          0,
+          2
+        ],
+        "exact": 1,
+        "abs": 3
+      },
+      {
+        "attack": 854.35,
+        "health": 2563.05,
+        "predictions": [
+          12952,
+          34573,
+          12491
+        ],
+        "errors": [
+          1,
+          0,
+          2
+        ],
+        "exact": 1,
+        "abs": 3
+      },
+      {
+        "attack": 854.15,
+        "health": 2562.45,
+        "predictions": [
+          12952,
+          34573,
+          12492
+        ],
+        "errors": [
+          1,
+          0,
+          3
+        ],
+        "exact": 1,
+        "abs": 4
+      },
+      {
+        "attack": 854.2,
+        "health": 2562.6000000000004,
+        "predictions": [
+          12952,
+          34573,
+          12492
+        ],
+        "errors": [
+          1,
+          0,
+          3
+        ],
+        "exact": 1,
+        "abs": 4
+      },
+      {
+        "attack": 853.95,
+        "health": 2561.8500000000004,
+        "predictions": [
+          12952,
+          34573,
+          12493
+        ],
+        "errors": [
+          1,
+          0,
+          4
+        ],
+        "exact": 1,
+        "abs": 5
+      },
+      {
+        "attack": 854,
+        "health": 2562,
+        "predictions": [
+          12952,
+          34573,
+          12493
+        ],
+        "errors": [
+          1,
+          0,
+          4
+        ],
+        "exact": 1,
+        "abs": 5
+      },
+      {
+        "attack": 854.05,
+        "health": 2562.1499999999996,
+        "predictions": [
+          12952,
+          34573,
+          12493
+        ],
+        "errors": [
+          1,
+          0,
+          4
+        ],
+        "exact": 1,
+        "abs": 5
+      }
+    ],
+    "attempts": [
+      {
+        "kind": "existing",
+        "factor": 1.5074253426960007,
+        "rows": [
+          {
+            "id": "testcase-000033",
+            "expected": {
+              "attacker": 12951,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 13000,
+              "defender": 0
+            },
+            "rounds": 344,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000034",
+            "expected": {
+              "attacker": 15486,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 15490,
+              "defender": 0
+            },
+            "rounds": 68,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000035",
+            "expected": {
+              "attacker": 34573,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 34603,
+              "defender": 0
+            },
+            "rounds": 218,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000037",
+            "expected": {
+              "attacker": 12489,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12631,
+              "defender": 0
+            },
+            "rounds": 492,
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "kind": "floor",
+        "factor": 1.5365536615406257,
+        "rows": [
+          {
+            "id": "testcase-000033",
+            "expected": {
+              "attacker": 12951,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12968,
+              "defender": 0
+            },
+            "rounds": 351,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000034",
+            "expected": {
+              "attacker": 15486,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 15473,
+              "defender": 0
+            },
+            "rounds": 69,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000035",
+            "expected": {
+              "attacker": 34573,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 34583,
+              "defender": 0
+            },
+            "rounds": 222,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000037",
+            "expected": {
+              "attacker": 12489,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12541,
+              "defender": 0
+            },
+            "rounds": 502,
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "kind": "round",
+        "factor": 1.5365536615406257,
+        "rows": [
+          {
+            "id": "testcase-000033",
+            "expected": {
+              "attacker": 12951,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12967,
+              "defender": 0
+            },
+            "rounds": 351,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000034",
+            "expected": {
+              "attacker": 15486,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 15473,
+              "defender": 0
+            },
+            "rounds": 69,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000035",
+            "expected": {
+              "attacker": 34573,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 34582,
+              "defender": 0
+            },
+            "rounds": 222,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000037",
+            "expected": {
+              "attacker": 12489,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12536,
+              "defender": 0
+            },
+            "rounds": 503,
+            "diagnostics": []
+          }
+        ]
+      },
+      {
+        "kind": "unrounded",
+        "factor": 1.5365536615406257,
+        "rows": [
+          {
+            "id": "testcase-000033",
+            "expected": {
+              "attacker": 12951,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12967,
+              "defender": 0
+            },
+            "rounds": 351,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000034",
+            "expected": {
+              "attacker": 15486,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 15473,
+              "defender": 0
+            },
+            "rounds": 69,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000035",
+            "expected": {
+              "attacker": 34573,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 34583,
+              "defender": 0
+            },
+            "rounds": 222,
+            "diagnostics": []
+          },
+          {
+            "id": "testcase-000037",
+            "expected": {
+              "attacker": 12489,
+              "defender": 0
+            },
+            "actual": {
+              "attacker": 12537,
+              "defender": 0
+            },
+            "rounds": 503,
+            "diagnostics": []
+          }
+        ]
+      }
+    ]
+  }
+}

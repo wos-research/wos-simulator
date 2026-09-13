@@ -197,6 +197,10 @@ export interface FighterInput {
 export interface BattleInput {
   attacker: FighterInput;
   defender: FighterInput;
+  mechanicsVersion?: import("./execution").MechanicsVersion;
+  timestamp?: string | number;
+  timestampSource?: string;
+  reportedSeed?: string | number;
   seed?: string | number;
   maxRounds?: number;
   // The type of battle (e.g. "rally", "garrison"); gates engagement-specific hero skills.
@@ -208,6 +212,13 @@ export interface BattleInput {
 export type SimulationMode = "fast" | "standard" | "trace";
 
 export interface SimulationOptions {
+  // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.
+  rng?: import("./effects").Rng;
+  beforeExtraAttack?: import("./runtime").BeforeExtraAttack;
+  attackScheduling?: "side-local" | "reference";
+  ambusherTiming?: "before_target" | "round_start";
+  onEmptyUnit?: import("./runtime").OnEmptyUnit;
+  deferAttackSkill?: import("./runtime").DeferAttackSkill;
   mode?: SimulationMode;
   // Whether a dodged / no_attack'd attack still charges (uses += 1) the attacker's
   // attack-constrained effects, as the game does. Default true.
@@ -511,6 +522,7 @@ export interface SkillReportEntry {
 }
 
 export interface BattleResult {
+  execution?: import("./execution").BattleExecution;
   winner: SideId | "draw";
   rounds: number;
   remaining: Record<SideId, Record<UnitType, number>>;
