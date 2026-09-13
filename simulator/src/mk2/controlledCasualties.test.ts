@@ -15,11 +15,11 @@ const base = () => {
 };
 function deepFreeze(value:any):any {if(value&&typeof value==='object'){Object.values(value).forEach(deepFreeze);Object.freeze(value);}return value;}
 
-test('twenty independent battles preserve 150 explicitly encoded casualty fields',()=>{
-  assert.equal(fixture.cases.length,20);
-  assert.equal(new Set(fixture.cases.map((c:any)=>c.test_id)).size,20);
-  assert.equal(fixture.cases.reduce((n:number,c:any)=>n+c.observedCasualties.length,0),50);
-  assert.equal(fixture.evidence.explicitWireCategoryFields,150);
+test('thirty independent battles preserve 210 explicitly encoded casualty fields',()=>{
+  assert.equal(fixture.cases.length,30);
+  assert.equal(new Set(fixture.cases.map((c:any)=>c.test_id)).size,30);
+  assert.equal(fixture.cases.reduce((n:number,c:any)=>n+c.observedCasualties.length,0),70);
+  assert.equal(fixture.evidence.explicitWireCategoryFields,210);
   for(const c of fixture.cases) for(const observed of c.observedCasualties) for(const key of ['dead','wounded','minorWounded']) assert.ok(Object.hasOwn(observed,key));
 });
 for(const c of fixture.cases) test(`recorded-seed replay then casualty projection: ${c.test_id}`,()=>{

@@ -55,12 +55,16 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
     }
   }
   if (mechanics.catalogueCorrections === 'validated') {
-    // Ten controlled T10 FC4 Lancer fights distinguish this original catalogue
-    // attack value from the overgeneralized floor profile. This is not a switch
-    // to nearest rounding for other profiles or axes. `none` preserves that reference.
-    const id = 'lancer_t10_fc4', troop = result.troopStats[id];
-    if (troop) result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
-      attack: generateTroopStats('lancer', 10, 4).stats.attack}});
+    // Separate ten-fight controls support these two original attack values.
+    // Other profiles and axes retain the configured rounding policy.
+    // `none` preserves the former floor reference for reproducible comparisons.
+    for (const [id, type, fc] of [
+      ['lancer_t10_fc4', 'lancer', 4], ['infantry_t10_fc5', 'infantry', 5]
+    ] as const) {
+      const troop = result.troopStats[id];
+      if (troop) result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
+        attack: generateTroopStats(type, 10, fc).stats.attack}});
+    }
   }
   return result;
 }
