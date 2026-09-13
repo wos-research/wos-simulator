@@ -14,11 +14,13 @@ The caller must explicitly confirm battletype 9, a controlled occupied-tile batt
 
 ## Validation
 
-The ten fixtures in `testcases/mk2/controlled_casualties_20260913.json` reference campaign cases 002–011. Tests replay their original armies and recorded seeds, then apply the projection to predicted survivors and compare all **90 explicit wire category values** from 30 soldier records. The report tags for dead, wounded and minor wounded were present in every record, including all 30 explicitly encoded zero-death values; no missing category was silently replaced with zero.
+The twenty fixtures in `testcases/mk2/controlled_casualties_20260913.json` reference campaign cases 002–021. Tests replay their original armies and recorded seeds, then apply the projection to predicted survivors and compare all **150 explicit wire category values** from 50 soldier records. The report tags for dead, wounded and minor wounded were present in every record, including all 50 explicitly encoded zero-death values; no missing category was silently replaced with zero.
 
-Hospital context came from independent controller UI observations before and after testing, plus a conservative upper bound on possible new wounded from the ten small marches. Both characters remained well below half capacity. The observed infirmary increases also exactly equal the pilot's wounded plus the ten reports' wounded.
+Hospital context came from independent controller UI observations before and after testing, plus a conservative upper bound on possible new wounded in each ten-fight cohort. Both characters remained well below half capacity. For the first cohort, observed infirmary increases exactly equal the pilot's wounded plus its ten reports' wounded.
 
 The arithmetic was frozen before these reports were released to its implementer. Some battles had already been collected, so this is validation against unseen reports after an analysis freeze, rather than a claim all collection occurred after the freeze. An earlier 161-fight retrospective audit also matched the arithmetic conditionally, but its historical hospital context and explicit wire presence were not established; those cases are not represented as independently confirmed-context fixtures here.
+
+The second ten-fight cohort uses 1,000 T10 FC4 Lancers against 500 T5 FC1 Infantry, five each direction. Its 60 additional explicit category values match the unchanged projection using both actual kernels after the separately validated Lancer attack correction. Infirmary increases of 37 and 1,750 wounded reconcile exactly to those raw reports. This extends casualty evidence without changing its formula or treating the former combat profile as exact.
 
 The tests also check context rejection, separate-type rounding, unsafe and malformed counts, zero and one loss, maximum-safe-integer arithmetic, and that combat/RNG results remain unchanged by projection.
 

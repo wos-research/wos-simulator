@@ -1,15 +1,31 @@
 {
   "schema": 1,
-  "description": "Ten controlled occupied-tile battles: direct encoded dead/wounded/minor-wounded values, compared after recorded-seed Mk2 replay. Battle inputs and seeds reside in campaign_20260913.json under test_id.",
+  "description": "Twenty controlled occupied-tile battles: direct encoded dead/wounded/minor-wounded values, compared after recorded-seed Mk2 replay. Battle inputs and seeds reside in campaign_20260913.json under test_id.",
   "evidence": {
     "frozenCandidateAtUTC": "2026-09-13T05:30:38.690560+00:00",
     "frozenCandidateSha256": "19d2eb945e4cd66a8507f5fc91751444e619dd4f768c7dc9a75b5b5f8a7cdf74",
     "validation": "Unseen-report validation after candidate freeze; some battles were collected before freeze. No formula adjustment.",
-    "explicitWireCategoryFields": 90,
-    "soldierRecords": 30,
-    "wirePresence": "All 30 records contain count/dead/wound/minor tags 2/4/5/6; all 30 dead zeros are explicitly encoded. No absent fields substituted.",
-    "hospitalContext": "Independent controller UI before/after plus at most 1000 troops per character per fight, ten fights, no external battles or healing reported. Conservative added-wounded bound stays below half capacity on both characters.",
-    "scope": "Hero-free controlled occupied tile, battletype9, one formation per side, one positive profile per type; hospital overflow absent. Not a universal settlement or skill-credit rule."
+    "explicitWireCategoryFields": 150,
+    "soldierRecords": 50,
+    "wirePresence": "All 50 records contain count/dead/wound/minor tags 2/4/5/6; all 50 dead zeros are explicitly encoded. No absent fields substituted.",
+    "hospitalContext": "Independent controller UI before/after each cohort plus conservative upper bounds on deployed troops; no external battles or healing reported. Both characters remain below half capacity. A3 observed infirmary increases independently reconcile to 37 and 1750 wounded.",
+    "scope": "Hero-free controlled occupied tile, battletype9, one formation per side, one positive profile per type; hospital overflow absent. Not a universal settlement or skill-credit rule.",
+    "cohorts": [
+      {
+        "cases": "002-011",
+        "fights": 10,
+        "soldierRecords": 30,
+        "explicitWireCategoryFields": 90,
+        "context": "500 T7 FC4 Lancers versus 500 T5 FC1 Infantry and 500 T5 non-FC Marksmen, five each direction."
+      },
+      {
+        "cases": "012-021",
+        "fights": 10,
+        "soldierRecords": 20,
+        "explicitWireCategoryFields": 60,
+        "context": "1000 T10 FC4 Lancers versus 500 T5 FC1 Infantry, five each direction. Uses separately validated catalogue correction; casualty formula unchanged."
+      }
+    ]
   },
   "cases": [
     {
@@ -489,6 +505,416 @@
           "dead": 0,
           "wounded": 91,
           "minorWounded": 169
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-012",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 3,
+          "minorWounded": 5
+        },
+        {
+          "side": "defender",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-013",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        },
+        {
+          "side": "defender",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-014",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        },
+        {
+          "side": "defender",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-015",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        },
+        {
+          "side": "defender",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-016",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        },
+        {
+          "side": "defender",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-017",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        },
+        {
+          "side": "defender",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 3,
+          "minorWounded": 5
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-018",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        },
+        {
+          "side": "defender",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 3,
+          "minorWounded": 5
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-019",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        },
+        {
+          "side": "defender",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-020",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        },
+        {
+          "side": "defender",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-campaign-20260913-021",
+      "context": {
+        "battletype": 9,
+        "controlledOccupiedTile": true,
+        "heroFree": true,
+        "oneFormationPerSideConfirmed": true,
+        "noHospitalOverflowConfirmed": {
+          "attacker": true,
+          "defender": true
+        },
+        "positiveProfilesPerType": {
+          "attacker": {
+            "infantry": 1,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 0
+          }
+        }
+      },
+      "observedCasualties": [
+        {
+          "side": "attacker",
+          "troopType": "infantry",
+          "dead": 0,
+          "wounded": 175,
+          "minorWounded": 325
+        },
+        {
+          "side": "defender",
+          "troopType": "lancer",
+          "dead": 0,
+          "wounded": 4,
+          "minorWounded": 5
         }
       ]
     }
