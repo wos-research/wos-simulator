@@ -1,4 +1,4 @@
-# Controlled testing campaign — September 13, 2026
+# Controlled testing campaign â€” September 13, 2026
 
 The first automated workflow control is one independent battle, with attacker and defender report copies preserved locally. It uses 500 T5 FC3 Marksmen against 1,000 T5 FC1 Infantry, without heroes. The integrated kernel reproduces attacker victory, 352 surviving Marksmen, zero surviving Infantry, and nine Crystal Gunpowder activations using the recorded seed.
 
@@ -165,3 +165,30 @@ The collection now contains70 campaign fixtures plus160 original reports:230 fig
 Five reverse T9 Lancer fights also match both unchanged kernels, with211 defending Lancers each and Ambusher counts24,17,25,20,22. Both orientations now supply10 exact winners,60 survivor values and10 explicit activation counts. All16 captured modifier fields per account remain unchanged. The first chronological reverse diagnostic passed before release of the remaining four. No additional targeting or isolated coefficient claim is inferred from this Infantry-only opponent.
 
 The campaign now contains75 new fixtures alongside160 original reports:235 exact captured fights for available observations. The separate optional casualty evidence extends to40 fights and270 explicit category fields after ten C1 reports passed the unchanged projection with both kernels' predicted survivors. C1 hospital corroboration uses contemporaneous operator UI records and a no-healing attestation; archived before/after hospital images were unavailable. Full provenance limits are in `mk2-controlled-casualties.md`.
+
+
+## T9 Marksman: both directions
+
+Ten new hero-free fights use500 T9 non-FC Marksmen against500 T7 non-FC Infantry, five each direction. Both actual kernels reproduce every winner, all60 survivor fields and all10 explicit Volley activation counts with the captured inputs and recorded seeds unchanged. First-direction Marksman survivors are357,359,357,359,357 with Volley counts7,5,5,6,5; reverse survivors are352,368,360,353,366 with Volley counts4,8,5,3,7. The first chronological report gated the remaining four in each direction.
+
+One account's common defense field10114 changes5331 to4831 between directions, reducing its Infantry defense96.31 to91.31. Other fields and the second account remain unchanged; each batch internally agrees on all16 fields. The cause is unknown. These are exact replays with the actual changed modifiers, not identical-background role swaps. No combat code changed. Experts remain present, and matching this composite profile does not uniquely identify individual stat cells or every internal timing detail.
+
+The passing collection now contains85 campaign fights plus the original160:245 exact planned fights for their available observations. The campaign regression passes all85. The separate optional casualty collection remains40 fights; these new cases do not expand that claim.
+
+## Unresolved mixed Lance / Volley / Gunpowder / Shield diagnostic
+
+The first valid report from500 T5 FC4 Lancers plus500 T7 FC3 Marksmen versus1000 T5 FC5 Infantry does **not** match production. Its unmodified anonymized input, recorded seed and observed output are included separately in[`unresolved_c2_20260913.json`](../testcases/mk2/unresolved_c2_20260913.json), outside the passing campaign collection.
+
+| Measurement | Observed | Current kernel | Private extended-Gunpowder hypothesis |
+|---|---:|---:|---:|
+| Lancer survivors |42|40|43|
+| Marksman survivors |500|500|500|
+| Infantry survivors |0|0|0|
+| Lance activations |6|4|5|
+| Volley activations |5|5|6|
+| Gunpowder activations |11|14|12|
+| Shield activations |55|50|47|
+
+Both hypotheses fail. All captured modifiers match the preceding FC account controls. Four additional planned reports remain unused for confirmation while this first diagnostic is investigated. No speculative ordering change has been promoted. The245 passing reports do not mean every captured fight matches.
+
+This collection also had one operator setup error: an80100-troop attacker was dispatched instead of the planned1000. That report was preserved privately and quarantined by army composition before model comparison, then replaced with a correctly configured fight. It is neither a passing test nor the unresolved diagnostic above. Final-army inspection and Deploy now use separate calls with archived screenshots.

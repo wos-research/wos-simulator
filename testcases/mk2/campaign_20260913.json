@@ -8345,5 +8345,925 @@
       "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
       "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
     }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-076",
+    "cohort": "f27-t9-marksman-forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 96.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289940",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289941,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 357
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 357,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90006": 7
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-077",
+    "cohort": "f27-t9-marksman-forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 96.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289992",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289993,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 359
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 359,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90006": 5
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-078",
+    "cohort": "f27-t9-marksman-forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 96.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290040",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290041,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 357
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 357,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90006": 5
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-079",
+    "cohort": "f27-t9-marksman-forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 96.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290167",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290168,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 359
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 359,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90006": 6
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-080",
+    "cohort": "f27-t9-marksman-forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 96.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290211",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290212,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 357
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 357,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90006": 5
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-081",
+    "cohort": "f27-t9-marksman-reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 91.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290837",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290838,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 352
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 352
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90006": 4
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:marksman:Volley:0",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-082",
+    "cohort": "f27-t9-marksman-reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 91.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290880",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290881,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 368
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 368
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90006": 8
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:marksman:Volley:0",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-083",
+    "cohort": "f27-t9-marksman-reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 91.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290924",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290925,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 360
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 360
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90006": 5
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:marksman:Volley:0",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-084",
+    "cohort": "f27-t9-marksman-reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 91.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290970",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290971,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 353
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 353
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90006": 3
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:marksman:Volley:0",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-085",
+    "cohort": "f27-t9-marksman-reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t7": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 94.81,
+          "defense": 91.31,
+          "lethality": 85.62,
+          "health": 90.64
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t9": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 101.13,
+          "defense": 101.33,
+          "lethality": 85.5,
+          "health": 91.03
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291022",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291023,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 366
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 366
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90006": 7
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:marksman:Volley:0",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
   }
 ]
