@@ -290,3 +290,14 @@ New anonymized campaign fixtures 100-129 contain G1, G2 and D2, ten each. The pa
 Both actual kernels reproduce all 294 eligible reports, including 1,764 survivor checks and 505 explicitly supplied chance-skill counts. The previous 259 complete battle outputs, RNG traces and warnings match their archived pre-port hashes. All 30 new reports and five existing D1 reports have complete battle/RNG parity between the actual research and shared kernels. The full simulator suite passes 313 tests, including 301 legacy reference outcomes and 45,440 native Lua values; six research catalogue tests and the shared TypeScript check pass. Fixture integrity checks preserve each captured input, observation and seed and exclude private capture/account identifiers.
 
 The validated policy now restores eight cells across five profiles. `catalogueCorrections: "none"` retains the earlier floor policy for comparison. Other catalogue cells, probabilities, damage equations and generic engine hooks are unchanged; their existing baseline provenance remains intact. The older T7 evidence still rejects a blanket restoration of the original table. No new claim is made about independently deriving seeds from timestamps, skill-credited wounds, heroes, untested FC skill levels or T12.
+
+
+## Pure T10 non-FC Marksman background
+
+Ten new hero-free battles use 500 T10 non-FC Marksmen against 1,000 T5 FC1 Infantry, five in each direction. Both actual v13 kernels match every winner, all 60 survivor values and all ten explicitly encoded Volley activation counts. This profile has one chance source, Volley; there is no Crystal Gunpowder or Crystal Shield. No combat rule, seed, stat value or captured modifier changed for these matches.
+
+Each direction used its first chronological report as the gate before the manager released the remaining four. Independent direct-wire review verifies all ten reported seeds, original troop quantities, all 16 modifier fields per side, unchanged expert context, empty hero/extra-skill fields and explicit proc values. Reports remain separate fights even where inputs agree. Account names, public IDs, formation IDs, device ports and raw packets remain in the private provenance archive.
+
+These fixtures extend observed compatibility to this T10 non-FC Marksman profile and account context. They do not independently identify its individual base stat cells, prove every Volley targeting behavior, or settle the mixed-army ordering candidates under investigation. Recorded-seed replay still does not establish a universal timestamp-to-seed rule.
+
+The published corpus now has 139 passing campaign reports, the original 160 reports, and the five existing D1 reports: **304 passing reports**. The two existing shared unresolved reports remain outside that count. The new ten cases occupy campaign IDs130–139; no existing fixture was replaced. The current replay implementation remains `expedition-mk2-lua54-catalogue-13`.
