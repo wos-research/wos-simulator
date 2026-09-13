@@ -98,3 +98,5 @@ The aggregate forty-fight casualty evidence is stored under `research/mk2/contro
 Latest evidence: [ten further RNG reports](mk2-shield-accounting-witnesses-20260913.md) bring the corpus to **416 reports: 366 exact and 50 pending** under unchanged catalogue15. Two new Shield-context reports distinguish the previously frozen Volley accounting alternatives; the candidate remains experimental while reverse testing proceeds.
 
 The subsequent [ten reverse reports](mk2-reverse-rng-controls-20260913.md) bring the corpus to **426 reports: 371 exact and 55 pending**. The three-source ALG combination matches ten reports across both directions. Reverse Shield reports match both experimental alternatives and supply no additional accounting distinction. The active kernel remains unchanged.
+
+A further [five reverse accounting reports](mk2-reverse-rng-controls-20260913.md#additional-reverse-accounting-batch) bring the current corpus to **431 reports: 371 exact and 60 pending**. They match both frozen candidates and provide no reverse unused-success distinction. The original 160 controls still pass; the new ordering candidate remains isolated.
