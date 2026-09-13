@@ -1,5 +1,13 @@
 # FC5 Lancer health checkpoint — September 13, 2026
 
+## Installed v14 update
+
+The original checkpoint below is retained as a historical record. The production kernel is now `expedition-mk2-lua54-catalogue-14`: the only new combat change restores original T10 FC5 Lancer health from 596 to 597. All ten health reports now match, and all 326 prior passing reports remain exact. The 316 unaffected passing reports and 15 pre-existing pending reports preserve full battle/RNG results; the ten affected prior passing reports preserve all observed results. Both actual kernels were checked. The full installed suite passed 321 tests, and TypeScript checking passed.
+
+The testcase filename and IDs are retained to preserve identity; `health_pending_20260913.json` now records their validated status. The per-report candidate comparison below describes the historical v13 experiment. No other catalogue values or skill ordering rules were changed. The command below now returns ten matches with no processing errors.
+
+## Original v13 evidence checkpoint
+
 This checkpoint preserves all ten completed larger-army health reports: **500 T10 FC5 Lancers versus 5,000 T5 non-FC Marksmen, five battles each direction**. The [normal-format testcases](../testcases/mk2/health_pending_20260913.json) contain the captured armies, player modifiers, recorded seeds, winner, all six survivor counts, and both explicitly observed Ambusher/Lance activation counts. Separate fights retain separate IDs. They are pending evidence, outside the 326 passing-report corpus.
 
 | Fixed model | Lancers attack | Lancers defend | Combined exact |

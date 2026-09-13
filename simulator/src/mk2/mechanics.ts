@@ -84,6 +84,10 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
           attack: original.attack, health: original.health}});
       }
     }
+    // Ten hero-free T10 FC5 Lancer controls distinguish the original health cell.
+    const fc5Lancer = result.troopStats.lancer_t10_fc5;
+    if (fc5Lancer) result.troopStats.lancer_t10_fc5 = createTroopStatsRecord({...fc5Lancer, stats: {...fc5Lancer.stats,
+      health: generateTroopStats('lancer', 10, 5).stats.health}});
   }
   return result;
 }

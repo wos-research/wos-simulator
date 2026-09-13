@@ -33,4 +33,11 @@ node --import ./simulator/node_modules/tsx/dist/loader.mjs scripts/run_testcases
 
 Verified through the normal loader against `expedition-mk2-lua54-catalogue-13`: **13 executed,13 expected mismatches,0 passes,0 processing errors,13 existing unsupported mixed-timing warnings; exit status1**. Adding these records does not increase the passing total. Running the entire Mk2 testcase directory includes these known failures.
 
-The latest five T10 FC5 Lancer health reports are a separate passing campaign addition: both fixed596/597 health alternatives match allfive, so they provide no discriminating health evidence yet. No health correction or mixed-ordering candidate is promoted by this supplement. Recorded-seed replay also remains distinct from independently deriving the seed from battle time.
+The earlier small-army T10 FC5 Lancer health controls matched both 596 and 597. Ten subsequent larger-army reports distinguished the values and support the installed v14 restoration to 597; see [the health checkpoint](mk2-health-checkpoint-20260913.md). This does not promote the mixed-ordering candidates. Recorded-seed replay remains distinct from independently deriving the seed from battle time.
+
+
+## Additional FC5 boundary reports
+
+The [15 additional normal-format fixtures](../testcases/mk2/mixed_fc5_pending_20260913.json) preserve five E1 forward battles and five C2 battles in each direction. Their [historical frozen candidate comparisons](../research/mk2/mixed_fc5_pending_results_20260913.json) retain all 90 survivor values and 55 explicit counters, including seven zeros. Production v14 runs all 15 with no processing errors and 15 expected mismatches/unsupported-context warnings. Both unused-success accounting alternatives match 15/15 under the fixed candidate, but these cases contain no unused successful reservation, so that distinction remains unresolved. They increase the pending mixed-skill corpus from 15 to 30; no ordering candidate is installed.
+
+To reproduce, use the command above with `--matching mixed_fc5_pending_20260913`.
