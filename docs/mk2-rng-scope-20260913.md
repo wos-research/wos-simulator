@@ -28,3 +28,6 @@ Expected catalogue14 outcome:15 executed,6 exact,9 known mismatches,0 processing
 
 
 Subsequent checkpoint: the [twenty-report continuation](mk2-continuation-20260913.md) publishes the five reverse health controls and fifteen further C2 observations, reaching401 reports (347 exact,54 pending). It also records the completed fixed original/current-catalogue E1 robustness comparison. The preceding counts and pending-work descriptions are historical.
+
+
+The user subsequently approved the exact E1 Volley/Lance correction. See the [catalogue15 integration and validation](mk2-scoped-volley-lance-20260913.md) for its narrow guard, unchanged original stats/probabilities, and the406-report checkpoint. Earlier comparisons above remain historical.

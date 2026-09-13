@@ -1,0 +1,467 @@
+[
+  {
+    "test_id": "mk2-c2-accounting-followup-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "C2_additional_reverse_accounting",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789328259",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789328260,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 4
+        },
+        "defender": {
+          "90008": 3,
+          "90009": 1,
+          "90006": 0
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending C2 ordering/accounting research; the scoped E1 update does not apply.",
+      "scope": "Hero-free occupied-tile fight, winner, six survivor slots and four explicitly reported chance-skill activation counts.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof."
+    }
+  },
+  {
+    "test_id": "mk2-c2-accounting-followup-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "C2_additional_reverse_accounting",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789328309",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789328310,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 9
+        },
+        "defender": {
+          "90008": 1,
+          "90009": 4,
+          "90006": 2
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending C2 ordering/accounting research; the scoped E1 update does not apply.",
+      "scope": "Hero-free occupied-tile fight, winner, six survivor slots and four explicitly reported chance-skill activation counts.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof."
+    }
+  },
+  {
+    "test_id": "mk2-c2-accounting-followup-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "C2_additional_reverse_accounting",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789328396",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789328397,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 3
+        },
+        "defender": {
+          "90008": 0,
+          "90009": 3,
+          "90006": 1
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending C2 ordering/accounting research; the scoped E1 update does not apply.",
+      "scope": "Hero-free occupied-tile fight, winner, six survivor slots and four explicitly reported chance-skill activation counts.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof."
+    }
+  },
+  {
+    "test_id": "mk2-c2-accounting-followup-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "C2_additional_reverse_accounting",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789328503",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789328504,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 5
+        },
+        "defender": {
+          "90008": 1,
+          "90009": 1,
+          "90006": 1
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending C2 ordering/accounting research; the scoped E1 update does not apply.",
+      "scope": "Hero-free occupied-tile fight, winner, six survivor slots and four explicitly reported chance-skill activation counts.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof."
+    }
+  },
+  {
+    "test_id": "mk2-c2-accounting-followup-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "C2_additional_reverse_accounting",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789328593",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789328594,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 6
+        },
+        "defender": {
+          "90008": 2,
+          "90009": 0,
+          "90006": 0
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending C2 ordering/accounting research; the scoped E1 update does not apply.",
+      "scope": "Hero-free occupied-tile fight, winner, six survivor slots and four explicitly reported chance-skill activation counts.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof."
+    }
+  }
+]
