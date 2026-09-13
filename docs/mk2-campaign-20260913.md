@@ -118,3 +118,28 @@ The next prospective mixed-opponent comparison uses500 T7 Infantry versus250 T5 
 Two additional hero-free controls use500 T5 FC4 Lancers versus500 T5 FC5 Infantry, one each direction on the FC5 account pair. Both actual kernels match:261 and253 surviving Infantry, zero Lancers, and every explicitly recorded Lance/Shield proc count. Current complete modifiers are corroborated across both roles. This establishes the account background before adding T7 Ambusher; it does not count as a new independent proof of each previously tested Lance/Shield mechanic.
 
 The current collection contains **51 new campaign fights plus the original160**, all211 exact for their available observations. All51 campaign fixtures pass the replay regression. The last full simulator/dashboard suites remain292/104 at the catalogue-correction checkpoint; subsequent additions change evidence and documentation only.
+
+
+## Bands against a mixed Lancer/Marksman opponent
+
+Both planned500 T7 Infantry versus250 T5 Lancer plus250 T5 Marksman fights report225 surviving Infantry. Current behavior matches both actual kernels; the frozen initial-Lancer-presence blanket-defense alternative predicts248 and fails both by23 survivors. All captured raw modifiers remain unchanged from the preceding pure controls. These two cases bring the local campaign to53 fixtures, alongside the original160.
+
+Together with the pure-Lancer and pure-Marksman controls, this supports restricting Bands to incoming Lancer attacks against this specific alternative. It does not independently establish the exact10 coefficient, its damage bucket, every possible depletion rule, or hidden server scheduling. No combat code changed. Both distinct reports and all supplied observations are preserved; missing proc fields remain unknown and the model uses zero RNG calls.
+
+
+## T9 Infantry profile background
+
+Two new controls use250 T9 non-FC Infantry against250 T5 non-FC Marksmen, once each direction. Both kernels match195 Infantry survivors, zero Marksmen and the winner using the unchanged captured modifiers. All16 raw modifier fields per account and normalized stats match the preceding mixed Bands controls. No explicit chance-skill activation fields were supplied, and the model consumes zero RNG calls.
+
+These reports extend observed compatibility to the T9 Infantry profile in this pair. They do not independently identify its individual stat cells or certify expert mechanics; experts remain present in the raw formations. The local collection now contains55 campaign fixtures plus the original160. No combat implementation changed.
+
+
+## Ambusher before normal-hit Shield: first direction
+
+Five new fights use500 T7 FC4 Lancers attacking500 T5 FC5 Infantry. Both unchanged actual kernels match all five winners,30 survivor values and15 explicit Ambusher/Lance/Shield counts. The frozen alternative assigning the normal-hit Shield draw before Ambusher matches none. The first chronological diagnostic passed before the four held-out reports were released for confirmation. Reverse-direction collection is still pending at this checkpoint.
+
+Case `mk2-campaign-20260913-056` reports166 Lancer survivors and Ambusher21, Lance14, Shield53. The alternative also predicts166 Lancers and Lance14, but gives Ambusher25 and Shield52. These counts distinguish draw ownership even when final survivors agree. The alternative changes draw allocation only, keeping the existing hit and target application points. This constrains the specified alternative in the tested composition, rather than uniquely exposing all server scheduling.
+
+The Infantry account's captured common defense modifier is five percentage points lower than its earlier background, consistently in all five reports. Replays use those live fields unchanged; the reason for the change is not inferred. All16 fields on the Lancer account are unchanged. Independent trigger joins on both devices produce seed offsets1,1,0,1,1, retaining the unresolved seeding-time limitation.
+
+The collection now has60 new campaign fixtures plus160 original reports, all220 exact for available observations in both kernels. No combat rule or catalogue value changed for these additions.
