@@ -1,0 +1,1357 @@
+[
+  {
+    "test_id": "mk2-campaign-20260913-001",
+    "cohort": "ui_gunpowder_control",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 301.4,
+          "defense": 304.65,
+          "lethality": 200.29,
+          "health": 198.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789275360",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789275361,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 352
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 352,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:0",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 2,
+      "scope": "Hero-less T5 FC3 Marksmen versus T5 FC1 Infantry; winner, all six survivors and explicit Gunpowder procs.",
+      "independentTriggerTimestamp": 1789275360,
+      "recordedSeedMinusTrigger": 1,
+      "timingLimit": "Trigger+1 is independently observed for this battle only; general seeding rule remains unresolved."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-002",
+    "cohort": "ambusher_lance_lancer_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789276567",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789276568,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 251,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 251,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 5,
+          "90004": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:Ambusher:0",
+        "side": "attacker",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "attacker:lancer:CrystalLance:1",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields on both devices corroborate mail-identity join. Observed seed offsets in this batch vary between zero and one; trigger time is not established as seeding time. Replay still uses recorded seed.",
+      "independentTriggerTimestamp": 1789276567,
+      "recordedSeedMinusTrigger": 1
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-003",
+    "cohort": "ambusher_lance_lancer_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789276669",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789276670,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 255,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 255,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4,
+          "90004": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:Ambusher:0",
+        "side": "attacker",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "attacker:lancer:CrystalLance:1",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields on both devices corroborate mail-identity join. Observed seed offsets in this batch vary between zero and one; trigger time is not established as seeding time. Replay still uses recorded seed.",
+      "independentTriggerTimestamp": 1789276670,
+      "recordedSeedMinusTrigger": 0
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-004",
+    "cohort": "ambusher_lance_lancer_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789276727",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789276728,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 218,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 218,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 3,
+          "90004": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:Ambusher:0",
+        "side": "attacker",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "attacker:lancer:CrystalLance:1",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields on both devices corroborate mail-identity join. Observed seed offsets in this batch vary between zero and one; trigger time is not established as seeding time. Replay still uses recorded seed.",
+      "independentTriggerTimestamp": 1789276728,
+      "recordedSeedMinusTrigger": 0
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-005",
+    "cohort": "ambusher_lance_lancer_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789276837",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789276838,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 254,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 254,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4,
+          "90004": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:Ambusher:0",
+        "side": "attacker",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "attacker:lancer:CrystalLance:1",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields on both devices corroborate mail-identity join. Observed seed offsets in this batch vary between zero and one; trigger time is not established as seeding time. Replay still uses recorded seed.",
+      "independentTriggerTimestamp": 1789276838,
+      "recordedSeedMinusTrigger": 0
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-006",
+    "cohort": "ambusher_lance_lancer_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789276904",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789276905,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 225,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 225,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 5,
+          "90004": 9
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:Ambusher:0",
+        "side": "attacker",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "attacker:lancer:CrystalLance:1",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields on both devices corroborate mail-identity join. Observed seed offsets in this batch vary between zero and one; trigger time is not established as seeding time. Replay still uses recorded seed.",
+      "independentTriggerTimestamp": 1789276904,
+      "recordedSeedMinusTrigger": 1
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-007",
+    "cohort": "ambusher_lance_mixed_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789277478",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789277479,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 221,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 221
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 7,
+          "90004": 7
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:Ambusher:0",
+        "side": "defender",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "defender:lancer:CrystalLance:1",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields corroborate mail identity. Actual RNG seeding time remains unresolved; replay uses recorded seed.",
+      "independentTriggerTimestamp": 1789277479,
+      "recordedSeedMinusTrigger": 0
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-008",
+    "cohort": "ambusher_lance_mixed_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789277570",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789277571,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 319,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 319
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 5,
+          "90004": 15
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:Ambusher:0",
+        "side": "defender",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "defender:lancer:CrystalLance:1",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields corroborate mail identity. Actual RNG seeding time remains unresolved; replay uses recorded seed.",
+      "independentTriggerTimestamp": 1789277570,
+      "recordedSeedMinusTrigger": 1
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-009",
+    "cohort": "ambusher_lance_mixed_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789277642",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789277643,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 261,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 261
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 3,
+          "90004": 9
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:Ambusher:0",
+        "side": "defender",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "defender:lancer:CrystalLance:1",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields corroborate mail identity. Actual RNG seeding time remains unresolved; replay uses recorded seed.",
+      "independentTriggerTimestamp": 1789277642,
+      "recordedSeedMinusTrigger": 1
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-010",
+    "cohort": "ambusher_lance_mixed_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789277720",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789277721,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 228,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 228
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 2,
+          "90004": 9
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:Ambusher:0",
+        "side": "defender",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "defender:lancer:CrystalLance:1",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields corroborate mail identity. Actual RNG seeding time remains unresolved; replay uses recorded seed.",
+      "independentTriggerTimestamp": 1789277721,
+      "recordedSeedMinusTrigger": 0
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-011",
+    "cohort": "ambusher_lance_mixed_attacks",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500,
+        "marksman_t5": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 146.91,
+          "defense": 143.41,
+          "lethality": 125.57,
+          "health": 122.36
+        },
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t7_fc4": 500
+      },
+      "stats": {
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789277796",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789277797,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 240,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 240
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 5,
+          "90004": 10
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:Ambusher:0",
+        "side": "defender",
+        "skillId": "Ambusher",
+        "reportSkillId": "90004",
+        "troopType": "lancer",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "turn",
+          "probability": [
+            20
+          ]
+        }
+      },
+      {
+        "instance": "defender:lancer:CrystalLance:1",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Independent trigger fields corroborate mail identity. Actual RNG seeding time remains unresolved; replay uses recorded seed.",
+      "independentTriggerTimestamp": 1789277797,
+      "recordedSeedMinusTrigger": 0
+    }
+  }
+]
