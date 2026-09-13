@@ -94,3 +94,5 @@ At publication, the full simulator suite passes 248 tests, including the 160 con
 ## Supplemental evidence discovery
 
 The aggregate forty-fight casualty evidence is stored under `research/mk2/controlled_casualties_20260913.json` and verified by its dedicated test. It is intentionally outside the ordinary battle-file scan because it references campaign battles rather than containing root armies. This resolves the sidecar adaptation error identified in PCB’s dated integration review while retaining its exact contents. A full Mk2 scan still includes known mixed-skill failures and unsupported T12 inbox cases; those remain visible errors or mismatches.
+
+Latest evidence: [ten further RNG reports](mk2-shield-accounting-witnesses-20260913.md) bring the corpus to **416 reports: 366 exact and 50 pending** under unchanged catalogue15. Two new Shield-context reports distinguish the previously frozen Volley accounting alternatives; the candidate remains experimental while reverse testing proceeds.
