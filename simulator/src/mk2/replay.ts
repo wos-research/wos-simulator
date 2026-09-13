@@ -11,7 +11,7 @@ import {terminalVolleyShield} from './terminal_volley_shield';
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-terminal-shield-12';
+export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-13';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   mechanics?: Mk2Mechanics;

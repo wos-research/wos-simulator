@@ -268,3 +268,25 @@ The production option `terminalVolleyShield: "roll"` is now the default in repla
 Both actual kernels match all ten new reports. All 249 previous passing reports still match in the research replay, and the shared complete suite passes 311 tests, including 259 captured cases, 301 unchanged legacy reference outcomes, 45,440 native Lua values, and eight new boundary/scope tests. The shared TypeScript check passes. Scope tests verify implementation exclusions; they are not new in-game evidence for heroes or pending damage. The five generic source files remain reversibly traceable to their original baseline hashes.
 
 The collection now contains 99 campaign reports plus 160 original reports: 259 passing reports. Seven shared unresolved reports stay separate. Anonymized fixtures 090-099 preserve the actual predictive inputs, observed fields and recorded seeds. Raw packets and identifying capture metadata remain private. Independent timestamp-to-seed derivation and skill-credited wound attribution remain unresolved.
+
+
+## T10 FC1 Lancer and T10 FC3 Marksman: original catalogue values restored
+
+Version `expedition-mk2-lua54-catalogue-13` restores four additional cells after independent confirmation in both directions. These values come from the original catalogue, not fitted replacements. Mk2's floor conversion had lowered each by one; the tested correction is limited to these two profiles.
+
+| Profile | Previous Mk2 attack / health | Restored attack / health | Fresh confirming pair |
+|---|---:|---:|---|
+| T10 FC1 Lancer | 1472 / 490 | 1473 / 491 | 500 Lancers versus 1,050 T5 FC1 Infantry |
+| T10 FC3 Marksman | 2164 / 405 | 2165 / 406 | 500 Marksmen versus 1,500 T5 FC5 Infantry |
+
+The earlier G1 Lancer pair used 1,000 Infantry. Its ten reports distinguish health 491 from 490, but leave attack 1472/1473 tied. The subsequent G2 pair's ten reports, five each direction, match only attack 1473/health 491 among four alternatives fixed before collection. Each other combination fails all ten. All ten observe 152 Lancers; their explicitly encoded Ambusher counts also match. G1 and G2 are included as 20 separate reports, rather than discarding identical survivor outcomes.
+
+The D2 Marksman pair likewise supplies ten new reports, five each direction. Both original values match 10/10; previous values and attack-only restoration each match 0/10, while health-only restoration matches 3/10. The first chronological report in each direction gated release of the remaining four. All 30 explicitly encoded Volley/Gunpowder/Shield counts were checked directly, and all 16 player modifier fields and expert metadata were unchanged by actor across directions.
+
+These corrections also resolve the five previously shared D1 development reports under the independently confirmed terminal Volley/Shield rule. They remain unchanged in [`unresolved_d1_20260913.json`](../testcases/mk2/unresolved_d1_20260913.json), retaining their original IDs and historical filename; current replay now passes all five. They are counted once and are not copied into the campaign collection. Their earlier mismatches remain documented above; they are not reclassified as fresh confirmation. The normal testcase CLI verifies five passes with zero processing errors or warnings.
+
+New anonymized campaign fixtures 100-129 contain G1, G2 and D2, ten each. The passing evidence now comprises 160 original reports, 129 campaign reports and the five existing D1 reports: **294 reports**, representing290 distinct predictive requests. The separately published C2 and E1 reports remain unresolved, for 296 published report records overall. Four C2 confirmation reports remain unused. No mixed-source ordering hypothesis is included in this correction.
+
+Both actual kernels reproduce all 294 eligible reports, including 1,764 survivor checks and 505 explicitly supplied chance-skill counts. The previous 259 complete battle outputs, RNG traces and warnings match their archived pre-port hashes. All 30 new reports and five existing D1 reports have complete battle/RNG parity between the actual research and shared kernels. The full simulator suite passes 313 tests, including 301 legacy reference outcomes and 45,440 native Lua values; six research catalogue tests and the shared TypeScript check pass. Fixture integrity checks preserve each captured input, observation and seed and exclude private capture/account identifiers.
+
+The validated policy now restores eight cells across five profiles. `catalogueCorrections: "none"` retains the earlier floor policy for comparison. Other catalogue cells, probabilities, damage equations and generic engine hooks are unchanged; their existing baseline provenance remains intact. The older T7 evidence still rejects a blanket restoration of the original table. No new claim is made about independently deriving seeds from timestamps, skill-credited wounds, heroes, untested FC skill levels or T12.

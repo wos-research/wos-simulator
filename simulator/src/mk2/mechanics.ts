@@ -73,6 +73,17 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
       result.troopStats.infantry_t10_fc1 = createTroopStatsRecord({...fc1, stats: {...fc1.stats,
         attack: original.attack, health: original.health}});
     }
+    // Scope-specific original cells; not a blanket rounding-policy change.
+    for (const [id, type, fc] of [
+      ['lancer_t10_fc1', 'lancer', 1], ['marksman_t10_fc3', 'marksman', 3]
+    ] as const) {
+      const troop = result.troopStats[id];
+      if (troop) {
+        const original = generateTroopStats(type, 10, fc).stats;
+        result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
+          attack: original.attack, health: original.health}});
+      }
+    }
   }
   return result;
 }

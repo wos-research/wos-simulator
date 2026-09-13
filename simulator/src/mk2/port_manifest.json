@@ -1,5 +1,5 @@
 {
-  "sourceVersion": "expedition-mk2-lua54-terminal-shield-12",
+  "sourceVersion": "expedition-mk2-lua54-catalogue-13",
   "baselineCommit": "fadcab7",
   "policy": "Apply verified optional hooks to the existing engine; absent options preserve legacy behavior. No duplicate engine.",
   "files": {
