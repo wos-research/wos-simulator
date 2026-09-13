@@ -1,0 +1,472 @@
+[
+  {
+    "test_id": "mk2-c2-five-infantry-reverse-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "C2_five_infantry_reverse_four_source_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789337770",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789337771,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 6
+        },
+        "defender": {
+          "90008": 3,
+          "90009": 0,
+          "90006": 2
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending ordering/accounting research: current H0 misses, private U0 and U1 both match all five; no integration.",
+      "scope": "Hero-free occupied-tile reverse orientation: 500 T5 FC5 Lancers plus5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; explicit Lance/Volley/Gunpowder/Shield counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "All five reports match both counter projections; this batch has no successful-unused accounting witness. Terminal reservation events remain model predictions, not server logs."
+    }
+  },
+  {
+    "test_id": "mk2-c2-five-infantry-reverse-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "C2_five_infantry_reverse_four_source_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789337832",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789337833,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 9
+        },
+        "defender": {
+          "90008": 2,
+          "90009": 2,
+          "90006": 2
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending ordering/accounting research: current H0 misses, private U0 and U1 both match all five; no integration.",
+      "scope": "Hero-free occupied-tile reverse orientation: 500 T5 FC5 Lancers plus5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; explicit Lance/Volley/Gunpowder/Shield counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "All five reports match both counter projections; this batch has no successful-unused accounting witness. Terminal reservation events remain model predictions, not server logs."
+    }
+  },
+  {
+    "test_id": "mk2-c2-five-infantry-reverse-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "C2_five_infantry_reverse_four_source_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789337899",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789337900,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 6
+        },
+        "defender": {
+          "90008": 2,
+          "90009": 1,
+          "90006": 1
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending ordering/accounting research: current H0 misses, private U0 and U1 both match all five; no integration.",
+      "scope": "Hero-free occupied-tile reverse orientation: 500 T5 FC5 Lancers plus5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; explicit Lance/Volley/Gunpowder/Shield counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "All five reports match both counter projections; this batch has no successful-unused accounting witness. Terminal reservation events remain model predictions, not server logs."
+    }
+  },
+  {
+    "test_id": "mk2-c2-five-infantry-reverse-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "C2_five_infantry_reverse_four_source_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789337981",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789337982,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 4
+        },
+        "defender": {
+          "90008": 3,
+          "90009": 0,
+          "90006": 0
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending ordering/accounting research: current H0 misses, private U0 and U1 both match all five; no integration.",
+      "scope": "Hero-free occupied-tile reverse orientation: 500 T5 FC5 Lancers plus5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; explicit Lance/Volley/Gunpowder/Shield counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "All five reports match both counter projections; this batch has no successful-unused accounting witness. Terminal reservation events remain model predictions, not server logs."
+    }
+  },
+  {
+    "test_id": "mk2-c2-five-infantry-reverse-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "C2_five_infantry_reverse_four_source_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc5": 5
+      },
+      "stats": {
+        "infantry": {
+          "attack": 299.07,
+          "defense": 302.32,
+          "lethality": 184.71,
+          "health": 182.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 5,
+        "lancer_t5_fc5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789338040",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789338041,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 500,
+          "marksman": 5
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 505
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90007": 6
+        },
+        "defender": {
+          "90008": 0,
+          "90009": 3,
+          "90006": 1
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Pending ordering/accounting research: current H0 misses, private U0 and U1 both match all five; no integration.",
+      "scope": "Hero-free occupied-tile reverse orientation: 500 T5 FC5 Lancers plus5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; explicit Lance/Volley/Gunpowder/Shield counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "All five reports match both counter projections; this batch has no successful-unused accounting witness. Terminal reservation events remain model predictions, not server logs."
+    }
+  }
+]
