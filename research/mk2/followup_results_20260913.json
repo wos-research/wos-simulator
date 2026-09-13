@@ -1,0 +1,1764 @@
+{
+  "kernelVersion": "expedition-mk2-lua54-catalogue-14",
+  "status": "Evidence only. No candidate promoted to active kernel.",
+  "reports": 15,
+  "activeKernelExact": 6,
+  "activeKernelPending": 9,
+  "models": {
+    "E1 H0": "Current kernel.",
+    "E1 H1_U0": "Predeclared experimental ordering: reserve live Volley before same-side Lance; apply at original Marksman slot. Successful unused reservation contributes zero reported activations.",
+    "E1 H1_U1": "Same candidate battle and RNG as U0; successful unused reservation contributes one reported Volley activation without another attack or draw.",
+    "health H0": "Current T7 FC4 Marksman health258.",
+    "health H1": "Original health259, isolated change only."
+  },
+  "limitations": [
+    "Exact observations do not uniquely prove internal server event ordering or troop coefficients.",
+    "E1 accounting witnesses are specific to the tested hero-free troop combination. Crystal Shield and Ambusher interactions are separate research questions.",
+    "Health results do not justify a blanket rounding rule across other troops, tiers or FC levels.",
+    "Recorded seed replay is not independent timestamp-to-seed validation.",
+    "Distinct fights are retained even when contents match; missing observations are never filled with zero."
+  ],
+  "cohorts": [
+    {
+      "cohort": "E1_reverse",
+      "reports": 5,
+      "models": {
+        "H0": {
+          "reports": 5,
+          "exact": 0
+        },
+        "H1_U0": {
+          "reports": 5,
+          "exact": 4
+        },
+        "H1_U1": {
+          "reports": 5,
+          "exact": 5
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 1
+    },
+    {
+      "cohort": "E1_forward_additional",
+      "reports": 5,
+      "models": {
+        "H0": {
+          "reports": 5,
+          "exact": 1
+        },
+        "H1_U0": {
+          "reports": 5,
+          "exact": 4
+        },
+        "H1_U1": {
+          "reports": 5,
+          "exact": 5
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 1
+    },
+    {
+      "cohort": "T7_FC4_MM_health_forward",
+      "reports": 5,
+      "models": {
+        "H0": {
+          "reports": 5,
+          "exact": 5
+        },
+        "H1": {
+          "reports": 5,
+          "exact": 0
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0
+    }
+  ],
+  "rows": [
+    {
+      "test_id": "mk2-followup-20260913-001",
+      "cohort": "E1_reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 505
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 3,
+            "90009": 1,
+            "90006": 2
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 0,
+              "90008": 3,
+              "90009": 1
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90006",
+              "expected": 2,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 2,
+              "90008": 3,
+              "90009": 1
+            }
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 2,
+              "90008": 3,
+              "90009": 1
+            }
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 1
+    },
+    {
+      "test_id": "mk2-followup-20260913-002",
+      "cohort": "E1_reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 505
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 0,
+            "90009": 3,
+            "90006": 1
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 3
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90008",
+              "expected": 0,
+              "actual": 1
+            },
+            {
+              "field": "proc.defender.90006",
+              "expected": 1,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 0
+    },
+    {
+      "test_id": "mk2-followup-20260913-003",
+      "cohort": "E1_reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 505
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 0,
+            "90009": 3,
+            "90006": 1
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 3
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90008",
+              "expected": 0,
+              "actual": 1
+            },
+            {
+              "field": "proc.defender.90006",
+              "expected": 1,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 0
+    },
+    {
+      "test_id": "mk2-followup-20260913-004",
+      "cohort": "E1_reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 505
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 1,
+            "90009": 1,
+            "90006": 2
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 0,
+              "90008": 2,
+              "90009": 1
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90008",
+              "expected": 1,
+              "actual": 2
+            },
+            {
+              "field": "proc.defender.90006",
+              "expected": 2,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 1,
+              "90009": 1
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90006",
+              "expected": 2,
+              "actual": 1
+            }
+          ]
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 2,
+              "90008": 1,
+              "90009": 1
+            }
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 1,
+      "unusedFailedVolleyReservations": 0
+    },
+    {
+      "test_id": "mk2-followup-20260913-005",
+      "cohort": "E1_reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 505
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 0,
+            "90009": 3,
+            "90006": 1
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 2
+            }
+          },
+          "differences": [
+            {
+              "field": "proc.defender.90008",
+              "expected": 0,
+              "actual": 1
+            },
+            {
+              "field": "proc.defender.90006",
+              "expected": 1,
+              "actual": 0
+            },
+            {
+              "field": "proc.defender.90009",
+              "expected": 3,
+              "actual": 2
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90006": 1,
+              "90008": 0,
+              "90009": 3
+            }
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 0
+    },
+    {
+      "test_id": "mk2-followup-20260913-006",
+      "cohort": "E1_forward_additional",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 505,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2,
+            "90009": 3,
+            "90006": 1
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 2,
+              "90008": 1,
+              "90009": 4
+            },
+            "defender": {}
+          },
+          "differences": [
+            {
+              "field": "proc.attacker.90008",
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "field": "proc.attacker.90006",
+              "expected": 1,
+              "actual": 2
+            },
+            {
+              "field": "proc.attacker.90009",
+              "expected": 3,
+              "actual": 4
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 1,
+              "90008": 2,
+              "90009": 3
+            },
+            "defender": {}
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 1,
+              "90008": 2,
+              "90009": 3
+            },
+            "defender": {}
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 1
+    },
+    {
+      "test_id": "mk2-followup-20260913-007",
+      "cohort": "E1_forward_additional",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 505,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2,
+            "90009": 2,
+            "90006": 1
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 2
+            },
+            "defender": {}
+          },
+          "differences": [
+            {
+              "field": "proc.attacker.90008",
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "field": "proc.attacker.90006",
+              "expected": 1,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 2,
+              "90009": 2
+            },
+            "defender": {}
+          },
+          "differences": [
+            {
+              "field": "proc.attacker.90006",
+              "expected": 1,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 1,
+              "90008": 2,
+              "90009": 2
+            },
+            "defender": {}
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 1,
+      "unusedFailedVolleyReservations": 0
+    },
+    {
+      "test_id": "mk2-followup-20260913-008",
+      "cohort": "E1_forward_additional",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 505,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1,
+            "90009": 1,
+            "90006": 1
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 1
+            },
+            "defender": {}
+          },
+          "differences": [
+            {
+              "field": "proc.attacker.90006",
+              "expected": 1,
+              "actual": 0
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 1,
+              "90008": 1,
+              "90009": 1
+            },
+            "defender": {}
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 1,
+              "90008": 1,
+              "90009": 1
+            },
+            "defender": {}
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 1
+    },
+    {
+      "test_id": "mk2-followup-20260913-009",
+      "cohort": "E1_forward_additional",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 505,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1,
+            "90009": 2,
+            "90006": 0
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 0,
+              "90009": 3
+            },
+            "defender": {}
+          },
+          "differences": [
+            {
+              "field": "proc.attacker.90008",
+              "expected": 1,
+              "actual": 0
+            },
+            {
+              "field": "proc.attacker.90009",
+              "expected": 2,
+              "actual": 3
+            }
+          ]
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 2
+            },
+            "defender": {}
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 2
+            },
+            "defender": {}
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 1
+    },
+    {
+      "test_id": "mk2-followup-20260913-010",
+      "cohort": "E1_forward_additional",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 500,
+            "marksman": 5
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 505,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1,
+            "90009": 0,
+            "90006": 0
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 0
+            },
+            "defender": {}
+          },
+          "differences": []
+        },
+        "H1_U0": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 0
+            },
+            "defender": {}
+          },
+          "differences": []
+        },
+        "H1_U1": {
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 500,
+              "marksman": 5
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 0,
+              "90008": 1,
+              "90009": 0
+            },
+            "defender": {}
+          },
+          "differences": []
+        }
+      },
+      "unusedSuccessfulVolleyReservations": 0,
+      "unusedFailedVolleyReservations": 1
+    },
+    {
+      "test_id": "mk2-followup-20260913-011",
+      "cohort": "T7_FC4_MM_health_forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 199,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 199
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90009": 24,
+            "90006": 6
+          },
+          "defender": {
+            "90007": 35
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 199,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 6,
+              "90009": 24
+            },
+            "defender": {
+              "90007": 35
+            }
+          },
+          "differences": []
+        },
+        "H1": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 198,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 6,
+              "90009": 24
+            },
+            "defender": {
+              "90007": 35
+            }
+          },
+          "differences": [
+            {
+              "field": "remaining.defender.infantry",
+              "expected": 199,
+              "actual": 198
+            }
+          ]
+        }
+      },
+      "unusedSuccessfulVolleyReservations": null,
+      "unusedFailedVolleyReservations": null
+    },
+    {
+      "test_id": "mk2-followup-20260913-012",
+      "cohort": "T7_FC4_MM_health_forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 218,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 218
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90009": 14,
+            "90006": 11
+          },
+          "defender": {
+            "90007": 45
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 218,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 11,
+              "90009": 14
+            },
+            "defender": {
+              "90007": 45
+            }
+          },
+          "differences": []
+        },
+        "H1": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 217,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 11,
+              "90009": 14
+            },
+            "defender": {
+              "90007": 45
+            }
+          },
+          "differences": [
+            {
+              "field": "remaining.defender.infantry",
+              "expected": 218,
+              "actual": 217
+            }
+          ]
+        }
+      },
+      "unusedSuccessfulVolleyReservations": null,
+      "unusedFailedVolleyReservations": null
+    },
+    {
+      "test_id": "mk2-followup-20260913-013",
+      "cohort": "T7_FC4_MM_health_forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 206,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 206
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90009": 17,
+            "90006": 9
+          },
+          "defender": {
+            "90007": 37
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 206,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 9,
+              "90009": 17
+            },
+            "defender": {
+              "90007": 37
+            }
+          },
+          "differences": []
+        },
+        "H1": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 204,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 9,
+              "90009": 17
+            },
+            "defender": {
+              "90007": 37
+            }
+          },
+          "differences": [
+            {
+              "field": "remaining.defender.infantry",
+              "expected": 206,
+              "actual": 204
+            }
+          ]
+        }
+      },
+      "unusedSuccessfulVolleyReservations": null,
+      "unusedFailedVolleyReservations": null
+    },
+    {
+      "test_id": "mk2-followup-20260913-014",
+      "cohort": "T7_FC4_MM_health_forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 236,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 236
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90009": 15,
+            "90006": 5
+          },
+          "defender": {
+            "90007": 41
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 236,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 5,
+              "90009": 15
+            },
+            "defender": {
+              "90007": 41
+            }
+          },
+          "differences": []
+        },
+        "H1": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 234,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 5,
+              "90009": 15
+            },
+            "defender": {
+              "90007": 42
+            }
+          },
+          "differences": [
+            {
+              "field": "remaining.defender.infantry",
+              "expected": 236,
+              "actual": 234
+            },
+            {
+              "field": "proc.defender.90007",
+              "expected": 41,
+              "actual": 42
+            }
+          ]
+        }
+      },
+      "unusedSuccessfulVolleyReservations": null,
+      "unusedFailedVolleyReservations": null
+    },
+    {
+      "test_id": "mk2-followup-20260913-015",
+      "cohort": "T7_FC4_MM_health_forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 218,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 218
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90009": 20,
+            "90006": 9
+          },
+          "defender": {
+            "90007": 46
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 218,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 9,
+              "90009": 20
+            },
+            "defender": {
+              "90007": 46
+            }
+          },
+          "differences": []
+        },
+        "H1": {
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 216,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90006": 9,
+              "90009": 20
+            },
+            "defender": {
+              "90007": 46
+            }
+          },
+          "differences": [
+            {
+              "field": "remaining.defender.infantry",
+              "expected": 218,
+              "actual": 216
+            }
+          ]
+        }
+      },
+      "unusedSuccessfulVolleyReservations": null,
+      "unusedFailedVolleyReservations": null
+    }
+  ]
+}
