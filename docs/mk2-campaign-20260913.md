@@ -1,4 +1,4 @@
-# Controlled testing campaign â€” September 13, 2026
+# Controlled testing campaign — September 13, 2026
 
 The first automated workflow control is one independent battle, with attacker and defender report copies preserved locally. It uses 500 T5 FC3 Marksmen against 1,000 T5 FC1 Infantry, without heroes. The integrated kernel reproduces attacker victory, 352 surviving Marksmen, zero surviving Infantry, and nine Crystal Gunpowder activations using the recorded seed.
 
@@ -192,3 +192,14 @@ The first valid report from500 T5 FC4 Lancers plus500 T7 FC3 Marksmen versus1000
 Both hypotheses fail. All captured modifiers match the preceding FC account controls. Four additional planned reports remain unused for confirmation while this first diagnostic is investigated. No speculative ordering change has been promoted. The245 passing reports do not mean every captured fight matches.
 
 This collection also had one operator setup error: an80100-troop attacker was dispatched instead of the planned1000. That report was preserved privately and quarantined by army composition before model comparison, then replaced with a correctly configured fight. It is neither a passing test nor the unresolved diagnostic above. Final-army inspection and Deploy now use separate calls with archived screenshots.
+
+
+To reproduce the unresolved report from the repository root:
+
+```sh
+node --import ./simulator/node_modules/tsx/dist/loader.mjs scripts/run_testcases.ts --testcase-root testcases/mk2 --matching unresolved_c2_20260913 --workers 1 --human
+```
+
+This command was checked through the normal loader: one report, zero processing errors, one unsupported-timing warning, and an expected mismatch with exit status1. It preserves the captured input and recorded seed. Running the entire Mk2 testcase directory also includes this known unresolved report; the passing campaign regression intentionally targets its named collection.
+
+Two further private candidates reserved live Volley's draw before an actual Lance-extra Shield check, delivering its cached result at the unchanged Marksman slot, with either reference or extended Gunpowder timing. Both fail this diagnostic:47 and41 Lancer survivors respectively, with activation-count mismatches. Their scope/parity checks preserve the original160, ten Ambusher/Volley and ten Ambusher/Shield controls. This rules out these particular candidates on the diagnostic; it supplies no production fix and the four confirmation reports remain unused.
