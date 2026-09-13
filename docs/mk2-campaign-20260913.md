@@ -73,3 +73,33 @@ Two further independent controls use 500 T5 FC1 Infantry versus 500 T5 non-FC Ma
 The collection now contains **33 new campaign fights plus the original 160**, with exact checks restricted to each report's available observations. These controls also supply complete raw account modifiers for all three troop types, corroborated across reversed roles. Lancer modifiers came from the recorded per-type and common buff fields; they were not inferred from Infantry or copied from another account.
 
 A prospective screen uses those captured modifiers for 500 T7 FC1 Lancers against 500 T7 FC1 Lancers plus 50 T7 non-FC Marksmen. Its frozen alternatives place the mixed side's dead-source Volley check before or after its own Ambusher. In a fixed arbitrary 20-seed panel, observable proc totals differ in 13/20 mixed-attacking and 15/20 mixed-defending runs; survivors tie in all 40. These are planning results, not live validation of either placement. They justify the next batch and the need to retain both sides' Ambusher counts and the mixed side's Volley count.
+
+
+## Same-side Ambusher and Volley after Marksman depletion: first direction
+
+Five new fights use 500 T7 FC1 Lancers attacking 500 T7 FC1 Lancers plus 50 T7 non-FC Marksmen. Current behavior reproduces every winner, all 30 survivor values and all 15 explicitly observed Ambusher/Volley activation counts in both kernels. The campaign now contains 38 new fights, alongside the original 160.
+
+Four fights distinguish the frozen alternatives even though their survivor predictions agree. Keeping the dead-source Volley draw after the same side's Lancer Ambusher check matches all five. Moving that draw to the start of the side's turn matches only one, as does skipping it. The one nondiscriminating fight retains four Marksmen and never reaches the disputed phase.
+
+For example, case `mk2-campaign-20260913-034` reports attacker Ambusher 5, defender Ambusher 8 and defender Volley 2. Moving dead Volley before the defender's Ambusher predicts 5, 6 and 5, respectively, while leaving 222 defending Lancers alive under both placements. This demonstrates why survivor equality alone is insufficient. The current implementation remains unchanged.
+
+This constrains the tested pure/mixed Lancer composition and the specifically frozen timing alternatives; it does not uniquely reveal every internal server scheduling operation. Reverse-direction confirmation is pending at this checkpoint. Independent trigger offsets for the five fights are 0, 1, 0, 1, 1, preserving the distinction between recorded-seed replay and independent time-derived prediction.
+
+
+## Same-side Ambusher/Volley: reverse confirmation
+
+Five reverse fights complete ten independent B1 cases. Both actual kernels match all ten winners, all 60 survivor values and all 30 explicitly observed activation counts. The frozen side-start and skip alternatives each match only three cases. Those three retain Marksmen; all seven fights that reach Marksman depletion reject both alternatives through proc totals. Survivor predictions agree across all models in all ten fights.
+
+In reverse case `mk2-campaign-20260913-040`, the mixed attacker reports Ambusher 12 and Volley 4, with defender Ambusher 9. Moving dead Volley before its own Ambusher predicts 11, 7 and 9, while both placements predict 175 surviving attacking Lancers. The first chronological reverse diagnostic was nondiscriminating and was preserved; the later separating cases were not selected by seed or outcome.
+
+The current ordering remains unchanged. Support is limited to the tested pure/mixed Lancer composition and the defined alternatives. The reverse trigger offsets are 0, 1, 1, 1, 0; independently deriving the seeding time remains unresolved.
+
+## F27 non-FC background controls
+
+Two additional fights use 500 T5 non-FC Infantry against 500 T5 non-FC Lancers, one each direction on the new account pair. Both actual kernels reproduce 179 surviving Infantry and zero Lancers using unchanged captured modifiers. The model consumes zero RNG calls; the reports contain no explicit chance-skill activation observations, so none are manufactured.
+
+Complete per-type and common buff fields are recorded and corroborated across both directions. Raw reports include experts in the formations. These checks do not imply expert-free armies or independently establish expert mechanics; they validate the available outcomes with the supplied modifiers and current model. Both reports were opened on the same participant, but their independent mail identities and battle times establish two distinct fights.
+
+The collection now contains **45 new campaign fights plus the original 160**, all 205 exact for their available observations. The campaign regression passes all 45 records. No combat code changed for the ten B1 cases or these two F27 controls; the last full suite remains 292 simulator tests and 104 dashboard tests at the preceding catalogue-correction checkpoint.
+
+The prospective next step uses 500 T7 non-FC Infantry against 500 T5 non-FC Marksmen to check the new Infantry profile without Lancers. Only after that background passes will the same Infantry face 500 T5 non-FC Lancers to test Bands of Steel. With the currently captured modifiers, the frozen model and Bands-absent alternative predict 367 versus 353 surviving Infantry in the latter pair. These are planning predictions, not new game evidence or proof of the exact defense bucket.
