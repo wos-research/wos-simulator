@@ -209,7 +209,8 @@ function runBattle(
   const staticProfile = prepared?.staticProfile ?? buildStaticDamageProfile(fighters, preBattleEffects);
   const recorder = recorderFor(options, fighters);
   const runtime = setupRuntime(fighters, input.seed ?? "simulator-default", recorder, runtimeSkills, staticProfile, preBattleEffects, options.rng);
-  return runLoop(input, fighters, runtime, recorder, options, {...loopOptions, beforeExtraAttack: options.beforeExtraAttack});
+  return runLoop(input, fighters, runtime, recorder, options, {...loopOptions, beforeExtraAttack: options.beforeExtraAttack,
+    beforeExhaustedExtraAttack: options.beforeExhaustedExtraAttack});
 }
 
 function recorderFor(options: SimulationOptions, fighters: Record<SideId, ResolvedFighter>): BattleRecorder {

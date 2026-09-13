@@ -7,10 +7,11 @@ import {createMk2Config, normalizeMechanics, type Mk2Mechanics} from './mechanic
 import {orderCrystalShield, crystalShieldExtraHits} from './crystal_shield';
 import {volleyAfterDeath} from './volley_persistence';
 import {gunpowderTiming} from './gunpowder_timing';
+import {terminalVolleyShield} from './terminal_volley_shield';
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-11';
+export const MK2_VERSION = 'expedition-mk2-lua54-terminal-shield-12';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   mechanics?: Mk2Mechanics;
@@ -60,8 +61,11 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   orderCrystalShield(compiled, mechanics);
   const timing = gunpowderTiming(compiled, mechanics);
   warnings.push(...timing.warnings);
+  const terminal = terminalVolleyShield(compiled, mechanics);
+  warnings.push(...terminal.warnings);
   const stream = createBattleRng(seed.metadata.effectiveSeed, options.trace);
   const result = runPrepared(compiled, undefined, {mode: options.trace ? 'trace' : 'standard', rng: stream.rng,
+    beforeExhaustedExtraAttack: terminal.beforeExhaustedExtraAttack,
     beforeExtraAttack: crystalShieldExtraHits(mechanics), attackScheduling: mechanics.attackScheduling,
     onEmptyUnit: volleyAfterDeath(compiled, mechanics.volleyAfterDeath), deferAttackSkill: timing.deferAttackSkill});
   const total = (side: 'attacker'|'defender') => Object.values(result.remaining[side]).reduce((a, b) => a + b, 0);

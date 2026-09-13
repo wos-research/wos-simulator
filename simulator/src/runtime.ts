@@ -55,6 +55,7 @@ export type DeferAttackSkill = (prepared: PreparedAttackSkill, intent: AttackInt
 
 export interface RunLoopOptions {
   beforeExtraAttack?: BeforeExtraAttack;
+  beforeExhaustedExtraAttack?: BeforeExtraAttack;
   capRoundKills: boolean;
   capJobKills: boolean;
   commitLosses: boolean;

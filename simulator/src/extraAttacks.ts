@@ -98,7 +98,10 @@ export function processExtraAttacks(
               sourceEffectId,
               sourceMultiplier: multiplier
             };
-            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) continue;
+            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) {
+              loopOptions.beforeExhaustedExtraAttack?.(job, intent, runtime, recorder);
+              continue;
+            }
             loopOptions.beforeExtraAttack?.(job, intent, runtime, recorder);
             recorder.recordScheduledDamageJob(job);
             const result = calculateDamageJob(job, fighters, damageJobOptions);

@@ -211,6 +211,7 @@ export interface SimulationOptions {
   // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.
   rng?: import("./effects").Rng;
   beforeExtraAttack?: import("./runtime").BeforeExtraAttack;
+  beforeExhaustedExtraAttack?: import("./runtime").BeforeExtraAttack;
   attackScheduling?: "side-local" | "reference";
   onEmptyUnit?: import("./runtime").OnEmptyUnit;
   deferAttackSkill?: import("./runtime").DeferAttackSkill;

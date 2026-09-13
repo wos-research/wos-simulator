@@ -15,15 +15,16 @@ export interface Mk2Mechanics {
   attackScheduling?: 'side-local' | 'reference';
   volleyAfterDeath?: VolleyAfterDeath;
   gunpowderTiming?: GunpowderTiming;
+  terminalVolleyShield?: 'roll' | 'skip';
 }
 export const DEFAULT_MK2_MECHANICS: Readonly<Required<Mk2Mechanics>> = Object.freeze({
   fcRounding: 'floor', catalogueCorrections: 'validated', gunpowderShield: 'per-hit', lanceShield: 'per-hit', volleyShield: 'per-hit',
-  attackScheduling: 'side-local', volleyAfterDeath: 'roll', gunpowderTiming: 'after-volley'
+  attackScheduling: 'side-local', volleyAfterDeath: 'roll', gunpowderTiming: 'after-volley', terminalVolleyShield: 'roll'
 });
 const choices: {[K in keyof Mk2Mechanics]: readonly string[]} = {
   fcRounding: ['nearest', 'floor'], catalogueCorrections: ['validated', 'none'], gunpowderShield: ['per-hit', 'reference'], lanceShield: ['per-hit', 'reference'],
   volleyShield: ['per-hit', 'reference'], attackScheduling: ['side-local', 'reference'],
-  volleyAfterDeath: ['roll', 'skip'], gunpowderTiming: ['after-volley', 'reference']
+  volleyAfterDeath: ['roll', 'skip'], gunpowderTiming: ['after-volley', 'reference'], terminalVolleyShield: ['roll', 'skip']
 };
 export function normalizeMechanics(options: Mk2Mechanics = {}): Required<Mk2Mechanics> {
   if (!options || typeof options !== 'object' || Array.isArray(options)) throw new Error('Mk2 mechanics must be an object');

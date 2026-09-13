@@ -1,11 +1,11 @@
 {
-  "sourceVersion": "expedition-mk2-lua54-gunpowder-timing-8",
+  "sourceVersion": "expedition-mk2-lua54-terminal-shield-12",
   "baselineCommit": "fadcab7",
   "policy": "Apply verified optional hooks to the existing engine; absent options preserve legacy behavior. No duplicate engine.",
   "files": {
     "src/types.ts": {
       "baselineSha256": "d4b08f029aabfc0de91360e49367eca2d52919b774a86084f3689accb44d8666",
-      "sha256": "0fe1403f43f03949f09f739caac6ffa34c41cc5635ab0c2f2164883a34cca03f",
+      "sha256": "ae073d2e7582e7766dae3205788b44f0b09a0eeddcde309bb3706007b1239f83",
       "newline": "\r\n",
       "replacements": [
         [
@@ -27,6 +27,10 @@
         [
           "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;",
           "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;\n  deferAttackSkill?: import(\"./runtime\").DeferAttackSkill;"
+        ],
+        [
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;",
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  beforeExhaustedExtraAttack?: import(\"./runtime\").BeforeExtraAttack;"
         ]
       ]
     },
@@ -63,7 +67,7 @@
     },
     "src/runtime.ts": {
       "baselineSha256": "9bd36a76799403bcfba4db987c116008dc5e6910dac27f1cb99c1add8059000a",
-      "sha256": "03e6b8c0863f4feae889cc72cf916cba2c7fef3681ca6a553b62ad2d061e7a07",
+      "sha256": "e996c1104d7c4c52ed12552af338f80a6b0ea351112cb8da199c394605dc6770",
       "newline": "\r\n",
       "replacements": [
         [
@@ -105,12 +109,16 @@
         [
           "export interface RunLoopOptions {",
           "// Optional policy: delay selected declarations until the normal attack and its existing extras finish.\nexport type DeferAttackSkill = (prepared: PreparedAttackSkill, intent: AttackIntent) => boolean;\n\nexport interface RunLoopOptions {"
+        ],
+        [
+          "  beforeExtraAttack?: BeforeExtraAttack;",
+          "  beforeExtraAttack?: BeforeExtraAttack;\n  beforeExhaustedExtraAttack?: BeforeExtraAttack;"
         ]
       ]
     },
     "src/simulator.ts": {
       "baselineSha256": "2c18de8559fbf871bd685f54f3bbeafcc533c88adec729b4aaae5ddab683b5fb",
-      "sha256": "6cff9b103c658eb8317173d25824b0cbd0d9dfa9183f8b15bb6af3a02a169416",
+      "sha256": "2b80230648e21d07ff3d7cb0408aa32a5fe5070ddb2118d28bc06eaa94aa851a",
       "newline": "\r\n",
       "replacements": [
         [
@@ -168,12 +176,16 @@
         [
           "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);",
           "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);\n        if (delayedSkills?.length) {\n          const existingExtras = new Set(runtime.effectIndex.extraAttacks);\n          const delayedEffects = triggerAttackSkills(round, delayedSkills, runtime, recorder, intent);\n          if (delayedEffects) deferredEffects = [...(deferredEffects ?? []), ...delayedEffects];\n          // Only the new activation belongs to this second dispatch. Persistent hero\n          // extras already ran above and must not run or advance their delay again.\n          const newExtras = runtime.effectIndex.extraAttacks.filter(effect => !existingExtras.has(effect));\n          const delayedAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions,\n            roundTargetDamage, loopOptions, results, newExtras);\n          extraAttacks.totalKills += delayedAttacks.totalKills;\n          extraAttacks.skillKills += delayedAttacks.skillKills;\n        }"
+        ],
+        [
+          "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack}",
+          "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack,\n    beforeExhaustedExtraAttack: options.beforeExhaustedExtraAttack}"
         ]
       ]
     },
     "src/extraAttacks.ts": {
       "baselineSha256": "776e93dd1747a150456f73b5745b8da80bf4b0580fbab5410c3e62ac3b256f79",
-      "sha256": "7457d7fa39b62978da3f130bdf7ecea2444067679aeb1320921c1c5f3d3ccadf",
+      "sha256": "d523d0f5f42db2bc6d14edf433e4fda9f2484ae091bef15dfc81a3c186c9fa02",
       "newline": "\r\n",
       "replacements": [
         [
@@ -187,6 +199,10 @@
         [
           "  const effects = runtime.effectIndex.extraAttacks.filter(",
           "  const effects = (selectedEffects ?? runtime.effectIndex.extraAttacks).filter("
+        ],
+        [
+          "            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) continue;",
+          "            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) {\n              loopOptions.beforeExhaustedExtraAttack?.(job, intent, runtime, recorder);\n              continue;\n            }"
         ]
       ]
     }
