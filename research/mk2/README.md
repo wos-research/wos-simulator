@@ -79,3 +79,4 @@ The later [FC10 T12 lancer calibration](lancer-calibration.md) fits six addition
 - [Lower-tier follow-up, +20% retry, and author stat fitter](lancer-followup.md)
 - [FC4/5 lancer RNG controls and T10/T11 FC10 baseline checks](lancer-controls.md)
 - [User-supplied Points table: original generator, Mk2 rounding, and T11 audit](troop-table-audit.md)
+- [FC6–FC10 growth and T10 ×1.20 → T11 rounding hypotheses](fc-growth-probe.md)

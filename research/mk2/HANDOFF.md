@@ -16,6 +16,8 @@ The original generator matches all supplied T1–T10 Points rows. Mk2's blanket 
 
 ## Remaining mechanics work
 
+- Latest [growth/tier probe](fc-growth-probe.md): `round(round(T10 base × 1.20) × current FC factor)` reduces total T11 survivor error from 1372 to 400, but only 2/8 reports are exact. FC9 infantry errors shrink from 49/30/142 to 2/1/8. This is a candidate player T11 baseline, not a replacement for the Labyrinth-only coefficients. The proposed +5% through FC8, then +2.5% at FC9/10 curve makes known T10 controls worse.
+
 - The FC4/5 controls support consuming Ambusher before Crystal Lance even without enemy marksmen. They cannot distinguish round-start Ambusher from immediately-before-attack timing.
 - New FC10 controls currently match **0/2 T10** and **1/5 T11** reports. The discrepancy therefore exists without T12. Resolve Field behavior and high-FC coefficients against these known-troop cases before fitting T12 again.
 - All six fixed Ambusher/Field/Lance orders plus the author's constrained `attack = 3 × health` fits leave FC10 mismatches. See saved results for search bounds; these are not proofs excluding other models.
