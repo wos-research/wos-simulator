@@ -25,3 +25,6 @@ node --import ./simulator/node_modules/tsx/dist/loader.mjs scripts/run_testcases
 ```
 
 Expected catalogue14 outcome:15 executed,6 exact,9 known mismatches,0 processing errors. Historical experimental matches do not convert the nine active-kernel failures into passes.
+
+
+Subsequent checkpoint: the [twenty-report continuation](mk2-continuation-20260913.md) publishes the five reverse health controls and fifteen further C2 observations, reaching401 reports (347 exact,54 pending). It also records the completed fixed original/current-catalogue E1 robustness comparison. The preceding counts and pending-work descriptions are historical.
