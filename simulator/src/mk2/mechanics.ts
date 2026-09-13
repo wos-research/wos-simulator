@@ -55,8 +55,8 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
     }
   }
   if (mechanics.catalogueCorrections === 'validated') {
-    // Separate ten-fight controls support these two original attack values.
-    // Other profiles and axes retain the configured rounding policy.
+    // Separate captured controls support these specific original catalogue cells.
+    // Unlisted profiles and axes retain the configured rounding policy.
     // `none` preserves the former floor reference for reproducible comparisons.
     for (const [id, type, fc] of [
       ['lancer_t10_fc4', 'lancer', 4], ['infantry_t10_fc5', 'infantry', 5]
@@ -64,6 +64,13 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
       const troop = result.troopStats[id];
       if (troop) result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
         attack: generateTroopStats(type, 10, fc).stats.attack}});
+    }
+    // T10 FC1 Infantry: both original attack and health are required by two controls.
+    const fc1 = result.troopStats.infantry_t10_fc1;
+    if (fc1) {
+      const original = generateTroopStats('infantry', 10, 1).stats;
+      result.troopStats.infantry_t10_fc1 = createTroopStatsRecord({...fc1, stats: {...fc1.stats,
+        attack: original.attack, health: original.health}});
     }
   }
   return result;

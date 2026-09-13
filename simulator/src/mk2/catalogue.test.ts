@@ -7,7 +7,7 @@ import {replayMk2} from './replay';
 const config = loadSimulatorConfig();
 const campaign = JSON.parse(readFileSync(new URL('../../../testcases/mk2/campaign_20260913.json', import.meta.url), 'utf8'));
 
-test('validated catalogue policy restores two original attack cells and preserves every other profile and axis', () => {
+test('validated catalogue policy restores four original cells and preserves every other profile and axis', () => {
   const before = JSON.stringify(config);
   const prior = createMk2Config(config, normalizeMechanics({catalogueCorrections: 'none'}));
   const current = createMk2Config(config, normalizeMechanics());
@@ -16,9 +16,9 @@ test('validated catalogue policy restores two original attack cells and preserve
     for (const axis of ['attack', 'defense', 'lethality', 'health'] as const) {
       if (troop.stats[axis] !== current.troopStats[id].stats[axis]) changed.push(`${id}.${axis}`);
     }
-    if (!['lancer_t10_fc4', 'infantry_t10_fc5'].includes(id)) assert.deepEqual(current.troopStats[id], troop);
+    if (!['lancer_t10_fc4', 'infantry_t10_fc5', 'infantry_t10_fc1'].includes(id)) assert.deepEqual(current.troopStats[id], troop);
   }
-  assert.deepEqual(changed.sort(), ['infantry_t10_fc5.attack', 'lancer_t10_fc4.attack']);
+  assert.deepEqual(changed.sort(), ['infantry_t10_fc1.attack', 'infantry_t10_fc1.health', 'infantry_t10_fc5.attack', 'lancer_t10_fc4.attack']);
   assert.equal(prior.troopStats.infantry_t10_fc5.stats.attack, 596);
   assert.equal(current.troopStats.infantry_t10_fc5.stats.attack, 597);
   assert.equal(current.troopStats.infantry_t10_fc5.stats.attack, config.troopStats.infantry_t10_fc5.stats.attack);
@@ -27,6 +27,8 @@ test('validated catalogue policy restores two original attack cells and preserve
   assert.equal(current.troopStats.lancer_t10_fc4.stats.attack, 1705);
   assert.equal(current.troopStats.lancer_t10_fc4.stats.attack, config.troopStats.lancer_t10_fc4.stats.attack);
   assert.equal(current.troopStats.lancer_t10_fc4.stats.health, 568);
+  assert.deepEqual([prior.troopStats.infantry_t10_fc1.stats.attack, prior.troopStats.infantry_t10_fc1.stats.health], [490, 1472]);
+  assert.deepEqual([current.troopStats.infantry_t10_fc1.stats.attack, current.troopStats.infantry_t10_fc1.stats.health], [491, 1473]);
   assert.equal(JSON.stringify(config), before);
   for (const value of ['nearest', '', null, 1]) assert.throws(() => normalizeMechanics({catalogueCorrections: value} as any));
 });
@@ -104,4 +106,30 @@ test('ten Infantry controls pass; reference preserves the three separating first
   }
   assert.deepEqual(mismatches, ['attacker', 'attacker', 'attacker']);
   assert.equal(procOnlyWitnesses, 1, 'Survivor equality alone must not certify the wrong Shield count');
+});
+
+
+test('two T10 FC1 Infantry witnesses pass; none preserves both three-Marksman discrepancies', () => {
+  const rows = campaign.filter((row: any) => row.cohort === 't10_fc1_infantry_stats');
+  assert.equal(rows.length, 2);
+  const roles: string[] = [];
+  for (const row of rows) {
+    const before = JSON.stringify(row);
+    const input = {attacker: row.attacker, defender: row.defender, engagement_type: row.engagement_type};
+    const current = replayMk2(input, config, row.replay);
+    const prior = replayMk2(input, config, {...row.replay, mechanics: {...row.replay.mechanics, catalogueCorrections: 'none'}});
+    const infantrySide = row.attacker.troops.infantry_t10_fc1 ? 'attacker' : 'defender';
+    const marksmanSide = infantrySide === 'attacker' ? 'defender' : 'attacker';
+    roles.push(infantrySide);
+    assert.equal(current.winner, row.observed.winner, row.test_id);
+    assert.deepEqual(current.remaining, row.observed.remaining, row.test_id);
+    assert.equal(row.observed.remaining[marksmanSide].marksman, 1107);
+    assert.equal(prior.remaining[marksmanSide].marksman, 1110);
+    assert.equal(current.rng.calls, 0); assert.equal(prior.rng.calls, 0);
+    assert.equal(current.replayMetadata.effectiveSeed, String(row.replay.reportedSeed));
+    assert.equal(prior.replayMetadata.effectiveSeed, current.replayMetadata.effectiveSeed);
+    assert.equal(current.replayMetadata.version, 'expedition-mk2-lua54-catalogue-11');
+    assert.equal(JSON.stringify(row), before);
+  }
+  assert.deepEqual(roles.sort(), ['attacker', 'defender']);
 });

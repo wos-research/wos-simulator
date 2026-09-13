@@ -9413,5 +9413,153 @@
       "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
       "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
     }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-088",
+    "cohort": "t10_fc1_infantry_stats",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 171.91,
+          "defense": 173.91,
+          "lethality": 132.49,
+          "health": 132.3
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t10_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.55,
+          "defense": 168.55,
+          "lethality": 123.71,
+          "health": 120.71
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293026",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293027,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1107
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 1107,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {}
+      }
+    },
+    "chanceSources": [],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-089",
+    "cohort": "t10_fc1_infantry_stats",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t10_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.55,
+          "defense": 168.55,
+          "lethality": 123.71,
+          "health": 120.71
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 171.91,
+          "defense": 173.91,
+          "lethality": 132.49,
+          "health": 132.3
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293227",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293228,
+      "mechanics": {}
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1107
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 1107
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {}
+      }
+    },
+    "chanceSources": [],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
   }
 ]

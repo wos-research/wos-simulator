@@ -228,3 +228,21 @@ The ordinary CLI was checked on all five records with `--matching unresolved_d1_
 Two new controls use500 T5 FC1 Infantry versus500 T5 non-FC Marksmen, one each direction, on the second account pair. Both actual kernels reproduce114 Marksman survivors, zero Infantry and the winner. The complete16 captured modifier fields for each account agree across roles and were used unchanged. Both kernels consume zero RNG calls; absent activation fields remain unknown. This establishes a new account background for future catalogue tests, not a second independent proof of each troop mechanic.
 
 The passing collection now contains87 campaign reports plus the original160:247 planned fights exact for their available observations. The separate unresolved collections retain one C2 and five D1 reports; they are not counted as passes. No combat implementation changed at this checkpoint.
+
+
+## T10 FC1 Infantry: original attack and health restored
+
+Two new controls use 500 T10 FC1 Infantry versus 2,000 T5 non-FC Marksmen, one each direction, on the second FC2 account pair. Before collection, the four alternatives below were fixed and this army size was chosen because it separates every alternative without a modeled RNG draw. The first chronological report uniquely supported both original values before the reverse report was released for confirmation. All 16 captured modifier fields for each account match the preceding FC2 background controls.
+
+| T10 FC1 Infantry alternative | Attack | Health | Predicted surviving Marksmen, each direction | Exact reports |
+|---|---:|---:|---:|---:|
+| Previous Mk2 flooring | 490 | 1472 | 1110 | 0/2 |
+| Original attack only | 491 | 1472 | 1108 | 0/2 |
+| Original health only | 490 | 1473 | 1109 | 0/2 |
+| Both original values | 491 | 1473 | 1107 | 2/2 |
+
+Both reports observe 1107 Marksmen and zero Infantry. The validated catalogue now restores only this profile's attack491 and health1473 in both kernels. `catalogueCorrections: "none"` retains490/1472. These are original catalogue values, not fitted replacements. This evidence distinguishes the four tested alternatives in this context; it does not prove every term of the damage formula or authorize a blanket rounding change.
+
+The replay version is `expedition-mk2-lua54-catalogue-11`. Together with the earlier T10 FC4 Lancer attack and T10 FC5 Infantry attack corrections, four stat cells across three profiles are restored. No Marksman stat or terminal Volley/Shield hypothesis is promoted.
+
+The passing collection now contains89 campaign reports plus the original160:249 reports exact for all available observations in both actual kernels. The full simulator suite passes303 tests, including all301 legacy reference outcomes and45,440 native Lua RNG values; its TypeScript check passes. The research catalogue suite passes6 tests, and a fresh research replay checks all249 reports with zero errors. The two new anonymized fixtures preserve every battle input, observed field and recorded seed. Six previously shared unresolved reports remain separate. The optional casualty evidence remains40 fights; dashboard checks were not rerun for this catalogue-only change.
