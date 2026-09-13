@@ -31,3 +31,5 @@ The alternative making Lance choose the default frontline fails six of the ten f
 Reverse independent trigger offsets are 0, 1, 1, 0, 0, again corroborated on both devices. Neither these joins nor recorded-seed replay establish a universal timestamp-derived seed rule.
 
 No combat rule was changed for these eleven fixtures. The next controlled experiment targets the separate T10 FC4 Lancer coefficient discrepancy; its results are not included here yet.
+
+The separately frozen additional-Ambusher-roll-on-Lance-extra candidate also fails all ten Ambusher/Lance fights (nine include proc-count differences). That rules out this specific extra-hit reroll/retarget behavior. Terminal spill to another troop type remains unresolved: none of these ten fights has a successful Lance proc when its normal hit exhausts the target while another target remains alive. No extra repeat was requested solely for a condition the existing pair rarely reaches.
