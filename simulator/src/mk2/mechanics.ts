@@ -8,6 +8,7 @@ import type {VolleyAfterDeath} from './volley_persistence';
 
 export interface Mk2Mechanics {
   fcRounding?: 'nearest' | 'floor';
+  catalogueCorrections?: 'validated' | 'none';
   gunpowderShield?: ShieldInteractionMode;
   lanceShield?: ShieldInteractionMode;
   volleyShield?: ShieldInteractionMode;
@@ -16,11 +17,11 @@ export interface Mk2Mechanics {
   gunpowderTiming?: GunpowderTiming;
 }
 export const DEFAULT_MK2_MECHANICS: Readonly<Required<Mk2Mechanics>> = Object.freeze({
-  fcRounding: 'floor', gunpowderShield: 'per-hit', lanceShield: 'per-hit', volleyShield: 'per-hit',
+  fcRounding: 'floor', catalogueCorrections: 'validated', gunpowderShield: 'per-hit', lanceShield: 'per-hit', volleyShield: 'per-hit',
   attackScheduling: 'side-local', volleyAfterDeath: 'roll', gunpowderTiming: 'after-volley'
 });
 const choices: {[K in keyof Mk2Mechanics]: readonly string[]} = {
-  fcRounding: ['nearest', 'floor'], gunpowderShield: ['per-hit', 'reference'], lanceShield: ['per-hit', 'reference'],
+  fcRounding: ['nearest', 'floor'], catalogueCorrections: ['validated', 'none'], gunpowderShield: ['per-hit', 'reference'], lanceShield: ['per-hit', 'reference'],
   volleyShield: ['per-hit', 'reference'], attackScheduling: ['side-local', 'reference'],
   volleyAfterDeath: ['roll', 'skip'], gunpowderTiming: ['after-volley', 'reference']
 };
@@ -52,6 +53,14 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
       result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
         attack: Math.floor(base.attack * factor), health: Math.floor(base.health * factor)}});
     }
+  }
+  if (mechanics.catalogueCorrections === 'validated') {
+    // Ten controlled T10 FC4 Lancer fights distinguish this original catalogue
+    // attack value from the overgeneralized floor profile. This is not a switch
+    // to nearest rounding for other profiles or axes. `none` preserves that reference.
+    const id = 'lancer_t10_fc4', troop = result.troopStats[id];
+    if (troop) result.troopStats[id] = createTroopStatsRecord({...troop, stats: {...troop.stats,
+      attack: generateTroopStats('lancer', 10, 4).stats.attack}});
   }
   return result;
 }

@@ -32,3 +32,5 @@ Run from `simulator` using the installed dependencies:
 npx tsx --test src/mk2/controlledCasualties.test.ts
 npm run typecheck
 ```
+
+The dashboard's existing synthetic overview is a separate display estimate: it rounds from whole-army totals and does not call this function. It is not covered by the per-type settlement validation above. Wiring confirmed settlement into that display requires the actual per-type counts and confirmed battle context; the synthetic overview alone does not supply them.

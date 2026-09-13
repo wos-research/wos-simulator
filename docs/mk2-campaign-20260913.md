@@ -22,7 +22,7 @@ A subsequent comparison used the previously frozen S1 alternative: replace only 
 
 ## Reverse direction and depletion
 
-Five mixed-army attacks complete ten independent Ambusher/Lance battles. Both kernels reproduce all ten winners, all 60 survivor counts, and all 20 explicitly observed Ambusher/Lance activation counts. Together with the initial control, this file contains eleven new fights; the original 160 remain unchanged.
+Five mixed-army attacks complete ten independent Ambusher/Lance battles. Both kernels reproduce all ten winners, all 60 survivor counts, and all 20 explicitly observed Ambusher/Lance activation counts. The Ambusher/Lance subset plus the initial control comprises eleven new fights; the original 160 remain unchanged.
 
 Three reverse traces reach enemy Marksman depletion while Infantry and Lancers still survive. The frozen alternative that skips Ambusher once Marksmen disappear fails two reverse fights, including activation-count differences; one predicts 321 surviving Lancers and 9/7 Ambusher/Lance activations instead of the observed 319 and 15/5. Current continuous draw consumption matches all ten. The planned lower-Marksman repeat was therefore skipped for this question.
 
@@ -30,6 +30,20 @@ The alternative making Lance choose the default frontline fails six of the ten f
 
 Reverse independent trigger offsets are 0, 1, 1, 0, 0, again corroborated on both devices. Neither these joins nor recorded-seed replay establish a universal timestamp-derived seed rule.
 
-No combat rule was changed for these eleven fixtures. The next controlled experiment targets the separate T10 FC4 Lancer coefficient discrepancy; its results are not included here yet.
+No combat rule was changed for these eleven fixtures. The separate T10 FC4 Lancer coefficient experiment is described below.
 
 The separately frozen additional-Ambusher-roll-on-Lance-extra candidate also fails all ten Ambusher/Lance fights (nine include proc-count differences). That rules out this specific extra-hit reroll/retarget behavior. Terminal spill to another troop type remains unresolved: none of these ten fights has a successful Lance proc when its normal hit exhausts the target while another target remains alive. No extra repeat was requested solely for a condition the existing pair rarely reaches.
+
+## T10 FC4 Lancer attack correction
+
+The campaign now includes **21 new independent fights**, alongside the unchanged original 160. All 181 reproduce the winner, six survivor counts, and every explicitly observed chance-skill activation count with their recorded seeds.
+
+Ten new fights use 1,000 T10 FC4 Lancers against 500 T5 FC1 Infantry, five in each direction. The former Mk2 floor profile matched eight; restoring the original catalogue attack value **1705 instead of 1704** matches all ten. One fight in each direction reports 991 surviving Lancers where the former profile predicts 990. Both alternatives already match their skill counts. The other eight are non-discriminating and are preserved.
+
+The alternative was frozen before collection. After the first direction supplied a separating case, the unchanged candidate passed the sealed reverse-direction reports. Both actual kernels then passed all ten after the port. No seed, captured troop count, player modifier, health value, or other troop profile was adjusted.
+
+`catalogueCorrections: "validated"` is now the Mk2 default and restores only that original T10 FC4 Lancer attack cell after the existing FC rounding step. `catalogueCorrections: "none"` retains the former profile for comparison. Replay metadata records the policy and version `expedition-mk2-lua54-catalogue-9`. The standalone legacy engine remains unchanged.
+
+This is evidence for the specific correction within the tested model, not a general nearest-rounding rule or proof of every damage equation. T7 FC4 attack/health remain unchanged. FC5 Lancer health 596/597 is outside these characters' available troop-building levels. The separate T10 FC5 Infantry attack596/597 experiment remains pending.
+
+Validation after the port: all 271 simulator tests and 104 dashboard tests pass; simulator typecheck passes. The simulator suite includes the original160 controlled reports, all301 legacy reference cases, native Lua vectors, all21 new campaign fights, and the reversible two-case T10 discrepancy check. Raw captures, frozen alternative results, independent identities and private source hashes remain archived locally.

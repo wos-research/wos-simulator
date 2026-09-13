@@ -10,7 +10,7 @@ import {gunpowderTiming} from './gunpowder_timing';
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-gunpowder-timing-8';
+export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-9';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   mechanics?: Mk2Mechanics;
