@@ -203,3 +203,28 @@ node --import ./simulator/node_modules/tsx/dist/loader.mjs scripts/run_testcases
 This command was checked through the normal loader: one report, zero processing errors, one unsupported-timing warning, and an expected mismatch with exit status1. It preserves the captured input and recorded seed. Running the entire Mk2 testcase directory also includes this known unresolved report; the passing campaign regression intentionally targets its named collection.
 
 Two further private candidates reserved live Volley's draw before an actual Lance-extra Shield check, delivering its cached result at the unchanged Marksman slot, with either reference or extended Gunpowder timing. Both fail this diagnostic:47 and41 Lancer survivors respectively, with activation-count mismatches. Their scope/parity checks preserve the original160, ten Ambusher/Volley and ten Ambusher/Shield controls. This rules out these particular candidates on the diagnostic; it supplies no production fix and the four confirmation reports remain unused.
+
+
+## Unresolved T10 FC3 Marksman catalogue cohort
+
+Five new reports use2000 T10 FC3 Marksmen attacking4000 T5 FC5 Infantry. They are included unchanged in[`unresolved_d1_20260913.json`](../testcases/mk2/unresolved_d1_20260913.json), outside the passing campaign collection. All16 modifiers for both accounts agree with the preceding controls; all15 chance-skill counts were checked directly against encoded report fields. Heroes and extra battle effects are absent; existing experts remain unchanged.
+
+| Frozen T10 FC3 Marksman variant | Attack | Health | Exact reports, including procs |
+|---|---:|---:|---:|
+| Current |2164|405|0/5|
+| Original attack only |2165|405|0/5|
+| Original health only |2164|406|3/5|
+| Both original |2165|406|4/5|
+
+The first chronological diagnostic matched both health406 variants before the four confirmation reports were released. The combined original values reproduce all five survivor outcomes, but the third report has38 Shield activations while every frozen variant produces37. Volley11 and Gunpowder15 agree. The38 is explicitly encoded in the report, not inferred from a missing field. Because no variant matches the complete cohort, no new catalogue correction has been applied and the reverse repeat was not dispatched.
+
+Under the combined-original diagnostic, that third fight ends with a successful Volley whose normal shot exhausts the remaining Infantry; the model suppresses the extra shot and its Shield check. This is a candidate boundary to investigate against prior reports, not proof that the game rolls Shield there.
+
+The ordinary CLI was checked on all five records with `--matching unresolved_d1_20260913` using the command above: zero processing errors/warnings and five expected current-kernel mismatches. The245 passing planned fights remain unchanged. Together with C2, the shared evidence now also exposes six unresolved reports. Survivor-only agreement is not counted as a complete match.
+
+
+## Second FC2 account-pair background
+
+Two new controls use500 T5 FC1 Infantry versus500 T5 non-FC Marksmen, one each direction, on the second account pair. Both actual kernels reproduce114 Marksman survivors, zero Infantry and the winner. The complete16 captured modifier fields for each account agree across roles and were used unchanged. Both kernels consume zero RNG calls; absent activation fields remain unknown. This establishes a new account background for future catalogue tests, not a second independent proof of each troop mechanic.
+
+The passing collection now contains87 campaign reports plus the original160:247 planned fights exact for their available observations. The separate unresolved collections retain one C2 and five D1 reports; they are not counted as passes. No combat implementation changed at this checkpoint.
