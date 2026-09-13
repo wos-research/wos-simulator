@@ -46,7 +46,7 @@ The alternative was frozen before collection. After the first direction supplied
 
 This is evidence for the specific correction within the tested model, not a general nearest-rounding rule or proof of every damage equation. T7 FC4 attack/health remain unchanged. FC5 Lancer health 596/597 is outside these characters' available troop-building levels. The separate T10 FC5 Infantry attack 596/597 experiment is described below.
 
-Validation after the port: all 271 simulator tests and 104 dashboard tests pass; simulator typecheck passes. The simulator suite includes the original160 controlled reports, all301 legacy reference cases, native Lua vectors, all21 new campaign fights, and the reversible two-case T10 discrepancy check. Raw captures, frozen alternative results, independent identities and private source hashes remain archived locally.
+Validation after the port: all 271 simulator tests and 104 dashboard tests pass; simulator typecheck passes. The simulator suite includes the original 160 controlled reports, all301 legacy reference cases, native Lua vectors, all21 new campaign fights, and the reversible two-case T10 discrepancy check. Raw captures, frozen alternative results, independent identities and private source hashes remain archived locally.
 
 
 ## T10 FC5 Infantry attack correction
@@ -64,3 +64,12 @@ This supports these specific original catalogue values within the tested model. 
 Across these ten Infantry fights, independent trigger joins corroborated on both devices give seven seed-minus-trigger offsets of +1 and three of 0. No seed was used to choose the joins. Recorded-seed replay remains distinct from independent timestamp-derived prediction.
 
 After the Infantry port and additional casualty fixtures, all **292 simulator tests**, **104 dashboard tests**, and the simulator TypeScript check pass. The campaign now also has 30 confirmed-context casualty fixtures covering 210 explicitly encoded category values; this separate optional projection does not certify per-skill credit.
+
+
+## FC2 background for same-side Ambusher/Volley testing
+
+Two further independent controls use 500 T5 FC1 Infantry versus 500 T5 non-FC Marksmen, once each direction. Both actual kernels reproduce the winner, 152 surviving Marksmen and zero Infantry without changes. The model has zero chance sources and RNG calls. No explicit random-skill proc observations were available, so these controls make no proc-count claim.
+
+The collection now contains **33 new campaign fights plus the original 160**, with exact checks restricted to each report's available observations. These controls also supply complete raw account modifiers for all three troop types, corroborated across reversed roles. Lancer modifiers came from the recorded per-type and common buff fields; they were not inferred from Infantry or copied from another account.
+
+A prospective screen uses those captured modifiers for 500 T7 FC1 Lancers against 500 T7 FC1 Lancers plus 50 T7 non-FC Marksmen. Its frozen alternatives place the mixed side's dead-source Volley check before or after its own Ambusher. In a fixed arbitrary 20-seed panel, observable proc totals differ in 13/20 mixed-attacking and 15/20 mixed-defending runs; survivors tie in all 40. These are planning results, not live validation of either placement. They justify the next batch and the need to retain both sides' Ambusher counts and the mixed side's Volley count.

@@ -3563,5 +3563,169 @@
       "scope": "Controlled hero-free occupied-tile battle; winner, six survivor counts, and all explicitly observed chance-skill procs.",
       "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
     }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-032",
+    "cohort": "fc2_zero_rng_background",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789282004",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789282005,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 152
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 152
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {}
+      }
+    },
+    "chanceSources": [],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile background: observed winner and six survivor counts. No explicit random-skill proc fields were available; the unchanged model has zero chance sources and RNG calls.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
+  },
+  {
+    "test_id": "mk2-campaign-20260913-033",
+    "cohort": "fc2_zero_rng_background",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 185.58,
+          "defense": 186.08,
+          "lethality": 133.61,
+          "health": 132.66
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789282198",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789282199,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 152
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 152,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {}
+      }
+    },
+    "chanceSources": [],
+    "evidenceSummary": {
+      "independentFights": 1,
+      "reportCopies": 1,
+      "scope": "Controlled hero-free occupied-tile background: observed winner and six survivor counts. No explicit random-skill proc fields were available; the unchanged model has zero chance sources and RNG calls.",
+      "timingLimit": "Recorded-seed replay; timestamp is derived from the report seed and does not independently establish seeding time."
+    }
   }
 ]
