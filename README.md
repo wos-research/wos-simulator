@@ -19,7 +19,7 @@ is organized around three primary components plus shared data and documentation.
 The [Mk2 integration guide](docs/mk2-integration.md) describes the opt-in replay engine,
 seed provenance, and reproducible checks. The original 160 captured cases live in
 [`testcases/mk2/controlled.json`](testcases/mk2/controlled.json), with a
-[readable report catalog](docs/mk2-controlled-reports.md). The [campaign evidence](docs/mk2-campaign-20260913.md) brings the current passing corpus to **319 reports**. Additional completed mixed-skill reports and unimplemented candidates are documented in [pending research](docs/mk2-pending-research.md). All replay inputs, recorded seeds and available observations are included under `testcases/mk2/`; raw identifying network captures remain private.
+[readable report catalog](docs/mk2-controlled-reports.md). The [campaign evidence](docs/mk2-campaign-20260913.md) brings the current passing corpus to **326 reports**. Additional completed mixed-skill reports and unimplemented candidates are documented in [pending research](docs/mk2-pending-research.md). All replay inputs, recorded seeds and available observations are included under `testcases/mk2/`; raw identifying network captures remain private.
 
 ## Components
 
