@@ -246,3 +246,12 @@ Both reports observe 1107 Marksmen and zero Infantry. The validated catalogue no
 The replay version is `expedition-mk2-lua54-catalogue-11`. Together with the earlier T10 FC4 Lancer attack and T10 FC5 Infantry attack corrections, four stat cells across three profiles are restored. No Marksman stat or terminal Volley/Shield hypothesis is promoted.
 
 The passing collection now contains89 campaign reports plus the original160:249 reports exact for all available observations in both actual kernels. The full simulator suite passes303 tests, including all301 legacy reference outcomes and45,440 native Lua RNG values; its TypeScript check passes. The research catalogue suite passes6 tests, and a fresh research replay checks all249 reports with zero errors. The two new anonymized fixtures preserve every battle input, observed field and recorded seed. Six previously shared unresolved reports remain separate. The optional casualty evidence remains40 fights; dashboard checks were not rerun for this catalogue-only change.
+
+
+## Unresolved mixed skills without Shield
+
+The first report from500 T5 FC4 Lancers plus500 T7 FC3 Marksmen versus1000 T5 FC1 Infantry is now included in[`unresolved_e1_20260913.json`](../testcases/mk2/unresolved_e1_20260913.json). Both current kernels reproduce436 Lancer and500 Marksman survivors, with zero Infantry. However, the report explicitly records Lance4, Volley3 and Gunpowder1; current replay predicts3,4 and1. Direct encoded-field checks confirm the counts, and all16 captured modifiers per actor and their experts match their respective preceding controls. No heroes or extra battle effects are present.
+
+This isolates an ordering discrepancy without Crystal Shield. The swapped counts do not by themselves establish a replacement ordering. Four further reports remain unused for confirmation; no new candidate or production change is inferred from survivor agreement. The normal CLI reproduces the mismatch with zero processing errors and one existing unsupported mixed-context timing warning. Use the earlier command with `--matching unresolved_e1_20260913`.
+
+There are now seven shared unresolved reports, separate from249 passing reports. The unresolved collections are intended to expose known failures for review, so a run over the entire Mk2 directory will report their expected mismatches.
