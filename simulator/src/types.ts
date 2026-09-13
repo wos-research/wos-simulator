@@ -216,6 +216,7 @@ export interface SimulationOptions {
   rng?: import("./effects").Rng;
   beforeExtraAttack?: import("./runtime").BeforeExtraAttack;
   attackScheduling?: "side-local" | "reference";
+  ambusherTiming?: "before_target" | "round_start";
   onEmptyUnit?: import("./runtime").OnEmptyUnit;
   deferAttackSkill?: import("./runtime").DeferAttackSkill;
   mode?: SimulationMode;

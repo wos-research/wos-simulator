@@ -1,6 +1,6 @@
 # Mk2 in the main simulator
 
-The main `simulator/src` engine now includes the measured Mk2 changes: Lua 5.4 replay RNG, FC attack/health floor rounding for T1–T10, per-hit Shield checks, separate Volley hits, side-local attack scheduling, Ambusher target-time checks, Volley checks after depletion, and the guarded Gunpowder-after-Volley rule. The production engine does not import the research snapshot. Provisional newer-hero and T12 definitions remain outside this integration.
+The main `simulator/src` engine now includes the measured Mk2 changes: Lua 5.4 replay RNG, FC attack/health floor rounding for T1–T10, per-hit Shield checks, separate Volley hits, side-local attack scheduling, Ambusher target-time checks, Volley checks after depletion, and the guarded Gunpowder-after-Volley rule. The production engine does not import the research snapshot. The later [lancer calibration](lancer-calibration.md) adds guarded combined lancer timing and provisional T12 FC10 lancer coefficients. Other provisional newer-hero/T12 definitions remain outside this integration.
 
 ## Compatibility and selection
 
@@ -76,3 +76,9 @@ The 160 supplied controls contain 34 troop-only input profiles, with no heroes. 
 `simulator/src/mk2.test.ts` verifies the 160 exact controlled outcomes, all 275 recorded skill counts, 301 unchanged reference outcomes, 145 native Lua RNG vectors, timestamp provenance and conflicts, missing timestamps, custom RNG handling, sampling, and the testcase reporting path. `dashboard/web/lib/simulator/replay.test.ts` exercises worker serialization, aggregation, traces, saved forms, and legacy restoration. The existing engine and dashboard suites remain applicable.
 
 The dashboard TypeScript target is ES2020 because the Lua RNG needs native BigInt arithmetic.
+
+## Additional lancer calibration
+
+Six timestamped, hero-free FC10 T12 lancer versus FC9 T10 lancer reports now match exactly. This adds a guarded round-start Ambusher schedule, Field-before-Lance ordering and per-hit Field checks, together with provisional T12 lancer coefficients. Several stat pairs fit all six reports; neither the true base stats nor the combined RNG schedule is uniquely established. See [the full results and evidence limits](lancer-calibration.md). `simulator/src/lancerMk2.test.ts` covers these cases, scope guards, seed provenance and stat ambiguity. The original 160-report checks and 301 legacy expectations remain unchanged.
+
+The [lower-tier follow-up](lancer-followup.md) tests 21 additional reports. The previous T12 coefficients and the +20% hypothesis do not reproduce that broader cohort exactly. The author’s fitter improves residuals but also leaves mismatches; these exploratory fits are not adopted into production.

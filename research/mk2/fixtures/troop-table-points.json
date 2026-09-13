@@ -1,0 +1,762 @@
+{
+  "source": "Two user-supplied table screenshots; Points columns transcribed, not the Level rating columns. Riders = lancer, Hunters = marksman, Damage = lethality (all 10).",
+  "levelInterpretation": "10.1 through 10.5 interpreted as T10 FC1-FC5; 11.1 through 11.5 as T11 FC1-FC5. T11 FC1-FC4 are not selectable catalogue troops.",
+  "rows": [
+    {
+      "type": "infantry",
+      "tableLevel": "1",
+      "tier": 1,
+      "fc": 0,
+      "points": {
+        "attack": 63,
+        "defense": 10,
+        "health": 189,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "2",
+      "tier": 2,
+      "fc": 0,
+      "points": {
+        "attack": 94,
+        "defense": 10,
+        "health": 283,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "3",
+      "tier": 3,
+      "fc": 0,
+      "points": {
+        "attack": 132,
+        "defense": 10,
+        "health": 397,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "4",
+      "tier": 4,
+      "fc": 0,
+      "points": {
+        "attack": 172,
+        "defense": 10,
+        "health": 516,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "5",
+      "tier": 5,
+      "fc": 0,
+      "points": {
+        "attack": 206,
+        "defense": 10,
+        "health": 619,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "6",
+      "tier": 6,
+      "fc": 0,
+      "points": {
+        "attack": 243,
+        "defense": 10,
+        "health": 730,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "7",
+      "tier": 7,
+      "fc": 0,
+      "points": {
+        "attack": 287,
+        "defense": 10,
+        "health": 862,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "8",
+      "tier": 8,
+      "fc": 0,
+      "points": {
+        "attack": 339,
+        "defense": 10,
+        "health": 1017,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "9",
+      "tier": 9,
+      "fc": 0,
+      "points": {
+        "attack": 400,
+        "defense": 10,
+        "health": 1200,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10",
+      "tier": 10,
+      "fc": 0,
+      "points": {
+        "attack": 472,
+        "defense": 10,
+        "health": 1416,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10.1",
+      "tier": 10,
+      "fc": 1,
+      "points": {
+        "attack": 491,
+        "defense": 10,
+        "health": 1473,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10.2",
+      "tier": 10,
+      "fc": 2,
+      "points": {
+        "attack": 515,
+        "defense": 10,
+        "health": 1546,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10.3",
+      "tier": 10,
+      "fc": 3,
+      "points": {
+        "attack": 541,
+        "defense": 10,
+        "health": 1624,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10.4",
+      "tier": 10,
+      "fc": 4,
+      "points": {
+        "attack": 568,
+        "defense": 10,
+        "health": 1705,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "10.5",
+      "tier": 10,
+      "fc": 5,
+      "points": {
+        "attack": 597,
+        "defense": 10,
+        "health": 1790,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11",
+      "tier": 11,
+      "fc": 0,
+      "points": {
+        "attack": 520,
+        "defense": 10,
+        "health": 1561,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11.1",
+      "tier": 11,
+      "fc": 1,
+      "points": {
+        "attack": 541,
+        "defense": 10,
+        "health": 1624,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11.2",
+      "tier": 11,
+      "fc": 2,
+      "points": {
+        "attack": 568,
+        "defense": 10,
+        "health": 1704,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11.3",
+      "tier": 11,
+      "fc": 3,
+      "points": {
+        "attack": 596,
+        "defense": 10,
+        "health": 1790,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11.4",
+      "tier": 11,
+      "fc": 4,
+      "points": {
+        "attack": 626,
+        "defense": 10,
+        "health": 1880,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "infantry",
+      "tableLevel": "11.5",
+      "tier": 11,
+      "fc": 5,
+      "points": {
+        "attack": 658,
+        "defense": 10,
+        "health": 1973,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "1",
+      "tier": 1,
+      "fc": 0,
+      "points": {
+        "attack": 189,
+        "defense": 10,
+        "health": 63,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "2",
+      "tier": 2,
+      "fc": 0,
+      "points": {
+        "attack": 283,
+        "defense": 10,
+        "health": 94,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "3",
+      "tier": 3,
+      "fc": 0,
+      "points": {
+        "attack": 397,
+        "defense": 10,
+        "health": 132,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "4",
+      "tier": 4,
+      "fc": 0,
+      "points": {
+        "attack": 516,
+        "defense": 10,
+        "health": 172,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "5",
+      "tier": 5,
+      "fc": 0,
+      "points": {
+        "attack": 619,
+        "defense": 10,
+        "health": 206,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "6",
+      "tier": 6,
+      "fc": 0,
+      "points": {
+        "attack": 730,
+        "defense": 10,
+        "health": 243,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "7",
+      "tier": 7,
+      "fc": 0,
+      "points": {
+        "attack": 862,
+        "defense": 10,
+        "health": 287,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "8",
+      "tier": 8,
+      "fc": 0,
+      "points": {
+        "attack": 1017,
+        "defense": 10,
+        "health": 339,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "9",
+      "tier": 9,
+      "fc": 0,
+      "points": {
+        "attack": 1200,
+        "defense": 10,
+        "health": 400,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10",
+      "tier": 10,
+      "fc": 0,
+      "points": {
+        "attack": 1416,
+        "defense": 10,
+        "health": 472,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10.1",
+      "tier": 10,
+      "fc": 1,
+      "points": {
+        "attack": 1473,
+        "defense": 10,
+        "health": 491,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10.2",
+      "tier": 10,
+      "fc": 2,
+      "points": {
+        "attack": 1546,
+        "defense": 10,
+        "health": 515,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10.3",
+      "tier": 10,
+      "fc": 3,
+      "points": {
+        "attack": 1624,
+        "defense": 10,
+        "health": 541,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10.4",
+      "tier": 10,
+      "fc": 4,
+      "points": {
+        "attack": 1705,
+        "defense": 10,
+        "health": 568,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "10.5",
+      "tier": 10,
+      "fc": 5,
+      "points": {
+        "attack": 1790,
+        "defense": 10,
+        "health": 597,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11",
+      "tier": 11,
+      "fc": 0,
+      "points": {
+        "attack": 1561,
+        "defense": 10,
+        "health": 520,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11.1",
+      "tier": 11,
+      "fc": 1,
+      "points": {
+        "attack": 1624,
+        "defense": 10,
+        "health": 541,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11.2",
+      "tier": 11,
+      "fc": 2,
+      "points": {
+        "attack": 1704,
+        "defense": 10,
+        "health": 568,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11.3",
+      "tier": 11,
+      "fc": 3,
+      "points": {
+        "attack": 1790,
+        "defense": 10,
+        "health": 596,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11.4",
+      "tier": 11,
+      "fc": 4,
+      "points": {
+        "attack": 1880,
+        "defense": 10,
+        "health": 626,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "lancer",
+      "tableLevel": "11.5",
+      "tier": 11,
+      "fc": 5,
+      "points": {
+        "attack": 1973,
+        "defense": 10,
+        "health": 658,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "1",
+      "tier": 1,
+      "fc": 0,
+      "points": {
+        "attack": 252,
+        "defense": 10,
+        "health": 47,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "2",
+      "tier": 2,
+      "fc": 0,
+      "points": {
+        "attack": 378,
+        "defense": 10,
+        "health": 71,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "3",
+      "tier": 3,
+      "fc": 0,
+      "points": {
+        "attack": 529,
+        "defense": 10,
+        "health": 99,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "4",
+      "tier": 4,
+      "fc": 0,
+      "points": {
+        "attack": 688,
+        "defense": 10,
+        "health": 129,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "5",
+      "tier": 5,
+      "fc": 0,
+      "points": {
+        "attack": 825,
+        "defense": 10,
+        "health": 155,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "6",
+      "tier": 6,
+      "fc": 0,
+      "points": {
+        "attack": 974,
+        "defense": 10,
+        "health": 183,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "7",
+      "tier": 7,
+      "fc": 0,
+      "points": {
+        "attack": 1149,
+        "defense": 10,
+        "health": 215,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "8",
+      "tier": 8,
+      "fc": 0,
+      "points": {
+        "attack": 1356,
+        "defense": 10,
+        "health": 254,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "9",
+      "tier": 9,
+      "fc": 0,
+      "points": {
+        "attack": 1600,
+        "defense": 10,
+        "health": 300,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10",
+      "tier": 10,
+      "fc": 0,
+      "points": {
+        "attack": 1888,
+        "defense": 10,
+        "health": 354,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10.1",
+      "tier": 10,
+      "fc": 1,
+      "points": {
+        "attack": 1964,
+        "defense": 10,
+        "health": 368,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10.2",
+      "tier": 10,
+      "fc": 2,
+      "points": {
+        "attack": 2062,
+        "defense": 10,
+        "health": 387,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10.3",
+      "tier": 10,
+      "fc": 3,
+      "points": {
+        "attack": 2165,
+        "defense": 10,
+        "health": 406,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10.4",
+      "tier": 10,
+      "fc": 4,
+      "points": {
+        "attack": 2273,
+        "defense": 10,
+        "health": 426,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "10.5",
+      "tier": 10,
+      "fc": 5,
+      "points": {
+        "attack": 2387,
+        "defense": 10,
+        "health": 448,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11",
+      "tier": 11,
+      "fc": 0,
+      "points": {
+        "attack": 2082,
+        "defense": 10,
+        "health": 390,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11.1",
+      "tier": 11,
+      "fc": 1,
+      "points": {
+        "attack": 2165,
+        "defense": 10,
+        "health": 406,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11.2",
+      "tier": 11,
+      "fc": 2,
+      "points": {
+        "attack": 2273,
+        "defense": 10,
+        "health": 427,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11.3",
+      "tier": 11,
+      "fc": 3,
+      "points": {
+        "attack": 2387,
+        "defense": 10,
+        "health": 448,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11.4",
+      "tier": 11,
+      "fc": 4,
+      "points": {
+        "attack": 2506,
+        "defense": 10,
+        "health": 470,
+        "lethality": 10
+      }
+    },
+    {
+      "type": "marksman",
+      "tableLevel": "11.5",
+      "tier": 11,
+      "fc": 5,
+      "points": {
+        "attack": 2632,
+        "defense": 10,
+        "health": 494,
+        "lethality": 10
+      }
+    }
+  ]
+}

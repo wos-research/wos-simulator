@@ -66,7 +66,16 @@ No simulator mechanic was changed while packaging this review. Runtime files are
 
 ## Main-engine integration reports
 
+- [Current lancer investigation handoff](HANDOFF.md)
+
+The later [FC10 T12 lancer calibration](lancer-calibration.md) fits six additional timestamped reports in the main engine. Its stats and combined skill schedule are provisional; they are separate from this pinned snapshot’s 160 recorded-seed controls.
+
 - [Main simulator integration and compatibility](integration.md)
 - [Integration validation](reports/integration-validation.md)
 - [Replay accuracy comparison](reports/accuracy-comparison.md)
 - [Per-case comparison](reports/accuracy-cases.md)
+- [FC10 T12 lancer calibration and follow-up evidence needed](lancer-calibration.md)
+
+- [Lower-tier follow-up, +20% retry, and author stat fitter](lancer-followup.md)
+- [FC4/5 lancer RNG controls and T10/T11 FC10 baseline checks](lancer-controls.md)
+- [User-supplied Points table: original generator, Mk2 rounding, and T11 audit](troop-table-audit.md)

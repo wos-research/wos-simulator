@@ -259,7 +259,8 @@ function runLoop(
     const roundStartTroops = snapshotTroops(runtime.troops);
     processEffectSchedule(runtime, round);
     const sideLocal = options.attackScheduling === "side-local";
-    triggerRoundStartSkills(round, runtime, recorder, prepared => !sideLocal || prepared.skill.id !== "Ambusher");
+    const targetTimeAmbusher = sideLocal && options.ambusherTiming !== "round_start";
+    triggerRoundStartSkills(round, runtime, recorder, prepared => !targetTimeAmbusher || prepared.skill.id !== "Ambusher");
 
     const intents: AttackIntent[] = [];
     const results: DamageJobResult[] = [];
@@ -277,7 +278,7 @@ function runLoop(
           options.onEmptyUnit?.(round, side, dealerUnit, runtime, recorder);
           continue;
         }
-        if (sideLocal && dealerUnit === "lancer") triggerRoundStartSkills(round, runtime, recorder,
+        if (targetTimeAmbusher && dealerUnit === "lancer") triggerRoundStartSkills(round, runtime, recorder,
           prepared => prepared.skill.id === "Ambusher" && prepared.skill.side === side, "before_target");
         const ordered = orderFromEffects(dealerUnit, side, runtime.effectIndex, true);
         const takerUnit = firstLivingUnit(ordered?.order ?? UNIT_TYPES, takerSide, roundStartTroops);
