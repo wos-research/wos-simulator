@@ -85,3 +85,8 @@ Captured inputs are sanitized: account names, mail identifiers, raw network capt
 ## Integration validation
 
 At publication, the full simulator suite passes 248 tests, including the 160 controlled replays, 301 legacy reference outcomes, and 45,440 native Lua values. The dashboard passes 104 tests and its production build. The CLI/tooling suite passes 53 tests (including tests also counted in the simulator suite). A real browser worker replay, save, and reload preserves Mk2 mode, its recorded seed, and a visible timestamp mismatch. The native testcase runner checks 960 survivor values and 275 explicitly recorded skill counts across the 160 reports, with one replay per case and no stat adjustments.
+
+
+## Supplemental evidence discovery
+
+The aggregate forty-fight casualty evidence is stored under `research/mk2/controlled_casualties_20260913.json` and verified by its dedicated test. It is intentionally outside the ordinary battle-file scan because it references campaign battles rather than containing root armies. This resolves the sidecar adaptation error identified in PCB’s dated integration review while retaining its exact contents. A full Mk2 scan still includes known mixed-skill failures and unsupported T12 inbox cases; those remain visible errors or mismatches.

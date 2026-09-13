@@ -14,7 +14,7 @@ The caller must explicitly confirm battletype 9, a controlled occupied-tile batt
 
 ## Validation
 
-The thirty fixtures in `testcases/mk2/controlled_casualties_20260913.json` reference campaign cases 002–031. Tests replay their original armies and recorded seeds, then apply the projection to predicted survivors and compare all **210 explicit wire category values** from 70 soldier records. The report tags for dead, wounded and minor wounded were present in every record, including all 70 explicitly encoded zero-death values; no missing category was silently replaced with zero.
+The first thirty entries in [the casualty evidence file](../research/mk2/controlled_casualties_20260913.json) reference campaign cases 002–031. Tests replay their original armies and recorded seeds, then apply the projection to predicted survivors and compare all **210 explicit wire category values** from 70 soldier records. The report tags for dead, wounded and minor wounded were present in every record, including all 70 explicitly encoded zero-death values; no missing category was silently replaced with zero.
 
 Hospital context came from independent controller UI observations before and after testing, plus a conservative upper bound on possible new wounded in each ten-fight cohort. Both characters remained well below half capacity. For the first cohort, observed infirmary increases exactly equal the pilot's wounded plus its ten reports' wounded.
 
@@ -47,3 +47,8 @@ The unchanged projection also matches all ten C1 fights using either actual kern
 The Lancer account's recorded hospital rises1,848 to3,011, matching1,163 encoded wounded; the Infantry account rises171 to1,921, matching1,750. Both capacities are296,300. Even counting every one of the5,000 dispatched troops per account as wounded gives conservative occupancy bounds6,848 and5,171, well below capacity. No healing during C1 is explicitly operator-attested.
 
 For this cohort, hospital values are contemporaneous operator UI ledger records; independently archived before/after hospital screenshots were unavailable. This observation history is distinct from the60 independently encoded report fields. Experts are present in the raw formations, so these results do not independently establish expert mechanics. Private identities, raw reports, wire-presence checks and the hospital record snapshots remain archived locally.
+
+
+## Evidence file location
+
+The complete forty-fight aggregate lives in `research/mk2/controlled_casualties_20260913.json`. It supplements the campaign battle records and has no root armies of its own. Its bytes are unchanged by relocation from `testcases/mk2`; the ordinary battle loader now scans only battle records, while the dedicated casualty test still verifies all270 explicit category fields. No malformed battle is silently skipped, and no report evidence was removed.

@@ -5,7 +5,7 @@ import {loadSimulatorConfig} from '../config-node';
 import {replayMk2} from './replay';
 import {projectControlledCasualties, SIDES, TROOP_TYPES, type ConfirmedContext, type Counts} from './controlledCasualties';
 const config = loadSimulatorConfig();
-const fixture = JSON.parse(readFileSync(new URL('../../../testcases/mk2/controlled_casualties_20260913.json', import.meta.url), 'utf8'));
+const fixture = JSON.parse(readFileSync(new URL('../../../research/mk2/controlled_casualties_20260913.json', import.meta.url), 'utf8'));
 const campaign = JSON.parse(readFileSync(new URL('../../../testcases/mk2/campaign_20260913.json', import.meta.url), 'utf8'));
 const base = () => {
   const initial: Counts = {attacker:{infantry:100,lancer:0,marksman:0},defender:{infantry:100,lancer:0,marksman:0}};
