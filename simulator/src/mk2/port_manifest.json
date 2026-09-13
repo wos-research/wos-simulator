@@ -1,5 +1,5 @@
 {
-  "sourceVersion": "expedition-mk2-lua54-catalogue-15",
+  "sourceVersion": "expedition-mk2-lua54-catalogue-16",
   "baselineCommit": "fadcab7",
   "policy": "Apply verified optional hooks to the existing engine; absent options preserve legacy behavior. No duplicate engine.",
   "files": {
@@ -215,5 +215,15 @@
     "rule": "Reserve live Volley before Crystal Lance; count successful unused reservations without additional damage or RNG draw.",
     "troopStatsOrProbabilitiesChanged": false,
     "loaderCompatibility": "An explicitly undefined optional seed is treated as absent; defined seed and other extra input fields remain outside the scope."
+  },
+  "scopedC2": {
+    "module": "src/mk2/scoped_c2_volley.ts",
+    "moduleSha256": "bc980f73de68f58181c20d0cbbda77fd736d458db43d6cf11c36cd52e030758f",
+    "scope": "500 T5 FC5 Lancers +5 T7 FC3 Marksmen versus1 T5 FC5 Infantry; exact tested normalized modifiers/current catalogue; either role",
+    "evidenceReports": 20,
+    "unusedSuccessfulCounterWitnesses": 3,
+    "rule": "Reserve live Volley before normal Lancer reactive Shield and Crystal Lance; apply Volley at original Marksman slot; defer Gunpowder in this exact context; count successful unused reservations without extra damage or RNG draws.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "limitations": "Observed totals distinguish frozen candidates in this exact scope, not unique server internals or untested combinations."
   }
 }

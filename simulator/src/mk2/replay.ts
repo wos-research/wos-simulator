@@ -9,13 +9,15 @@ import {volleyAfterDeath} from './volley_persistence';
 import {gunpowderTiming} from './gunpowder_timing';
 import {terminalVolleyShield} from './terminal_volley_shield';
 import {createScopedE1Volley} from './scoped_e1_volley';
+import {createScopedC2Volley} from './scoped_c2_volley';
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-15';
+export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-16';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   e1Volley?: 'scoped' | 'reference';
+  c2Volley?: 'scoped' | 'reference';
   mechanics?: Mk2Mechanics;
 }
 export interface Mk2ReplayMetadata extends SeedMetadata {
@@ -23,6 +25,7 @@ export interface Mk2ReplayMetadata extends SeedMetadata {
   version: string;
   mechanics: Required<Mk2Mechanics>;
   e1Volley?: unknown;
+  c2Volley?: unknown;
 }
 export interface Mk2ReplayResult extends BattleResult {
   rng: Mk2RngMetadata;
@@ -68,14 +71,16 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   warnings.push(...terminal.warnings);
   const stream = createBattleRng(seed.metadata.effectiveSeed, options.trace);
   const e1=createScopedE1Volley(compiled,stream,mechanics,options.e1Volley);
-  const result = runPrepared(compiled, undefined, {mode: options.trace ? 'trace' : 'standard', rng: e1?.rng ?? stream.rng,
+  const c2=createScopedC2Volley(compiled,stream,mechanics,options.c2Volley);
+  const result = runPrepared(compiled, undefined, {mode: options.trace ? 'trace' : 'standard', rng: c2?.rng ?? e1?.rng ?? stream.rng,
     beforeExhaustedExtraAttack: terminal.beforeExhaustedExtraAttack,
     beforeExtraAttack: crystalShieldExtraHits(mechanics), attackScheduling: mechanics.attackScheduling,
-    onEmptyUnit: e1?.onEmptyUnit ?? volleyAfterDeath(compiled, mechanics.volleyAfterDeath), deferAttackSkill: timing.deferAttackSkill});
+    onEmptyUnit: c2?.onEmptyUnit ?? e1?.onEmptyUnit ?? volleyAfterDeath(compiled, mechanics.volleyAfterDeath), deferAttackSkill: c2?.deferAttackSkill ?? timing.deferAttackSkill});
   const e1Metadata=e1?.finish(result);
+  const c2Metadata=c2?.finish(result);
   const total = (side: 'attacker'|'defender') => Object.values(result.remaining[side]).reduce((a, b) => a + b, 0);
   if (result.winner === 'draw' && total('attacker') > 0 && total('defender') > 0)
     throw new Error(`Unresolved round cap with both sides alive after ${result.rounds} rounds`);
   return {...result, rng: stream.metadata(), replayMetadata: {mode: 'mk2', version: MK2_VERSION,
-    ...seed.metadata, mechanics,...(e1Metadata?{e1Volley:e1Metadata}:{})}, warnings};
+    ...seed.metadata, mechanics,...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{})}, warnings:c2?c2.adjustWarnings(warnings):warnings};
 }
