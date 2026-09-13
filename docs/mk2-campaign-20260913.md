@@ -143,3 +143,18 @@ Case `mk2-campaign-20260913-056` reports166 Lancer survivors and Ambusher21, Lan
 The Infantry account's captured common defense modifier is five percentage points lower than its earlier background, consistently in all five reports. Replays use those live fields unchanged; the reason for the change is not inferred. All16 fields on the Lancer account are unchanged. Independent trigger joins on both devices produce seed offsets1,1,0,1,1, retaining the unresolved seeding-time limitation.
 
 The collection now has60 new campaign fixtures plus160 original reports, all220 exact for available observations in both kernels. No combat rule or catalogue value changed for these additions.
+
+
+## T9 Lancer profile: first direction
+
+Five T9 non-FC Lancer attacks against T7 non-FC Infantry,500 troops per side, match both unchanged kernels:211 Lancer survivors each and Ambusher counts24,22,18,23,18. The first chronological diagnostic passed before the remaining four reports were released. All16 modifier fields and normalized stats match the preceding F27 controls. Distinct report identities remain separate despite matching survivor totals.
+
+This extends combined profile compatibility and explicit proc-count checks. Only Infantry targets are present, so it does not independently test a new Ambusher targeting rule. The model makes110 probability calls per fight; underlying xoshiro outputs range177-194 because Lua integer-range rejection can consume more than one output per call. These model traces are not a server-call trace. Reverse confirmation is pending.
+
+## Ambusher/Shield: reverse confirmation
+
+Five reverse fights complete C1. Current draw ownership matches all10 winners,60 survivor values and30 explicit proc counts in both actual kernels. Shield-first matches0/10. The first chronological reverse diagnostic passed before four further reports were released; no seeds, captured modifiers or candidate rules changed. All16 modifiers for each account match the first C1 batch. All five independently joined reverse trigger offsets are+1, which does not remove the previously observed zero offsets.
+
+Reverse case `mk2-campaign-20260913-066` records168 defending Lancers, with Ambusher19, Lance16 and attacking Infantry Shield57. This confirms the tested Ambusher-before-normal-Shield allocation in both orientations against the frozen swap alternative. It does not uniquely identify every internal scheduling operation. No combat code change was needed.
+
+The collection now contains70 campaign fixtures plus160 original reports:230 fights exact for all available observations in both actual kernels. The next mixed Lance/Volley/Gunpowder-versus-Shield experiment remains distinct from the now-completed C1 question.
