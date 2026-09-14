@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { test } from "node:test";
@@ -615,6 +615,16 @@ function mk2CapturedEntry() {
 };
 }
 
+// This existing captured control remains exact under the fixed source catalogue.
+// Keep mk2CapturedEntry above unchanged: its old damage oracle is historical evidence,
+// not a value to rewrite to make loader tests pass.
+function mk2ExactToolingEntry() {
+  const rows = JSON.parse(readFileSync(new URL('../../../testcases/mk2/health_pending_20260913.json', import.meta.url), 'utf8'));
+  const matches = rows.filter((row: {test_id: string}) => row.test_id === 'mk2-health-pending-20260913-001');
+  assert.equal(matches.length, 1);
+  return structuredClone(matches[0]);
+}
+
 function runMk2Rows(rows: unknown[], options = {}) {
   const testcaseRoot = tempDir("mk2-testcases");
   writeFileSync(resolve(testcaseRoot, "captured.json"), JSON.stringify(rows));
@@ -632,7 +642,7 @@ test("Mk2 mode is explicit while old rows keep their legacy defaults", () => {
 });
 
 test("Mk2 recorded control executes once and retains exact comparison and replay provenance", () => {
-  const row = mk2CapturedEntry();
+  const row = mk2ExactToolingEntry();
   const before = structuredClone(row);
   const report = runMk2Rows([row], { seed: "ignored-legacy-override", includeSamples: true });
   assert.equal(report.counts.errors, 0);
@@ -640,13 +650,13 @@ test("Mk2 recorded control executes once and retains exact comparison and replay
   const summary = Object.values(report.testcases)[0]!;
   assert.deepEqual(row, before);
   assert.equal(detail.sampleCount, 1);
-  assert.equal(detail.result?.remaining.attacker.marksman, 9090);
+  assert.deepEqual(detail.result?.remaining, row.observed.remaining);
   assert.equal(detail.exactComparison?.exact, true);
   assert.equal(detail.exactComparison?.survivorChecks, 6);
-  assert.deepEqual(detail.exactComparison?.procChecks.map((check) => check.actual), [4]);
+  assert.deepEqual(detail.exactComparison?.procChecks.map((check) => check.actual).sort(), [7, 10].sort());
   assert.equal(detail.gameStatAdjustment, undefined);
   assert.equal(detail.replayMetadata?.seedSource, "recorded-seed");
-  assert.equal(detail.replayMetadata?.effectiveSeed, "1789153123");
+  assert.equal(detail.replayMetadata?.effectiveSeed, String(row.replay.reportedSeed));
   assert.equal(detail.replayMetadata?.timestampSource, "derived-report-seed-minus-one");
   assert.equal(detail.replayMetadata?.timestampMatchesRecordedSeed, true);
   assert.equal(detail.replayInput?.seed, undefined);
@@ -659,12 +669,12 @@ test("Mk2 recorded control executes once and retains exact comparison and replay
 });
 
 test("Mk2 wrong per-type survivors or proc counts fail even with unchanged totals and never fit stats", () => {
-  const original = mk2CapturedEntry();
+  const original = mk2ExactToolingEntry();
   const wrongUnits = structuredClone(original);
-  wrongUnits.observed.remaining.attacker.marksman -= 1;
+  wrongUnits.observed.remaining.attacker.lancer -= 1;
   wrongUnits.observed.remaining.attacker.infantry += 1;
   const wrongProcs = structuredClone(original);
-  wrongProcs.observed.skillProcs.attacker["90009"] += 1;
+  wrongProcs.observed.skillProcs.attacker["90004"] += 1;
   const report = runMk2Rows([original, wrongUnits, wrongProcs]);
   assert.equal(report.counts.executed, 3);
   const [valid, units, procs] = report.details;
@@ -695,21 +705,21 @@ test("Mk2 comparison distinguishes missing, explicit-zero and unsupported report
 });
 
 test("Mk2 missing timestamp uses its fixed default and mismatched recorded seed stays explicit", () => {
-  const row = mk2CapturedEntry();
+  const row = mk2ExactToolingEntry();
   const fallback = { ...row, replay: {} };
   const mismatch = { ...row, replay: { ...row.replay, timestamp: "0", timestampSource: "battle-trigger" } };
   const report = runMk2Rows([fallback, mismatch]);
   assert.equal(report.details[0]?.replayMetadata?.seedSource, "default");
   assert.equal(report.details[0]?.replayMetadata?.effectiveSeed, "1");
   assert.equal(report.details[1]?.replayMetadata?.timestampMatchesRecordedSeed, false);
-  assert.equal(report.details[1]?.replayMetadata?.effectiveSeed, row.replay.reportedSeed);
+  assert.equal(report.details[1]?.replayMetadata?.effectiveSeed, String(row.replay.reportedSeed));
   assert.equal(report.details[1]?.exactComparison?.exact, true);
   assert.ok(report.details[1]?.replayWarnings?.length);
 });
 
 test("Mk2 async testcase jobs carry the same replay options and exact results", async () => {
   const testcaseRoot = tempDir("mk2-async-testcases");
-  const row = mk2CapturedEntry();
+  const row = mk2ExactToolingEntry();
   writeFileSync(resolve(testcaseRoot, "captured.json"), JSON.stringify([row]));
   const options = { testcaseRoot, repeat: 41, seed: "legacy-seed" };
   const config = loadSimulatorConfig();

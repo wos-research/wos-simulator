@@ -7,28 +7,17 @@ import {replayMk2} from './replay';
 const config = loadSimulatorConfig();
 const campaign = JSON.parse(readFileSync(new URL('../../../testcases/mk2/campaign_20260913.json', import.meta.url), 'utf8'));
 
-test('validated catalogue policy restores nine original cells and preserves every other profile and axis', () => {
+// Historical reversible floor/correction controls remain reproducible at commit
+// 755bd728167a29e54d247ed3733363e3e1a6be11; current protected stats are fixed.
+test('approved source catalogue is fixed under validated and none without mutating the caller', () => {
   const before = JSON.stringify(config);
-  const prior = createMk2Config(config, normalizeMechanics({catalogueCorrections: 'none'}));
+  const none = createMk2Config(config, normalizeMechanics({catalogueCorrections: 'none'}));
   const current = createMk2Config(config, normalizeMechanics());
-  const changed: string[] = [];
-  for (const [id, troop] of Object.entries(prior.troopStats)) {
-    for (const axis of ['attack', 'defense', 'lethality', 'health'] as const) {
-      if (troop.stats[axis] !== current.troopStats[id].stats[axis]) changed.push(`${id}.${axis}`);
-    }
-    if (!['lancer_t10_fc4', 'infantry_t10_fc5', 'infantry_t10_fc1', 'lancer_t10_fc1', 'marksman_t10_fc3','lancer_t10_fc5'].includes(id)) assert.deepEqual(current.troopStats[id], troop);
+  assert.deepEqual(current.troopStats, none.troopStats);
+  for (const [id, troop] of Object.entries(config.troopStats)) {
+    if (troop.tier >= 1 && troop.tier <= 10 && troop.fc >= 0 && troop.fc <= 5)
+      assert.deepEqual(current.troopStats[id], troop, id);
   }
-  assert.deepEqual(changed.sort(), ['infantry_t10_fc1.attack', 'infantry_t10_fc1.health', 'infantry_t10_fc5.attack', 'lancer_t10_fc4.attack', 'lancer_t10_fc1.attack', 'lancer_t10_fc1.health', 'marksman_t10_fc3.attack', 'marksman_t10_fc3.health','lancer_t10_fc5.health'].sort());
-  assert.equal(prior.troopStats.infantry_t10_fc5.stats.attack, 596);
-  assert.equal(current.troopStats.infantry_t10_fc5.stats.attack, 597);
-  assert.equal(current.troopStats.infantry_t10_fc5.stats.attack, config.troopStats.infantry_t10_fc5.stats.attack);
-  assert.equal(current.troopStats.infantry_t10_fc5.stats.health, 1790);
-  assert.equal(prior.troopStats.lancer_t10_fc4.stats.attack, 1704);
-  assert.equal(current.troopStats.lancer_t10_fc4.stats.attack, 1705);
-  assert.equal(current.troopStats.lancer_t10_fc4.stats.attack, config.troopStats.lancer_t10_fc4.stats.attack);
-  assert.equal(current.troopStats.lancer_t10_fc4.stats.health, 568);
-  assert.deepEqual([prior.troopStats.infantry_t10_fc1.stats.attack, prior.troopStats.infantry_t10_fc1.stats.health], [490, 1472]);
-  assert.deepEqual([current.troopStats.infantry_t10_fc1.stats.attack, current.troopStats.infantry_t10_fc1.stats.health], [491, 1473]);
   assert.equal(JSON.stringify(config), before);
   for (const value of ['nearest', '', null, 1]) assert.throws(() => normalizeMechanics({catalogueCorrections: value} as any));
 });
@@ -68,7 +57,7 @@ test('ten captured T10 battles pass; reversible uncorrected mode reproduces the 
 });
 
 
-test('ten Infantry controls pass; reference preserves the three separating first-direction failures', () => {
+test('ten Infantry observations remain exact with fixed source stats under validated and none', () => {
   const rows = campaign.filter((row: any) => row.cohort === 't10_fc5_infantry_stats');
   assert.equal(rows.length, 10);
   const mismatches: string[] = [];
@@ -104,12 +93,12 @@ test('ten Infantry controls pass; reference preserves the three separating first
     if (!priorProcsExact || !priorSurvivorsExact) mismatches.push(row.attacker.troops.infantry_t10_fc5 ? 'attacker' : 'defender');
     assert.equal(JSON.stringify(row), before);
   }
-  assert.deepEqual(mismatches, ['attacker', 'attacker', 'attacker']);
-  assert.equal(procOnlyWitnesses, 1, 'Survivor equality alone must not certify the wrong Shield count');
+  assert.deepEqual(mismatches, []);
+  assert.equal(procOnlyWitnesses, 0, 'Both policies preserve the same source stats and explicit Shield observations');
 });
 
 
-test('two T10 FC1 Infantry witnesses pass; none preserves both three-Marksman discrepancies', () => {
+test('two T10 FC1 Infantry observations remain exact under the fixed source catalogue', () => {
   const rows = campaign.filter((row: any) => row.cohort === 't10_fc1_infantry_stats');
   assert.equal(rows.length, 2);
   const roles: string[] = [];
@@ -124,11 +113,12 @@ test('two T10 FC1 Infantry witnesses pass; none preserves both three-Marksman di
     assert.equal(current.winner, row.observed.winner, row.test_id);
     assert.deepEqual(current.remaining, row.observed.remaining, row.test_id);
     assert.equal(row.observed.remaining[marksmanSide].marksman, 1107);
-    assert.equal(prior.remaining[marksmanSide].marksman, 1110);
+    assert.deepEqual(prior.remaining, row.observed.remaining, row.test_id);
     assert.equal(current.rng.calls, 0); assert.equal(prior.rng.calls, 0);
     assert.equal(current.replayMetadata.effectiveSeed, String(row.replay.reportedSeed));
     assert.equal(prior.replayMetadata.effectiveSeed, current.replayMetadata.effectiveSeed);
-    assert.equal(current.replayMetadata.version, 'expedition-mk2-lua54-catalogue-19');
+    assert.equal(current.replayMetadata.version, 'expedition-mk2-lua54-catalogue-20-source-fc0-5');
+    assert.deepEqual(current.replayMetadata.statCatalogue, {policy: 'supplied-source-t1-t10-fc0-fc5', historicalReplayCommit: '755bd728167a29e54d247ed3733363e3e1a6be11', rngScopeValidation: 'retained-for-reconstruction-not-revalidated'});
     assert.equal(JSON.stringify(row), before);
   }
   assert.deepEqual(roles.sort(), ['attacker', 'defender']);

@@ -82,8 +82,8 @@ test('Mk2 configuration preserves reference profiles and introduces no hero or T
   assert.ok(!Object.values(current.troopStats).some(troop => troop.tier === 12));
   assert.equal(current.troopSkills.skills.Volley.effects['Volley/1'].type, 'extra_skill_attack');
   assert.equal(config.troopSkills.skills.Volley.effects['Volley/1'].type, 'active.troop.damage.up');
-  assert.equal(current.troopStats.marksman_t5_fc3.stats.attack, 945);
-  assert.equal(current.troopStats.marksman_t5_fc3.stats.health, 177);
+  // Historical floor945/177 is preserved at commit 755bd728167a29e54d247ed3733363e3e1a6be11.
+  assert.deepEqual(current.troopStats.marksman_t5_fc3, config.troopStats.marksman_t5_fc3);
   for (const [id, troop] of Object.entries(config.troopStats))
     if (troop.tier > 10) assert.deepEqual(current.troopStats[id], troop);
   const reference = createMk2Config(config, normalizeMechanics({fcRounding: 'nearest', volleyShield: 'reference'}));

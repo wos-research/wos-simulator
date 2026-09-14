@@ -89,5 +89,9 @@ export function createMk2Config(config: SimulatorConfig, mechanics: Required<Mk2
     if (fc5Lancer) result.troopStats.lancer_t10_fc5 = createTroopStatsRecord({...fc5Lancer, stats: {...fc5Lancer.stats,
       health: generateTroopStats('lancer', 10, 5).stats.health}});
   }
+  // Preserve source stats in the user-locked T1-T10 / FC0-FC5 range.
+  for (const [id, troop] of Object.entries(config.troopStats)) {
+    if (troop.tier >= 1 && troop.tier <= 10 && troop.fc >= 0 && troop.fc <= 5) result.troopStats[id] = troop;
+  }
   return result;
 }

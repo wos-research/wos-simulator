@@ -21,7 +21,7 @@ import {createScopedGlobalAmbusher,normalizeScopedAmbusherMechanics} from './sco
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-19';
+export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-20-source-fc0-5';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   e1Volley?: 'scoped' | 'reference';
@@ -38,6 +38,8 @@ export interface Mk2ReplayMetadata extends SeedMetadata {
   mode: 'mk2';
   version: string;
   mechanics: Required<Mk2Mechanics>;
+  /** Actual stat policy; legacy rounding/correction settings apply outside this protected range. */
+  statCatalogue: {policy: 'supplied-source-t1-t10-fc0-fc5'; historicalReplayCommit: string; rngScopeValidation: 'retained-for-reconstruction-not-revalidated'};
   e1Volley?: unknown;
   c2Volley?: unknown;
   fc4Volley?: unknown;
@@ -121,5 +123,5 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   const termination = result.winner === 'draw' && total('attacker') > 0 && total('defender') > 0
     ? {reason: 'round-cap' as const, rounds: result.rounds} : undefined;
   return {...result, rng: stream.metadata(), replayMetadata: {mode: 'mk2', version: MK2_VERSION,
-    ...seed.metadata, mechanics,...(termination?{termination}:{}),...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{}),...(ownMetadata?{ownInfantryAmbusher:ownMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
+    ...seed.metadata, mechanics,statCatalogue:{policy:'supplied-source-t1-t10-fc0-fc5',historicalReplayCommit:'755bd728167a29e54d247ed3733363e3e1a6be11',rngScopeValidation:'retained-for-reconstruction-not-revalidated'},...(termination?{termination}:{}),...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{}),...(ownMetadata?{ownInfantryAmbusher:ownMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
 }
