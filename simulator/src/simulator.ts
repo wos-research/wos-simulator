@@ -382,6 +382,7 @@ function runLoop(
     recorder.recordRound(round, roundStartTroops, intents);
   }
 
+  options.onBattleEnd?.(rounds, runtime, recorder);
   const winner = winnerFor(runtime.troops) ?? "draw";
   return {
     fighters,

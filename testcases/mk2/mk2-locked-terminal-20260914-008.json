@@ -1,0 +1,223 @@
+{
+  "test_id": "mk2-locked-terminal-20260914-008",
+  "simulation_mode": "mk2",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "lancer_t5_fc5": 10
+    },
+    "stats": {
+      "lancer": {
+        "attack": 264.11,
+        "defense": 265.79,
+        "lethality": 180.51,
+        "health": 179.22
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "marksman_t7_fc3": 5,
+      "lancer_t10_fc5": 1
+    },
+    "stats": {
+      "marksman": {
+        "attack": 292.8,
+        "defense": 302.4,
+        "lethality": 192.34,
+        "health": 193.17
+      },
+      "lancer": {
+        "attack": 267.49,
+        "defense": 277.09,
+        "lethality": 186.69,
+        "health": 187.42
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "reportedSeed": "1789415365",
+    "trace": true,
+    "timestamp": "1789415364",
+    "timestampSource": "captured-world-march-linked-mail",
+    "terminalVolleyEvidence": {
+      "battleType": 9,
+      "actors": {
+        "attacker": {
+          "profiles": [
+            {
+              "id": 20500,
+              "star": 5,
+              "soldier_type": 2,
+              "count": 10
+            }
+          ],
+          "rawBuffs": {
+            "10101": 11723,
+            "10102": 11623,
+            "10103": 15263,
+            "10104": 15456,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 14461,
+            "10108": 14532,
+            "10109": 10956,
+            "10110": 10456,
+            "10111": 16141,
+            "10112": 16157,
+            "10113": 18236,
+            "10114": 18754,
+            "10115": 3590,
+            "10116": 3390
+          },
+          "experts": [
+            [
+              {
+                "id": 7010,
+                "level": 12,
+                "break_level": 2,
+                "skills": {
+                  "7010": 2,
+                  "70101": 4
+                }
+              },
+              {
+                "id": 7004,
+                "level": 20,
+                "break_level": 2,
+                "skills": {
+                  "7004": 2,
+                  "70041": 1
+                }
+              }
+            ]
+          ],
+          "heroes": [
+            []
+          ],
+          "extSoldierSkills": [
+            []
+          ],
+          "soldierSkillChanges": [
+            []
+          ],
+          "battleBuffs": [],
+          "skillChanges": []
+        },
+        "defender": {
+          "profiles": [
+            {
+              "id": 21000,
+              "star": 5,
+              "soldier_type": 2,
+              "count": 1
+            },
+            {
+              "id": 30700,
+              "star": 3,
+              "soldier_type": 3,
+              "count": 5
+            }
+          ],
+          "rawBuffs": {
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 18574,
+            "10114": 19884,
+            "10115": 3425,
+            "10116": 3225
+          },
+          "experts": [
+            [
+              {
+                "id": 7010,
+                "level": 12,
+                "break_level": 2,
+                "skills": {
+                  "7010": 2,
+                  "70101": 4
+                }
+              },
+              {
+                "id": 7004,
+                "level": 17,
+                "break_level": 2,
+                "skills": {
+                  "7004": 2,
+                  "70041": 1
+                }
+              }
+            ]
+          ],
+          "heroes": [
+            []
+          ],
+          "extSoldierSkills": [
+            []
+          ],
+          "soldierSkillChanges": [
+            [],
+            []
+          ],
+          "battleBuffs": [],
+          "skillChanges": []
+        }
+      }
+    }
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 4
+      }
+    },
+    "totals": {
+      "attacker": 0,
+      "defender": 4
+    },
+    "winner": "defender",
+    "skillProcs": {
+      "attacker": {
+        "90008": 2
+      },
+      "defender": {
+        "90004": 6,
+        "90006": 2,
+        "90008": 3,
+        "90009": 3
+      }
+    }
+  },
+  "cohort": "source-death16",
+  "evidenceSummary": {
+    "recordedSeedAuthoritative": true,
+    "winnerAndSixSurvivorsRetained": true,
+    "explicitSkillCounters": 5,
+    "rawBattleBytesSha256": "38ace93d0d80c57c902d2524f1bf3a731dd0ef0e9e2810b2ea645a30144f376f",
+    "sourceDecodedReportSha256": "6165a2d488a31d9b83d3989ea1f4ea449810311ca45ecf060622b722a07b5416",
+    "note": "Retrospective transfer to locked stats of previously captured experiments; not a new prospective timing study."
+  }
+}

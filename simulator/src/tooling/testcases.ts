@@ -827,6 +827,7 @@ export function testcaseReplayOptions(entry: unknown): Mk2ReplayOptions | undefi
     ...(replay.t10Ambusher !== undefined ? { t10Ambusher: replay.t10Ambusher } : {}),
     ...(replay.globalAmbusher !== undefined ? { globalAmbusher: replay.globalAmbusher } : {}),
     ...(replay.ownInfantryAmbusher !== undefined ? { ownInfantryAmbusher: replay.ownInfantryAmbusher } : {}),
+    ...(replay.terminalVolleyEvidence !== undefined ? { terminalVolleyEvidence: replay.terminalVolleyEvidence } : {}),
     ...(replay.mechanics !== undefined ? { mechanics: replay.mechanics } : {}),
   }) as Mk2ReplayOptions;
 }

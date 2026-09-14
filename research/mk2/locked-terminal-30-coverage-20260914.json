@@ -1,0 +1,247 @@
+{
+  "reports": 30,
+  "survivorChecks": 180,
+  "explicitCounterChecks": 150,
+  "cases": [
+    {
+      "test_id": "mk2-locked-terminal-20260914-001",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-001.json",
+      "sha256": "f665fd2bcf6512af8248c2bb40a571f5187b199fe359d8b79557518a426866f8",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-002",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-002.json",
+      "sha256": "c81d4ff7dedb0eca654111691412e2f2ddab4eb7ce06c39c6406745fde3dd449",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-003",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-003.json",
+      "sha256": "ab963495276b79a25d53583a8749d66505906298703ff165dcf5dd71f57d4fdd",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-004",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-004.json",
+      "sha256": "9255093a690ac7f94ebe214b46d2ce111964ba34ef535b928cbe2299117686d8",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-005",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-005.json",
+      "sha256": "8afbd88c3920d1f1d0d8421988f285e3edda743726dcd48bfd6465912f61ba88",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-006",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-006.json",
+      "sha256": "f59585a8ac129b0ff254352845fee09434fe60bae0391883d7c08aea8db49624",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-007",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-007.json",
+      "sha256": "e6cc4700ff6414d8d8f70767cfdd6f11076c06eeeeb72e94b8e1ecb764a8e45b",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-008",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-008.json",
+      "sha256": "55b9c1d398ff4af1b73e11a04a50e2112b5d5da81d34ecff85fcec7d523e19b3",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-009",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-009.json",
+      "sha256": "31447ede90f34fb13bf5866cd5d7e3451ffd39b48d5b3a054ba25427bbbd8d82",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-010",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-010.json",
+      "sha256": "39dd2c95ad409de96f34b0f698f41cc73560487eb75bd77d7ac37dbff9e1e329",
+      "cohort": "source-death16",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-011",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-011.json",
+      "sha256": "9c671db0765eddfd47f9fbe48cd0ed4036a9b531575caeff26670e903121ad17",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-012",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-012.json",
+      "sha256": "2a6189e3179bbec158f0fcf9ca3414d827b3e3bc50a0c013ae757b0476ceff02",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-013",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-013.json",
+      "sha256": "669e0cf93266967bbbfc3683d1ed326bbe70eb1a79baa6c5d8b487ac3f3fc71f",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-014",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-014.json",
+      "sha256": "09cc1ec5e3e9209bf70a6dcdb90fcfba6057356c22f6e4715d7aaae33bc4575b",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-015",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-015.json",
+      "sha256": "7f29fd094973c75c355cc154be7ce1b63671df6edf997ecfcb2d85e1ea6660cf",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-016",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-016.json",
+      "sha256": "a9b84116b5b7c2ef7278655921fe80da34f5cb14012aaf50ac434d55d848dffb",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-017",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-017.json",
+      "sha256": "9bae00a6dbedab03f579ef9fd63da649582793bbf91478840054203552227760",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-018",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-018.json",
+      "sha256": "92c849a21ab71528767a69625cf8facb9f3f8cf3ff04e673339b4f4d38d92b64",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-019",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-019.json",
+      "sha256": "7911955a9e512b012f28a7b31321351099fb18eadb54bb81c6f601f843d74d23",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-020",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-020.json",
+      "sha256": "4a9cd5291cd0d4a689aca01df60ddb23ba462f5e5bd5c969ca3620a3e7ca911d",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-021",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-021.json",
+      "sha256": "74b0e61064967a122372ce5bfe6a8f7da961a14f78858c79eedce5e52f496cab",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-022",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-022.json",
+      "sha256": "ce28f5ed1ebef527d69864788f32df7f13a5b4ab04b1b6cfe5b43b158ae01740",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-023",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-023.json",
+      "sha256": "7ba6dbabafc3ab5bda0ca68016da8f28c6b7148c0622e0ea44b22a51efc0b33d",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-024",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-024.json",
+      "sha256": "9e14be5ff1e7114eac7213da30ad5fdb1b1a49093e7207d2e4f76d6940ae4181",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-025",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-025.json",
+      "sha256": "8a468efad4d58b52f70f5d4e9aed505abed97a433fe0e34d2958965fe2fc976c",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-026",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-026.json",
+      "sha256": "ce37b03130ea522ec9ab15d400710242cf56b9cc83fa25b044ddb887d998b49b",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-027",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-027.json",
+      "sha256": "05245b47ee0dfc679234e024665ce0a045e01d3a0e30b9c68f8c37b8162c8c36",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-028",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-028.json",
+      "sha256": "6f1e3e789e72a397cddcce09e038c22515ca314e6c430729fc0b72c23d236b3c",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-029",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-029.json",
+      "sha256": "c7db697cb769c8f3c5d0f81839616e0464b64cb87d04d9f797349ad063f82d23",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    },
+    {
+      "test_id": "mk2-locked-terminal-20260914-030",
+      "fixture": "testcases/mk2/mk2-locked-terminal-20260914-030.json",
+      "sha256": "148cae492b29146f6f4f687bc2fdc6cc3c422c0c41be6a7c55f747ad8bc7adf3",
+      "cohort": "terminal-volley38-40",
+      "survivorChecks": 6,
+      "explicitCounterChecks": 5
+    }
+  ]
+}

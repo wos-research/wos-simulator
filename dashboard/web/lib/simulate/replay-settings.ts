@@ -13,6 +13,7 @@ export interface ReplaySettings {
   reportedSeed: string;
   timestampSource?: string;
   mechanics?: Mk2ReplayOptions["mechanics"];
+  terminalVolleyEvidence?: Mk2ReplayOptions["terminalVolleyEvidence"];
 }
 
 export function replaySettingsFromRequest(request?: SimulateRequestPayload | null): ReplaySettings {
@@ -22,6 +23,7 @@ export function replaySettingsFromRequest(request?: SimulateRequestPayload | nul
     reportedSeed: request?.mk2?.reportedSeed === undefined ? "" : String(request.mk2.reportedSeed),
     timestampSource: request?.mk2?.timestampSource,
     mechanics: request?.mk2?.mechanics,
+    terminalVolleyEvidence: request?.mk2?.terminalVolleyEvidence === undefined ? undefined : structuredClone(request.mk2.terminalVolleyEvidence),
   };
 }
 
@@ -40,6 +42,7 @@ export function withReplaySettings(request: SimulateRequestPayload, settings: Re
       } : {}),
       ...(settings.reportedSeed.trim() ? { reportedSeed: settings.reportedSeed.trim() } : {}),
       ...(settings.mechanics ? { mechanics: settings.mechanics } : {}),
+      ...(settings.terminalVolleyEvidence !== undefined ? { terminalVolleyEvidence: structuredClone(settings.terminalVolleyEvidence) } : {}),
     },
   };
 }

@@ -5,7 +5,7 @@
   "files": {
     "src/types.ts": {
       "baselineSha256": "d4b08f029aabfc0de91360e49367eca2d52919b774a86084f3689accb44d8666",
-      "sha256": "c718b56c1f47c318740af5e426417f1885503d7bba75293da473cf9efc085a33",
+      "sha256": "1e2b8203b60107965b4c8309451686a8b54596daeaf873bd13725211f992f4ea",
       "newline": "\r\n",
       "replacements": [
         [
@@ -35,6 +35,10 @@
         [
           "export interface SimulationOptions {",
           "export interface SimulationOptions {\n  // Optional scoped RNG reservation; runs after effect scheduling and before ordinary attacks.\n  onRoundStart?: (round: number, runtime: import(\"./runtime\").Runtime, recorder: import(\"./recorder\").BattleRecorder) => void;"
+        ],
+        [
+          "export interface SimulationOptions {\n",
+          "export interface SimulationOptions {\n  /** Optional scoped accounting hook before the battle result is materialized. */\n  onBattleEnd?: (rounds: number, runtime: import(\"./runtime\").Runtime, recorder: import(\"./recorder\").BattleRecorder) => void;\n"
         ]
       ]
     },
@@ -122,7 +126,7 @@
     },
     "src/simulator.ts": {
       "baselineSha256": "2c18de8559fbf871bd685f54f3bbeafcc533c88adec729b4aaae5ddab683b5fb",
-      "sha256": "f3597d219d33091b51ca1677aadb50f35951d73f47505a9cb49c475145744696",
+      "sha256": "3969751bc5082e17ee9db769faa33aac9165b016bf327af219e60c6ab4786e72",
       "newline": "\r\n",
       "replacements": [
         [
@@ -188,6 +192,10 @@
         [
           "    processEffectSchedule(runtime, round);",
           "    processEffectSchedule(runtime, round);\n    options.onRoundStart?.(round, runtime, recorder);"
+        ],
+        [
+          "  const winner = winnerFor(runtime.troops) ?? \"draw\";",
+          "  options.onBattleEnd?.(rounds, runtime, recorder);\n  const winner = winnerFor(runtime.troops) ?? \"draw\";"
         ]
       ]
     },
