@@ -1,3 +1,4 @@
+import {deriveExactScopeInput} from './semantic_scope_bridge';
 import { defaultRoundCapScopeView } from './default_round_cap_scope_view';
 import {exactScope as ownScope,createOwnInfantryAmbusher} from './scoped_own_infantry_ambusher';
 /** Browser-safe Mk2 entry point. Legacy prepareBattle/runPrepared defaults stay unchanged. */
@@ -83,13 +84,14 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
     if (new Set(types).size < types.length)
       warnings.push(`${side}: mixed tier/FC stacks use the existing weighted-average stats and maximum skill eligibility; this profile is not validated.`);
   }
+  const bridge=deriveExactScopeInput(compiled);
   orderCrystalShield(compiled, mechanics);
   const timing = gunpowderTiming(compiled, mechanics);
   warnings.push(...timing.warnings);
   const terminal = terminalVolleyShield(compiled, mechanics);
   warnings.push(...terminal.warnings);
   const stream = createBattleRng(seed.metadata.effectiveSeed, options.trace);
-  const scopeCompiled=defaultRoundCapScopeView(compiled);
+  const scopeCompiled=bridge.accepted ? {...compiled,input:bridge.input} : defaultRoundCapScopeView(compiled);
   const e1=createScopedE1Volley(scopeCompiled,stream,mechanics,options.e1Volley);
   const c2=createScopedC2Volley(scopeCompiled,stream,mechanics,options.c2Volley);
   const fc4=createScopedFC4Volley(scopeCompiled,stream,mechanics,options.fc4Volley);

@@ -94,10 +94,7 @@ test('changed counts, modifiers, heroes and extra profile keys retain current re
     ['modifier', i => i.attacker.stats.marksman.health += 0.01],
     ['hero', i => i.attacker.heroes = {Mia: {skill_1: 1}}],
     ['joiner', i => i.attacker.joiner_heroes = {Mia: {skill_1: 1}}],
-    ['empty passive field', i => i.attacker.passive = {}],
     ['extra positive profile', i => i.attacker.troops.lancer_t7_fc5 = 1],
-    ['extra zero profile', i => i.attacker.troops.lancer_t7_fc5 = 0],
-    ['opposing zero profile', i => i.defender.troops.marksman_t5 = 0],
     ['FC4 LC', i => {delete i.attacker.troops.lancer_t5_fc5; i.attacker.troops.lancer_t5_fc4 = 500;}],
     ['Ambusher', i => {delete i.attacker.troops.lancer_t5_fc5; i.attacker.troops.lancer_t10_fc5 = 500;}],
     ['Shield', i => {delete i.defender.troops.infantry_t5_fc1; i.defender.troops.infantry_t5_fc5 = 25;}]
@@ -178,4 +175,20 @@ test('e1Volley reference policy survives testcase loading with identical full re
   assert.equal(JSON.stringify(row), before);
   const scoped = replayMk2(input, config, {...row.replay, e1Volley: 'scoped'});
   assert.notDeepEqual(scoped.skillReport, direct.skillReport, 'fixture must distinguish reference and scoped policies');
+});
+
+test('equivalent empty input forms preserve scoped full results and input immutability', () => {
+  const opts = {reportedSeed: cases[0].replay.reportedSeed, trace: true};
+  const expected = replayMk2(structuredClone(base), config, opts);
+  assert.ok(expected.replayMetadata.e1Volley);
+  const equivalents: [string, (input: any) => void][] = [
+    ['empty passive field', i => i.attacker.passive = {}],
+    ['extra zero profile', i => i.attacker.troops.lancer_t7_fc5 = 0],
+    ['opposing zero profile', i => i.defender.troops.marksman_t5 = 0],
+  ];
+  for (const [label, mutate] of equivalents) {
+    const input = structuredClone(base); mutate(input); const before = structuredClone(input);
+    assert.deepEqual(replayMk2(input, config, opts), expected, label);
+    assert.deepEqual(input, before, label);
+  }
 });
