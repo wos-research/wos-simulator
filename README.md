@@ -16,9 +16,9 @@ is organized around three primary components plus shared data and documentation.
 
 ## Expedition Simulator Mk2
 
-The [current reviewed corpus](docs/mk2-reviewed-research536-20260914.md) includes **536 reports: 516 exact matches and 20 unresolved cases** under catalogue 19, with 535 correct observed winner classifications. All fixtures and complete anonymized combat reports are included, including the UI-supported winner correction for a battle with zero survivors on both sides. Private candidates remain separate from installed accuracy. The 516/516 checkpoint below describes the earlier, narrower corpus.
+The [current installed validation](docs/mk2-installed-asymmetric-scope541-20260914.md) covers **541 reports: 530 exact matches and 11 unresolved cases**, with 540 correct observed winner classifications. All fixtures and complete anonymized combat reports are included, including the UI-supported winner correction for a battle with zero survivors on both sides. The exactness check includes all six survivor counts and every explicitly recorded supported chance-skill count. The 516/516 checkpoint below describes the earlier, narrower corpus.
 
-The [dashboard/CLI compatibility review](docs/mk2-compatibility-review-20260914.md) documents the representation and loader repairs, validation, and unresolved cap/stat/timestamp findings.
+The [dashboard/CLI compatibility review](docs/mk2-compatibility-review-20260914.md) documents the representation and loader repairs, validation, and approved round-cap restoration and unresolved stat/timestamp findings.
 
 The [Mk2 integration guide](docs/mk2-integration.md) describes the opt-in replay engine,
 seed provenance, and reproducible checks. The original 160 captured cases live in

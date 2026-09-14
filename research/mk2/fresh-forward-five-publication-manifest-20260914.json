@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reportsAdded": 5,
+  "reviewedAggregate": 541,
+  "files": [
+    {
+      "file": "docs/mk2-fresh-forward-infantry541-20260914.md",
+      "sha256": "ac3d0364a6e073184fdcec8ec084d2d1814478a0ce78af97d26f26c6f752126c",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/asymmetric-new-context-forward-five-coverage-20260914.json",
+      "sha256": "2388bb6c181d3682d8b0e4a6b0a3ba67ffa11613ed1ae85a5da055a40a34f701",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/fresh-forward-five-publication-coverage-20260914.json",
+      "sha256": "c441348f4349d86ed53f0dde221a0afd5eba01205cbb379769a056256b77d18a",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/installed-catalogue19-research541-20260914.json",
+      "sha256": "faaa4337490e369650b644f296dffa84dc1c02d55d5d739c23617cb7800922f7",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-forward-20260914_installed19_results.json",
+      "sha256": "46cc38687af0a4abe39b96e1ee44b603ace82224de61ac1c47382742dfc5e1fa",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-forward-20260914_results.json",
+      "sha256": "c9b80a9b780526cff99ee4a8c9d1de5fb767d8ccd806af09ee3c7b680a68159c",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-forward-20260914_sanitized_battle_reports.json",
+      "sha256": "0a1e20ef21e17373422a3854ba709cbd197c8cf68d4ea4d6c590af971a03b39c",
+      "hits": []
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-forward-20260914_tested_production_sources.json",
+      "sha256": "0455de45768ff90d655db6f91c8d1d9a01e21abe5894c456d2b043983c3b9f81",
+      "hits": []
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-forward-20260914-001.json",
+      "sha256": "199861699d9fc6bc20c7b2483ab4ca0bfb9ec905c3a6b6cde63ae12f0d10fb32",
+      "hits": []
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-forward-20260914-002.json",
+      "sha256": "8544f5328488d4d98b293ca676b05149fc7873e03ec5c057ae211a99ed87c807",
+      "hits": []
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-forward-20260914-003.json",
+      "sha256": "b3346e72a18b26bcb22ac9ebee6eaf6fff83f23268541bc80706fd743214f19d",
+      "hits": []
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-forward-20260914-004.json",
+      "sha256": "35349ddb5bdb91a3d6aebdef0a86ea795ce9eadaa25a6986ac723a8ec7a0d237",
+      "hits": []
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-forward-20260914-005.json",
+      "sha256": "b8ea761d9cd3556940f54937e2ad0eac28b27ce34edcd0d5b92e0a3f5b7974eb",
+      "hits": []
+    }
+  ],
+  "auditSha256": "653cdd94070f124f9e4aa2f5c7fee66514e26e82e719436a486b6ef3daac6fb0",
+  "normalCliOutputSha256": "ee36abe286ef904e17eb78e42983d50aa8fb6ab7a549a9206d1d08a4062de5dc",
+  "policy": "Add only these publication files after review; no source or prior evidence overwrites."
+}
