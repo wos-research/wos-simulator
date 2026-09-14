@@ -1,5 +1,7 @@
 # Pending mixed-skill research — September 13, 2026
 
+**Current checkpoint:** [Mk2 v17](mk2-ordering-v17-checkpoint-20260913.md) now matches all 461 controlled captured reports with their recorded seeds. The three narrowly guarded ordering additions are installed; successful-unused Volley accounting remains unvalidated for those new scopes. The dated figures and candidate status below describe earlier checkpoints. External inbox failures remain separate.
+
 The additional [13 report fixtures](../testcases/mk2/research_pending_20260913.json) preserve completed research that has **not been implemented in the current Mk2 kernel**. They contain unchanged predictive army inputs, recorded seeds, captured survivors and explicit skill activation counts. No expected result was generated from a candidate model. They are separate from the passing campaign collection.
 
 Together with the previously published [first C2 report](../testcases/mk2/unresolved_c2_20260913.json) and [first E1 report](../testcases/mk2/unresolved_e1_20260913.json), the shared repository now exposes all15 planned reports in these two research cohorts. The original two IDs and records are retained without duplication. Statements in earlier campaign checkpoints that four reports remained held out describe that earlier stage; those reports have since been released and analyzed as described here.

@@ -1,5 +1,7 @@
 # Mk2 integration into the standard simulator
 
+**Current checkpoint:** [Mk2 v17](mk2-ordering-v17-checkpoint-20260913.md) now matches all 461 controlled captured reports with their recorded seeds. The three narrowly guarded ordering additions are installed; successful-unused Volley accounting remains unvalidated for those new scopes. The dated figures and candidate status below describe earlier checkpoints. External inbox failures remain separate.
+
 This branch ports the Expedition Simulator Mk2 mechanics into the existing simulator, testcase runner, and single-battle dashboard. It replaces the separate review-package layout with the repository's normal folders. The original comparison snapshot remains in [PR #1](https://github.com/wos-research/wos-simulator/pull/1). Neither branch changes shared `main` until reviewed and merged.
 
 **Research direction (September13):** the user abandoned the proposed rollback and directed continued research from the current Mk2 baseline. Protect established source behavior and prioritize unresolved RNG timing, skill ordering and random-number consumption. The broad FC flooring override exceeded its original evidence scope; isolated comparison results do not authorize extrapolation or prove a coefficient. Every new active-kernel change requires explicit user approval. See [the scope clarification](mk2-rng-scope-20260913.md) and [latest twenty reports](mk2-continuation-20260913.md).

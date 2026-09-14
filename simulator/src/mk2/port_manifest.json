@@ -1,5 +1,5 @@
 {
-  "sourceVersion": "expedition-mk2-lua54-catalogue-16",
+  "sourceVersion": "expedition-mk2-lua54-catalogue-17",
   "baselineCommit": "fadcab7",
   "policy": "Apply verified optional hooks to the existing engine; absent options preserve legacy behavior. No duplicate engine.",
   "files": {
@@ -225,5 +225,40 @@
     "rule": "Reserve live Volley before normal Lancer reactive Shield and Crystal Lance; apply Volley at original Marksman slot; defer Gunpowder in this exact context; count successful unused reservations without extra damage or RNG draws.",
     "troopStatsOrProbabilitiesChanged": false,
     "limitations": "Observed totals distinguish frozen candidates in this exact scope, not unique server internals or untested combinations."
+  },
+  "scopedFourSource": {
+    "module": "src/mk2/scoped_four_source_volley.ts",
+    "moduleSha256": "ac7aa11eeea5c1d27c00a80c32b307982ab9ff673e31792cf0dd4951074120df",
+    "scope": "100 T10 FC5 Lancers +100 T7 FC3 Marksmen versus500 T5 FC1 Infantry; exact captured modifiers, both roles",
+    "evidenceReports": 10,
+    "rule": "Reserve Volley after Ambusher and before Crystal Lance; use cached result at original Marksman slot.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations.",
+    "representationAdapter": {
+      "module": "src/mk2/four_source_scope_view.ts",
+      "moduleSha256": "c462c80fa1a7c23273cc234c28203902d5c822b3d4e43700ef5a72949ed202e8",
+      "scope": "Equivalent default dashboard representation only within the existing exact four-source guard; original prepared input unchanged."
+    }
+  },
+  "scopedFC4": {
+    "module": "src/mk2/scoped_fc4_volley.ts",
+    "moduleSha256": "4d4a5c7d1ea88f6fdaa2960df46d95f3e3f59fc473500905c5e716987525df78",
+    "scope": "500 T5 FC4 Lancers +500 T7 FC3 Marksmen versus1000 T5 FC1 Infantry both roles, or attacking1000 T5 FC5 Infantry; exact captured modifiers",
+    "evidenceReports": 15,
+    "rule": "Reserve Volley before Lance, or before normal reactive Shield in the Shield cohort; retain original Marksman slot and scoped Gunpowder deferral.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations."
+  },
+  "scopedInf5": {
+    "module": "src/mk2/scoped_inf5_volley.ts",
+    "moduleSha256": "7d043d19e85ffbeb8ec24aff717147e2c8f6e90bf359acea60be6ce7a27f7746",
+    "scope": "500 T5 FC5 Lancers +5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; five exact captured role/modifier groups",
+    "evidenceReports": 35,
+    "rule": "Reserve Volley before normal Lancer reactive Shield/Lance; retain Marksman slot and scoped Gunpowder deferral.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations."
   }
 }

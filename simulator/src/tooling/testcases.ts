@@ -819,6 +819,9 @@ export function testcaseReplayOptions(entry: unknown): Mk2ReplayOptions | undefi
     ...(replay.reportedSeed !== undefined ? { reportedSeed: replay.reportedSeed } : {}),
     ...(replay.timestampSource !== undefined ? { timestampSource: replay.timestampSource } : {}),
     ...(replay.trace !== undefined ? { trace: replay.trace } : {}),
+    ...(replay.fc4Volley !== undefined ? { fc4Volley: replay.fc4Volley } : {}),
+    ...(replay.fourSourceVolley !== undefined ? { fourSourceVolley: replay.fourSourceVolley } : {}),
+    ...(replay.inf5Volley !== undefined ? { inf5Volley: replay.inf5Volley } : {}),
     ...(replay.mechanics !== undefined ? { mechanics: replay.mechanics } : {}),
   }) as Mk2ReplayOptions;
 }
