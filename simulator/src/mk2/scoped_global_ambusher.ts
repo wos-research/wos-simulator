@@ -5,8 +5,11 @@ const GUARD:any={"troops":{"mixed":{"lancer_t10_fc5":1,"marksman_t5_fc3":100},"p
 export function exactScope(compiled:any,mechanics:any){
  if(canonical(mechanics)!==canonical(GUARD.mechanics))return null;
  const input=compiled.input;if(input.engagement_type!=='always'||Object.keys(input).some(k=>!['engagement_type','attacker','defender'].includes(k)&&!(k==='seed'&&input.seed===undefined)))return null;
- const mixed=(['attacker','defender']as const).find(s=>canonical(input[s].troops)===canonical(GUARD.troops.mixed));if(!mixed)return null;const other=mixed==='attacker'?'defender':'attacker';
- for(const side of['attacker','defender']){const role=side===mixed?'mixed':'pure',f=compiled.fighters[side],a=input[side];if(canonical(a.troops)!==canonical(GUARD.troops[role])||canonical(a.heroes)!=='[]'||canonical(a.joiner_heroes)!=='[]'||f.heroes.length||f.diagnostics.length)return null;if(Object.keys(a).some(k=>!['name','troops','stats','heroes','joiner_heroes'].includes(k)))return null;
+ // Ten independent reports support the exact ten-Lancer mixed army in both roles.
+ const next210Mixed={...GUARD.troops.mixed,lancer_t10_fc5:10};
+ const mixed=(['attacker','defender']as const).find(s=>[GUARD.troops.mixed,next210Mixed].some(t=>canonical(input[s].troops)===canonical(t)));if(!mixed)return null;const other=mixed==='attacker'?'defender':'attacker';
+ const expectedMixed=canonical(input[mixed].troops)===canonical(next210Mixed)?next210Mixed:GUARD.troops.mixed;
+ for(const side of['attacker','defender']){const role=side===mixed?'mixed':'pure',f=compiled.fighters[side],a=input[side];if(canonical(a.troops)!==canonical(role==='mixed'?expectedMixed:GUARD.troops.pure)||canonical(a.heroes)!=='[]'||canonical(a.joiner_heroes)!=='[]'||f.heroes.length||f.diagnostics.length)return null;if(Object.keys(a).some(k=>!['name','troops','stats','heroes','joiner_heroes'].includes(k)))return null;
  const active=role==='mixed'?['lancer','marksman']:['lancer'],keys=Object.keys(a.stats??{}).sort();if(canonical(keys)!==canonical(active)&&canonical(keys)!==canonical(['infantry','lancer','marksman']))return null;for(const type of keys)if(canonical(a.stats[type])!==canonical(GUARD.actors[role].allTypeStatsFromStatModel[type]))return null;
  if(canonical(f.troopSkills.map((s:any)=>s.id).sort())!==canonical(GUARD.skillIds[role]))return null;}
  for(const[id,stats]of Object.entries(GUARD.baseStats))if(canonical(compiled.config.troopStats[id]?.stats)!==canonical(stats))return null;
@@ -17,7 +20,7 @@ export type PhaseModel='G0'|'G1';
 const plain=(x:any)=>JSON.parse(JSON.stringify(x));
 export function createPhaseAdapter(compiled:any,native:any,mechanics:any,model:PhaseModel,inheritedEmpty?:any){
  assert(['G0','G1'].includes(model),'Unknown phase model');
- const scope=exactScope(compiled,mechanics);if(!scope)throw new Error('Outside unchanged exact201troop/currentactor guard');
+ const scope=exactScope(compiled,mechanics);if(!scope)throw new Error('Outside exact observed Ambusher army/currentactor guard');
  assert(typeof native?.rng?.chance==='function'&&typeof native?.metadata==='function','Labelled native RNG required');
  const reservations:any[]=[],hooks:any[]=[],seen=new Set<string>();let pending:any=null,finished=false;
  const firstDrawByRound=new Map<number,number>();let ambusherDraws=0;

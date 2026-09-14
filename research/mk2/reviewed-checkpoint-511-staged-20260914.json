@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "private-staged-evidence-pending-root-review",
+  "priorReviewedReports": 496,
+  "priorActiveExact": 496,
+  "priorActiveWinnerCorrect": 496,
+  "reviewedReports": 511,
+  "activeVersion": "expedition-mk2-lua54-catalogue-18",
+  "activeKernelExact": 496,
+  "activeKernelPending": 15,
+  "activeWinnerCorrect": 510,
+  "newReports": 15,
+  "newActiveExact": 0,
+  "newActiveWinnerCorrect": 14,
+  "newFrozenPrivateCandidateExact": 15,
+  "privateCandidatesInstalled": false,
+  "fullCorpusRerun": false,
+  "newExportedFixturesReplayed": 15,
+  "rawFieldsVerified": {
+    "recordedSeeds": 15,
+    "survivorSlots": 90,
+    "explicitSupportedChanceCounters": 70,
+    "normalizedAxes": 360
+  },
+  "newTimestampPlusOne": {
+    "pass": 15,
+    "fail": 0,
+    "usedAsGate": false,
+    "seedAdjustment": false
+  },
+  "priorTimestampExceptionsPreserved": true,
+  "ownInfantryReverseIncluded": false,
+  "limitations": [
+    "Additive carry-forward of previously reviewed installed496 result, not a new full511 replay.",
+    "Private candidate matching is limited to exact tested troop, role, modifier and expert contexts.",
+    "Next210 reverse agreement is a role/accounting control, not independent G1/F1 order discrimination.",
+    "No active code change, candidate installation or publication action is included."
+  ]
+}

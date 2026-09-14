@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-staged-additive-anonymized-evidence",
+  "newReports": 5,
+  "combinedNewReports": 20,
+  "candidateInstalled": false,
+  "activeKernelChanged": false,
+  "sharedCheckoutMutated": false,
+  "files": [
+    {
+      "file": "docs/mk2-reviewed-twenty-staged-20260914.md",
+      "sha256": "682907f7b107a9f175263e2e7077791a5d0528931aa927dafc5bb7be3648dbe5"
+    },
+    {
+      "file": "research/mk2/evidence516-expected-report-coverage-20260914.json",
+      "sha256": "a919d8a04acd219951da2042b504b75a897667e6730ae411b5aed45c089ab9f0"
+    },
+    {
+      "file": "research/mk2/evidence516-reverse-five-coverage-20260914.json",
+      "sha256": "4b7134664d91ff5b3d5932265b0fb18200a2b1af0218433b2103186bc4666d07"
+    },
+    {
+      "file": "research/mk2/latest-five-reverse-active-replay-20260914.json",
+      "sha256": "cfd107d05364810a32244715a2a07369ce68429d0320e29752bfa8ba2192fc16"
+    },
+    {
+      "file": "research/mk2/latest-twenty-active-replay-20260914.json",
+      "sha256": "7b303e80b2c1a4745290d913267262628487257571888cc8cc20e907da62216c"
+    },
+    {
+      "file": "research/mk2/mk2-own-infantry-250-reverse-20260914_results.json",
+      "sha256": "af25a1eb4aec9d89ea3ce824ec55b6f8e572f9ae4d3a1694259a6291d709e069"
+    },
+    {
+      "file": "research/mk2/mk2-own-infantry-250-reverse-20260914_sanitized_battle_reports.json",
+      "sha256": "b5d656e90bc13ecd2f297faf6edd03b513046d732d043c0ab8063ea9f3bfcbcf"
+    },
+    {
+      "file": "research/mk2/reviewed-checkpoint-516-staged-20260914.json",
+      "sha256": "7591540f095f47ebfefc248ebf7000fd7401096d7dfcc624890b232248ce9bea"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-001.json",
+      "sha256": "dbc246f509502acbb4f459f6df80a6e0dfb6df1d52932aeabb9ea4f9406f9660"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-002.json",
+      "sha256": "c908fd63c889468d3ac36334b943172eb26c559ea1200a190a9e92f918896911"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-003.json",
+      "sha256": "16dbc9f9ec51cb094d46baf73de24540424e44a3bdb4d6aea9bbddfe81f4d2ab"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-004.json",
+      "sha256": "57d601bc796c8836e76dfc08308c45f412694ba5812575b19754274d9bd9a99d"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-005.json",
+      "sha256": "f5bd5a57fe67b3412a32420760555c3ec4d7932c33c6e226a1d630c177fdfea9"
+    }
+  ],
+  "sourceEvidenceDigests": {
+    "sourcePinVerificationSha256": "4a35410d21dd915113d767732d6949b389baa863696def166f6010899be50b6f",
+    "privateMappingSha256": "4f9f6ef0d79ef83f3beed0b05b8d5e7bc0686fffbf0bf8b71a2c8e5fafaef303",
+    "priorFifteenDeliveryFreezeSha256": "e9a1c035f2f3d9076e358f9084aacaa726542fd8c6ab6475a0daa763538c9e36"
+  },
+  "identityMappingsPublished": false,
+  "expectedCoverageManifest": "research/mk2/evidence516-expected-report-coverage-20260914.json"
+}

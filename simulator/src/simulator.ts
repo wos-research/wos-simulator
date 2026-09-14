@@ -253,6 +253,7 @@ function runLoop(
     rounds = round;
     const roundStartTroops = snapshotTroops(runtime.troops);
     processEffectSchedule(runtime, round);
+    options.onRoundStart?.(round, runtime, recorder);
     const sideLocal = options.attackScheduling === "side-local";
     triggerRoundStartSkills(round, runtime, recorder, prepared => !sideLocal || prepared.skill.id !== "Ambusher");
 

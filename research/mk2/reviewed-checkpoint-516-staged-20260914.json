@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "private-staged-evidence-pending-root-review",
+  "priorReviewedReports": 496,
+  "priorActiveExact": 496,
+  "priorActiveWinnerCorrect": 496,
+  "reviewedReports": 516,
+  "activeVersion": "expedition-mk2-lua54-catalogue-18",
+  "activeKernelExact": 496,
+  "activeKernelPending": 20,
+  "activeWinnerCorrect": 513,
+  "newReports": 20,
+  "newActiveExact": 0,
+  "newActiveWinnerCorrect": 17,
+  "newFrozenPrivateCandidateExact": 20,
+  "privateCandidatesInstalled": false,
+  "fullCorpusRerun": false,
+  "newExportedFixturesReplayed": 5,
+  "previousSealedExportedFixturesReplayed": 15,
+  "rawFieldsVerified": {
+    "recordedSeeds": 20,
+    "survivorSlots": 120,
+    "explicitSupportedChanceCounters": 100,
+    "normalizedAxes": 480
+  },
+  "newTimestampPlusOne": {
+    "pass": 20,
+    "fail": 0,
+    "usedAsGate": false,
+    "seedAdjustment": false
+  },
+  "priorTimestampExceptionsPreserved": true,
+  "ownInfantryReverseIncluded": true,
+  "limitations": [
+    "Carries forward validated496 active exact and sealed15 replay plus newly verified5; no full516 replay claimed.",
+    "Private20 exact means separate frozen candidates within exact troop/role/stat/expert scopes.",
+    "All20 additions remain pending against installed catalogue18."
+  ]
+}

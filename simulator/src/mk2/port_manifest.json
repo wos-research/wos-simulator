@@ -5,7 +5,7 @@
   "files": {
     "src/types.ts": {
       "baselineSha256": "d4b08f029aabfc0de91360e49367eca2d52919b774a86084f3689accb44d8666",
-      "sha256": "ae073d2e7582e7766dae3205788b44f0b09a0eeddcde309bb3706007b1239f83",
+      "sha256": "c718b56c1f47c318740af5e426417f1885503d7bba75293da473cf9efc085a33",
       "newline": "\r\n",
       "replacements": [
         [
@@ -31,6 +31,10 @@
         [
           "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;",
           "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  beforeExhaustedExtraAttack?: import(\"./runtime\").BeforeExtraAttack;"
+        ],
+        [
+          "export interface SimulationOptions {",
+          "export interface SimulationOptions {\n  // Optional scoped RNG reservation; runs after effect scheduling and before ordinary attacks.\n  onRoundStart?: (round: number, runtime: import(\"./runtime\").Runtime, recorder: import(\"./recorder\").BattleRecorder) => void;"
         ]
       ]
     },
@@ -118,7 +122,7 @@
     },
     "src/simulator.ts": {
       "baselineSha256": "2c18de8559fbf871bd685f54f3bbeafcc533c88adec729b4aaae5ddab683b5fb",
-      "sha256": "2b80230648e21d07ff3d7cb0408aa32a5fe5070ddb2118d28bc06eaa94aa851a",
+      "sha256": "f3597d219d33091b51ca1677aadb50f35951d73f47505a9cb49c475145744696",
       "newline": "\r\n",
       "replacements": [
         [
@@ -180,6 +184,10 @@
         [
           "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack}",
           "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack,\n    beforeExhaustedExtraAttack: options.beforeExhaustedExtraAttack}"
+        ],
+        [
+          "    processEffectSchedule(runtime, round);",
+          "    processEffectSchedule(runtime, round);\n    options.onRoundStart?.(round, runtime, recorder);"
         ]
       ]
     },
@@ -260,5 +268,12 @@
     "troopStatsOrProbabilitiesChanged": false,
     "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
     "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations."
+  },
+  "scopedOwnInfantry": {
+    "reports": 10,
+    "scope": "25T10FC5Inf+100T10FC5LC each, both captured actor roles and exact source/modifiers",
+    "hook": "optional typed onRoundStart after effect schedule",
+    "normalAttackAndEffectSlotsChanged": false,
+    "statsOrProbabilitiesChanged": false
   }
 }

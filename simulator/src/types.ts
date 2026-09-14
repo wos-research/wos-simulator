@@ -208,6 +208,8 @@ export interface BattleInput {
 export type SimulationMode = "fast" | "standard" | "trace";
 
 export interface SimulationOptions {
+  // Optional scoped RNG reservation; runs after effect scheduling and before ordinary attacks.
+  onRoundStart?: (round: number, runtime: import("./runtime").Runtime, recorder: import("./recorder").BattleRecorder) => void;
   // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.
   rng?: import("./effects").Rng;
   beforeExtraAttack?: import("./runtime").BeforeExtraAttack;

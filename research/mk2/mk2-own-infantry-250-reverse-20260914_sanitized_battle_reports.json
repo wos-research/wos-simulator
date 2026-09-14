@@ -1,0 +1,1138 @@
+{
+  "schemaVersion": 1,
+  "reports": [
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-001",
+      "report": {
+        "battletype": 9,
+        "randomseed": 1789364170,
+        "atk": {
+          "buff": {
+            "10110": 10656,
+            "10111": 15113,
+            "10112": 15022,
+            "10113": 19730,
+            "10114": 19733,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11623,
+            "10103": 16382,
+            "10104": 15896,
+            "10105": 8175,
+            "10106": 8025,
+            "10107": 16291,
+            "10108": 16069,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 8,
+                  "value": 3
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 12,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 15,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 3196,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 0,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 44,
+                  "dead": 0,
+                  "wound": 25,
+                  "minor_wound": 45,
+                  "loss_power": 2350,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        },
+        "def": {
+          "buff": {
+            "10110": 10656,
+            "10111": 16439,
+            "10112": 16449,
+            "10113": 19434,
+            "10114": 19809,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15881,
+            "10104": 15877,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15415,
+            "10108": 15375,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 10,
+                  "value": 4
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 10,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 14,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 0,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 34,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 65,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "redaction": "Participant formation id replaced by side-local ordinal1. All decoded combat fields retained; outer private identity, mail, session and capture envelopes excluded.",
+      "sourceReportArtifactSha256": "c22cce5a90a96d563755bfbb9759905270ee9acfe9caade5b42cb54022b9c6e2",
+      "capturedBattlePayloadSha256": [
+        "53581d86e3390b86d17e9bee14b49439128f56a56e88ddfc7275d38b07baefe1"
+      ],
+      "sanitizedCombatPayloadSha256": "6fcd1b2c73018f5a424c1a4deab18c7e3a8e30b27fcc3cf1f42cf71c38cfb4c6",
+      "canonicalHashEncoding": "UTF-8 JSON, sorted object keys, compact separators"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-002",
+      "report": {
+        "battletype": 9,
+        "randomseed": 1789364282,
+        "atk": {
+          "buff": {
+            "10110": 10656,
+            "10111": 15113,
+            "10112": 15022,
+            "10113": 19730,
+            "10114": 19733,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11623,
+            "10103": 16382,
+            "10104": 15896,
+            "10105": 8175,
+            "10106": 8025,
+            "10107": 16291,
+            "10108": 16069,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 5,
+                  "value": 2
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 11,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 23,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 0,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 44,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 63,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        },
+        "def": {
+          "buff": {
+            "10110": 10656,
+            "10111": 16439,
+            "10112": 16449,
+            "10113": 19434,
+            "10114": 19809,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15881,
+            "10104": 15877,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15415,
+            "10108": 15375,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 12,
+                  "value": 5
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 18,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 21,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 1,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 43,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 65,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "redaction": "Participant formation id replaced by side-local ordinal1. All decoded combat fields retained; outer private identity, mail, session and capture envelopes excluded.",
+      "sourceReportArtifactSha256": "108ff8ca5c9ae0313b2efffb428d3a97f5015a64a6e48f00efe7d6e7f5a08cf7",
+      "capturedBattlePayloadSha256": [
+        "ff86be3781c8d2b5bac07e3d1e5d56d91087eba53a8098f55216b92501632c31"
+      ],
+      "sanitizedCombatPayloadSha256": "cc4804ec353cd12a088a1d137df419ea8576bc395a503a00061340d733701756",
+      "canonicalHashEncoding": "UTF-8 JSON, sorted object keys, compact separators"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-003",
+      "report": {
+        "battletype": 9,
+        "randomseed": 1789364400,
+        "atk": {
+          "buff": {
+            "10110": 10656,
+            "10111": 15113,
+            "10112": 15022,
+            "10113": 19730,
+            "10114": 19733,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11623,
+            "10103": 16382,
+            "10104": 15896,
+            "10105": 8175,
+            "10106": 8025,
+            "10107": 16291,
+            "10108": 16069,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 3,
+                  "value": 1
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 9,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 15,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 1,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 34,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 65,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        },
+        "def": {
+          "buff": {
+            "10110": 10656,
+            "10111": 16439,
+            "10112": 16449,
+            "10113": 19434,
+            "10114": 19809,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15881,
+            "10104": 15877,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15415,
+            "10108": 15375,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 7,
+                  "value": 4
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 18,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 24,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 3290,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 2,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 42,
+                  "dead": 0,
+                  "wound": 26,
+                  "minor_wound": 47,
+                  "loss_power": 2444,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "redaction": "Participant formation id replaced by side-local ordinal1. All decoded combat fields retained; outer private identity, mail, session and capture envelopes excluded.",
+      "sourceReportArtifactSha256": "bf4e2486f61a3a2685a6eb6e148f594382fda8bedd3c81e0e556fefb0707f889",
+      "capturedBattlePayloadSha256": [
+        "2449b5f88f138f7b624dac0f2ec907ea8abed4300971d0ea49688c4d8a84fe6c"
+      ],
+      "sanitizedCombatPayloadSha256": "1be30a08ae0dc4af0723c9088c1a04ca5d977a08dd78a168931f436c998649e6",
+      "canonicalHashEncoding": "UTF-8 JSON, sorted object keys, compact separators"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-004",
+      "report": {
+        "battletype": 9,
+        "randomseed": 1789364517,
+        "atk": {
+          "buff": {
+            "10110": 10656,
+            "10111": 15113,
+            "10112": 15022,
+            "10113": 19730,
+            "10114": 19733,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11623,
+            "10103": 16382,
+            "10104": 15896,
+            "10105": 8175,
+            "10106": 8025,
+            "10107": 16291,
+            "10108": 16069,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 6,
+                  "value": 3
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 15,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 16,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 3760,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 1,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 43,
+                  "dead": 0,
+                  "wound": 31,
+                  "minor_wound": 56,
+                  "loss_power": 2914,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        },
+        "def": {
+          "buff": {
+            "10110": 10656,
+            "10111": 16439,
+            "10112": 16449,
+            "10113": 19434,
+            "10114": 19809,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15881,
+            "10104": 15877,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15415,
+            "10108": 15375,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 9,
+                  "value": 4
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 6,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 22,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 2,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 38,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 65,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "redaction": "Participant formation id replaced by side-local ordinal1. All decoded combat fields retained; outer private identity, mail, session and capture envelopes excluded.",
+      "sourceReportArtifactSha256": "dbaf8f6509511cee836860e68ab40e0c179c23e9dd3e4a891c66d4777de56a83",
+      "capturedBattlePayloadSha256": [
+        "853920d6fa6aa841247aef534da51cb815240eb5d296f19120cdd0dc7da75979"
+      ],
+      "sanitizedCombatPayloadSha256": "de9de84bd03078d44c45f1d35fcd793f13193cad8ecc3e6decaa1cbd95de6901",
+      "canonicalHashEncoding": "UTF-8 JSON, sorted object keys, compact separators"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-005",
+      "report": {
+        "battletype": 9,
+        "randomseed": 1789364635,
+        "atk": {
+          "buff": {
+            "10110": 10656,
+            "10111": 15113,
+            "10112": 15022,
+            "10113": 19730,
+            "10114": 19733,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11623,
+            "10103": 16382,
+            "10104": 15896,
+            "10105": 8175,
+            "10106": 8025,
+            "10107": 16291,
+            "10108": 16069,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 10,
+                  "value": 6
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 15,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 22,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 3196,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 0,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 44,
+                  "dead": 0,
+                  "wound": 25,
+                  "minor_wound": 45,
+                  "loss_power": 2350,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        },
+        "def": {
+          "buff": {
+            "10110": 10656,
+            "10111": 16439,
+            "10112": 16449,
+            "10113": 19434,
+            "10114": 19809,
+            "10115": 3590,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15881,
+            "10104": 15877,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15415,
+            "10108": 15375,
+            "10109": 10706,
+            "10116": 3390
+          },
+          "buff_provider_idx": 0,
+          "statistics": [
+            {
+              "stat_type": 1,
+              "skills": {
+                "90008": {
+                  "count": 9,
+                  "value": 4
+                }
+              }
+            },
+            {
+              "stat_type": 2,
+              "skills": {
+                "90004": {
+                  "count": 11,
+                  "value": 0
+                }
+              }
+            },
+            {
+              "stat_type": 3,
+              "skills": {
+                "90007": {
+                  "count": 19,
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "skill_change_infos": [],
+          "battle_buffs": [],
+          "formations": [
+            {
+              "id": 1,
+              "loss_power": 4136,
+              "heroes": [],
+              "experts": [
+                {
+                  "id": 7010,
+                  "level": 12,
+                  "break_level": 2,
+                  "skills": {
+                    "7010": 2,
+                    "70101": 4
+                  }
+                },
+                {
+                  "id": 7004,
+                  "level": 20,
+                  "break_level": 2,
+                  "skills": {
+                    "7004": 2,
+                    "70041": 1
+                  }
+                }
+              ],
+              "ext_soldier_skills": [],
+              "soldiers": [
+                {
+                  "soldier_type": 1,
+                  "id": 11000,
+                  "star": 5,
+                  "count": 25,
+                  "kill": 2,
+                  "dead": 0,
+                  "wound": 9,
+                  "minor_wound": 16,
+                  "loss_power": 846,
+                  "skill_change_infos": []
+                },
+                {
+                  "soldier_type": 2,
+                  "id": 21000,
+                  "star": 5,
+                  "count": 100,
+                  "kill": 32,
+                  "dead": 0,
+                  "wound": 35,
+                  "minor_wound": 65,
+                  "loss_power": 3290,
+                  "skill_change_infos": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "redaction": "Participant formation id replaced by side-local ordinal1. All decoded combat fields retained; outer private identity, mail, session and capture envelopes excluded.",
+      "sourceReportArtifactSha256": "0eb7bb29d9eae206245c39bbdfb19f081740d7e54aacd94360844f47543e1c15",
+      "capturedBattlePayloadSha256": [
+        "787fd546cc6c7aff3e9b4d406989624047a9eecd160f18383168f6237a7c6044"
+      ],
+      "sanitizedCombatPayloadSha256": "ee3c4565700133d2612faa9030cbc189c5f5bf356e303da8327070abbfb64486",
+      "canonicalHashEncoding": "UTF-8 JSON, sorted object keys, compact separators"
+    }
+  ],
+  "rawPacketCapturesIncluded": false,
+  "privateIdentityEnvelopeIncluded": false,
+  "fullDecodedCombatPayloadPreservedExceptFormationIdentity": true
+}

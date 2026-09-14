@@ -1,3 +1,4 @@
+import {exactScope as ownScope,createOwnInfantryAmbusher} from './scoped_own_infantry_ambusher';
 /** Browser-safe Mk2 entry point. Legacy prepareBattle/runPrepared defaults stay unchanged. */
 import {prepareBattle, runPrepared} from '../simulator';
 import type {BattleInput, BattleResult, SimulatorConfig} from '../types';
@@ -18,7 +19,7 @@ import {createScopedGlobalAmbusher,normalizeScopedAmbusherMechanics} from './sco
 
 export type {Mk2Mechanics} from './mechanics';
 export type {Mk2RngMetadata, Mk2RandomEvent} from './battle_rng';
-export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-18';
+export const MK2_VERSION = 'expedition-mk2-lua54-catalogue-19';
 export interface Mk2ReplayOptions extends SeedOptions {
   trace?: boolean;
   e1Volley?: 'scoped' | 'reference';
@@ -28,6 +29,7 @@ export interface Mk2ReplayOptions extends SeedOptions {
   inf5Volley?: 'scoped' | 'reference';
   t10Ambusher?: 'scoped' | 'reference';
   globalAmbusher?: 'scoped' | 'reference';
+  ownInfantryAmbusher?: 'scoped' | 'reference';
   mechanics?: Mk2Mechanics;
 }
 export interface Mk2ReplayMetadata extends SeedMetadata {
@@ -41,6 +43,7 @@ export interface Mk2ReplayMetadata extends SeedMetadata {
   inf5Volley?: unknown;
   t10Ambusher?: unknown;
   globalAmbusher?: unknown;
+  ownInfantryAmbusher?: unknown;
 }
 export interface Mk2ReplayResult extends BattleResult {
   rng: Mk2RngMetadata;
@@ -93,8 +96,10 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   const ambusherFallback=volleyAfterDeath(compiled,mechanics.volleyAfterDeath);
   const t10=createScopedT10Ambusher(compiled,stream,mechanics,options.t10Ambusher,ambusherFallback);
   const globalAmb=createScopedGlobalAmbusher(compiled,stream,mechanics,options.globalAmbusher,ambusherFallback);
-  if([e1,c2,fc4,av,inf5,t10,globalAmb].filter(Boolean).length>1)throw new Error('Scoped ordering guards must be disjoint');
-  const result = runPrepared(compiled, undefined, {mode: options.trace ? 'trace' : 'standard', rng: t10?.rng ?? globalAmb?.rng ?? av?.rng ?? inf5?.rng ?? fc4?.rng ?? c2?.rng ?? e1?.rng ?? stream.rng,
+  if(options.ownInfantryAmbusher!==undefined&&!['scoped','reference'].includes(options.ownInfantryAmbusher))throw new Error('Unknown own-Infantry Ambusher policy');
+  const own=options.ownInfantryAmbusher!=='reference'&&ownScope(compiled,mechanics)?createOwnInfantryAmbusher(compiled,stream,mechanics,'cached-round-start'):null;
+  if([e1,c2,fc4,av,inf5,t10,globalAmb,own].filter(Boolean).length>1)throw new Error('Scoped ordering guards must be disjoint');
+  const result = runPrepared(compiled, undefined, {onRoundStart:own?.onRoundStart,mode: options.trace ? 'trace' : 'standard', rng: own?.rng ?? t10?.rng ?? globalAmb?.rng ?? av?.rng ?? inf5?.rng ?? fc4?.rng ?? c2?.rng ?? e1?.rng ?? stream.rng,
     beforeExhaustedExtraAttack: terminal.beforeExhaustedExtraAttack,
     beforeExtraAttack: crystalShieldExtraHits(mechanics), attackScheduling: mechanics.attackScheduling,
     onEmptyUnit: t10?.onEmptyUnit ?? globalAmb?.onEmptyUnit ?? av?.onEmptyUnit ?? inf5?.onEmptyUnit ?? fc4?.onEmptyUnit ?? c2?.onEmptyUnit ?? e1?.onEmptyUnit ?? volleyAfterDeath(compiled, mechanics.volleyAfterDeath), deferAttackSkill: inf5?.deferAttackSkill ?? fc4?.deferAttackSkill ?? c2?.deferAttackSkill ?? timing.deferAttackSkill});
@@ -105,9 +110,10 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   const inf5Metadata=inf5?.finish(result);
   const t10Metadata=t10?.finish(result);
   const globalAmbMetadata=globalAmb?.finish(result);
+  const ownMetadata=own?.finish(result);
   const total = (side: 'attacker'|'defender') => Object.values(result.remaining[side]).reduce((a, b) => a + b, 0);
   if (result.winner === 'draw' && total('attacker') > 0 && total('defender') > 0)
     throw new Error(`Unresolved round cap with both sides alive after ${result.rounds} rounds`);
   return {...result, rng: stream.metadata(), replayMetadata: {mode: 'mk2', version: MK2_VERSION,
-    ...seed.metadata, mechanics,...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
+    ...seed.metadata, mechanics,...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{}),...(ownMetadata?{ownInfantryAmbusher:ownMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
 }

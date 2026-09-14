@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "expectedReportCount": 5,
+  "actualDistinctTestIds": 5,
+  "cohorts": [
+    {
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "reports": 5
+    }
+  ],
+  "rows": [
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-001",
+      "fixture": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-001.json",
+      "fixtureSha256": "dbc246f509502acbb4f459f6df80a6e0dfb6df1d52932aeabb9ea4f9406f9660",
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "chronologicalIndexWithinCohort": 1,
+      "observedSha256": "a09d284cc365b459f8c22173eb2351d3e6f38918431d824aaf804bbb245983db",
+      "sourceReportArtifactSha256": "c22cce5a90a96d563755bfbb9759905270ee9acfe9caade5b42cb54022b9c6e2",
+      "recordedSeed": 1789364170,
+      "capturedTimestamp": 1789364169,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 6,
+      "disposition": "retained-as-distinct-report-no-content-deduplication"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-002",
+      "fixture": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-002.json",
+      "fixtureSha256": "c908fd63c889468d3ac36334b943172eb26c559ea1200a190a9e92f918896911",
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "chronologicalIndexWithinCohort": 2,
+      "observedSha256": "9dd5cb7941e3df4defa1609ca0fa78264c970b29c1397693c42641fdc4f0c6c3",
+      "sourceReportArtifactSha256": "108ff8ca5c9ae0313b2efffb428d3a97f5015a64a6e48f00efe7d6e7f5a08cf7",
+      "recordedSeed": 1789364282,
+      "capturedTimestamp": 1789364281,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 6,
+      "disposition": "retained-as-distinct-report-no-content-deduplication"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-003",
+      "fixture": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-003.json",
+      "fixtureSha256": "16dbc9f9ec51cb094d46baf73de24540424e44a3bdb4d6aea9bbddfe81f4d2ab",
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "chronologicalIndexWithinCohort": 3,
+      "observedSha256": "b45d8492f384933560bb871dd9dc74454197ea8982374324c4059d4ba98c8351",
+      "sourceReportArtifactSha256": "bf4e2486f61a3a2685a6eb6e148f594382fda8bedd3c81e0e556fefb0707f889",
+      "recordedSeed": 1789364400,
+      "capturedTimestamp": 1789364399,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 6,
+      "disposition": "retained-as-distinct-report-no-content-deduplication"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-004",
+      "fixture": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-004.json",
+      "fixtureSha256": "57d601bc796c8836e76dfc08308c45f412694ba5812575b19754274d9bd9a99d",
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "chronologicalIndexWithinCohort": 4,
+      "observedSha256": "a1dc48e32146b1a7a7c784e139b889b9b452722a7a0c8e99e2d834fd1873ffd0",
+      "sourceReportArtifactSha256": "dbaf8f6509511cee836860e68ab40e0c179c23e9dd3e4a891c66d4777de56a83",
+      "recordedSeed": 1789364517,
+      "capturedTimestamp": 1789364516,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 6,
+      "disposition": "retained-as-distinct-report-no-content-deduplication"
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-005",
+      "fixture": "testcases/mk2/mk2-own-infantry-250-reverse-20260914-005.json",
+      "fixtureSha256": "f5bd5a57fe67b3412a32420760555c3ec4d7932c33c6e226a1d630c177fdfea9",
+      "cohort": "mk2-own-infantry-250-reverse-20260914",
+      "chronologicalIndexWithinCohort": 5,
+      "observedSha256": "c3af151e0d3d5c2bac08085707fbc4f5837a6d5ea83ac4aa6b719a0649dacc34",
+      "sourceReportArtifactSha256": "0eb7bb29d9eae206245c39bbdfb19f081740d7e54aacd94360844f47543e1c15",
+      "recordedSeed": 1789364635,
+      "capturedTimestamp": 1789364634,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 6,
+      "disposition": "retained-as-distinct-report-no-content-deduplication"
+    }
+  ],
+  "deduplicationPolicy": "Each independently identified report remains a separate fixture even if its combat payload duplicates another report. No content-hash deduplication.",
+  "excludedUntilSeparatelyReviewed": [],
+  "futureExtensionPolicy": "Add future released cohorts as new files and a successor manifest; preserve this package unchanged."
+}

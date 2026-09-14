@@ -1,0 +1,226 @@
+{
+  "test_id": "mk2-ambusher-next210-reverse-20260914-003",
+  "simulation_mode": "mk2",
+  "cohort": "mk2-ambusher-next210-reverse-20260914",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "marksman_t5_fc3": 100,
+      "lancer_t10_fc5": 10
+    },
+    "stats": {
+      "marksman": {
+        "attack": 297.8,
+        "defense": 297.4,
+        "lethality": 192.34,
+        "health": 193.17
+      },
+      "lancer": {
+        "attack": 272.49,
+        "defense": 272.09,
+        "lethality": 186.69,
+        "health": 187.42
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "lancer_t5_fc5": 100
+    },
+    "stats": {
+      "lancer": {
+        "attack": 264.11,
+        "defense": 265.79,
+        "lethality": 180.51,
+        "health": 179.22
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "timestamp": "1789363831",
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "reportedSeed": 1789363832,
+    "mechanics": {
+      "fcRounding": "floor",
+      "gunpowderShield": "per-hit",
+      "lanceShield": "per-hit",
+      "volleyShield": "per-hit",
+      "attackScheduling": "side-local",
+      "volleyAfterDeath": "roll",
+      "gunpowderTiming": "after-volley"
+    }
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 82
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      }
+    },
+    "totals": {
+      "attacker": 82,
+      "defender": 0
+    },
+    "winner": "attacker",
+    "skillProcs": {
+      "attacker": {
+        "90008": 1,
+        "90009": 2,
+        "90004": 4
+      },
+      "defender": {
+        "90008": 0
+      }
+    }
+  },
+  "timestampEvidence": {
+    "observedValueSeconds": 1789363831,
+    "mailCoverField": "mail_cover.send_time",
+    "linkedMarchField": "world_march.battletime",
+    "timestampWasDerivedFromSeed": false,
+    "reportedSeedField": "battle_report.randomseed",
+    "timestampPlusOneEqualsReportedSeed": true,
+    "hardTimestampGateApplied": false,
+    "seedAdjustment": false,
+    "originalAdapterTimestamp": "1789363831",
+    "originalAdapterTimestampSource": "derived-report-seed-minus-one",
+    "assessment": "Replay uses independently captured timestamp and unchanged original reported-seed override; derived adapter timestamp is provenance only."
+  },
+  "sourceAdapterOptions": {
+    "mixedStacks": "upstream",
+    "rng": "lua54"
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "actor": "attacker",
+      "rawBuffs": {
+        "10110": 10356,
+        "10111": 15809,
+        "10112": 16092,
+        "10113": 19074,
+        "10114": 19384,
+        "10115": 3425,
+        "10101": 11473,
+        "10102": 11423,
+        "10103": 15941,
+        "10104": 15509,
+        "10105": 8175,
+        "10106": 7825,
+        "10107": 15244,
+        "10108": 15517,
+        "10109": 10706,
+        "10116": 3225
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 17,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 30500,
+          "star": 3,
+          "soldier_type": 3,
+          "count": 100
+        },
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 10
+        }
+      ]
+    },
+    {
+      "side": "defender",
+      "actor": "defender",
+      "rawBuffs": {
+        "10110": 10456,
+        "10111": 16141,
+        "10112": 16157,
+        "10113": 18236,
+        "10114": 18754,
+        "10115": 3590,
+        "10101": 11723,
+        "10102": 11623,
+        "10103": 15263,
+        "10104": 15456,
+        "10105": 8175,
+        "10106": 7825,
+        "10107": 14461,
+        "10108": 14532,
+        "10109": 10956,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 20500,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ]
+    }
+  ],
+  "evidenceSummary": {
+    "status": "Pending against installed catalogue18 baseline; frozen private candidate exact. No candidate installation is included in this evidence package.",
+    "scope": "10 T10 FC5 Lancers plus100 T5 FC3 Marksmen attack100 T5 FC5 Lancers; exact exported actor context. Reverse is an accounting/role control, not independent G1/F1 ordering discrimination.",
+    "independentRawChecks": {
+      "reportedSeed": 1,
+      "survivorSlots": 6,
+      "explicitProcFields": 4,
+      "normalizedAxes": 24
+    },
+    "limits": "No seed, probability, statistic or scheduling fitting; exact tested contexts only. Physical server ordering is not uniquely established."
+  }
+}
