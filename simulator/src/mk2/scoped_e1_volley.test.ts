@@ -164,3 +164,18 @@ test('normal adapter defined seed values remain outside the scoped E1 gate', () 
     assert.deepEqual(result, replayMk2(input, config, {...options, trace: true, e1Volley: 'reference'}));
   }
 });
+
+
+test('e1Volley reference policy survives testcase loading with identical full replay results', () => {
+  const row = structuredClone(cases[0]);
+  row.replay = {...row.replay, trace: true, e1Volley: 'reference'};
+  const before = JSON.stringify(row);
+  const input = adaptTestcaseEntry(row);
+  const direct = replayMk2(input, config, row.replay);
+  const loaded = replayMk2(input, config, testcaseReplayOptions(row));
+  assert.equal(direct.replayMetadata.e1Volley, undefined);
+  assert.deepEqual(loaded, direct);
+  assert.equal(JSON.stringify(row), before);
+  const scoped = replayMk2(input, config, {...row.replay, e1Volley: 'scoped'});
+  assert.notDeepEqual(scoped.skillReport, direct.skillReport, 'fixture must distinguish reference and scoped policies');
+});

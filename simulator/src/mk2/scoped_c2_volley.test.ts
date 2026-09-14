@@ -172,3 +172,18 @@ test('normal adapter defined seed values remain outside the scoped C2 gate', () 
     assert.deepEqual(result, replayMk2(input, config, {...options, trace: true, c2Volley: 'reference'}));
   }
 });
+
+
+test('c2Volley reference policy survives testcase loading with identical full replay results', () => {
+  const row = structuredClone(cases[0]);
+  row.replay = {...row.replay, trace: true, c2Volley: 'reference'};
+  const before = JSON.stringify(row);
+  const input = adaptTestcaseEntry(row);
+  const direct = replayMk2(input, config, row.replay);
+  const loaded = replayMk2(input, config, testcaseReplayOptions(row));
+  assert.equal(direct.replayMetadata.c2Volley, undefined);
+  assert.deepEqual(loaded, direct);
+  assert.equal(JSON.stringify(row), before);
+  const scoped = replayMk2(input, config, {...row.replay, c2Volley: 'scoped'});
+  assert.notDeepEqual(scoped.skillReport, direct.skillReport, 'fixture must distinguish reference and scoped policies');
+});
