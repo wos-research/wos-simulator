@@ -1,0 +1,427 @@
+[
+  {
+    "test_id": "mk2-opposing-lance-reverse-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789345926",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789345927,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 17,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 17,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 2
+        },
+        "defender": {
+          "90008": 6
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile: 100 T5 FC5 Lancers versus 100 T5 FC5 Lancers; explicit Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Lance compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-lance-reverse-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789345986",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789345987,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 19,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 19,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 2
+        },
+        "defender": {
+          "90008": 7
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile: 100 T5 FC5 Lancers versus 100 T5 FC5 Lancers; explicit Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Lance compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-lance-reverse-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789346029",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789346030,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 20,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 20,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4
+        },
+        "defender": {
+          "90008": 6
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile: 100 T5 FC5 Lancers versus 100 T5 FC5 Lancers; explicit Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Lance compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-lance-reverse-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789346088",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789346089,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 25,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 25,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 6
+        },
+        "defender": {
+          "90008": 6
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile: 100 T5 FC5 Lancers versus 100 T5 FC5 Lancers; explicit Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Lance compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-lance-reverse-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t5_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789346138",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789346139,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 26,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 26,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4
+        },
+        "defender": {
+          "90008": 6
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile: 100 T5 FC5 Lancers versus 100 T5 FC5 Lancers; explicit Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Lance compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  }
+]
