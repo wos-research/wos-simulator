@@ -128,7 +128,7 @@ test('two T10 FC1 Infantry witnesses pass; none preserves both three-Marksman di
     assert.equal(current.rng.calls, 0); assert.equal(prior.rng.calls, 0);
     assert.equal(current.replayMetadata.effectiveSeed, String(row.replay.reportedSeed));
     assert.equal(prior.replayMetadata.effectiveSeed, current.replayMetadata.effectiveSeed);
-    assert.equal(current.replayMetadata.version, 'expedition-mk2-lua54-catalogue-17');
+    assert.equal(current.replayMetadata.version, 'expedition-mk2-lua54-catalogue-18');
     assert.equal(JSON.stringify(row), before);
   }
   assert.deepEqual(roles.sort(), ['attacker', 'defender']);

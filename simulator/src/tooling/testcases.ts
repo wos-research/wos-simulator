@@ -822,6 +822,8 @@ export function testcaseReplayOptions(entry: unknown): Mk2ReplayOptions | undefi
     ...(replay.fc4Volley !== undefined ? { fc4Volley: replay.fc4Volley } : {}),
     ...(replay.fourSourceVolley !== undefined ? { fourSourceVolley: replay.fourSourceVolley } : {}),
     ...(replay.inf5Volley !== undefined ? { inf5Volley: replay.inf5Volley } : {}),
+    ...(replay.t10Ambusher !== undefined ? { t10Ambusher: replay.t10Ambusher } : {}),
+    ...(replay.globalAmbusher !== undefined ? { globalAmbusher: replay.globalAmbusher } : {}),
     ...(replay.mechanics !== undefined ? { mechanics: replay.mechanics } : {}),
   }) as Mk2ReplayOptions;
 }
