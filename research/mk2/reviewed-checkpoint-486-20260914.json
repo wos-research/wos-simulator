@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "8787e0e",
+  "activeVersion": "expedition-mk2-lua54-catalogue-17",
+  "reviewedReports": 486,
+  "activeKernelExact": 471,
+  "activeKernelPending": 15,
+  "activeWinnerCorrect": 481,
+  "priorReviewedReports": 476,
+  "newReports": 10,
+  "newActiveExact": 0,
+  "newActiveWinnerCorrect": 5,
+  "newPrivateCandidateExact": 10,
+  "allPendingPrivateCandidateExact": 15,
+  "candidateInstalled": false,
+  "fullCorpusRerun": false,
+  "independentNewRawChecks": {
+    "reportedSeeds": 10,
+    "survivorSlots": 60,
+    "explicitProcFields": 40
+  },
+  "newTimestampPlusOne": {
+    "pass": 8,
+    "fail": 2,
+    "failTestIds": [
+      "mk2-opposing-t10-lance-reverse-20260914-004",
+      "mk2-ambusher-source-death-forward-20260914-005"
+    ]
+  },
+  "newFixtures": [
+    "testcases/mk2/mk2-opposing-t10-lance-reverse-20260914-001.json",
+    "testcases/mk2/mk2-opposing-t10-lance-reverse-20260914-002.json",
+    "testcases/mk2/mk2-opposing-t10-lance-reverse-20260914-003.json",
+    "testcases/mk2/mk2-opposing-t10-lance-reverse-20260914-004.json",
+    "testcases/mk2/mk2-opposing-t10-lance-reverse-20260914-005.json",
+    "testcases/mk2/mk2-ambusher-source-death-forward-20260914-001.json",
+    "testcases/mk2/mk2-ambusher-source-death-forward-20260914-002.json",
+    "testcases/mk2/mk2-ambusher-source-death-forward-20260914-003.json",
+    "testcases/mk2/mk2-ambusher-source-death-forward-20260914-004.json",
+    "testcases/mk2/mk2-ambusher-source-death-forward-20260914-005.json"
+  ],
+  "oldPendingFixtures": "testcases/mk2/mk2-opposing-t10-lance-forward-20260913_fixtures.json",
+  "limitations": [
+    "Frozen private candidates remain separate from the active kernel.",
+    "Additive evidence checkpoint; original 471 exact reports carried from prior verified checkpoint.",
+    "Timestamp relationship is not universal; recorded seeds take precedence.",
+    "Current results support only the exact tested inputs and roles."
+  ]
+}
