@@ -46,6 +46,8 @@ export interface Mk2ReplayMetadata extends SeedMetadata {
   t10Ambusher?: unknown;
   globalAmbusher?: unknown;
   ownInfantryAmbusher?: unknown;
+  /** Present only when both armies remain alive at the unchanged engine round cap. */
+  termination?: {reason: 'round-cap'; rounds: number};
 }
 export interface Mk2ReplayResult extends BattleResult {
   rng: Mk2RngMetadata;
@@ -116,8 +118,8 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   const globalAmbMetadata=globalAmb?.finish(result);
   const ownMetadata=own?.finish(result);
   const total = (side: 'attacker'|'defender') => Object.values(result.remaining[side]).reduce((a, b) => a + b, 0);
-  if (result.winner === 'draw' && total('attacker') > 0 && total('defender') > 0)
-    throw new Error(`Unresolved round cap with both sides alive after ${result.rounds} rounds`);
+  const termination = result.winner === 'draw' && total('attacker') > 0 && total('defender') > 0
+    ? {reason: 'round-cap' as const, rounds: result.rounds} : undefined;
   return {...result, rng: stream.metadata(), replayMetadata: {mode: 'mk2', version: MK2_VERSION,
-    ...seed.metadata, mechanics,...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{}),...(ownMetadata?{ownInfantryAmbusher:ownMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
+    ...seed.metadata, mechanics,...(termination?{termination}:{}),...(e1Metadata?{e1Volley:e1Metadata}:{}),...(c2Metadata?{c2Volley:c2Metadata}:{}),...(fc4Metadata?{fc4Volley:fc4Metadata}:{}),...(avMetadata?{fourSourceVolley:avMetadata}:{}),...(inf5Metadata?{inf5Volley:inf5Metadata}:{}),...(t10Metadata?{t10Ambusher:t10Metadata}:{}),...(globalAmbMetadata?{globalAmbusher:globalAmbMetadata}:{}),...(ownMetadata?{ownInfantryAmbusher:ownMetadata}:{})}, warnings:inf5?inf5.adjustWarnings(warnings):fc4?fc4.adjustWarnings(warnings):c2?c2.adjustWarnings(warnings):warnings};
 }

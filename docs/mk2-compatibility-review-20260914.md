@@ -13,13 +13,13 @@ Nonempty heroes, nonzero passive effects, nonzero inactive stats, changed positi
 
 ## Validation
 
-The installed repair passes 399 simulator tests, simulator and dashboard TypeScript checks, 104 dashboard tests and the production dashboard build. Portable tests cover all eight installed guard families in both roles. Forty previously published cases agree through actual dashboard simulation/trace functions and the normal CLI wrapper, including saved JSON/gzip inputs, complete results and native RNG traces. Separate full-corpus checks preserve complete standard and trace/native results for all 536 reviewed reports, including unresolved cases. No seed/stat fitting or outcome filtering was used.
+The installed repair passes 400 simulator tests, simulator and dashboard TypeScript checks, 104 dashboard tests and the production dashboard build. Portable tests cover all eight installed guard families in both roles. Forty previously published cases agree through actual dashboard simulation/trace functions and the normal CLI wrapper, including saved JSON/gzip inputs, complete results and native RNG traces. Separate full-corpus checks preserve complete standard and trace/native results for all 536 reviewed reports, including unresolved cases. No seed/stat fitting or outcome filtering was used.
 
 Two old tests treated empty passive fields and zero troop entries as reasons to disable scoped behavior. Those representation expectations now have explicit full-result equivalence tests; changed-army, modifier, hero and configuration rejection checks remain. The initial failing suite is retained in the private audit history. Browser rendering and HTTP routing were not exercised by the function-level parity panel; the build is a separate check.
 
-## Findings intentionally left unresolved
+## Round-cap correction and remaining findings
 
-The original 1,500-round default exists. Mk2 currently throws when the engine returns a capped draw with both sides alive, whereas the original engine returns that draw. A separate proposed repair is pending user approval; this compatibility repair does not change cap-result or winner handling.
+The original 1,500-round default exists. With the user's explicit approval, Mk2 now returns the engine's capped draw with `termination: {reason: "round-cap", rounds: ...}` instead of throwing when both armies remain alive. The round limit, troop stats and RNG consumption are unchanged. Tests cover default and explicit limits, unchanged complete no-damage battle results, and preservation of decisive and both-zero results. This does not change how a winner is chosen for an ordinary battle.
 
 The current Mk2 stat catalogue still differs from Piddly's original in 156 cells across 109 profiles within T1-T10, FC1-FC5. Every difference is minus one: 79 attack and 77 health cells. These are remaining effects of the earlier flooring override; no new stat deviations are introduced here. The abandoned broad rollback remains unapplied.
 

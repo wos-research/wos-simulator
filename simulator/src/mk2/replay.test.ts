@@ -91,12 +91,14 @@ test('Mk2 configuration preserves reference profiles and introduces no hero or T
   assert.deepEqual(reference.troopSkills, config.troopSkills);
 });
 
-test('invalid mechanics, empty armies and unresolved round caps fail explicitly', () => {
+test('invalid mechanics and empty armies fail explicitly; a low cap retains its draw', () => {
   for (const mechanics of [{rng: 'legacy'}, {fcRounding: 'wrong'}, {gunpowderTiming: null}, null, []])
     assert.throws(() => normalizeMechanics(mechanics as any));
   assert.throws(() => replayMk2(input(), config, {trace: 'true'} as any));
   assert.throws(() => replayMk2({attacker: {troops: {}}, defender: input().defender}, config), /empty/);
-  assert.throws(() => replayMk2({...input(), maxRounds: 1}, config), /Unresolved round cap/);
+  const capped = replayMk2({...input(), maxRounds: 1}, config);
+  assert.equal(capped.winner, 'draw');
+  assert.deepEqual(capped.replayMetadata.termination, {reason: 'round-cap', rounds: 1});
 });
 
 test('optional delayed dispatch processes persistent extra effects and their delays only once', () => {
@@ -138,4 +140,20 @@ test('additional troop skills and hero contexts retain reference Gunpowder timin
   assert.ok(hero.warnings.some(w => w.includes('hero interactions have not been validated')));
   const upperTier = replayMk2({attacker: {troops: {marksman_t11_fc5: 1000}}, defender: {troops: {infantry_t11_fc5: 1000}}}, config, {reportedSeed: 42});
   assert.ok(upperTier.warnings.some(w => w.includes('T11 uses the existing supplied catalogue')));
+});
+
+
+test('default and explicit round caps preserve complete legacy no-damage results', () => {
+  const side = {troops: {infantry_t1: 1}, stats: {infantry: {attack: 0, defense: 1e6, lethality: 0, health: 1e6}}, heroes: []};
+  for (const maxRounds of [undefined, 1499, 1500, 1501]) for (const trace of [false, true]) {
+    const battle = {attacker: side, defender: structuredClone(side), ...(maxRounds === undefined ? {} : {maxRounds})};
+    const legacy = runPrepared(prepareBattle(battle, config), undefined, {mode: trace ? 'trace' : 'standard'});
+    const result = replayMk2(battle, config, {reportedSeed: 100001, trace});
+    const {rng, replayMetadata, warnings, ...actualBattle} = result;
+    assert.deepEqual(actualBattle, legacy);
+    assert.equal(result.winner, 'draw');
+    assert.equal(result.rounds, maxRounds ?? 1500);
+    assert.deepEqual(replayMetadata.termination, {reason: 'round-cap', rounds: maxRounds ?? 1500});
+    assert.equal(rng.calls, 0);
+  }
 });
