@@ -1,0 +1,4849 @@
+{
+  "createdUtc": "2026-09-14T07:14:25.936495+00:00",
+  "installedCatalogue": 19,
+  "reports": 521,
+  "exact": 516,
+  "mismatches": 5,
+  "survivorSlotsChecked": 3126,
+  "explicitChanceCountersChecked": 1249,
+  "errors": 0,
+  "warnings": 102,
+  "publishedCheckpoint": {
+    "reports": 516,
+    "exact": 516,
+    "commit": "31a3bee900e6455702e037c4c50a4cb8ebd3ec10"
+  },
+  "newUnresolvedReports": 5,
+  "newDevelopmentMatchesExcluded": true,
+  "method": "Combine two normal public-CLI runs against unchanged installed catalogue19, using distinct test ids. No changed active source, adjusted inputs, fitted seeds, or candidate substitution. New prospective captures remain outside this evaluated count.",
+  "sourceOutputSha256": {
+    "published516": "a95dd1a63e4b31395a8e7157b7d99077580e041c8745c11c248dd435b061576f",
+    "newT7Forward5": "b96a96262ba85b5fe7dd8bf819aa631e16e9c24298d7cbc60761476de3101786"
+  },
+  "rows": [
+    {
+      "test_id": "mk2-alg-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-alg-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-accounting-followup-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-accounting-followup-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-accounting-followup-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-accounting-followup-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-accounting-followup-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-five-infantry-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-five-infantry-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-five-infantry-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-five-infantry-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-five-infantry-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse2-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse2-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse2-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse2-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse2-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse3-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse3-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse3-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse3-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse3-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-c2-one-infantry-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-014",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-015",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-016",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-017",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-018",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-019",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-020",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-021",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-022",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-023",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-024",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-025",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-026",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-027",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-028",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-029",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-030",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-031",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-032",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-033",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-034",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-035",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-036",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-037",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-038",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-039",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-040",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-041",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-042",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-043",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-044",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-045",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-046",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-047",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-048",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-049",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-050",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-051",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-052",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-053",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-054",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-055",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-056",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-057",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-058",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-059",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-060",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-061",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-062",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-063",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-064",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-065",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-066",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-067",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-068",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-069",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-070",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-071",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-072",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-073",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-074",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-075",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-076",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-077",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-078",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-079",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-080",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-081",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-082",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-083",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-084",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-085",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-086",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-087",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-088",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-089",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 0,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-090",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-091",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-092",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-093",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-094",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-095",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-096",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-097",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-098",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-099",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-100",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-101",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-102",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-103",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-104",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-105",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-106",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-107",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-108",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-109",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-110",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-111",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-112",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-113",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-114",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-115",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-116",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-117",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-118",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-119",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-120",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-121",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-122",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-123",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-124",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-125",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-126",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-127",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-128",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-129",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-130",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-131",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-132",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-133",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-134",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-135",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-136",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-137",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-138",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-139",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-140",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-141",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-142",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-143",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-144",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-145",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-146",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-147",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-148",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-149",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-150",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-151",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-152",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-153",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-154",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-155",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-156",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-157",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-158",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-159",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-160",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-campaign-20260913-161",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-014",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-015",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-016",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-017",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-018",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-019",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-continuation-20260913-020",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-014",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-015",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-016",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-017",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-018",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-019",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-020",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-021",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-022",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-023",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-024",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-025",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-026",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-027",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-028",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-029",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-030",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-031",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-032",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-033",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-034",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-035",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-036",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-037",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-038",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-039",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-040",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-041",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-042",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-043",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-044",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-045",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-046",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-047",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-048",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-049",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-050",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-051",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-052",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-053",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-054",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-055",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-056",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-057",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-058",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-059",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-060",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-061",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-062",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-063",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-064",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-065",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-066",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-067",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-068",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-069",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-070",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-071",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-072",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-073",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-074",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-075",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-076",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-077",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-078",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-079",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-080",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-081",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-082",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-083",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-084",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-085",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-086",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-087",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-088",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-089",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-090",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-091",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-092",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-093",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-094",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-095",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-096",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-097",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-098",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-099",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-100",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-101",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-102",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-103",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-104",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-105",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-106",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-107",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-108",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-109",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-110",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-111",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-112",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-113",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-114",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-115",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-116",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-117",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-118",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-119",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-120",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-121",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-122",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-123",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-124",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-125",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-126",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-127",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-128",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-129",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-130",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-131",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-132",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-133",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-134",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-135",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-136",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-137",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-138",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-139",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-140",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-141",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-142",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-143",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-144",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-145",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-146",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-147",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-148",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-149",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-150",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 1,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-151",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-152",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-153",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-154",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-155",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-156",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-157",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-158",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-159",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-160",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-014",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-followup-20260913-015",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-four-skill-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-014",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-mixed-fc5-pending-20260913-015",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-forward-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-forward-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-forward-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-forward-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-forward-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-reverse-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-reverse-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-reverse-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-reverse-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-next210-reverse-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-forward-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-forward-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-forward-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-forward-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-forward-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-lance-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-reverse-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-reverse-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-reverse-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-reverse-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-mm-reverse-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 2,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-reverse-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-reverse-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-reverse-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-reverse-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-reverse-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-forward-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-forward-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-forward-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-forward-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-forward-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-own-infantry-250-reverse-20260914-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 6,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-006",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-007",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-008",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-009",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-010",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-011",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-012",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-research-pending-20260913-013",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-c2-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 4,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-d1-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-d1-20260913-002",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-d1-20260913-003",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-d1-20260913-004",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-d1-20260913-005",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-unresolved-e1-20260913-001",
+      "cohortSource": "published516",
+      "exact": true,
+      "outcomeExact": true,
+      "survivorSlots": 6,
+      "procFields": 3,
+      "differences": []
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-001",
+      "cohortSource": "newT7Forward5",
+      "exact": false,
+      "outcomeExact": false,
+      "survivorSlots": 6,
+      "procFields": 5,
+      "differences": [
+        {
+          "field": "remaining.defender.marksman",
+          "expected": 94,
+          "actual": 98
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 2,
+          "actual": 1
+        },
+        {
+          "field": "skillProcs.defender.90006",
+          "expected": 2,
+          "actual": 0
+        },
+        {
+          "field": "skillProcs.defender.90008",
+          "expected": 0,
+          "actual": 2
+        },
+        {
+          "field": "skillProcs.defender.90009",
+          "expected": 1,
+          "actual": 2
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-002",
+      "cohortSource": "newT7Forward5",
+      "exact": false,
+      "outcomeExact": false,
+      "survivorSlots": 6,
+      "procFields": 5,
+      "differences": [
+        {
+          "field": "remaining.defender.lancer",
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "field": "remaining.defender.marksman",
+          "expected": 94,
+          "actual": 100
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 3,
+          "actual": 0
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 1,
+          "actual": 2
+        },
+        {
+          "field": "skillProcs.defender.90006",
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "field": "skillProcs.defender.90008",
+          "expected": 1,
+          "actual": 3
+        },
+        {
+          "field": "skillProcs.defender.90009",
+          "expected": 3,
+          "actual": 4
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-003",
+      "cohortSource": "newT7Forward5",
+      "exact": false,
+      "outcomeExact": false,
+      "survivorSlots": 6,
+      "procFields": 5,
+      "differences": [
+        {
+          "field": "remaining.defender.lancer",
+          "expected": 0,
+          "actual": 1
+        },
+        {
+          "field": "remaining.defender.marksman",
+          "expected": 99,
+          "actual": 100
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 2,
+          "actual": 0
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 1,
+          "actual": 2
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-004",
+      "cohortSource": "newT7Forward5",
+      "exact": false,
+      "outcomeExact": false,
+      "survivorSlots": 6,
+      "procFields": 5,
+      "differences": [
+        {
+          "field": "remaining.defender.marksman",
+          "expected": 96,
+          "actual": 100
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 3,
+          "actual": 1
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 0,
+          "actual": 2
+        },
+        {
+          "field": "skillProcs.defender.90006",
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "field": "skillProcs.defender.90008",
+          "expected": 0,
+          "actual": 4
+        },
+        {
+          "field": "skillProcs.defender.90009",
+          "expected": 5,
+          "actual": 4
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-005",
+      "cohortSource": "newT7Forward5",
+      "exact": false,
+      "outcomeExact": false,
+      "survivorSlots": 6,
+      "procFields": 5,
+      "differences": [
+        {
+          "field": "remaining.defender.lancer",
+          "expected": 1,
+          "actual": 0
+        },
+        {
+          "field": "remaining.defender.marksman",
+          "expected": 100,
+          "actual": 97
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 1,
+          "actual": 2
+        },
+        {
+          "field": "skillProcs.defender.90006",
+          "expected": 2,
+          "actual": 0
+        }
+      ]
+    }
+  ]
+}

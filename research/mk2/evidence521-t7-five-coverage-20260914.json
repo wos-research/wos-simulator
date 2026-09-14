@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "reports": 5,
+  "fixtures": [
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-001",
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-001.json",
+      "sha256": "4d1fc8a5fefe2caedef54fd2dcdc8e34b13df10d93140f7ca8aadd36e0e3b167",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-002",
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-002.json",
+      "sha256": "5287b1ac0d74ff13661e8bb58ab24e5fa275b0b341fce6f4fa669ade34281e27",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-003",
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-003.json",
+      "sha256": "02c775ea81842b439d18e416434d0d5aa782ec2dffb6093bc0b58061338b4277",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-004",
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-004.json",
+      "sha256": "cbb6055ff99fab15daeda7b303f8e6625a45dce3b74bbbff1d1afc082ec34370",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-005",
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-005.json",
+      "sha256": "e54f8401e454e7cae90c97edfbf0b7dc70a4cb58811f1a316e937d7a87ca21e3",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    }
+  ],
+  "deduplicationPolicy": "Each independently identified fight is retained, even when payloads match."
+}

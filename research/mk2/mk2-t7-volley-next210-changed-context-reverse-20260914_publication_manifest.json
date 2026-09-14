@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "classification": "Additive five changed-context reverse T7 reports only",
+  "reports": 5,
+  "installedCatalogue": 19,
+  "installedExact": 0,
+  "privateFrozenExact": {
+    "H0": 0,
+    "G1_V_LOCAL": 5,
+    "G1_V_GLOBAL": 5,
+    "GLOBAL_LIVE_MM": 5
+  },
+  "sha256Convention": "UTF-8 LF normalized Git blob convention; stagedSourceByteSha256 retains local package bytes",
+  "files": [
+    {
+      "file": "docs/mk2-t7-volley-next210-changed-context-reverse-20260914.md",
+      "sha256": "f1083c3b5a7557828bdb7f5bb2a74bbb64e7ebba0eb7ac207f2afcb3eb3c65b4",
+      "stagedSourceByteSha256": "f1083c3b5a7557828bdb7f5bb2a74bbb64e7ebba0eb7ac207f2afcb3eb3c65b4"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914_coverage.json",
+      "sha256": "5efc627b6e109e99c1806ac48d07c56c52a6339de00e3f762e179472edc571e9",
+      "stagedSourceByteSha256": "5efc627b6e109e99c1806ac48d07c56c52a6339de00e3f762e179472edc571e9"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914_installed19_results.json",
+      "sha256": "821c5220206dd171f4ef047b80df0fa4bdc092c3bc2345efd374c8f8950e3ce9",
+      "stagedSourceByteSha256": "821c5220206dd171f4ef047b80df0fa4bdc092c3bc2345efd374c8f8950e3ce9"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914_results.json",
+      "sha256": "e3fe89e36fb7208e3845442d43edc5dfa6bcea29aa5f6cbd162e28f0e4c2c4f8",
+      "stagedSourceByteSha256": "e3fe89e36fb7208e3845442d43edc5dfa6bcea29aa5f6cbd162e28f0e4c2c4f8"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914_sanitized_battle_reports.json",
+      "sha256": "199d02683eb7c45af15339e58719053f62fafed041a065504c200808613f95bc",
+      "stagedSourceByteSha256": "199d02683eb7c45af15339e58719053f62fafed041a065504c200808613f95bc"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-001.json",
+      "sha256": "40cbafa6bece647fd8d4ceda15e5fdd820723fe709e23ad3dcfcf60bf0d88fd2",
+      "stagedSourceByteSha256": "40cbafa6bece647fd8d4ceda15e5fdd820723fe709e23ad3dcfcf60bf0d88fd2"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-002.json",
+      "sha256": "704f32eae412fa6542423c2031a8958b31dfaa1c5f19e63d414fd5a5e2ae2d75",
+      "stagedSourceByteSha256": "704f32eae412fa6542423c2031a8958b31dfaa1c5f19e63d414fd5a5e2ae2d75"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-003.json",
+      "sha256": "b6b542fde0110b5685a5a0af38022f956d2c96371fc34043a3e9cb16da5b3cb0",
+      "stagedSourceByteSha256": "b6b542fde0110b5685a5a0af38022f956d2c96371fc34043a3e9cb16da5b3cb0"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-004.json",
+      "sha256": "fa9a8e19d459c68828a97beb3ac34d5eaf5acb340886ecd68f47d6d036f8955a",
+      "stagedSourceByteSha256": "fa9a8e19d459c68828a97beb3ac34d5eaf5acb340886ecd68f47d6d036f8955a"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-005.json",
+      "sha256": "f81ff52c11ea233622f1c3ac037ca0712dcdaae727056cf74cae981324445d11",
+      "stagedSourceByteSha256": "f81ff52c11ea233622f1c3ac037ca0712dcdaae727056cf74cae981324445d11"
+    }
+  ],
+  "manifestSelfExcluded": true
+}

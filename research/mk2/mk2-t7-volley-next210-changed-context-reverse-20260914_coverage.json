@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "reports": 5,
+  "fixtures": [
+    {
+      "test_id": "mk2-t7-volley-next210-changed-context-reverse-20260914-001",
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-001.json",
+      "sha256": "40cbafa6bece647fd8d4ceda15e5fdd820723fe709e23ad3dcfcf60bf0d88fd2",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-changed-context-reverse-20260914-002",
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-002.json",
+      "sha256": "704f32eae412fa6542423c2031a8958b31dfaa1c5f19e63d414fd5a5e2ae2d75",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-changed-context-reverse-20260914-003",
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-003.json",
+      "sha256": "b6b542fde0110b5685a5a0af38022f956d2c96371fc34043a3e9cb16da5b3cb0",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-changed-context-reverse-20260914-004",
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-004.json",
+      "sha256": "fa9a8e19d459c68828a97beb3ac34d5eaf5acb340886ecd68f47d6d036f8955a",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-changed-context-reverse-20260914-005",
+      "file": "testcases/mk2/mk2-t7-volley-next210-changed-context-reverse-20260914-005.json",
+      "sha256": "f81ff52c11ea233622f1c3ac037ca0712dcdaae727056cf74cae981324445d11",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5
+    }
+  ],
+  "sha256Convention": "UTF-8 LF normalized (identical to package source bytes)",
+  "deduplicationPolicy": "One testcase per independently identified fight; never deduplicate by matching content.",
+  "classification": "Changed-context reverse role control"
+}

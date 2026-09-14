@@ -1,0 +1,308 @@
+{
+  "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-004",
+  "simulation_mode": "mk2",
+  "cohort": "mk2-asymmetric-infantry-new-context-reverse-20260914",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "infantry_t10_fc5": 1,
+      "lancer_t10_fc5": 100
+    },
+    "stats": {
+      "infantry": {
+        "attack": 309.07,
+        "defense": 312.32,
+        "lethality": 194.71,
+        "health": 192.67
+      },
+      "lancer": {
+        "attack": 276.09,
+        "defense": 276.34,
+        "lethality": 190.05,
+        "health": 187.65
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "lancer_t10_fc5": 100
+    },
+    "stats": {
+      "lancer": {
+        "attack": 274.05,
+        "defense": 282.58,
+        "lethality": 198.81,
+        "health": 194.59
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "timestamp": "1789390397",
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "reportedSeed": 1789390398,
+    "mechanics": {
+      "fcRounding": "floor",
+      "catalogueCorrections": "validated",
+      "gunpowderShield": "per-hit",
+      "lanceShield": "per-hit",
+      "volleyShield": "per-hit",
+      "attackScheduling": "side-local",
+      "volleyAfterDeath": "roll",
+      "gunpowderTiming": "after-volley",
+      "terminalVolleyShield": "roll"
+    }
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      }
+    },
+    "totals": {
+      "attacker": 0,
+      "defender": 0
+    },
+    "winner": "defender",
+    "skillProcs": {
+      "attacker": {
+        "90008": 8,
+        "90004": 9,
+        "90007": 2
+      },
+      "defender": {
+        "90008": 9,
+        "90004": 19
+      }
+    }
+  },
+  "timestampEvidence": {
+    "capturedTimestamp": 1789390397,
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "capturedTimestampWasDerivedFromSeed": false,
+    "reportedSeed": 1789390398,
+    "delta": 1,
+    "seedEqualsCapturedTimePlusOne": true,
+    "hardTimestampGateApplied": false,
+    "originalAdapterTimestamp": "1789390397",
+    "originalAdapterTimestampSource": "derived-report-seed-minus-one"
+  },
+  "sourceAdapterOptions": {
+    "mixedStacks": "upstream",
+    "rng": "lua54"
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "actor": "attacker",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 16439,
+        "10112": 16449,
+        "10113": 19434,
+        "10114": 19809,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11423,
+        "10103": 15881,
+        "10104": 15877,
+        "10105": 8175,
+        "10106": 7825,
+        "10107": 15415,
+        "10108": 15375,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 11000,
+          "star": 5,
+          "soldier_type": 1,
+          "count": 1
+        },
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ]
+    },
+    {
+      "side": "defender",
+      "actor": "defender",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 15113,
+        "10112": 15022,
+        "10113": 19230,
+        "10114": 20233,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11623,
+        "10103": 16382,
+        "10104": 15896,
+        "10105": 8175,
+        "10106": 8025,
+        "10107": 16291,
+        "10108": 16069,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ]
+    }
+  ],
+  "evidenceSummary": {
+    "status": "Research evidence; installed catalogue19 results independently evaluated in the accompanying CLI aggregate.",
+    "scope": "1 T10 FC5 Infantry plus 100 T10 FC5 Lancers attacking 100 T10 FC5 Lancers; exact exported modifiers, no heroes.",
+    "independentRawChecks": {
+      "reportedSeed": 1,
+      "survivorSlots": 6,
+      "explicitProcFields": 5,
+      "normalizedAxes": 24
+    },
+    "limits": "Frozen A reserves attacker Ambusher first; I reserves the Infantry-bearing side first. Normal side-local attack and effect slots are preserved. This is changed-context reverse research, not original-context confirmation. A and I use the same order here; agreement cannot distinguish their priorities. The fourth case has both survivor totals zero and remains included. These observations do not uniquely prove physical server timing. Operational report UI summaries were seen during collection; packet-level outcomes were accessed only after staged releases. No seed or stat fitting. Case 004 winner is corrected to defender from independently bound game UI; the earlier survivor-derived draw is retained as history."
+  },
+  "winnerEvidence": {
+    "source": "independently-bound-in-game-UI",
+    "classification": "defender",
+    "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+    "bothSidesZero": true,
+    "historicalSurvivorDerivedClassification": "draw",
+    "uiHeadline": "Attacker Defeat",
+    "uiFullReportHeadline": "DEFEAT!",
+    "linkedCapturedTimeUtc": "2026-09-14 12:53:17 UTC",
+    "uiBindingArtifactSha256": "0ad3cc6db98707a1191b51b1cc70265b62a0f743533b9bd336b75dc3fe50dcf1",
+    "attackerViewNativeArtifactSha256": "0897636bea95699bc54bfe9db8ad1d4619fcbfef2fe868c4110a9143489eefe4",
+    "defenderViewNativeArtifactSha256": "a1fc870ab72d3e9a1be4b12bd79d13f190554891ac9d8a8970c12b9ef2410f1d",
+    "bindingMethod": "Independent report time, location, side roles, troop counts and casualties matched privately. Private identities and location omitted here.",
+    "verification": "Root independently reviewed full attacker-view UI; original defender-view victory also corroborated by its collecting controller. This exporter verifies both native hashes and the signed-off binding; it does not claim a new visual inspection.",
+    "limitation": "Rounded survivor totals do not establish the game-declared winner. No winner field exists in the decoded combat payload."
+  },
+  "changedContextEvidence": {
+    "status": "Original-context metadata gate failed; this is a separately frozen new-context experiment.",
+    "attackerRawModifierDeltas": {},
+    "defenderRawModifierDeltas": {
+      "10113": {
+        "frozen": 19730,
+        "actual": 19230,
+        "delta": -500
+      },
+      "10114": {
+        "frozen": 19733,
+        "actual": 20233,
+        "delta": 500
+      }
+    },
+    "derivedStatDeltas": {
+      "attacker": {
+        "infantry": {},
+        "lancer": {},
+        "marksman": {}
+      },
+      "defender": {
+        "infantry": {
+          "attack": {
+            "frozen": 312.03,
+            "actual": 307.03,
+            "delta": -5.0
+          },
+          "defense": {
+            "frozen": 313.56,
+            "actual": 318.56,
+            "delta": 5.0
+          }
+        },
+        "lancer": {
+          "attack": {
+            "frozen": 279.05,
+            "actual": 274.05,
+            "delta": -5.0
+          },
+          "defense": {
+            "frozen": 277.58,
+            "actual": 282.58,
+            "delta": 5.0
+          }
+        },
+        "marksman": {
+          "attack": {
+            "frozen": 304.36,
+            "actual": 299.36,
+            "delta": -5.0
+          },
+          "defense": {
+            "frozen": 303.89,
+            "actual": 308.89,
+            "delta": 5.0
+          }
+        }
+      }
+    },
+    "actualMetadataSidecarSha256": "73c788a601828322569762fd8b75b2ec932676d8708034021e9f4b242844343d",
+    "newContextDesignFreezeSha256": "9cd3a4987d003dc71f2d22ef7045e2dfc02f7433a92ecb0a7e0aad4b9feb0cf8",
+    "otherModifiersProfilesHeroesAndExpertsUnchanged": true,
+    "causeOfContextChangeNotInferred": true
+  }
+}

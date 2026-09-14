@@ -1,0 +1,1497 @@
+{
+  "schemaVersion": 1,
+  "reports": 5,
+  "frozenCatalogue17H0Exact": 0,
+  "frozenAExact": 4,
+  "frozenIExact": 4,
+  "rows": [
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-001",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 11,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 11,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 5,
+            "90004": 13,
+            "90007": 1
+          },
+          "defender": {
+            "90008": 7,
+            "90004": 7
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 9,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 9,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 13,
+                "90007": 1,
+                "90008": 5
+              },
+              "defender": {
+                "90004": 9,
+                "90008": 7
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 13,
+              "actual": 13,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 1,
+              "actual": 1,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 9,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 11,
+              "actual": 9
+            },
+            {
+              "field": "skillProcs.defender:90004",
+              "expected": 7,
+              "actual": 9
+            }
+          ],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "955a357146ba3024289bcb1383890497cde3e63f5e64b10f0c5066296b11ba48",
+          "survivorsExact": false,
+          "procsExact": false
+        },
+        "A": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 11,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 11,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 13,
+                "90007": 1,
+                "90008": 5
+              },
+              "defender": {
+                "90004": 7,
+                "90008": 7
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 13,
+              "actual": 13,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 1,
+              "actual": 1,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "ff092dea5775eec33ab06cb8fedc837da6f53ff99dd5a04e7a7b789ffc6f92c7",
+          "survivorsExact": true,
+          "procsExact": true
+        },
+        "I": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 11,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 11,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 13,
+                "90007": 1,
+                "90008": 5
+              },
+              "defender": {
+                "90004": 7,
+                "90008": 7
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 13,
+              "actual": 13,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 1,
+              "actual": 1,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "29c753c309925da27cfb186bd20eab5670a39984f62d211d85f6352baf6c017d",
+          "survivorsExact": true,
+          "procsExact": true
+        }
+      },
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "comparisonSha256": "739e6b533a9d0a64fb64e823bdd363eedc11d541b7a7e0e0ae688cdf41463636",
+      "AIReverseRoleNumericalAgreement": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-002",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 3,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 3,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 7,
+            "90004": 5,
+            "90007": 0
+          },
+          "defender": {
+            "90008": 5,
+            "90004": 14
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 19,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 19,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 3,
+                "90007": 0,
+                "90008": 6
+              },
+              "defender": {
+                "90004": 6,
+                "90008": 3
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 5,
+              "actual": 3,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 6,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 14,
+              "actual": 6,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 3,
+              "exact": false
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 3,
+              "actual": 19
+            },
+            {
+              "field": "skillProcs.attacker:90004",
+              "expected": 5,
+              "actual": 3
+            },
+            {
+              "field": "skillProcs.attacker:90008",
+              "expected": 7,
+              "actual": 6
+            },
+            {
+              "field": "skillProcs.defender:90004",
+              "expected": 14,
+              "actual": 6
+            },
+            {
+              "field": "skillProcs.defender:90008",
+              "expected": 5,
+              "actual": 3
+            }
+          ],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "81c002217c1329dc7c1cc3e17e06f598f69b4fe949361569673b51cb34d46ca7",
+          "survivorsExact": false,
+          "procsExact": false
+        },
+        "A": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 3,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 3,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 5,
+                "90007": 0,
+                "90008": 7
+              },
+              "defender": {
+                "90004": 14,
+                "90008": 5
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 14,
+              "actual": 14,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "a2da788888904fff7a171fc3d7e14ad6e345b89900da1c7e08d43682cf0bea49",
+          "survivorsExact": true,
+          "procsExact": true
+        },
+        "I": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 3,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 3,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 5,
+                "90007": 0,
+                "90008": 7
+              },
+              "defender": {
+                "90004": 14,
+                "90008": 5
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 14,
+              "actual": 14,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "9335fb7dddf70aaaef9e0050eabdc4fb59b3bff621e5d2828aac2509d566735f",
+          "survivorsExact": true,
+          "procsExact": true
+        }
+      },
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "comparisonSha256": "7b9911eb9ead4b1d3b6db4c2ee9de07ebd3b8a27e5737485973dfe853306befa",
+      "AIReverseRoleNumericalAgreement": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-003",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 30,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 30,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 7,
+            "90004": 9,
+            "90007": 0
+          },
+          "defender": {
+            "90008": 2,
+            "90004": 10
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 34,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 34,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 8,
+                "90007": 0,
+                "90008": 7
+              },
+              "defender": {
+                "90004": 8,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 8,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 10,
+              "actual": 8,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 30,
+              "actual": 34
+            },
+            {
+              "field": "skillProcs.attacker:90004",
+              "expected": 9,
+              "actual": 8
+            },
+            {
+              "field": "skillProcs.defender:90004",
+              "expected": 10,
+              "actual": 8
+            }
+          ],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "8f42cd09fe6be797e76b7f2d792149370c7b453d55a7610d7ea4e79eed6d3872",
+          "survivorsExact": false,
+          "procsExact": false
+        },
+        "A": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 30,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 30,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 9,
+                "90007": 0,
+                "90008": 7
+              },
+              "defender": {
+                "90004": 10,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 10,
+              "actual": 10,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "7458443ffda060a8f3060ccc137ef083944a3c8a1dc37bd17c725c6be2dcd205",
+          "survivorsExact": true,
+          "procsExact": true
+        },
+        "I": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 30,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 30,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 9,
+                "90007": 0,
+                "90008": 7
+              },
+              "defender": {
+                "90004": 10,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 10,
+              "actual": 10,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "069ce52211b96fbd89858d9e19765f01b7b74b4945ab39f7bb0fc65e139771e5",
+          "survivorsExact": true,
+          "procsExact": true
+        }
+      },
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "comparisonSha256": "30368f5f72affe5fd773c43edf62425ef7e42fe97630e55daa09d68833e9a961",
+      "AIReverseRoleNumericalAgreement": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-004",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 0
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 8,
+            "90004": 9,
+            "90007": 2
+          },
+          "defender": {
+            "90008": 9,
+            "90004": 19
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 6,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 6,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 7,
+                "90007": 2,
+                "90008": 8
+              },
+              "defender": {
+                "90004": 10,
+                "90008": 9
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 7,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 8,
+              "actual": 8,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 19,
+              "actual": 10,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 0,
+              "actual": 6
+            },
+            {
+              "field": "skillProcs.attacker:90004",
+              "expected": 9,
+              "actual": 7
+            },
+            {
+              "field": "skillProcs.defender:90004",
+              "expected": 19,
+              "actual": 10
+            },
+            {
+              "field": "winner",
+              "expected": "defender",
+              "actual": "attacker"
+            }
+          ],
+          "winnerCorrect": false,
+          "fullArchiveSha256": "188b753e4050d78384671462de7f554b5f50afceab4e9395ca324100bf0b89d9",
+          "survivorsExact": false,
+          "procsExact": false
+        },
+        "A": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "draw",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 0,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 9,
+                "90007": 2,
+                "90008": 8
+              },
+              "defender": {
+                "90004": 19,
+                "90008": 9
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 8,
+              "actual": 8,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 19,
+              "actual": 19,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "winner",
+              "expected": "defender",
+              "actual": "draw"
+            }
+          ],
+          "winnerCorrect": false,
+          "fullArchiveSha256": "5d9e97df856dea93758999886c8237df62691d770142a05eb43f1e2e6e172aef",
+          "survivorsExact": true,
+          "procsExact": true
+        },
+        "I": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "draw",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 0,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 9,
+                "90007": 2,
+                "90008": 8
+              },
+              "defender": {
+                "90004": 19,
+                "90008": 9
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 8,
+              "actual": 8,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 19,
+              "actual": 19,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "winner",
+              "expected": "defender",
+              "actual": "draw"
+            }
+          ],
+          "winnerCorrect": false,
+          "fullArchiveSha256": "447eef175e72ef39fdc2d323108e0b3b1ea86c3eb30debe3254bb71df9651e46",
+          "survivorsExact": true,
+          "procsExact": true
+        }
+      },
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "bothSidesZero": true,
+        "historicalSurvivorDerivedClassification": "draw",
+        "uiHeadline": "Attacker Defeat",
+        "uiFullReportHeadline": "DEFEAT!",
+        "linkedCapturedTimeUtc": "2026-09-14 12:53:17 UTC",
+        "uiBindingArtifactSha256": "0ad3cc6db98707a1191b51b1cc70265b62a0f743533b9bd336b75dc3fe50dcf1",
+        "attackerViewNativeArtifactSha256": "0897636bea95699bc54bfe9db8ad1d4619fcbfef2fe868c4110a9143489eefe4",
+        "defenderViewNativeArtifactSha256": "a1fc870ab72d3e9a1be4b12bd79d13f190554891ac9d8a8970c12b9ef2410f1d",
+        "bindingMethod": "Independent report time, location, side roles, troop counts and casualties matched privately. Private identities and location omitted here.",
+        "verification": "Root independently reviewed full attacker-view UI; original defender-view victory also corroborated by its collecting controller. This exporter verifies both native hashes and the signed-off binding; it does not claim a new visual inspection.",
+        "limitation": "Rounded survivor totals do not establish the game-declared winner. No winner field exists in the decoded combat payload."
+      },
+      "comparisonSha256": "496b649bd5b705f04f26b0f702fcca1ee63b0221eb7f1319d546cbf10786e0cb",
+      "AIReverseRoleNumericalAgreement": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-005",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 21,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 21,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 6,
+            "90004": 7,
+            "90007": 0
+          },
+          "defender": {
+            "90008": 2,
+            "90004": 9
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 19,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 19,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 7,
+                "90007": 0,
+                "90008": 6
+              },
+              "defender": {
+                "90004": 8,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 6,
+              "actual": 6,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 8,
+              "exact": false
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 21,
+              "actual": 19
+            },
+            {
+              "field": "skillProcs.defender:90004",
+              "expected": 9,
+              "actual": 8
+            }
+          ],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "83189d546c5d7ec852f91ca4d21303b85f6a465988f28299c43018dab90c4274",
+          "survivorsExact": false,
+          "procsExact": false
+        },
+        "A": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 21,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 21,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 7,
+                "90007": 0,
+                "90008": 6
+              },
+              "defender": {
+                "90004": 9,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 6,
+              "actual": 6,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "52f1f7df5714e8d9ef83821f6c032f97ac9659124025ddfa705f6f39fd207e8f",
+          "survivorsExact": true,
+          "procsExact": true
+        },
+        "I": {
+          "exact": true,
+          "outcomeExact": true,
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 21,
+                "marksman": 0
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 21,
+              "defender": 0
+            },
+            "skillProcs": {
+              "attacker": {
+                "90004": 7,
+                "90007": 0,
+                "90008": 6
+              },
+              "defender": {
+                "90004": 9,
+                "90008": 2
+              }
+            }
+          },
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90007",
+              "expected": 0,
+              "actual": 0,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 6,
+              "actual": 6,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90004",
+              "expected": 9,
+              "actual": 9,
+              "exact": true
+            },
+            {
+              "side": "defender",
+              "reportSkillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "winnerCorrect": true,
+          "fullArchiveSha256": "2fd4c0b568668f44edb2bb557b59943112d4a69d74b3b9085e82d5ceaa8a6810",
+          "survivorsExact": true,
+          "procsExact": true
+        }
+      },
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "comparisonSha256": "cf527dccf1e8fcacb22baf02805cc97cbeeea365ce26143d61f14baa6378fc12",
+      "AIReverseRoleNumericalAgreement": true
+    }
+  ],
+  "limitations": "Frozen A reserves attacker Ambusher first; I reserves the Infantry-bearing side first. Normal side-local attack and effect slots are preserved. This is changed-context reverse research, not original-context confirmation. A and I use the same order here; agreement cannot distinguish their priorities. The fourth case has both survivor totals zero and remains included. These observations do not uniquely prove physical server timing. Operational report UI summaries were seen during collection; packet-level outcomes were accessed only after staged releases. No seed or stat fitting. Case 004 has a UI-confirmed defender victory despite both rounded survivor totals being zero. Saved A/I draw predictions fail the corrected winner oracle. No numerical reruns or kernel changes.",
+  "oracleVersion": 2,
+  "aggregate": {
+    "H0": {
+      "exact": 0,
+      "winnerCorrect": 4,
+      "survivorsExact": 0,
+      "procsExact": 0
+    },
+    "A": {
+      "exact": 4,
+      "winnerCorrect": 4,
+      "survivorsExact": 5,
+      "procsExact": 5
+    },
+    "I": {
+      "exact": 4,
+      "winnerCorrect": 4,
+      "survivorsExact": 5,
+      "procsExact": 5
+    }
+  }
+}
