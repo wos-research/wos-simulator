@@ -1,0 +1,212 @@
+{
+  "test_id": "mk2-pair1-counts150-forward-20260914-002",
+  "simulation_mode": "mk2",
+  "cohort": "pair1-counts150-forward",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "marksman_t5": 150
+    },
+    "stats": {
+      "marksman": {
+        "attack": 180.58,
+        "defense": 186.08,
+        "lethality": 133.61,
+        "health": 132.66
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "infantry_t5_fc1": 150
+    },
+    "stats": {
+      "infantry": {
+        "attack": 165.8,
+        "defense": 164.3,
+        "lethality": 114.43,
+        "health": 111.52
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "reportedSeed": 1789405823,
+    "mechanics": {},
+    "timestamp": "1789405822",
+    "timestampSource": "captured-world-march-battle-trigger-linked-mail"
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 65
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      }
+    },
+    "totals": {
+      "attacker": 65,
+      "defender": 0
+    },
+    "winner": "attacker",
+    "skillProcs": {
+      "attacker": {},
+      "defender": {}
+    }
+  },
+  "battleType": 9,
+  "timestampEvidence": {
+    "recordedSeed": 1789405823,
+    "capturedTimestamp": 1789405822,
+    "capturedTimestampStatus": "independently captured and identity-linked",
+    "legacyAdapterTimestamp": "1789405822",
+    "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+    "legacyAdapterTimestampIsCapturedFact": false,
+    "seedClockRelationNotAssumed": true
+  },
+  "winnerEvidence": {
+    "source": "independent native UI review",
+    "winner": "attacker",
+    "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+    "uiVerified": true,
+    "sha256": "d848ce50f98dae502921ffc84a2c12354a92f737209af2fc531bdedea95974bf"
+  },
+  "chanceCounterEvidence": {
+    "attacker": {
+      "recordedCounters": 0,
+      "explicitZeroCounters": 0,
+      "status": "absent-not-observed-zero"
+    },
+    "defender": {
+      "recordedCounters": 0,
+      "explicitZeroCounters": 0,
+      "status": "absent-not-observed-zero"
+    }
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "rawBuffs": {
+        "10110": 10367,
+        "10111": 9951,
+        "10112": 9956,
+        "10113": 7741,
+        "10114": 8241,
+        "10115": 3410,
+        "10101": 6450,
+        "10102": 6100,
+        "10103": 9147,
+        "10104": 8926,
+        "10105": 6475,
+        "10106": 6525,
+        "10107": 8745,
+        "10108": 8955,
+        "10109": 10317,
+        "10116": 3310
+      },
+      "profiles": [
+        {
+          "soldier_type": 3,
+          "id": 30500,
+          "star": 0,
+          "count": 150
+        }
+      ],
+      "heroes": [
+        []
+      ],
+      "experts": [
+        [
+          {
+            "id": 7010,
+            "level": 12,
+            "break_level": 2,
+            "skills": {
+              "7010": 2,
+              "70101": 4
+            }
+          },
+          {
+            "id": 7004,
+            "level": 10,
+            "break_level": 1,
+            "skills": {
+              "7004": 1
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "side": "defender",
+      "rawBuffs": {
+        "10110": 9150,
+        "10111": 9190,
+        "10112": 9477,
+        "10113": 7655,
+        "10114": 7705,
+        "10115": 2900,
+        "10101": 8925,
+        "10102": 8725,
+        "10103": 8543,
+        "10104": 8352,
+        "10105": 5975,
+        "10106": 6175,
+        "10107": 8189,
+        "10108": 8579,
+        "10109": 8950,
+        "10116": 2800
+      },
+      "profiles": [
+        {
+          "soldier_type": 1,
+          "id": 10500,
+          "star": 1,
+          "count": 150
+        }
+      ],
+      "heroes": [
+        []
+      ],
+      "experts": [
+        [
+          {
+            "id": 7010,
+            "level": 12,
+            "break_level": 2,
+            "skills": {
+              "7010": 2,
+              "70101": 4
+            }
+          },
+          {
+            "id": 7004,
+            "level": 10,
+            "break_level": 1,
+            "skills": {
+              "7004": 1
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "evidenceSummary": {
+    "classification": "PROSPECTIVE_FROZEN_ACTUAL_CONTEXT_COUNTS150",
+    "distinctReportRetained": true,
+    "deduplicatedByCombatContent": false,
+    "unknownTimestampsRemainUnknown": true,
+    "rawSourceArtifactSha256": "3993b298cd8f2a57d27b2fc95a42cfeb1503afab41bd976fb42572a078461d63",
+    "rawBattleBytesSha256": "3094628910001572aee077b2d1be76b1a44c4278348f4e7acbeee115fed09106"
+  }
+}
