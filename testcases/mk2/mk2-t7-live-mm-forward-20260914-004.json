@@ -1,0 +1,280 @@
+{
+  "test_id": "mk2-t7-live-mm-forward-20260914-004",
+  "simulation_mode": "mk2",
+  "cohort": "mk2-t7-live-mm-forward-20260914",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "lancer_t5_fc5": 100
+    },
+    "stats": {
+      "lancer": {
+        "attack": 274.05,
+        "defense": 282.58,
+        "lethality": 198.81,
+        "health": 194.59
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "marksman_t7_fc3": 100,
+      "lancer_t10_fc5": 10
+    },
+    "stats": {
+      "marksman": {
+        "attack": 301.4,
+        "defense": 304.65,
+        "lethality": 200.29,
+        "health": 198.39
+      },
+      "lancer": {
+        "attack": 276.09,
+        "defense": 276.34,
+        "lethality": 190.05,
+        "health": 187.65
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "timestamp": "1789397697",
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "reportedSeed": 1789397698,
+    "mechanics": {
+      "fcRounding": "floor",
+      "gunpowderShield": "per-hit",
+      "lanceShield": "per-hit",
+      "volleyShield": "per-hit",
+      "attackScheduling": "side-local",
+      "volleyAfterDeath": "roll",
+      "gunpowderTiming": "after-volley"
+    }
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 95
+      }
+    },
+    "totals": {
+      "attacker": 0,
+      "defender": 95
+    },
+    "winner": "defender",
+    "skillProcs": {
+      "attacker": {
+        "90008": 1
+      },
+      "defender": {
+        "90008": 2,
+        "90009": 2,
+        "90004": 2,
+        "90006": 1
+      }
+    }
+  },
+  "battleType": 9,
+  "timestampEvidence": {
+    "capturedTimestamp": 1789397697,
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "capturedTimestampWasDerivedFromSeed": false,
+    "reportedSeed": 1789397698,
+    "delta": 1,
+    "seedEqualsCapturedTimePlusOne": true,
+    "hardTimestampGateApplied": false,
+    "originalAdapterTimestamp": "1789397697",
+    "originalAdapterTimestampSource": "derived-report-seed-minus-one"
+  },
+  "sourceAdapterOptions": {
+    "mixedStacks": "upstream",
+    "rng": "lua54"
+  },
+  "winnerEvidence": {
+    "source": "independently-bound-in-game-UI",
+    "winner": "defender",
+    "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+    "capturedUtc": "2026-09-14T14:54:57+00:00",
+    "uiNativeArtifactSha256": "00caa29fd0a0774f3b1eeae063df581a04bf544b83b2c831cf102c263739cd55",
+    "uiStageArtifactSha256": "b46dd8a11dcbae0aee30ebf7ad163be1cfb2aeee60a55953fedbaeb9bcfdda84",
+    "independentUiReviewSha256": "005d611c7c39e0b41427b4212b04b3ac1cb28cd47919555b2aa2ebad60c45baa",
+    "uiSurvivorTotals": {
+      "attacker": 0,
+      "defender": 95
+    },
+    "method": "Full report UI independently reviewed and privately bound to timestamp, roles, troop counts and casualties."
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 15113,
+        "10112": 15022,
+        "10113": 19230,
+        "10114": 20233,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11623,
+        "10103": 16382,
+        "10104": 15896,
+        "10105": 8175,
+        "10106": 8025,
+        "10107": 16291,
+        "10108": 16069,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 20500,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ],
+      "allTypeStatsFromStatModel": {
+        "infantry": {
+          "attack": 307.03,
+          "defense": 318.56,
+          "lethality": 199.72,
+          "health": 192.86
+        },
+        "lancer": {
+          "attack": 274.05,
+          "defense": 282.58,
+          "lethality": 198.81,
+          "health": 194.59
+        },
+        "marksman": {
+          "attack": 299.36,
+          "defense": 308.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      }
+    },
+    {
+      "side": "defender",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 16439,
+        "10112": 16449,
+        "10113": 19434,
+        "10114": 19809,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11423,
+        "10103": 15881,
+        "10104": 15877,
+        "10105": 8175,
+        "10106": 7825,
+        "10107": 15415,
+        "10108": 15375,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 30700,
+          "star": 3,
+          "soldier_type": 3,
+          "count": 100
+        },
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 10
+        }
+      ],
+      "allTypeStatsFromStatModel": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        },
+        "lancer": {
+          "attack": 276.09,
+          "defense": 276.34,
+          "lethality": 190.05,
+          "health": 187.65
+        },
+        "marksman": {
+          "attack": 301.4,
+          "defense": 304.65,
+          "lethality": 200.29,
+          "health": 198.39
+        }
+      }
+    }
+  ],
+  "contextEvidence": {
+    "metadataSha256": "6ddb0203b6c1f4c960a43700a5f1ed2fc5b4d6c1397d36ced43a4f62f8209dd4",
+    "designManifestSha256": "5a6a1b7fd23287c0547c31669f079963c2d5a7d7843886f403171b8d5e4d70a0",
+    "allFiveOutcomeReleaseSha256": "7ed5321d656882241d65afded3ad034f7f1abb4b86c9fb3845e92799e595eb73",
+    "classification": "Fresh predeclared actor-context validation of the frozen historical LIVE_MM hypothesis; all five outcomes released together after metadata review.",
+    "scope": "100 T5 FC5 Lancers attack 10 T10 FC5 Lancers plus 100 T7 FC3 Marksmen; heroes empty."
+  },
+  "evidenceSummary": {
+    "independentFights": 1,
+    "deduplicatedByContent": false,
+    "status": "Measured against restored active Mk2 separately from frozen historical candidates.",
+    "limitations": "LIVE_MM remains a private historical hypothesis, not an active installed algorithm. Its frozen catalogue-18 result is not a validation of the restored catalogue-20 model. Controller observed operational report UI; independent UI review later confirmed the oracle. Explicit zero counters are retained. Genuine captured timestamps remain separate from the legacy seed-minus-one adapter timestamp, and no timestamp relation was used as a gate."
+  }
+}

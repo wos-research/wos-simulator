@@ -1,0 +1,13 @@
+# Five fresh T7 live-Marksman reports and restored 546-report checkpoint
+
+Five independent hero-free occupied-tile fights add 100 T5 FC5 Lancers attacking 10 T10 FC5 Lancers plus 100 T7 FC3 Marksmen. All five normalized inputs, complete sanitized combat payloads, independently reviewed UI winners, genuine notification timestamps and original recorded seeds are preserved. This adds five fixtures to the prior 90 unchanged files: 95 files and 546 distinct reports. No content-based deduplication was performed.
+
+Current restored catalogue20: **324/546 exact**, 545/546 winner classifications, 222 unresolved; 3276 survivor checks and 1374 explicit proc checks. Normal CLI executed every case once, with 112 known warnings and zero errors. The new five are **0/5 exact and 5/5 winners**. Their 25 explicit counters include three zeros. Expected mismatch exit code is 1.
+
+Separately frozen historical catalogue18 H0/G1_V_GLOBAL/GLOBAL_LIVE_MM comparisons are 0/5, 2/5 and 5/5 exact. LIVE_MM remains private hypothesis evidence, not an installed algorithm, and these matches do not certify the restored stat baseline. All five current outputs differ numerically from historical H0; complete differences and native-RNG archives remain private. Original-versus-exported input replay matches numerically and in native RNG for all five under the current engine.
+
+Timestamps were independently captured and are exported as such. The legacy seed-minus-one adapter timestamp/source remains separately labeled as derived. The original recorded seed override is authoritative; no timestamp relation was used as a gate. All five outcomes were released together after metadata review; older first/held-out labels are superseded. Controller UI exposure is disclosed.
+
+Only formation identity is replaced with side-local ordinal1 in the sanitized sidecar. Raw buff, expert, soldier, casualty, loss-power and statistic fields remain intact, including zeros. Outer account/mail/device/capture envelopes and player identities are excluded. Public hashes bind private raw/UI artifacts; mappings and captures are not included.
+
+See [corpus](../research/mk2/evidence546-controlled-corpus-manifest-20260914.json), [current results](../research/mk2/installed-catalogue20-controlled546-20260914.json), [five-case current detail](../research/mk2/mk2-t7-live-mm-forward-20260914_active_results.json), [historical candidates](../research/mk2/mk2-t7-live-mm-forward-20260914_historical_candidate_results.json), and [complete sanitized reports](../research/mk2/mk2-t7-live-mm-forward-20260914_sanitized_battle_reports.json). Historical checkpoints remain historical; the restored baseline does not retain the old 530/541 accuracy.

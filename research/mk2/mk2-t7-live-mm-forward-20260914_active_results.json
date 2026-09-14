@@ -1,0 +1,700 @@
+{
+  "createdUtc": "2026-09-14T16:09:14.108Z",
+  "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+  "reports": 5,
+  "activeExact": 0,
+  "winnerCorrect": 5,
+  "originalExportFullNumericAndRngEquality": 5,
+  "historicalH0NumericEquality": 0,
+  "sourcePinsStable": 317,
+  "interpretation": "Restored active Mk2 only; frozen historical LIVE_MM algorithm was not installed. All differences from catalogue-18 H0 retained privately; only replayMetadata excluded from historical numerical comparison.",
+  "rows": [
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-001",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 92
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 92
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 3
+          },
+          "defender": {
+            "90004": 3,
+            "90006": 0,
+            "90008": 2,
+            "90009": 3
+          }
+        }
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 97
+        }
+      },
+      "winner": "defender",
+      "rounds": 13,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 3,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "skillId": "Ambusher",
+          "expected": 3,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90006",
+          "skillId": "Volley",
+          "expected": 0,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 2,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90009",
+          "skillId": "CrystalGunpowder",
+          "expected": 3,
+          "actual": 4,
+          "exact": false
+        }
+      ],
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789397498",
+        "reportedSeed": "1789397498",
+        "timestamp": "1789397497",
+        "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+        "timestampSeed": "1789397498",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "defender: delayed Gunpowder timing is unvalidated for this context; retaining reference timing. Measured scope is hero-free single-stack Marksmen versus Infantry, Volley 10%/100%, Gunpowder 20%/50%, optional Shield 37.5% with per-hit protection, no additional troop skills, and side-local scheduling."
+      ],
+      "rng": {
+        "seed": "1789397498",
+        "calls": 59,
+        "draws": 96
+      },
+      "originalExportFullNumericAndRngEquality": true,
+      "historicalH0NumericEquality": false,
+      "historicalH0DifferenceCount": 33,
+      "historicalH0DifferenceTopFields": [
+        "attacks",
+        "trace"
+      ],
+      "allHistoricalDifferencesArchiveSha256": "196b707b45093566a829a587566a860402cc74e9d970c3bedcaaa9e3d5536dc1",
+      "installedFullArchiveSha256": "0d1e848cef35675b72f5b5a3bf83665585f865b3e5ad19ea60cca7280d84c7ba",
+      "frozenHistoricalFullArchiveSha256": "37c1fd3bfa66a987132b45a021c327c2c3377095da4aeb63e3432efa4818f057"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-002",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 88
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 88
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2
+          },
+          "defender": {
+            "90004": 7,
+            "90006": 0,
+            "90008": 0,
+            "90009": 3
+          }
+        }
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 82
+        }
+      },
+      "winner": "defender",
+      "rounds": 16,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 2,
+          "actual": 4,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "skillId": "Ambusher",
+          "expected": 7,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90006",
+          "skillId": "Volley",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 0,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90009",
+          "skillId": "CrystalGunpowder",
+          "expected": 3,
+          "actual": 2,
+          "exact": false
+        }
+      ],
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789397563",
+        "reportedSeed": "1789397563",
+        "timestamp": "1789397562",
+        "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+        "timestampSeed": "1789397563",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "defender: delayed Gunpowder timing is unvalidated for this context; retaining reference timing. Measured scope is hero-free single-stack Marksmen versus Infantry, Volley 10%/100%, Gunpowder 20%/50%, optional Shield 37.5% with per-hit protection, no additional troop skills, and side-local scheduling."
+      ],
+      "rng": {
+        "seed": "1789397563",
+        "calls": 60,
+        "draws": 95
+      },
+      "originalExportFullNumericAndRngEquality": true,
+      "historicalH0NumericEquality": false,
+      "historicalH0DifferenceCount": 129,
+      "historicalH0DifferenceTopFields": [
+        "attacks",
+        "skillReport",
+        "trace"
+      ],
+      "allHistoricalDifferencesArchiveSha256": "8faaf736b098c38cf8f2944bda5d12d4b5bfec8e102737cdba0076cbac9e5fab",
+      "installedFullArchiveSha256": "c286fd3b70d728128823832cfed17994621453a98a1e297830de4a667f8905de",
+      "frozenHistoricalFullArchiveSha256": "640891457835c4b5c48b7d31045ec8b972d53f39158a32bb26dde618cfc33778"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-003",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 89
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 89
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2
+          },
+          "defender": {
+            "90004": 2,
+            "90006": 1,
+            "90008": 1,
+            "90009": 1
+          }
+        }
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 90
+        }
+      },
+      "winner": "defender",
+      "rounds": 15,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 2,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "skillId": "Ambusher",
+          "expected": 2,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90006",
+          "skillId": "Volley",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90009",
+          "skillId": "CrystalGunpowder",
+          "expected": 1,
+          "actual": 2,
+          "exact": false
+        }
+      ],
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789397606",
+        "reportedSeed": "1789397606",
+        "timestamp": "1789397605",
+        "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+        "timestampSeed": "1789397606",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "defender: delayed Gunpowder timing is unvalidated for this context; retaining reference timing. Measured scope is hero-free single-stack Marksmen versus Infantry, Volley 10%/100%, Gunpowder 20%/50%, optional Shield 37.5% with per-hit protection, no additional troop skills, and side-local scheduling."
+      ],
+      "rng": {
+        "seed": "1789397606",
+        "calls": 61,
+        "draws": 112
+      },
+      "originalExportFullNumericAndRngEquality": true,
+      "historicalH0NumericEquality": false,
+      "historicalH0DifferenceCount": 81,
+      "historicalH0DifferenceTopFields": [
+        "attacks",
+        "trace"
+      ],
+      "allHistoricalDifferencesArchiveSha256": "7fffa88e38367669be09803dc701538b4a6f21c39d28960ee65fd9d6cfbfccde",
+      "installedFullArchiveSha256": "c5ff504378c872452a3a3a3a2af53f79e00bf8d74ce44b582d4bfd8e9c9209a8",
+      "frozenHistoricalFullArchiveSha256": "dd34456fd50001a706d2920b922288e802f14a69b3d6b9374a3a5750542b056b"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-004",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 95
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 95
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1
+          },
+          "defender": {
+            "90004": 2,
+            "90006": 1,
+            "90008": 2,
+            "90009": 2
+          }
+        }
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 88
+        }
+      },
+      "winner": "defender",
+      "rounds": 16,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "skillId": "Ambusher",
+          "expected": 2,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90006",
+          "skillId": "Volley",
+          "expected": 1,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 2,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90009",
+          "skillId": "CrystalGunpowder",
+          "expected": 2,
+          "actual": 1,
+          "exact": false
+        }
+      ],
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789397698",
+        "reportedSeed": "1789397698",
+        "timestamp": "1789397697",
+        "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+        "timestampSeed": "1789397698",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "defender: delayed Gunpowder timing is unvalidated for this context; retaining reference timing. Measured scope is hero-free single-stack Marksmen versus Infantry, Volley 10%/100%, Gunpowder 20%/50%, optional Shield 37.5% with per-hit protection, no additional troop skills, and side-local scheduling."
+      ],
+      "rng": {
+        "seed": "1789397698",
+        "calls": 64,
+        "draws": 106
+      },
+      "originalExportFullNumericAndRngEquality": true,
+      "historicalH0NumericEquality": false,
+      "historicalH0DifferenceCount": 111,
+      "historicalH0DifferenceTopFields": [
+        "attacks",
+        "trace"
+      ],
+      "allHistoricalDifferencesArchiveSha256": "c6843cd7ca60f486b64e7609448d77d98a39a91eb0c496cbf074430bcf46d92c",
+      "installedFullArchiveSha256": "b323ceb812929c15d131339a1d5e15f12d84db269160a42628f5a61abceded70",
+      "frozenHistoricalFullArchiveSha256": "632adff2ec54d3595b4e61e4b1ae7469f77b6a510e3e4c9c60f9501cb01225b9"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-005",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 97
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 97
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1
+          },
+          "defender": {
+            "90004": 3,
+            "90006": 2,
+            "90008": 2,
+            "90009": 3
+          }
+        }
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 87
+        }
+      },
+      "winner": "defender",
+      "rounds": 15,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 1,
+          "actual": 3,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "skillId": "Ambusher",
+          "expected": 3,
+          "actual": 2,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90006",
+          "skillId": "Volley",
+          "expected": 2,
+          "actual": 2,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "skillId": "CrystalLance",
+          "expected": 2,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90009",
+          "skillId": "CrystalGunpowder",
+          "expected": 3,
+          "actual": 1,
+          "exact": false
+        }
+      ],
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789397763",
+        "reportedSeed": "1789397763",
+        "timestamp": "1789397762",
+        "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+        "timestampSeed": "1789397763",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "defender: delayed Gunpowder timing is unvalidated for this context; retaining reference timing. Measured scope is hero-free single-stack Marksmen versus Infantry, Volley 10%/100%, Gunpowder 20%/50%, optional Shield 37.5% with per-hit protection, no additional troop skills, and side-local scheduling."
+      ],
+      "rng": {
+        "seed": "1789397763",
+        "calls": 59,
+        "draws": 92
+      },
+      "originalExportFullNumericAndRngEquality": true,
+      "historicalH0NumericEquality": false,
+      "historicalH0DifferenceCount": 109,
+      "historicalH0DifferenceTopFields": [
+        "attacks",
+        "skillReport",
+        "trace"
+      ],
+      "allHistoricalDifferencesArchiveSha256": "6f2239682b1f92543485ef8163822c84df0f47c43bf91f3c156ecc0ae9edd837",
+      "installedFullArchiveSha256": "520aa13ba65ad99aca3e3e3f4a6f9a09d3f0def753f10ad9755862cf8bac9680",
+      "frozenHistoricalFullArchiveSha256": "7e6675c19c075241abab2b42582c56572d9b6a4e88ef848b55ed080f9984428d"
+    }
+  ]
+}

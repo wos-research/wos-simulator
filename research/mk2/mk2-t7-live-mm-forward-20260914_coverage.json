@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "reports": 5,
+  "rows": [
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-001",
+      "fixture": "testcases/mk2/mk2-t7-live-mm-forward-20260914-001.json",
+      "fixtureSha256": "13dc0ab6ad1160b5c673d6350540054088f5bfc9e812b7e77f3abe023bb3958c",
+      "ordinal": 1,
+      "recordedSeed": 1789397498,
+      "capturedTimestamp": 1789397497,
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5,
+      "explicitZeroCounters": 1,
+      "rawArtifactSha256": "e627513ae0276970193f767dcbb0707c4aa54633c73e1cde0f6bfcc1df57f40f"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-002",
+      "fixture": "testcases/mk2/mk2-t7-live-mm-forward-20260914-002.json",
+      "fixtureSha256": "3201b76080779436d0cab4351875adb90b9dfa2fd643d71e4684de20dd6f05b3",
+      "ordinal": 2,
+      "recordedSeed": 1789397563,
+      "capturedTimestamp": 1789397562,
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5,
+      "explicitZeroCounters": 2,
+      "rawArtifactSha256": "f8cf036806f6126fb5d094e6054614102a9e4f2534fee4a2d5ce5c3c0fc116b1"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-003",
+      "fixture": "testcases/mk2/mk2-t7-live-mm-forward-20260914-003.json",
+      "fixtureSha256": "b0faacdc2f0917a552e07ecaecf6689cf32ec7db54fd45f6fde3b51ef137bc99",
+      "ordinal": 3,
+      "recordedSeed": 1789397606,
+      "capturedTimestamp": 1789397605,
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5,
+      "explicitZeroCounters": 0,
+      "rawArtifactSha256": "fc9fdd701d38aa74261b68786418103c8fb907d1f84b0691001f5dd53472286f"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-004",
+      "fixture": "testcases/mk2/mk2-t7-live-mm-forward-20260914-004.json",
+      "fixtureSha256": "cfed99914594dcf3ab7353fd37c3d00040180776aedab8902dcdaae89ede38de",
+      "ordinal": 4,
+      "recordedSeed": 1789397698,
+      "capturedTimestamp": 1789397697,
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5,
+      "explicitZeroCounters": 0,
+      "rawArtifactSha256": "59179e90a74848660f20910c567e3cb97e4caa4c47f063b0984d28404ec2f466"
+    },
+    {
+      "test_id": "mk2-t7-live-mm-forward-20260914-005",
+      "fixture": "testcases/mk2/mk2-t7-live-mm-forward-20260914-005.json",
+      "fixtureSha256": "ebaa05b0e0ef004c18b5f324de857a497b0727665fdd1b42f99f22608dd7a8c0",
+      "ordinal": 5,
+      "recordedSeed": 1789397763,
+      "capturedTimestamp": 1789397762,
+      "survivorSlots": 6,
+      "explicitChanceCounters": 5,
+      "explicitZeroCounters": 0,
+      "rawArtifactSha256": "60bbbf7fe65d28228e2c2a18e47a8728686be35998dfe9e4abbc972b3bd9f0c5"
+    }
+  ],
+  "rawSurvivorAndExplicitCounterChecks": 55,
+  "deduplicationPolicy": "Five distinct fights remain five distinct testcases even when inputs or outcomes coincide."
+}
