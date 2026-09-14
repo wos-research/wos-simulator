@@ -1,3 +1,4 @@
+import { defaultRoundCapScopeView } from './default_round_cap_scope_view';
 import {exactScope as ownScope,createOwnInfantryAmbusher} from './scoped_own_infantry_ambusher';
 /** Browser-safe Mk2 entry point. Legacy prepareBattle/runPrepared defaults stay unchanged. */
 import {prepareBattle, runPrepared} from '../simulator';
@@ -88,16 +89,17 @@ export function replayMk2(input: BattleInput, config: SimulatorConfig, options: 
   const terminal = terminalVolleyShield(compiled, mechanics);
   warnings.push(...terminal.warnings);
   const stream = createBattleRng(seed.metadata.effectiveSeed, options.trace);
-  const e1=createScopedE1Volley(compiled,stream,mechanics,options.e1Volley);
-  const c2=createScopedC2Volley(compiled,stream,mechanics,options.c2Volley);
-  const fc4=createScopedFC4Volley(compiled,stream,mechanics,options.fc4Volley);
-  const av=createScopedFourSourceVolley(compiled,stream,mechanics,options.fourSourceVolley);
-  const inf5=createScopedInf5Volley(compiled,stream,mechanics,options.inf5Volley);
+  const scopeCompiled=defaultRoundCapScopeView(compiled);
+  const e1=createScopedE1Volley(scopeCompiled,stream,mechanics,options.e1Volley);
+  const c2=createScopedC2Volley(scopeCompiled,stream,mechanics,options.c2Volley);
+  const fc4=createScopedFC4Volley(scopeCompiled,stream,mechanics,options.fc4Volley);
+  const av=createScopedFourSourceVolley(scopeCompiled,stream,mechanics,options.fourSourceVolley);
+  const inf5=createScopedInf5Volley(scopeCompiled,stream,mechanics,options.inf5Volley);
   const ambusherFallback=volleyAfterDeath(compiled,mechanics.volleyAfterDeath);
-  const t10=createScopedT10Ambusher(compiled,stream,mechanics,options.t10Ambusher,ambusherFallback);
-  const globalAmb=createScopedGlobalAmbusher(compiled,stream,mechanics,options.globalAmbusher,ambusherFallback);
+  const t10=createScopedT10Ambusher(scopeCompiled,stream,mechanics,options.t10Ambusher,ambusherFallback);
+  const globalAmb=createScopedGlobalAmbusher(scopeCompiled,stream,mechanics,options.globalAmbusher,ambusherFallback);
   if(options.ownInfantryAmbusher!==undefined&&!['scoped','reference'].includes(options.ownInfantryAmbusher))throw new Error('Unknown own-Infantry Ambusher policy');
-  const own=options.ownInfantryAmbusher!=='reference'&&ownScope(compiled,mechanics)?createOwnInfantryAmbusher(compiled,stream,mechanics,'cached-round-start'):null;
+  const own=options.ownInfantryAmbusher!=='reference'&&ownScope(scopeCompiled,mechanics)?createOwnInfantryAmbusher(scopeCompiled,stream,mechanics,'cached-round-start'):null;
   if([e1,c2,fc4,av,inf5,t10,globalAmb,own].filter(Boolean).length>1)throw new Error('Scoped ordering guards must be disjoint');
   const result = runPrepared(compiled, undefined, {onRoundStart:own?.onRoundStart,mode: options.trace ? 'trace' : 'standard', rng: own?.rng ?? t10?.rng ?? globalAmb?.rng ?? av?.rng ?? inf5?.rng ?? fc4?.rng ?? c2?.rng ?? e1?.rng ?? stream.rng,
     beforeExhaustedExtraAttack: terminal.beforeExhaustedExtraAttack,
