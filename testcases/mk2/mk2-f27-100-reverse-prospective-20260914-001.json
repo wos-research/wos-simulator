@@ -1,0 +1,222 @@
+{
+  "test_id": "mk2-f27-100-reverse-prospective-20260914-001",
+  "simulation_mode": "mk2",
+  "cohort": "100-reverse-prospective",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "infantry_t5": 100
+    },
+    "stats": {
+      "infantry": {
+        "attack": 92.32,
+        "defense": 98.6,
+        "lethality": 90.36,
+        "health": 91.19
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "marksman_t5": 100
+    },
+    "stats": {
+      "marksman": {
+        "attack": 104.67,
+        "defense": 105.67,
+        "lethality": 89.26,
+        "health": 94.39
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "reportedSeed": 1789417437,
+    "timestamp": "1789417437",
+    "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+    "mechanics": {}
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 32
+      }
+    },
+    "totals": {
+      "attacker": 0,
+      "defender": 32
+    },
+    "winner": "defender",
+    "skillProcs": {
+      "attacker": {},
+      "defender": {}
+    }
+  },
+  "battleType": 9,
+  "timestampEvidence": {
+    "recordedSeed": 1789417437,
+    "capturedTimestamp": 1789417437,
+    "capturedTimestampStatus": "independently captured and identity-linked",
+    "seedMinusCapturedTimestamp": 0,
+    "seedingClockProven": false,
+    "legacyAdapterTimestamp": "1789417436",
+    "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+    "legacyAdapterTimestampIsCapturedFact": false
+  },
+  "winnerEvidence": {
+    "source": "independent native UI review",
+    "sha256": "0a97311d7b02cb38f330eac98dad4447aeb60d233b1756800f61494f618005f7",
+    "winner": "defender",
+    "uiVerified": true,
+    "explicitWinnerFieldPresentInDecodedCombatPayload": false
+  },
+  "chanceCounterEvidence": {
+    "attacker": {
+      "recordedCounters": 0,
+      "explicitZeroCounters": 0,
+      "status": "absent-not-observed-zero"
+    },
+    "defender": {
+      "recordedCounters": 0,
+      "explicitZeroCounters": 0,
+      "status": "absent-not-observed-zero"
+    }
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "rawBuffs": {
+        "10110": 5950,
+        "10111": 7346,
+        "10112": 7393,
+        "10113": 4457,
+        "10114": 5085,
+        "10115": 2456,
+        "10101": 4775,
+        "10102": 4775,
+        "10103": 6580,
+        "10104": 6663,
+        "10105": 3570,
+        "10106": 3570,
+        "10107": 6664,
+        "10108": 6694,
+        "10109": 6000,
+        "10116": 2456
+      },
+      "formations": [
+        {
+          "id": 1,
+          "loss_power": 455,
+          "heroes": [],
+          "experts": [
+            {
+              "id": 7010,
+              "level": 4,
+              "break_level": 1,
+              "skills": {
+                "7010": 1
+              }
+            },
+            {
+              "id": 7004,
+              "level": 4,
+              "break_level": 1,
+              "skills": {
+                "7004": 1
+              }
+            }
+          ],
+          "ext_soldier_skills": [],
+          "soldiers": [
+            {
+              "soldier_type": 1,
+              "id": 10500,
+              "star": 0,
+              "count": 100,
+              "kill": 24,
+              "dead": 0,
+              "wound": 35,
+              "minor_wound": 65,
+              "loss_power": 455,
+              "skill_change_infos": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "side": "defender",
+      "rawBuffs": {
+        "10110": 5900,
+        "10111": 6960,
+        "10112": 6973,
+        "10113": 4467,
+        "10114": 4667,
+        "10115": 1966,
+        "10101": 4350,
+        "10102": 4300,
+        "10103": 6642,
+        "10104": 6654,
+        "10105": 3570,
+        "10106": 3520,
+        "10107": 3996,
+        "10108": 3874,
+        "10109": 6000,
+        "10116": 2466
+      },
+      "formations": [
+        {
+          "id": 1,
+          "loss_power": 312,
+          "heroes": [],
+          "experts": [
+            {
+              "id": 7010,
+              "level": 5,
+              "break_level": 1,
+              "skills": {
+                "7010": 1
+              }
+            },
+            {
+              "id": 7004,
+              "level": 4,
+              "break_level": 1,
+              "skills": {
+                "7004": 1
+              }
+            }
+          ],
+          "ext_soldier_skills": [],
+          "soldiers": [
+            {
+              "soldier_type": 3,
+              "id": 30500,
+              "star": 0,
+              "count": 100,
+              "kill": 35,
+              "dead": 0,
+              "wound": 24,
+              "minor_wound": 44,
+              "loss_power": 312,
+              "skill_change_infos": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "validationScope": "Winner and all six survivor slots; chance counters absent. Injury fields preserved, optional simulator casualty calculator not validated."
+}

@@ -1,0 +1,173 @@
+{
+  "cases": [
+    {
+      "test_id": "mk2-f27-pilot-retrospective-20260914-001",
+      "file": "testcases\\mk2\\mk2-f27-pilot-retrospective-20260914-001.json",
+      "sha256": "de9a126191084960708e6deebc4dc887edda553c8e838f3fa26f5e019e0a3f13",
+      "cohort": "pilot-retrospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-forward-prospective-20260914-001",
+      "file": "testcases\\mk2\\mk2-f27-100-forward-prospective-20260914-001.json",
+      "sha256": "640edd303041eeefbe13e87ac1b08d0a96f603d45529f382728590d5519ba427",
+      "cohort": "100-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-forward-prospective-20260914-002",
+      "file": "testcases\\mk2\\mk2-f27-100-forward-prospective-20260914-002.json",
+      "sha256": "e0693de5b52e9a8735a06002c9be14af604e5d556a3e081bec7c6790340691ad",
+      "cohort": "100-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-forward-prospective-20260914-003",
+      "file": "testcases\\mk2\\mk2-f27-100-forward-prospective-20260914-003.json",
+      "sha256": "1b185c8feab140b2a3432313c04618d411af2362972e0d839bbe8f39545b5f39",
+      "cohort": "100-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-forward-prospective-20260914-004",
+      "file": "testcases\\mk2\\mk2-f27-100-forward-prospective-20260914-004.json",
+      "sha256": "f837b9b342358308d43b161496d60795f5d7cb55819a9e5a92b36c197c4304b6",
+      "cohort": "100-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-forward-prospective-20260914-005",
+      "file": "testcases\\mk2\\mk2-f27-100-forward-prospective-20260914-005.json",
+      "sha256": "b11e410ee53d2253724d270554cfd73119c964e63fe49dac305b680bde23d90d",
+      "cohort": "100-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-reverse-prospective-20260914-001",
+      "file": "testcases\\mk2\\mk2-f27-100-reverse-prospective-20260914-001.json",
+      "sha256": "2c18e6f2e39fa84317ce18de50ab3c3cb2bc0a7e84c85da8e2bc37141aa14603",
+      "cohort": "100-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-reverse-prospective-20260914-002",
+      "file": "testcases\\mk2\\mk2-f27-100-reverse-prospective-20260914-002.json",
+      "sha256": "aa0f83c195a4441e99c1cff74544c476d87e89c0011d92f3982090624f1fd527",
+      "cohort": "100-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-reverse-prospective-20260914-003",
+      "file": "testcases\\mk2\\mk2-f27-100-reverse-prospective-20260914-003.json",
+      "sha256": "08a495eb4177a12ae9cbd93201104431db9484d1c1cd3d0fe6401b7eb10ec547",
+      "cohort": "100-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-reverse-prospective-20260914-004",
+      "file": "testcases\\mk2\\mk2-f27-100-reverse-prospective-20260914-004.json",
+      "sha256": "d847cc4e9b623b2b2bd377dde413b3afe9c8870fa6ef2dd489f9af785aa7aebb",
+      "cohort": "100-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-100-reverse-prospective-20260914-005",
+      "file": "testcases\\mk2\\mk2-f27-100-reverse-prospective-20260914-005.json",
+      "sha256": "c14ff67725b17455cd6e7cb441ac7ec5ea7910170321b0b668e433d8fc10d7f9",
+      "cohort": "100-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-reverse-prospective-20260914-001",
+      "file": "testcases\\mk2\\mk2-f27-101-reverse-prospective-20260914-001.json",
+      "sha256": "ae6f66966141e21778bed2186a990ca5e6c542eafb4ce62b0082539bdb894b6e",
+      "cohort": "101-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-reverse-prospective-20260914-002",
+      "file": "testcases\\mk2\\mk2-f27-101-reverse-prospective-20260914-002.json",
+      "sha256": "10340cc4148fbc903ea823b0c11cbe05f580cbf880e4324b7f56ecb8f4619463",
+      "cohort": "101-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-reverse-prospective-20260914-003",
+      "file": "testcases\\mk2\\mk2-f27-101-reverse-prospective-20260914-003.json",
+      "sha256": "1ab9411a73b955d423ddccac50410f973521c43cf6ba65d6904ec1e0aa3f09db",
+      "cohort": "101-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-reverse-prospective-20260914-004",
+      "file": "testcases\\mk2\\mk2-f27-101-reverse-prospective-20260914-004.json",
+      "sha256": "e18c3dc5874239f2600e0871ef06133bfa8d242dd71b1c3c8635ac838789a4ef",
+      "cohort": "101-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-reverse-prospective-20260914-005",
+      "file": "testcases\\mk2\\mk2-f27-101-reverse-prospective-20260914-005.json",
+      "sha256": "b087d7c846496e18bc1f3398ad7117e7e26160c4ecc4c332a38114196a0e2aec",
+      "cohort": "101-reverse-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-forward-prospective-20260914-001",
+      "file": "testcases\\mk2\\mk2-f27-101-forward-prospective-20260914-001.json",
+      "sha256": "3f743ef1cf54d4ca28fb01b6d0c8979952f63f521bb4336dfa32c4a7d71bc514",
+      "cohort": "101-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-forward-prospective-20260914-002",
+      "file": "testcases\\mk2\\mk2-f27-101-forward-prospective-20260914-002.json",
+      "sha256": "f86784d7fd5bb9c6ad5251a75e1071b05c165a903119ffaad52a7abbb72eebdf",
+      "cohort": "101-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-forward-prospective-20260914-003",
+      "file": "testcases\\mk2\\mk2-f27-101-forward-prospective-20260914-003.json",
+      "sha256": "709ee715bd64e14a67b6c19149f448d745e3e8a99818574943314c6bfdcd1ae9",
+      "cohort": "101-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-forward-prospective-20260914-004",
+      "file": "testcases\\mk2\\mk2-f27-101-forward-prospective-20260914-004.json",
+      "sha256": "2a22c0e2d8870cc55a1e86c04918627863192f3e9030a093ecc9a9c5408f078b",
+      "cohort": "101-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    },
+    {
+      "test_id": "mk2-f27-101-forward-prospective-20260914-005",
+      "file": "testcases\\mk2\\mk2-f27-101-forward-prospective-20260914-005.json",
+      "sha256": "67396ea06a3897d64551fd77497cc23851cffcce61e799fff10e5f86003c67bb",
+      "cohort": "101-forward-prospective",
+      "survivorSlots": 6,
+      "explicitChanceCounters": 0
+    }
+  ],
+  "scope": "20 prospective controls plus 1 separately labeled context-discovery pilot. Not the entire research corpus."
+}
