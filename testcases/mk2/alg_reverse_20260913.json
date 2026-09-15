@@ -1,0 +1,462 @@
+[
+  {
+    "test_id": "mk2-alg-reverse-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "ALG_reverse_three_source_v15",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 153.16,
+          "defense": 151.16,
+          "lethality": 118.28,
+          "health": 113.62
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100,
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 297.8,
+          "defense": 297.4,
+          "lethality": 192.34,
+          "health": 193.17
+        },
+        "lancer": {
+          "attack": 272.49,
+          "defense": 272.09,
+          "lethality": 186.69,
+          "health": 187.42
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789332287",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789332288,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 85,
+          "marksman": 100
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 185
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 5,
+          "90009": 3,
+          "90004": 4
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current catalogue15 matches all available observations in both kernels.",
+      "scope": "Hero-free occupied-tile reverse orientation: 100 T10 FC5 Lancers plus100 T5 FC3 Marksmen versus500 T5 FC1 Infantry; explicit Ambusher/Lance/Gunpowder counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Composition compatibility only; no isolated proof of RNG ordering or catalogue values."
+    }
+  },
+  {
+    "test_id": "mk2-alg-reverse-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "ALG_reverse_three_source_v15",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 153.16,
+          "defense": 151.16,
+          "lethality": 118.28,
+          "health": 113.62
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100,
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 297.8,
+          "defense": 297.4,
+          "lethality": 192.34,
+          "health": 193.17
+        },
+        "lancer": {
+          "attack": 272.49,
+          "defense": 272.09,
+          "lethality": 186.69,
+          "health": 187.42
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789332346",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789332347,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 86,
+          "marksman": 100
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 186
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 10,
+          "90009": 11,
+          "90004": 4
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current catalogue15 matches all available observations in both kernels.",
+      "scope": "Hero-free occupied-tile reverse orientation: 100 T10 FC5 Lancers plus100 T5 FC3 Marksmen versus500 T5 FC1 Infantry; explicit Ambusher/Lance/Gunpowder counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Composition compatibility only; no isolated proof of RNG ordering or catalogue values."
+    }
+  },
+  {
+    "test_id": "mk2-alg-reverse-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "ALG_reverse_three_source_v15",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 153.16,
+          "defense": 151.16,
+          "lethality": 118.28,
+          "health": 113.62
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100,
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 297.8,
+          "defense": 297.4,
+          "lethality": 192.34,
+          "health": 193.17
+        },
+        "lancer": {
+          "attack": 272.49,
+          "defense": 272.09,
+          "lethality": 186.69,
+          "health": 187.42
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789332600",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789332601,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 85,
+          "marksman": 100
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 185
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 6,
+          "90009": 9,
+          "90004": 5
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current catalogue15 matches all available observations in both kernels.",
+      "scope": "Hero-free occupied-tile reverse orientation: 100 T10 FC5 Lancers plus100 T5 FC3 Marksmen versus500 T5 FC1 Infantry; explicit Ambusher/Lance/Gunpowder counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Composition compatibility only; no isolated proof of RNG ordering or catalogue values."
+    }
+  },
+  {
+    "test_id": "mk2-alg-reverse-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "ALG_reverse_three_source_v15",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 153.16,
+          "defense": 151.16,
+          "lethality": 118.28,
+          "health": 113.62
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100,
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 297.8,
+          "defense": 297.4,
+          "lethality": 192.34,
+          "health": 193.17
+        },
+        "lancer": {
+          "attack": 272.49,
+          "defense": 272.09,
+          "lethality": 186.69,
+          "health": 187.42
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789332660",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789332661,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 84,
+          "marksman": 100
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 184
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 6,
+          "90009": 4,
+          "90004": 3
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current catalogue15 matches all available observations in both kernels.",
+      "scope": "Hero-free occupied-tile reverse orientation: 100 T10 FC5 Lancers plus100 T5 FC3 Marksmen versus500 T5 FC1 Infantry; explicit Ambusher/Lance/Gunpowder counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Composition compatibility only; no isolated proof of RNG ordering or catalogue values."
+    }
+  },
+  {
+    "test_id": "mk2-alg-reverse-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "ALG_reverse_three_source_v15",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 500
+      },
+      "stats": {
+        "infantry": {
+          "attack": 153.16,
+          "defense": 151.16,
+          "lethality": 118.28,
+          "health": 113.62
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100,
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 297.8,
+          "defense": 297.4,
+          "lethality": 192.34,
+          "health": 193.17
+        },
+        "lancer": {
+          "attack": 272.49,
+          "defense": 272.09,
+          "lethality": 186.69,
+          "health": 187.42
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789332719",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789332720,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 85,
+          "marksman": 100
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 185
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 6,
+          "90009": 10,
+          "90004": 10
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current catalogue15 matches all available observations in both kernels.",
+      "scope": "Hero-free occupied-tile reverse orientation: 100 T10 FC5 Lancers plus100 T5 FC3 Marksmen versus500 T5 FC1 Infantry; explicit Ambusher/Lance/Gunpowder counters.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Composition compatibility only; no isolated proof of RNG ordering or catalogue values."
+    }
+  }
+]

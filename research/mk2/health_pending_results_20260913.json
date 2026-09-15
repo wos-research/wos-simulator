@@ -1,0 +1,820 @@
+{
+  "kernelVersion": "expedition-mk2-lua54-catalogue-13",
+  "status": "Evidence checkpoint; no production correction applied.",
+  "models": {
+    "H0": "Current health596; full battle and RNG parity through both actual kernels.",
+    "H1": "Predeclared private candidate restores only original T10 FC5 Lancer health597; every other input/rule unchanged."
+  },
+  "summary": {
+    "H0": {
+      "reports": 10,
+      "exact": 0
+    },
+    "H1": {
+      "reports": 10,
+      "exact": 10
+    }
+  },
+  "rows": [
+    {
+      "test_id": "mk2-health-pending-20260913-001",
+      "lancerSide": "attacker",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 100,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 100,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 10,
+            "90004": 7
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 98,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 7,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 100,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 7,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-002",
+      "lancerSide": "attacker",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 50,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 50,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 10,
+            "90004": 16
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 48,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 17,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 50,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 16,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-003",
+      "lancerSide": "attacker",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 495
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 495
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 10,
+            "90004": 12
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 515
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 12,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 495
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 12,
+              "90008": 10
+            },
+            "defender": {}
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-004",
+      "lancerSide": "attacker",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 446
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 446
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 4,
+            "90004": 13
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 464
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 12,
+              "90008": 4
+            },
+            "defender": {}
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 446
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 13,
+              "90008": 4
+            },
+            "defender": {}
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-005",
+      "lancerSide": "attacker",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 52,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 52,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 13,
+            "90004": 13
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 51,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 13,
+              "90008": 13
+            },
+            "defender": {}
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 52,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {
+              "90004": 13,
+              "90008": 13
+            },
+            "defender": {}
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-006",
+      "lancerSide": "defender",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 455
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 455,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 7,
+            "90004": 10
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 478
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 10,
+              "90008": 6
+            }
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 455
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 10,
+              "90008": 7
+            }
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-007",
+      "lancerSide": "defender",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 310
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 310,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 8,
+            "90004": 17
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 332
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 16,
+              "90008": 8
+            }
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 310
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 17,
+              "90008": 8
+            }
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-008",
+      "lancerSide": "defender",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 46,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 46
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 11,
+            "90004": 11
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 44,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 11,
+              "90008": 11
+            }
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 46,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 11,
+              "90008": 11
+            }
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-009",
+      "lancerSide": "defender",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 359
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 359,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 6,
+            "90004": 12
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 381
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 11,
+              "90008": 6
+            }
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 359
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 12,
+              "90008": 6
+            }
+          }
+        }
+      }
+    },
+    {
+      "test_id": "mk2-health-pending-20260913-010",
+      "lancerSide": "defender",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 40,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 40
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90008": 8,
+            "90004": 15
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "health": 596,
+          "exact": false,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 38,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 15,
+              "90008": 8
+            }
+          }
+        },
+        "H1": {
+          "health": 597,
+          "exact": true,
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 40,
+              "marksman": 0
+            }
+          },
+          "skillProcs": {
+            "attacker": {},
+            "defender": {
+              "90004": 15,
+              "90008": 8
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "version": "expedition-mk2-lua54-catalogue-17",
+  "reports": 10,
+  "activeExact": 0,
+  "activePending": 10,
+  "winnerExact": 6,
+  "originalH0BaselineEqual": 10,
+  "nativeRecordedSeedsVerified": 10,
+  "survivorSlotsVerified": 60,
+  "explicitProcFieldsVerified": 40,
+  "timestampPlusOnePass": 10,
+  "warningCases": 0,
+  "rows": [
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-001",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": false,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789355373",
+      "nativeRngSeed": "1789355373",
+      "timestamp": "1789355372",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 24
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 4,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90009",
+          "expected": 3,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 4,
+          "actual": 1,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-002",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789355547",
+      "nativeRngSeed": "1789355547",
+      "timestamp": "1789355546",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 21
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 1,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90009",
+          "expected": 9,
+          "actual": 11,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 3,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-003",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789355769",
+      "nativeRngSeed": "1789355769",
+      "timestamp": "1789355768",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 10
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90009",
+          "expected": 9,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 5,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-004",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": false,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789356096",
+      "nativeRngSeed": "1789356096",
+      "timestamp": "1789356095",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 22
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 5,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90009",
+          "expected": 2,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 1,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-ambusher-source-death-reverse-20260914-005",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": false,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789357321",
+      "nativeRngSeed": "1789357321",
+      "timestamp": "1789357320",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 7,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 4,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90009",
+          "expected": 7,
+          "actual": 4,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 4,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-001",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789355974",
+      "nativeRngSeed": "1789355974",
+      "timestamp": "1789355973",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 18,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 11,
+          "actual": 11,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 4,
+          "actual": 3,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 4,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 5,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-002",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": false,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789356144",
+      "nativeRngSeed": "1789356144",
+      "timestamp": "1789356143",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 6,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 9,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 10,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 9,
+          "actual": 14,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 5,
+          "actual": 5,
+          "exact": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-003",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789357689",
+      "nativeRngSeed": "1789357689",
+      "timestamp": "1789357688",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 19,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 6,
+          "actual": 6,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 11,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 5,
+          "exact": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-004",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789357751",
+      "nativeRngSeed": "1789357751",
+      "timestamp": "1789357750",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 11,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 11,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 11,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 7,
+          "actual": 14,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 5,
+          "actual": 5,
+          "exact": true
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-opposing-t10-lance-forward-20260914-005",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerExact": true,
+      "originalH0BaselineEqual": true,
+      "effectiveSeed": "1789357811",
+      "nativeRngSeed": "1789357811",
+      "timestamp": "1789357810",
+      "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+      "timestampMatchesRecordedSeed": true,
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 14,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 10,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 9,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}

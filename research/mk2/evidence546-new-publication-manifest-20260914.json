@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "scope": "Only additive package files; prior90 fixture files exist unchanged.",
+  "sha256Convention": "UTF-8 LF content, equal to generated source bytes. Manifest excludes itself.",
+  "files": [
+    {
+      "file": "docs/mk2-t7-live-mm-forward546-20260914.md",
+      "sha256": "c46c07dd7b103e5e2911eea5ced681c27be31972bc050634e23d291a55c3b094"
+    },
+    {
+      "file": "research/mk2/evidence546-controlled-corpus-manifest-20260914.json",
+      "sha256": "d1b80df49a08f37fb41af7a0b6ec1de9b51eca7c95c28a6e45a8b7fa81e70f24"
+    },
+    {
+      "file": "research/mk2/installed-catalogue20-controlled546-20260914.json",
+      "sha256": "5f5fcd9a21ae73236b100d28b06006ef53a5115190570f5b045902334e5b2986"
+    },
+    {
+      "file": "research/mk2/mk2-t7-live-mm-forward-20260914_active_results.json",
+      "sha256": "d26d2c02fa83f657bcf37f6a6f2496f001a5d32fff30b3d54c1666fbdcf0ce79"
+    },
+    {
+      "file": "research/mk2/mk2-t7-live-mm-forward-20260914_coverage.json",
+      "sha256": "df705692bf9736c000e4575724836bd0989226b944143ba80fa6ab9d8aea48d6"
+    },
+    {
+      "file": "research/mk2/mk2-t7-live-mm-forward-20260914_historical_candidate_results.json",
+      "sha256": "3d5b9f4ce6714994239bae24d3ad0432ba74c01ee41edb936527b4e4827984df"
+    },
+    {
+      "file": "research/mk2/mk2-t7-live-mm-forward-20260914_sanitized_battle_reports.json",
+      "sha256": "01ae504b44256bd90d2408541b5d68aff22c9c9e08cd3ef7fd185dff086a9a1c"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-live-mm-forward-20260914-001.json",
+      "sha256": "13dc0ab6ad1160b5c673d6350540054088f5bfc9e812b7e77f3abe023bb3958c"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-live-mm-forward-20260914-002.json",
+      "sha256": "3201b76080779436d0cab4351875adb90b9dfa2fd643d71e4684de20dd6f05b3"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-live-mm-forward-20260914-003.json",
+      "sha256": "b0faacdc2f0917a552e07ecaecf6689cf32ec7db54fd45f6fde3b51ef137bc99"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-live-mm-forward-20260914-004.json",
+      "sha256": "cfed99914594dcf3ab7353fd37c3d00040180776aedab8902dcdaae89ede38de"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-live-mm-forward-20260914-005.json",
+      "sha256": "ebaa05b0e0ef004c18b5f324de857a497b0727665fdd1b42f99f22608dd7a8c0"
+    }
+  ]
+}

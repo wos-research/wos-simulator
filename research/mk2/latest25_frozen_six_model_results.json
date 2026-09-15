@@ -1,0 +1,3759 @@
+{
+  "rows": [
+    {
+      "test_id": "mk2-pair1-inf125-mm100-retrospective-20260914-001",
+      "classification": "RETROSPECTIVE_ACTUAL_CONTEXT_DIAGNOSTIC_FAILED_PROSPECTIVE_GATE",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 35,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 35,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "d4c3a2b75038a26f8243f496996dab6b9f2478ae72229b46939068c2dfc7f55f"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "6726f30cfc26fc74bc0de260fd18ce1728738c3617db7f8fddd7af685e571a81"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "c705751b0e866d4592b5918ae4b1af397bf1616da08ab4af6adf9b8b1baeb375"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "fb6173ae2f23d6c3de7b669144dd168bf85ee8a16dd96056c14b7c4188bcc16b"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "8337acad3a9f646bfc3bcc3d755ef5e463cf227f69e3029c07b81b55731c3e5f"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "9427e45411632921c6b9be5a20db241081e515d669f3baa8de3abba311b8bc2f"
+        }
+      },
+      "sourceHandoffSha256": "37fc680640b7c6e075a9ac15b769d1f1d823165b99a657381a95da49f9a05c99"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm100-retrospective-20260914-002",
+      "classification": "RETROSPECTIVE_ACTUAL_CONTEXT_DIAGNOSTIC_FAILED_PROSPECTIVE_GATE",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 35,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 35,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "5a3972563c40846933a86cabd60d63305afde91961ac36f361f30d3b4dfeab62"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "2577223908934e983034f22a3a64a862c9e7a89df9e2480474df18a8fbcb4398"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "db6b7ce1554eaec5e409ef27402324272d62d2efd7e211718c0ef7099111eac9"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "eb8e85dd029168056154245e004cf9d741d80c18a0b561aa863d39ebfe17d222"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "5fcd9b6dac6469474fd34031affc43ba7693ec1dc01f5bf6484d8f1edd7928a1"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "67b56da27cc06fce646bb336f78b137cebfa97bad3173a40b6700068365f5d0e"
+        }
+      },
+      "sourceHandoffSha256": "37fc680640b7c6e075a9ac15b769d1f1d823165b99a657381a95da49f9a05c99"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm100-retrospective-20260914-003",
+      "classification": "RETROSPECTIVE_ACTUAL_CONTEXT_DIAGNOSTIC_FAILED_PROSPECTIVE_GATE",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 35,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 35,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "0345fbcf241434a4120e97bb12a35859408d61974d4d8f0728082d5d9ab25c0c"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "cdec74540eebee7f12f49dae49b0dd088d9c3572811cb9a894218ef764c18342"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "5fd317927a5923a3203e03920559fee05387f2a0a369755f1b23dba944a49478"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "d747a6f2b1f4415fa08713b6d74dd2391fc9fba4574ea9196f3047c3f8d03284"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "b302d07918ca3b3df6d6afffdb1bdc6fb27ec0f9e2c5dd75dc069c9db7d465df"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "3c5431c7b7048dd80b0a7744e57e93b94483cc3e3228427f21343837ca5b3217"
+        }
+      },
+      "sourceHandoffSha256": "37fc680640b7c6e075a9ac15b769d1f1d823165b99a657381a95da49f9a05c99"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm100-retrospective-20260914-004",
+      "classification": "RETROSPECTIVE_ACTUAL_CONTEXT_DIAGNOSTIC_FAILED_PROSPECTIVE_GATE",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 35,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 35,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "c2b626f4ba319a4cfdc9fbb92e9a551ff8f2b90a105018f5429245814ad236ee"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "be3bf17ac81b478a3efae1a4292977d5eb4259ee5e484225475dcc1ffeaf967b"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "234a76be1d4ba9521f69094fa6d8291add5c7b37e4c37cff409c597230ee6cbd"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "56f865453453b1e41fa0180680d4c082ba2d63a2c343ed04a55d1d9f5a78b28d"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "5361117d0202798054eff0ff97577a4f01a2d30175717733bf51f6180a1c82d1"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "0aab9e4d06e2e1bed494c3403ee7763cbfe917cdc4d623d08b66434642ca656b"
+        }
+      },
+      "sourceHandoffSha256": "37fc680640b7c6e075a9ac15b769d1f1d823165b99a657381a95da49f9a05c99"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm100-retrospective-20260914-005",
+      "classification": "RETROSPECTIVE_ACTUAL_CONTEXT_DIAGNOSTIC_FAILED_PROSPECTIVE_GATE",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 35,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 35,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "8df0f5e0b9ecfe813e94c4fde7f54a97a758d15be60d71887c40819700e83c25"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "d19adc1b4883e1806cefe7568ac10a01255dc6c9ded9a53a4242041ad5ab5128"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "bfb079d247bfd0076349318b3ce30e59e743e54368f7823d42ffcc4a8e40bceb"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "44e890f1151e344f6dcbdf6407698891a9e9760e3cbf757aea6e6e00d1516de4"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 36,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "7a37fabe9c62dd73fbb6757b98d2b3fa6d56b186db072de89532878387623528"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 35,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 95,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "971d5dae86e727ab4022587dcdc6638a20e4d5921f89d1fe90e9cbc614d58a55"
+        }
+      },
+      "sourceHandoffSha256": "37fc680640b7c6e075a9ac15b769d1f1d823165b99a657381a95da49f9a05c99"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-001",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_PILOT105MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 24
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "5e166f5795a21ab4618df7f297d6f4324d469ced3b10044f59398c03c4de0496"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "4a565df89e5da20703e7e92604572eac47c46a62b114277daf4251d2f00c6eca"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "bd5b548b4899e11bb137fd906f2601afbc571f9954401d67da14d1712f2643a8"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "12a422b3194a53adb8edbac451bdafd34bd4ab7522831e4caefc357aa60a23c1"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a1cf8977b5530f7ded1d4f477205f8f6f65cfc55c10506989a870ef3643d634f"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "3f8dfe83674b20bfced91090ae5cf093d23271eac881f04eea5614d00136d6bd"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-002",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REMAINING4_105MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 24
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "a9f8b260c7c5898d86488b891661cbfdfa5ce309c306b2a08e51a1a832cabd39"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "340b1579d77a640588cfc71c5d86facce78edafc9d921f3bd16daa7636706b73"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "5f48d0c342bc122676ab2e77af94557b7314ef28c193d6cfb415d08bbfaff654"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "9d34df8b2e06ee56c9e93bee3b3cd6395ee2a4c4b9a3bd4ad585fc8744aba6c3"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "f32274265a5c0a15a5d52505efa97cac2fbeaa87aa83ccf9328d919fe4e8beaa"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "74aa639ff55cc55f116cf374f9556818dad6a6d68079ec547fef51442b504bbd"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-003",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REMAINING4_105MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 24
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "a460c347fe78f3ef3d4df65ce9d33dc9f23150089cdc922e63bdedf399bd6cf2"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "67b14ea8b153cd1523434e74b3583a745ad20718c56544b5db80bb04839b9476"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "c35594aa17809da51ffb8ced45c82b5aef676f26ad7943696bf871a3bb15417c"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "4cd33a4a41d55b4917e3fad7d3c51db57b9cfa2bfb3e698b846faa7d387a8b64"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "2f4dbd0e3916f9d3e90f0b02716f54a0e7eaca9e891e67b3d40f066e5cc5c750"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "3c11063ba1a29bada6e7aeb166d008b146bc09927b932748076d1c2034c6b16d"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-004",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REMAINING4_105MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 24
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "1e13b1215fedfef71acf2831e35010f2d24145b5b04bd43f9ff3dbbd770b12ce"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "e711e51bd0bc3b7229a28c585efd1c1702bece0143b060226279dc1408e82af6"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "5cd2ee0614bfd6ce159fe76c269cd6d5de6dbfa5e63718e6fc0b627da49d4016"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "93514f5a7edb0e8d656d2271ea700637a0044577183d0542e72ce580969eb393"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "fc3dca4cedd4be88618b6e8f8efd794689f7e544d06a265122c4a2feca685061"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "14c1baaf5566cd0b91b3f30c58875f60a1d310b48703ded6208554821cd649e6"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-005",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REMAINING4_105MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 24
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "cbca16ad6a565f2e92bad577345abaaa5d8c015f54f526cee5c430e6cfd9be0b"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "3274d636649c4740e8b088c37fa4fb6a20feeb6de1eb4f24392120193ef18133"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "b1708751fc0a7f442d1a786a89f77e27ea47182176415be05f94945823b8965c"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "f9a21f98d4feac045e531624548c1591ecb9b95ff3acb38f831b107ceff2c639"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "0688e75c1fd701220c2e03bee0b0579503e8363c1d0a698ef65aefd941af5ecb"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "786dbf38c6e1b345637f2ba5eca1590793f5f6675e3032edbc57cd9b5d6b84d1"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-006",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_125INF105MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 24,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "c01b105271095014d6ac10d96cf76d7d094ce15d7e8656e85a24aed1dacbd23f"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "208443cad83ae250db259cc71ea0ba9c9dcf103af2b95f43d935804e889308bb"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "b611d7eecad1cc1513770c3a3accca81ced3c21dc5ed1dfee3fece057c8344c0"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a159aa809a5e2511a65ff67b445b2bf33cadc365d7566f2ce23abdf1101adf2b"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "e2995811b3af776cb6a8cf69918166a5259b917394b90f0233d0ac9c67482c67"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "d157f1c9ff22c298018c98bd068b21f0a05490deb1ac63a142478514ba625566"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-007",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_125INF105MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 24,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "cf0be490fd3a4ee34e8a5f4e14f41f378eaf5562e9ba4ceaa1c3ad035222e0fa"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "283d948f84bbfdf1448d39a6f2114a431c3214b6a1c8be44139924707ff6608e"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "f0d3ba944b3b8735d3b21d73fea372f41f90e8793bf633509761fb28a34ca3fc"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "1184d09fcffe5ae9d3e37f01db8c1a5b30bc45d2cc21e3321db4e869671362ce"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "ddd11f7962435bb9bdfd83d5e1659c851940e268a4ae11ec4a48cdc7f18e8149"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "dfd7a63439b40c14aae8ae8a4ab4438c3eeae85ec1867f1c281cefff0b0c904a"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-008",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_125INF105MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 24,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "ae4427162b69edf087a587e9434c015797445176c2413733a246844e46ad3198"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "258c3e025069af89337cebe04e50f6ba3ffb95d3cde685f98e7a83fbfc177792"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "36399e89b927a2fce21b0eb3d3505bf7b99c707e316350e00f0c87e497ac010e"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a81f81a67f63b19c5349de4fb79d19e8b045fa573229581b9acfe7d41f011aa7"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "91c2e90a0949267c138f714b516c8174eda1a1c32d68b14d3bba8f1f151ba70a"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "2f9215c9a276e87e48ed2992874a5da169c43a0d046c008e22521f24eb46b38d"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-009",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_125INF105MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 24,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "1837122e0936972d255bf4cba17ed6173662f0d361ade8f6840ea787161acaa0"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "637a9f11a20448bc0a1b4791f99980e69973e8ecf92ea05c807536c43878dfa8"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "db2098375fb06d7f3dc3ccdce5d5461c4a620a59f8b21f144d0af14e6ad47f21"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "3a2522fc9c28ace0e94325897f8af3e70b6693f9ff61c320293ec98e83792328"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "e08416bdc52910f5c41f3565b69f98fcd05d7e76e32ddff7400e8c2dc73878ac"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "fba6e162754649e2e32b4ce56acf06a83bbe5af9c1d514011df78ac8e36923df"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm105-prospective-20260914-010",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_125INF105MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 24,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 24,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "9c89d24fc0fc07ef28fe14dee5282acbb68fc2c1468a24473c97041517956044"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "7307b221bd9b74827e8bf6a7f7305803ec5407cc8a378f9f9119b509f62248a4"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "ce74ea6a4f3e6b475d311c59ad27b554dfd64bec786fe6b42604ae360d551994"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 25,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a4e0795f6ff5d6bd1f5ed3c264d7eacbd17727966c08374f7b919c9c0479b26c"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 26,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 104,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "38f56a2d98112779935ea09970fd7fa953f6a8bfa75637fdc318951dbe0a92fa"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 24,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 103,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "167c3540013b309220b74917b103c7da87a328b094e65e4aaa15246e69c30b53"
+        }
+      },
+      "sourceHandoffSha256": "9c16f26250dde2ac1a127b2a4ded42446f807b377d7a4a16b0ed76856f5dece3"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-001",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_FORWARD5_125INF110MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 9,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "bf0291883f54585bf11cc4bd7f2a4f1b1fe2271b7e0261a9622f935d7e4a0c58"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "479815176e37fb7fef7c2c748be4c550e1e1b339585f1ab2869d82cde5fd73b0"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "37887c28709a2774c97dcd27e1359c2c9b92b01744547da4b7cdfe1483a7207c"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "0216e47d7d0a499ad85f03e76b91ab1209986ef817eadcdb7fb1821ae80ed57a"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a17a13539934bd85415a4762f295f9e250a5d2bc62bdadee0802b113b0f1e63a"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "963bf32d4bc490a7c55bf43ca1472edcf2ca7c4d6eb68521a807e3b93bcdc5c4"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-002",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_FORWARD5_125INF110MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 9,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "1d52a05d289d72d4eee653bc9c3390e3df331412478d330db918456a1507f0a2"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "1884c31e243a9f6eee15eacb21aa9c84dbfd5f14316ce568224d8ff96cde8557"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "d8c15ae1d7ca404e4477badf016ee7ac83e52be5f71e59694f755a5e269834c5"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "be56484827df296b1b172ff14c3750b8aac90a447c0b69be808d6ab339ed8d47"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "7e7f462edf4f258ffc89c3711578997675c086a4f00a5de247e828f761bbda45"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "946cd77db44228968a465f63e40e32a49000fcf644399fc72eb607c821ef0f9e"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-003",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_FORWARD5_125INF110MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 9,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "48419bcafd56be9df705a2ce6065b8ac3578f8489857405c2a038746ac2fdd1f"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "6eec2bd41be27fdef979a044146c2b8f1d1723a81895cd3f818899c4a405d4a6"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "3e25b17da365d68602d26d60e833c5f807d8607a80c031839bd074cf191858b1"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "f242d0b7db6f878a43c725ad36ceba8963a1b6698d6b8492e2027acaff3ed6bb"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "0e7774085e6f45bbfbedfc067e3f13f90a4bb56c7684db6520539afb015f216f"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "e92684953dc795b7b8a10362f0b2b873462db87635d42208172f140f875d0c13"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-004",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_FORWARD5_125INF110MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 9,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "7472e49a558b312b0dc3f26a62c958e0916b79bbb75e7cba1cf40aa528d34a49"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "e742a51b894253b1e549314831766b9cecc07854401e4368bf658dec85dbe40f"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "1a0704f4af7f626b91a07a60139d093931ebae7af99cedd1c33b6ec37f162bad"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "30c1a71d2e4e778c2c8d5faabb728a02d18809b0b6a1505f341efa01b8592e5c"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "84a333abc54a2454f1a68f6b059b0c16505fb8d2044d2395211c2f4b2af79f5e"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "ec5acceddcda1dd9fb5fb6363f66dbf1f54c62e09c71b2345e3cf4c09fa7dcb2"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-005",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_FORWARD5_125INF110MM",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 9,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "e7e347b03438fcf50627b8bff3161a94dbbbf381f636d5e92cb1ed3806465010"
+        },
+        "restoredMk2": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "05b9fd7b3382f2bafaefe6c8e7fe4adf3a2e68417ea1530ff2f18a3e83dc6ed8"
+        },
+        "ceil": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "d65314bc0b14c213a47b2947e52af5cb1ad212c742920254dc4e2872551e81f6"
+        },
+        "fractional": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "858930ef7173313ca27ef99171f198935909404cb72d10b775b6705038523d90"
+        },
+        "floor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "9c6e992f86a0b0373903aef5431a4c3fbf380bf4c0e3ad9b9d1f756c4587c1ec"
+        },
+        "historicalStatFloor": {
+          "winner": "attacker",
+          "remaining": {
+            "attacker": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "e82fbf28f2da9b13ca81ac7d5cc558057673c393f1ce5f09843777c9ae03e84b"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-006",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_110MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 9
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "8e8fc48780eec94dfa2dcc7f120a5ed1c2e0468be522f58c9e5adb6f5efb0bbe"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a5c1f34764b9e59a1d6d34aaba0499e445fa7a7d8dbc0968cda7b344bd0deda6"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "5c3383d2db4a7d0eafd5e19fe859e8e37ccf8b395ec919f7c9a940b6fb9f6189"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "9458c91023bc13328e5a431b96c60d73319945f7c011caea52d868465c001af6"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "efb4b7d769f4469bc648fb8060d9962c98747b66fcd8c8f452c1bcc8a4392199"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "3fbede39fd5b2888a68a35c286e085b5860abc642068872a391f6ca1cb33dfcc"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-007",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_110MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 9
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "fadecb8b76ebf2c9b340445b5cef9ef76c4836a086c2d7ee05c6884944a1e004"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "f4cb8b5228fdd8b73eb494720502196c95a0bf7e1a80dd15c7a0876227f6392b"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "65ea3713a09f5a10407915ec53b078b6d9f61f79d62fd0230ee71bcab7a038d4"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "bc76dd10bad336f4ae0f6a5e11cad0fb26f9a4f1e3db4f805b445087b1be649f"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "095edff7869a92647c44db96ecb479f27f8ff3cde24071f77dca5b5f4d635c30"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "157aeecd1052a891a64a4738a23acee3ec6d6c247b2a421bb7d424ba2607c98c"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-008",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_110MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 9
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "539d6fe9bdfc230774c7ce529042c68f562afb0722ebfa6312bd5447a5ab3eae"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "432a467b7b7ec1393acc976647b9c393dac3922bad5d8132725e77cc541a38b4"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "1106ad2ee4f385b13245993b19ea720c8eed9fd88a539f4270a9eb3e9b620f6c"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "a76899c78b84b9b6e9a9c62aef711ebe6ae44e3d6855004917c52a7705f6f937"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "51682465bf0a1dfbec5f6aa3c85e86870176cc53d35c33a888bfd67d1eb4fc2a"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "b578b31b724ea22202b981f6f0e165fbe82d83f322c1461a264dd1f167fa5aba"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-009",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_110MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 9
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "6ffba415a51b7c4922486848fc028b1db481bf56a7b6831e4133fc104075bfbe"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "3994f56c8a6cb09aa8e0915da3bb4a6b099a8d98519e199d77868290118cd275"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "400d1e6a1536f80448aaad96812660c73793db8eb98626ebd4dbf6a75bc683ee"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "03f31d74e5f734782dea5731b5ca35935aca11024443b1ce8cb940e89df98b56"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "5a3ae22df84dd8628a6ba2c56db4436be2aff299a125308a1c675f88f5a362c8"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "cd5655c0b03981161dbb4880c4a15c63f3e1583685f729eb7649defc74fed46b"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    },
+    {
+      "test_id": "mk2-pair1-inf125-mm110-prospective-20260914-010",
+      "classification": "PROSPECTIVE_CHANGED_CONTEXT_REVERSE5_110MM125INF",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 9,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 9
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "models": {
+        "originalCore": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "182877ac9d297e8a64d6100deaf76ef54b58dd4633324ac8aa637115689a876a"
+        },
+        "restoredMk2": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "6690e3c69f852d8b66f29e8537f6c19ffb28f6c16b4fe3972b3b1ac17db234d4"
+        },
+        "ceil": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "6c66794d641963645a8b7bac820becd44edd2f4bd9f62ec460e4a5ebf85806a7"
+        },
+        "fractional": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 10,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "db4117a7871175386fe4bd6dc34aa4ee5400c11293cd4b0404619d7260d2881a"
+        },
+        "floor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 11,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 120,
+          "winnerExact": true,
+          "survivorsExact": false,
+          "exactObserved": false,
+          "fullArchiveSha256": "fac53577e380fa94fc7b79670e414dcfe4ee4764410b8dffec3a3a9d839ccc2c"
+        },
+        "historicalStatFloor": {
+          "winner": "defender",
+          "remaining": {
+            "attacker": {
+              "infantry": 0,
+              "lancer": 0,
+              "marksman": 0
+            },
+            "defender": {
+              "infantry": 9,
+              "lancer": 0,
+              "marksman": 0
+            }
+          },
+          "rounds": 119,
+          "winnerExact": true,
+          "survivorsExact": true,
+          "exactObserved": true,
+          "fullArchiveSha256": "2968aff83f01c53a2c0599b79276a7073f28613a9fb7d2440da1d8eab2f39a3e"
+        }
+      },
+      "sourceHandoffSha256": "7f22607ed837d6f2b7639ee18fe298954c5b68560264b859fa2176286ab83307"
+    }
+  ],
+  "modelLabels": "Preserved from the supplied sealed handoffs. originalCore means the preserved prepared engine defined there; it is not an attribution to a server implementation. historicalStatFloor is compared independently with the unchanged calibrated755bd72 implementation.",
+  "prospectiveReports": 20,
+  "retrospectiveFailedProspectiveGateReports": 5,
+  "modelsChanged": false,
+  "allArchivesAndInputsChecked": true
+}

@@ -1,0 +1,20 @@
+{
+  "version": "expedition-mk2-lua54-catalogue-17",
+  "newReports": 10,
+  "newExact": 10,
+  "forwardExact": 5,
+  "reverseExact": 5,
+  "seeds": 10,
+  "survivorValues": 60,
+  "explicitProcCounts": 20,
+  "rawBuffValues": 320,
+  "normalizedAxes": 240,
+  "priorReviewedReports": 461,
+  "combinedReviewedReports": 471,
+  "combinedExact": 471,
+  "combinedSurvivorChecks": 2826,
+  "combinedExplicitProcChecks": 1024,
+  "kernelChanges": false,
+  "scope": "100 T5 FC5 Lancers versus 100 T5 FC5 Lancers, both orientations, fixed captured context",
+  "checkpointBasis": "Additive prior verified 461 checkpoint plus independently normal-loaded new ten; not a new whole-corpus replay."
+}

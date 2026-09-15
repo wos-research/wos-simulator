@@ -125,6 +125,8 @@ import {
   shouldShowSplitMeanSurvivors,
 } from "@/lib/simulate/trace-format";
 
+import { withReplaySettings, type ReplaySettings } from "@/lib/simulate/replay-settings";
+
 type SimWorkspaceTab = Side | "setup" | "results";
 const SIDE_LABELS: Record<Side, string> = {
   attacker: "Attacker",
@@ -523,6 +525,8 @@ export default function SimulateClient({
   const [replicates, setReplicates] = useState<number>(
     () => initialState.replicates,
   );
+  const [replaySettings, setReplaySettings] = useState<ReplaySettings>(() => initialState.replaySettings);
+  const [simulateRequest, setSimulateRequest] = useState<SimulateRequestPayload | null>(() => initialState.simulateRequest);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<SimulateApiResult | SimulateApiResponse | null>(
     () => initialState.result,
@@ -778,6 +782,7 @@ export default function SimulateClient({
     setTraceError(null);
     setBattleTrace(null);
     setResult(null);
+    setSimulateRequest(null);
     setOptimizeError(null);
     setOptimizeResult(null);
     setSurfaceError(null);
@@ -805,6 +810,8 @@ export default function SimulateClient({
       setRunMode("simulate");
       setRunOptionsOpen(false);
       setReplicates(savedState.replicates);
+      setReplaySettings(savedState.replaySettings);
+      setSimulateRequest(savedState.simulateRequest);
       setResult(savedState.result);
       setBattleTrace(savedState.result?.trace ?? null);
       setOptimizeResult(null);
@@ -936,6 +943,7 @@ export default function SimulateClient({
       setAttacker(plainState.attacker);
       setDefender(plainState.defender);
       setReplicates(plainState.replicates);
+      setReplaySettings(plainState.replaySettings);
       setRallyMode(plainState.rallyMode);
       resetRunOutputs({ resetSurfaceSelection: true });
       setOptimizeReplicates(plainState.optimizeReplicates);
@@ -1117,15 +1125,15 @@ export default function SimulateClient({
     setRunOptionsOpen(false);
     setLoading(true);
     resetRunOutputs();
-    setSimulateProgress({ done: 0, total: replicates });
+    setSimulateProgress({ done: 0, total: replaySettings.mode === "mk2" ? 1 : replicates });
     try {
-      const payload = toApiPayload(
+      const payload = withReplaySettings(toApiPayload(
         attacker,
         defender,
         replicates,
         rallyMode,
         loadedPresetNames,
-      );
+      ), replaySettings);
       const job = runWorkerSimulation(payload, (done, total) =>
         setSimulateProgress((current) =>
           current?.done === done && current.total === total
@@ -1135,6 +1143,8 @@ export default function SimulateClient({
       );
       const computed = await job.promise;
       setResult(computed);
+      setSimulateRequest(payload);
+      setBattleTrace(computed.trace ?? null);
       setMobileTab("results");
       scrollResultsIntoViewOnDesktop();
       try {
@@ -1155,10 +1165,16 @@ export default function SimulateClient({
   }
 
   async function showBattleExample(seed: string | number) {
+    // A saved Mk2 trace belongs to the saved request even after the form is edited.
+    if (result?.replayMetadata?.mode === "mk2" && result.trace) {
+      setBattleTrace(result.trace);
+      setTraceError(null);
+      return;
+    }
     setTraceLoadingSeed(seed);
     setTraceError(null);
     try {
-      const payload = toApiPayload(
+      const payload = simulateRequest ?? toApiPayload(
         attacker,
         defender,
         1,
@@ -1346,6 +1362,12 @@ export default function SimulateClient({
   const summaryCards = useMemo(() => {
     if (!result) return null;
     const s = result.summary;
+    if (result.replayMetadata?.mode === "mk2") return [
+      { label: "Winner", value: s.best.winner },
+      { label: "Attacker survivors", value: String(s.mean_survivors?.attacker ?? 0) },
+      { label: "Defender survivors", value: String(s.mean_survivors?.defender ?? 0) },
+      { label: "Rounds", value: String(s.avg_rounds ?? 0) },
+    ];
     const hasDraws = (s.draw_rate ?? 0) > 0;
     const showSplitMeanSurvivors = shouldShowSplitMeanSurvivors(s.draw_rate);
     return [
@@ -1542,17 +1564,17 @@ export default function SimulateClient({
     switch (runMode) {
       case "simulate":
         return {
-          summary: `${replicates.toLocaleString()} reps`,
+          summary: replaySettings.mode === "mk2" ? "One deterministic replay" : `${replicates.toLocaleString()} reps`,
           progress: {
             active: loading,
             done: simulateProgress?.done ?? 0,
-            total: simulateProgress?.total ?? replicates,
+            total: simulateProgress?.total ?? (replaySettings.mode === "mk2" ? 1 : replicates),
           },
           error,
-          primaryLabel: loading ? "Simulating..." : "Simulate",
+          primaryLabel: loading ? "Simulating..." : replaySettings.mode === "mk2" ? "Replay Mk2" : "Simulate",
           disabled: loading,
           title: "Run the attacker and defender exactly as configured.",
-          status: "Runs the currently configured attacker and defender without varying troop ratios.",
+          status: replaySettings.mode === "mk2" ? "One Mk2 replay using the recorded seed, or timestamp + 1. Timestamp seeding remains unverified." : "Runs the currently configured attacker and defender without varying troop ratios.",
         };
       case "optimise": {
         const summaryReplicates =
@@ -1623,6 +1645,7 @@ export default function SimulateClient({
     optimizedSideLabel,
     optimizedTotalTroops,
     replicates,
+    replaySettings.mode,
     resolvedAdaptiveSearchSettings,
     runMode,
     simulateProgress,
@@ -1974,6 +1997,8 @@ export default function SimulateClient({
         data-testid="sim-action-dock"
       >
         <RunModeCommandBar
+          replaySettings={replaySettings}
+          setReplaySettings={setReplaySettings}
           adaptiveFinalReplicates={adaptiveFinalReplicates}
           adaptivePhase1Replicates={adaptivePhase1Replicates}
           adaptivePhase2Replicates={adaptivePhase2Replicates}

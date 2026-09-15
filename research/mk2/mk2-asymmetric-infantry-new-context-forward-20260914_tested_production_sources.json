@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "head": "96c7148b38e55b5dbe143f11390a93893e495cee",
+  "actualWorkingTreeBytes": true,
+  "sourceFiles": [
+    {
+      "file": "simulator/src/battleInputBuilder.ts",
+      "sha256": "cf91d54999268d76279610ca80198947b4a3606de85cfd5c3a443cbd4ff2faaf"
+    },
+    {
+      "file": "simulator/src/config-default.ts",
+      "sha256": "293b5a73141640bf19bf5c0331fbc81406e632ab84012cd0bdb8c427c2663592"
+    },
+    {
+      "file": "simulator/src/config-node.ts",
+      "sha256": "adedfeb95c20e89ae0172d89e739a12307070308db68de1c840e616de99f27df"
+    },
+    {
+      "file": "simulator/src/config-webpack.ts",
+      "sha256": "da8d4e881dfcbf787720693f66f0c517acd32612a843900d194ae75debd04a85"
+    },
+    {
+      "file": "simulator/src/config.ts",
+      "sha256": "0a0f2213fbfa1fdb166ab2887712f13253a21a4ae46e206b569843b9090aac6a"
+    },
+    {
+      "file": "simulator/src/damage.ts",
+      "sha256": "8970dd84da36e07169246a2aa5e0b6561def85e07b7a68023faffe5a477eed9f"
+    },
+    {
+      "file": "simulator/src/damageBuckets.ts",
+      "sha256": "3fb9fa204b3f93e623b44b2f9dff48035749abf0bc0660cbcbcd6079678f8b0c"
+    },
+    {
+      "file": "simulator/src/effectIndex.ts",
+      "sha256": "8a3cc3cacbae97c667b52af73296aa5b2c58be2f4c4db6768088cbbc204cb029"
+    },
+    {
+      "file": "simulator/src/effects.ts",
+      "sha256": "6753394c5649830c2f3dccf0bd9d93cdeb7788098d6b3e498fc420bb74dddd2b"
+    },
+    {
+      "file": "simulator/src/extraAttacks.ts",
+      "sha256": "e22ab02d232a16b52a4e08ad7f3a6d6d379b30b12980866f4847f666da85556d"
+    },
+    {
+      "file": "simulator/src/fighterResolution.ts",
+      "sha256": "a1acc4b97ab5a373f24cb84dc020c7610b691bb0efee858d871f5150fe6a0526"
+    },
+    {
+      "file": "simulator/src/mk2/battle_rng.ts",
+      "sha256": "732df28dc313f3b9e6c2e6c9f37f354e8e3756d7b3c934c43b5d533e2fea75ea"
+    },
+    {
+      "file": "simulator/src/mk2/controlledCasualties.ts",
+      "sha256": "64ebfa60053782289cdfeebb2fcc7cb2b6827767a1e76c49d8dc2a2457037151"
+    },
+    {
+      "file": "simulator/src/mk2/crystal_shield.ts",
+      "sha256": "abb4b16962e88be00c14566108f123d385e2e39b30530c699f8711e005946133"
+    },
+    {
+      "file": "simulator/src/mk2/default_round_cap_scope_view.ts",
+      "sha256": "26bb89b43973445a4366fdfe61179271e54c42c3fbc51bbc666952e850d69d09"
+    },
+    {
+      "file": "simulator/src/mk2/fixtures/native-lua.json",
+      "sha256": "27c890df67464c8f08d675fd1dbbfcf27e26cfce59784b9f207596774490a2f9"
+    },
+    {
+      "file": "simulator/src/mk2/fixtures/reference.json",
+      "sha256": "4c3d2e778b24740d3706cb0300c206b0941a2619c79256d209b2a4dfc3c9b67f"
+    },
+    {
+      "file": "simulator/src/mk2/four_source_scope_view.ts",
+      "sha256": "c462c80fa1a7c23273cc234c28203902d5c822b3d4e43700ef5a72949ed202e8"
+    },
+    {
+      "file": "simulator/src/mk2/gunpowder_timing.ts",
+      "sha256": "18bb00f4c3dd8a8b789e85b22fb348863bb6aaccf0a69fdde83cba2198f54e75"
+    },
+    {
+      "file": "simulator/src/mk2/lua54_rng.ts",
+      "sha256": "f77fb8306a1ad88363c25fbcccaf366ed2b555e0b68309d23fdbcdedc45b946c"
+    },
+    {
+      "file": "simulator/src/mk2/mechanics.ts",
+      "sha256": "94846f35ec1609dc7aa8e210d1fe36c16696dea0de8a6fed5a75f659ee526ded"
+    },
+    {
+      "file": "simulator/src/mk2/port_manifest.json",
+      "sha256": "652b4daf8ca844e56b429cd5962aac7516f72ace788a163b36fe97690ff608bf"
+    },
+    {
+      "file": "simulator/src/mk2/replay.ts",
+      "sha256": "980ab96fcd7948ce7ca0e960db599fdd222e28acfc4263fa1888a0b890519caa"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_c2_volley.ts",
+      "sha256": "bc980f73de68f58181c20d0cbbda77fd736d458db43d6cf11c36cd52e030758f"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_e1_volley.ts",
+      "sha256": "d63c584f16763bdeedd948fad1e90e06f721775a459dcce66ee39c5bfc6c279c"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_fc4_volley.ts",
+      "sha256": "4d4a5c7d1ea88f6fdaa2960df46d95f3e3f59fc473500905c5e716987525df78"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_four_source_volley.ts",
+      "sha256": "ac7aa11eeea5c1d27c00a80c32b307982ab9ff673e31792cf0dd4951074120df"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_global_ambusher.ts",
+      "sha256": "5ec8ad81fc335e1a736fe4f3a343e279de24554222227086c20d682ae037e9f5"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_inf5_volley.ts",
+      "sha256": "7d043d19e85ffbeb8ec24aff717147e2c8f6e90bf359acea60be6ce7a27f7746"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_own_infantry_ambusher.ts",
+      "sha256": "357d5ad899d84a040cfc706e73d496dc756409da1f15cb6a1d923e4edf27abc8"
+    },
+    {
+      "file": "simulator/src/mk2/scoped_t10_ambusher.ts",
+      "sha256": "4571bebb5a2ef61098ff575e7368c45f3a84a9c98e4cff41d182070c03d1fe42"
+    },
+    {
+      "file": "simulator/src/mk2/seed.ts",
+      "sha256": "fc08b92eb565e0835819b1cfcd157dddca768bb815aeb7a5253f7a3ba653fbd3"
+    },
+    {
+      "file": "simulator/src/mk2/semantic_scope_bridge.ts",
+      "sha256": "e38c77c9aefc16195ed4a98d2457eeeb83dfe13644bea191f4ab547e851a4873"
+    },
+    {
+      "file": "simulator/src/mk2/terminal_volley_shield.ts",
+      "sha256": "d0a195287e41afae438b78e68f303e0da0a114bb20e7d5d28dcd1a8d679c0ff4"
+    },
+    {
+      "file": "simulator/src/mk2/volley_persistence.ts",
+      "sha256": "eaf3e74d572fa1295db8efdfe693cf4adf34436702fb0be47f5a3b4ff4db3857"
+    },
+    {
+      "file": "simulator/src/normalize.ts",
+      "sha256": "28dd1482efe326acb0bb701583a1b0ff856f555d63dfc3812883eb65f9d4a114"
+    },
+    {
+      "file": "simulator/src/prepare.ts",
+      "sha256": "181b6220bfa90b52b236de102ba9e57575ce3d1029c01f6da5ae2267887f985d"
+    },
+    {
+      "file": "simulator/src/recorder.ts",
+      "sha256": "02984485b201c67970986dcb828c1c89fa175c8eb12e7d5a755eb86075c51a6d"
+    },
+    {
+      "file": "simulator/src/runtime.ts",
+      "sha256": "cbdd9bf0d8aa5ed29e174b2587ee251cce11c8849d55d2687d4932323b5d6dab"
+    },
+    {
+      "file": "simulator/src/runtimeSkills.ts",
+      "sha256": "f96c106afbc9c7bbe12efcfe8592bd8e2a815beaed0d73bd60f3cacbd6c4650a"
+    },
+    {
+      "file": "simulator/src/simulator.ts",
+      "sha256": "f3597d219d33091b51ca1677aadb50f35951d73f47505a9cb49c475145744696"
+    },
+    {
+      "file": "simulator/src/staticDamageProfile.ts",
+      "sha256": "38e3947ab4214fcae08b4d792f78efdf5d805836c7a8aac1a799f915eb1bf281"
+    },
+    {
+      "file": "simulator/src/tooling/calibration.ts",
+      "sha256": "9926f9a8b4d6855c3efb139124c4cf160d5a729db648e4caffa2c9fc24cedec5"
+    },
+    {
+      "file": "simulator/src/tooling/exportGatotTestcases.ts",
+      "sha256": "6a75c5460c43bca27a0e2de8565420265834e858506032918bdb30c21044108a"
+    },
+    {
+      "file": "simulator/src/tooling/gatotEvidence.ts",
+      "sha256": "c85d1a0673afa5eae105462f30dddbf1c855970332e8dfa77b65f989222c1810"
+    },
+    {
+      "file": "simulator/src/tooling/histogram.ts",
+      "sha256": "f918e4a3643fe5e0e6498890f2b76bb118a8b558b753c0ccc13c1ea0120f31a9"
+    },
+    {
+      "file": "simulator/src/tooling/index.ts",
+      "sha256": "55ae5791e29cb510b8ae4819c56ef66bbb1e604307f3444cf3e0b4eb29e0a955"
+    },
+    {
+      "file": "simulator/src/tooling/parityMetrics.ts",
+      "sha256": "2af95393f81930983c72480df9075690fa6ba59232c15d3e0be952becfc46833"
+    },
+    {
+      "file": "simulator/src/tooling/testcases.ts",
+      "sha256": "c06b84949b31df72c0c2dc2778145ce462b96f5daf3968f4d54de287c9aeb73f"
+    },
+    {
+      "file": "simulator/src/troopStats.ts",
+      "sha256": "0f83f315d00b7fa1a8d9d8c8e691389113d8337ef8fb5900ed6c9a3f46867a86"
+    },
+    {
+      "file": "simulator/src/types.ts",
+      "sha256": "c718b56c1f47c318740af5e426417f1885503d7bba75293da473cf9efc085a33"
+    },
+    {
+      "file": "simulator/src/webpack-context.d.ts",
+      "sha256": "960b4eedfab83cb23d742a514c9253c177f7063b2bdcf07a9ef0d2dbfe72338d"
+    },
+    {
+      "file": "simulator/src/workerPool.ts",
+      "sha256": "0a80a128d6a26002093ea39405c71bc19479eb3a01f6aa1beb205b48451a41d6"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Ahmose.json",
+      "sha256": "722d71a026a557f05edeb9f40300a5ff48786b644f9d66bb32e8657a801e9b60"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Alonso.json",
+      "sha256": "6c32441f148ea820af54cceeae5e71af709a32eee4427350e9787521b21f8b72"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Bahiti.json",
+      "sha256": "e69c0fe79ee892b484f54635b5be6ac73c8a3fe73bdc76df67d25b714b18a757"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Blanchette.json",
+      "sha256": "57a32c21eff152b402e1e7f8bb35473920595fea6c69d9d03363263e47c1e02c"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Bradley.json",
+      "sha256": "af8b244380ed699df6ba66922fd9183f0913876b95d68013e9d54085ce4ddfb8"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Edith.json",
+      "sha256": "601eb6f681b794ed951a190228aefb799ecec8b8dac2ac86b67cbae8989a1fb4"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Flint.json",
+      "sha256": "ef45117ca71548b0d8f825d8ed94f564eb5174695ad094ddf9dff21a2b3db29f"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Fred.json",
+      "sha256": "f0d7558b7824f0906d1fe086d57861fddecfb61243bebfd341febafedecf75e1"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Freya.json",
+      "sha256": "69556b9b8cb917d5b8ea71fd2bc05da0f0c4db97ed1ae8338da0745bc5e7b091"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Gatot.json",
+      "sha256": "52002f7d55058c067b7287ca0765a74452a23bc622641c42b1ff5aaefa2a6cb0"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Gordon.json",
+      "sha256": "e8cd7763d9b8e4bca3e6707c068eb423b59d160d01df4a4a4b861f6fa7fab92f"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Greg.json",
+      "sha256": "6a397d71110f27f1727365897f02104949483ebbad59b416362b1fde908233c7"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Gregory.json",
+      "sha256": "dae6e05db6f454ed08c2087226422accbf8ff12c12d5088ecb296f29c9a73383"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Gwen.json",
+      "sha256": "59d2f8ca65ed6977cbfc3f95f89a44e183cb95c8816a19ee6440814908e52169"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Hector.json",
+      "sha256": "ca47b0a6b5d01746f96dd8c0a0448f9dc2fc1781054ace761f93f4599bc00e4f"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Hendrik.json",
+      "sha256": "f7ac350d01c457c28c7cfe8a0c3b826759129841677956b8aac5067e931197ef"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Jasser.json",
+      "sha256": "6130b93db9b94541ee77c14543845e61b5e8aec5eed491baa919b0337be6e4e6"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Jeronimo.json",
+      "sha256": "43b6e3759c480097ea3919e8627c65b7000d81adf4384147a11a643ef30b9ce7"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Jessie.json",
+      "sha256": "124303041416dc465455646b6e284ccfc2c2ff35823ee9afb4a05e5fed71d44d"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Ling.json",
+      "sha256": "1da46818d033a864df80cb65bf112fae0ce26103c8c046c7254976a6e45abf1b"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Logan.json",
+      "sha256": "b6e03c2863a96cee64a4ffcf1367362d1e11d9a174cc9a37151c08efde7a426c"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Lumak.json",
+      "sha256": "d5b10c99756813042af0b8651e0d47e7044b9e8d8e88e53296bb6a4dcf4b662e"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Lynn.json",
+      "sha256": "06566dcab4f94de6f78477e63124578f85b2491e0bc74c9fee3bfd0a3bdf6388"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Magnus.json",
+      "sha256": "c96c47fb2f00f7231eafed18794cc809402ed9ae9563f717f4280fa451ef6d2b"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Mia.json",
+      "sha256": "6b55014aeda4a24e56df50ba35c87cc6435ac8e9b3a65684f38a8b1fe433f5f5"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Molly.json",
+      "sha256": "7923f5e548daa41361ca2f56197013782738064f4fd8ba747e9c0af1d42f5ec5"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Natalia.json",
+      "sha256": "f671bad6a304fef47f6163b194a9e88ae499b650ed2312d6e29ddd11fac44117"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Norah.json",
+      "sha256": "4b5a77514c4e5e9b55a6074ecc45d56a87edfd1fdeb98314107c7a804091e79d"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Patrick.json",
+      "sha256": "815aaa85d918976db768a172fc1f93ad30866aa50ff0c9ee7786caad2905c02c"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Philly.json",
+      "sha256": "887d2818f56eef2be007487360a0d7481f27b4b2498d63efb0de7d443707af32"
+    },
+    {
+      "file": "simulator/config/hero_definitions/README.md",
+      "sha256": "578db6c3a2c20fdfd1658b8afe9db63fa05d1951f59e8b2024c2701b38ac0005"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Reina.json",
+      "sha256": "de785bb5d40ab672aa90f3c8652a235b995f484303f17615347a5c9edb9cb51c"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Renee.json",
+      "sha256": "92310667f5f9551d0fb0306b01e0fa88b4f54edbea0a28878bcba04ed23e7ea5"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Seo-yoon.json",
+      "sha256": "516209dbc6df2178ab61c13ef5aeed600740e6292f792f510d97e49d4574b6e7"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Sergey.json",
+      "sha256": "1c96d94f434dcfcebe6e367804bc31cbbf48a74763b0c0e08851c8f07cea48f8"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Sonya.json",
+      "sha256": "b9ae580abad6199d8a1e00ad528c2865f1cfd6586ac84a352d8e7a45c7345b80"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Wayne.json",
+      "sha256": "0051910b8ec241781b9fdd743126b1e2c7df553d11a237bd73b567f354bd8519"
+    },
+    {
+      "file": "simulator/config/hero_definitions/WuMing.json",
+      "sha256": "6d0527a59093007b9043a19977a41118c337cb719c6371765fefadc00d1703fe"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Xura.json",
+      "sha256": "915d21aaeac4cdda375c9c1b84a1db45372983a685a88aba83e3642ebe913f87"
+    },
+    {
+      "file": "simulator/config/hero_definitions/Zinman.json",
+      "sha256": "6c1c2afee7a5d1f3aab9b2db668d4a32df8f1042278db9d61224125e160ba24b"
+    },
+    {
+      "file": "simulator/config/hero_generation_stats.json",
+      "sha256": "ee5816eeba77a20b6d11dd46a16eba23274cfa52914bf64fa95ba52ae936a47b"
+    },
+    {
+      "file": "simulator/config/troop_skills.json",
+      "sha256": "f6873bf75459e0fc0b611e3d7cb1265e981f40a9dc4867b9cb5c53b0098a98bd"
+    },
+    {
+      "file": "scripts/audit_mechanics.ts",
+      "sha256": "a9079cbf37421ca8733ded25c7de06118db310b44e286dca9fcb862fa796d960"
+    },
+    {
+      "file": "scripts/backfill_testcase_artifact_armies.py",
+      "sha256": "1d84091589fdacbfc87fbb05560f8451ced6e583da19957cd52a21e76ad3ffdf"
+    },
+    {
+      "file": "scripts/benchmark_tournament_battle_modes.ts",
+      "sha256": "299be4fddb7d33915bda1bc3c243d8482b8f727d45a7f92ab327d1558020be0c"
+    },
+    {
+      "file": "scripts/dashboard_ingest.ts",
+      "sha256": "eea2e7e77daf7bce1c9259b1d1250d0afbaf513ec3aad1bcced7ab4b77160499"
+    },
+    {
+      "file": "scripts/export_exhaustion_round_histograms.ts",
+      "sha256": "b9990230c56dc517437741fdd7037305ce9c6f5aa06efc25e2952a9354d0c8ec"
+    },
+    {
+      "file": "scripts/export_stochastic_distributions.ts",
+      "sha256": "db26c4a416ae501bb93aef8fb1be542a167540081064055de99559776e615328"
+    },
+    {
+      "file": "scripts/fit_enemy_base_stats.ts",
+      "sha256": "9c39cbb9b547501cfd32868fe9241aae4ab326bdd22341b61a173ab22125031c"
+    },
+    {
+      "file": "scripts/run_testcases.ts",
+      "sha256": "e964f036f9032175e374900fb6d1c23048e4f6f53e9d9baa76a58ad5b74ca113"
+    },
+    {
+      "file": "scripts/testcase_charts.ts",
+      "sha256": "9fd925bcda34d1c5263651f533ecf49abfcc3d6078249faa514ebecd40d96b0e"
+    },
+    {
+      "file": "scripts/testcase_worker.ts",
+      "sha256": "19d58687d2b4107f1dec4ecf1d96d5cf2c28ea7fbaa3d6ccca8077ae696e1278"
+    },
+    {
+      "file": "scripts/three_army_hero_optimizer.worker.ts",
+      "sha256": "651e664f41891255f44fd730782c2cbb9f822a739163e0cf369e5214ef16ff06"
+    },
+    {
+      "file": "scripts/three_army_optimizer.canyonclash.json",
+      "sha256": "52c066c25dc2fc3471d623e321ea5485175f8f5819263539e88d2fb761d7e52c"
+    },
+    {
+      "file": "scripts/three_army_optimizer.example.json",
+      "sha256": "477de121e09017e9f4adc0269e652deef0c809de30a2cc6dd215afbeb8bff56d"
+    },
+    {
+      "file": "scripts/three_army_optimizer.fcaae-916a-c254.json",
+      "sha256": "e7dba65c25fe347025ca0ed2bd95904e6cf9ce5ed9c7db5fed2443306ffd412c"
+    },
+    {
+      "file": "scripts/three_army_optimizer.gaia.json",
+      "sha256": "15eb76b2da11b418242f3feb33908fddf4585f3c54482612d13ea2220ec63990"
+    },
+    {
+      "file": "scripts/three_army_optimizer.gatot-edith-hector.json",
+      "sha256": "6159f25707da9e8f03983bdb728494be1e86fe04dc5fb01422c2e4545f5699bc"
+    },
+    {
+      "file": "scripts/three_army_optimizer.gatot-logan-wuming.json",
+      "sha256": "4dd1a8cc4a07754d1bd61d746a2538a70935212e3984234c2cd2c7687f57977c"
+    },
+    {
+      "file": "scripts/three_army_optimizer.landofheroes.json",
+      "sha256": "0ad1cc6a45287f844848abc783d6fc6d28355ddc0115eaf29b0b65228f3d1256"
+    },
+    {
+      "file": "scripts/three_army_optimizer.landofheroes.optimized.json",
+      "sha256": "de771ef827cfa0d3415fd33ce6b9ab75338c8d8e6bc2b810d3b95244f13e4b2c"
+    },
+    {
+      "file": "scripts/three_army_optimizer.saved-runs.json",
+      "sha256": "a7beb6e92ca294b9abcbba5f436caa3fc676e8a29d48db9ac28195d7bf5523bc"
+    },
+    {
+      "file": "scripts/three_army_optimizer.ts",
+      "sha256": "250b704acd84339456bf7cc9713c635a023dfbe96b9b8b57a0218a191c09ae74"
+    },
+    {
+      "file": "scripts/three_army_optimizer.worker.ts",
+      "sha256": "ec6711fd824576339a9ad42fdee607799089187e6e9f99c31fc60dbb84634529"
+    },
+    {
+      "file": "scripts/tournament/battleRunner.ts",
+      "sha256": "fd19d173a47df776bbf6424d80dec6fbe8c6e6f4d65b1275a4b2cfb131760823"
+    },
+    {
+      "file": "scripts/tournament/dualSwiss.ts",
+      "sha256": "90cdb93be616697cd99d14acbb3f68678e55ad10deaf2c66a5e94b8edc22c108"
+    },
+    {
+      "file": "scripts/tournament/playerStats.ts",
+      "sha256": "411ee84ab58ab70c9f278c82d47138083f6c40373a1f8191795f7a69c857128a"
+    },
+    {
+      "file": "scripts/tournament/pools.ts",
+      "sha256": "9e492ddbcf700cfe14b086609eb3590e1e6e01bf00e1df80c4ad914edaa6330a"
+    },
+    {
+      "file": "scripts/tournament/results.ts",
+      "sha256": "667fdf51a09cd3f187efe2f1535432f5115fba4ab3ae41334cbc7bd391b2d084"
+    },
+    {
+      "file": "scripts/tournament/rng.ts",
+      "sha256": "dab6c6230687e0c8089619b08cf5056dabb1729662ee2c8adf72a76bd5684029"
+    },
+    {
+      "file": "scripts/tournament/standardSwiss.ts",
+      "sha256": "9f7d5e960acbed200d9bbb3e695bb8fc90684fe2f15e547a6efefe4b138386a7"
+    },
+    {
+      "file": "scripts/tournament/teamGeneration.ts",
+      "sha256": "40e94f04a41de909b84ce746e806baaefb26d37c2e789abe07d95d155eddb70e"
+    },
+    {
+      "file": "scripts/tournament/teamInput.ts",
+      "sha256": "515b5d924d9fbb3636e92da92ce9c40b8114b04fb1160dc1f7ad690c78c0f0a6"
+    },
+    {
+      "file": "scripts/tournament/types.ts",
+      "sha256": "8d8c09e9fbaf4c687fe4606d2f46c3ab2ba93b4d7ae7679954fc548ebeeef223"
+    },
+    {
+      "file": "scripts/tournament/worker.ts",
+      "sha256": "388e148b2424b507ec2457801a6beb45e4c22aadff520f5167268dd6045a0dc1"
+    },
+    {
+      "file": "scripts/tournament/workerPool.ts",
+      "sha256": "728da2c3454104d59e9fd1b9b9930b58dd1148bc1b111e4af94f007b441757e3"
+    },
+    {
+      "file": "scripts/tournament_dual_swiss.ts",
+      "sha256": "77a202f5ab61a2aa7116ce79ea7b1af5a8c3bdfb6e812eb92b2f1d16b757b75c"
+    },
+    {
+      "file": "scripts/tournament_swiss.ts",
+      "sha256": "22623fcf268034663d7d85eeb91007a970dddc8c0fc5830ab9d7914077562134"
+    },
+    {
+      "file": "scripts/workerThreadBatchWorker.fixture.ts",
+      "sha256": "afa5892213b927c2ae214a1fc83d79efbfa92010c27bfc8c0a0075a6fb99dac8"
+    },
+    {
+      "file": "scripts/workerThreadBatchWorker.ts",
+      "sha256": "02e529e10c5a8584597046490e52e570d77930fffa8c276c9f88cc01dfd9e216"
+    },
+    {
+      "file": "scripts/wos-prod-deploy.sh",
+      "sha256": "3016f924e3a710d9bd242562f96ec29c13aab61142e8a2e5896cd7028ee829b8"
+    }
+  ],
+  "description": "Actual production working-tree source includes the semantic scope bridge. Tests and documentation are excluded from execution stability pins; the runtime source/config/CLI snapshot is retained privately."
+}

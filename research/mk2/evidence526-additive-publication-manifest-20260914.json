@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "newDistinctReports": 5,
+  "reviewedAggregateReports": 526,
+  "files": [
+    {
+      "file": "docs/mk2-reviewed-research526-20260914.md",
+      "hits": [],
+      "sha256": "2d2e867b8bd45f3f4cf02e1ae2da281838b43370e68706aed5cf1005e478ab11"
+    },
+    {
+      "file": "research/mk2/evidence526-asymmetric-five-coverage-20260914.json",
+      "hits": [],
+      "sha256": "4bbfd3f6733af15d0ad3de0693636ce0f97d9d883a1bccf029cede83f0fe0d8f"
+    },
+    {
+      "file": "research/mk2/installed-catalogue19-research526-20260914.json",
+      "hits": [],
+      "sha256": "98cff9cc288b61ce4ce3094a97f74fa3fcff362fb589905a72f68453a289994b"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-forward-20260914_installed19_results.json",
+      "hits": [],
+      "sha256": "98cf8e3b86a9c669652fbb7c760d12a24c6306d8776787f747012b76f3043344"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-forward-20260914_results.json",
+      "hits": [],
+      "sha256": "65f6ef04cda5f134e0ea2cceefeac91129cd7ff0ecae22c399f8bb3ae19644c3"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-forward-20260914_sanitized_battle_reports.json",
+      "hits": [],
+      "sha256": "d4149a6fc171db0d641845fe28a15a20c69863b81d993a5b5b2fcc0c2b9c1700"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-001.json",
+      "hits": [],
+      "sha256": "d3c7ca97344e1ac78be4fe6e84c582ea0644a29e0e59731a1e212c423ebbe3ed"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-002.json",
+      "hits": [],
+      "sha256": "0b2ceb95e6bf403d83ceee93c5e67caaf6d35806b3ffe0c61e27e508d4f27bb0"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-003.json",
+      "hits": [],
+      "sha256": "dafa111e9b0dd5b194f2aea007aaefeb65d42705f974419eca99fe7f11cb07ef"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-004.json",
+      "hits": [],
+      "sha256": "ca537665fd9d66d9f5eaa5b282669340db180480b0ab1202203a93612a055fc0"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-005.json",
+      "hits": [],
+      "sha256": "3b2dfc73db38512282ce231405d20c06c88b5b6c32c1d3176ad78143b4129cd8"
+    }
+  ],
+  "privacyAuditSha256": "a783db683c3a6728271c527980c57e7a19fffa301c8f0546b34e00372ad227eb",
+  "normalCLISourceOutputSha256": {
+    "published516": "a95dd1a63e4b31395a8e7157b7d99077580e041c8745c11c248dd435b061576f",
+    "newT7Forward5": "b96a96262ba85b5fe7dd8bf819aa631e16e9c24298d7cbc60761476de3101786",
+    "newAsymmetricInfantryForward5": "3efe7e2c61e2dd0472d4404cf695c5807daa08ce287522c8e3eeb0d369a0c422"
+  },
+  "basePackage": "The separately reviewed T7 five package and previously published 516 are prerequisites; this package adds only five fixtures."
+}

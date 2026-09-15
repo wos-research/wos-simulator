@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "reports": 5,
+  "files": [
+    {
+      "file": "docs/mk2-asymmetric-infantry-new-context-reverse-20260914.md",
+      "sha256": "9946e7e74a76efbf5a82693c0ae92e8ffcd92e5ec5df7cc19c2b76a7b6925999"
+    },
+    {
+      "file": "research/mk2/asymmetric-new-context-reverse-five-coverage-20260914.json",
+      "sha256": "e8f701841c4e04eb644c94de2598194dada9331728b8efef422d58df53df2bf5"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_installed19_results.json",
+      "sha256": "81bb73363ec4b10d34b0c45a6de4d23dcd14cc249beaa45fd6842eb496af6702"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_normal_cli_results.json",
+      "sha256": "f654feba6830743c306463a5b43c2b0c3d42ebba16162105cc3677a90a7b3d4c"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_results.json",
+      "sha256": "f4e95dacb20b5b8da0d0325418d5483b8aafae76da0f0e6a5c7342c8bae4bb4b"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_sanitized_battle_reports.json",
+      "sha256": "8a9a1f109f24e1819ba6c04ef9cd98c7a1681b7c91d81cfb4ba8b2a44f20b956"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_tested_production_sources.json",
+      "sha256": "cf41a664c0083e76ec6c075ef653f71a233a56584e635b4970e816aa4bf906cb"
+    },
+    {
+      "file": "research/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914_winner_oracle_correction_v2.json",
+      "sha256": "06fb2f7f5cc10375928ce14e5d4a8a06e0bbd991bdceff8eec79874c459eef27"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914-001.json",
+      "sha256": "332d1678a5a6086be5fa6a1e8651209af97b4a4391fc4e2ec234f259377a7418"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914-002.json",
+      "sha256": "432db13f32d5ffae5efa7ef58e06707ab2a81fab8b1f87e195afcadf8f79a15d"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914-003.json",
+      "sha256": "e3fd1c7e62451d92a1ee65c68b01df2d0449c0ddec274bdb246881f004b95e80"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914-004.json",
+      "sha256": "7641f54075c05c9b81a1eb093eb575d7747bc9053414dae839c9478774c046dd"
+    },
+    {
+      "file": "testcases/mk2/mk2-asymmetric-infantry-new-context-reverse-20260914-005.json",
+      "sha256": "664d7437aa5a955704204fbfb388d9dd4a5ae1a3e159d417b56448a8ab258914"
+    }
+  ],
+  "auditSha256": "3a4c7d6a8995d63d0e9239779e30f1de691acdb0c2b8e777e71be7a229a7022d",
+  "supersedesHistoricalManifestSha256": "f027de9c2b9c3a4ba16777c55f1a6963fbc17a4ad9622fd6b26caf1d2e6808d9",
+  "oracleCorrection": "mk2-asymmetric-infantry-new-context-reverse-20260914-004",
+  "policy": "All five retained; case 004 observed winner corrected from independently bound UI. Historical sidecar annotation explicitly superseded."
+}

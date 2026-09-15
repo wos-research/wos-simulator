@@ -208,6 +208,17 @@ export interface BattleInput {
 export type SimulationMode = "fast" | "standard" | "trace";
 
 export interface SimulationOptions {
+  /** Optional scoped accounting hook before the battle result is materialized. */
+  onBattleEnd?: (rounds: number, runtime: import("./runtime").Runtime, recorder: import("./recorder").BattleRecorder) => void;
+  // Optional scoped RNG reservation; runs after effect scheduling and before ordinary attacks.
+  onRoundStart?: (round: number, runtime: import("./runtime").Runtime, recorder: import("./recorder").BattleRecorder) => void;
+  // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.
+  rng?: import("./effects").Rng;
+  beforeExtraAttack?: import("./runtime").BeforeExtraAttack;
+  beforeExhaustedExtraAttack?: import("./runtime").BeforeExtraAttack;
+  attackScheduling?: "side-local" | "reference";
+  onEmptyUnit?: import("./runtime").OnEmptyUnit;
+  deferAttackSkill?: import("./runtime").DeferAttackSkill;
   mode?: SimulationMode;
   // Whether a dodged / no_attack'd attack still charges (uses += 1) the attacker's
   // attack-constrained effects, as the game does. Default true.

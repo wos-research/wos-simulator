@@ -9,6 +9,8 @@ import {
   formatTraceTroopCount,
 } from "@/lib/simulate/trace-format";
 
+import { replayMetadataLabel } from "@/lib/simulate/replay-settings";
+
 const SIDE_LABELS: Record<Side, string> = {
   attacker: "Attacker",
   defender: "Defender",
@@ -96,7 +98,8 @@ export const BattleTraceDetails = memo(function BattleTraceDetails({
     <div className="mt-4">
       <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h4 className="text-xs font-bold opacity-70">Example battle trace</h4>
+          <h4 className="text-xs font-bold opacity-70">{trace.replayMetadata?.mode === "mk2" ? "Mk2 replay trace" : "Example battle trace"}</h4>
+          {trace.replayMetadata && <p className="text-xs opacity-70">{replayMetadataLabel(trace.replayMetadata)}</p>}
           <p className="text-xs opacity-60">
             Seed {trace.seed}; outcome{" "}
             {formatBattleOutcome(
@@ -108,6 +111,12 @@ export const BattleTraceDetails = memo(function BattleTraceDetails({
           </p>
         </div>
       </div>
+      {trace.replayMetadata?.mode === "mk2" && trace.rng && (
+        <details className="mb-3 text-xs">
+          <summary className="cursor-pointer">RNG draw trace</summary>
+          <pre className="mt-2 max-h-80 overflow-auto">{JSON.stringify(trace.rng, null, 2)}</pre>
+        </details>
+      )}
       <SkillKillSummary trace={trace} attackerOnLeft={attackerOnLeft} />
       <div className="mt-3 overflow-x-auto" data-tour="simulate-trace-rounds">
         <table className="w-full min-w-[760px] text-xs font-mono">

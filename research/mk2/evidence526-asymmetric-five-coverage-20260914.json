@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "reports": 5,
+  "rows": [
+    {
+      "test_id": "mk2-asymmetric-infantry-forward-20260914-001",
+      "fixture": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-001.json",
+      "fixtureSha256": "d3c7ca97344e1ac78be4fe6e84c582ea0644a29e0e59731a1e212c423ebbe3ed",
+      "chronologicalIndexWithinCohort": 1,
+      "observedSha256": "451de952c801903bf478af42e74ca42a86c2e6d67fa337254661ff109e635548",
+      "sourceReportArtifactSha256": "da2d5a73e0405dbd9f77b525c30075784830ee54dbb47c5b05786e156d9894cc",
+      "recordedSeed": 1789368812,
+      "capturedTimestamp": 1789368811,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-forward-20260914-002",
+      "fixture": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-002.json",
+      "fixtureSha256": "0b2ceb95e6bf403d83ceee93c5e67caaf6d35806b3ffe0c61e27e508d4f27bb0",
+      "chronologicalIndexWithinCohort": 2,
+      "observedSha256": "43322f73105642db77a99ede92bdee2a44dd5b955f0539c826d6d30020cb0209",
+      "sourceReportArtifactSha256": "be69bdde7b1c1e7828e99a559e587642d26f7a6bf0ca8469cafd648aca53cb68",
+      "recordedSeed": 1789368925,
+      "capturedTimestamp": 1789368924,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-forward-20260914-003",
+      "fixture": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-003.json",
+      "fixtureSha256": "dafa111e9b0dd5b194f2aea007aaefeb65d42705f974419eca99fe7f11cb07ef",
+      "chronologicalIndexWithinCohort": 3,
+      "observedSha256": "32889cb1f325cba511fb0c386818a53c64bfc91844492ff42a6f065e48253b23",
+      "sourceReportArtifactSha256": "bcb1339a2cbfb37e1d1fbc2ab3cd461fd8218e6dc45e48f753278a1ca3623c48",
+      "recordedSeed": 1789369038,
+      "capturedTimestamp": 1789369037,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-forward-20260914-004",
+      "fixture": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-004.json",
+      "fixtureSha256": "ca537665fd9d66d9f5eaa5b282669340db180480b0ab1202203a93612a055fc0",
+      "chronologicalIndexWithinCohort": 4,
+      "observedSha256": "0f761ef5bc1467334115584dd2b802482dcf9c0fbc3e513615fd8d4b2d9a1b30",
+      "sourceReportArtifactSha256": "dc0a1e3160c343357e3be321ae2837998f4cfcec6e2cc3f544b9393d45e53d5c",
+      "recordedSeed": 1789369134,
+      "capturedTimestamp": 1789369133,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 5
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-forward-20260914-005",
+      "fixture": "testcases/mk2/mk2-asymmetric-infantry-forward-20260914-005.json",
+      "fixtureSha256": "3b2dfc73db38512282ce231405d20c06c88b5b6c32c1d3176ad78143b4129cd8",
+      "chronologicalIndexWithinCohort": 5,
+      "observedSha256": "f685e0f84e7bf9420189c970daf3012fe8f039d48615f1ad1e5854e98d77467e",
+      "sourceReportArtifactSha256": "724cac63d354e10a37040e693c675dd64ed7347d2d9c4b55d77aebc3d0359d94",
+      "recordedSeed": 1789369259,
+      "capturedTimestamp": 1789369258,
+      "survivorSlots": 6,
+      "explicitSupportedChanceCounters": 5
+    }
+  ],
+  "deduplicationPolicy": "One fixture and full combat report per distinct fight, including the A/I counter tie. No content deduplication."
+}

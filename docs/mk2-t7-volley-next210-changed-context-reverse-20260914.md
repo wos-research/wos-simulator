@@ -1,0 +1,9 @@
+Five distinct changed-context reverse T7 reports
+
+Catalogue19 executes all five and exactly matches0/5. It matches all winners and one complete survivor outcome; every mismatch remains in the evidence corpus. The normal CLI reports five known Gunpowder fallback warnings and zero errors. Installed full outputs and native RNG match frozen H0, with only catalogue version18/19 normalized.
+
+The mixed army has10 T10FC5 Lancers and100 T7FC3 Marksmen; the opponent has100 T5FC5 Lancers. Both are hero-free. The mixed actor's captured raw modifier10113 decreased500 and10114 increased500 relative to the preceding context. These actual values were fixed in the private guard/input before outcomes were opened. All other captured modifiers, profiles and experts were unchanged. This is changed-context research, not confirmation of the original context.
+
+Private frozen LOCAL, GLOBAL and GLOBAL_LIVE_MM models each match all five winners, six survivor slots and five explicit chance counters. Their full numerical outputs and native RNG agree on this reverse cohort; it does not distinguish live-Marksman continuation. No model/stat/probability fitting or within-batch changes were made. The private models are not active catalogue behavior. Their direct trace:false wrapper limitation remains; independent standard-recorder assembly with native event collection passed.
+
+Each fixture retains the original reported seed, independently captured timestamp, full observed outcome and explicit counters. Timestamp evidence separately identifies the legacy seed-derived adapter timestamp. Complete combat report sidecars remove outer private envelopes and replace only formation identity with side-local ordinals. Combat fields, including casualties, kills, power loss, buffs, experts and statistics, remain intact. One testcase represents each distinct fight; identical content is never a deduplication key.

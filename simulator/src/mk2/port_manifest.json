@@ -1,0 +1,287 @@
+{
+  "sourceVersion": "expedition-mk2-lua54-catalogue-17",
+  "baselineCommit": "fadcab7",
+  "policy": "Apply verified optional hooks to the existing engine; absent options preserve legacy behavior. No duplicate engine.",
+  "files": {
+    "src/types.ts": {
+      "baselineSha256": "d4b08f029aabfc0de91360e49367eca2d52919b774a86084f3689accb44d8666",
+      "sha256": "1e2b8203b60107965b4c8309451686a8b54596daeaf873bd13725211f992f4ea",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "export interface SimulationOptions {\n  mode?: SimulationMode;",
+          "export interface SimulationOptions {\n  // Mk2: a fresh RNG instance for this run; absent preserves upstream behavior.\n  rng?: import(\"./effects\").Rng;\n  mode?: SimulationMode;"
+        ],
+        [
+          "  rng?: import(\"./effects\").Rng;\n  mode?: SimulationMode;",
+          "  rng?: import(\"./effects\").Rng;\n  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  mode?: SimulationMode;"
+        ],
+        [
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;",
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  attackScheduling?: \"side-local\" | \"reference\";"
+        ],
+        [
+          "  attackScheduling?: \"side-local\" | \"reference\";",
+          "  attackScheduling?: \"side-local\" | \"reference\";\n  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;"
+        ],
+        [
+          "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;",
+          "  onEmptyUnit?: import(\"./runtime\").OnEmptyUnit;\n  deferAttackSkill?: import(\"./runtime\").DeferAttackSkill;"
+        ],
+        [
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;",
+          "  beforeExtraAttack?: import(\"./runtime\").BeforeExtraAttack;\n  beforeExhaustedExtraAttack?: import(\"./runtime\").BeforeExtraAttack;"
+        ],
+        [
+          "export interface SimulationOptions {",
+          "export interface SimulationOptions {\n  // Optional scoped RNG reservation; runs after effect scheduling and before ordinary attacks.\n  onRoundStart?: (round: number, runtime: import(\"./runtime\").Runtime, recorder: import(\"./recorder\").BattleRecorder) => void;"
+        ],
+        [
+          "export interface SimulationOptions {\n",
+          "export interface SimulationOptions {\n  /** Optional scoped accounting hook before the battle result is materialized. */\n  onBattleEnd?: (rounds: number, runtime: import(\"./runtime\").Runtime, recorder: import(\"./recorder\").BattleRecorder) => void;\n"
+        ]
+      ]
+    },
+    "src/effects.ts": {
+      "baselineSha256": "8895665442732f4557a9ce5081573ed6a1644dac38741407de849c66d4e32fba",
+      "sha256": "6753394c5649830c2f3dccf0bd9d93cdeb7788098d6b3e498fc420bb74dddd2b",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "export type Rng = () => number;",
+          "export interface RandomContext {\n  skill: ResolvedSkill;\n  round: number;\n  phase: \"battle_start\" | \"round_start\" | \"attack_declared\";\n  intent?: AttackIntent;\n}\nexport type Rng = (() => number) & {\n  chance?: (probabilityPct: number, context?: RandomContext) => boolean;\n};"
+        ],
+        [
+          "export function chancePasses(skill: ResolvedSkill, rng: Rng): boolean {",
+          "export function chancePasses(skill: ResolvedSkill, rng: Rng, context?: RandomContext): boolean {"
+        ],
+        [
+          "  return rng() < value / 100;",
+          "  return rng.chance ? rng.chance(value, context) : rng() < value / 100;"
+        ],
+        [
+          "  phase: \"battle_start\" | \"round_start\" | \"attack_declared\";",
+          "  phase: \"battle_start\" | \"round_start\" | \"attack_declared\" | \"extra_attack\";"
+        ],
+        [
+          "\"attack_declared\" | \"extra_attack\";",
+          "\"attack_declared\" | \"extra_attack\" | \"before_target\";"
+        ],
+        [
+          "\"extra_attack\" | \"before_target\";",
+          "\"extra_attack\" | \"before_target\" | \"empty_unit\";"
+        ]
+      ]
+    },
+    "src/runtime.ts": {
+      "baselineSha256": "9bd36a76799403bcfba4db987c116008dc5e6910dac27f1cb99c1add8059000a",
+      "sha256": "e996c1104d7c4c52ed12552af338f80a6b0ea351112cb8da199c394605dc6770",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "  type Rng\n",
+          "  type Rng,\n  type RandomContext\n"
+        ],
+        [
+          "chancePasses(skill, runtime.rng)",
+          "chancePasses(skill, runtime.rng, {skill, round, phase: triggerType, intent})"
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng)",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"attack_declared\", intent})"
+        ],
+        [
+          "export function preparedChancePasses(probabilityPct: number, rng: Rng): boolean {",
+          "export function preparedChancePasses(probabilityPct: number, rng: Rng, context?: RandomContext): boolean {"
+        ],
+        [
+          "  return rng() < probabilityPct / 100;",
+          "  return rng.chance ? rng.chance(probabilityPct, context) : rng() < probabilityPct / 100;"
+        ],
+        [
+          "export interface RunLoopOptions {\n",
+          "export type BeforeExtraAttack = (job: DamageJob, intent: AttackIntent, runtime: Runtime, recorder: BattleRecorder) => void;\n\nexport interface RunLoopOptions {\n  beforeExtraAttack?: BeforeExtraAttack;\n"
+        ],
+        [
+          "  intent: AttackIntent\n): DeferredEffectPlan[] | undefined {",
+          "  intent: AttackIntent,\n  phase: RandomContext[\"phase\"] = \"attack_declared\"\n): DeferredEffectPlan[] | undefined {"
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"attack_declared\", intent})",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase, intent})"
+        ],
+        [
+          "export interface RunLoopOptions {",
+          "export type OnEmptyUnit = (round: number, side: SideId, unit: UnitType, runtime: Runtime, recorder: BattleRecorder) => void;\n\nexport interface RunLoopOptions {"
+        ],
+        [
+          "export interface RunLoopOptions {",
+          "// Optional policy: delay selected declarations until the normal attack and its existing extras finish.\nexport type DeferAttackSkill = (prepared: PreparedAttackSkill, intent: AttackIntent) => boolean;\n\nexport interface RunLoopOptions {"
+        ],
+        [
+          "  beforeExtraAttack?: BeforeExtraAttack;",
+          "  beforeExtraAttack?: BeforeExtraAttack;\n  beforeExhaustedExtraAttack?: BeforeExtraAttack;"
+        ]
+      ]
+    },
+    "src/simulator.ts": {
+      "baselineSha256": "2c18de8559fbf871bd685f54f3bbeafcc533c88adec729b4aaae5ddab683b5fb",
+      "sha256": "3969751bc5082e17ee9db769faa33aac9165b016bf327af219e60c6ab4786e72",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "  preBattleEffects: ActiveEffect[]\n): Runtime {\n  const runtime = createRuntime(fighters, createSeededRng(seed), runtimeSkills, staticProfile);",
+          "  preBattleEffects: ActiveEffect[],\n  rng?: Rng\n): Runtime {\n  const runtime = createRuntime(fighters, rng ?? createSeededRng(seed), runtimeSkills, staticProfile);"
+        ],
+        [
+          "runtimeSkills, staticProfile, preBattleEffects);\n  return runLoop(",
+          "runtimeSkills, staticProfile, preBattleEffects, options.rng);\n  return runLoop("
+        ],
+        [
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng)",
+          "preparedChancePasses(prepared.probabilityPct, runtime.rng, {skill, round, phase: \"round_start\"})"
+        ],
+        [
+          "  return runLoop(input, fighters, runtime, recorder, options, loopOptions);",
+          "  return runLoop(input, fighters, runtime, recorder, options, {...loopOptions, beforeExtraAttack: options.beforeExtraAttack});"
+        ],
+        [
+          "    triggerRoundStartSkills(round, runtime, recorder);",
+          "    const sideLocal = options.attackScheduling === \"side-local\";\n    triggerRoundStartSkills(round, runtime, recorder, prepared => !sideLocal || prepared.skill.id !== \"Ambusher\");"
+        ],
+        [
+          "    for (const dealerUnit of UNIT_TYPES) {\n      for (const side of [\"attacker\", \"defender\"] as SideId[]) {",
+          "    const sides: SideId[] = [\"attacker\", \"defender\"];\n    const slots = sideLocal ? sides.flatMap(side => UNIT_TYPES.map(dealerUnit => ({side, dealerUnit})))\n      : UNIT_TYPES.flatMap(dealerUnit => sides.map(side => ({side, dealerUnit})));\n    for (const {dealerUnit, side} of slots) {"
+        ],
+        [
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;\n        const ordered = orderFromEffects",
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;\n        if (sideLocal && dealerUnit === \"lancer\") triggerRoundStartSkills(round, runtime, recorder,\n          prepared => prepared.skill.id === \"Ambusher\" && prepared.skill.side === side, \"before_target\");\n        const ordered = orderFromEffects"
+        ],
+        [
+          "      }\n    }\n\n    if (loopOptions.commitLosses) commitRound(results, runtime);",
+          "    }\n\n    if (loopOptions.commitLosses) commitRound(results, runtime);"
+        ],
+        [
+          "function triggerRoundStartSkills(\n  round: number,\n  runtime: Runtime,\n  recorder: BattleRecorder\n): ActiveEffect[] {",
+          "function triggerRoundStartSkills(\n  round: number,\n  runtime: Runtime,\n  recorder: BattleRecorder,\n  include: (prepared: Runtime[\"skills\"][\"roundStart\"][number]) => boolean = () => true,\n  phase: import(\"./effects\").RandomContext[\"phase\"] = \"round_start\"\n): ActiveEffect[] {"
+        ],
+        [
+          "  for (const prepared of runtime.skills.roundStart) {\n    if (!preparedRoundFrequencyMatches",
+          "  for (const prepared of runtime.skills.roundStart) {\n    if (!include(prepared)) continue;\n    if (!preparedRoundFrequencyMatches"
+        ],
+        [
+          "{skill, round, phase: \"round_start\"}",
+          "{skill, round, phase}"
+        ],
+        [
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) continue;",
+          "        if ((roundStartTroops[side][dealerUnit] ?? 0) <= 0) {\n          options.onEmptyUnit?.(round, side, dealerUnit, runtime, recorder);\n          continue;\n        }"
+        ],
+        [
+          "        const deferredEffects = matchingTriggerSkills\n          ? triggerAttackSkills(round, matchingTriggerSkills, runtime, recorder, intent)\n          : undefined;",
+          "        const delayedSkills = options.deferAttackSkill\n          ? matchingTriggerSkills?.filter(prepared => options.deferAttackSkill!(prepared, intent))\n          : undefined;\n        const immediateSkills = delayedSkills?.length\n          ? matchingTriggerSkills!.filter(prepared => !delayedSkills.includes(prepared))\n          : matchingTriggerSkills;\n        let deferredEffects = immediateSkills\n          ? triggerAttackSkills(round, immediateSkills, runtime, recorder, intent)\n          : undefined;"
+        ],
+        [
+          "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);",
+          "        const extraAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions, roundTargetDamage, loopOptions, results);\n        if (delayedSkills?.length) {\n          const existingExtras = new Set(runtime.effectIndex.extraAttacks);\n          const delayedEffects = triggerAttackSkills(round, delayedSkills, runtime, recorder, intent);\n          if (delayedEffects) deferredEffects = [...(deferredEffects ?? []), ...delayedEffects];\n          // Only the new activation belongs to this second dispatch. Persistent hero\n          // extras already ran above and must not run or advance their delay again.\n          const newExtras = runtime.effectIndex.extraAttacks.filter(effect => !existingExtras.has(effect));\n          const delayedAttacks = processExtraAttacks(job, intent, runtime, fighters, damageJobOptions,\n            roundTargetDamage, loopOptions, results, newExtras);\n          extraAttacks.totalKills += delayedAttacks.totalKills;\n          extraAttacks.skillKills += delayedAttacks.skillKills;\n        }"
+        ],
+        [
+          "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack}",
+          "{...loopOptions, beforeExtraAttack: options.beforeExtraAttack,\n    beforeExhaustedExtraAttack: options.beforeExhaustedExtraAttack}"
+        ],
+        [
+          "    processEffectSchedule(runtime, round);",
+          "    processEffectSchedule(runtime, round);\n    options.onRoundStart?.(round, runtime, recorder);"
+        ],
+        [
+          "  const winner = winnerFor(runtime.troops) ?? \"draw\";",
+          "  options.onBattleEnd?.(rounds, runtime, recorder);\n  const winner = winnerFor(runtime.troops) ?? \"draw\";"
+        ]
+      ]
+    },
+    "src/extraAttacks.ts": {
+      "baselineSha256": "776e93dd1747a150456f73b5745b8da80bf4b0580fbab5410c3e62ac3b256f79",
+      "sha256": "d523d0f5f42db2bc6d14edf433e4fda9f2484ae091bef15dfc81a3c186c9fa02",
+      "newline": "\r\n",
+      "replacements": [
+        [
+          "            recorder.recordScheduledDamageJob(job);\n            const result = calculateDamageJob(job, fighters, damageJobOptions);",
+          "            loopOptions.beforeExtraAttack?.(job, intent, runtime, recorder);\n            recorder.recordScheduledDamageJob(job);\n            const result = calculateDamageJob(job, fighters, damageJobOptions);"
+        ],
+        [
+          "  results: DamageJobResult[]\n): { totalKills: number; skillKills: number } {",
+          "  results: DamageJobResult[],\n  selectedEffects?: readonly ActiveEffect[]\n): { totalKills: number; skillKills: number } {"
+        ],
+        [
+          "  const effects = runtime.effectIndex.extraAttacks.filter(",
+          "  const effects = (selectedEffects ?? runtime.effectIndex.extraAttacks).filter("
+        ],
+        [
+          "            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) continue;",
+          "            if (loopOptions.capRoundKills && targetExhausted(job, roundStartTroops, roundTargetDamage)) {\n              loopOptions.beforeExhaustedExtraAttack?.(job, intent, runtime, recorder);\n              continue;\n            }"
+        ]
+      ]
+    }
+  },
+  "scopedE1": {
+    "module": "src/mk2/scoped_e1_volley.ts",
+    "moduleSha256": "d63c584f16763bdeedd948fad1e90e06f721775a459dcce66ee39c5bfc6c279c",
+    "scope": "500 T5 FC5 Lancers +5 T7 FC3 Marksmen versus25 T5 FC1 Infantry; exact tested normalized modifiers; either orientation",
+    "evidenceReports": 15,
+    "rule": "Reserve live Volley before Crystal Lance; count successful unused reservations without additional damage or RNG draw.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "loaderCompatibility": "An explicitly undefined optional seed is treated as absent; defined seed and other extra input fields remain outside the scope."
+  },
+  "scopedC2": {
+    "module": "src/mk2/scoped_c2_volley.ts",
+    "moduleSha256": "bc980f73de68f58181c20d0cbbda77fd736d458db43d6cf11c36cd52e030758f",
+    "scope": "500 T5 FC5 Lancers +5 T7 FC3 Marksmen versus1 T5 FC5 Infantry; exact tested normalized modifiers/current catalogue; either role",
+    "evidenceReports": 20,
+    "unusedSuccessfulCounterWitnesses": 3,
+    "rule": "Reserve live Volley before normal Lancer reactive Shield and Crystal Lance; apply Volley at original Marksman slot; defer Gunpowder in this exact context; count successful unused reservations without extra damage or RNG draws.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "limitations": "Observed totals distinguish frozen candidates in this exact scope, not unique server internals or untested combinations."
+  },
+  "scopedFourSource": {
+    "module": "src/mk2/scoped_four_source_volley.ts",
+    "moduleSha256": "ac7aa11eeea5c1d27c00a80c32b307982ab9ff673e31792cf0dd4951074120df",
+    "scope": "100 T10 FC5 Lancers +100 T7 FC3 Marksmen versus500 T5 FC1 Infantry; exact captured modifiers, both roles",
+    "evidenceReports": 10,
+    "rule": "Reserve Volley after Ambusher and before Crystal Lance; use cached result at original Marksman slot.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations.",
+    "representationAdapter": {
+      "module": "src/mk2/four_source_scope_view.ts",
+      "moduleSha256": "c462c80fa1a7c23273cc234c28203902d5c822b3d4e43700ef5a72949ed202e8",
+      "scope": "Equivalent default dashboard representation only within the existing exact four-source guard; original prepared input unchanged."
+    }
+  },
+  "scopedFC4": {
+    "module": "src/mk2/scoped_fc4_volley.ts",
+    "moduleSha256": "4d4a5c7d1ea88f6fdaa2960df46d95f3e3f59fc473500905c5e716987525df78",
+    "scope": "500 T5 FC4 Lancers +500 T7 FC3 Marksmen versus1000 T5 FC1 Infantry both roles, or attacking1000 T5 FC5 Infantry; exact captured modifiers",
+    "evidenceReports": 15,
+    "rule": "Reserve Volley before Lance, or before normal reactive Shield in the Shield cohort; retain original Marksman slot and scoped Gunpowder deferral.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations."
+  },
+  "scopedInf5": {
+    "module": "src/mk2/scoped_inf5_volley.ts",
+    "moduleSha256": "7d043d19e85ffbeb8ec24aff717147e2c8f6e90bf359acea60be6ce7a27f7746",
+    "scope": "500 T5 FC5 Lancers +5 T7 FC3 Marksmen versus5 T5 FC5 Infantry; five exact captured role/modifier groups",
+    "evidenceReports": 35,
+    "rule": "Reserve Volley before normal Lancer reactive Shield/Lance; retain Marksman slot and scoped Gunpowder deferral.",
+    "troopStatsOrProbabilitiesChanged": false,
+    "accounting": "Existing trigger-only accounting retained; successful-unused credit is not validated in this cohort.",
+    "limitations": "Exact captured scope distinguishes frozen candidate outcomes; no claim of unique server internals or untested combinations."
+  },
+  "scopedOwnInfantry": {
+    "reports": 10,
+    "scope": "25T10FC5Inf+100T10FC5LC each, both captured actor roles and exact source/modifiers",
+    "hook": "optional typed onRoundStart after effect schedule",
+    "normalAttackAndEffectSlotsChanged": false,
+    "statsOrProbabilitiesChanged": false
+  }
+}

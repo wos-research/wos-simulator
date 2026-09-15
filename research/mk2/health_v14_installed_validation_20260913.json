@@ -1,0 +1,34 @@
+{
+  "version": "expedition-mk2-lua54-catalogue-14",
+  "newCatalogueCell": "lancer_t10_fc5.health",
+  "legacyCatalogueUnchanged": true,
+  "summary": {
+    "passing": {
+      "reports": 326,
+      "sharedExact": 326,
+      "researchExact": 326,
+      "fullParity": 316,
+      "profileAffected": 10
+    },
+    "pending": {
+      "reports": 15,
+      "sharedExact": 0,
+      "researchExact": 0,
+      "fullParity": 15,
+      "profileAffected": 0
+    },
+    "newHealth": {
+      "reports": 10,
+      "sharedExact": 10,
+      "researchExact": 10,
+      "fullParity": 0,
+      "profileAffected": 10
+    }
+  },
+  "installedTests": {
+    "passed": 321,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "interpretation": "fullParity counts compare full results against v13 for unaffected profiles; affected profiles preserve all captured observations. Pending mixed ordering candidates remain outside the kernel."
+}

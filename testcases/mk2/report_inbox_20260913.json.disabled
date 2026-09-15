@@ -1,0 +1,150 @@
+[
+  {
+    "test_id": "testcase-000009",
+    "timestamp": "1789244909",
+    "attacker": {
+      "troops": {
+        "infantry_t12_fc10": 135174,
+        "lancer_t12_fc10": 2703,
+        "marksman_t12_fc10": 132471
+      },
+      "heroes": [
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [],
+      "stats": {
+        "infantry": {
+          "attack": 3071.38,
+          "defense": 3069.38,
+          "lethality": 3210.76,
+          "health": 3277.35
+        },
+        "lancer": {
+          "attack": 3119.38,
+          "defense": 3117.38,
+          "lethality": 3230.91,
+          "health": 3297.75
+        },
+        "marksman": {
+          "attack": 3071.38,
+          "defense": 3069.38,
+          "lethality": 3210.76,
+          "health": 3277.35
+        }
+      }
+    },
+    "defender": {
+      "troops": {
+        "infantry_t12_fc10": 296272,
+        "lancer_t12_fc10": 75891,
+        "marksman_t12_fc10": 504674,
+        "infantry_t11_fc10": 44641,
+        "marksman_t11_fc10": 100295
+      },
+      "heroes": [
+        {
+          "name": "Freya",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Gregory",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        },
+        {
+          "name": "Blanchette",
+          "levels": {
+            "skill_1": 5,
+            "skill_2": 5,
+            "skill_3": 5
+          }
+        }
+      ],
+      "joiner_heroes": [
+        {
+          "name": "Hendrik",
+          "levels": {
+            "skill_1": 5
+          }
+        }
+      ],
+      "stats": {
+        "infantry": {
+          "attack": 2435.98,
+          "defense": 2867.98,
+          "lethality": 2444.9,
+          "health": 2360.82
+        },
+        "lancer": {
+          "attack": 2476.98,
+          "defense": 2647.15,
+          "lethality": 2462.42,
+          "health": 2225.96
+        },
+        "marksman": {
+          "attack": 2345.48,
+          "defense": 2531.77,
+          "lethality": 2083.44,
+          "health": 1863.84
+        }
+      }
+    },
+    "game_report_result": [
+      {
+        "attacker": 0,
+        "defender": 807679
+      }
+    ],
+    "simulation_mode": "mk2",
+    "replay": {
+      "timestamp": "1789244909",
+      "timestampSource": "report-inbox"
+    },
+    "observed": {
+      "totals": {
+        "attacker": 0,
+        "defender": 807679
+      },
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {}
+      },
+      "winner": "defender"
+    },
+    "cohort": "report-inbox-t12"
+  }
+]

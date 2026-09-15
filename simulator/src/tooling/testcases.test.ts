@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { test } from "node:test";
@@ -9,12 +9,12 @@ import { createTroopStatsRecord } from "../troopStats";
 import type { SimulatorConfig } from "../types";
 import { loadCalibrationComparison, readCalibrationCase, testcaseFileLookupVariants } from "./calibration";
 import { compareOutcomeDistribution, DEFAULT_STOCHASTIC_P_THRESHOLD, type ParityComparisonMetrics } from "./parityMetrics";
-import { adaptTestcaseEntry, assignDetailArtifactPaths, battleScoreDelta, buildSummaryForOutput, deterministicRoundTolerancePct, discoverTestcaseFiles, runTestcases, testcaseArmiesFromEntry, type TestcaseSummaryEntry } from "./testcases";
+import { adaptTestcaseEntry, assignDetailArtifactPaths, battleScoreDelta, buildSummaryForOutput, deterministicRoundTolerancePct, discoverTestcaseFiles, runTestcases, testcaseArmiesFromEntry, type TestcaseSummaryEntry, testcaseReplayOptions, compareMk2Outcome, prepareTestcaseCases, runPreparedTestcasesAsync, executeTestcaseCase } from "./testcases";
 
-test("discoverTestcaseFiles follows simulator/testcases symlink and skips disabled or stale files by default", () => {
+test("discoverTestcaseFiles finds repository testcases and skips disabled or stale files by default", () => {
   const files = discoverTestcaseFiles();
 
-  assert.ok(files.some((file) => file.endsWith("emulator_verified/simple_001_nc.json")));
+  assert.ok(files.some((file) => file.replaceAll("\\", "/").endsWith("emulator_verified/simple_001_nc.json")));
   assert.ok(!files.some((file) => file.endsWith(".disabled")));
   assert.ok(!files.some((file) => file.endsWith(".stale_troops")));
 });
@@ -22,8 +22,8 @@ test("discoverTestcaseFiles follows simulator/testcases symlink and skips disabl
 test("discoverTestcaseFiles includes disabled and stale testcase files when requested", () => {
   const files = discoverTestcaseFiles({ includeDisabled: true });
 
-  assert.ok(files.some((file) => file.endsWith("emulator_verified/jasser_solo.json.disabled")));
-  assert.ok(files.some((file) => file.endsWith("emulator_verified/reina_logan_combo_v2.json.stale_troops")));
+  assert.ok(files.some((file) => file.replaceAll("\\", "/").endsWith("emulator_verified/jasser_solo.json.disabled")));
+  assert.ok(files.some((file) => file.replaceAll("\\", "/").endsWith("emulator_verified/reina_logan_combo_v2.json.stale_troops")));
 });
 
 test("runTestcases returns compact summary entries and full detail entries separately", () => {
@@ -543,3 +543,205 @@ function summaryEntry(testcaseId: string, idx: number, game: ParityComparisonMet
     baseline
   };
 }
+
+
+function mk2CapturedEntry() {
+  return {
+  "test_id": "mk2-captured-gunpowder",
+  "simulation_mode": "mk2",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "marksman_t5_fc3": 10000
+    },
+    "stats": {
+      "marksman": {
+        "attack": 291.4,
+        "defense": 294.65,
+        "lethality": 190.29,
+        "health": 188.39
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "infantry_t5_fc1": 10000
+    },
+    "stats": {
+      "infantry": {
+        "attack": 131.91,
+        "defense": 128.41,
+        "lethality": 115.57,
+        "health": 112.36
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "timestamp": "1789153122",
+    "reportedSeed": "1789153123",
+    "timestampSource": "derived-report-seed-minus-one"
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 9090
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      }
+    },
+    "totals": {
+      "attacker": 9090,
+      "defender": 0
+    },
+    "winner": "attacker",
+    "skillProcs": {
+      "attacker": {
+        "90009": 4
+      },
+      "defender": {}
+    }
+  }
+};
+}
+
+// This existing captured control remains exact under the fixed source catalogue.
+// Keep mk2CapturedEntry above unchanged: its old damage oracle is historical evidence,
+// not a value to rewrite to make loader tests pass.
+function mk2ExactToolingEntry() {
+  const rows = JSON.parse(readFileSync(new URL('../../../testcases/mk2/health_pending_20260913.json', import.meta.url), 'utf8'));
+  const matches = rows.filter((row: {test_id: string}) => row.test_id === 'mk2-health-pending-20260913-001');
+  assert.equal(matches.length, 1);
+  return structuredClone(matches[0]);
+}
+
+function runMk2Rows(rows: unknown[], options = {}) {
+  const testcaseRoot = tempDir("mk2-testcases");
+  writeFileSync(resolve(testcaseRoot, "captured.json"), JSON.stringify(rows));
+  return runTestcases({ testcaseRoot, repeat: 23, ...options }, loadSimulatorConfig());
+}
+
+test("Mk2 mode is explicit while old rows keep their legacy defaults", () => {
+  assert.equal(testcaseReplayOptions({ timestamp: 123 }), undefined);
+  assert.equal(testcaseReplayOptions({ simulation_mode: "legacy" }), undefined);
+  assert.deepEqual(testcaseReplayOptions({ simulation_mode: "mk2" }), {});
+  assert.deepEqual(testcaseReplayOptions({ replay: { timestamp: 123, observed: "untrusted" } }), { timestamp: 123 });
+  assert.throws(() => testcaseReplayOptions({ simulation_mode: "legacy", replay: {} }), /Legacy/);
+  assert.throws(() => testcaseReplayOptions({ simulation_mode: "unknown" }), /Unknown/);
+  assert.throws(() => testcaseReplayOptions({ replay: [] }), /object/);
+});
+
+test("Mk2 recorded control executes once and retains exact comparison and replay provenance", () => {
+  const row = mk2ExactToolingEntry();
+  const before = structuredClone(row);
+  const report = runMk2Rows([row], { seed: "ignored-legacy-override", includeSamples: true });
+  assert.equal(report.counts.errors, 0);
+  const detail = report.details[0]!;
+  const summary = Object.values(report.testcases)[0]!;
+  assert.deepEqual(row, before);
+  assert.equal(detail.sampleCount, 1);
+  assert.deepEqual(detail.result?.remaining, row.observed.remaining);
+  assert.equal(detail.exactComparison?.exact, true);
+  assert.equal(detail.exactComparison?.survivorChecks, 6);
+  assert.deepEqual(detail.exactComparison?.procChecks.map((check) => check.actual).sort(), [7, 10].sort());
+  assert.equal(detail.gameStatAdjustment, undefined);
+  assert.equal(detail.replayMetadata?.seedSource, "recorded-seed");
+  assert.equal(detail.replayMetadata?.effectiveSeed, String(row.replay.reportedSeed));
+  assert.equal(detail.replayMetadata?.timestampSource, "derived-report-seed-minus-one");
+  assert.equal(detail.replayMetadata?.timestampMatchesRecordedSeed, true);
+  assert.equal(detail.replayInput?.seed, undefined);
+  assert.deepEqual(detail.replayOptions, row.replay);
+  assert.deepEqual(summary.replayMetadata, detail.replayMetadata);
+  assert.deepEqual(summary.exactComparison, detail.exactComparison);
+  assert.equal(summary.game?.passes, true);
+  const restored = JSON.parse(JSON.stringify(buildSummaryForOutput(report)));
+  assert.deepEqual(Object.values(restored.testcases)[0], summary);
+});
+
+test("Mk2 wrong per-type survivors or proc counts fail even with unchanged totals and never fit stats", () => {
+  const original = mk2ExactToolingEntry();
+  const wrongUnits = structuredClone(original);
+  wrongUnits.observed.remaining.attacker.lancer -= 1;
+  wrongUnits.observed.remaining.attacker.infantry += 1;
+  const wrongProcs = structuredClone(original);
+  wrongProcs.observed.skillProcs.attacker["90004"] += 1;
+  const report = runMk2Rows([original, wrongUnits, wrongProcs]);
+  assert.equal(report.counts.executed, 3);
+  const [valid, units, procs] = report.details;
+  for (const detail of report.details) {
+    assert.equal(detail.sampleCount, 1);
+    assert.equal(detail.gameStatAdjustment, undefined);
+    assert.deepEqual(detail.result, valid!.result);
+    assert.deepEqual(detail.replayInput, valid!.replayInput);
+  }
+  assert.equal(valid?.exactComparison?.exact, true);
+  assert.equal(units?.exactComparison?.exact, false);
+  assert.equal(procs?.exactComparison?.exact, false);
+  assert.deepEqual(Object.values(report.testcases).map((entry) => entry.game?.passes), [true, false, false]);
+});
+
+test("Mk2 comparison distinguishes missing, explicit-zero and unsupported reported proc counts", () => {
+  const report = runMk2Rows([mk2CapturedEntry()]);
+  const result = report.details[0]!.result!;
+  const observed = mk2CapturedEntry().observed;
+  const withoutCounts = { ...observed, skillProcs: {} };
+  assert.equal(compareMk2Outcome(withoutCounts, result).procChecks.length, 0);
+  const withZero = { ...observed, skillProcs: { attacker: { "90006": 0 } } };
+  assert.equal(compareMk2Outcome(withZero, result).procChecks[0]?.actual, 0);
+  const unsupported = { ...observed, skillProcs: { attacker: { "unknown-server-id": 0 } } };
+  assert.equal(compareMk2Outcome(unsupported, result).exact, false);
+  assert.equal(compareMk2Outcome(unsupported, result).procChecks[0]?.actual, null);
+  assert.equal(compareMk2Outcome({ totals: observed.totals }, result).complete, false);
+});
+
+test("Mk2 missing timestamp uses its fixed default and mismatched recorded seed stays explicit", () => {
+  const row = mk2ExactToolingEntry();
+  const fallback = { ...row, replay: {} };
+  const mismatch = { ...row, replay: { ...row.replay, timestamp: "0", timestampSource: "battle-trigger" } };
+  const report = runMk2Rows([fallback, mismatch]);
+  assert.equal(report.details[0]?.replayMetadata?.seedSource, "default");
+  assert.equal(report.details[0]?.replayMetadata?.effectiveSeed, "1");
+  assert.equal(report.details[1]?.replayMetadata?.timestampMatchesRecordedSeed, false);
+  assert.equal(report.details[1]?.replayMetadata?.effectiveSeed, String(row.replay.reportedSeed));
+  assert.equal(report.details[1]?.exactComparison?.exact, true);
+  assert.ok(report.details[1]?.replayWarnings?.length);
+});
+
+test("Mk2 async testcase jobs carry the same replay options and exact results", async () => {
+  const testcaseRoot = tempDir("mk2-async-testcases");
+  const row = mk2ExactToolingEntry();
+  writeFileSync(resolve(testcaseRoot, "captured.json"), JSON.stringify([row]));
+  const options = { testcaseRoot, repeat: 41, seed: "legacy-seed" };
+  const config = loadSimulatorConfig();
+  const prepared = prepareTestcaseCases(options);
+  let jobs = 0;
+  const report = await runPreparedTestcasesAsync(options, config, prepared, async (job) => {
+    jobs++;
+    assert.deepEqual(job.replay, row.replay);
+    return executeTestcaseCase(job, config);
+  });
+  assert.equal(jobs, 1);
+  assert.equal(report.details[0]?.sampleCount, 1);
+  assert.equal(report.details[0]?.exactComparison?.exact, true);
+});
+
+
+test("Mk2 matching is relative to testcase root, not an enclosing worktree name", () => {
+  const testcaseRoot = tempDir("mk2-integration");
+  mkdirSync(resolve(testcaseRoot, "mk2"));
+  writeFileSync(resolve(testcaseRoot, "legacy.json"), "[]");
+  writeFileSync(resolve(testcaseRoot, "mk2", "captured.json"), "[]");
+  const files = discoverTestcaseFiles({ testcaseRoot, matching: "mk2" });
+  assert.equal(files.length, 1);
+  assert.equal(files[0], resolve(testcaseRoot, "mk2", "captured.json"));
+});

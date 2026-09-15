@@ -1,0 +1,401 @@
+{
+  "createdUtc": "2026-09-14T14:15:02.930Z",
+  "version": "expedition-mk2-lua54-catalogue-19",
+  "reports": 5,
+  "activeExact": 0,
+  "winnerCorrect": 4,
+  "fullFrozenH0Equality": 5,
+  "errors": [],
+  "rows": [
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-001",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "historicalSurvivorDerivedClassification": "defender",
+        "capturedTimeUtc": "2026-09-14T13:30:46+00:00",
+        "uiNativeArtifactSha256": "7b8e00a83c05bab3b9627a336a7823a7b7ebaea4753b9e5682bd3c3b594640e4",
+        "uiBindingArtifactSha256": "b67326dbcde6f0bea003b9f011ab1805598af802dcf3be6ef14fd1ba80ad7205",
+        "rootExecutionManifestSha256": "56f13d32bcc7c73229f6a6525bf8dad05011d7613b3d859f31963b3b805c3362",
+        "method": "Root visually reviewed the full report; time, roles, troop counts and casualties bound privately. No winner inferred solely from rounded survivors.",
+        "uiSurvivorTotals": {
+          "attacker": 0,
+          "defender": 13
+        }
+      },
+      "fullFrozenH0Equality": true,
+      "fullH0Differences": [],
+      "normalization": "Only replayMetadata.version19->17; no numerical/RNG/trace fields normalized",
+      "reportedSeed": 1789392647,
+      "capturedTimestamp": "1789392646",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 18,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 8,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 8,
+          "actual": 5,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 1,
+          "actual": 2,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 6,
+          "exact": true
+        }
+      ],
+      "installedFullArchiveSha256": "6fd0d4f09b35612bb3068a92bd8da051fd3c126358ebb56b8695dbbb97082eba",
+      "frozenFullArchiveSha256": "acd80aca66c5bb2a3636abc9c3c6644972a9d25194c209f22482e402a862eaae"
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-002",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "historicalSurvivorDerivedClassification": "defender",
+        "capturedTimeUtc": "2026-09-14T13:31:24+00:00",
+        "uiNativeArtifactSha256": "0c45fd03a7a4a70e05d13325c8a0a2f619ab691d07f43fa94e66076cf41e8dd7",
+        "uiBindingArtifactSha256": "1c69fb0f4c0373f05b088fb0ae20367d4f880009923e143947bb395a0b097824",
+        "rootExecutionManifestSha256": "56f13d32bcc7c73229f6a6525bf8dad05011d7613b3d859f31963b3b805c3362",
+        "method": "Root visually reviewed the full report; time, roles, troop counts and casualties bound privately. No winner inferred solely from rounded survivors.",
+        "uiSurvivorTotals": {
+          "attacker": 0,
+          "defender": 27
+        }
+      },
+      "fullFrozenH0Equality": true,
+      "fullH0Differences": [],
+      "normalization": "Only replayMetadata.version19->17; no numerical/RNG/trace fields normalized",
+      "reportedSeed": 1789392685,
+      "capturedTimestamp": "1789392684",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 18,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 11,
+          "actual": 11,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 3,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 8,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 0,
+          "actual": 2,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 8,
+          "exact": false
+        }
+      ],
+      "installedFullArchiveSha256": "db693fbada8d940a4cbf4d27258330c7bc15ff84e6b27897f673eec8cbdf1ee6",
+      "frozenFullArchiveSha256": "73a848476519d7e1eba820404de4659bc0c9d3d88f10bf9db4169d289b5084cf"
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-003",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "historicalSurvivorDerivedClassification": "defender",
+        "capturedTimeUtc": "2026-09-14T13:32:23+00:00",
+        "uiNativeArtifactSha256": "1ae221b1a99c9306307c609282b7a4da050191ecc91eba09274b3b49f2adc803",
+        "uiBindingArtifactSha256": "17c26b6abe735a705e8944088c017eaab2528e8844e4dea191bb54d821df9c7b",
+        "rootExecutionManifestSha256": "56f13d32bcc7c73229f6a6525bf8dad05011d7613b3d859f31963b3b805c3362",
+        "method": "Root visually reviewed the full report; time, roles, troop counts and casualties bound privately. No winner inferred solely from rounded survivors.",
+        "uiSurvivorTotals": {
+          "attacker": 0,
+          "defender": 27
+        }
+      },
+      "fullFrozenH0Equality": true,
+      "fullH0Differences": [],
+      "normalization": "Only replayMetadata.version19->17; no numerical/RNG/trace fields normalized",
+      "reportedSeed": 1789392744,
+      "capturedTimestamp": "1789392743",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 11,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 11,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 3,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        }
+      ],
+      "installedFullArchiveSha256": "3c06c2be629f061ecd27e94f4bc7cc3dcdeaeaaba72237aa7f4a9084ed02f881",
+      "frozenFullArchiveSha256": "f793f615ce9bc2e15d9ca487c0d26dced59e7d314b451c54c15a51fbff6f9b1c"
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-004",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": true,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "historicalSurvivorDerivedClassification": "defender",
+        "capturedTimeUtc": "2026-09-14T13:33:49+00:00",
+        "uiNativeArtifactSha256": "ef792915f5468a60fefc6124447e653350b69874b892805dd684b000567a9b75",
+        "uiBindingArtifactSha256": "a5efb6201d45360912d7b89c89807c4bef904c5c70847006f34b6f6a3d0f374e",
+        "rootExecutionManifestSha256": "56f13d32bcc7c73229f6a6525bf8dad05011d7613b3d859f31963b3b805c3362",
+        "method": "Root visually reviewed the full report; time, roles, troop counts and casualties bound privately. No winner inferred solely from rounded survivors.",
+        "uiSurvivorTotals": {
+          "attacker": 0,
+          "defender": 11
+        }
+      },
+      "fullFrozenH0Equality": true,
+      "fullH0Differences": [],
+      "normalization": "Only replayMetadata.version19->17; no numerical/RNG/trace fields normalized",
+      "reportedSeed": 1789392830,
+      "capturedTimestamp": "1789392829",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 19,
+          "marksman": 0
+        }
+      },
+      "winner": "defender",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 4,
+          "actual": 4,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 4,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 8,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 2,
+          "actual": 0,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 5,
+          "exact": false
+        }
+      ],
+      "installedFullArchiveSha256": "b0da68b97659a5c333ac6dde665ac1c9787a60764f34da9761dabfd9c4fb173a",
+      "frozenFullArchiveSha256": "4b48d519eafdb5ba3ff2ba346dea034a9d245e35626cc2ae6b2d8a8e9b2a08bc"
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-005",
+      "activeExact": false,
+      "outcomeExact": false,
+      "winnerCorrect": false,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "historicalSurvivorDerivedClassification": "defender",
+        "capturedTimeUtc": "2026-09-14T13:34:36+00:00",
+        "uiNativeArtifactSha256": "0dfc07ac340195c4ebd5ec9dcf88d90f2ba88e331d70fc56ebb84b03a34e596e",
+        "uiBindingArtifactSha256": "c649e3bf068c0e6996915e10c7c09fb356ff78dae8388e2987794d9c0eda9a62",
+        "rootExecutionManifestSha256": "56f13d32bcc7c73229f6a6525bf8dad05011d7613b3d859f31963b3b805c3362",
+        "method": "Root visually reviewed the full report; time, roles, troop counts and casualties bound privately. No winner inferred solely from rounded survivors.",
+        "uiSurvivorTotals": {
+          "attacker": 0,
+          "defender": 1
+        }
+      },
+      "fullFrozenH0Equality": true,
+      "fullH0Differences": [],
+      "normalization": "Only replayMetadata.version19->17; no numerical/RNG/trace fields normalized",
+      "reportedSeed": 1789392877,
+      "capturedTimestamp": "1789392876",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 15,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "winner": "attacker",
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 7,
+          "actual": 5,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 10,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 8,
+          "actual": 7,
+          "exact": false
+        }
+      ],
+      "installedFullArchiveSha256": "a84e7f2a8f31adde6e5818f79f03c2a57a153752064f8df5df876869281b1643",
+      "frozenFullArchiveSha256": "e16f4cbd3c7cfded1befe327825740475d1f7c3369421e879288d6bc60aa3c09"
+    }
+  ]
+}

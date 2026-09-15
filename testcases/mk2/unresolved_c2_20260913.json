@@ -1,0 +1,162 @@
+[
+  {
+    "test_id": "mk2-unresolved-c2-20260913-001",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289446",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289447,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 42,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 542,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 6,
+          "90009": 11,
+          "90006": 5
+        },
+        "defender": {
+          "90007": 55
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "First chronological valid mixed Lance/Volley/Gunpowder/Shield diagnostic. Production replay does not match. Four further planned cases remain held out.",
+      "timingLimit": "Recorded-seed replay; timestamp derived from seed is not independent timing evidence."
+    }
+  }
+]

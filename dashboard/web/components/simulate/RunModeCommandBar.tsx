@@ -13,6 +13,9 @@ import { ClampedNumberField, NumberStringField } from "./ClampedNumberField";
 import { ProgressBar } from "./SharedSimComponents";
 import { MAX_SURFACE_JOBS } from "@/lib/simulate/saved-run-state";
 
+import { ReplayControls } from "./ReplayControls";
+import type { ReplaySettings } from "@/lib/simulate/replay-settings";
+
 export type RunMode = "simulate" | "optimise" | "explore";
 
 export interface RunModeView {
@@ -40,6 +43,8 @@ export function runModeLabel(mode: RunMode) {
 }
 
 export function RunModeCommandBar({
+  replaySettings,
+  setReplaySettings,
   adaptiveFinalReplicates,
   adaptivePhase1Replicates,
   adaptivePhase2Replicates,
@@ -85,6 +90,8 @@ export function RunModeCommandBar({
   surfacePointsPerEdge,
   surfaceReplicates,
 }: {
+  replaySettings: ReplaySettings;
+  setReplaySettings: (value: ReplaySettings) => void;
   adaptiveFinalReplicates: number;
   adaptivePhase1Replicates: number;
   adaptivePhase2Replicates: number;
@@ -372,12 +379,13 @@ export function RunModeCommandBar({
           ))}
         </div>
 
+        {runMode === "simulate" && <ReplayControls value={replaySettings} onChange={setReplaySettings} disabled={loading} />}
         <div
           className="sim-mode-command-row"
           data-mode={runMode}
           data-testid="simulate-runbar"
         >
-          {runMode === "simulate" && (
+          {runMode === "simulate" && replaySettings.mode === "legacy" && (
             <ClampedNumberField
               wrapperClassName="sim-replicates-inline"
               className="sim-input min-h-[34px] px-2 py-1 text-right font-mono text-sm tabular-nums"

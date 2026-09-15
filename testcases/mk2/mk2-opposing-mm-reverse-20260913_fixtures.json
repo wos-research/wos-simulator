@@ -1,0 +1,427 @@
+[
+  {
+    "test_id": "mk2-opposing-mm-reverse-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc3_marksmen_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 291.4,
+          "defense": 294.65,
+          "lethality": 190.29,
+          "health": 188.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789342024",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789342025,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 9
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 9,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 5
+        },
+        "defender": {
+          "90009": 2
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile:100 T5 FC3 Marksmen versus100 T5 FC3 Marksmen; explicit Gunpowder activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Gunpowder compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-mm-reverse-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc3_marksmen_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 291.4,
+          "defense": 294.65,
+          "lethality": 190.29,
+          "health": 188.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789342088",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789342089,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 12
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 12
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90009": 3
+        },
+        "defender": {
+          "90009": 7
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile:100 T5 FC3 Marksmen versus100 T5 FC3 Marksmen; explicit Gunpowder activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Gunpowder compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-mm-reverse-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc3_marksmen_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 291.4,
+          "defense": 294.65,
+          "lethality": 190.29,
+          "health": 188.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789342177",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789342178,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 8
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 8,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 3
+        },
+        "defender": {
+          "90009": 1
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile:100 T5 FC3 Marksmen versus100 T5 FC3 Marksmen; explicit Gunpowder activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Gunpowder compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-mm-reverse-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc3_marksmen_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 291.4,
+          "defense": 294.65,
+          "lethality": 190.29,
+          "health": 188.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789342220",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789342221,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 7
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 7
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90009": 2
+        },
+        "defender": {
+          "90009": 4
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile:100 T5 FC3 Marksmen versus100 T5 FC3 Marksmen; explicit Gunpowder activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Gunpowder compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-mm-reverse-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t5_fc3_marksmen_v16",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t5_fc3": 100
+      },
+      "stats": {
+        "marksman": {
+          "attack": 291.4,
+          "defense": 294.65,
+          "lethality": 190.29,
+          "health": 188.39
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789342293",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789342294,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 16
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 16,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 8
+        },
+        "defender": {
+          "90009": 5
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 matches this report.",
+      "scope": "Hero-free occupied tile:100 T5 FC3 Marksmen versus100 T5 FC3 Marksmen; explicit Gunpowder activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Opposing Gunpowder compatibility only; no unique ordering, stat, probability or universal correctness claim."
+    }
+  }
+]

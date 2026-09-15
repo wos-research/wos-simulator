@@ -1,0 +1,437 @@
+[
+  {
+    "test_id": "mk2-opposing-t10-lance-forward-20260913-001",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t10_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789347594",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789347595,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 42,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 42
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90008": 2,
+          "90004": 4
+        },
+        "defender": {
+          "90008": 5,
+          "90004": 5
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 does not match; frozen reference scheduling matches. No kernel correction installed.",
+      "scope": "Hero-free occupied tile: 100 T10 FC5 Lancers versus 100 T10 FC5 Lancers; explicit Ambusher and Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Frozen scheduling comparison only; reverse direction pending. No unique internal phase, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-t10-lance-forward-20260913-002",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t10_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789347688",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789347689,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 9,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 9
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90008": 9,
+          "90004": 9
+        },
+        "defender": {
+          "90008": 6,
+          "90004": 11
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 does not match; frozen reference scheduling matches. No kernel correction installed.",
+      "scope": "Hero-free occupied tile: 100 T10 FC5 Lancers versus 100 T10 FC5 Lancers; explicit Ambusher and Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Frozen scheduling comparison only; reverse direction pending. No unique internal phase, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-t10-lance-forward-20260913-003",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t10_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789347754",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789347755,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 37,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 37
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90008": 5,
+          "90004": 9
+        },
+        "defender": {
+          "90008": 8,
+          "90004": 4
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 does not match; frozen reference scheduling matches. No kernel correction installed.",
+      "scope": "Hero-free occupied tile: 100 T10 FC5 Lancers versus 100 T10 FC5 Lancers; explicit Ambusher and Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Frozen scheduling comparison only; reverse direction pending. No unique internal phase, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-t10-lance-forward-20260913-004",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t10_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789347829",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789347830,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 7,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 7
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90008": 10,
+          "90004": 7
+        },
+        "defender": {
+          "90008": 3,
+          "90004": 10
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 does not match; frozen reference scheduling matches. No kernel correction installed.",
+      "scope": "Hero-free occupied tile: 100 T10 FC5 Lancers versus 100 T10 FC5 Lancers; explicit Ambusher and Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Frozen scheduling comparison only; reverse direction pending. No unique internal phase, stat, probability or universal correctness claim."
+    }
+  },
+  {
+    "test_id": "mk2-opposing-t10-lance-forward-20260913-005",
+    "simulation_mode": "mk2",
+    "cohort": "opposing_t10_fc5_lancers_v17",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 266.09,
+          "defense": 266.34,
+          "lethality": 180.05,
+          "health": 177.65
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "lancer_t10_fc5": 100
+      },
+      "stats": {
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789347895",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789347896,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 18,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 18
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {
+          "90008": 12,
+          "90004": 4
+        },
+        "defender": {
+          "90008": 5,
+          "90004": 4
+        }
+      }
+    },
+    "evidenceSummary": {
+      "status": "Current H0 does not match; frozen reference scheduling matches. No kernel correction installed.",
+      "scope": "Hero-free occupied tile: 100 T10 FC5 Lancers versus 100 T10 FC5 Lancers; explicit Ambusher and Lance activation counters on both sides.",
+      "timingLimit": "Timestamp derives from reported seed minus one; not independent seeding-time proof.",
+      "mechanicsLimit": "Frozen scheduling comparison only; reverse direction pending. No unique internal phase, stat, probability or universal correctness claim."
+    }
+  }
+]

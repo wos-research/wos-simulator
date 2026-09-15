@@ -14,6 +14,23 @@ is organized around three primary components plus shared data and documentation.
 └── test_results/  # Calibration DB (dashboard.sqlite) + baseline
 ```
 
+## Expedition Simulator Mk2
+
+The [current locked-stat checkpoint](research/mk2/locked-terminal-rng-20260914.md) covers **657 captured-report testcases: 415 exact matches and 242 unresolved cases**. It includes 30 additional reports whose exact-context Ambusher/Volley timing now matches all recorded survivors and skill counts; all previous 627 results are unchanged. Source stats remain locked. All 301 legacy references, four new simulator tests, 109 dashboard tests and simulator TypeScript pass; 29 pre-existing simulator test failures remain visible. The separate timestamp-only inbox is excluded from this denominator.
+
+The [earlier locked catalogue20 checkpoint](docs/mk2-locked-logical581-20260914.md) covers **581 logical testcases: 349 exact matches, 580 matching winner classifications and 232 unresolved cases**. The normal CLI executed all 581 with zero errors. This adds 35 distinct new mail-report fixtures and complete anonymized combat sidecars to the published 546; all prior fixture bytes and comparisons are preserved. Exactness checks the winner, all six survivor counts and every explicitly recorded supported chance-skill count. Failures remain visible.
+
+T1–T10 / FC0–FC5 troop statistics are locked to the supplied source. The audited historical calibrated table contained 302 one-point reductions: 156 cells in the approved range were restored, while 146 T1–T10 / FC6–FC10 one-point reductions remain inherited and unvalidated. Higher-tier/FC behavior is not established by this checkpoint. Replays use the original recorded seeds and retained exact-context RNG rules; those rules are retained for reconstruction, not revalidated by the stat restoration. Twenty new report-only fixtures have no independently captured battle timestamp and keep it unknown. Available direct mail mappings cover 339 of the inherited 546 testcase IDs; the other 207 retain their historical ledger provenance without a new identity proof. This 581-case checkpoint was audited at 17:59 UTC on 14 September 2026. Later 125-Infantry / 100-, 105-, and 110-Marksmen experiments are separate and excluded from this checkpoint.
+
+The [historical pre-restoration 541-report checkpoint](docs/mk2-installed-asymmetric-scope541-20260914.md) recorded 530 exact matches, 540 matching winner classifications and 11 unresolved cases. Its results, including the UI-supported winner correction for a battle with zero survivors on both sides, remain available as history; they do not describe the current restored-stat baseline.
+
+The [dashboard/CLI compatibility review](docs/mk2-compatibility-review-20260914.md) documents the representation and loader repairs, validation, and approved round-cap restoration and unresolved stat/timestamp findings.
+
+The [Mk2 integration guide](docs/mk2-integration.md) describes the opt-in replay engine,
+seed provenance, and reproducible checks. The original 160 captured cases live in
+[`testcases/mk2/controlled.json`](testcases/mk2/controlled.json), with a
+[readable report catalog](docs/mk2-controlled-reports.md). The [historical installed catalogue19 checkpoint](docs/installed-catalogue19-validation-20260914.md) recorded **516/516 reviewed controlled reports exactly**: winner, all six survivor counts and every explicitly recorded supported chance-skill count. That historical update added 20 reports and two narrowly scoped Ambusher reservation rules while preserving complete results and RNG for the previous 496. It changed no troop statistics, probabilities or normal attack/effect scheduling. All fixtures, recorded seeds, observed results and four new sanitized complete combat-report sidecars are included. Captured timestamps remain separate from seed-derived adapters; timestamp exceptions and external inbox failures remain documented. The [previous checkpoint](docs/installed-catalogue18-validation-20260914.md) and dated research documents retain the development history. Raw identifying network captures remain private.
+
 ## Components
 
 ### `simulator/` — the primary simulator

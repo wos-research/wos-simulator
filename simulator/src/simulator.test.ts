@@ -529,7 +529,7 @@ test("extra skill attacks against same-round exhausted targets are skipped entir
 
 test("runPrepared carries fractional casualties between rounds and ceils final survivors", () => {
   const config = loadSimulatorConfig();
-  const fixturePath = fileURLToPath(new URL("../testcases/emulator_verified/simple_001_nc.json", import.meta.url));
+  const fixturePath = fileURLToPath(new URL("../../testcases/emulator_verified/simple_001_nc.json", import.meta.url));
   const testcases = JSON.parse(readFileSync(fixturePath, "utf8")) as Array<BattleInput & { test_id: string }>;
   const input = testcases.find((testcase) => testcase.test_id === "simple_001");
   assert.notEqual(input, undefined);
@@ -661,7 +661,7 @@ for (const fixture of [
   { id: "ahmose_source_dies_001i_480l_vs_250i", attacker: { infantry: 0, lancer: 3, marksman: 0 }, defender: { infantry: 0, lancer: 0, marksman: 0 } }
 ]) {
   test(`Ahmose Viper schedules unused pauses without protection: ${fixture.id}`, () => {
-    const path = new URL(`../testcases/emulator_verified/${fixture.id}.json`, import.meta.url);
+    const path = new URL(`../../testcases/emulator_verified/${fixture.id}.json`, import.meta.url);
     const [input] = JSON.parse(readFileSync(path, "utf8")) as BattleInput[];
     const result = runOnce(input, loadSimulatorConfig());
 
@@ -2557,7 +2557,7 @@ test("same-round outcomes are capped to available target troops before tracing s
 
 test("same-round cap does not leave exhausted units targetable through floating point residue", () => {
   const config = loadSimulatorConfig();
-  const fixturePath = fileURLToPath(new URL("../testcases/emulator_verified/sergey_solo_nc.json", import.meta.url));
+  const fixturePath = fileURLToPath(new URL("../../testcases/emulator_verified/sergey_solo_nc.json", import.meta.url));
   const testcases = JSON.parse(readFileSync(fixturePath, "utf8")) as Array<BattleInput & { test_id: string }>;
   const input = testcases.find((testcase) => testcase.test_id === "sergey_solo");
   if (!input) throw new Error("missing sergey_solo fixture");

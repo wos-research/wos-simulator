@@ -1,0 +1,54 @@
+{
+  "version": "expedition-mk2-lua54-catalogue-18",
+  "reviewedReports": 496,
+  "observedExact": 496,
+  "pending": 0,
+  "winnerCorrect": 496,
+  "released25FullFrozenPrivateEquality": 25,
+  "prior471ArchivedFullShaEquality": 471,
+  "installedPrivateSharedAndResearchFullEquality": 496,
+  "standardTraceGameplayAndActivationParityBothKernels": 496,
+  "reportedSeedsPreserved": 25,
+  "latest25SurvivorChecks": 150,
+  "latest25ExplicitProcChecks": 100,
+  "publicCliRun": true,
+  "modelsTuned": false,
+  "inputsChanged": false,
+  "finalGuardFixValidated": true,
+  "publicCli": {
+    "files": 45,
+    "reviewedCases": 496,
+    "executed": 496,
+    "exact": 496,
+    "errors": 0,
+    "warnings": 97,
+    "exitStatus": 0,
+    "selection": "Forty-five byte-identical controlled public fixture files; the separate external inbox is excluded.",
+    "broadInboxRunPreservedSeparately": true
+  },
+  "engineTests": {
+    "tests": 335,
+    "passed": 335,
+    "failed": 0,
+    "logSha256": "4c4d1b3f31500f9a2c67d276c261242802d897343aeb897fc01ff48463907ad7"
+  },
+  "typecheck": {
+    "exitStatus": 0,
+    "verificationSource": "Root-confirmed final typecheck after missing-stats guard fix"
+  },
+  "historicalCatalogue17": {
+    "reviewedReports": 496,
+    "exact": 471,
+    "pending": 25,
+    "winnerCorrect": 487
+  },
+  "timestampPolicy": "Recorded packet seeds preserved for all25 newly covered cases; shared uses reportedSeed override. Research uses explicitly labelled seed-minus-one adapter. Captured timestamps remain independent; known failures of captured-time-plus-one remain unresolved.",
+  "finalizedUtc": "2026-09-14T04:42:38.029566+00:00",
+  "limitations": [
+    "The two new Ambusher paths are restricted to the exact tested armies, roles, hero-free conditions, experts and numeric modifier contexts.",
+    "Full equality to observed reports and reference models does not uniquely identify server physical draw timing.",
+    "Recorded-seed exactness is separate from timestamp derivation; prior captured-time exceptions are retained.",
+    "The historical catalogue17 checkpoint remains471/496 exact with487 correct winners; installed catalogue18 is496/496 exact.",
+    "Operational UI summaries were seen during collection; model-level seeds, counters and holdouts were read only after their corresponding releases."
+  ]
+}

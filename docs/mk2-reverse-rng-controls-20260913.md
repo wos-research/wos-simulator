@@ -1,0 +1,19 @@
+# Reverse RNG controls and remaining Shield accounting
+
+The captured corpus now contains **426 distinct reports: 371 exact and 55 pending under unchanged catalogue15**. This evidence-only update adds five reverse Ambusher/Lance/Gunpowder reports and five reverse one-Infantry Shield reports. No kernel, troop stats, probabilities or timing rules change.
+
+The reverse ALG battles use 500 T5 FC1 Infantry attacking 100 T10 FC5 Lancers plus 100 T5 FC3 Marksmen, without heroes. All five match the active kernel, completing ten exact reports across both directions. Recorded seeds, six survivor slots and three explicit activation counts per report were independently checked against finalized capture data. Actual captured modifiers are retained, including the previously observed Infantry modifier decrease; its cause is not established.
+
+The reverse Shield battles use one T5 FC5 Infantry attacking 500 T5 FC5 Lancers plus five T7 FC3 Marksmen. All five have correct winners and survivors under the active kernel, but differing skill counters. Both previously frozen ordering candidates match all five; none distinguishes whether a successful unused Volley reservation receives activation credit. Combined with the earlier forward batch, the credit candidate matches 10/10 and the no-credit candidate 8/10. The two distinguishing observations remain the forward reports. Raw reports expose activation totals, not the server's internal event sequence.
+
+The isolated implementation remains unapplied. These observations support comparisons within the exact tested context; they do not extend the rule to thirty older five-Infantry cases, FC4 Lancers, other modifiers, heroes or other combinations. All original 160 controlled reports continue to match. Across the 426-report corpus, all winners match; 43 incomplete matches differ only in skill counters, and twelve also differ in Lancer survivors.
+
+New fixtures are testcases/mk2/alg_reverse_20260913.json and testcases/mk2/c2_one_infantry_reverse_20260913.json, with correspondingly named result files under research/mk2. Each file executed through the normal testcase CLI: ALG five exact, Shield five expected mismatches, zero processing errors. Missing counters remain unknown and explicit zeros are checked. Private capture identity mappings remain local; separate fights remain separate fixtures.
+
+Use the normal testcase CLI with --testcase-root testcases/mk2 --matching alg_reverse_20260913 or --matching c2_one_infantry_reverse_20260913. The second command's mismatch exit status is expected. Earlier full-suite validation remains applicable because runtime source is unchanged. Timestamps derived from recorded seed minus one are replay metadata, not independent proof of timestamp-to-seed derivation.
+
+## Additional reverse accounting batch
+
+Five further reverse one-Infantry fights bring the corpus to **431 reports: 371 exact and 60 pending** under unchanged catalogue15. All five have correct winners and survivors but differing skill counters in the active kernel. Both frozen candidates match all five; each predicts an unused failed reservation and no successful-unused accounting distinction. All fifteen one-Infantry reports therefore give H0 0/15, credit candidate 15/15 and no-credit candidate 13/15. The only two distinguishing observations remain forward-role reports. This does not establish reverse credit accounting.
+
+The five new seeds, thirty survivor slots, twenty explicit counters, all raw modifiers and normalized axes were independently verified. The normal loader processes all five with five expected mismatches and zero errors. Across the 431-report corpus, all winners match; 48 incomplete matches differ only in counters and twelve also differ in Lancer survivors. Fixtures and comparisons are c2_one_infantry_reverse2_20260913.json under testcases/mk2 and c2_one_infantry_reverse2_results_20260913.json under research/mk2. No kernel behavior changed.

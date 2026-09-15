@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "kind": "private-staged-additive-anonymized-evidence",
+  "reports": 15,
+  "candidateInstalled": false,
+  "activeKernelChanged": false,
+  "sharedCheckoutMutated": false,
+  "files": [
+    {
+      "file": "docs/mk2-reviewed-fifteen-staged-20260914.md",
+      "sha256": "8137e3208e8c1c0cea32e1f3ea2afa189949b93eaa40b458c112e14061087306"
+    },
+    {
+      "file": "research/mk2/evidence511-expected-report-coverage-20260914.json",
+      "sha256": "127cc0a623a189c4c4e4eb2366f2d09bd3eae1c673bb96f160371fdf3430967f"
+    },
+    {
+      "file": "research/mk2/latest-fifteen-active-replay-20260914.json",
+      "sha256": "c1934aa3c307a69c0a35b04fe43bc655c851b96edb0e28685ff73e83cafc4ab9"
+    },
+    {
+      "file": "research/mk2/mk2-ambusher-next210-forward-20260914_results.json",
+      "sha256": "5d6d5e7fbb38b6b15dcfa12d5235c1e2e78f398c85d4b53b6d7b044de8b72748"
+    },
+    {
+      "file": "research/mk2/mk2-ambusher-next210-forward-20260914_sanitized_battle_reports.json",
+      "sha256": "6efcebe4757f87988718baa0dee086961ccd779c1f42dc58dc5b265bd68b5c78"
+    },
+    {
+      "file": "research/mk2/mk2-ambusher-next210-reverse-20260914_results.json",
+      "sha256": "d6aee2e77227c308474b18e49abda12e6c4b8ffdc065d52a1e21a919fac3caa8"
+    },
+    {
+      "file": "research/mk2/mk2-ambusher-next210-reverse-20260914_sanitized_battle_reports.json",
+      "sha256": "ee7c70239ab108734a7dfc8815148076b2a695517634482308901189a4e5a0fc"
+    },
+    {
+      "file": "research/mk2/mk2-own-infantry-250-forward-20260914_results.json",
+      "sha256": "6424d89989efdbaa153ea26f6f509be407d27af38fe15b20f137736d48a385f7"
+    },
+    {
+      "file": "research/mk2/mk2-own-infantry-250-forward-20260914_sanitized_battle_reports.json",
+      "sha256": "eb841c40e6b009c21b7ff9014242e2edeb740d415de32b4f985de5aa01fd6532"
+    },
+    {
+      "file": "research/mk2/reviewed-checkpoint-511-staged-20260914.json",
+      "sha256": "0d2e9d2713efe73666ae0b980910018899ac0ad95e98a3be1b2f13302e398f67"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-forward-20260914-001.json",
+      "sha256": "60083d6722c4438e4415a2376ae26fcf2d153957af7d65479989b146f498a366"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-forward-20260914-002.json",
+      "sha256": "135c1b128d046b0d78fe3861a4327a3a5dab18b64af515a4ff2d578f44795927"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-forward-20260914-003.json",
+      "sha256": "105941bb26bb56652e69998b41bf0773b01d2cdccb41533532afa3c8800fbd47"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-forward-20260914-004.json",
+      "sha256": "cc90940e6634fcca2a1fec2c352436948d1190db78d075ee0956d522361c09f2"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-forward-20260914-005.json",
+      "sha256": "00345ce9e548e50beed12f0338b02ea8f97ca48287045e5551acad4f0ca0425f"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-reverse-20260914-001.json",
+      "sha256": "42c373ecd8cf41f89f086cf49fbf63ca475a036870511f30195576e8ec62b947"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-reverse-20260914-002.json",
+      "sha256": "6182ae60f21849e0623ef6fea176420e924def1c783b94bce12189dac4e4499f"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-reverse-20260914-003.json",
+      "sha256": "2cb4eb9756323ef95158c24144bb709e5c38b1a0c967b4023e308746676be4e9"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-reverse-20260914-004.json",
+      "sha256": "f6fbbc115b73b34cee6f8c55ee28b8ef3ef96532cfc8e01309949a047ab21180"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-next210-reverse-20260914-005.json",
+      "sha256": "b49a15c3c27f978c936f2feac0a304b6ec118b1c215c13f6781dd8f2c24a014b"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-forward-20260914-001.json",
+      "sha256": "379775a37c36d2f14f40fadce9b551a7859a959284eacc6e45ffd305ec9d2208"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-forward-20260914-002.json",
+      "sha256": "951f5272ca374fb217cdaaecbabf89232df837bc0aefd7f26ba290ec6570efd7"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-forward-20260914-003.json",
+      "sha256": "9b82745fe24cce08e80aa114ba1c2f958f538739a181146a695a0081ac2654a3"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-forward-20260914-004.json",
+      "sha256": "e8f43f2515735324053bb94f600fb78e63d5492dfb157bce8e7fdaaaf9eb6c02"
+    },
+    {
+      "file": "testcases/mk2/mk2-own-infantry-250-forward-20260914-005.json",
+      "sha256": "b8ef97b49e0f5ad1fec45299d098a6e5655b40caddc7227e6489d3b02fbbaa6f"
+    }
+  ],
+  "sourceEvidenceDigests": {
+    "sourcePinVerificationSha256": "54c9576d3bcb17277b8abe1186769cbf3f83b84f16eac3b916870cccf455a7f2",
+    "privateMappingSha256": "80331b4a9483ca294fc75f7a0c1e44ef863a9431b27fcef14f958d4b6a8ae2a5"
+  },
+  "identityMappingsPublished": false,
+  "expectedCoverageManifest": "research/mk2/evidence511-expected-report-coverage-20260914.json"
+}

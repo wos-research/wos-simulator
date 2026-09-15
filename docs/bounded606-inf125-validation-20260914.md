@@ -1,0 +1,18 @@
+# Bounded606 report comparison
+
+This checkpoint includes the published581 logical fixtures plus exactly25 released Infantry experiments: five retrospective125-Infantry/100-Marksmen reports whose original prospective context gate failed, ten prospective125-Infantry/105-Marksmen reports, and ten prospective125-Infantry/110-Marksmen reports. It excludes ongoing pair2 reports and is not a global latest-report count. All130 prior fixture files retain their exact bytes, and all581 prior locked comparisons remain unchanged.
+
+| Unchanged implementation | Exact | Outcome-only exact | Winner classifications | Unresolved |
+| --- | ---: | ---: | ---: | ---: |
+| Locked catalogue20, abdc4f6 | 364/606 | 365/606 | 605/606 | 242 |
+| Calibrated catalogue19,755bd72 | 590/606 | 591/606 | 605/606 | 16 |
+
+Both normal CLI runs executed the identical155-file606-case fixture union, with zero errors,119 warnings,3,636 survivor checks and1,384 explicit chance-counter checks. Both return mismatch exit status1. The new25 add15 exact locked results and25 exact calibrated results; all25 winner classifications match. Locked failures in the ten110-Marksmen reports remain visible. No kernel, troop statistic, probability, RNG ordering, winner rule or captured observation was changed.
+
+Every new report retains all six survivors, its original recorded seed, independently captured battle-trigger time, and independently reviewed UI winner evidence. Seed/time relation exceptions are preserved; no seed-minus-one value is presented as a captured time. The25 new reports contain no explicit chance counters, and absence is not represented as observed zero. All simulated streams happen to make zero calls and are checked independently. Earlier20 unknown timestamp records remain unchanged within the581 baseline.
+
+All25 new mail identities are distinct, without overlap against known prior mappings; equal combat content is never a deduplication criterion. The inherited207 historical fixtures without direct mail mappings retain their published ledger status. This is606 logical testcase IDs, not a new proof of606 historical battle identities. Full sanitized combat payloads retain every field except formation identifiers, which are replaced by side-local ordinals. Identifying captures and mappings stay private.
+
+Full results and native RNG from both current implementations match each exported input, its original source input, and the corresponding frozen archived model for all25 new cases. Standard/trace observable parity also passes. Archived JSON comparisons normalize serialization of undefined properties and exclude only timestamp-adapter replay metadata. Six frozen source-model comparisons, including every failure, are retained separately; higher accuracy here does not establish a universal stat or damage rule.
+
+See the [aggregate](../research/mk2/bounded606_locked_calibrated_20260914.json), [corpus manifest](../research/mk2/bounded606_corpus_manifest_20260914.json), [complete sanitized reports](../research/mk2/latest25_sanitized_battle_reports.json), [active full-parity results](../research/mk2/latest25_locked_calibrated_results.json), and [six frozen model results](../research/mk2/latest25_frozen_six_model_results.json). Reproduce by copying exactly the manifest's fixture paths into an empty temporary directory, then run each unchanged repository's normal `scripts/run_testcases.ts --testcase-root <temporary-directory>/testcases/mk2 --workers 2` with the installed tsx runtime. Calibrated execution may use the existing runtime via NODE_PATH; no package installation or code change is needed.

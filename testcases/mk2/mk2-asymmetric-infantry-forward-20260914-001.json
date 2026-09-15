@@ -1,0 +1,227 @@
+{
+  "test_id": "mk2-asymmetric-infantry-forward-20260914-001",
+  "simulation_mode": "mk2",
+  "cohort": "mk2-asymmetric-infantry-forward-20260914",
+  "engagement_type": "always",
+  "attacker": {
+    "name": "attacker",
+    "troops": {
+      "lancer_t10_fc5": 100
+    },
+    "stats": {
+      "lancer": {
+        "attack": 279.05,
+        "defense": 277.58,
+        "lethality": 198.81,
+        "health": 194.59
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "defender": {
+    "name": "defender",
+    "troops": {
+      "infantry_t10_fc5": 1,
+      "lancer_t10_fc5": 100
+    },
+    "stats": {
+      "infantry": {
+        "attack": 309.07,
+        "defense": 312.32,
+        "lethality": 194.71,
+        "health": 192.67
+      },
+      "lancer": {
+        "attack": 276.09,
+        "defense": 276.34,
+        "lethality": 190.05,
+        "health": 187.65
+      }
+    },
+    "heroes": [],
+    "joiner_heroes": []
+  },
+  "replay": {
+    "timestamp": "1789368811",
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "reportedSeed": 1789368812,
+    "mechanics": {
+      "fcRounding": "floor",
+      "catalogueCorrections": "validated",
+      "gunpowderShield": "per-hit",
+      "lanceShield": "per-hit",
+      "volleyShield": "per-hit",
+      "attackScheduling": "side-local",
+      "volleyAfterDeath": "roll",
+      "gunpowderTiming": "after-volley",
+      "terminalVolleyShield": "roll"
+    }
+  },
+  "observed": {
+    "remaining": {
+      "attacker": {
+        "infantry": 0,
+        "lancer": 19,
+        "marksman": 0
+      },
+      "defender": {
+        "infantry": 0,
+        "lancer": 0,
+        "marksman": 0
+      }
+    },
+    "totals": {
+      "attacker": 19,
+      "defender": 0
+    },
+    "winner": "attacker",
+    "skillProcs": {
+      "attacker": {
+        "90008": 11,
+        "90004": 4
+      },
+      "defender": {
+        "90008": 5,
+        "90004": 9,
+        "90007": 1
+      }
+    }
+  },
+  "timestampEvidence": {
+    "capturedTimestamp": 1789368811,
+    "timestampSource": "captured-world_march.battletime-linked-mail_cover.send_time",
+    "capturedTimestampWasDerivedFromSeed": false,
+    "reportedSeed": 1789368812,
+    "delta": 1,
+    "seedEqualsCapturedTimePlusOne": true,
+    "hardTimestampGateApplied": false,
+    "originalAdapterTimestamp": "1789368811",
+    "originalAdapterTimestampSource": "derived-report-seed-minus-one"
+  },
+  "sourceAdapterOptions": {
+    "mixedStacks": "upstream",
+    "rng": "lua54"
+  },
+  "actorEvidence": [
+    {
+      "side": "attacker",
+      "actor": "attacker",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 15113,
+        "10112": 15022,
+        "10113": 19730,
+        "10114": 19733,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11623,
+        "10103": 16382,
+        "10104": 15896,
+        "10105": 8175,
+        "10106": 8025,
+        "10107": 16291,
+        "10108": 16069,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ]
+    },
+    {
+      "side": "defender",
+      "actor": "defender",
+      "rawBuffs": {
+        "10110": 10656,
+        "10111": 16439,
+        "10112": 16449,
+        "10113": 19434,
+        "10114": 19809,
+        "10115": 3590,
+        "10101": 11473,
+        "10102": 11423,
+        "10103": 15881,
+        "10104": 15877,
+        "10105": 8175,
+        "10106": 7825,
+        "10107": 15415,
+        "10108": 15375,
+        "10109": 10706,
+        "10116": 3390
+      },
+      "experts": [
+        {
+          "id": 7010,
+          "level": 12,
+          "break_level": 2,
+          "skills": {
+            "7010": 2,
+            "70101": 4
+          }
+        },
+        {
+          "id": 7004,
+          "level": 20,
+          "break_level": 2,
+          "skills": {
+            "7004": 2,
+            "70041": 1
+          }
+        }
+      ],
+      "heroes": [],
+      "profiles": [
+        {
+          "id": 11000,
+          "star": 5,
+          "soldier_type": 1,
+          "count": 1
+        },
+        {
+          "id": 21000,
+          "star": 5,
+          "soldier_type": 2,
+          "count": 100
+        }
+      ]
+    }
+  ],
+  "evidenceSummary": {
+    "status": "Research evidence; installed catalogue19 results independently evaluated in the accompanying CLI aggregate.",
+    "scope": "100 T10 FC5 Lancers attacking 1 T10 FC5 Infantry plus 100 T10 FC5 Lancers; exact exported modifiers, no heroes.",
+    "independentRawChecks": {
+      "reportedSeed": 1,
+      "survivorSlots": 6,
+      "explicitProcFields": 5,
+      "normalizedAxes": 24
+    },
+    "limits": "Frozen A reserves attacker Ambusher first; I reserves the Infantry-bearing side first. Normal side-local attack and effect slots are preserved. The third case is a recorded-counter tie and retained. These observations do not uniquely prove physical server timing. Operational report UI summaries were seen during collection; packet-level outcomes were accessed only after staged releases. No seed or stat fitting."
+  }
+}

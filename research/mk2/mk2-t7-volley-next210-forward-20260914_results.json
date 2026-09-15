@@ -1,0 +1,1439 @@
+{
+  "installedCatalogue": 19,
+  "reports": 5,
+  "installedExact": 0,
+  "installedWinnerCorrect": 5,
+  "originalFrozenAggregate": {
+    "H0": {
+      "exactCases": 0,
+      "survivorVectorExactCases": 0,
+      "allFiveProcCountsExactCases": 0,
+      "winnerCorrectCases": 5,
+      "totalProcFieldsMatched": 7,
+      "totalProcFields": 25,
+      "patterns": {
+        "exact": 0,
+        "survivors-only-match": 0,
+        "procs-only-match": 0,
+        "survivors-and-procs-mismatch": 5
+      },
+      "unusedVolleyReservations": null,
+      "successfulUnusedVolleyReservations": null
+    },
+    "G1_V_LOCAL": {
+      "exactCases": 0,
+      "survivorVectorExactCases": 1,
+      "allFiveProcCountsExactCases": 0,
+      "winnerCorrectCases": 5,
+      "totalProcFieldsMatched": 10,
+      "totalProcFields": 25,
+      "patterns": {
+        "exact": 0,
+        "survivors-only-match": 1,
+        "procs-only-match": 0,
+        "survivors-and-procs-mismatch": 4
+      },
+      "unusedVolleyReservations": 0,
+      "successfulUnusedVolleyReservations": 0
+    },
+    "G1_V_GLOBAL": {
+      "exactCases": 1,
+      "survivorVectorExactCases": 1,
+      "allFiveProcCountsExactCases": 3,
+      "winnerCorrectCases": 5,
+      "totalProcFieldsMatched": 20,
+      "totalProcFields": 25,
+      "patterns": {
+        "exact": 1,
+        "survivors-only-match": 0,
+        "procs-only-match": 2,
+        "survivors-and-procs-mismatch": 2
+      },
+      "unusedVolleyReservations": 0,
+      "successfulUnusedVolleyReservations": 0
+    }
+  },
+  "rows": [
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-001",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 94
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 94
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2
+          },
+          "defender": {
+            "90008": 0,
+            "90009": 1,
+            "90004": 2,
+            "90006": 2
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 98,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_LOCAL": {
+          "exact": false,
+          "outcomeExact": true,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 3,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 94,
+              "match": true
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_GLOBAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 96,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        }
+      },
+      "comparisonSha256": "24a1ea7a63035380aa712828f93475c8b3ee0427e52078ec864c4600d574d368"
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-002",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 94
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 94
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 3
+          },
+          "defender": {
+            "90008": 1,
+            "90009": 3,
+            "90004": 1,
+            "90006": 0
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 0,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 3,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 3,
+              "actual": 4,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_LOCAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 0,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 3,
+              "actual": 4,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_GLOBAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 3,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 3,
+              "actual": 3,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 94,
+              "actual": 95,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        }
+      },
+      "comparisonSha256": "69a080d63084984d889cb0ea7cf8ce5cba3e520634b82d9ea3b4919ddf009878"
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-003",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 99
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 99
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 2
+          },
+          "defender": {
+            "90008": 2,
+            "90009": 4,
+            "90004": 1,
+            "90006": 1
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 99,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_LOCAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 99,
+              "actual": 98,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_GLOBAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 99,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        }
+      },
+      "comparisonSha256": "e290c5057d75b60e541403df140b4972575621c6514ad829f813ad4a8c01a23e"
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-004",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 96
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 96
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 3
+          },
+          "defender": {
+            "90008": 0,
+            "90009": 5,
+            "90004": 0,
+            "90006": 1
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 0,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 4,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 5,
+              "actual": 4,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 96,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_LOCAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 5,
+              "actual": 3,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 96,
+              "actual": 100,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_GLOBAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 3,
+              "actual": 4,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 5,
+              "actual": 6,
+              "match": false
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 96,
+              "actual": 92,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        }
+      },
+      "comparisonSha256": "7df91dcf7ffb264e77b254bfebee11b54ea3d4e8b20ccf817d848c13bc879895"
+    },
+    {
+      "test_id": "mk2-t7-volley-next210-forward-20260914-005",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 1,
+            "marksman": 100
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 101
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {
+            "90008": 1
+          },
+          "defender": {
+            "90008": 1,
+            "90009": 4,
+            "90004": 2,
+            "90006": 2
+          }
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 100,
+              "actual": 97,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_LOCAL": {
+          "exact": false,
+          "outcomeExact": false,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 2,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 3,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 1,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 1,
+              "actual": 0,
+              "match": false
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 100,
+              "actual": 97,
+              "match": false
+            }
+          ],
+          "winnerCorrect": true
+        },
+        "G1_V_GLOBAL": {
+          "exact": true,
+          "outcomeExact": true,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90004",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90006",
+              "expected": 2,
+              "actual": 2,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90008",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "side": "defender",
+              "skillId": "90009",
+              "expected": 4,
+              "actual": 4,
+              "match": true
+            }
+          ],
+          "survivorChecks": [
+            {
+              "field": "attacker.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.lancer",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "attacker.marksman",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.infantry",
+              "expected": 0,
+              "actual": 0,
+              "match": true
+            },
+            {
+              "field": "defender.lancer",
+              "expected": 1,
+              "actual": 1,
+              "match": true
+            },
+            {
+              "field": "defender.marksman",
+              "expected": 100,
+              "actual": 100,
+              "match": true
+            }
+          ],
+          "winnerCorrect": true
+        }
+      },
+      "comparisonSha256": "cdbd528ca04d07e5463ab2822c773d4a79c7a2295eca408c5d0ec30c5ce8d1f0"
+    }
+  ],
+  "developmentCandidatesExcludedFromIndependentValidation": true
+}

@@ -1,0 +1,65 @@
+{
+  "createdUtc": "2026-09-14T12:33:21.040489+00:00",
+  "status": "Prepared and independently reviewed; not yet copied to shared branch",
+  "publicFiles": [
+    {
+      "file": "research/mk2/evidence521-t7-five-coverage-20260914.json",
+      "sha256": "98ee7f549615d28a57b7d4df5f298838c4f5548dcc1bddb34856699af877f273",
+      "stagedSourceByteSha256": "91076bfef6f4a6ef8fc189f0a239b13ba7c0aa787c3d12d9a7ca7ae1d307d54a"
+    },
+    {
+      "file": "research/mk2/installed-catalogue19-research521-20260914.json",
+      "sha256": "b2ad32f9469e199c1f092da775be8ab88be2dc3eb4dcfc391933a70d09052e4d",
+      "stagedSourceByteSha256": "d6ba7f39efcccd3a09fc623505213f56c012108ae9236a0e667399a424b3f2e6"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-forward-20260914_results.json",
+      "sha256": "4717ccf248d865a166c639c1c69296206290ce2e19348a28bb2027947e70323d",
+      "stagedSourceByteSha256": "72ab204157d405d78128d61dc069b33b129af23b6d60565147c938b99d5d9ec1"
+    },
+    {
+      "file": "research/mk2/mk2-t7-volley-next210-forward-20260914_sanitized_battle_reports.json",
+      "sha256": "c725325024a45371f7facb231ecdedaab93fa11e5b70079fe5610d6039acd3ea",
+      "stagedSourceByteSha256": "71dfc14703f9d4630fe79bb47c79789cc42d9b77734decd0a44216a0addec5ca"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-001.json",
+      "sha256": "c31d2f1443b7395359a2446c9e84ed7f5bd1016cbba50f9b89a0c143fa83a4aa",
+      "stagedSourceByteSha256": "4d1fc8a5fefe2caedef54fd2dcdc8e34b13df10d93140f7ca8aadd36e0e3b167"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-002.json",
+      "sha256": "b643933db129f7224ca8e605f161c81567c8278541cebf97e4bb50fce4f99a78",
+      "stagedSourceByteSha256": "5287b1ac0d74ff13661e8bb58ab24e5fa275b0b341fce6f4fa669ade34281e27"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-003.json",
+      "sha256": "93ec0143e65d5c2b95f28baa3fe11f3b184b9521d918f5d7a23c926eaf9c3088",
+      "stagedSourceByteSha256": "02c775ea81842b439d18e416434d0d5aa782ec2dffb6093bc0b58061338b4277"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-004.json",
+      "sha256": "342c3fd2623b0b255e68e81a1d22da7165696ea99a704dbfe426ebf8a2c77ced",
+      "stagedSourceByteSha256": "cbb6055ff99fab15daeda7b303f8e6625a45dce3b74bbbff1d1afc082ec34370"
+    },
+    {
+      "file": "testcases/mk2/mk2-t7-volley-next210-forward-20260914-005.json",
+      "sha256": "3f8480958018be1f66ab48acc84ca21774f94e32d02200a013d80b0b805b03e8",
+      "stagedSourceByteSha256": "e54f8401e454e7cae90c97edfbf0b7dc70a4cb58811f1a316e937d7a87ca21e3"
+    }
+  ],
+  "fileCountExcludingThisManifest": 9,
+  "fixtureCount": 5,
+  "fullCombatReports": 5,
+  "installedCatalogue": 19,
+  "newReportsInstalledExact": 0,
+  "combinedResearchReports": 521,
+  "combinedInstalledExact": 516,
+  "independentReview": {
+    "sha256": "870d6d1bbe461549a192a9cc7f47f53e84c68a7d877bb27270278a3f3ac47c86",
+    "checks": 411,
+    "errors": 0
+  },
+  "hashConvention": "sha256 uses UTF8 LF bytes for Git portability. stagedSourceByteSha256 preserves original local bytes.",
+  "preservation": "The initial eight-file build_summary is historical and unchanged; this successor adds the independently reviewed ninth aggregate."
+}

@@ -1,0 +1,937 @@
+{
+  "version": "expedition-mk2-lua54-catalogue-15",
+  "reports": 5,
+  "activeKernelExact": 2,
+  "activeKernelPending": 3,
+  "scope": "Four-source forward unresolved batch, current unchanged H0 only",
+  "limitations": [
+    "Three current-H0 mismatches preserved. Reverse orientation is untested. No unique ordering claim or automatic kernel change.",
+    "Every actual raw modifier and normalized stat is preserved; independent raw review determines context continuity. No cause inferred for earlier modifier changes.",
+    "No seed/stat/probability fitting. Current catalogue assumptions are not independently proven by these outcomes."
+  ],
+  "rows": [
+    {
+      "test_id": "mk2-four-skill-forward-20260913-001",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 88,
+            "marksman": 100
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 188,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 7,
+            "90009": 7,
+            "90004": 7,
+            "90006": 3
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "outcomeExact": true,
+          "winnerChecked": true,
+          "survivorChecks": 6,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90006",
+              "expected": 3,
+              "actual": 3,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90009",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 88,
+                "marksman": 100
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 188,
+              "defender": 0
+            }
+          }
+        }
+      },
+      "bothActualKernelsFullBattleAndRngParity": true,
+      "capturedModifiers": {
+        "attacker": {
+          "rawBuffs": {
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 19074,
+            "10114": 19384,
+            "10115": 3425,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10116": 3225
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 305.47,
+              "defense": 308.07,
+              "lethality": 193.66,
+              "health": 187.34
+            },
+            "lancer": {
+              "attack": 272.49,
+              "defense": 272.09,
+              "lethality": 186.69,
+              "health": 187.42
+            },
+            "marksman": {
+              "attack": 297.8,
+              "defense": 297.4,
+              "lethality": 192.34,
+              "health": 193.17
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        },
+        "defender": {
+          "rawBuffs": {
+            "10110": 9150,
+            "10111": 9084,
+            "10112": 9365,
+            "10113": 7241,
+            "10114": 7241,
+            "10115": 3165,
+            "10101": 8075,
+            "10102": 7875,
+            "10103": 8663,
+            "10104": 8497,
+            "10105": 5550,
+            "10106": 5750,
+            "10107": 8104,
+            "10108": 8146,
+            "10109": 8950,
+            "10116": 2865
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 153.16,
+              "defense": 151.16,
+              "lethality": 118.28,
+              "health": 113.62
+            },
+            "lancer": {
+              "attack": 127.91,
+              "defense": 129.91,
+              "lethality": 112.69,
+              "health": 110.11
+            },
+            "marksman": {
+              "attack": 161.91,
+              "defense": 163.91,
+              "lethality": 122.49,
+              "health": 122.3
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        }
+      },
+      "expertContextEqualFrozenBaseline": true,
+      "heroesAndExtrasExplicitlyEmpty": true
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-002",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 87,
+            "marksman": 100
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 187,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 3,
+            "90009": 7,
+            "90004": 7,
+            "90006": 2
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": false,
+          "winnerChecked": true,
+          "survivorChecks": 6,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 3,
+              "actual": 6,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90006",
+              "expected": 2,
+              "actual": 3,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90009",
+              "expected": 7,
+              "actual": 7,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "remaining.attacker.lancer",
+              "expected": 87,
+              "actual": 88
+            },
+            {
+              "field": "skillProcs.attacker:90008",
+              "expected": 3,
+              "actual": 6
+            },
+            {
+              "field": "skillProcs.attacker:90006",
+              "expected": 2,
+              "actual": 3
+            }
+          ],
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 88,
+                "marksman": 100
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 188,
+              "defender": 0
+            }
+          }
+        }
+      },
+      "bothActualKernelsFullBattleAndRngParity": true,
+      "capturedModifiers": {
+        "attacker": {
+          "rawBuffs": {
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 19074,
+            "10114": 19384,
+            "10115": 3425,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10116": 3225
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 305.47,
+              "defense": 308.07,
+              "lethality": 193.66,
+              "health": 187.34
+            },
+            "lancer": {
+              "attack": 272.49,
+              "defense": 272.09,
+              "lethality": 186.69,
+              "health": 187.42
+            },
+            "marksman": {
+              "attack": 297.8,
+              "defense": 297.4,
+              "lethality": 192.34,
+              "health": 193.17
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        },
+        "defender": {
+          "rawBuffs": {
+            "10110": 9150,
+            "10111": 9084,
+            "10112": 9365,
+            "10113": 7241,
+            "10114": 7241,
+            "10115": 3165,
+            "10101": 8075,
+            "10102": 7875,
+            "10103": 8663,
+            "10104": 8497,
+            "10105": 5550,
+            "10106": 5750,
+            "10107": 8104,
+            "10108": 8146,
+            "10109": 8950,
+            "10116": 2865
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 153.16,
+              "defense": 151.16,
+              "lethality": 118.28,
+              "health": 113.62
+            },
+            "lancer": {
+              "attack": 127.91,
+              "defense": 129.91,
+              "lethality": 112.69,
+              "health": 110.11
+            },
+            "marksman": {
+              "attack": 161.91,
+              "defense": 163.91,
+              "lethality": 122.49,
+              "health": 122.3
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        }
+      },
+      "expertContextEqualFrozenBaseline": true,
+      "heroesAndExtrasExplicitlyEmpty": true
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-003",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 88,
+            "marksman": 100
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 188,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 4,
+            "90009": 5,
+            "90004": 8,
+            "90006": 3
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": true,
+          "outcomeExact": true,
+          "winnerChecked": true,
+          "survivorChecks": 6,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 8,
+              "actual": 8,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 4,
+              "actual": 4,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90006",
+              "expected": 3,
+              "actual": 3,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90009",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            }
+          ],
+          "differences": [],
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 88,
+                "marksman": 100
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 188,
+              "defender": 0
+            }
+          }
+        }
+      },
+      "bothActualKernelsFullBattleAndRngParity": true,
+      "capturedModifiers": {
+        "attacker": {
+          "rawBuffs": {
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 19074,
+            "10114": 19384,
+            "10115": 3425,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10116": 3225
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 305.47,
+              "defense": 308.07,
+              "lethality": 193.66,
+              "health": 187.34
+            },
+            "lancer": {
+              "attack": 272.49,
+              "defense": 272.09,
+              "lethality": 186.69,
+              "health": 187.42
+            },
+            "marksman": {
+              "attack": 297.8,
+              "defense": 297.4,
+              "lethality": 192.34,
+              "health": 193.17
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        },
+        "defender": {
+          "rawBuffs": {
+            "10110": 9150,
+            "10111": 9084,
+            "10112": 9365,
+            "10113": 7241,
+            "10114": 7241,
+            "10115": 3165,
+            "10101": 8075,
+            "10102": 7875,
+            "10103": 8663,
+            "10104": 8497,
+            "10105": 5550,
+            "10106": 5750,
+            "10107": 8104,
+            "10108": 8146,
+            "10109": 8950,
+            "10116": 2865
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 153.16,
+              "defense": 151.16,
+              "lethality": 118.28,
+              "health": 113.62
+            },
+            "lancer": {
+              "attack": 127.91,
+              "defense": 129.91,
+              "lethality": 112.69,
+              "health": 110.11
+            },
+            "marksman": {
+              "attack": 161.91,
+              "defense": 163.91,
+              "lethality": 122.49,
+              "health": 122.3
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        }
+      },
+      "expertContextEqualFrozenBaseline": true,
+      "heroesAndExtrasExplicitlyEmpty": true
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-004",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 88,
+            "marksman": 100
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 188,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 4,
+            "90009": 5,
+            "90004": 6,
+            "90006": 6
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": true,
+          "winnerChecked": true,
+          "survivorChecks": 6,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 6,
+              "actual": 6,
+              "exact": true
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 4,
+              "actual": 6,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90006",
+              "expected": 6,
+              "actual": 4,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90009",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "skillProcs.attacker:90008",
+              "expected": 4,
+              "actual": 6
+            },
+            {
+              "field": "skillProcs.attacker:90006",
+              "expected": 6,
+              "actual": 4
+            }
+          ],
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 88,
+                "marksman": 100
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 188,
+              "defender": 0
+            }
+          }
+        }
+      },
+      "bothActualKernelsFullBattleAndRngParity": true,
+      "capturedModifiers": {
+        "attacker": {
+          "rawBuffs": {
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 19074,
+            "10114": 19384,
+            "10115": 3425,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10116": 3225
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 305.47,
+              "defense": 308.07,
+              "lethality": 193.66,
+              "health": 187.34
+            },
+            "lancer": {
+              "attack": 272.49,
+              "defense": 272.09,
+              "lethality": 186.69,
+              "health": 187.42
+            },
+            "marksman": {
+              "attack": 297.8,
+              "defense": 297.4,
+              "lethality": 192.34,
+              "health": 193.17
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        },
+        "defender": {
+          "rawBuffs": {
+            "10110": 9150,
+            "10111": 9084,
+            "10112": 9365,
+            "10113": 7241,
+            "10114": 7241,
+            "10115": 3165,
+            "10101": 8075,
+            "10102": 7875,
+            "10103": 8663,
+            "10104": 8497,
+            "10105": 5550,
+            "10106": 5750,
+            "10107": 8104,
+            "10108": 8146,
+            "10109": 8950,
+            "10116": 2865
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 153.16,
+              "defense": 151.16,
+              "lethality": 118.28,
+              "health": 113.62
+            },
+            "lancer": {
+              "attack": 127.91,
+              "defense": 129.91,
+              "lethality": 112.69,
+              "health": 110.11
+            },
+            "marksman": {
+              "attack": 161.91,
+              "defense": 163.91,
+              "lethality": 122.49,
+              "health": 122.3
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        }
+      },
+      "expertContextEqualFrozenBaseline": true,
+      "heroesAndExtrasExplicitlyEmpty": true
+    },
+    {
+      "test_id": "mk2-four-skill-forward-20260913-005",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 88,
+            "marksman": 100
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 188,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90008": 5,
+            "90009": 5,
+            "90004": 7,
+            "90006": 6
+          },
+          "defender": {}
+        }
+      },
+      "models": {
+        "H0": {
+          "exact": false,
+          "outcomeExact": true,
+          "winnerChecked": true,
+          "survivorChecks": 6,
+          "procChecks": [
+            {
+              "side": "attacker",
+              "reportSkillId": "90004",
+              "expected": 7,
+              "actual": 8,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90008",
+              "expected": 5,
+              "actual": 7,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90006",
+              "expected": 6,
+              "actual": 3,
+              "exact": false
+            },
+            {
+              "side": "attacker",
+              "reportSkillId": "90009",
+              "expected": 5,
+              "actual": 5,
+              "exact": true
+            }
+          ],
+          "differences": [
+            {
+              "field": "skillProcs.attacker:90004",
+              "expected": 7,
+              "actual": 8
+            },
+            {
+              "field": "skillProcs.attacker:90008",
+              "expected": 5,
+              "actual": 7
+            },
+            {
+              "field": "skillProcs.attacker:90006",
+              "expected": 6,
+              "actual": 3
+            }
+          ],
+          "actual": {
+            "winner": "attacker",
+            "remaining": {
+              "attacker": {
+                "infantry": 0,
+                "lancer": 88,
+                "marksman": 100
+              },
+              "defender": {
+                "infantry": 0,
+                "lancer": 0,
+                "marksman": 0
+              }
+            },
+            "totals": {
+              "attacker": 188,
+              "defender": 0
+            }
+          }
+        }
+      },
+      "bothActualKernelsFullBattleAndRngParity": true,
+      "capturedModifiers": {
+        "attacker": {
+          "rawBuffs": {
+            "10110": 10356,
+            "10111": 15809,
+            "10112": 16092,
+            "10113": 19074,
+            "10114": 19384,
+            "10115": 3425,
+            "10101": 11473,
+            "10102": 11423,
+            "10103": 15941,
+            "10104": 15509,
+            "10105": 8175,
+            "10106": 7825,
+            "10107": 15244,
+            "10108": 15517,
+            "10109": 10706,
+            "10116": 3225
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 305.47,
+              "defense": 308.07,
+              "lethality": 193.66,
+              "health": 187.34
+            },
+            "lancer": {
+              "attack": 272.49,
+              "defense": 272.09,
+              "lethality": 186.69,
+              "health": 187.42
+            },
+            "marksman": {
+              "attack": 297.8,
+              "defense": 297.4,
+              "lethality": 192.34,
+              "health": 193.17
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        },
+        "defender": {
+          "rawBuffs": {
+            "10110": 9150,
+            "10111": 9084,
+            "10112": 9365,
+            "10113": 7241,
+            "10114": 7241,
+            "10115": 3165,
+            "10101": 8075,
+            "10102": 7875,
+            "10103": 8663,
+            "10104": 8497,
+            "10105": 5550,
+            "10106": 5750,
+            "10107": 8104,
+            "10108": 8146,
+            "10109": 8950,
+            "10116": 2865
+          },
+          "allTypeNormalizedStats": {
+            "infantry": {
+              "attack": 153.16,
+              "defense": 151.16,
+              "lethality": 118.28,
+              "health": 113.62
+            },
+            "lancer": {
+              "attack": 127.91,
+              "defense": 129.91,
+              "lethality": 112.69,
+              "health": 110.11
+            },
+            "marksman": {
+              "attack": 161.91,
+              "defense": 163.91,
+              "lethality": 122.49,
+              "health": 122.3
+            }
+          },
+          "changesVsProspectiveBaseline": {}
+        }
+      },
+      "expertContextEqualFrozenBaseline": true,
+      "heroesAndExtrasExplicitlyEmpty": true
+    }
+  ]
+}

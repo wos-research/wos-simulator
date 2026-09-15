@@ -37,6 +37,8 @@ import {
   type SideState,
 } from "./form-state";
 
+import { replaySettingsFromRequest, type ReplaySettings } from "./replay-settings";
+
 export const DEFAULT_SURFACE_POINTS_PER_EDGE = 11;
 export const DEFAULT_SURFACE_REPLICATES = 5;
 export const DEFAULT_SURFACE_JOBS = 4;
@@ -51,6 +53,8 @@ export interface SavedRunMeta {
 }
 
 export interface SavedRunFormState {
+  replaySettings: ReplaySettings;
+  simulateRequest: SimulateRequestPayload | null;
   attacker: SideState;
   defender: SideState;
   loadedPresetNames: Record<Side, string | null>;
@@ -81,6 +85,8 @@ export function defaultSavedRunFormState(
   error: string | null | undefined = null,
 ): SavedRunFormState {
   return {
+    replaySettings: replaySettingsFromRequest(),
+    simulateRequest: null,
     attacker: defaultSide(),
     defender: defaultSide(),
     loadedPresetNames: { attacker: null, defender: null },
@@ -157,6 +163,8 @@ export function savedRunToFormState(
   if (saved.kind === "simulate") {
     return {
       ...base,
+      replaySettings: replaySettingsFromRequest(saved.request as SimulateRequestPayload),
+      simulateRequest: saved.request as SimulateRequestPayload,
       result: withSaveMeta(saved.result as SimulateApiResponse, saved),
     };
   }

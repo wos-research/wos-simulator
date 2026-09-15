@@ -1,0 +1,76 @@
+{
+  "baselineCommit": "91a6caa",
+  "kind": "additive-anonymized-evidence-only",
+  "activeKernelChanged": false,
+  "privateCandidateInstalled": false,
+  "readmeIncluded": false,
+  "files": [
+    {
+      "file": "docs/mk2-reviewed-checkpoint-496-20260914.md",
+      "sha256": "043ccca578cc78d1ff9b1c97e8aa03d0b05748cc306bc41f151507eaced1ad96"
+    },
+    {
+      "file": "research/mk2/latest-ten-active-replay-20260914.json",
+      "sha256": "e417cf4546b5d5e5aef0a7463e2411c796c0a439710ee238a9c781797a1730af"
+    },
+    {
+      "file": "research/mk2/mk2-ambusher-source-death-reverse-20260914_results.json",
+      "sha256": "6594e99a346ba56647aad911fb7664e002965da1146a7d7471fbdf23ed5580da"
+    },
+    {
+      "file": "research/mk2/mk2-opposing-t10-lance-forward-20260914_results.json",
+      "sha256": "08050b224322fac8cf61ad4bca3bdad965439d8c1e459b79c59505f437238639"
+    },
+    {
+      "file": "research/mk2/reviewed-checkpoint-496-20260914.json",
+      "sha256": "e0fc4a058c0db849a4b60be2d5e67ed96c733fe79e15dc6a113a2f333954035a"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-001.json",
+      "sha256": "87ff9278bd90a4a5d4e137d720fe4d41ab98bc387316617d55ce5994f5a7e7b3"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-002.json",
+      "sha256": "8dbef48a1edcd95fac19ff2ee7b5d44154290f39e5a49ae913f4b8bdee6ee816"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-003.json",
+      "sha256": "f41e7a5fb959ccf29b1dda252550ca836c0f349d5fd7c67b570dc05d7143c2c5"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-004.json",
+      "sha256": "1ab71cb2f141299daff6eb34b5b2ecd44431e8e57a26b38042c4aeee4e9cbe6b"
+    },
+    {
+      "file": "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-005.json",
+      "sha256": "01bf4631545be073c304b2d07699b1e7c6b8933ed59c68ff7849fa7b5ef74776"
+    },
+    {
+      "file": "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-001.json",
+      "sha256": "198478cfe1ee075189abe67cc437a044046b62c8db166a7954b52a8cfc5cde5f"
+    },
+    {
+      "file": "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-002.json",
+      "sha256": "c2146df9f4779c06e1e142089542fe934580186de2706b67930832072142adbe"
+    },
+    {
+      "file": "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-003.json",
+      "sha256": "2ceddaf7a874439f2b25d1d1544306ef57480f32ca92dec64a30f242a9baf82e"
+    },
+    {
+      "file": "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-004.json",
+      "sha256": "7aca22b6999fe0833bab2e2fa207c560a6965ef1ac19894dd774a1375c3d0a2f"
+    },
+    {
+      "file": "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-005.json",
+      "sha256": "d29a184575d68fa47dce80a05c31c1f7ad86be93efc871f672e8e8a63b0d84ee"
+    }
+  ],
+  "sourceEvidenceDigests": {
+    "sourceDeathFinalArtifactFreeze": "cd74c233fecd2cc602163fa1e0905f31b12a4e6c8ff2430b6702c0874f13dc9a",
+    "sourceDeathFiveSummary": "064908efe7c53ef5580086dbe75f5c8d5e9525dd33376c78a8496e78e35297c5",
+    "t10ReleasedHandoff": "d352ea50925e8ab0c2902515fddd9ad99e7f809fb746082ecf293985af977ff6",
+    "t10RedactedPreview": "b2c17f141ff83fcd1dc2a4188e4bcf5fb9c6f509c416d452cc06d487fc768d03"
+  },
+  "sourceIdentityMappings": "Retained privately; excluded from publication."
+}

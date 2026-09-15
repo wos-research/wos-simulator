@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "priorCheckpoint": "reviewed-checkpoint-486-20260914.json",
+  "activeVersion": "expedition-mk2-lua54-catalogue-17",
+  "reviewedReports": 496,
+  "activeKernelExact": 471,
+  "activeKernelPending": 25,
+  "activeWinnerCorrect": 487,
+  "priorReviewedReports": 486,
+  "newReports": 10,
+  "newActiveExact": 0,
+  "newActiveWinnerCorrect": 6,
+  "newPrivateCandidateExact": 10,
+  "allPendingPrivateCandidateExact": 25,
+  "candidateInstalled": false,
+  "fullCorpusRerun": false,
+  "independentNewRawChecks": {
+    "reportedSeeds": 10,
+    "survivorSlots": 60,
+    "explicitProcFields": 40
+  },
+  "newTimestampPlusOne": {
+    "pass": 10,
+    "fail": 0
+  },
+  "newFixtures": [
+    "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-001.json",
+    "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-002.json",
+    "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-003.json",
+    "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-004.json",
+    "testcases/mk2/mk2-ambusher-source-death-reverse-20260914-005.json",
+    "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-001.json",
+    "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-002.json",
+    "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-003.json",
+    "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-004.json",
+    "testcases/mk2/mk2-opposing-t10-lance-forward-20260914-005.json"
+  ],
+  "limitations": [
+    "Additive checkpoint carrying forward the reviewed 486-report checkpoint; no full-corpus rerun.",
+    "All twenty-five mismatches remain pending against active catalogue17.",
+    "Private candidate equality is limited to exact tested armies, roles and numeric contexts.",
+    "R1 and G1 are observationally equivalent in this reverse cohort; physical timing remains unresolved.",
+    "Prior timestamp exceptions remain unchanged; this cohort uses original reported seeds and five genuine captured times."
+  ],
+  "baselineCommit": "91a6caa"
+}

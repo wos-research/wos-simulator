@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "catalogue": 19,
+  "reports": 5,
+  "exact": 0,
+  "independentRawWinnerFields": 0,
+  "survivorSlotsChecked": 30,
+  "explicitChanceCountersChecked": 25,
+  "errors": 0,
+  "warnings": 0,
+  "exitCode": 1,
+  "sourceCliOutputSha256": "ed799d1f0a8d7064bc3c439833d42cffad34deebedde59683f92bb2b719eb305",
+  "method": "Recomparison of unchanged saved normal CLI outputs against corrected winner oracle. Original CLI output hash remains historical. A fresh aggregate CLI run is delegated to the evidence package owner.",
+  "rows": [
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-001",
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationCorrect": true,
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "survivorSlots": 6,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 13,
+          "actual": 13,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 1,
+          "actual": 1,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 5,
+          "actual": 5,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 7,
+          "actual": 9,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "remaining.attacker.lancer",
+          "expected": 11,
+          "actual": 9
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 7,
+          "actual": 9
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-002",
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationCorrect": true,
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "survivorSlots": 6,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 5,
+          "actual": 3,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 14,
+          "actual": 6,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 5,
+          "actual": 3,
+          "exact": false
+        }
+      ],
+      "differences": [
+        {
+          "field": "remaining.attacker.lancer",
+          "expected": 3,
+          "actual": 19
+        },
+        {
+          "field": "skillProcs.attacker.90004",
+          "expected": 5,
+          "actual": 3
+        },
+        {
+          "field": "skillProcs.attacker.90008",
+          "expected": 7,
+          "actual": 6
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 14,
+          "actual": 6
+        },
+        {
+          "field": "skillProcs.defender.90008",
+          "expected": 5,
+          "actual": 3
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-003",
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationCorrect": true,
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "survivorSlots": 6,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 9,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 10,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 2,
+          "actual": 2,
+          "exact": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "remaining.attacker.lancer",
+          "expected": 30,
+          "actual": 34
+        },
+        {
+          "field": "skillProcs.attacker.90004",
+          "expected": 9,
+          "actual": 8
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 10,
+          "actual": 8
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-004",
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationCorrect": false,
+      "winnerEvidence": {
+        "source": "independently-bound-in-game-UI",
+        "classification": "defender",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "bothSidesZero": true,
+        "historicalSurvivorDerivedClassification": "draw",
+        "uiHeadline": "Attacker Defeat",
+        "uiFullReportHeadline": "DEFEAT!",
+        "linkedCapturedTimeUtc": "2026-09-14 12:53:17 UTC",
+        "uiBindingArtifactSha256": "0ad3cc6db98707a1191b51b1cc70265b62a0f743533b9bd336b75dc3fe50dcf1",
+        "attackerViewNativeArtifactSha256": "0897636bea95699bc54bfe9db8ad1d4619fcbfef2fe868c4110a9143489eefe4",
+        "defenderViewNativeArtifactSha256": "a1fc870ab72d3e9a1be4b12bd79d13f190554891ac9d8a8970c12b9ef2410f1d",
+        "bindingMethod": "Independent report time, location, side roles, troop counts and casualties matched privately. Private identities and location omitted here.",
+        "verification": "Root independently reviewed full attacker-view UI; original defender-view victory also corroborated by its collecting controller. This exporter verifies both native hashes and the signed-off binding; it does not claim a new visual inspection.",
+        "limitation": "Rounded survivor totals do not establish the game-declared winner. No winner field exists in the decoded combat payload."
+      },
+      "survivorSlots": 6,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 9,
+          "actual": 7,
+          "exact": false
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 2,
+          "actual": 2,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 8,
+          "actual": 8,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 19,
+          "actual": 10,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 9,
+          "actual": 9,
+          "exact": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "remaining.attacker.lancer",
+          "expected": 0,
+          "actual": 6
+        },
+        {
+          "field": "skillProcs.attacker.90004",
+          "expected": 9,
+          "actual": 7
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 19,
+          "actual": 10
+        },
+        {
+          "field": "winner",
+          "expected": "defender",
+          "actual": "attacker"
+        }
+      ]
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-reverse-20260914-005",
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationCorrect": true,
+      "winnerEvidence": {
+        "source": "survivor-derived",
+        "explicitWinnerFieldPresentInDecodedCombatPayload": false,
+        "classification": "attacker",
+        "bothSidesZero": false,
+        "limitation": "Winner is inferred from recorded survivor totals; no independent raw server winner field is claimed."
+      },
+      "survivorSlots": 6,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90004",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 0,
+          "actual": 0,
+          "exact": true
+        },
+        {
+          "side": "attacker",
+          "reportSkillId": "90008",
+          "expected": 6,
+          "actual": 6,
+          "exact": true
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90004",
+          "expected": 9,
+          "actual": 8,
+          "exact": false
+        },
+        {
+          "side": "defender",
+          "reportSkillId": "90008",
+          "expected": 2,
+          "actual": 2,
+          "exact": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "remaining.attacker.lancer",
+          "expected": 21,
+          "actual": 19
+        },
+        {
+          "field": "skillProcs.defender.90004",
+          "expected": 9,
+          "actual": 8
+        }
+      ]
+    }
+  ],
+  "winnerClassificationsCorrect": 4,
+  "independentlyUIBoundWinnerFields": 1,
+  "survivorDerivedWinnerFields": 4,
+  "oracleVersion": 2,
+  "freshNormalCLIRun": false
+}

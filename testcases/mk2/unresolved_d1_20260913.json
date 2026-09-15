@@ -1,0 +1,682 @@
+[
+  {
+    "test_id": "mk2-unresolved-d1-20260913-001",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t10_fc3": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 4000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291275",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291276,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 979
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 979,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 11,
+          "90006": 5
+        },
+        "defender": {
+          "90007": 42
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:1",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "T10 FC3 Marksman2000 versus T5 FC5 Infantry4000. Current kernel mismatch. Four frozen source-grounded attack/health variants fail complete five-report cohort; no catalogue correction promoted.",
+      "timingLimit": "Timestamp derived from reported seed; no independent seed-time claim."
+    }
+  },
+  {
+    "test_id": "mk2-unresolved-d1-20260913-002",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t10_fc3": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 4000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291396",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291397,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1075
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 1075,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 14,
+          "90006": 7
+        },
+        "defender": {
+          "90007": 37
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:1",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "T10 FC3 Marksman2000 versus T5 FC5 Infantry4000. Current kernel mismatch. Four frozen source-grounded attack/health variants fail complete five-report cohort; no catalogue correction promoted.",
+      "timingLimit": "Timestamp derived from reported seed; no independent seed-time claim."
+    }
+  },
+  {
+    "test_id": "mk2-unresolved-d1-20260913-003",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t10_fc3": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 4000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291538",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291539,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1121
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 1121,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 15,
+          "90006": 11
+        },
+        "defender": {
+          "90007": 38
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:1",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "T10 FC3 Marksman2000 versus T5 FC5 Infantry4000. Current kernel mismatch. Four frozen source-grounded attack/health variants fail complete five-report cohort; no catalogue correction promoted.",
+      "timingLimit": "Timestamp derived from reported seed; no independent seed-time claim."
+    }
+  },
+  {
+    "test_id": "mk2-unresolved-d1-20260913-004",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t10_fc3": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 4000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291660",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291661,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1100
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 1100,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 12,
+          "90006": 8
+        },
+        "defender": {
+          "90007": 28
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:1",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "T10 FC3 Marksman2000 versus T5 FC5 Infantry4000. Current kernel mismatch. Four frozen source-grounded attack/health variants fail complete five-report cohort; no catalogue correction promoted.",
+      "timingLimit": "Timestamp derived from reported seed; no independent seed-time claim."
+    }
+  },
+  {
+    "test_id": "mk2-unresolved-d1-20260913-005",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t10_fc3": 2000
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 4000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789291779",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789291780,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 1136
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 1136,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90009": 11,
+          "90006": 17
+        },
+        "defender": {
+          "90007": 40
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:marksman:Volley:0",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:1",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "unresolved",
+      "scope": "T10 FC3 Marksman2000 versus T5 FC5 Infantry4000. Current kernel mismatch. Four frozen source-grounded attack/health variants fail complete five-report cohort; no catalogue correction promoted.",
+      "timingLimit": "Timestamp derived from reported seed; no independent seed-time claim."
+    }
+  }
+]

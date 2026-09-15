@@ -1,0 +1,3263 @@
+{
+  "lockedHead": "d124fad1b37f3c55fdc321524558368b4ba9f4a3",
+  "reports": 35,
+  "exact": 25,
+  "winnerClassificationMatches": 35,
+  "sourcePinsVerified": 385,
+  "rows": [
+    {
+      "test_id": "mk2-pair1-counts100-20260914-001",
+      "batch": "pair1-counts100",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 43
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 43,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 43
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 75,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789403968",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789403968,
+        "capturedTimestamp": 1789403968,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789403967",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "a4998d10d7d5f314865a2bd908e09223890d6e702e508c20e95cd62474d16fa8",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789403968",
+        "reportedSeed": "1789403968",
+        "timestamp": "1789403968",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789403969",
+        "timestampMatchesRecordedSeed": false,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "Timestamp seed 1789403969 differs from recorded seed 1789403968; replay uses the recorded seed."
+      ]
+    },
+    {
+      "test_id": "mk2-pair1-counts100-20260914-002",
+      "batch": "pair1-counts100",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 43
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 43,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 43
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 75,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789404013",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789404013,
+        "capturedTimestamp": 1789404012,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789404012",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "f2e6eb296e3e77ba87a84ed692a864670e4a6b7a36a9919065e63892c6442b33",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789404013",
+        "reportedSeed": "1789404013",
+        "timestamp": "1789404012",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789404013",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts100-20260914-003",
+      "batch": "pair1-counts100",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 43
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 43,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 43
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 75,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789404065",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789404065,
+        "capturedTimestamp": 1789404064,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789404064",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "0322b6adb4b0f2c87e6d20202a8615eb29eb35e6c2457d1104fab8f3a6ebf3b9",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789404065",
+        "reportedSeed": "1789404065",
+        "timestamp": "1789404064",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789404065",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts100-20260914-004",
+      "batch": "pair1-counts100",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 43
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 43,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 43
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 75,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789404120",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789404120,
+        "capturedTimestamp": 1789404119,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789404119",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "7f8d4e73d7f6eb50e2e044e2fea10df00902590a88c22849665382faf6b83e85",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789404120",
+        "reportedSeed": "1789404120",
+        "timestamp": "1789404119",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789404120",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts100-20260914-005",
+      "batch": "pair1-counts100",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 43
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 43,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 43
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 75,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789404169",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789404169,
+        "capturedTimestamp": 1789404168,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789404168",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "549e219bc911f1bcd2078539568abd2c63d320551d2e3fbe3ab67e61ec520c04",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789404169",
+        "reportedSeed": "1789404169",
+        "timestamp": "1789404168",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789404169",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-forward-20260914-001",
+      "batch": "pair1-counts150-forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 65,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789405763",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789405763,
+        "capturedTimestamp": 1789405762,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789405762",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "10f0adc82f2254d2897afc269bb51b953886bbd545ca79f0bb6bab5095264124",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789405763",
+        "reportedSeed": "1789405763",
+        "timestamp": "1789405762",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789405763",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-forward-20260914-002",
+      "batch": "pair1-counts150-forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 65,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789405823",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789405823,
+        "capturedTimestamp": 1789405822,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789405822",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "d26cf9100a399019a2e738e7b792cc563d5411780fc31a7c54f7756f4b03d425",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789405823",
+        "reportedSeed": "1789405823",
+        "timestamp": "1789405822",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789405823",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-forward-20260914-003",
+      "batch": "pair1-counts150-forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 65,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789405891",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789405891,
+        "capturedTimestamp": 1789405890,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789405890",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "ec5422b1a256acebefca0d929a94162ecd683c868deb3358c93316d04222fbc0",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789405891",
+        "reportedSeed": "1789405891",
+        "timestamp": "1789405890",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789405891",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-forward-20260914-004",
+      "batch": "pair1-counts150-forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 65,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789405933",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789405933,
+        "capturedTimestamp": 1789405932,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789405932",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "8e3f115a7509b110655fe15302fb515f7b45515c4898f25b4c7b6aa58e38c4d7",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789405933",
+        "reportedSeed": "1789405933",
+        "timestamp": "1789405932",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789405933",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-forward-20260914-005",
+      "batch": "pair1-counts150-forward",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 65,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406004",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406004,
+        "capturedTimestamp": 1789406003,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789406003",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "42df4ec946d31eb0f1611fb7f823cc78df7193b9d10fab9dba87ad4ca30cc67c",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406004",
+        "reportedSeed": "1789406004",
+        "timestamp": "1789406003",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789406004",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-001",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 130,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 130
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90007": 12
+          }
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 130,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 12,
+          "actual": 12,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406134",
+        "calls": 36,
+        "draws": 58
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406134,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406133",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "f7d19a45a2011045c079480fad7f5949d1814d82e64f653a95a85f2fd0a0c80d",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406134",
+        "reportedSeed": "1789406134",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-002",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 130,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 130
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90007": 16
+          }
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 130,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 16,
+          "actual": 16,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406135",
+        "calls": 36,
+        "draws": 63
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406135,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406134",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "018cdc80b0f0f2cee4f6c7b1728ce96ed38aceb851bf2e0fe17d83cb6422f0f8",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406135",
+        "reportedSeed": "1789406135",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-003",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 130,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 130
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90007": 14
+          }
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 130,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 14,
+          "actual": 14,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406137",
+        "calls": 36,
+        "draws": 54
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406137,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406136",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "a07bf2e1cf3520251f44127fa7fdb37f3f0c72d8611c79b5e13870a7d50d3424",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406137",
+        "reportedSeed": "1789406137",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-004",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 131,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 131
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90007": 17
+          }
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 131,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 35,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 17,
+          "actual": 17,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406142",
+        "calls": 35,
+        "draws": 49
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406142,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406141",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "b0af4528a23ccc34b733ea90580a964deffb3c41b6f744c63df4bdbce626f412",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406142",
+        "reportedSeed": "1789406142",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-005",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 129,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 129
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {
+            "90007": 11
+          }
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 129,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "defender",
+          "reportSkillId": "90007",
+          "expected": 11,
+          "actual": 11,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406145",
+        "calls": 36,
+        "draws": 58
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406145,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406144",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "f6c336bee4e49c8be684b6004b6a570ac49b590e3fbb997141f7f0daee4f5ae3",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406145",
+        "reportedSeed": "1789406145",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-006",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 130,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 130,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90007": 14
+          },
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 130,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 14,
+          "actual": 14,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406175",
+        "calls": 36,
+        "draws": 59
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406175,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406174",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "e81cd12ff9117f1fa087f785501ec35501b4e6a9ef429be5ed9d0f7ba48866f2",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406175",
+        "reportedSeed": "1789406175",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-007",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 131,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 131,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90007": 16
+          },
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 131,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 16,
+          "actual": 16,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406178",
+        "calls": 36,
+        "draws": 47
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406178,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406177",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "d34e420d45e465901d094a5a8f0fec1fee06784fae8335bb870e817e36ba340d",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406178",
+        "reportedSeed": "1789406178",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-008",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 131,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 131,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90007": 15
+          },
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 131,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 15,
+          "actual": 15,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406183",
+        "calls": 36,
+        "draws": 51
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406183,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406182",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "409ed06ac74309905698f65c7d1c22cba32051ecdb43102851fd89684aaca582",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406183",
+        "reportedSeed": "1789406183",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-009",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 130,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 130,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90007": 16
+          },
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 130,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 16,
+          "actual": 16,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406184",
+        "calls": 36,
+        "draws": 50
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406184,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406183",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "e95982b7a8ab465e6d7a52e1547e6aaf477221792054ea48e3732eeed3f9d037",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406184",
+        "reportedSeed": "1789406184",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc5-counts150-20260914-010",
+      "batch": "pair2-fc5-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 129,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 129,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {
+            "90007": 7
+          },
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 129,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 36,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [
+        {
+          "side": "attacker",
+          "reportSkillId": "90007",
+          "expected": 7,
+          "actual": 7,
+          "exact": true
+        }
+      ],
+      "rng": {
+        "seed": "1789406190",
+        "calls": 36,
+        "draws": 56
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406190,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406189",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "b0c0168963ff60e589e4bce754c99e9785395c55a55b2f1ad500e973f249a4cc",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406190",
+        "reportedSeed": "1789406190",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-001",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 67,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406871",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406871,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406870",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "1b23e95023e3f0f8f7ee2aa9945197012ab8f758604c4a6e3d1b83f20981c1dd",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406871",
+        "reportedSeed": "1789406871",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-002",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 67,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406862",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406862,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406861",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "4f3f2ecfc89eda9b231a59912973dfe698ba205a0c031d57303369b425555b26",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406862",
+        "reportedSeed": "1789406862",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-003",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 67,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406862",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406862,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406861",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "aa078688fa1e08ae579c1f6769656baecca8b8c5d5a8cc96cf8bad4165f11fe9",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406862",
+        "reportedSeed": "1789406862",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-004",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 67,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406856",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406856,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406855",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "9ce996cd4b1250def6cb3894a285dc3c01361ad849b3d6bdc190e0078f08c8fe",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406856",
+        "reportedSeed": "1789406856",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-005",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          }
+        },
+        "totals": {
+          "attacker": 67,
+          "defender": 0
+        },
+        "winner": "attacker",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "attacker",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406855",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406855,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406854",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "572cdee8b6ca19cf66bc7e983176a3e53787befa59c24568350493e0964e5212",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406855",
+        "reportedSeed": "1789406855",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-006",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 67
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406814",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406814,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406813",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "5832c05ae3512702e4bf1e75627bdc6fdfc7802b4b294627c06e85e4be245e46",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406814",
+        "reportedSeed": "1789406814",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-007",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 67
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406813",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406813,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406812",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "f386ff0766c5252136cac3f1064f0617129d86d82f758d7545d1761f3b199ada",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406813",
+        "reportedSeed": "1789406813",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-008",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 67
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406809",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406809,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406808",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "b7dbc0427a9b052eff7500edac65e8cf98c4d95e2a95271f1e44a9a576c12333",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406809",
+        "reportedSeed": "1789406809",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-009",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 67
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406809",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406809,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406808",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "4570fbdb5fe5e0c29d72a20b37495855490523e92a4f88c674b0fa526552e077",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406809",
+        "reportedSeed": "1789406809",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair2-fc1-counts150-20260914-010",
+      "batch": "pair2-fc1-counts150",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 67
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 67
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 67
+        }
+      },
+      "rounds": 74,
+      "exact": true,
+      "outcomeExact": true,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789406796",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789406796,
+        "capturedTimestamp": null,
+        "capturedTimestampStatus": "not available in report-opening capture",
+        "legacyAdapterTimestamp": "1789406795",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "1d9e2c68a8bf5651076709e74f076771e284515004c8ff3ae7b148517b755218",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789406796",
+        "reportedSeed": "1789406796",
+        "timestamp": null,
+        "timestampSource": null,
+        "timestampSeed": null,
+        "timestampMatchesRecordedSeed": null,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-reverse-20260914-001",
+      "batch": "pair1-counts150-reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 65
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789407269",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789407269,
+        "capturedTimestamp": 1789407268,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789407268",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "d65fb46189cd4efde9de780372954023ba5af212a0d437c2eaeb12391a18c5a7",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789407269",
+        "reportedSeed": "1789407269",
+        "timestamp": "1789407268",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789407269",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-reverse-20260914-002",
+      "batch": "pair1-counts150-reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 65
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789407313",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789407313,
+        "capturedTimestamp": 1789407313,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789407312",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "b6b6907b6ec944507ab9e32e4149cd6a6c6d90e332cc30755f99ac168944568f",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789407313",
+        "reportedSeed": "1789407313",
+        "timestamp": "1789407313",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789407314",
+        "timestampMatchesRecordedSeed": false,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": [
+        "Timestamp seed 1789407314 differs from recorded seed 1789407313; replay uses the recorded seed."
+      ]
+    },
+    {
+      "test_id": "mk2-pair1-counts150-reverse-20260914-003",
+      "batch": "pair1-counts150-reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 65
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789407351",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789407351,
+        "capturedTimestamp": 1789407350,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789407350",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "0eea5512054218ced1ad32744d167774e34b07a57b792abe3cd3f8e124853d6d",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789407351",
+        "reportedSeed": "1789407351",
+        "timestamp": "1789407350",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789407351",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-reverse-20260914-004",
+      "batch": "pair1-counts150-reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 65
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789407475",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789407475,
+        "capturedTimestamp": 1789407474,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789407474",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "704340ff6a7e4e09f0452965469449c9777a59505f27ca6142b930a9b6eb01f6",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789407475",
+        "reportedSeed": "1789407475",
+        "timestamp": "1789407474",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789407475",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    },
+    {
+      "test_id": "mk2-pair1-counts150-reverse-20260914-005",
+      "batch": "pair1-counts150-reverse",
+      "observed": {
+        "remaining": {
+          "attacker": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 0
+          },
+          "defender": {
+            "infantry": 0,
+            "lancer": 0,
+            "marksman": 65
+          }
+        },
+        "totals": {
+          "attacker": 0,
+          "defender": 65
+        },
+        "winner": "defender",
+        "skillProcs": {
+          "attacker": {},
+          "defender": {}
+        }
+      },
+      "winner": "defender",
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 64
+        }
+      },
+      "rounds": 76,
+      "exact": false,
+      "outcomeExact": false,
+      "winnerClassificationExact": true,
+      "procChecks": [],
+      "rng": {
+        "seed": "1789407542",
+        "calls": 0,
+        "draws": 0
+      },
+      "timestampEvidence": {
+        "recordedSeed": 1789407542,
+        "capturedTimestamp": 1789407541,
+        "capturedTimestampStatus": "independently captured and identity-linked",
+        "legacyAdapterTimestamp": "1789407541",
+        "legacyAdapterTimestampOrigin": "derived-report-seed-minus-one",
+        "legacyAdapterTimestampIsCapturedFact": false,
+        "seedClockRelationNotAssumed": true
+      },
+      "originalExportFullResultAndRngEqualExcludingOnlyReplayMetadata": true,
+      "standardTraceObservableAndRngParity": true,
+      "fullArchiveSha256": "d2ea02c31f5ea3e193a0b8caba8e8dd1a44915ce1f409c68cc9f47b28ffe5310",
+      "replayMetadata": {
+        "mode": "mk2",
+        "version": "expedition-mk2-lua54-catalogue-20-source-fc0-5",
+        "seedSource": "recorded-seed",
+        "effectiveSeed": "1789407542",
+        "reportedSeed": "1789407542",
+        "timestamp": "1789407541",
+        "timestampSource": "captured-world-march-battle-trigger-linked-mail",
+        "timestampSeed": "1789407542",
+        "timestampMatchesRecordedSeed": true,
+        "mechanics": {
+          "fcRounding": "floor",
+          "catalogueCorrections": "validated",
+          "gunpowderShield": "per-hit",
+          "lanceShield": "per-hit",
+          "volleyShield": "per-hit",
+          "attackScheduling": "side-local",
+          "volleyAfterDeath": "roll",
+          "gunpowderTiming": "after-volley",
+          "terminalVolleyShield": "roll"
+        },
+        "statCatalogue": {
+          "policy": "supplied-source-t1-t10-fc0-fc5",
+          "historicalReplayCommit": "755bd728167a29e54d247ed3733363e3e1a6be11",
+          "rngScopeValidation": "retained-for-reconstruction-not-revalidated"
+        }
+      },
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "reports": 5,
+  "rawChecks": [
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-001",
+      "rawSeedChecked": 1,
+      "survivorSlotsChecked": 6,
+      "explicitChanceCountersChecked": 5,
+      "rawCombatFieldsPreserved": true,
+      "UIWinnerBound": true,
+      "frozenModelArchivesChecked": 3,
+      "fullInstalledH0Equality": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-002",
+      "rawSeedChecked": 1,
+      "survivorSlotsChecked": 6,
+      "explicitChanceCountersChecked": 5,
+      "rawCombatFieldsPreserved": true,
+      "UIWinnerBound": true,
+      "frozenModelArchivesChecked": 3,
+      "fullInstalledH0Equality": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-003",
+      "rawSeedChecked": 1,
+      "survivorSlotsChecked": 6,
+      "explicitChanceCountersChecked": 5,
+      "rawCombatFieldsPreserved": true,
+      "UIWinnerBound": true,
+      "frozenModelArchivesChecked": 3,
+      "fullInstalledH0Equality": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-004",
+      "rawSeedChecked": 1,
+      "survivorSlotsChecked": 6,
+      "explicitChanceCountersChecked": 5,
+      "rawCombatFieldsPreserved": true,
+      "UIWinnerBound": true,
+      "frozenModelArchivesChecked": 3,
+      "fullInstalledH0Equality": true
+    },
+    {
+      "test_id": "mk2-asymmetric-infantry-new-context-forward-20260914-005",
+      "rawSeedChecked": 1,
+      "survivorSlotsChecked": 6,
+      "explicitChanceCountersChecked": 5,
+      "rawCombatFieldsPreserved": true,
+      "UIWinnerBound": true,
+      "frozenModelArchivesChecked": 3,
+      "fullInstalledH0Equality": true
+    }
+  ],
+  "allFiveDistinct": true,
+  "prior536CorpusManifestSha256": "30c5308cf7f029afb3523960bd01a3766261d8e63c56fbba76833068498516d5",
+  "all541CorpusManifestSha256": "981b76f5f3f1407296cab4207090b47241bdedfac3f7399c296e085cc8083331",
+  "allPrior536FixtureBytesPreserved": true
+}

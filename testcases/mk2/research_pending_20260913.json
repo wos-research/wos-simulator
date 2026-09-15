@@ -1,0 +1,1963 @@
+[
+  {
+    "test_id": "mk2-research-pending-20260913-001",
+    "cohort": "c2_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289520",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289521,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 16,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 516,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4,
+          "90009": 7,
+          "90006": 7
+        },
+        "defender": {
+          "90007": 49
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VC_BEFORE_GP",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-002",
+    "cohort": "c2_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289588",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289589,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 61,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 561,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 7,
+          "90009": 12,
+          "90006": 9
+        },
+        "defender": {
+          "90007": 47
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VC_BEFORE_GP",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-003",
+    "cohort": "c2_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789289900",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789289901,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 2,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 502,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4,
+          "90009": 11,
+          "90006": 4
+        },
+        "defender": {
+          "90007": 62
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VC_BEFORE_GP",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-004",
+    "cohort": "c2_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc5": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 309.07,
+          "defense": 312.32,
+          "lethality": 194.71,
+          "health": 192.67
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789290153",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789290154,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 15,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 515,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 2,
+          "90009": 13,
+          "90006": 6
+        },
+        "defender": {
+          "90007": 60
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:infantry:CrystalShield:0",
+        "side": "defender",
+        "skillId": "CrystalShield",
+        "reportSkillId": "90007",
+        "troopType": "infantry",
+        "chancePercent": 37.5,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            25,
+            37.5
+          ],
+          "source": "enemy.any",
+          "target": "self.infantry"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VC_BEFORE_GP",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-005",
+    "cohort": "e1_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293260",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293261,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 426,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 926,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 1,
+          "90009": 5,
+          "90006": 0
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-006",
+    "cohort": "e1_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293418",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293419,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 431,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 931,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 2,
+          "90009": 6,
+          "90006": 1
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-007",
+    "cohort": "e1_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293588",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293589,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 432,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 932,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 4,
+          "90009": 2,
+          "90006": 3
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-008",
+    "cohort": "e1_forward",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789293787",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789293788,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 432,
+          "marksman": 500
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        }
+      },
+      "totals": {
+        "attacker": 932,
+        "defender": 0
+      },
+      "winner": "attacker",
+      "skillProcs": {
+        "attacker": {
+          "90008": 3,
+          "90009": 6,
+          "90006": 1
+        },
+        "defender": {}
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "attacker:lancer:CrystalLance:0",
+        "side": "attacker",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "attacker:marksman:Volley:1",
+        "side": "attacker",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "attacker:marksman:CrystalGunpowder:2",
+        "side": "attacker",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-009",
+    "cohort": "e1_reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789304286",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789304287,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 430,
+          "marksman": 500
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 930
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 2,
+          "90009": 6,
+          "90006": 0
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:CrystalLance:0",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "defender:marksman:Volley:1",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:marksman:CrystalGunpowder:2",
+        "side": "defender",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-010",
+    "cohort": "e1_reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789304374",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789304375,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 438,
+          "marksman": 500
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 938
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 5,
+          "90009": 6,
+          "90006": 2
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:CrystalLance:0",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "defender:marksman:Volley:1",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:marksman:CrystalGunpowder:2",
+        "side": "defender",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-011",
+    "cohort": "e1_reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789304469",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789304470,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 428,
+          "marksman": 500
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 928
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 2,
+          "90009": 6,
+          "90006": 0
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:CrystalLance:0",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "defender:marksman:Volley:1",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:marksman:CrystalGunpowder:2",
+        "side": "defender",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-012",
+    "cohort": "e1_reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789304561",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789304562,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 426,
+          "marksman": 500
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 926
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 1,
+          "90009": 3,
+          "90006": 1
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:CrystalLance:0",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "defender:marksman:Volley:1",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:marksman:CrystalGunpowder:2",
+        "side": "defender",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  },
+  {
+    "test_id": "mk2-research-pending-20260913-013",
+    "cohort": "e1_reverse",
+    "simulation_mode": "mk2",
+    "engagement_type": "always",
+    "attacker": {
+      "name": "attacker",
+      "troops": {
+        "infantry_t5_fc1": 1000
+      },
+      "stats": {
+        "infantry": {
+          "attack": 175.8,
+          "defense": 174.3,
+          "lethality": 124.43,
+          "health": 121.52
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "defender": {
+      "name": "defender",
+      "troops": {
+        "marksman_t7_fc3": 500,
+        "lancer_t5_fc4": 500
+      },
+      "stats": {
+        "marksman": {
+          "attack": 304.36,
+          "defense": 303.89,
+          "lethality": 187.03,
+          "health": 184.12
+        },
+        "lancer": {
+          "attack": 279.05,
+          "defense": 277.58,
+          "lethality": 198.81,
+          "health": 194.59
+        }
+      },
+      "heroes": [],
+      "joiner_heroes": []
+    },
+    "replay": {
+      "timestamp": "1789304680",
+      "timestampSource": "derived-report-seed-minus-one",
+      "reportedSeed": 1789304681,
+      "mechanics": {
+        "fcRounding": "floor",
+        "gunpowderShield": "per-hit",
+        "lanceShield": "per-hit",
+        "volleyShield": "per-hit",
+        "attackScheduling": "side-local",
+        "volleyAfterDeath": "roll",
+        "gunpowderTiming": "after-volley"
+      }
+    },
+    "observed": {
+      "remaining": {
+        "attacker": {
+          "infantry": 0,
+          "lancer": 0,
+          "marksman": 0
+        },
+        "defender": {
+          "infantry": 0,
+          "lancer": 430,
+          "marksman": 500
+        }
+      },
+      "totals": {
+        "attacker": 0,
+        "defender": 930
+      },
+      "winner": "defender",
+      "skillProcs": {
+        "attacker": {},
+        "defender": {
+          "90008": 1,
+          "90009": 5,
+          "90006": 1
+        }
+      }
+    },
+    "chanceSources": [
+      {
+        "instance": "defender:lancer:CrystalLance:0",
+        "side": "defender",
+        "skillId": "CrystalLance",
+        "reportSkillId": "90008",
+        "troopType": "lancer",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10,
+            15
+          ],
+          "source": "lancer"
+        }
+      },
+      {
+        "instance": "defender:marksman:Volley:1",
+        "side": "defender",
+        "skillId": "Volley",
+        "reportSkillId": "90006",
+        "troopType": "marksman",
+        "chancePercent": 10,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            10
+          ],
+          "source": "marksman"
+        }
+      },
+      {
+        "instance": "defender:marksman:CrystalGunpowder:2",
+        "side": "defender",
+        "skillId": "CrystalGunpowder",
+        "reportSkillId": "90009",
+        "troopType": "marksman",
+        "chancePercent": 20,
+        "trigger": {
+          "type": "attack",
+          "probability": [
+            20,
+            30,
+            30,
+            30
+          ],
+          "source": "marksman"
+        }
+      }
+    ],
+    "evidenceSummary": {
+      "status": "research-candidate-only-current-kernel-mismatch",
+      "scope": "Released hero-free occupied-tile report. Production mismatch retained; private frozen ordering candidate matches available observations and is not implemented here.",
+      "candidate": "VL1",
+      "candidateMatchedAvailableObservations": true,
+      "productionMatchedAvailableObservations": false,
+      "timingLimit": "Recorded-seed replay; derived timestamp is not independent seeding-time evidence."
+    }
+  }
+]
